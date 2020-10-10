@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"globals_func.html":[2,1,1],
-"globals_vars.html":[2,1,2],
 "grimm__soybean__flowering_8h.html":[2,0,0,0,55],
 "grimm__soybean__flowering_8h_source.html":[2,0,0,0,55],
 "grimm__soybean__flowering__calculator_8h.html":[2,0,0,0,56],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "two__layer__soil__profile_8hpp_source.html":[2,0,0,0,112],
 "utilization__growth_8hpp.html":[2,0,0,0,113],
 "utilization__growth_8hpp_source.html":[2,0,0,0,113],
-"utilization__growth__calculator_8hpp.html":[2,0,0,0,114]
+"utilization__growth__calculator_8hpp.html":[2,0,0,0,114],
+"utilization__growth__calculator_8hpp.html#a7769a4d82bee051ae70faf248df3c090":[2,0,0,0,114,1],
+"utilization__growth__calculator_8hpp_source.html":[2,0,0,0,114]
 };

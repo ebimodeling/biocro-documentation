@@ -106,69 +106,71 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                <span class="stringliteral">&quot;nlayers&quot;</span>,</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                <span class="stringliteral">&quot;vmax&quot;</span>,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="stringliteral">&quot;jmax&quot;</span>,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="stringliteral">&quot;Rd&quot;</span>,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="stringliteral">&quot;Catm&quot;</span>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="stringliteral">&quot;O2&quot;</span>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="stringliteral">&quot;b0&quot;</span>,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="stringliteral">&quot;b1&quot;</span>,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="stringliteral">&quot;theta&quot;</span>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="stringliteral">&quot;kd&quot;</span>,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="stringliteral">&quot;heightf&quot;</span>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="stringliteral">&quot;LeafN&quot;</span>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="stringliteral">&quot;kpLN&quot;</span>,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="stringliteral">&quot;lnb0&quot;</span>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="stringliteral">&quot;lnb1&quot;</span>,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="stringliteral">&quot;lnfun&quot;</span>,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="stringliteral">&quot;chil&quot;</span>,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="stringliteral">&quot;StomataWS&quot;</span>,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="stringliteral">&quot;growth_respiration_fraction&quot;</span>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="stringliteral">&quot;water_stress_approach&quot;</span>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="stringliteral">&quot;electrons_per_carboxylation&quot;</span>,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="stringliteral">&quot;electrons_per_oxygenation&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">   37</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a>() {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="stringliteral">&quot;canopy_transpiration_rate&quot;</span>,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="stringliteral">&quot;GrossAssim&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> c3_canopy::do_operation()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Collect inputs and make calculations</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> doy = int(*doy_dbl_ip);                                     <span class="comment">// Round doy_dbl down to get the day of year</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">double</span> hour = 24.0 * ((*doy_dbl_ip) - doy);     <span class="comment">// Get the fractional part as the hour</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// c3CanAC is located in c3CanAc.cpp</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_can___str.html">Can_Str</a> can_result = <a class="code" href="_bio_cro_8h.html#a542c69a99fb2b34f3be5a4d596de5f3a">c3CanAC</a>(*lai_ip, doy, hour, *solar_ip, *temp_ip,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            *rh_ip, *windspeed_ip, *lat_ip, (<span class="keywordtype">int</span>)(*nlayers_ip), *vmax_ip,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            *jmax_ip, *Rd_ip, *Catm_ip, *O2_ip, *b0_ip,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            *b1_ip, *theta_ip, *kd_ip, *heightf_ip, *LeafN_ip,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            *kpLN_ip, *lnb0_ip, *lnb1_ip, (<span class="keywordtype">int</span>)(*lnfun_ip), *chil_ip,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            *StomataWS_ip, *growth_respiration_fraction_ip, (<span class="keywordtype">int</span>)(*water_stress_approach_ip), *electrons_per_carboxylation_ip, *electrons_per_oxygenation_ip);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Update the output parameter list</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        update(canopy_assimilation_rate_op, can_result.<a class="code" href="struct_can___str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>);  <span class="comment">// Mg / ha / hr.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        update(canopy_transpiration_rate_op, can_result.<a class="code" href="struct_can___str.html#af8fba6423eb33d2551d878ee6675cb79">Trans</a>); <span class="comment">// Mg / ha / hr.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        update(GrossAssim_op, can_result.<a class="code" href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <span class="stringliteral">&quot;tpu_rate_max&quot;</span>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="stringliteral">&quot;Rd&quot;</span>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="stringliteral">&quot;Catm&quot;</span>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="stringliteral">&quot;O2&quot;</span>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="stringliteral">&quot;b0&quot;</span>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="stringliteral">&quot;b1&quot;</span>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="stringliteral">&quot;Gs_min&quot;</span>,  <span class="comment">// mol / m^2 / s</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="stringliteral">&quot;theta&quot;</span>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="stringliteral">&quot;kd&quot;</span>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="stringliteral">&quot;heightf&quot;</span>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="stringliteral">&quot;LeafN&quot;</span>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="stringliteral">&quot;kpLN&quot;</span>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="stringliteral">&quot;lnb0&quot;</span>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="stringliteral">&quot;lnb1&quot;</span>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="stringliteral">&quot;lnfun&quot;</span>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="stringliteral">&quot;chil&quot;</span>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="stringliteral">&quot;StomataWS&quot;</span>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="stringliteral">&quot;growth_respiration_fraction&quot;</span>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="stringliteral">&quot;water_stress_approach&quot;</span>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="stringliteral">&quot;electrons_per_carboxylation&quot;</span>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="stringliteral">&quot;electrons_per_oxygenation&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">   39</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a>() {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="stringliteral">&quot;canopy_transpiration_rate&quot;</span>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="stringliteral">&quot;GrossAssim&quot;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> c3_canopy::do_operation()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// Collect inputs and make calculations</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">int</span> doy = int(*doy_dbl_ip);                                     <span class="comment">// Round doy_dbl down to get the day of year</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">double</span> hour = 24.0 * ((*doy_dbl_ip) - doy);     <span class="comment">// Get the fractional part as the hour</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// c3CanAC is located in c3CanAc.cpp</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_can___str.html">Can_Str</a> can_result = <a class="code" href="_bio_cro_8h.html#a481017b3de9645e846f57ad552e90e26">c3CanAC</a>(*lai_ip, doy, hour, *solar_ip, *temp_ip,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            *rh_ip, *windspeed_ip, *lat_ip, (<span class="keywordtype">int</span>)(*nlayers_ip), *vmax_ip,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            *jmax_ip, *tpu_rate_max_ip, *Rd_ip, *Catm_ip, *O2_ip, *b0_ip,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            *b1_ip, *Gs_min_ip, *theta_ip, *kd_ip, *heightf_ip, *LeafN_ip,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            *kpLN_ip, *lnb0_ip, *lnb1_ip, (<span class="keywordtype">int</span>)(*lnfun_ip), *chil_ip,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            *StomataWS_ip, *growth_respiration_fraction_ip, (<span class="keywordtype">int</span>)(*water_stress_approach_ip), *electrons_per_carboxylation_ip, *electrons_per_oxygenation_ip);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Update the output parameter list</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        update(canopy_assimilation_rate_op, can_result.<a class="code" href="struct_can___str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>);  <span class="comment">// Mg / ha / hr.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        update(canopy_transpiration_rate_op, can_result.<a class="code" href="struct_can___str.html#af8fba6423eb33d2551d878ee6675cb79">Trans</a>); <span class="comment">// Mg / ha / hr.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        update(GrossAssim_op, can_result.<a class="code" href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_can___str_html_af8fba6423eb33d2551d878ee6675cb79"><div class="ttname"><a href="struct_can___str.html#af8fba6423eb33d2551d878ee6675cb79">Can_Str::Trans</a></div><div class="ttdeci">double Trans</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00047">AuxBioCro.h:47</a></div></div>
+<div class="ttc" id="a_bio_cro_8h_html_a481017b3de9645e846f57ad552e90e26"><div class="ttname"><a href="_bio_cro_8h.html#a481017b3de9645e846f57ad552e90e26">c3CanAC</a></div><div class="ttdeci">struct Can_Str c3CanAC(double LAI, int DOY, double hr, double solarR, double Temp, double RH, double WindSpeed, double lat, int nlayers, double Vmax, double Jmax, double tpu_rate_max, double Rd, double Catm, double o2, double b0, double b1, double Gs_min, double theta, double kd, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double chil, double StomataWS, double growth_respiration_fraction, int water_stress_approach, double electrons_per_carboxylation, double electrons_per_oxygenation)</div><div class="ttdef"><b>Definition:</b> <a href="c3_can_a_c_8cpp_source.html#l00001">c3CanAC.cpp:4</a></div></div>
 <div class="ttc" id="astruct_can___str_html_ac2cb333c4e7bdd22c4c9672c80ed977f"><div class="ttname"><a href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">Can_Str::GrossAssim</a></div><div class="ttdeci">double GrossAssim</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00048">AuxBioCro.h:48</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_a70377e14f631d7fd158d2f3356ed6107"><div class="ttname"><a href="classc3__canopy.html#a70377e14f631d7fd158d2f3356ed6107">c3_canopy::get_inputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00003">c3_canopy.cpp:3</a></div></div>
 <div class="ttc" id="ac3__canopy_8hpp_html"><div class="ttname"><a href="c3__canopy_8hpp.html">c3_canopy.hpp</a></div></div>
-<div class="ttc" id="a_bio_cro_8h_html_a542c69a99fb2b34f3be5a4d596de5f3a"><div class="ttname"><a href="_bio_cro_8h.html#a542c69a99fb2b34f3be5a4d596de5f3a">c3CanAC</a></div><div class="ttdeci">struct Can_Str c3CanAC(double LAI, int DOY, double hr, double solarR, double Temp, double RH, double WindSpeed, double lat, int nlayers, double Vmax, double Jmax, double Rd, double Catm, double o2, double b0, double b1, double theta, double kd, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double chil, double StomataWS, double growth_respiration_fraction, int water_stress_approach, double electrons_per_carboxylation, double electrons_per_oxygenation)</div><div class="ttdef"><b>Definition:</b> <a href="c3_can_a_c_8cpp_source.html#l00001">c3CanAC.cpp:4</a></div></div>
-<div class="ttc" id="aclassc3__canopy_html_a5a5b9919e2d8b1ee7bc8cc37558c79de"><div class="ttname"><a href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00037">c3_canopy.cpp:37</a></div></div>
+<div class="ttc" id="aclassc3__canopy_html_a5a5b9919e2d8b1ee7bc8cc37558c79de"><div class="ttname"><a href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00039">c3_canopy.cpp:39</a></div></div>
 <div class="ttc" id="astruct_can___str_html_a7adeee8f55ac1ffe5e9c226823ae4251"><div class="ttname"><a href="struct_can___str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Can_Str::Assim</a></div><div class="ttdeci">double Assim</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00046">AuxBioCro.h:46</a></div></div>
 <div class="ttc" id="astruct_can___str_html"><div class="ttname"><a href="struct_can___str.html">Can_Str</a></div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00045">AuxBioCro.h:45</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3__canopy_8cpp.html">c3_canopy.cpp</a></li>
-    <li class="footer">Generated on Sat Oct 10 2020 18:34:04 for The BioCro C++ Library by
+    <li class="footer">Generated on Sat Oct 10 2020 20:52:05 for The BioCro C++ Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

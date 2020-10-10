@@ -13,6 +13,7 @@ var classc4__leaf__photosynthesis =
     [ "EPriestly_op", "classc4__leaf__photosynthesis.html#aea9f5f3e25c486905c65391a4a39e356", null ],
     [ "et_equation", "classc4__leaf__photosynthesis.html#a40f467a63ddfcfce7341f44d79bc15e1", null ],
     [ "GrossAssim_op", "classc4__leaf__photosynthesis.html#aebaf8075767f5e2e368001dc936a3933", null ],
+    [ "Gs_min", "classc4__leaf__photosynthesis.html#a70b8994b05d1397ed965e63489ae717a", null ],
     [ "Gs_op", "classc4__leaf__photosynthesis.html#a2bbabbd380e168b43d94e0c3f48063f2", null ],
     [ "height", "classc4__leaf__photosynthesis.html#abc420ce7ba0fef60ec0c64bb83312a2b", null ],
     [ "incident_average_par", "classc4__leaf__photosynthesis.html#a42c763d4348a3f8a5f1fefe5d6ca17ef", null ],

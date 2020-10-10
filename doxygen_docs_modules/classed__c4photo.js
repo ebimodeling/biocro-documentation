@@ -15,6 +15,7 @@ var classed__c4photo =
     [ "collatz_rubisco_temperature_upper_ip", "classed__c4photo.html#a6947435f01ee37eb4916c4aa31c55a10", null ],
     [ "collatz_theta_ip", "classed__c4photo.html#a17b79ecfd5bd6bfb235c0bfdf07ffe34", null ],
     [ "collatz_vmax_ip", "classed__c4photo.html#a17b31e40d34f68c4f393ed3ec9bc7a63", null ],
+    [ "conductance_stomatal_h2o_min_ip", "classed__c4photo.html#a9bf2ce05f2697f57129fb108351e59ad", null ],
     [ "conductance_stomatal_h2o_op", "classed__c4photo.html#ac79fa23802290420f3751b6341d6eeae", null ],
     [ "mole_fraction_co2_atmosphere_ip", "classed__c4photo.html#ada69781abce91af7afeba858e4f3b33c", null ],
     [ "mole_fraction_co2_intercellular_op", "classed__c4photo.html#a40cf5355ee5d97df443b15403f5c542e", null ],

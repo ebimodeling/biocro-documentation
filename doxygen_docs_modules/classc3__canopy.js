@@ -13,6 +13,7 @@ var classc3__canopy =
     [ "electrons_per_oxygenation_ip", "classc3__canopy.html#a4022b4149c7e3de4ea3533c804acb8ce", null ],
     [ "GrossAssim_op", "classc3__canopy.html#aebaf8075767f5e2e368001dc936a3933", null ],
     [ "growth_respiration_fraction_ip", "classc3__canopy.html#a1b016bde9ce3f9593fb19bae8bfa9c3a", null ],
+    [ "Gs_min_ip", "classc3__canopy.html#aed030810f202202ec60b27188f8ae59c", null ],
     [ "heightf_ip", "classc3__canopy.html#aebf6876443db92c099e5361ba8801f19", null ],
     [ "jmax_ip", "classc3__canopy.html#a49e23a21089026515b75f1207911785a", null ],
     [ "kd_ip", "classc3__canopy.html#a48bd7ff061fe2137d75f8e2c7f6bb884", null ],
@@ -31,6 +32,7 @@ var classc3__canopy =
     [ "StomataWS_ip", "classc3__canopy.html#a806fc8bd36d2b4eebe201b37a002317e", null ],
     [ "temp_ip", "classc3__canopy.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "theta_ip", "classc3__canopy.html#a9d98a510340edf0ccd779ed29bf7db50", null ],
+    [ "tpu_rate_max_ip", "classc3__canopy.html#a969ea9061af6b723995076cffe4ed2e7", null ],
     [ "vmax_ip", "classc3__canopy.html#acaf8c7efb6340c88696dc8006d0a74af", null ],
     [ "water_stress_approach_ip", "classc3__canopy.html#a4421579a55d45c3eaff429f5aaff6bcf", null ],
     [ "windspeed_ip", "classc3__canopy.html#a0ee2446db1ff65e8de5a47b389bf22f9", null ]

@@ -15,6 +15,7 @@ var classed__canac__leaf =
     [ "collatz_rubisco_temperature_upper_ip", "classed__canac__leaf.html#a6947435f01ee37eb4916c4aa31c55a10", null ],
     [ "collatz_theta_ip", "classed__canac__leaf.html#a17b79ecfd5bd6bfb235c0bfdf07ffe34", null ],
     [ "collatz_vmax_ip", "classed__canac__leaf.html#a17b31e40d34f68c4f393ed3ec9bc7a63", null ],
+    [ "conductance_stomatal_h2o_min_ip", "classed__canac__leaf.html#a9bf2ce05f2697f57129fb108351e59ad", null ],
     [ "conductance_stomatal_h2o_op", "classed__canac__leaf.html#ac79fa23802290420f3751b6341d6eeae", null ],
     [ "evapotranspiration_penman_monteith_op", "classed__canac__leaf.html#a9811e5eac02f11663a653906a742262c", null ],
     [ "evapotranspiration_penman_op", "classed__canac__leaf.html#a195ddce2b2d4fb4985b0c2da42d5d084", null ],

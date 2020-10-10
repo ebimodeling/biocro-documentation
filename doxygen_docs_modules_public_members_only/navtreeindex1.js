@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classharmonic__energy.html#aa1ca126e701a5ea8d43472054d78baca":[1,0,49,0],
-"classharmonic__oscillator.html":[1,0,50],
 "classharmonic__oscillator.html#a646795ca5dfcccbbbb9793d4a6dcd8b5":[1,0,50,0],
 "classhyperbola__2d.html":[1,0,51],
 "classhyperbola__2d.html#afa8b18fcfb3d0b8ecf62964eaf0c2a46":[1,0,51,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "gamma__oscillator_8hpp_source.html":[2,0,0,0,54],
 "globals.html":[2,1,0],
 "globals_defs.html":[2,1,4],
-"globals_enum.html":[2,1,3]
+"globals_enum.html":[2,1,3],
+"globals_func.html":[2,1,1],
+"globals_vars.html":[2,1,2]
 };

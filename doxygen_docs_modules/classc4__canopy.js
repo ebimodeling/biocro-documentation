@@ -14,6 +14,7 @@ var classc4__canopy =
     [ "doy_dbl_ip", "classc4__canopy.html#a6b5dc9a941541c7a4ffbf8131a0dc01b", null ],
     [ "et_equation_ip", "classc4__canopy.html#a99307a297d52b71a763bfe98d0c6015a", null ],
     [ "GrossAssim_op", "classc4__canopy.html#aebaf8075767f5e2e368001dc936a3933", null ],
+    [ "Gs_min_ip", "classc4__canopy.html#aed030810f202202ec60b27188f8ae59c", null ],
     [ "heightf_ip", "classc4__canopy.html#aebf6876443db92c099e5361ba8801f19", null ],
     [ "kd_ip", "classc4__canopy.html#a48bd7ff061fe2137d75f8e2c7f6bb884", null ],
     [ "kparm_ip", "classc4__canopy.html#a91840dee5d5f182f9d5607e12a442da7", null ],
