@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -56,23 +52,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('_r__modules_8cpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,6 +66,11 @@ $(document).ready(function(){initNavTree('_r__modules_8cpp_source.html',''); ini
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">R_modules.cpp</div>  </div>
@@ -243,7 +227,6 @@ $(document).ready(function(){initNavTree('_r__modules_8cpp_source.html',''); ini
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclassquantity__access__error_html"><div class="ttname"><a href="classquantity__access__error.html">quantity_access_error</a></div><div class="ttdoc">Custom error class to indicate problems when accessing a quantity.</div><div class="ttdef"><b>Definition:</b> <a href="module__helper__functions_8h_source.html#l00011">module_helper_functions.h:12</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a6310116404ff62eabbeb384e02482895"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a></div><div class="ttdeci">vector&lt; string &gt; make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00063">R_helper_functions.cpp:63</a></div></div>
 <div class="ttc" id="aparameters_8h_html_accbc03a63e9b3af24585c91b9d6eb7e4"><div class="ttname"><a href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a></div><div class="ttdeci">parameter_list parameters</div><div class="ttdef"><b>Definition:</b> <a href="parameters_8h_source.html#l00053">parameters.h:53</a></div></div>
@@ -258,13 +241,10 @@ $(document).ready(function(){initNavTree('_r__modules_8cpp_source.html',''); ini
 <div class="ttc" id="a_r__helper__functions_8h_html"><div class="ttname"><a href="_r__helper__functions_8h.html">R_helper_functions.h</a></div></div>
 <div class="ttc" id="a_r__modules_8cpp_html_a3bf623952876844a44049b5ddce4c618"><div class="ttname"><a href="_r__modules_8cpp.html#a3bf623952876844a44049b5ddce4c618">R_get_module_info</a></div><div class="ttdeci">SEXP R_get_module_info(SEXP module_name_input, SEXP verbose)</div><div class="ttdef"><b>Definition:</b> <a href="_r__modules_8cpp_source.html#l00011">R_modules.cpp:11</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_r__modules_8cpp.html">R_modules.cpp</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 16:47:32 for The BioCro C++ Library by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Oct 10 2020 02:35:03 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

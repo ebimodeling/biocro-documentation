@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -56,23 +52,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,6 +66,11 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">c3_canopy.cpp</div>  </div>
@@ -155,7 +139,6 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be">update</a>(<a class="code" href="classc3__canopy.html#aebaf8075767f5e2e368001dc936a3933">GrossAssim_op</a>, can_result.<a class="code" href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclassc3__canopy_html_a2ab5159f1414f84f29420fdf7ed9e7e3"><div class="ttname"><a href="classc3__canopy.html#a2ab5159f1414f84f29420fdf7ed9e7e3">c3_canopy::lat_ip</a></div><div class="ttdeci">const double * lat_ip</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00056">c3_canopy.hpp:56</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_ae0a8c837bbe38343e8fbee60d57a382f"><div class="ttname"><a href="classc3__canopy.html#ae0a8c837bbe38343e8fbee60d57a382f">c3_canopy::b0_ip</a></div><div class="ttdeci">const double * b0_ip</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00063">c3_canopy.hpp:63</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_a49e23a21089026515b75f1207911785a"><div class="ttname"><a href="classc3__canopy.html#a49e23a21089026515b75f1207911785a">c3_canopy::jmax_ip</a></div><div class="ttdeci">const double * jmax_ip</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00059">c3_canopy.hpp:59</a></div></div>
@@ -199,13 +182,10 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="ttc" id="aclassc3__canopy_html_a56227bd90839eea6640930c4a92f7720"><div class="ttname"><a href="classc3__canopy.html#a56227bd90839eea6640930c4a92f7720">c3_canopy::lnb1_ip</a></div><div class="ttdeci">const double * lnb1_ip</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00071">c3_canopy.hpp:71</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_a2de3f629f1c395c3a7ba4cada624d92a"><div class="ttname"><a href="classc3__canopy.html#a2de3f629f1c395c3a7ba4cada624d92a">c3_canopy::lai_ip</a></div><div class="ttdeci">const double * lai_ip</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00050">c3_canopy.hpp:50</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3__canopy_8cpp.html">c3_canopy.cpp</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 16:47:31 for The BioCro C++ Library by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Oct 10 2020 02:35:02 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -56,23 +52,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('hyperbolas_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,6 +66,11 @@ $(document).ready(function(){initNavTree('hyperbolas_8h_source.html',''); initRe
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">hyperbolas.h</div>  </div>
@@ -198,7 +182,6 @@ $(document).ready(function(){initNavTree('hyperbolas_8h_source.html',''); initRe
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclasshyperbola__2d_html_a5a5b9919e2d8b1ee7bc8cc37558c79de"><div class="ttname"><a href="classhyperbola__2d.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">hyperbola_2d::get_outputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="hyperbolas_8h_source.html#l00104">hyperbolas.h:104</a></div></div>
 <div class="ttc" id="aclassgolden__ratio__hyperbola_html_a21ec1ebea024133ce419156cac42c4e5"><div class="ttname"><a href="classgolden__ratio__hyperbola.html#a21ec1ebea024133ce419156cac42c4e5">golden_ratio_hyperbola::x_op</a></div><div class="ttdeci">double * x_op</div><div class="ttdef"><b>Definition:</b> <a href="hyperbolas_8h_source.html#l00035">hyperbolas.h:35</a></div></div>
 <div class="ttc" id="aclassgolden__ratio__hyperbola_html_a29ec409a834dd936c44bbc865b15aaed"><div class="ttname"><a href="classgolden__ratio__hyperbola.html#a29ec409a834dd936c44bbc865b15aaed">golden_ratio_hyperbola::golden_ratio_hyperbola</a></div><div class="ttdeci">golden_ratio_hyperbola(const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="hyperbolas_8h_source.html#l00017">hyperbolas.h:17</a></div></div>
@@ -220,13 +203,10 @@ $(document).ready(function(){initNavTree('hyperbolas_8h_source.html',''); initRe
 <div class="ttc" id="aclasshyperbola__2d_html_afa8b18fcfb3d0b8ecf62964eaf0c2a46"><div class="ttname"><a href="classhyperbola__2d.html#afa8b18fcfb3d0b8ecf62964eaf0c2a46">hyperbola_2d::hyperbola_2d</a></div><div class="ttdeci">hyperbola_2d(const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="hyperbolas_8h_source.html#l00069">hyperbolas.h:69</a></div></div>
 <div class="ttc" id="aclasshyperbola__2d_html_aba36ef6feb82085d0a909a9b5998e3d8"><div class="ttname"><a href="classhyperbola__2d.html#aba36ef6feb82085d0a909a9b5998e3d8">hyperbola_2d::do_operation</a></div><div class="ttdeci">void do_operation() const override</div><div class="ttdef"><b>Definition:</b> <a href="hyperbolas_8h_source.html#l00112">hyperbolas.h:112</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="hyperbolas_8h.html">hyperbolas.h</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 16:47:31 for The BioCro C++ Library by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Oct 10 2020 02:35:02 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

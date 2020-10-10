@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -56,23 +52,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('se__solver_8h_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,6 +66,11 @@ $(document).ready(function(){initNavTree('se__solver_8h_source.html',''); initRe
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">se_solver.h</div>  </div>
@@ -270,7 +254,6 @@ $(document).ready(function(){initNavTree('se__solver_8h_source.html',''); initRe
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclassse__solver_html_ab702e2f7530d6172eea3780d8923bd71"><div class="ttname"><a href="classse__solver.html#ab702e2f7530d6172eea3780d8923bd71">se_solver::num_iterations</a></div><div class="ttdeci">int num_iterations</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8h_source.html#l00076">se_solver.h:76</a></div></div>
 <div class="ttc" id="astructse__observer__push__back_html"><div class="ttname"><a href="structse__observer__push__back.html">se_observer_push_back</a></div><div class="ttdoc">An observer to be passed to an se_solver via its solve method. Its purpose is to store the sequence o...</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8h_source.html#l00198">se_solver.h:198</a></div></div>
 <div class="ttc" id="aclassse__solver_html_a9b561c742e0166377abb2432171e3082"><div class="ttname"><a href="classse__solver.html#a9b561c742e0166377abb2432171e3082">se_solver::converged_abs</a></div><div class="ttdeci">bool converged_abs</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8h_source.html#l00074">se_solver.h:74</a></div></div>
@@ -306,13 +289,10 @@ $(document).ready(function(){initNavTree('se__solver_8h_source.html',''); initRe
 <div class="ttc" id="ase__solver__helper__functions_8h_html"><div class="ttname"><a href="se__solver__helper__functions_8h.html">se_solver_helper_functions.h</a></div></div>
 <div class="ttc" id="aclassse__solver_html_a59725f59a235c974cb86e088af3c671c"><div class="ttname"><a href="classse__solver.html#a59725f59a235c974cb86e088af3c671c">se_solver::generate_solve_report</a></div><div class="ttdeci">std::string generate_solve_report() const</div><div class="ttdoc">Returns a string describing what happened during the most recent attempt to find a root.</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8cpp_source.html#l00082">se_solver.cpp:82</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="se__solver_8h.html">se_solver.h</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 16:48:30 for The BioCro C++ Library by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Oct 10 2020 02:35:59 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

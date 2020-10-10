@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -56,23 +52,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('song__flowering_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,6 +66,11 @@ $(document).ready(function(){initNavTree('song__flowering_8hpp_source.html','');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">song_flowering.hpp</div>  </div>
@@ -333,7 +317,6 @@ $(document).ready(function(){initNavTree('song__flowering_8hpp_source.html','');
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <div class="ttc" id="aclasssong__flowering_html_abaef8afad73a3175916bc39363745cba"><div class="ttname"><a href="classsong__flowering.html#abaef8afad73a3175916bc39363745cba">song_flowering::song_flowering</a></div><div class="ttdeci">song_flowering(const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="song__flowering_8hpp_source.html#l00020">song_flowering.hpp:20</a></div></div>
 <div class="ttc" id="aclasssong__flowering_html_afc3f717318d8cd80fed402a15c3c5128"><div class="ttname"><a href="classsong__flowering.html#afc3f717318d8cd80fed402a15c3c5128">song_flowering::cPn_op</a></div><div class="ttdeci">double * cPn_op</div><div class="ttdef"><b>Definition:</b> <a href="song__flowering_8hpp_source.html#l00084">song_flowering.hpp:84</a></div></div>
 <div class="ttc" id="aclasssong__flowering_html_a3ed7861b63acaa4c891a723bc8186cfe"><div class="ttname"><a href="classsong__flowering.html#a3ed7861b63acaa4c891a723bc8186cfe">song_flowering::cLc_ip</a></div><div class="ttdeci">const double * cLc_ip</div><div class="ttdef"><b>Definition:</b> <a href="song__flowering_8hpp_source.html#l00059">song_flowering.hpp:59</a></div></div>
@@ -371,13 +354,10 @@ $(document).ready(function(){initNavTree('song__flowering_8hpp_source.html','');
 <div class="ttc" id="aclasssong__flowering_html_ae5a0a144f989c18e6651d0fac21bf326"><div class="ttname"><a href="classsong__flowering.html#ae5a0a144f989c18e6651d0fac21bf326">song_flowering::cTc_ip</a></div><div class="ttdeci">const double * cTc_ip</div><div class="ttdef"><b>Definition:</b> <a href="song__flowering_8hpp_source.html#l00062">song_flowering.hpp:62</a></div></div>
 <div class="ttc" id="aclasssong__flowering_html_a95b2aef48707804cd4b8846829ba26bf"><div class="ttname"><a href="classsong__flowering.html#a95b2aef48707804cd4b8846829ba26bf">song_flowering::cYn_op</a></div><div class="ttdeci">double * cYn_op</div><div class="ttdef"><b>Definition:</b> <a href="song__flowering_8hpp_source.html#l00083">song_flowering.hpp:83</a></div></div>
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="song__flowering_8hpp.html">song_flowering.hpp</a></li>
-    <li class="footer">Generated on Wed Sep 23 2020 16:47:32 for The BioCro C++ Library by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated on Sat Oct 10 2020 02:35:02 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>
