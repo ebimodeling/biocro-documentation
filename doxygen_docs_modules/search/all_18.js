@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ztl_5fip_3145',['ZTL_ip',['../classpokhilko__circadian__clock.html#ae202588f78edff19916024af053293f0',1,'pokhilko_circadian_clock']]],
-  ['ztl_5fop_3146',['ZTL_op',['../classpokhilko__circadian__clock.html#a14e3a0b912a69b1dc78a9768ca0b7796',1,'pokhilko_circadian_clock']]]
+  ['y_5fip_1088',['y_ip',['../classhyperbola__2d.html#aef3cfa3ac93264470270f4ef3672aa77',1,'hyperbola_2d']]],
+  ['y_5fop_1089',['y_op',['../classhyperbola__2d.html#af9348ec77658b5ff476b7a7c7209ce52',1,'hyperbola_2d']]]
 ];

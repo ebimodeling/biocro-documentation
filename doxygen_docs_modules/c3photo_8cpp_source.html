@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('c3photo_8cpp_source.html',''); initRes
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">struct </span><a class="code" href="structc3__str.html">c3_str</a> result;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    result.<a class="code" href="structc3__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> = co2_assimilation_rate.value() * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    result.Gs = <a class="code" href="structc3__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>.value() * 1e3;  <span class="comment">// mmol / m^2 / s.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    result.Ci = <a class="code" href="structc3__str.html#abc345aedd954341b306bec86992287b8">Ci</a>.value() * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    result.Ci = <a class="code" href="structc3__str.html#abc345aedd954341b306bec86992287b8">Ci</a>.value() * 1e6;  <span class="comment">// micromole / mol.</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    result.GrossAssim = (co2_assimilation_rate.value() + Rd.value()) * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
@@ -369,7 +369,7 @@ $(document).ready(function(){initNavTree('c3photo_8cpp_source.html',''); initRes
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">struct </span><a class="code" href="structc3__str.html">c3_str</a> result;</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    result.<a class="code" href="structc3__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> = co2_assimilation_rate.value() * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    result.Gs = <a class="code" href="structc3__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>.value() * 1e3;  <span class="comment">// mmol / m^2 / s.</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    result.Ci = <a class="code" href="structc3__str.html#abc345aedd954341b306bec86992287b8">Ci</a>.value() * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    result.Ci = <a class="code" href="structc3__str.html#abc345aedd954341b306bec86992287b8">Ci</a>.value() * 1e6;  <span class="comment">// micromole / mol.</span></div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    result.GrossAssim = (co2_assimilation_rate.value() + Rd.value()) * 1e6;  <span class="comment">// micromole / m^2 / s.</span></div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    </div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        myfile &lt;&lt; <span class="stringliteral">&quot;The final returned value was &quot;</span> &lt;&lt; co2_assimilation_rate.value() * 1e6 &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('c3photo_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3photo_8cpp.html">c3photo.cpp</a></li>
-    <li class="footer">Generated on Sat Oct 10 2020 20:51:50 for The BioCro C++ Library by
+    <li class="footer">Generated on Wed Dec 9 2020 22:14:41 for The BioCro C++ Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

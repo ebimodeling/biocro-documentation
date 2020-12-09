@@ -22,6 +22,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "bucket_soil_drainage.hpp", "bucket__soil__drainage_8hpp.html", [
       [ "bucket_soil_drainage", "classbucket__soil__drainage.html", "classbucket__soil__drainage" ]
     ] ],
+    [ "c3_assimilation.h", "c3__assimilation_8h.html", [
+      [ "c3_assimilation", "classc3__assimilation.html", "classc3__assimilation" ]
+    ] ],
     [ "c3_canopy.cpp", "c3__canopy_8cpp.html", null ],
     [ "c3_canopy.hpp", "c3__canopy_8hpp.html", [
       [ "c3_canopy", "classc3__canopy.html", "classc3__canopy" ]
@@ -33,6 +36,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "c3EvapoTrans.cpp", "c3_evapo_trans_8cpp.html", "c3_evapo_trans_8cpp" ],
     [ "c3photo.cpp", "c3photo_8cpp.html", "c3photo_8cpp" ],
     [ "c3photo.hpp", "c3photo_8hpp.html", "c3photo_8hpp" ],
+    [ "c4_assimilation.h", "c4__assimilation_8h.html", [
+      [ "c4_assimilation", "classc4__assimilation.html", "classc4__assimilation" ]
+    ] ],
     [ "c4_canopy.hpp", "c4__canopy_8hpp.html", [
       [ "c4_canopy", "classc4__canopy.html", "classc4__canopy" ]
     ] ],
@@ -105,17 +111,8 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "fake_solar.hpp", "fake__solar_8hpp.html", [
       [ "fake_solar", "classfake__solar.html", "classfake__solar" ]
     ] ],
-    [ "flowering.hpp", "flowering_8hpp.html", [
-      [ "flowering", "classflowering.html", "classflowering" ]
-    ] ],
-    [ "flowering_calculator.hpp", "flowering__calculator_8hpp.html", [
-      [ "flowering_calculator", "classflowering__calculator.html", "classflowering__calculator" ]
-    ] ],
     [ "FvCB.hpp", "_fv_c_b_8hpp.html", [
       [ "FvCB", "class_fv_c_b.html", "class_fv_c_b" ]
-    ] ],
-    [ "gamma_oscillator.hpp", "gamma__oscillator_8hpp.html", [
-      [ "gamma_oscillator", "classgamma__oscillator.html", "classgamma__oscillator" ]
     ] ],
     [ "grimm_soybean_flowering.h", "grimm__soybean__flowering_8h.html", [
       [ "grimm_soybean_flowering", "classgrimm__soybean__flowering.html", "classgrimm__soybean__flowering" ]
@@ -217,23 +214,11 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "pokhilko_circadian_clock.hpp", "pokhilko__circadian__clock_8hpp.html", [
       [ "pokhilko_circadian_clock", "classpokhilko__circadian__clock.html", "classpokhilko__circadian__clock" ]
     ] ],
-    [ "position_oscillator.hpp", "position__oscillator_8hpp.html", [
-      [ "position_oscillator", "classposition__oscillator.html", "classposition__oscillator" ]
-    ] ],
     [ "priestley_transpiration.hpp", "priestley__transpiration_8hpp.html", [
       [ "priestley_transpiration", "classpriestley__transpiration.html", "classpriestley__transpiration" ]
     ] ],
-    [ "reaction.hpp", "reaction_8hpp.html", [
-      [ "reaction", "classreaction.html", "classreaction" ]
-    ] ],
     [ "shortwave_atmospheric_scattering.h", "shortwave__atmospheric__scattering_8h.html", [
       [ "shortwave_atmospheric_scattering", "classshortwave__atmospheric__scattering.html", "classshortwave__atmospheric__scattering" ]
-    ] ],
-    [ "size_testing.hpp", "size__testing_8hpp.html", [
-      [ "P1000", "class_p1000.html", "class_p1000" ],
-      [ "P100", "class_p100.html", "class_p100" ],
-      [ "P10", "class_p10.html", "class_p10" ],
-      [ "P1", "class_p1.html", "class_p1" ]
     ] ],
     [ "soil_evaporation.hpp", "soil__evaporation_8hpp.html", [
       [ "soil_evaporation", "classsoil__evaporation.html", "classsoil__evaporation" ]
@@ -258,15 +243,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "stomata_water_stress_sigmoid.hpp", "stomata__water__stress__sigmoid_8hpp.html", [
       [ "stomata_water_stress_sigmoid", "classstomata__water__stress__sigmoid.html", "classstomata__water__stress__sigmoid" ]
-    ] ],
-    [ "test_calc_state.hpp", "test__calc__state_8hpp.html", [
-      [ "test_calc_state", "classtest__calc__state.html", "classtest__calc__state" ]
-    ] ],
-    [ "test_derivs.hpp", "test__derivs_8hpp.html", [
-      [ "test_derivs", "classtest__derivs.html", "classtest__derivs" ]
-    ] ],
-    [ "test_module.hpp", "test__module_8hpp.html", [
-      [ "test_module", "classtest__module.html", "classtest__module" ]
     ] ],
     [ "thermal_time_and_frost_senescence.hpp", "thermal__time__and__frost__senescence_8hpp.html", [
       [ "thermal_time_and_frost_senescence", "classthermal__time__and__frost__senescence.html", "classthermal__time__and__frost__senescence" ]
@@ -301,9 +277,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "utilization_senescence_calculator.hpp", "utilization__senescence__calculator_8hpp.html", [
       [ "utilization_senescence_calculator", "classutilization__senescence__calculator.html", "classutilization__senescence__calculator" ]
-    ] ],
-    [ "velocity_oscillator.hpp", "velocity__oscillator_8hpp.html", [
-      [ "velocity_oscillator", "classvelocity__oscillator.html", "classvelocity__oscillator" ]
     ] ],
     [ "water_vapor_properties_from_air_temperature.hpp", "water__vapor__properties__from__air__temperature_8hpp.html", [
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", "classwater__vapor__properties__from__air__temperature" ]
