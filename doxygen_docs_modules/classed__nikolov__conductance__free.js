@@ -9,6 +9,7 @@ var classed__nikolov__conductance__free =
     [ "leafwidth_ip", "classed__nikolov__conductance__free.html#a1175b5d51069ef4a5c1c32f11825b0d1", null ],
     [ "mole_fraction_h2o_atmosphere_ip", "classed__nikolov__conductance__free.html#a9ea64f3f9087997e8cf9c4c0efc15dc0", null ],
     [ "nikolov_ce_ip", "classed__nikolov__conductance__free.html#a615adac4872adbbba014244d93f15963", null ],
+    [ "nikolov_virtual_temperature_difference_op", "classed__nikolov__conductance__free.html#a16d4ce14a0a6a3d433caf7c7fbd0aa97", null ],
     [ "temperature_air_ip", "classed__nikolov__conductance__free.html#ac63c97f9467e03bc37d32004c7e7ea6a", null ],
     [ "temperature_leaf_ip", "classed__nikolov__conductance__free.html#a5bad0bb4be07567fb982f60e360b1b66", null ]
 ];

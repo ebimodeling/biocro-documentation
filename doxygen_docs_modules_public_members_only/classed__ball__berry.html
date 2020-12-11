@@ -146,9 +146,10 @@ Static Public Member Functions</h2></td></tr>
 <p>So in this case the Ball-Berry formula becomes:</p>
 <p>g = slope * A_n * mole_fraction_h2o * atmospheric_pressure / (C_s * saturation_water_vapor_pressure) + intercept</p>
 <p>The saturation water vapor pressure depends on temperature. Here the leaf temperature is more appropriate than atmospheric air temperature.</p>
-<p>In BioCro we also may want to include the effects of water stress as a modification to the stomatal conductance via a multiplicative factor. </p>
+<p>It is also important to note that when A_n &lt; 0, the Ball-Berry model just predicts its minimum conductance value: the intercept.</p>
+<p>In BioCro we also may want to include the effects of water stress as a modification to the stomatal conductance. To do this, we treat the Ball-Berry conductance as a maximum value corresponding to ideal water availability. We use a conductance_adjustment_factor to linearly switch between a minimum conductance value and the maximum one from the Ball-Berry model. I.e., when conductance_adjustment_factor is zero, conductance is the minimum value. When it is one, conductance is the maximum (Ball-Berry) value. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00038">38</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00048">48</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a28fc04767b26e36caec39cc4a84689b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28fc04767b26e36caec39cc4a84689b8">&#9670;&nbsp;</a></span>ed_ball_berry()</h2>
@@ -184,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00041">41</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00051">51</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
@@ -212,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00079">79</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00091">91</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +240,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00093">93</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00106">106</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +253,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__ball__berry.html">ed_ball_berry</a></li>
-    <li class="footer">Generated on Thu Dec 10 2020 02:54:07 for The BioCro C++ Library by
+    <li class="footer">Generated on Fri Dec 11 2020 22:48:11 for The BioCro C++ Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

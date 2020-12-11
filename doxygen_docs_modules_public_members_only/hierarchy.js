@@ -57,6 +57,7 @@ var hierarchy =
       [ "c4_leaf_photosynthesis", "classc4__leaf__photosynthesis.html", null ],
       [ "canac_with_collatz", "classcanac__with__collatz.html", null ],
       [ "collatz_leaf", "classcollatz__leaf.html", null ],
+      [ "ed_abc_blc", "classed__abc__blc.html", null ],
       [ "ed_apply_stomatal_water_stress_via_assimilation", "classed__apply__stomatal__water__stress__via__assimilation.html", null ],
       [ "ed_apply_stomatal_water_stress_via_conductance", "classed__apply__stomatal__water__stress__via__conductance.html", null ],
       [ "ed_ball_berry", "classed__ball__berry.html", null ],
@@ -67,15 +68,18 @@ var hierarchy =
       [ "ed_collatz_c4_assimilation", "classed__collatz__c4__assimilation.html", null ],
       [ "ed_evapotrans2", "classed__evapotrans2.html", null ],
       [ "ed_gas_concentrations", "classed__gas__concentrations.html", null ],
-      [ "module_base", "classed__leaf__photosynthesis_1_1module__base.html", [
-        [ "module_base", "classed__leaf__photosynthesis__nr_1_1module__base.html", [
-          [ "ed_c4_leaf_photosynthesis", "classed__c4__leaf__photosynthesis.html", null ]
-        ] ]
-      ] ],
+      [ "ed_leaf_temperature", "classed__leaf__temperature.html", null ],
       [ "ed_long_wave_energy_loss", "classed__long__wave__energy__loss.html", null ],
+      [ "ed_multilayer_canopy_integrator", "classed__multilayer__canopy__integrator.html", [
+        [ "ed_ten_layer_canopy_integrator", "classed__ten__layer__canopy__integrator.html", null ]
+      ] ],
+      [ "ed_multilayer_canopy_properties", "classed__multilayer__canopy__properties.html", [
+        [ "ed_ten_layer_canopy_properties", "classed__ten__layer__canopy__properties.html", null ]
+      ] ],
       [ "ed_nikolov_conductance_forced", "classed__nikolov__conductance__forced.html", null ],
       [ "ed_nikolov_conductance_free", "classed__nikolov__conductance__free.html", null ],
       [ "ed_penman_monteith_leaf_temperature", "classed__penman__monteith__leaf__temperature.html", null ],
+      [ "ed_penman_monteith_transpiration", "classed__penman__monteith__transpiration.html", null ],
       [ "ed_rh_to_mole_fraction", "classed__rh__to__mole__fraction.html", null ],
       [ "ed_stomata_water_stress_linear", "classed__stomata__water__stress__linear.html", null ],
       [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", null ],
@@ -97,6 +101,9 @@ var hierarchy =
         [ "ten_layer_canopy_integrator", "classten__layer__canopy__integrator.html", null ]
       ] ],
       [ "multilayer_canopy_photosynthesis< canopy_module_type, leaf_module_type >", "classmultilayer__canopy__photosynthesis.html", null ],
+      [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classmultilayer__canopy__photosynthesis.html", [
+        [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", null ]
+      ] ],
       [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c3_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
         [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", null ]
       ] ],
@@ -114,6 +121,14 @@ var hierarchy =
       [ "penman_monteith_leaf_temperature", "classpenman__monteith__leaf__temperature.html", null ],
       [ "penman_monteith_transpiration", "classpenman__monteith__transpiration.html", null ],
       [ "priestley_transpiration", "classpriestley__transpiration.html", null ],
+      [ "base", "classse__module_1_1base.html", [
+        [ "ed_c4_leaf_photosynthesis", "classed__c4__leaf__photosynthesis.html", null ],
+        [ "ed_c4_leaf_photosynthesis2", "classed__c4__leaf__photosynthesis2.html", null ],
+        [ "ed_c4_leaf_photosynthesis3", "classed__c4__leaf__photosynthesis3.html", null ],
+        [ "ed_c4_leaf_photosynthesis4", "classed__c4__leaf__photosynthesis4.html", null ],
+        [ "ed_nikolov_conductance_free_solve", "classed__nikolov__conductance__free__solve.html", null ],
+        [ "ed_p_m_temperature_solve", "classed__p__m__temperature__solve.html", null ]
+      ] ],
       [ "shortwave_atmospheric_scattering", "classshortwave__atmospheric__scattering.html", null ],
       [ "soil_evaporation", "classsoil__evaporation.html", null ],
       [ "soil_type_selector", "classsoil__type__selector.html", null ],

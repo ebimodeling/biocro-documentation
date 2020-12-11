@@ -71,13 +71,15 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classed__c4__leaf__photosynthesis-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ed_c4_leaf_photosynthesis Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_module.html" title="This class represents a component of a larger system of differential equations.">Module</a> describing photosynthesis at the leaf level using the default sub-modules defined by <a class="el" href="namespaceed__leaf__photosynthesis.html#a4dec6eacf4654aae909bb6debb078051" title="Define a list of reference module names.">ed_leaf_photosynthesis::reference_module_names</a>. The Newton-Raphson method is used to find self-consistent values for stomatal conductance, boundary layer conductance, net assimilation, and leaf temperature.  
+<p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant.  
  <a href="classed__c4__leaf__photosynthesis.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>&gt;</code></p>
@@ -88,8 +90,10 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__c4__leaf__photosynthesis__inherit__graph.png" border="0" usemap="#ed__c4__leaf__photosynthesis_inherit__map" alt="Inheritance graph"/></div>
 <map name="ed__c4__leaf__photosynthesis_inherit__map" id="ed__c4__leaf__photosynthesis_inherit__map">
-<area shape="rect" title="Module describing photosynthesis at the leaf level using the default sub&#45;modules defined by ed_leaf_p..." alt="" coords="5,81,184,107"/>
-<area shape="rect" href="classed__leaf__photosynthesis__nr_1_1module__base.html" title="A general module representing photosynthesis calculations where the simultaneous equations are solved..." alt="" coords="45,6,144,33"/>
+<area shape="rect" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free,..." alt="" coords="5,229,184,256"/>
+<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="69,155,120,181"/>
+<area shape="rect" href="class_steady_module.html" title=" " alt="" coords="43,80,147,107"/>
+<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="63,5,127,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -99,24 +103,23 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__c4__leaf__photosynthesis__coll__graph.png" border="0" usemap="#ed__c4__leaf__photosynthesis_coll__map" alt="Collaboration graph"/></div>
 <map name="ed__c4__leaf__photosynthesis_coll__map" id="ed__c4__leaf__photosynthesis_coll__map">
-<area shape="rect" title="Module describing photosynthesis at the leaf level using the default sub&#45;modules defined by ed_leaf_p..." alt="" coords="5,81,184,107"/>
-<area shape="rect" href="classed__leaf__photosynthesis__nr_1_1module__base.html" title="A general module representing photosynthesis calculations where the simultaneous equations are solved..." alt="" coords="45,6,144,33"/>
+<area shape="rect" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free,..." alt="" coords="5,229,184,256"/>
+<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="69,155,120,181"/>
+<area shape="rect" href="class_steady_module.html" title=" " alt="" coords="43,80,147,107"/>
+<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="63,5,127,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60afd8f6c2615648e252668eabfe52c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a60afd8f6c2615648e252668eabfe52c0">ed_c4_leaf_photosynthesis</a> (const <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *input_parameters, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *output_parameters)</td></tr>
-<tr class="separator:a60afd8f6c2615648e252668eabfe52c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classed__leaf__photosynthesis__nr_1_1module__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classed__leaf__photosynthesis__nr_1_1module__base.html">module_base</a></td></tr>
-<tr class="memitem:ae1e708513ce700a4ab9e06909d0d1b52 inherit pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__leaf__photosynthesis__nr_1_1module__base.html#ae1e708513ce700a4ab9e06909d0d1b52">module_base</a> (std::string module_name, <a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> input_module_names, const <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *input_parameters, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *output_parameters)</td></tr>
-<tr class="separator:ae1e708513ce700a4ab9e06909d0d1b52 inherit pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102f51620809f6213614d252a570fd86 inherit pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__leaf__photosynthesis__nr_1_1module__base.html#a102f51620809f6213614d252a570fd86">~module_base</a> ()=0</td></tr>
-<tr class="memdesc:a102f51620809f6213614d252a570fd86 inherit pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overwritten when defining it as pure virtual, add an inline one in the header.  <a href="classed__leaf__photosynthesis__nr_1_1module__base.html#a102f51620809f6213614d252a570fd86">More...</a><br /></td></tr>
-<tr class="separator:a102f51620809f6213614d252a570fd86 inherit pub_methods_classed__leaf__photosynthesis__nr_1_1module__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classed__leaf__photosynthesis_1_1module__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classed__leaf__photosynthesis_1_1module__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classed__leaf__photosynthesis_1_1module__base.html">module_base</a></td></tr>
-<tr class="memitem:ae1e708513ce700a4ab9e06909d0d1b52 inherit pub_methods_classed__leaf__photosynthesis_1_1module__base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__leaf__photosynthesis_1_1module__base.html#ae1e708513ce700a4ab9e06909d0d1b52">module_base</a> (std::string module_name, <a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> input_module_names, const <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *input_parameters, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *output_parameters)</td></tr>
-<tr class="separator:ae1e708513ce700a4ab9e06909d0d1b52 inherit pub_methods_classed__leaf__photosynthesis_1_1module__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733da72c5465085002a333be9a599db0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a733da72c5465085002a333be9a599db0">ed_c4_leaf_photosynthesis</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
+<tr class="separator:a733da72c5465085002a333be9a599db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classse__module_1_1base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classse__module_1_1base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classse__module_1_1base.html">base</a></td></tr>
+<tr class="memitem:a9d47a7f003a63e448a5a8df47401ccd4 inherit pub_methods_classse__module_1_1base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__module_1_1base.html#a9d47a7f003a63e448a5a8df47401ccd4">base</a> (std::string module_name, <a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> sub_module_names, std::string solver_name, int max_iterations, std::vector&lt; double &gt; <a class="el" href="classse__module_1_1base.html#af343479f291e508daae80b942233e395">lower_bounds</a>, std::vector&lt; double &gt; <a class="el" href="classse__module_1_1base.html#a46f09bbd32fd1332a877072d2e36a444">upper_bounds</a>, std::vector&lt; double &gt; <a class="el" href="classse__module_1_1base.html#add79477e4fd78bfbbd79a84ef0fbf43d">absolute_error_tolerances</a>, std::vector&lt; double &gt; <a class="el" href="classse__module_1_1base.html#a3836facf5cbd16c504b526a6c454c436">relative_error_tolerances</a>, bool <a class="el" href="classse__module_1_1base.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b">should_reorder_guesses</a>, bool <a class="el" href="classse__module_1_1base.html#a9cddfd62ca7ef4bd61ed4ef0ba00f72c">return_default_on_failure</a>, const <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *input_parameters, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *output_parameters)</td></tr>
+<tr class="separator:a9d47a7f003a63e448a5a8df47401ccd4 inherit pub_methods_classse__module_1_1base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">~base</a> ()=0</td></tr>
+<tr class="memdesc:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overwritten when defining it as pure virtual, add an inline one in the header.  <a href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">More...</a><br /></td></tr>
+<tr class="separator:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_steady_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_steady_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_steady_module.html">SteadyModule</a></td></tr>
 <tr class="memitem:a98bc5e8c75a87a319a7ef40d2a080fcd inherit pub_methods_class_steady_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steady_module.html#a98bc5e8c75a87a319a7ef40d2a080fcd">SteadyModule</a> (const std::string &amp;module_name, bool adaptive_compatible=true)</td></tr>
 <tr class="separator:a98bc5e8c75a87a319a7ef40d2a080fcd inherit pub_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,10 +139,50 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
-<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
-<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
+<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
+<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae6631c09eeca7afadaeb1a49ce568655"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655">get_initial_guesses</a> () const override</td></tr>
+<tr class="separator:ae6631c09eeca7afadaeb1a49ce568655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afa876a5a2fbc19cb7134bd993b4a4084"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#afa876a5a2fbc19cb7134bd993b4a4084">collatz_k</a></td></tr>
+<tr class="separator:afa876a5a2fbc19cb7134bd993b4a4084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff789f686acc048ac355591a001b94c5"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#aff789f686acc048ac355591a001b94c5">collatz_vmax</a></td></tr>
+<tr class="separator:aff789f686acc048ac355591a001b94c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9fd1493a268a71625aa94d4d8841a9"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a9c9fd1493a268a71625aa94d4d8841a9">collatz_alpha</a></td></tr>
+<tr class="separator:a9c9fd1493a268a71625aa94d4d8841a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1c427d49ce8d27bc2cfb0dffe6e10d"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a3c1c427d49ce8d27bc2cfb0dffe6e10d">collatz_PAR_flux</a></td></tr>
+<tr class="separator:a3c1c427d49ce8d27bc2cfb0dffe6e10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ec1fa11d37d57538edc2a5ec705a6b"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#aa3ec1fa11d37d57538edc2a5ec705a6b">collatz_rd</a></td></tr>
+<tr class="separator:aa3ec1fa11d37d57538edc2a5ec705a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dcb6f84af613f5c0279aaa033a1add"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a37dcb6f84af613f5c0279aaa033a1add">ball_berry_intercept</a></td></tr>
+<tr class="separator:a37dcb6f84af613f5c0279aaa033a1add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db837d660ddc8ee092b21175449aca6"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a9db837d660ddc8ee092b21175449aca6">ball_berry_slope</a></td></tr>
+<tr class="separator:a9db837d660ddc8ee092b21175449aca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37aac5dc43015970483384819654547d"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a37aac5dc43015970483384819654547d">nikolov_ce</a></td></tr>
+<tr class="separator:a37aac5dc43015970483384819654547d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f759bfd8cbcf56deba3b046488878ea"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a5f759bfd8cbcf56deba3b046488878ea">leafwidth</a></td></tr>
+<tr class="separator:a5f759bfd8cbcf56deba3b046488878ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c4cacc15dd7ff869806611b7306307"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307">StomataWS</a></td></tr>
+<tr class="separator:a44c4cacc15dd7ff869806611b7306307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872b829d92761c7412ee13b5a7f623b5"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a872b829d92761c7412ee13b5a7f623b5">conductance_stomatal_h2o_min</a></td></tr>
+<tr class="separator:a872b829d92761c7412ee13b5a7f623b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243c732c4e41d27978972f303d5db218"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a243c732c4e41d27978972f303d5db218">mole_fraction_co2_atmosphere</a></td></tr>
+<tr class="separator:a243c732c4e41d27978972f303d5db218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e075701bf93c5b42184e66d44bbd02"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a40e075701bf93c5b42184e66d44bbd02">relative_humidity_atmosphere</a></td></tr>
+<tr class="separator:a40e075701bf93c5b42184e66d44bbd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bcce655d45dfd99af5c50b5532300c"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a25bcce655d45dfd99af5c50b5532300c">temperature_air</a></td></tr>
+<tr class="separator:a25bcce655d45dfd99af5c50b5532300c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cabddc5a90d2c0d2a43ddb176557579"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#a5cabddc5a90d2c0d2a43ddb176557579">solar_energy_absorbed_leaf</a></td></tr>
+<tr class="separator:a5cabddc5a90d2c0d2a43ddb176557579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6da92b059dda2eb15b87844f975cec"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html#aad6da92b059dda2eb15b87844f975cec">atmospheric_pressure</a></td></tr>
+<tr class="separator:aad6da92b059dda2eb15b87844f975cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -149,22 +192,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_module.html">Module</a></td></tr>
 <tr class="memitem:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">get_val_debug</a> (const double *ptr, const std::string name) const</td></tr>
 <tr class="separator:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classed__leaf__photosynthesis_1_1module__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classed__leaf__photosynthesis_1_1module__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classed__leaf__photosynthesis_1_1module__base.html">module_base</a></td></tr>
-<tr class="memitem:af473183dd1ed26f8c72073edc380f48d inherit pro_attribs_classed__leaf__photosynthesis_1_1module__base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__leaf__photosynthesis_1_1module__base.html#af473183dd1ed26f8c72073edc380f48d">input_ptrs</a></td></tr>
-<tr class="separator:af473183dd1ed26f8c72073edc380f48d inherit pro_attribs_classed__leaf__photosynthesis_1_1module__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae47e9d21f2fbf8c9d4b033adec7e1b45 inherit pro_attribs_classed__leaf__photosynthesis_1_1module__base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__leaf__photosynthesis_1_1module__base.html#ae47e9d21f2fbf8c9d4b033adec7e1b45">output_ptrs</a></td></tr>
-<tr class="separator:ae47e9d21f2fbf8c9d4b033adec7e1b45 inherit pro_attribs_classed__leaf__photosynthesis_1_1module__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_module')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_module.html">Module</a></td></tr>
 <tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a3d8c24629d725b9ef8c238cf27c9b158">eps</a> = 1e-10</td></tr>
 <tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_module.html" title="This class represents a component of a larger system of differential equations.">Module</a> describing photosynthesis at the leaf level using the default sub-modules defined by <a class="el" href="namespaceed__leaf__photosynthesis.html#a4dec6eacf4654aae909bb6debb078051" title="Define a list of reference module names.">ed_leaf_photosynthesis::reference_module_names</a>. The Newton-Raphson method is used to find self-consistent values for stomatal conductance, boundary layer conductance, net assimilation, and leaf temperature. </p>
+<div class="textblock"><p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00016">16</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00088">88</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a60afd8f6c2615648e252668eabfe52c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60afd8f6c2615648e252668eabfe52c0">&#9670;&nbsp;</a></span>ed_c4_leaf_photosynthesis()</h2>
+<a id="a733da72c5465085002a333be9a599db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733da72c5465085002a333be9a599db0">&#9670;&nbsp;</a></span>ed_c4_leaf_photosynthesis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,13 +213,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classed__c4__leaf__photosynthesis.html">ed_c4_leaf_photosynthesis</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *&#160;</td>
+          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
           <td class="paramname"><em>input_parameters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *&#160;</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
           <td class="paramname"><em>output_parameters</em>&#160;</td>
         </tr>
         <tr>
@@ -197,13 +235,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00019">19</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00091">91</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="ae6631c09eeca7afadaeb1a49ce568655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6631c09eeca7afadaeb1a49ce568655">&#9670;&nbsp;</a></span>get_initial_guesses()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,46 +250,48 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_inputs </td>
+          <td class="memname">std::vector&lt; std::vector&lt; double &gt; &gt; get_initial_guesses </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00033">33</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+<p>Implements <a class="el" href="classse__module_1_1base.html#a282dba52c55600a1ca98b87a3c6e6f3f">base</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__leaf__photosynthesis_8h_source.html#l00033">ed_leaf_photosynthesis::get_reference_inputs()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">164</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00145">atmospheric_pressure</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00135">ball_berry_intercept</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00136">ball_berry_slope</a>, <a class="el" href="constants_8h_source.html#l00026">physical_constants::celsius_to_kelvin</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00132">collatz_alpha</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00130">collatz_k</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00133">collatz_PAR_flux</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00134">collatz_rd</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00131">collatz_vmax</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00140">conductance_stomatal_h2o_min</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00012">eclp_print</a>, <a class="el" href="se__solver__helper__functions_8cpp_source.html#l00087">generate_guess_list()</a>, <a class="el" href="constants_8h_source.html#l00027">physical_constants::ideal_gas_constant</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00138">leafwidth</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00046">ed_c4_leaf_photosynthesis_stuff::lower_bounds</a>, <a class="el" href="constants_8h_source.html#l00028">physical_constants::molar_mass_of_water</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00141">mole_fraction_co2_atmosphere</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00137">nikolov_ce</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00037">ed_c4_leaf_photosynthesis_stuff::num_guesses_to_try_educated</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">ed_c4_leaf_photosynthesis_stuff::num_guesses_to_try_other</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00142">relative_humidity_atmosphere</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">saturation_vapor_pressure()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00144">solar_energy_absorbed_leaf</a>, <a class="el" href="constants_8h_source.html#l00041">physical_constants::specific_heat_of_water</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00139">StomataWS</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00143">temperature_air</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00013">nikolov::temperature_exponent</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00014">nikolov::temperature_offset</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00284">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00301">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00319">TempToSFS()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00015">nikolov::Tvdiff_factor</a>, and <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00054">ed_c4_leaf_photosynthesis_stuff::upper_bounds</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classed__c4__leaf__photosynthesis_abc6bcae9586eb99fffb12a684814a4e6_cgraph.png" border="0" usemap="#classed__c4__leaf__photosynthesis_abc6bcae9586eb99fffb12a684814a4e6_cgraph" alt=""/></div>
-<map name="classed__c4__leaf__photosynthesis_abc6bcae9586eb99fffb12a684814a4e6_cgraph" id="classed__c4__leaf__photosynthesis_abc6bcae9586eb99fffb12a684814a4e6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,114,88,141"/>
-<area shape="rect" href="namespaceed__leaf__photosynthesis.html#a6ead371bb16ba9c670f7b6720a556d81" title="A function that finds all inputs required by the reference modules, excluding any unknowns." alt="" coords="136,107,295,148"/>
-<area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="553,5,693,47"/>
-<area shape="rect" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c" title="Finds the unknown quantities defined by the set of modules." alt="" coords="343,82,505,109"/>
-<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="555,136,691,177"/>
-<area shape="rect" href="validate__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="344,194,504,221"/>
-<area shape="rect" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="749,68,912,109"/>
-<area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="771,163,891,204"/>
-<area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="741,13,920,39"/>
-<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="555,71,691,112"/>
+<div class="center"><img src="classed__c4__leaf__photosynthesis_ae6631c09eeca7afadaeb1a49ce568655_cgraph.png" border="0" usemap="#classed__c4__leaf__photosynthesis_ae6631c09eeca7afadaeb1a49ce568655_cgraph" alt=""/></div>
+<map name="classed__c4__leaf__photosynthesis_ae6631c09eeca7afadaeb1a49ce568655_cgraph" id="classed__c4__leaf__photosynthesis_ae6631c09eeca7afadaeb1a49ce568655_cgraph">
+<area shape="rect" title=" " alt="" coords="5,136,139,163"/>
+<area shape="rect" href="se__solver__helper__functions_8cpp.html#a2aa65ff7e9c4652b56723a15071a5c73" title="Determines a set of multiple initial guesses distributed around a central guess." alt="" coords="205,35,343,61"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="187,85,361,112"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title=" " alt="" coords="221,136,327,163"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#ae810651283c6640ef4669d0eede1c942" title=" " alt="" coords="225,187,323,213"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title=" " alt="" coords="226,237,322,264"/>
+<area shape="rect" href="namespacese__solver__rand.html#a9f56be3c41c4ce78f588169480cb5e7b" title="A function that returns a random vector on the surface of an n&#45;dimensional sphere." alt="" coords="409,20,585,76"/>
+<area shape="rect" href="namespacese__solver__rand.html#a0002d0800e58c4c4b7e997026ad0cb3a" title="A function that returns a double chosen from a normal distribution with a mean of 0 and a standard de..." alt="" coords="633,35,820,61"/>
+<area shape="rect" href="namespacese__solver__rand.html#aacc8aa143c28d4b57309f49d8fa9422a" title=" " alt="" coords="877,5,1014,32"/>
+<area shape="rect" href="namespacese__solver__rand.html#ad9a6fc3c83f86c06ff8ce3ca67845dd9" title=" " alt="" coords="868,57,1023,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7eff545285286763183243b1d473e6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_outputs </td>
+          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -273,23 +313,491 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">39</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00150">150</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__leaf__photosynthesis_8h_source.html#l00054">ed_leaf_photosynthesis::get_reference_outputs()</a>.</p>
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00047">se_module::get_se_inputs()</a>, and <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00018">ed_c4_leaf_photosynthesis_stuff::sub_module_names</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classed__c4__leaf__photosynthesis_a7eff545285286763183243b1d473e6df_cgraph.png" border="0" usemap="#classed__c4__leaf__photosynthesis_a7eff545285286763183243b1d473e6df_cgraph" alt=""/></div>
-<map name="classed__c4__leaf__photosynthesis_a7eff545285286763183243b1d473e6df_cgraph" id="classed__c4__leaf__photosynthesis_a7eff545285286763183243b1d473e6df_cgraph">
-<area shape="rect" title=" " alt="" coords="5,46,96,73"/>
-<area shape="rect" href="namespaceed__leaf__photosynthesis.html#aea52b1d46ad1fbd37fb8575987029ad7" title="A function that finds all outputs produced by the reference modules." alt="" coords="144,39,303,80"/>
-<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="351,5,487,47"/>
-<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="351,71,487,112"/>
-<area shape="rect" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="535,5,697,47"/>
+<div class="center"><img src="classed__c4__leaf__photosynthesis_a70377e14f631d7fd158d2f3356ed6107_cgraph.png" border="0" usemap="#classed__c4__leaf__photosynthesis_a70377e14f631d7fd158d2f3356ed6107_cgraph" alt=""/></div>
+<map name="classed__c4__leaf__photosynthesis_a70377e14f631d7fd158d2f3356ed6107_cgraph" id="classed__c4__leaf__photosynthesis_a70377e14f631d7fd158d2f3356ed6107_cgraph">
+<area shape="rect" title=" " alt="" coords="5,114,88,141"/>
+<area shape="rect" href="namespacese__module.html#ac45cfb67d1645c39d30cc97b706aba27" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="136,114,308,141"/>
+<area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="567,5,707,47"/>
+<area shape="rect" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c" title="Finds the unknown quantities defined by the set of modules." alt="" coords="356,82,519,109"/>
+<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="569,136,705,177"/>
+<area shape="rect" href="validate__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="357,194,517,221"/>
+<area shape="rect" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="763,68,925,109"/>
+<area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="784,163,904,204"/>
+<area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="755,13,933,39"/>
+<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="569,71,705,112"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00155">155</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00021">se_module::get_ncalls_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00030">se_module::get_nsteps_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00065">se_module::get_se_outputs()</a>, <a class="el" href="se__module_8h_source.html#l00039">se_module::get_success_output_name()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00016">ed_c4_leaf_photosynthesis_stuff::module_name</a>, and <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00018">ed_c4_leaf_photosynthesis_stuff::sub_module_names</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classed__c4__leaf__photosynthesis_a5a5b9919e2d8b1ee7bc8cc37558c79de_cgraph.png" border="0" usemap="#classed__c4__leaf__photosynthesis_a5a5b9919e2d8b1ee7bc8cc37558c79de_cgraph" alt=""/></div>
+<map name="classed__c4__leaf__photosynthesis_a5a5b9919e2d8b1ee7bc8cc37558c79de_cgraph" id="classed__c4__leaf__photosynthesis_a5a5b9919e2d8b1ee7bc8cc37558c79de_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,96,134"/>
+<area shape="rect" href="namespacese__module.html#a1841055767c55dbf83156d85e2eef1eb" title="Returns the name of an output quantity that describes the number of times the simultaneous equations ..." alt="" coords="159,5,309,47"/>
+<area shape="rect" href="namespacese__module.html#a0deba55fff452c66c7aeac0d592c61b1" title="Returns the name of an output quantity that describes the number of steps the solver took." alt="" coords="157,71,311,112"/>
+<area shape="rect" href="namespacese__module.html#af2174a94990bf851cacb36d66fde90c0" title="Returns a sorted list of outputs produced by the modules." alt="" coords="144,137,324,163"/>
+<area shape="rect" href="namespacese__module.html#a14db4d8eca98af3ed59d063b1f888d75" title="Returns the name of an output quantity that indicates whether the solver was successful in finding a ..." alt="" coords="151,188,317,229"/>
+<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="372,97,508,139"/>
+<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="372,163,508,204"/>
+<area shape="rect" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="556,97,719,139"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aad6da92b059dda2eb15b87844f975cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6da92b059dda2eb15b87844f975cec">&#9670;&nbsp;</a></span>atmospheric_pressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; atmospheric_pressure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00145">145</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a37dcb6f84af613f5c0279aaa033a1add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37dcb6f84af613f5c0279aaa033a1add">&#9670;&nbsp;</a></span>ball_berry_intercept</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; ball_berry_intercept</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00135">135</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a9db837d660ddc8ee092b21175449aca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db837d660ddc8ee092b21175449aca6">&#9670;&nbsp;</a></span>ball_berry_slope</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; ball_berry_slope</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00136">136</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a9c9fd1493a268a71625aa94d4d8841a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9fd1493a268a71625aa94d4d8841a9">&#9670;&nbsp;</a></span>collatz_alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; collatz_alpha</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00132">132</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="afa876a5a2fbc19cb7134bd993b4a4084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa876a5a2fbc19cb7134bd993b4a4084">&#9670;&nbsp;</a></span>collatz_k</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; collatz_k</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00130">130</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a3c1c427d49ce8d27bc2cfb0dffe6e10d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1c427d49ce8d27bc2cfb0dffe6e10d">&#9670;&nbsp;</a></span>collatz_PAR_flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; collatz_PAR_flux</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00133">133</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="aa3ec1fa11d37d57538edc2a5ec705a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ec1fa11d37d57538edc2a5ec705a6b">&#9670;&nbsp;</a></span>collatz_rd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; collatz_rd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00134">134</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="aff789f686acc048ac355591a001b94c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff789f686acc048ac355591a001b94c5">&#9670;&nbsp;</a></span>collatz_vmax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; collatz_vmax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00131">131</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a872b829d92761c7412ee13b5a7f623b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872b829d92761c7412ee13b5a7f623b5">&#9670;&nbsp;</a></span>conductance_stomatal_h2o_min</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; conductance_stomatal_h2o_min</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00140">140</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a5f759bfd8cbcf56deba3b046488878ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f759bfd8cbcf56deba3b046488878ea">&#9670;&nbsp;</a></span>leafwidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; leafwidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00138">138</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a243c732c4e41d27978972f303d5db218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243c732c4e41d27978972f303d5db218">&#9670;&nbsp;</a></span>mole_fraction_co2_atmosphere</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; mole_fraction_co2_atmosphere</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00141">141</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a37aac5dc43015970483384819654547d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37aac5dc43015970483384819654547d">&#9670;&nbsp;</a></span>nikolov_ce</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; nikolov_ce</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00137">137</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a40e075701bf93c5b42184e66d44bbd02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e075701bf93c5b42184e66d44bbd02">&#9670;&nbsp;</a></span>relative_humidity_atmosphere</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; relative_humidity_atmosphere</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00142">142</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a5cabddc5a90d2c0d2a43ddb176557579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cabddc5a90d2c0d2a43ddb176557579">&#9670;&nbsp;</a></span>solar_energy_absorbed_leaf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; solar_energy_absorbed_leaf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00144">144</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a44c4cacc15dd7ff869806611b7306307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c4cacc15dd7ff869806611b7306307">&#9670;&nbsp;</a></span>StomataWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; StomataWS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00139">139</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
+
+</div>
+</div>
+<a id="a25bcce655d45dfd99af5c50b5532300c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bcce655d45dfd99af5c50b5532300c">&#9670;&nbsp;</a></span>temperature_air</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; temperature_air</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00143">143</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">get_initial_guesses()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +807,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 10 2020 02:53:25 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 11 2020 22:47:31 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

@@ -84,25 +84,23 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a312f4ef07b130551c5617b8d5956e2d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#a312f4ef07b130551c5617b8d5956e2d8">se_observer_push_back</a> (std::vector&lt; std::vector&lt; double &gt;&gt; &amp;<a class="el" href="structse__observer__push__back.html#ae4648b3aad93a9eff6167f8a94877ef4">uq_vec</a>, std::vector&lt; bool &gt; &amp;<a class="el" href="structse__observer__push__back.html#a4b121cc4e4ef1391d7944dfdd0bbe929">adjustment_made_vec</a>)</td></tr>
-<tr class="separator:a312f4ef07b130551c5617b8d5956e2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c5619a9321df19ef49bba8360c5a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#a85c5619a9321df19ef49bba8360c5a12">operator()</a> (std::vector&lt; double &gt; const &amp;uq, bool adjustment_made)</td></tr>
-<tr class="separator:a85c5619a9321df19ef49bba8360c5a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83778fd4f998eef156cf863b8194a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#ab83778fd4f998eef156cf863b8194a25">se_observer_push_back</a> (std::vector&lt; std::vector&lt; double &gt;&gt; &amp;<a class="el" href="structse__observer__push__back.html#ae4648b3aad93a9eff6167f8a94877ef4">uq_vec</a>)</td></tr>
+<tr class="separator:ab83778fd4f998eef156cf863b8194a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af478b12cae5529d4c889274141b9bbdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#af478b12cae5529d4c889274141b9bbdc">operator()</a> (std::vector&lt; double &gt; const &amp;uq)</td></tr>
+<tr class="separator:af478b12cae5529d4c889274141b9bbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae4648b3aad93a9eff6167f8a94877ef4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; double &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#ae4648b3aad93a9eff6167f8a94877ef4">uq_vec</a></td></tr>
 <tr class="separator:ae4648b3aad93a9eff6167f8a94877ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b121cc4e4ef1391d7944dfdd0bbe929"><td class="memItemLeft" align="right" valign="top">std::vector&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structse__observer__push__back.html#a4b121cc4e4ef1391d7944dfdd0bbe929">adjustment_made_vec</a></td></tr>
-<tr class="separator:a4b121cc4e4ef1391d7944dfdd0bbe929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An observer to be passed to an <a class="el" href="classse__solver.html" title="An abstract class for a generic simultaneous equation solver. Its solve member function provides a un...">se_solver</a> via its <code>solve</code> method. Its purpose is to store the sequence of guesses for the values of the unknown quantities, along with additional information, e.g., whether each new guess was made using the <code>get_next_guess</code> (adjustment_made == false) or <code>adjust_bad_guess</code> (adjustment_made == true) methods. </p>
 
-<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00198">198</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00214">214</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a312f4ef07b130551c5617b8d5956e2d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a312f4ef07b130551c5617b8d5956e2d8">&#9670;&nbsp;</a></span>se_observer_push_back()</h2>
+<a id="ab83778fd4f998eef156cf863b8194a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83778fd4f998eef156cf863b8194a25">&#9670;&nbsp;</a></span>se_observer_push_back()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,18 +112,8 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="structse__observer__push__back.html">se_observer_push_back</a> </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; std::vector&lt; double &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>uq_vec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>uq_vec</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; bool &gt; &amp;&#160;</td>
-          <td class="paramname"><em>adjustment_made_vec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -135,13 +123,13 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00204">204</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00219">219</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a85c5619a9321df19ef49bba8360c5a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85c5619a9321df19ef49bba8360c5a12">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="af478b12cae5529d4c889274141b9bbdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af478b12cae5529d4c889274141b9bbdc">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,18 +141,8 @@ Public Attributes</h2></td></tr>
           <td class="memname">void operator() </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; double &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>uq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>uq</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>adjustment_made</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -174,31 +152,13 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00210">210</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00222">222</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
 
-<p class="reference">References <a class="el" href="se__solver_8h_source.html#l00201">adjustment_made_vec</a>, and <a class="el" href="se__solver_8h_source.html#l00200">uq_vec</a>.</p>
+<p class="reference">References <a class="el" href="se__solver_8h_source.html#l00216">uq_vec</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b121cc4e4ef1391d7944dfdd0bbe929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b121cc4e4ef1391d7944dfdd0bbe929">&#9670;&nbsp;</a></span>adjustment_made_vec</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;bool&gt;&amp; adjustment_made_vec</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00201">201</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="se__solver_8h_source.html#l00210">operator()()</a>.</p>
-
-</div>
-</div>
 <a id="ae4648b3aad93a9eff6167f8a94877ef4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4648b3aad93a9eff6167f8a94877ef4">&#9670;&nbsp;</a></span>uq_vec</h2>
 
@@ -211,9 +171,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00200">200</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver_8h_source.html#l00216">216</a> of file <a class="el" href="se__solver_8h_source.html">se_solver.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__solver_8h_source.html#l00210">operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__solver_8h_source.html#l00222">operator()()</a>.</p>
 
 </div>
 </div>
@@ -223,7 +183,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 10 2020 02:53:25 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 11 2020 22:47:31 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

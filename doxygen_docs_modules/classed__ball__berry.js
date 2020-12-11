@@ -7,6 +7,7 @@ var classed__ball__berry =
     [ "ball_berry_intercept_ip", "classed__ball__berry.html#abba1fa2164d38e86495f798e4539405e", null ],
     [ "ball_berry_slope_ip", "classed__ball__berry.html#acd4b0164055a56b0b3367951a0ebf5fd", null ],
     [ "conductance_adjustment_factor_WS_ip", "classed__ball__berry.html#a7d8c3c84b0c9d03a57710763702fe532", null ],
+    [ "conductance_stomatal_h2o_min_ip", "classed__ball__berry.html#a9bf2ce05f2697f57129fb108351e59ad", null ],
     [ "conductance_stomatal_h2o_op", "classed__ball__berry.html#ac79fa23802290420f3751b6341d6eeae", null ],
     [ "mole_fraction_co2_leaf_surface_ip", "classed__ball__berry.html#a84f2febdbdef29f386966fe01023ee67", null ],
     [ "mole_fraction_h2o_leaf_surface_ip", "classed__ball__berry.html#a73cc0763503565cbfc645c28d7974133", null ],

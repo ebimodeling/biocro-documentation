@@ -1,0 +1,5 @@
+<map id="uniform_real_dist" name="uniform_real_dist">
+<area shape="rect" id="node1" title=" " alt="" coords="347,5,468,32"/>
+<area shape="rect" id="node2" href="$namespacese__solver__rand.html#a72a434d343698609714e40bbfe29e489" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="231,5,299,32"/>
+<area shape="rect" id="node3" href="$se__solver__helper__functions_8h.html#a1ce3aab7b6961eb9e623203b58bb5e6c" title="Determines a new guess from a bad one by randomly replacing bad elements." alt="" coords="5,5,183,32"/>
+</map>

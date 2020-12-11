@@ -82,16 +82,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d6f2eb07594247517c630bc97442ea2"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classse__solver.html">se_solver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a5d6f2eb07594247517c630bc97442ea2">create</a> (std::string const &amp;se_solver_name, double rel_error_tol, double abs_error_tol, int max_it)</td></tr>
-<tr class="separator:a5d6f2eb07594247517c630bc97442ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3f3dbf5dbc272fc8ca22682ebcd9af"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classse__solver.html">se_solver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a8e3f3dbf5dbc272fc8ca22682ebcd9af">create</a> (std::string const &amp;se_solver_name, int max_it)</td></tr>
+<tr class="separator:a8e3f3dbf5dbc272fc8ca22682ebcd9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a899f7cd30f10f44d786258ff28a82bac"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a899f7cd30f10f44d786258ff28a82bac">get_solvers</a> ()</td></tr>
 <tr class="separator:a899f7cd30f10f44d786258ff28a82bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a385af7a961287aa01e9fe817ca3e5db0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a385af7a961287aa01e9fe817ca3e5db0">se_solver_creator</a> = std::unique_ptr&lt; <a class="el" href="classse__solver.html">se_solver</a> &gt;(*)(double, double, int)</td></tr>
-<tr class="separator:a385af7a961287aa01e9fe817ca3e5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4929cf3fd79931ef11abde6c359fdee4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a4929cf3fd79931ef11abde6c359fdee4">se_solver_creator_map</a> = std::map&lt; std::string, <a class="el" href="classse__solver__factory.html#a385af7a961287aa01e9fe817ca3e5db0">se_solver_creator</a> &gt;</td></tr>
+<tr class="memitem:a68e96c859feda28370cb5181e9abcf92"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a68e96c859feda28370cb5181e9abcf92">se_solver_creator</a> = std::unique_ptr&lt; <a class="el" href="classse__solver.html">se_solver</a> &gt;(*)(int)</td></tr>
+<tr class="separator:a68e96c859feda28370cb5181e9abcf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4929cf3fd79931ef11abde6c359fdee4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__solver__factory.html#a4929cf3fd79931ef11abde6c359fdee4">se_solver_creator_map</a> = std::map&lt; std::string, <a class="el" href="classse__solver__factory.html#a68e96c859feda28370cb5181e9abcf92">se_solver_creator</a> &gt;</td></tr>
 <tr class="separator:a4929cf3fd79931ef11abde6c359fdee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -103,8 +103,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00010">10</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a385af7a961287aa01e9fe817ca3e5db0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a385af7a961287aa01e9fe817ca3e5db0">&#9670;&nbsp;</a></span>se_solver_creator</h2>
+<a id="a68e96c859feda28370cb5181e9abcf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e96c859feda28370cb5181e9abcf92">&#9670;&nbsp;</a></span>se_solver_creator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +113,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classse__solver__factory.html#a385af7a961287aa01e9fe817ca3e5db0">se_solver_creator</a> =  std::unique_ptr&lt;<a class="el" href="classse__solver.html">se_solver</a>&gt; (*)(double, double, int)</td>
+          <td class="memname">using <a class="el" href="classse__solver__factory.html#a68e96c859feda28370cb5181e9abcf92">se_solver_creator</a> =  std::unique_ptr&lt;<a class="el" href="classse__solver.html">se_solver</a>&gt; (*)(int)</td>
         </tr>
       </table>
   </td>
@@ -123,7 +123,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00022">22</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00020">20</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
 
 </div>
 </div>
@@ -137,7 +137,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classse__solver__factory.html#a4929cf3fd79931ef11abde6c359fdee4">se_solver_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classse__solver__factory.html#a385af7a961287aa01e9fe817ca3e5db0">se_solver_creator</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classse__solver__factory.html#a4929cf3fd79931ef11abde6c359fdee4">se_solver_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classse__solver__factory.html#a68e96c859feda28370cb5181e9abcf92">se_solver_creator</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -147,13 +147,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00023">23</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00021">21</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d6f2eb07594247517c630bc97442ea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d6f2eb07594247517c630bc97442ea2">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a8e3f3dbf5dbc272fc8ca22682ebcd9af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3f3dbf5dbc272fc8ca22682ebcd9af">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,18 +166,6 @@ Static Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>se_solver_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rel_error_tol</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>abs_error_tol</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,9 +186,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver__factory_8cpp_source.html#l00025">25</a> of file <a class="el" href="se__solver__factory_8cpp_source.html">se_solver_factory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver__factory_8cpp_source.html#l00024">24</a> of file <a class="el" href="se__solver__factory_8cpp_source.html">se_solver_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="se__solver__factory_8h_source.html#l00024">se_solver_creators</a>.</p>
+<p class="reference">References <a class="el" href="se__solver__factory_8h_source.html#l00022">se_solver_creators</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00014">R_solve_simultaneous_equations()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -208,10 +196,10 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classse__solver__factory_a5d6f2eb07594247517c630bc97442ea2_icgraph.png" border="0" usemap="#classse__solver__factory_a5d6f2eb07594247517c630bc97442ea2_icgraph" alt=""/></div>
-<map name="classse__solver__factory_a5d6f2eb07594247517c630bc97442ea2_icgraph" id="classse__solver__factory_a5d6f2eb07594247517c630bc97442ea2_icgraph">
+<div class="center"><img src="classse__solver__factory_a8e3f3dbf5dbc272fc8ca22682ebcd9af_icgraph.png" border="0" usemap="#classse__solver__factory_a8e3f3dbf5dbc272fc8ca22682ebcd9af_icgraph" alt=""/></div>
+<map name="classse__solver__factory_a8e3f3dbf5dbc272fc8ca22682ebcd9af_icgraph" id="classse__solver__factory_a8e3f3dbf5dbc272fc8ca22682ebcd9af_icgraph">
 <area shape="rect" title=" " alt="" coords="207,13,265,39"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a4486afba79b606afff2a8ce936e2720e" title=" " alt="" coords="5,5,159,47"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a6985a3d7ebd6bf32013f1bab80ab280f" title=" " alt="" coords="5,5,159,47"/>
 </map>
 </div>
 
@@ -240,9 +228,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__solver__factory_8cpp_source.html#l00043">43</a> of file <a class="el" href="se__solver__factory_8cpp_source.html">se_solver_factory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver__factory_8cpp_source.html#l00040">40</a> of file <a class="el" href="se__solver__factory_8cpp_source.html">se_solver_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="se__solver__factory_8h_source.html#l00024">se_solver_creators</a>.</p>
+<p class="reference">References <a class="el" href="se__solver__factory_8h_source.html#l00022">se_solver_creators</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__get__all_8cpp_source.html#l00047">R_get_all_se_solvers()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -281,13 +269,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">{</div>
-<div class="line">    { <span class="stringliteral">&quot;fixed_point&quot;</span>,            create_se_solver&lt;fixed_point&gt; },</div>
-<div class="line">    { <span class="stringliteral">&quot;newton_raphson_boost&quot;</span>,   create_se_solver&lt;newton_raphson_boost&gt; }</div>
+<div class="line">    { <span class="stringliteral">&quot;fixed_point&quot;</span>,                        create_se_solver&lt;fixed_point&gt; },</div>
+<div class="line">    { <span class="stringliteral">&quot;newton_raphson_boost&quot;</span>,               create_se_solver&lt;newton_raphson_boost&gt; },</div>
+<div class="line">    { <span class="stringliteral">&quot;newton_raphson_backtrack_boost&quot;</span>,     create_se_solver&lt;newton_raphson_backtrack_boost&gt; }</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00024">24</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__solver__factory_8h_source.html#l00022">22</a> of file <a class="el" href="se__solver__factory_8h_source.html">se_solver_factory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__solver__factory_8cpp_source.html#l00025">create()</a>, and <a class="el" href="se__solver__factory_8cpp_source.html#l00043">get_solvers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__solver__factory_8cpp_source.html#l00024">create()</a>, and <a class="el" href="se__solver__factory_8cpp_source.html#l00040">get_solvers()</a>.</p>
 
 </div>
 </div>
@@ -298,7 +287,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 10 2020 02:54:17 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 11 2020 22:48:21 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

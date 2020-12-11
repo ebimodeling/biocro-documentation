@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unknown_5fquantities_899',['unknown_quantities',['../namespaceed__leaf__photosynthesis__nr.html#a67e21959462c17b156447914663126c8',1,'ed_leaf_photosynthesis_nr']]],
-  ['upper_5fbounds_900',['upper_bounds',['../namespaceed__leaf__photosynthesis__nr.html#a9d36e47d0f027950da1a0d1c24c7e05a',1,'ed_leaf_photosynthesis_nr']]]
+  ['vmaxb0_996',['Vmaxb0',['../structnitro_parms.html#a518b100123bc67830c26f15177a8172f',1,'nitroParms']]],
+  ['vmaxb1_997',['Vmaxb1',['../structnitro_parms.html#ad7e57d8efdd075a1b184551d20eb44b3',1,'nitroParms']]]
 ];

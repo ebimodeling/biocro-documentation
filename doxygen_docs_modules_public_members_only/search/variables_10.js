@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['sand_882',['sand',['../structsoil_text__str.html#a4fcef85764276271df64bd49ff7667fb',1,'soilText_str']]],
-  ['satur_883',['satur',['../structsoil_text__str.html#ac769b10536dd94d3652ad1cbf8d58482',1,'soilText_str']]],
-  ['scattered_5firradiance_884',['scattered_irradiance',['../struct_light__profile.html#ab1cb927f9aec47ac40e504ec039a7573',1,'Light_profile']]],
-  ['shaded_5ffraction_885',['shaded_fraction',['../struct_light__profile.html#a0e8db02a88bb67528a3719bccff28ab3',1,'Light_profile']]],
-  ['silt_886',['silt',['../structsoil_text__str.html#ae79461a167b7ed357bb1ef0c89128b5c',1,'soilText_str']]],
-  ['soil_5fparameters_887',['soil_parameters',['../_aux_bio_cro_8h.html#a132d736e080fb28f7c4fde8561b02934',1,'AuxBioCro.h']]],
-  ['soilevapo_888',['SoilEvapo',['../structsoil_m_l__str.html#a1181d419ee6ec88951ccc5d991626005',1,'soilML_str']]],
-  ['stem_889',['stem',['../structcrop__phenology.html#a368c5d9027045426132cf396fca3d8c8',1,'crop_phenology']]],
-  ['stemt0_890',['stemT0',['../structfrost_parms.html#a4f53e9331c9439e37540642297e2b255',1,'frostParms']]],
-  ['stemt100_891',['stemT100',['../structfrost_parms.html#acfef848392e573c5e5869c60f1bf189a',1,'frostParms']]],
-  ['sunlit_5ffraction_892',['sunlit_fraction',['../struct_light__profile.html#a61f0087975de6eb7f7434b4cfc0e51ae',1,'Light_profile']]]
+  ['temperature_5fexponent_989',['temperature_exponent',['../namespacenikolov.html#af08ea1f00199ed198691dd2eebe4390e',1,'nikolov']]],
+  ['temperature_5foffset_990',['temperature_offset',['../namespacenikolov.html#af4e244dd0811f024e550084357fd18a4',1,'nikolov']]],
+  ['total_5firradiance_991',['total_irradiance',['../struct_light__profile.html#afd3e2606cc8df6a9a1809cd7a1696262',1,'Light_profile']]],
+  ['trans_992',['Trans',['../struct_can___str.html#af8fba6423eb33d2551d878ee6675cb79',1,'Can_Str']]],
+  ['transr_993',['TransR',['../struct_e_t___str.html#a53d1afc42e3609e6eb8145169c7b5aaf',1,'ET_Str']]],
+  ['tvdiff_5ffactor_994',['Tvdiff_factor',['../namespacenikolov.html#afc89eaf3c2de84f62a9dc5a20292bb68',1,'nikolov']]]
 ];

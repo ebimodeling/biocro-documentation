@@ -73,13 +73,21 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ed_c4_leaf_photosynthesis.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ed__leaf__photosynthesis_8h_source.html">ed_leaf_photosynthesis.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ed__leaf__photosynthesis__nr_8h_source.html">ed_leaf_photosynthesis_nr.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="se__module_8h_source.html">se_module.h</a>&quot;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;<a class="el" href="constants_8h_source.html">../constants.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_aux_bio_cro_8h_source.html">AuxBioCro.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="se__solver__helper__functions_8h_source.html">../se_solver_helper_functions.h</a>&quot;</code><br />
+<code>#include &lt;Rinternals.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for ed_c4_leaf_photosynthesis.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -87,32 +95,35 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="ed__c4__leaf__photosynthesis_8h__incl.png" border="0" usemap="#_2github_2workspace_2source_2src_2module__library_2ed__c4__leaf__photosynthesis_8h" alt=""/></div>
 <map name="_2github_2workspace_2source_2src_2module__library_2ed__c4__leaf__photosynthesis_8h" id="_2github_2workspace_2source_2src_2module__library_2ed__c4__leaf__photosynthesis_8h">
-<area shape="rect" title=" " alt="" coords="386,5,561,61"/>
-<area shape="rect" href="ed__leaf__photosynthesis_8h.html" title=" " alt="" coords="389,184,557,211"/>
-<area shape="rect" href="ed__leaf__photosynthesis__nr_8h.html" title=" " alt="" coords="445,109,632,136"/>
-<area shape="rect" href="validate__system_8h.html" title=" " alt="" coords="559,497,695,524"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="917,885,1011,912"/>
-<area shape="rect" href="module__wrapper__factory_8h.html" title=" " alt="" coords="246,572,397,613"/>
-<area shape="rect" href="modules_8h.html" title=" " alt="" coords="503,736,585,763"/>
-<area shape="rect" href="simultaneous__equations_8h.html" title=" " alt="" coords="609,423,791,449"/>
-<area shape="rect" href="se__solver__factory_8h.html" title=" " alt="" coords="911,259,1049,300"/>
-<area shape="rect" title=" " alt="" coords="472,579,512,606"/>
-<area shape="rect" title=" " alt="" coords="1407,960,1462,987"/>
-<area shape="rect" title=" " alt="" coords="537,579,615,606"/>
-<area shape="rect" title=" " alt="" coords="891,736,959,763"/>
-<area shape="rect" title=" " alt="" coords="640,579,715,606"/>
-<area shape="rect" title=" " alt="" coords="489,960,599,987"/>
-<area shape="rect" title=" " alt="" coords="935,960,993,987"/>
-<area shape="rect" title=" " alt="" coords="210,960,257,987"/>
-<area shape="rect" href="module__wrapper_8h.html" title=" " alt="" coords="526,661,663,688"/>
-<area shape="rect" title=" " alt="" coords="1136,811,1195,837"/>
-<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="347,811,506,837"/>
-<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="321,885,415,912"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="581,811,757,837"/>
-<area shape="rect" title=" " alt="" coords="630,885,709,912"/>
-<area shape="rect" href="se__solver_8h.html" title=" " alt="" coords="1101,348,1200,375"/>
-<area shape="rect" title=" " alt="" coords="1195,423,1263,449"/>
-<area shape="rect" href="se__solver__helper__functions_8h.html" title=" " alt="" coords="1137,736,1327,763"/>
+<area shape="rect" title=" " alt="" coords="1618,5,1793,61"/>
+<area shape="rect" href="se__module_8h.html" title=" " alt="" coords="1326,184,1421,211"/>
+<area shape="rect" title=" " alt="" coords="1853,825,1912,852"/>
+<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="1769,900,1863,927"/>
+<area shape="rect" title=" " alt="" coords="43,594,117,621"/>
+<area shape="rect" href="se__solver__helper__functions_8h.html" title=" " alt="" coords="1411,423,1541,464"/>
+<area shape="rect" href="constants_8h.html" title=" " alt="" coords="1879,512,1969,539"/>
+<area shape="rect" title=" " alt="" coords="1552,512,1643,539"/>
+<area shape="rect" href="ed__nikolov__conductance_8h.html" title=" " alt="" coords="1681,109,1855,136"/>
+<area shape="rect" href="modules_8h.html" title=" " alt="" coords="1291,751,1381,777"/>
+<area shape="rect" title=" " alt="" coords="1435,975,1482,1001"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="929,900,1023,927"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="1419,825,1595,852"/>
+<area shape="rect" href="validate__system_8h.html" title=" " alt="" coords="337,512,473,539"/>
+<area shape="rect" href="simultaneous__equations_8h.html" title=" " alt="" coords="935,430,1118,457"/>
+<area shape="rect" href="se__solver__factory_8h.html" title=" " alt="" coords="567,259,705,300"/>
+<area shape="rect" title=" " alt="" coords="925,975,1035,1001"/>
+<area shape="rect" title=" " alt="" coords="841,975,900,1001"/>
+<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="1619,825,1778,852"/>
+<area shape="rect" title=" " alt="" coords="254,975,309,1001"/>
+<area shape="rect" title=" " alt="" coords="1419,900,1498,927"/>
+<area shape="rect" title=" " alt="" coords="293,594,333,621"/>
+<area shape="rect" title=" " alt="" coords="409,594,487,621"/>
+<area shape="rect" title=" " alt="" coords="273,751,341,777"/>
+<area shape="rect" href="module__wrapper__factory_8h.html" title=" " alt="" coords="563,587,714,628"/>
+<area shape="rect" href="module__wrapper_8h.html" title=" " alt="" coords="446,676,583,703"/>
+<area shape="rect" title=" " alt="" coords="1166,512,1234,539"/>
+<area shape="rect" title=" " alt="" coords="1870,587,2018,628"/>
+<area shape="rect" href="se__solver_8h.html" title=" " alt="" coords="823,348,921,375"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -132,13 +143,70 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__c4__leaf__photosynthesis.html">ed_c4_leaf_photosynthesis</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_module.html" title="This class represents a component of a larger system of differential equations.">Module</a> describing photosynthesis at the leaf level using the default sub-modules defined by <a class="el" href="namespaceed__leaf__photosynthesis.html#a4dec6eacf4654aae909bb6debb078051" title="Define a list of reference module names.">ed_leaf_photosynthesis::reference_module_names</a>. The Newton-Raphson method is used to find self-consistent values for stomatal conductance, boundary layer conductance, net assimilation, and leaf temperature.  <a href="classed__c4__leaf__photosynthesis.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant.  <a href="classed__c4__leaf__photosynthesis.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceed__c4__leaf__photosynthesis__stuff"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html">ed_c4_leaf_photosynthesis_stuff</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a062efbd12cfd7a493a638ef7d21d856d"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ed__c4__leaf__photosynthesis_8h.html#a062efbd12cfd7a493a638ef7d21d856d">eclp_print</a> = false</td></tr>
+<tr class="separator:a062efbd12cfd7a493a638ef7d21d856d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b37c5938e82da1fb19ed599f7c71217"><td class="memItemLeft" align="right" valign="top">std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> = &quot;ed_c4_leaf_photosynthesis&quot;</td></tr>
+<tr class="separator:a0b37c5938e82da1fb19ed599f7c71217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af376e913b5f422adc0f6becefb4fd08f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a></td></tr>
+<tr class="separator:af376e913b5f422adc0f6becefb4fd08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e80c72924f0dd6293f90c8706770f7d"><td class="memItemLeft" align="right" valign="top">std::string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a7e80c72924f0dd6293f90c8706770f7d">solver_type</a> = &quot;newton_raphson_backtrack_boost&quot;</td></tr>
+<tr class="separator:a7e80c72924f0dd6293f90c8706770f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81319b8e9e14a29c9f32788eadfe6439"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a81319b8e9e14a29c9f32788eadfe6439">max_iterations</a> = 30</td></tr>
+<tr class="separator:a81319b8e9e14a29c9f32788eadfe6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088a50faa437309e1b5f6ba5da7241ba"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a088a50faa437309e1b5f6ba5da7241ba">num_guesses_to_try_educated</a> = 100</td></tr>
+<tr class="separator:a088a50faa437309e1b5f6ba5da7241ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1767860181ffb89a2000907f9ffc747"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ae1767860181ffb89a2000907f9ffc747">num_guesses_to_try_other</a> = 100</td></tr>
+<tr class="separator:ae1767860181ffb89a2000907f9ffc747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d62a42a48fc61c110e2d8ca0a6f7b3b"><td class="memItemLeft" align="right" valign="top">bool const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b">should_reorder_guesses</a> = true</td></tr>
+<tr class="separator:a5d62a42a48fc61c110e2d8ca0a6f7b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cddfd62ca7ef4bd61ed4ef0ba00f72c"><td class="memItemLeft" align="right" valign="top">bool const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a9cddfd62ca7ef4bd61ed4ef0ba00f72c">return_default_on_failure</a> = false</td></tr>
+<tr class="separator:a9cddfd62ca7ef4bd61ed4ef0ba00f72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af343479f291e508daae80b942233e395"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af343479f291e508daae80b942233e395">lower_bounds</a></td></tr>
+<tr class="separator:af343479f291e508daae80b942233e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f09bbd32fd1332a877072d2e36a444"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a46f09bbd32fd1332a877072d2e36a444">upper_bounds</a></td></tr>
+<tr class="separator:a46f09bbd32fd1332a877072d2e36a444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c9e81577f31d18fee2eb900e5b934c"><td class="memItemLeft" align="right" valign="top">double const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#aa2c9e81577f31d18fee2eb900e5b934c">abs_error_tol</a> = 0.1</td></tr>
+<tr class="separator:aa2c9e81577f31d18fee2eb900e5b934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add79477e4fd78bfbbd79a84ef0fbf43d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#add79477e4fd78bfbbd79a84ef0fbf43d">absolute_error_tolerances</a></td></tr>
+<tr class="separator:add79477e4fd78bfbbd79a84ef0fbf43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777dd7a51d2875f942cd24abd787cf46"><td class="memItemLeft" align="right" valign="top">double const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a777dd7a51d2875f942cd24abd787cf46">rel_error_tol</a> = 1e-3</td></tr>
+<tr class="separator:a777dd7a51d2875f942cd24abd787cf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3836facf5cbd16c504b526a6c454c436"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a3836facf5cbd16c504b526a6c454c436">relative_error_tolerances</a></td></tr>
+<tr class="separator:a3836facf5cbd16c504b526a6c454c436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a062efbd12cfd7a493a638ef7d21d856d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062efbd12cfd7a493a638ef7d21d856d">&#9670;&nbsp;</a></span>eclp_print</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool eclp_print = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00012">12</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 10 2020 02:53:24 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 11 2020 22:47:30 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
