@@ -1,5 +1,5 @@
 <map id="RHprof" name="RHprof">
-<area shape="rect" id="node1" title="Preconditions: RH is between 0 and 1." alt="" coords="501,115,564,141"/>
+<area shape="rect" id="node1" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="501,115,564,141"/>
 <area shape="rect" id="node2" href="$c3_can_a_c_8cpp.html#af62134517d9ef2a41c9fbad12d961dd2" title=" " alt="" coords="308,8,385,35"/>
 <area shape="rect" id="node4" href="$_can_a_c_8cpp.html#a0332b615afd75a541e2e0730a15d39e0" title=" " alt="" coords="315,60,378,87"/>
 <area shape="rect" id="node6" href="$canac__with__collatz_8hpp.html#a80bef649007309c406cdbc790a9ef36b" title=" " alt="" coords="303,115,390,141"/>

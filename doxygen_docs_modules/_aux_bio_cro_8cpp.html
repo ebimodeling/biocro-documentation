@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad5f0fc680176f312e47c32701ce779f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">RH and Wind profile function.  <a href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7">More...</a><br /></td></tr>
 <tr class="separator:ad5f0fc680176f312e47c32701ce779f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d2cdd07093428af4830f4c8afd660c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c">RHprof</a> (double RH, int nlayers, double *relative_humidity_profile)</td></tr>
-<tr class="memdesc:aa4d2cdd07093428af4830f4c8afd660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preconditions: <code>RH</code> is between 0 and 1.  <a href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c">More...</a><br /></td></tr>
+<tr class="memdesc:aa4d2cdd07093428af4830f4c8afd660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a relative humidity profile throughout a multilayer canopy.  <a href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c">More...</a><br /></td></tr>
 <tr class="separator:aa4d2cdd07093428af4830f4c8afd660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2905c23b422ad454d9577841ca594d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a2905c23b422ad454d9577841ca594d0d">LNprof</a> (double LeafN, double LAI, int nlayers, double kpLN, double *leafN_profile)</td></tr>
 <tr class="separator:a2905c23b422ad454d9577841ca594d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +224,7 @@ Functions</h2></td></tr>
 <p>Calculate the exponential term of the Arrhenius function.</p>
 <p>The Arrhenius equation is A * e^(c - E_a / R / temperature). The result has the same units as A, which depends on the quantity of interest. In order to make this function reusable, it only calculates the exponential term, which is always dimensionless. c dimensionless activation_energy J / mol thermodynamic_temperature k return value dimensionless </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00996">996</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01075">1075</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00699">699</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00290">290</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00369">369</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +456,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">343</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">422</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__evapotrans2_8h_source.html#l00078">ed_evapotrans2::do_operation()</a>, <a class="el" href="ed__canac__leaf_8h_source.html#l00132">ed_canac_leaf::do_operation()</a>, and <a class="el" href="c4__leaf__photosynthesis_8h_source.html#l00141">c4_leaf_photosynthesis::do_operation()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -493,11 +493,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00987">987</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01066">1066</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00987">get_soil_properties()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l01066">get_soil_properties()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="soil__type__selector_8hpp_source.html#l00066">soil_type_selector::do_operation()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00987">get_soil_properties()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="soil__type__selector_8hpp_source.html#l00066">soil_type_selector::do_operation()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l01066">get_soil_properties()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -539,7 +539,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00991">991</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01070">1070</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00114">soil_parameters</a>.</p>
 
@@ -595,9 +595,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00502">502</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00581">581</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">saturation_vapor_pressure()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">saturation_vapor_pressure()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ed__abc__blc_8h_source.html#l00077">ed_abc_blc::do_operation()</a>, and <a class="el" href="collatz__leaf_8cpp_source.html#l00136">collatz_leaf::do_operation()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -740,7 +740,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00274">274</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00353">353</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="canac__with__collatz_8hpp_source.html#l00011">newCanAC()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00184">multilayer_canopy_properties::run()</a>, and <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00202">ed_multilayer_canopy_properties::run()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -828,7 +828,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00919">919</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00998">998</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="no__leaf__resp__partitioning__growth__calculator_8hpp_source.html#l00087">no_leaf_resp_partitioning_growth_calculator::do_operation()</a>, and <a class="el" href="partitioning__growth__calculator_8hpp_source.html#l00088">partitioning_growth_calculator::do_operation()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -878,11 +878,40 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Preconditions: <code>RH</code> is between 0 and 1. </p>
-<p><code>nlayers</code> is at least 1 and at most MAXLAY. <code>relative_humidity_profile</code> is an array of at least size <code>nlayers</code>.</p>
-<p>Postconditions: <code>relative_humidity_profile</code> contains values between 0 and 1. </p>
+<p>Calculates a relative humidity profile throughout a multilayer canopy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">RH</td><td>relative humidity just above the canopy <code>(0 &lt;= RH &lt;= 1)</code></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nlayers</td><td>number of layers in the canopy <code>(1 &lt;= nlayers &lt;= MAXLAY)</code></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">relative_humidity_profile</td><td>array of relative humidity values expressed as fractions between 0 and 1, where the value at index <code>i</code> represents relative humidity at the bottom of canopy layer <code>i</code> and <code>i = 0</code> corresponds to the top canopy layer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>One can derive an expression for the relative humidity (<code>h</code>) throughout a plant canopy by making the following assumptions:</p><ul>
+<li><code>h</code> at the top of the canopy is the same as the ambient value (<code>h = h0</code>)</li>
+<li><code>h</code> at the bottom of the canopy is one hundred percent (<code>h = 1</code>)</li>
+<li><code>h</code> follows an exponential profile throughout the canopy</li>
+</ul>
+<p>To enforce the exponential profile, we can write</p>
+<p><code>h(x) = A * exp(B * x)</code> [Equation (1)]</p>
+<p>where <code>x</code> is a normalized expression of depth within the canopy (<code>x = 0</code> at the canopy top and <code>x = 1</code> at the bottom) and the values of <code>A</code> and <code>B</code> are yet to be determined.</p>
+<p>To enforce the <code>h</code> value at the canopy top, we require <code>h0 = h(0) = A</code>; in other words, <code>A = h0</code>. To enforce the <code>h</code> value at the canopy bottom, we require <code>1 = h(1) = h0 * exp(B)</code>; in other words, <code>B = -ln(h0)</code>. Putting it all together, we see that under these assumptions, <code>h</code> throughout the canopy is given by</p>
+<p><code>h(x) = h0 * exp(-ln(h0) * x)</code> [Equation (2)]</p>
+<p>If we additionally assume that <code>h0</code> is close to 1, we can simplify <code>B = -ln(h0)</code> by taking just the linear part of the Taylor series for <code>-ln(h0)</code> centered at <code>h0 = 1</code>, which is <code>B = -(h0 - 1)</code>. With this modification, we have</p>
+<p><code>h(x) = h0 * exp((1 - h0) * x)</code> [Equation (3)]</p>
+<p>When <code>h0 = 1</code>, Equations (2) and (3) are in perfect agreement, reducing to <code>h(x) = 1</code>. However, as <code>h0</code> deviates further from <code>h0 = 1</code>, the linearization for <code>B</code> becomes less accurate and the two versions diverge, especially deeper in the canopy. For example, when <code>h0 = 0.7</code>, Equation (2) becomes <code>h(x) = 0.7 * exp(0.357 * x)</code> while Equation (3) becomes <code>h(x) = 0.7 * exp(0.300 * x)</code>. Both versions agree at the top of the canopy where <code>x = 0</code> and <code>h(x) = 1</code>, but are different at the bottom: 1.00 vs. 0.94. For lower <code>h0</code> values, the difference at the canopy bottom becomes even more pronounced, significantly violating one of the original assumptions. However, there isn't a strong scientific justification for assuming humidity is 1 at the bottom of <em>every</em> canopy, so the error due to the approximation for <code>B</code> is deemed to be acceptable.</p>
+<hr  />
+<p>In BioCro, we divide the canopy into equally sized layers; i.e., the interval <code>0 &lt;= x &lt;= 1</code> is divided into <code>n</code> segments of length <code>1 / n</code> by <code>n + 1</code> boundaries occurring at <code>x = 0</code>, <code>x = 1 / n</code>, <code>x = 2 / n</code>, ..., <code>x = 1</code>. Here we wish to find the <code>h</code> value at the bottom of each layer, so we use Equation (3) with <code>x = 1 / n</code>, <code>x = 2 / n</code>, ..., <code>x = 1</code>.</p>
+<p>In the code below, the <code>RH</code> input argument corresponds to <code>h0</code>, the exponential growth constant <code>kh</code> corresponds to <code>B</code>, and <code>nlayers</code> corresponds to <code>n</code>.</p>
+<hr  />
+<p>Note 1: the explanation for this code was "reverse engineered" by EBL from some crytpic documentation found in earlier versions of this function and from Stephen Humphries's thesis, which is not available online:</p>
+<p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change? : development and experiments with WIMOVAC : (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
+<hr  />
+<p>Note 2: Equation (2) can be rewritten by noting that <code>h0 = exp(ln(h0))</code>. With this replacement, the equation becomes</p>
+<p><code>h(x) = exp(ln(h0) - ln(h0) * x) = exp(-B * (1 - x))</code></p>
+<p>The equation takes this form in Humphries's thesis. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00255">255</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00334">334</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>.</p>
 
@@ -894,7 +923,7 @@ Functions</h2></td></tr>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph.png" border="0" usemap="#_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph" alt=""/></div>
 <map name="_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph" id="_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph">
-<area shape="rect" title="Preconditions: RH is between 0 and 1." alt="" coords="501,115,564,141"/>
+<area shape="rect" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="501,115,564,141"/>
 <area shape="rect" href="c3_can_a_c_8cpp.html#af62134517d9ef2a41c9fbad12d961dd2" title=" " alt="" coords="308,8,385,35"/>
 <area shape="rect" href="_can_a_c_8cpp.html#a0332b615afd75a541e2e0730a15d39e0" title=" " alt="" coords="315,60,378,87"/>
 <area shape="rect" href="canac__with__collatz_8hpp.html#a80bef649007309c406cdbc790a9ef36b" title=" " alt="" coords="303,115,390,141"/>
@@ -948,7 +977,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00919">919</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00998">998</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -973,9 +1002,9 @@ Functions</h2></td></tr>
 <p>In 1996, some of the fitting coefficients were updated. Here we use these values, found in <a href="http://www.hygrometers.com/wp-content/uploads/CR-1A-users-manual-2009-12.pdf">a Buck hygrometer manual</a>, and also displayed on the <a href="https://en.wikipedia.org/wiki/Arden_Buck_equation">Wikipedia page for the Arden Buck equation</a>.</p>
 <p>We use the values for vapor over water (rather than ice) and disregard the "enhancement factor" since we are only concerned with the pressure at saturation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">343</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">422</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">ed_rh_to_mole_fraction::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">ed_gas_concentrations::do_operation()</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00113">ed_ball_berry::do_operation()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00235">ed_nikolov_conductance_free::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00502">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">ed_rh_to_mole_fraction::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">ed_gas_concentrations::do_operation()</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00113">ed_ball_berry::do_operation()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00235">ed_nikolov_conductance_free::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00581">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">SoilEvapo()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -1031,7 +1060,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00919">919</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00998">998</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1139,9 +1168,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">552</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">631</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00284">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00301">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00319">TempToSFS()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00363">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00380">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00398">TempToSFS()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="soil__evaporation_8hpp_source.html#l00078">soil_evaporation::do_operation()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1378,7 +1407,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00699">699</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00141">two_layer_soil_profile::do_operation()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1504,9 +1533,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00284">284</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00363">363</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">SoilEvapo()</a>.</p>
 <div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1551,9 +1580,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00301">301</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00380">380</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">SoilEvapo()</a>.</p>
 <div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-18-summary" class="dynsummary" style="display:block;">
@@ -1592,9 +1621,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00319">319</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00398">398</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00057">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00075">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00164">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">SoilEvapo()</a>.</p>
 <div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-19-summary" class="dynsummary" style="display:block;">
@@ -1639,7 +1668,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00309">309</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00388">388</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1735,7 +1764,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00699">699</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="one__layer__soil__profile_8hpp_source.html#l00078">one_layer_soil_profile::do_operation()</a>.</p>
 <div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1825,7 +1854,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></li>
-    <li class="footer">Generated on Fri Dec 11 2020 22:47:58 for The BioCro C++ Library by
+    <li class="footer">Generated on Wed Dec 16 2020 21:28:53 for The BioCro C++ Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

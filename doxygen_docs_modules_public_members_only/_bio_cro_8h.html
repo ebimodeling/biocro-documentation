@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a240cad92527a319dd4e8e0d32cd821e6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsoil_m_l__str.html">soilML_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bio_cro_8h.html#a240cad92527a319dd4e8e0d32cd821e6">soilML</a> (double precipit, double transp, double *cws, double soildepth, double *depths, double soil_field_capacity, double soil_wilting_point, double soil_saturation_capacity, double soil_air_entry, double soil_saturated_conductivity, double soil_b_coefficient, double soil_sand_content, double phi1, double phi2, int wsFun, int layers, double rootDB, double LAI, double k, double AirTemp, double IRad, double winds, double RelH, int hydrDist, double rfl, double rsec, double rsdf, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat, double stefan_boltzman)</td></tr>
 <tr class="separator:a240cad92527a319dd4e8e0d32cd821e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d2cdd07093428af4830f4c8afd660c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c">RHprof</a> (double RH, int nlayers, double *relative_humidity_profile)</td></tr>
-<tr class="memdesc:aa4d2cdd07093428af4830f4c8afd660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preconditions: <code>RH</code> is between 0 and 1.  <a href="_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c">More...</a><br /></td></tr>
+<tr class="memdesc:aa4d2cdd07093428af4830f4c8afd660c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a relative humidity profile throughout a multilayer canopy.  <a href="_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c">More...</a><br /></td></tr>
 <tr class="separator:aa4d2cdd07093428af4830f4c8afd660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f0fc680176f312e47c32701ce779f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7">WINDprof</a> (double WindSpeed, double LAI, int nlayers, double *wind_speed_profile)</td></tr>
 <tr class="memdesc:ad5f0fc680176f312e47c32701ce779f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">RH and Wind profile function.  <a href="_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7">More...</a><br /></td></tr>
@@ -410,7 +410,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3_can_a_c_8cpp_source.html#l00001">1</a> of file <a class="el" href="c3_can_a_c_8cpp_source.html">c3CanAC.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00027">c3photoC()</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00095">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00274">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00255">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00149">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00233">WINDprof()</a>.</p>
+<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00027">c3photoC()</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00095">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00353">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00334">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00149">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00233">WINDprof()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -423,7 +423,7 @@ Functions</h2></td></tr>
 <area shape="rect" href="c3photo_8cpp.html#a682640ed3b33e505744114962260ca52" title=" " alt="" coords="145,157,222,184"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ac5f31df2b025300918f031bf8f1e51d9" title="Light Macro Environment." alt="" coords="151,208,216,235"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a2905c23b422ad454d9577841ca594d0d" title=" " alt="" coords="152,259,215,285"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c" title="Preconditions: RH is between 0 and 1." alt="" coords="152,309,215,336"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="152,309,215,336"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a29eacaa214f1899c9df199ac80d0e1ca" title="Computation of an n&#45;layered light profile from the direct light Idir, diffuse light Idiff,..." alt="" coords="152,360,215,387"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7" title="RH and Wind profile function." alt="" coords="144,411,223,437"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="284,5,459,32"/>
@@ -488,7 +488,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3_evapo_trans_8cpp_source.html#l00001">1</a> of file <a class="el" href="c3_evapo_trans_8cpp_source.html">c3EvapoTrans.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00284">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00301">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00319">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00363">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00380">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00398">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -739,7 +739,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_can_a_c_8cpp_source.html#l00001">1</a> of file <a class="el" href="_can_a_c_8cpp_source.html">CanAC.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="c4photo_8h_source.html#l00009">c4_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c4photo_8cpp_source.html#l00015">c4photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00053">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00051">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00052">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00350">EvapoTrans2()</a>, <a class="el" href="c4photo_8h_source.html#l00012">c4_str::GrossAssim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00010">c4_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00095">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00274">LNprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00050">Can_Str::result_matrix</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00255">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00149">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00233">WINDprof()</a>.</p>
+<p class="reference">References <a class="el" href="c4photo_8h_source.html#l00009">c4_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c4photo_8cpp_source.html#l00015">c4photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00053">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00051">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00052">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00429">EvapoTrans2()</a>, <a class="el" href="c4photo_8h_source.html#l00012">c4_str::GrossAssim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00010">c4_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00095">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00353">LNprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00050">Can_Str::result_matrix</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00334">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00149">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00233">WINDprof()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -752,7 +752,7 @@ Functions</h2></td></tr>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a5272d35a20edaa0de28ca4ccae5b10a5" title=" " alt="" coords="116,56,215,83"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ac5f31df2b025300918f031bf8f1e51d9" title="Light Macro Environment." alt="" coords="133,107,198,133"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a2905c23b422ad454d9577841ca594d0d" title=" " alt="" coords="134,157,197,184"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c" title="Preconditions: RH is between 0 and 1." alt="" coords="134,208,197,235"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="134,208,197,235"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a29eacaa214f1899c9df199ac80d0e1ca" title="Computation of an n&#45;layered light profile from the direct light Idir, diffuse light Idiff,..." alt="" coords="134,259,197,285"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7" title="RH and Wind profile function." alt="" coords="126,309,205,336"/>
 <area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="285,5,363,32"/>
@@ -901,7 +901,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">343</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">422</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00919">919</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00998">998</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1131,11 +1131,40 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Preconditions: <code>RH</code> is between 0 and 1. </p>
-<p><code>nlayers</code> is at least 1 and at most MAXLAY. <code>relative_humidity_profile</code> is an array of at least size <code>nlayers</code>.</p>
-<p>Postconditions: <code>relative_humidity_profile</code> contains values between 0 and 1. </p>
+<p>Calculates a relative humidity profile throughout a multilayer canopy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">RH</td><td>relative humidity just above the canopy <code>(0 &lt;= RH &lt;= 1)</code></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nlayers</td><td>number of layers in the canopy <code>(1 &lt;= nlayers &lt;= MAXLAY)</code></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">relative_humidity_profile</td><td>array of relative humidity values expressed as fractions between 0 and 1, where the value at index <code>i</code> represents relative humidity at the bottom of canopy layer <code>i</code> and <code>i = 0</code> corresponds to the top canopy layer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>One can derive an expression for the relative humidity (<code>h</code>) throughout a plant canopy by making the following assumptions:</p><ul>
+<li><code>h</code> at the top of the canopy is the same as the ambient value (<code>h = h0</code>)</li>
+<li><code>h</code> at the bottom of the canopy is one hundred percent (<code>h = 1</code>)</li>
+<li><code>h</code> follows an exponential profile throughout the canopy</li>
+</ul>
+<p>To enforce the exponential profile, we can write</p>
+<p><code>h(x) = A * exp(B * x)</code> [Equation (1)]</p>
+<p>where <code>x</code> is a normalized expression of depth within the canopy (<code>x = 0</code> at the canopy top and <code>x = 1</code> at the bottom) and the values of <code>A</code> and <code>B</code> are yet to be determined.</p>
+<p>To enforce the <code>h</code> value at the canopy top, we require <code>h0 = h(0) = A</code>; in other words, <code>A = h0</code>. To enforce the <code>h</code> value at the canopy bottom, we require <code>1 = h(1) = h0 * exp(B)</code>; in other words, <code>B = -ln(h0)</code>. Putting it all together, we see that under these assumptions, <code>h</code> throughout the canopy is given by</p>
+<p><code>h(x) = h0 * exp(-ln(h0) * x)</code> [Equation (2)]</p>
+<p>If we additionally assume that <code>h0</code> is close to 1, we can simplify <code>B = -ln(h0)</code> by taking just the linear part of the Taylor series for <code>-ln(h0)</code> centered at <code>h0 = 1</code>, which is <code>B = -(h0 - 1)</code>. With this modification, we have</p>
+<p><code>h(x) = h0 * exp((1 - h0) * x)</code> [Equation (3)]</p>
+<p>When <code>h0 = 1</code>, Equations (2) and (3) are in perfect agreement, reducing to <code>h(x) = 1</code>. However, as <code>h0</code> deviates further from <code>h0 = 1</code>, the linearization for <code>B</code> becomes less accurate and the two versions diverge, especially deeper in the canopy. For example, when <code>h0 = 0.7</code>, Equation (2) becomes <code>h(x) = 0.7 * exp(0.357 * x)</code> while Equation (3) becomes <code>h(x) = 0.7 * exp(0.300 * x)</code>. Both versions agree at the top of the canopy where <code>x = 0</code> and <code>h(x) = 1</code>, but are different at the bottom: 1.00 vs. 0.94. For lower <code>h0</code> values, the difference at the canopy bottom becomes even more pronounced, significantly violating one of the original assumptions. However, there isn't a strong scientific justification for assuming humidity is 1 at the bottom of <em>every</em> canopy, so the error due to the approximation for <code>B</code> is deemed to be acceptable.</p>
+<hr  />
+<p>In BioCro, we divide the canopy into equally sized layers; i.e., the interval <code>0 &lt;= x &lt;= 1</code> is divided into <code>n</code> segments of length <code>1 / n</code> by <code>n + 1</code> boundaries occurring at <code>x = 0</code>, <code>x = 1 / n</code>, <code>x = 2 / n</code>, ..., <code>x = 1</code>. Here we wish to find the <code>h</code> value at the bottom of each layer, so we use Equation (3) with <code>x = 1 / n</code>, <code>x = 2 / n</code>, ..., <code>x = 1</code>.</p>
+<p>In the code below, the <code>RH</code> input argument corresponds to <code>h0</code>, the exponential growth constant <code>kh</code> corresponds to <code>B</code>, and <code>nlayers</code> corresponds to <code>n</code>.</p>
+<hr  />
+<p>Note 1: the explanation for this code was "reverse engineered" by EBL from some crytpic documentation found in earlier versions of this function and from Stephen Humphries's thesis, which is not available online:</p>
+<p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change? : development and experiments with WIMOVAC : (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
+<hr  />
+<p>Note 2: Equation (2) can be rewritten by noting that <code>h0 = exp(ln(h0))</code>. With this replacement, the equation becomes</p>
+<p><code>h(x) = exp(ln(h0) - ln(h0) * x) = exp(-B * (1 - x))</code></p>
+<p>The equation takes this form in Humphries's thesis. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00255">255</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00334">334</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>.</p>
 
@@ -1147,7 +1176,7 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_bio_cro_8h_aa4d2cdd07093428af4830f4c8afd660c_icgraph.png" border="0" usemap="#_bio_cro_8h_aa4d2cdd07093428af4830f4c8afd660c_icgraph" alt=""/></div>
 <map name="_bio_cro_8h_aa4d2cdd07093428af4830f4c8afd660c_icgraph" id="_bio_cro_8h_aa4d2cdd07093428af4830f4c8afd660c_icgraph">
-<area shape="rect" title="Preconditions: RH is between 0 and 1." alt="" coords="267,107,329,133"/>
+<area shape="rect" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="267,107,329,133"/>
 <area shape="rect" href="c3_can_a_c_8cpp.html#af62134517d9ef2a41c9fbad12d961dd2" title=" " alt="" coords="73,5,151,32"/>
 <area shape="rect" href="_can_a_c_8cpp.html#a0332b615afd75a541e2e0730a15d39e0" title=" " alt="" coords="81,56,143,83"/>
 <area shape="rect" href="canac__with__collatz_8hpp.html#a80bef649007309c406cdbc790a9ef36b" title=" " alt="" coords="69,107,155,133"/>
@@ -1262,9 +1291,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00552">552</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">631</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00343">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00284">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00301">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00319">TempToSFS()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00422">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00363">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00380">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00398">TempToSFS()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1488,7 +1517,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00699">699</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1701,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00620">620</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00699">699</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1744,7 +1773,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_bio_cro_8h.html">BioCro.h</a></li>
-    <li class="footer">Generated on Fri Dec 11 2020 22:48:10 for The BioCro C++ Library by
+    <li class="footer">Generated on Wed Dec 16 2020 21:29:05 for The BioCro C++ Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
