@@ -151,31 +151,31 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a00b9d2a11de3ede9d3ec7388a1986225"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a00b9d2a11de3ede9d3ec7388a1986225">get_module_inputs</a> (string module_name)</td></tr>
+<tr class="memitem:a00b9d2a11de3ede9d3ec7388a1986225"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a00b9d2a11de3ede9d3ec7388a1986225">get_module_inputs</a> (string module_name)</td></tr>
 <tr class="memdesc:a00b9d2a11de3ede9d3ec7388a1986225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list (presented as a sorted vector of strings) of all inputs for the module having name module_name.  <a href="module__dependency__utilities_8cpp.html#a00b9d2a11de3ede9d3ec7388a1986225">More...</a><br /></td></tr>
 <tr class="separator:a00b9d2a11de3ede9d3ec7388a1986225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f348ce6f97125b22e943f5c6a609939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a3f348ce6f97125b22e943f5c6a609939">get_module_outputs</a> (string module_name)</td></tr>
+<tr class="memitem:a3f348ce6f97125b22e943f5c6a609939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a3f348ce6f97125b22e943f5c6a609939">get_module_outputs</a> (string module_name)</td></tr>
 <tr class="memdesc:a3f348ce6f97125b22e943f5c6a609939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list (presented as a sorted vector of strings) of all outputs for the module having name module_name.  <a href="module__dependency__utilities_8cpp.html#a3f348ce6f97125b22e943f5c6a609939">More...</a><br /></td></tr>
 <tr class="separator:a3f348ce6f97125b22e943f5c6a609939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28395d96ccaf43116bd4656097979d8a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a28395d96ccaf43116bd4656097979d8a">depends_on</a> (string m1, string m2)</td></tr>
 <tr class="memdesc:a28395d96ccaf43116bd4656097979d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the module named by m1 depends on the module named by m2, returning true if it does and false if not.  <a href="module__dependency__utilities_8cpp.html#a28395d96ccaf43116bd4656097979d8a">More...</a><br /></td></tr>
 <tr class="separator:a28395d96ccaf43116bd4656097979d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9c50cc2f222a71c9365788833336340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="module__dependency__utilities_8cpp.html#a9d3e91fe9471727a45e77acac9064214">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#ae9c50cc2f222a71c9365788833336340">get_dependency_graph</a> (<a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
+<tr class="memitem:ae9c50cc2f222a71c9365788833336340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="module__dependency__utilities_8cpp.html#a9d3e91fe9471727a45e77acac9064214">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#ae9c50cc2f222a71c9365788833336340">get_dependency_graph</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
 <tr class="memdesc:ae9c50cc2f222a71c9365788833336340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a graph that models the dependency structure of the steady-state modules listed in module_names.  <a href="module__dependency__utilities_8cpp.html#ae9c50cc2f222a71c9365788833336340">More...</a><br /></td></tr>
 <tr class="separator:ae9c50cc2f222a71c9365788833336340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d4b95b648daed0361a13b8953f0e0d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a3d4b95b648daed0361a13b8953f0e0d1">has_cycle</a> (<a class="el" href="module__dependency__utilities_8cpp.html#a9d3e91fe9471727a45e77acac9064214">Graph</a> g)</td></tr>
 <tr class="memdesc:a3d4b95b648daed0361a13b8953f0e0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a directed graph g, return true if g has a cycle, false otherwise.  <a href="module__dependency__utilities_8cpp.html#a3d4b95b648daed0361a13b8953f0e0d1">More...</a><br /></td></tr>
 <tr class="separator:a3d4b95b648daed0361a13b8953f0e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5856a9dbcbed658f7e55b0c422ec032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#af5856a9dbcbed658f7e55b0c422ec032">has_cyclic_dependency</a> (<a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
+<tr class="memitem:af5856a9dbcbed658f7e55b0c422ec032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#af5856a9dbcbed658f7e55b0c422ec032">has_cyclic_dependency</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
 <tr class="memdesc:af5856a9dbcbed658f7e55b0c422ec032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of steady-state module names (presented as a vector of strings), determine if the list can be put in a suitable order for evaluating the modules.  <a href="module__dependency__utilities_8cpp.html#af5856a9dbcbed658f7e55b0c422ec032">More...</a><br /></td></tr>
 <tr class="separator:af5856a9dbcbed658f7e55b0c422ec032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77eedd73647641f4392d69e39a465142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a77eedd73647641f4392d69e39a465142">order_ok</a> (<a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
+<tr class="memitem:a77eedd73647641f4392d69e39a465142"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a77eedd73647641f4392d69e39a465142">order_ok</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
 <tr class="memdesc:a77eedd73647641f4392d69e39a465142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the steady-state modules in <code>module_names</code> need to be reordered before evaluation.  <a href="module__dependency__utilities_8cpp.html#a77eedd73647641f4392d69e39a465142">More...</a><br /></td></tr>
 <tr class="separator:a77eedd73647641f4392d69e39a465142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dcce921e2edbfd9c97e3b0648233e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="module__dependency__utilities_8cpp.html#a21c11b22ea68debff88e63a8b43252f5">vertex_list</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#aad2dcce921e2edbfd9c97e3b0648233e">get_topological_ordering</a> (const <a class="el" href="module__dependency__utilities_8cpp.html#a9d3e91fe9471727a45e77acac9064214">Graph</a> &amp;g)</td></tr>
 <tr class="memdesc:aad2dcce921e2edbfd9c97e3b0648233e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a directed acyclic graph g, return a ordered list of the vertices (presented as a vertex_list object) such that for each edge of the graph, the source vertex of the edge occurs in the list before the target vertex of the edge.  <a href="module__dependency__utilities_8cpp.html#aad2dcce921e2edbfd9c97e3b0648233e">More...</a><br /></td></tr>
 <tr class="separator:aad2dcce921e2edbfd9c97e3b0648233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496239ab0d24a759d07e848d985e0139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a496239ab0d24a759d07e848d985e0139">get_evaluation_order</a> (<a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
+<tr class="memitem:a496239ab0d24a759d07e848d985e0139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__dependency__utilities_8cpp.html#a496239ab0d24a759d07e848d985e0139">get_evaluation_order</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> module_names)</td></tr>
 <tr class="memdesc:a496239ab0d24a759d07e848d985e0139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of steady-state module names (presented as a vector of strings), return the same list in a suitable order for evaluating the modules.  <a href="module__dependency__utilities_8cpp.html#a496239ab0d24a759d07e848d985e0139">More...</a><br /></td></tr>
 <tr class="separator:a496239ab0d24a759d07e848d985e0139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -375,7 +375,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="module__dependency__utilities_8cpp.html#a9d3e91fe9471727a45e77acac9064214">Graph</a> get_dependency_graph </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
           <td class="paramname"><em>module_names</em></td><td>)</td>
           <td></td>
         </tr>
@@ -435,9 +435,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_evaluation_order </td>
+          <td class="memname"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_evaluation_order </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
           <td class="paramname"><em>module_names</em></td><td>)</td>
           <td></td>
         </tr>
@@ -503,7 +503,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_module_inputs </td>
+          <td class="memname"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_module_inputs </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>module_name</em></td><td>)</td>
@@ -552,7 +552,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_module_outputs </td>
+          <td class="memname"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> get_module_outputs </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>module_name</em></td><td>)</td>
@@ -700,7 +700,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool has_cyclic_dependency </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
           <td class="paramname"><em>module_names</em></td><td>)</td>
           <td></td>
         </tr>
@@ -761,7 +761,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool order_ok </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="validate__system_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td>
           <td class="paramname"><em>module_names</em></td><td>)</td>
           <td></td>
         </tr>
@@ -813,7 +813,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 11 2021 20:44:22 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 25 2021 19:45:42 for The BioCro C++ Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>
