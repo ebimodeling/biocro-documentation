@@ -48,6 +48,19 @@ var hierarchy =
     [ "soilML_str", "structsoil_m_l__str.html", null ],
     [ "soilText_str", "structsoil_text__str.html", null ],
     [ "SteadyModule", null, [
+      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c4_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
+        [ "ten_layer_c4_canopy", "classten__layer__c4__canopy.html", null ]
+      ] ],
+      [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classmultilayer__canopy__photosynthesis.html", [
+        [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", null ]
+      ] ],
+      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c3_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
+        [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", null ]
+      ] ],
+      [ "FvCB", "class_fv_c_b.html", null ],
+      [ "Module_1", "class_module__1.html", null ],
+      [ "Module_2", "class_module__2.html", null ],
+      [ "Module_3", "class_module__3.html", null ],
       [ "ball_berry_module", "classball__berry__module.html", null ],
       [ "big_leaf_multilayer_canopy", "classbig__leaf__multilayer__canopy.html", null ],
       [ "biomass_leaf_n_limitation", "classbiomass__leaf__n__limitation.html", null ],
@@ -84,7 +97,6 @@ var hierarchy =
       [ "ed_stomata_water_stress_linear", "classed__stomata__water__stress__linear.html", null ],
       [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", null ],
       [ "fake_solar", "classfake__solar.html", null ],
-      [ "FvCB", "class_fv_c_b.html", null ],
       [ "golden_ratio_hyperbola", "classgolden__ratio__hyperbola.html", null ],
       [ "grimm_soybean_flowering_calculator", "classgrimm__soybean__flowering__calculator.html", null ],
       [ "harmonic_energy", "classharmonic__energy.html", null ],
@@ -94,22 +106,10 @@ var hierarchy =
       [ "leaf_water_stress_exponential", "classleaf__water__stress__exponential.html", null ],
       [ "light_from_solar", "classlight__from__solar.html", null ],
       [ "linear_vmax_from_leaf_n", "classlinear__vmax__from__leaf__n.html", null ],
-      [ "Module_1", "class_module__1.html", null ],
-      [ "Module_2", "class_module__2.html", null ],
-      [ "Module_3", "class_module__3.html", null ],
       [ "multilayer_canopy_integrator", "classmultilayer__canopy__integrator.html", [
         [ "ten_layer_canopy_integrator", "classten__layer__canopy__integrator.html", null ]
       ] ],
       [ "multilayer_canopy_photosynthesis< canopy_module_type, leaf_module_type >", "classmultilayer__canopy__photosynthesis.html", null ],
-      [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classmultilayer__canopy__photosynthesis.html", [
-        [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", null ]
-      ] ],
-      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c3_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
-        [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", null ]
-      ] ],
-      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c4_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
-        [ "ten_layer_c4_canopy", "classten__layer__c4__canopy.html", null ]
-      ] ],
       [ "multilayer_canopy_properties", "classmultilayer__canopy__properties.html", [
         [ "ten_layer_canopy_properties", "classten__layer__canopy__properties.html", null ]
       ] ],

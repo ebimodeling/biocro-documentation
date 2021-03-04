@@ -1,6 +1,8 @@
 var annotated_dup =
 [
-    [ "se_module", "namespacese__module.html", "namespacese__module" ],
+    [ "se_module", "namespacese__module.html", [
+      [ "base", "classse__module_1_1base.html", "classse__module_1_1base" ]
+    ] ],
     [ "aba_decay", "classaba__decay.html", "classaba__decay" ],
     [ "ball_berry_module", "classball__berry__module.html", "classball__berry__module" ],
     [ "big_leaf_multilayer_canopy", "classbig__leaf__multilayer__canopy.html", "classbig__leaf__multilayer__canopy" ],

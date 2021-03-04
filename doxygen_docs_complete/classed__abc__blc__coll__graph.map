@@ -1,5 +1,5 @@
 <map id="ed_abc_blc" name="ed_abc_blc">
-<area shape="rect" id="node1" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)...." alt="" coords="13,155,101,181"/>
+<area shape="rect" id="node1" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)." alt="" coords="13,155,101,181"/>
 <area shape="rect" id="node2" href="$class_steady_module.html" title=" " alt="" coords="5,80,109,107"/>
 <area shape="rect" id="node3" href="$class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="25,5,89,32"/>
 </map>

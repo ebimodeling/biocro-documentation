@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['make_5fvector_163',['make_vector',['../_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895',1,'make_vector(SEXP const &amp;r_string_vector):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8h.html#ac5b5706bd38a826b60e6e1ec74e69a24',1,'make_vector(SEXP const &amp;r_string_vector):&#160;R_helper_functions.cpp']]],
+  ['make_5fvector_163',['make_vector',['../_r__helper__functions_8h.html#ac5b5706bd38a826b60e6e1ec74e69a24',1,'make_vector(SEXP const &amp;r_string_vector):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895',1,'make_vector(SEXP const &amp;r_string_vector):&#160;R_helper_functions.cpp']]],
   ['map_5ffrom_5flist_164',['map_from_list',['../_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff',1,'map_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8h.html#a427d311e926df18071cfb272015d6dff',1,'map_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp']]],
-  ['map_5fvector_5ffrom_5flist_165',['map_vector_from_list',['../_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c',1,'map_vector_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8h.html#a1c40ce5c7a2d8a2d3968c7d71812002c',1,'map_vector_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp']]],
+  ['map_5fvector_5ffrom_5flist_165',['map_vector_from_list',['../_r__helper__functions_8h.html#a1c40ce5c7a2d8a2d3968c7d71812002c',1,'map_vector_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c',1,'map_vector_from_list(SEXP const &amp;list):&#160;R_helper_functions.cpp']]],
   ['math_5fconstants_166',['math_constants',['../namespacemath__constants.html',1,'']]],
   ['max_5fiterations_167',['max_iterations',['../classse__solver.html#a6eb5db680259976e44cd14c7dc924a66',1,'se_solver']]],
   ['max_5ftime_168',['max_time',['../structpush__back__state__and__time.html#af77a0354db3027f2b7ff69d53fca7530',1,'push_back_state_and_time']]],
   ['min_5frescale_5ffactor_169',['min_rescale_factor',['../classnewton__raphson__backtrack__boost.html#acb916b0d5ab78be16f32459c673ace18',1,'newton_raphson_backtrack_boost']]],
   ['min_5fstep_5ffactor_170',['min_step_factor',['../classnewton__raphson__backtrack__boost.html#a4079d7e229234b95ae23112e374833bd',1,'newton_raphson_backtrack_boost']]],
-  ['module_171',['Module',['../class_module.html',1,'Module'],['../class_module.html#a22ca75c15cbeac14960d34151f285058',1,'Module::Module()']]],
+  ['module_171',['Module',['../class_module.html#a22ca75c15cbeac14960d34151f285058',1,'Module::Module()'],['../class_module.html',1,'Module']]],
   ['module_5fdependency_5futilities_2ecpp_172',['module_dependency_utilities.cpp',['../module__dependency__utilities_8cpp.html',1,'']]],
   ['module_5fdependency_5futilities_2eh_173',['module_dependency_utilities.h',['../module__dependency__utilities_8h.html',1,'']]],
   ['module_5fhelper_5ffunctions_2ecpp_174',['module_helper_functions.cpp',['../module__helper__functions_8cpp.html',1,'']]],
