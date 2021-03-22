@@ -13,7 +13,7 @@ var classsoil__evaporation =
     [ "soil_water_content_ip", "classsoil__evaporation.html#af6f92f691315e6c4996c2d18db52dac0", null ],
     [ "soil_wilting_point_ip", "classsoil__evaporation.html#afc98cac4d76f2ee23f784fd0bcc44ec7", null ],
     [ "solar_ip", "classsoil__evaporation.html#a1c138dcaa6efa0b3ff64d843d7a4f466", null ],
-    [ "specific_heat_ip", "classsoil__evaporation.html#acbb9cb45fdade77c7cbed890b0630184", null ],
+    [ "specific_heat_of_air_ip", "classsoil__evaporation.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "stefan_boltzman_ip", "classsoil__evaporation.html#ae38028a24baf03f4fad91313397c9fdd", null ],
     [ "temp_ip", "classsoil__evaporation.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "windspeed_ip", "classsoil__evaporation.html#a0ee2446db1ff65e8de5a47b389bf22f9", null ]

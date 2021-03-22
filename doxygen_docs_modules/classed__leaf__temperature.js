@@ -10,6 +10,7 @@ var classed__leaf__temperature =
     [ "mole_fraction_h2o_leaf_surface", "classed__leaf__temperature.html#ac675aa80d899c07ef60c7d1c4c698c8d", null ],
     [ "sensible_heat_loss_op", "classed__leaf__temperature.html#ae94550ba8928700b64992a79b711b33b", null ],
     [ "solar_energy_absorbed_leaf", "classed__leaf__temperature.html#a5cabddc5a90d2c0d2a43ddb176557579", null ],
+    [ "specific_heat_of_air", "classed__leaf__temperature.html#a345bf0d8fd9232d0570dee396c845af2", null ],
     [ "temperature_air", "classed__leaf__temperature.html#a25bcce655d45dfd99af5c50b5532300c", null ],
     [ "temperature_leaf_op", "classed__leaf__temperature.html#a91344dfc9e67bdc93f88ed47a4faa71b", null ],
     [ "transpiration_energy_op", "classed__leaf__temperature.html#a75f53a71195dbc80e0f11bbdc98086ef", null ],

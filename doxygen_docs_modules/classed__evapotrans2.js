@@ -9,6 +9,7 @@ var classed__evapotrans2 =
     [ "leafwidth_ip", "classed__evapotrans2.html#a1175b5d51069ef4a5c1c32f11825b0d1", null ],
     [ "rh_ip", "classed__evapotrans2.html#af6c231b4b8c0e2ec7ef1d728b2855701", null ],
     [ "solar_energy_absorbed_leaf_ip", "classed__evapotrans2.html#ad4095a5d7fd663524fc64a6875e6e743", null ],
+    [ "specific_heat_of_air_ip", "classed__evapotrans2.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "temperature_air_ip", "classed__evapotrans2.html#ac63c97f9467e03bc37d32004c7e7ea6a", null ],
     [ "temperature_leaf_op", "classed__evapotrans2.html#a91344dfc9e67bdc93f88ed47a4faa71b", null ],
     [ "windspeed_ip", "classed__evapotrans2.html#a0ee2446db1ff65e8de5a47b389bf22f9", null ]

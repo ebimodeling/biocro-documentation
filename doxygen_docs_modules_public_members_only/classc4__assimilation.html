@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classc4__assimilation.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf using <code>c4photoC</code>.  
+<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf using <code><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC()</a></code>.  
  <a href="classc4__assimilation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>&gt;</code></p>
@@ -137,7 +137,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf using <code>c4photoC</code>. </p>
+<div class="textblock"><p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf using <code><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC()</a></code>. </p>
 <h3><a class="anchor" id="autotoc_md5"></a>
 Model overview</h3>
 <p>The Ball-Berry stomatal conductance model and the Collatz et al. model for C4 photosynthesis, along with simple 1D gas diffusion, define a set of coupled equations with three unknowns: net assimilation, intercellular CO2 concetration, and stomatal conductance. This function attempts to numerically determine these unknowns using a fixed-point iteration method. Beware: the code often fails to find the true solution, and some parts of the models are implemented incorrectly.</p>
@@ -159,6 +159,7 @@ BioCro module implementation</h3>
 <li><code>'Gs_min'</code> for the minimum stomatal conductance (only used when applying water stress via stomatal conductance)</li>
 <li><code>'StomataWS'</code> for the water stress factor</li>
 <li><code>'Catm'</code> for the atmospheric CO2 concentration</li>
+<li><code>'atmospheric_pressure'</code> for the local atmospheric pressure</li>
 <li><code>'water_stress_approach'</code> indicates whether to apply water stress via assimilation (0) or stomatal conductance (1)</li>
 <li><code>'upperT'</code> for the high temperature cutoff for rubisco activity</li>
 <li><code>'lowerT'</code> for the low temperature cutoff for rubisco activity</li>
@@ -170,7 +171,7 @@ BioCro module implementation</h3>
 <li><code>'GrossAssim'</code> for the gross CO2 assimilation rate </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00056">56</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00057">57</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad6dcf626b48763518bd3dd753c95888b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6dcf626b48763518bd3dd753c95888b">&#9670;&nbsp;</a></span>c4_assimilation()</h2>
@@ -206,7 +207,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00059">59</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00060">60</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +235,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00124">124</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00127">127</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +262,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00147">147</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c4__assimilation_8h_source.html#l00151">151</a> of file <a class="el" href="c4__assimilation_8h_source.html">c4_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +275,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classc4__assimilation.html">c4_assimilation</a></li>
-    <li class="footer">Generated on Tue Mar 9 2021 21:31:59 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 22 2021 22:40:06 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

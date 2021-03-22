@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code>c3photoC</code>.  
+<p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code>.  
  <a href="classc3__assimilation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>&gt;</code></p>
@@ -165,6 +165,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a70b8994b05d1397ed965e63489ae717a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919fc3e37d4f8a3b9037ffcc80efcbdc"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a919fc3e37d4f8a3b9037ffcc80efcbdc">Catm</a></td></tr>
 <tr class="separator:a919fc3e37d4f8a3b9037ffcc80efcbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6da92b059dda2eb15b87844f975cec"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#aad6da92b059dda2eb15b87844f975cec">atmospheric_pressure</a></td></tr>
+<tr class="separator:aad6da92b059dda2eb15b87844f975cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63241b3c5acf311f05af54241f7d697e"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a63241b3c5acf311f05af54241f7d697e">O2</a></td></tr>
 <tr class="separator:a63241b3c5acf311f05af54241f7d697e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445246433426d1729d266a2074c97fb5"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a445246433426d1729d266a2074c97fb5">theta</a></td></tr>
@@ -199,7 +201,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code>c3photoC</code>. </p>
+<div class="textblock"><p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code>. </p>
 <h3><a class="anchor" id="autotoc_md3"></a>
 Model overview</h3>
 <p>The Ball-Berry stomatal conductance model and the Farquar-von-Cammerer-Berry model for C3 photosynthesis, along with simple 1D gas diffusion, define a set of coupled equations with three unknowns: net assimilation, intercellular CO2 concetration, and stomatal conductance. This function attempts to numerically determine these unknowns using a fixed-point iteration method. Beware: the code often fails to find the true solution, and some parts of the models are implemented incorrectly.</p>
@@ -218,6 +220,7 @@ BioCro module implementation</h3>
 <li><code>'bb1'</code> for the Ball-Berry slope</li>
 <li><code>'Gs_min'</code> for the minimum stomatal conductance (only used when applying water stress via stomatal conductance)</li>
 <li><code>'Catm'</code> for the atmospheric CO2 concentration</li>
+<li><code>'atmospheric_pressure'</code> for the local atmospheric_pressure</li>
 <li><code>'O2'</code> for the atmospheric O2 concentration</li>
 <li><code>'theta'</code> for the ???</li>
 <li><code>'StomataWS'</code> for the water stress factor</li>
@@ -232,7 +235,7 @@ BioCro module implementation</h3>
 <li><code>'GrossAssim'</code> for the gross CO2 assimilation rate </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00056">56</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00057">57</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a52fad00065062e414e90baab5bfe2d8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52fad00065062e414e90baab5bfe2d8a">&#9670;&nbsp;</a></span>c3_assimilation()</h2>
@@ -268,7 +271,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00059">59</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00060">60</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -298,9 +301,9 @@ BioCro module implementation</h3>
 
 <p>Reimplemented from <a class="el" href="class_module.html#a391e9fd4e949f6e987eb654a11b1e451">Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00157">157</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00161">161</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00115">Assim_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00103">bb0</a>, <a class="el" href="c3__assimilation_8h_source.html#l00104">bb1</a>, <a class="el" href="c3photo_8cpp_source.html#l00027">c3photoC()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00106">Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00011">c3_str::Ci</a>, <a class="el" href="c3__assimilation_8h_source.html#l00117">Ci_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00111">electrons_per_carboxylation</a>, <a class="el" href="c3__assimilation_8h_source.html#l00112">electrons_per_oxygenation</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00118">GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="c3__assimilation_8h_source.html#l00105">Gs_min</a>, <a class="el" href="c3__assimilation_8h_source.html#l00116">Gs_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00100">jmax</a>, <a class="el" href="c3__assimilation_8h_source.html#l00107">O2</a>, <a class="el" href="c3__assimilation_8h_source.html#l00096">Qp</a>, <a class="el" href="c3__assimilation_8h_source.html#l00102">Rd</a>, <a class="el" href="c3__assimilation_8h_source.html#l00098">rh</a>, <a class="el" href="c3__assimilation_8h_source.html#l00109">StomataWS</a>, <a class="el" href="c3__assimilation_8h_source.html#l00108">theta</a>, <a class="el" href="c3__assimilation_8h_source.html#l00097">Tleaf</a>, <a class="el" href="c3__assimilation_8h_source.html#l00101">tpu_rate_max</a>, <a class="el" href="modules_8h_source.html#l00118">DerivModule::update()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00099">vmax</a>, and <a class="el" href="c3__assimilation_8h_source.html#l00110">water_stress_approach</a>.</p>
+<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00118">Assim_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00109">atmospheric_pressure</a>, <a class="el" href="c3__assimilation_8h_source.html#l00105">bb0</a>, <a class="el" href="c3__assimilation_8h_source.html#l00106">bb1</a>, <a class="el" href="c3photo_8cpp_source.html#l00025">c3photoC()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00108">Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00011">c3_str::Ci</a>, <a class="el" href="c3__assimilation_8h_source.html#l00120">Ci_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00114">electrons_per_carboxylation</a>, <a class="el" href="c3__assimilation_8h_source.html#l00115">electrons_per_oxygenation</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3__assimilation_8h_source.html#l00121">GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="c3__assimilation_8h_source.html#l00107">Gs_min</a>, <a class="el" href="c3__assimilation_8h_source.html#l00119">Gs_op</a>, <a class="el" href="c3__assimilation_8h_source.html#l00102">jmax</a>, <a class="el" href="c3__assimilation_8h_source.html#l00110">O2</a>, <a class="el" href="c3__assimilation_8h_source.html#l00098">Qp</a>, <a class="el" href="c3__assimilation_8h_source.html#l00104">Rd</a>, <a class="el" href="c3__assimilation_8h_source.html#l00100">rh</a>, <a class="el" href="c3__assimilation_8h_source.html#l00112">StomataWS</a>, <a class="el" href="c3__assimilation_8h_source.html#l00111">theta</a>, <a class="el" href="c3__assimilation_8h_source.html#l00099">Tleaf</a>, <a class="el" href="c3__assimilation_8h_source.html#l00103">tpu_rate_max</a>, <a class="el" href="modules_8h_source.html#l00118">DerivModule::update()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00101">vmax</a>, and <a class="el" href="c3__assimilation_8h_source.html#l00113">water_stress_approach</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -309,7 +312,7 @@ BioCro module implementation</h3>
 <div class="center"><img src="classc3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph.png" border="0" usemap="#aclassc3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph" alt=""/></div>
 <map name="aclassc3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph" id="aclassc3__assimilation_a391e9fd4e949f6e987eb654a11b1e451_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,101,57"/>
-<area shape="rect" href="c3photo_8cpp.html#a682640ed3b33e505744114962260ca52" title=" " alt="" coords="180,5,257,32"/>
+<area shape="rect" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287" title=" " alt="" coords="180,5,257,32"/>
 <area shape="rect" href="class_deriv_module.html#a3f5a6c165abfe31f11a5465b11d645be" title=" " alt="" coords="149,56,288,83"/>
 </map>
 </div>
@@ -339,7 +342,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00124">124</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00127">127</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +369,7 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00147">147</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00151">151</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -391,9 +394,35 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00115">115</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00118">118</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
+
+</div>
+</div>
+<a id="aad6da92b059dda2eb15b87844f975cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6da92b059dda2eb15b87844f975cec">&#9670;&nbsp;</a></span>atmospheric_pressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; atmospheric_pressure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00109">109</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -417,9 +446,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00103">103</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00105">105</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -443,9 +472,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00104">104</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00106">106</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -469,9 +498,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00106">106</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00108">108</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -495,9 +524,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00117">117</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00120">120</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -521,9 +550,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00111">111</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00114">114</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -547,9 +576,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00112">112</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00115">115</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -573,9 +602,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00118">118</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00121">121</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -599,9 +628,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00105">105</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00107">107</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -625,9 +654,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00116">116</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00119">119</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -651,9 +680,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00100">100</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00102">102</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +706,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00107">107</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00110">110</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -703,9 +732,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00096">96</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00098">98</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -729,9 +758,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00102">102</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00104">104</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -755,9 +784,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00098">98</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00100">100</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -781,9 +810,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00109">109</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00112">112</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -807,9 +836,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00108">108</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00111">111</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -833,9 +862,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00097">97</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00099">99</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -859,9 +888,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00101">101</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00103">103</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -885,9 +914,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00099">99</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00101">101</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -911,9 +940,9 @@ BioCro module implementation</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00110">110</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00113">113</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00157">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__assimilation_8h_source.html#l00161">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -923,7 +952,7 @@ BioCro module implementation</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 9 2021 21:30:49 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Mar 22 2021 22:38:54 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

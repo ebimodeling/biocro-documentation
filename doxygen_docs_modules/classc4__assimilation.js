@@ -4,6 +4,7 @@ var classc4__assimilation =
     [ "do_operation", "classc4__assimilation.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
     [ "alpha", "classc4__assimilation.html#a4f3788f2f4e34e1bfae7dc584eab9539", null ],
     [ "Assim_op", "classc4__assimilation.html#a29678a5f4d4da10e4d36afa9f124ed8a", null ],
+    [ "atmospheric_pressure", "classc4__assimilation.html#aad6da92b059dda2eb15b87844f975cec", null ],
     [ "bb0", "classc4__assimilation.html#a4ec1d74a4aa2bedc046ed3103e785e6c", null ],
     [ "bb1", "classc4__assimilation.html#af96679a1a4f3e29a31fab28a3e5ad165", null ],
     [ "beta", "classc4__assimilation.html#afef381ff87afd26726073b4177547f13", null ],

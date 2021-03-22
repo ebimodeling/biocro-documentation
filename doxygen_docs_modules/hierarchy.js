@@ -64,6 +64,7 @@ var hierarchy =
       [ "ball_berry_module", "classball__berry__module.html", null ],
       [ "big_leaf_multilayer_canopy", "classbig__leaf__multilayer__canopy.html", null ],
       [ "biomass_leaf_n_limitation", "classbiomass__leaf__n__limitation.html", null ],
+      [ "buck_swvp", "classbuck__swvp.html", null ],
       [ "c3_canopy", "classc3__canopy.html", null ],
       [ "c3_leaf_photosynthesis", "classc3__leaf__photosynthesis.html", null ],
       [ "c4_canopy", "classc4__canopy.html", null ],
@@ -121,6 +122,8 @@ var hierarchy =
       [ "penman_monteith_leaf_temperature", "classpenman__monteith__leaf__temperature.html", null ],
       [ "penman_monteith_transpiration", "classpenman__monteith__transpiration.html", null ],
       [ "priestley_transpiration", "classpriestley__transpiration.html", null ],
+      [ "rasmussen_specific_heat", "classrasmussen__specific__heat.html", null ],
+      [ "rh_to_mole_fraction", "classrh__to__mole__fraction.html", null ],
       [ "base", "classse__module_1_1base.html", [
         [ "ed_c4_leaf_photosynthesis", "classed__c4__leaf__photosynthesis.html", null ],
         [ "ed_c4_leaf_photosynthesis2", "classed__c4__leaf__photosynthesis2.html", null ],

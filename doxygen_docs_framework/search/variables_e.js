@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantities_691',['quantities',['../classsimultaneous__equations.html#adf6185c0f57dc700977def1db9fa0b31',1,'simultaneous_equations::quantities()'],['../class_standalone___s_s.html#adf6185c0f57dc700977def1db9fa0b31',1,'Standalone_SS::quantities()'],['../class_system.html#adf6185c0f57dc700977def1db9fa0b31',1,'System::quantities()']]]
+  ['parameters_693',['parameters',['../parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4',1,'parameters.h']]]
 ];

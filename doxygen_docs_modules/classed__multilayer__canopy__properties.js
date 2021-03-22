@@ -2,6 +2,7 @@ var classed__multilayer__canopy__properties =
 [
     [ "ed_multilayer_canopy_properties", "classed__multilayer__canopy__properties.html#acf29334c0ee3c9cf2e67007fc0ad30d8", null ],
     [ "run", "classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2", null ],
+    [ "absorptivity_par", "classed__multilayer__canopy__properties.html#ade547db6ec4eb0491dc4c02f0e31a905", null ],
     [ "chil", "classed__multilayer__canopy__properties.html#a5433516ce27f6da1da71fcfe74d87e4b", null ],
     [ "cosine_zenith_angle", "classed__multilayer__canopy__properties.html#a3c1908a7e7f090bf800fe9b3fdd85594", null ],
     [ "height_ops", "classed__multilayer__canopy__properties.html#ad2a5f5763377f026763e88d6722c8a1f", null ],

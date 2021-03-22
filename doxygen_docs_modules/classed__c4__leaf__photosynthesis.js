@@ -16,6 +16,7 @@ var classed__c4__leaf__photosynthesis =
     [ "nikolov_ce", "classed__c4__leaf__photosynthesis.html#a37aac5dc43015970483384819654547d", null ],
     [ "relative_humidity_atmosphere", "classed__c4__leaf__photosynthesis.html#a40e075701bf93c5b42184e66d44bbd02", null ],
     [ "solar_energy_absorbed_leaf", "classed__c4__leaf__photosynthesis.html#a5cabddc5a90d2c0d2a43ddb176557579", null ],
+    [ "specific_heat_of_air", "classed__c4__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2", null ],
     [ "StomataWS", "classed__c4__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307", null ],
     [ "temperature_air", "classed__c4__leaf__photosynthesis.html#a25bcce655d45dfd99af5c50b5532300c", null ]
 ];

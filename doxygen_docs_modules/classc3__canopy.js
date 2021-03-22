@@ -2,6 +2,8 @@ var classc3__canopy =
 [
     [ "c3_canopy", "classc3__canopy.html#acfd042b1dc90a331455dc047d77799e3", null ],
     [ "do_operation", "classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
+    [ "absorptivity_par_ip", "classc3__canopy.html#a548ab9eabdfc79e1837c6a113e2eb9f6", null ],
+    [ "atmospheric_pressure_ip", "classc3__canopy.html#a993c71f463b2372eff9e62e897f0fae1", null ],
     [ "b0_ip", "classc3__canopy.html#ae0a8c837bbe38343e8fbee60d57a382f", null ],
     [ "b1_ip", "classc3__canopy.html#ade959309c0b671a59b246eca6f82508e", null ],
     [ "canopy_assimilation_rate_op", "classc3__canopy.html#a4fdddf6c5bb5cfc4d42787b3d89e6097", null ],
@@ -29,6 +31,7 @@ var classc3__canopy =
     [ "Rd_ip", "classc3__canopy.html#aafa11734a6d73742fb5c0456cdc4064e", null ],
     [ "rh_ip", "classc3__canopy.html#af6c231b4b8c0e2ec7ef1d728b2855701", null ],
     [ "solar_ip", "classc3__canopy.html#a1c138dcaa6efa0b3ff64d843d7a4f466", null ],
+    [ "specific_heat_of_air_ip", "classc3__canopy.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "StomataWS_ip", "classc3__canopy.html#a806fc8bd36d2b4eebe201b37a002317e", null ],
     [ "temp_ip", "classc3__canopy.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "theta_ip", "classc3__canopy.html#a9d98a510340edf0ccd779ed29bf7db50", null ],

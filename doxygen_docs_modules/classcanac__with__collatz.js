@@ -2,7 +2,9 @@ var classcanac__with__collatz =
 [
     [ "canac_with_collatz", "classcanac__with__collatz.html#a7a1cba4c8c27ed43343edf08483547af", null ],
     [ "do_operation", "classcanac__with__collatz.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
+    [ "absorptivity_par_ip", "classcanac__with__collatz.html#a548ab9eabdfc79e1837c6a113e2eb9f6", null ],
     [ "alpha1_ip", "classcanac__with__collatz.html#a78ec458e585bd5e8c1c66ec4270a22ec", null ],
+    [ "atmospheric_pressure_ip", "classcanac__with__collatz.html#a993c71f463b2372eff9e62e897f0fae1", null ],
     [ "b0_ip", "classcanac__with__collatz.html#ae0a8c837bbe38343e8fbee60d57a382f", null ],
     [ "b1_ip", "classcanac__with__collatz.html#ade959309c0b671a59b246eca6f82508e", null ],
     [ "beta_ip", "classcanac__with__collatz.html#a83bf9da7c0f7e6333e2bb275492b8706", null ],
@@ -42,6 +44,7 @@ var classcanac__with__collatz =
     [ "Rd_ip", "classcanac__with__collatz.html#aafa11734a6d73742fb5c0456cdc4064e", null ],
     [ "rh_ip", "classcanac__with__collatz.html#af6c231b4b8c0e2ec7ef1d728b2855701", null ],
     [ "solar_ip", "classcanac__with__collatz.html#a1c138dcaa6efa0b3ff64d843d7a4f466", null ],
+    [ "specific_heat_of_air_ip", "classcanac__with__collatz.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "StomataWS_ip", "classcanac__with__collatz.html#a806fc8bd36d2b4eebe201b37a002317e", null ],
     [ "temp_ip", "classcanac__with__collatz.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "theta_ip", "classcanac__with__collatz.html#a9d98a510340edf0ccd779ed29bf7db50", null ],

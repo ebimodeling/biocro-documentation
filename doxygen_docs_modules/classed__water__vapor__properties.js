@@ -8,6 +8,7 @@ var classed__water__vapor__properties =
     [ "psychrometric_parameter_op", "classed__water__vapor__properties.html#afdc1c06d87c14535bce08a494fe3996b", null ],
     [ "saturation_water_vapor_pressure_op", "classed__water__vapor__properties.html#a85821f38953c76569fab227f6e1fbaf8", null ],
     [ "slope_water_vapor_op", "classed__water__vapor__properties.html#a0cbf6d6596ff99cd1b5ee5f3d489756a", null ],
+    [ "specific_heat_of_air_ip", "classed__water__vapor__properties.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "temperature_air_ip", "classed__water__vapor__properties.html#ac63c97f9467e03bc37d32004c7e7ea6a", null ],
     [ "vapor_density_deficit_op", "classed__water__vapor__properties.html#af2f74f19a39842579aa33b733a7d4cad", null ],
     [ "water_vapor_pressure_op", "classed__water__vapor__properties.html#afab58b1c8228afd72c0da131714cdb90", null ]

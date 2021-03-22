@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['keys_160',['keys',['../state__map_8h.html#a5505795a40869494568f362567ff51e8',1,'state_map.h']]],
-  ['known_5fptrs_161',['known_ptrs',['../classsimultaneous__equations.html#aa1f59b1170abb05f9c618cff520651cd',1,'simultaneous_equations']]]
+  ['joules_5fper_5fcalorie_162',['joules_per_calorie',['../namespaceconversion__constants.html#abad2c8948b249b324caf701eb68d4fe2',1,'conversion_constants']]]
 ];

@@ -115,12 +115,12 @@ $(document).ready(function(){initNavTree('_can_a_c_8cpp.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0332b615afd75a541e2e0730a15d39e0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_can___str.html">Can_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_can_a_c_8cpp.html#a0332b615afd75a541e2e0730a15d39e0">CanAC</a> (double LAI, int DOY, double hr, double solarR, double temperature, double RH, double WindSpeed, double lat, int nlayers, double Vmax, double Alpha, double Kparm, double beta, double Rd, double Catm, double b0, double b1, double Gs_min, double theta, double kd, double chil, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double upperT, double lowerT, const struct <a class="el" href="structnitro_parms.html">nitroParms</a> &amp;nitroP, double leafwidth, int eteq, double StomataWS, int water_stress_approach)</td></tr>
-<tr class="separator:a0332b615afd75a541e2e0730a15d39e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509220d465418a41dfaa67512223f446"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_can___str.html">Can_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_can_a_c_8cpp.html#a509220d465418a41dfaa67512223f446">CanAC</a> (double LAI, int DOY, double hr, double solarR, double temperature, double RH, double WindSpeed, double lat, int nlayers, double Vmax, double Alpha, double Kparm, double beta, double Rd, double Catm, double b0, double b1, double Gs_min, double theta, double kd, double chil, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double upperT, double lowerT, const struct <a class="el" href="structnitro_parms.html">nitroParms</a> &amp;nitroP, double leafwidth, int eteq, double StomataWS, double specific_heat_of_air, double atmospheric_pressure, int water_stress_approach, double absorptivity_par)</td></tr>
+<tr class="separator:a509220d465418a41dfaa67512223f446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0332b615afd75a541e2e0730a15d39e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0332b615afd75a541e2e0730a15d39e0">&#9670;&nbsp;</a></span>CanAC()</h2>
+<a id="a509220d465418a41dfaa67512223f446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509220d465418a41dfaa67512223f446">&#9670;&nbsp;</a></span>CanAC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,8 +326,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>specific_heat_of_air</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>atmospheric_pressure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>water_stress_approach</em>&#160;</td>
+          <td class="paramname"><em>water_stress_approach</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>absorptivity_par</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -339,23 +357,23 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_can_a_c_8cpp_source.html#l00001">1</a> of file <a class="el" href="_can_a_c_8cpp_source.html">CanAC.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c4photo_8h_source.html#l00009">c4_str::Assim</a>, <a class="el" href="c4photo_8cpp_source.html#l00015">c4photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00053">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00051">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00052">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00429">EvapoTrans2()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00012">c4_str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00010">c4_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00095">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00353">LNprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00050">Can_Str::result_matrix</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00334">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00149">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00233">WINDprof()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c4photo_8h_source.html#l00009">c4_str::Assim</a>, <a class="el" href="c4photo_8cpp_source.html#l00015">c4photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00053">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00051">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00052">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00476">EvapoTrans2()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00012">c4_str::GrossAssim</a>, <a class="el" href="c4photo_8h_source.html#l00010">c4_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00117">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00400">LNprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00017">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00050">Can_Str::result_matrix</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00381">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00193">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00280">WINDprof()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c4__canopy_8hpp_source.html#l00174">c4_canopy::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c4__canopy_8hpp_source.html#l00194">c4_canopy::do_operation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_cgraph.png" border="0" usemap="#a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_cgraph" alt=""/></div>
-<map name="a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_cgraph" id="a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_cgraph">
+<div class="center"><img src="_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_cgraph.png" border="0" usemap="#a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_cgraph" alt=""/></div>
+<map name="a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_cgraph" id="a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_cgraph">
 <area shape="rect" title=" " alt="" coords="5,157,68,184"/>
-<area shape="rect" href="c4photo_8cpp.html#a857a8d5dc93bbe50ee2acb5dc7d3652c" title=" " alt="" coords="127,5,204,32"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a5272d35a20edaa0de28ca4ccae5b10a5" title=" " alt="" coords="116,56,215,83"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ac5f31df2b025300918f031bf8f1e51d9" title="Light Macro Environment." alt="" coords="133,107,198,133"/>
+<area shape="rect" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e" title=" " alt="" coords="127,5,204,32"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a352b4fc954f084b38bdd36a5784a6bc2" title=" " alt="" coords="116,56,215,83"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="133,107,198,133"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a2905c23b422ad454d9577841ca594d0d" title=" " alt="" coords="134,157,197,184"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="134,208,197,235"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a29eacaa214f1899c9df199ac80d0e1ca" title="Computation of an n&#45;layered light profile from the direct light Idir, diffuse light Idiff,..." alt="" coords="134,259,197,285"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#ab8b5147b6957ced2534f8a36e1d587e5" title="Computes an n&#45;layered light profile from the direct light, diffuse light, leaf area index,..." alt="" coords="134,259,197,285"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7" title="RH and Wind profile function." alt="" coords="126,309,205,336"/>
 <area shape="rect" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c" title=" " alt="" coords="285,5,363,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a81eccf5a903a575f17d799d959397f61" title="Computation of the cosine of the zenith angle from latitute (lat), day of the year (DOY),..." alt="" coords="263,107,385,133"/>
@@ -366,8 +384,8 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_icgraph.png" border="0" usemap="#a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_icgraph" alt=""/></div>
-<map name="a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_icgraph" id="a_can_a_c_8cpp_a0332b615afd75a541e2e0730a15d39e0_icgraph">
+<div class="center"><img src="_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_icgraph.png" border="0" usemap="#a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_icgraph" alt=""/></div>
+<map name="a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_icgraph" id="a_can_a_c_8cpp_a509220d465418a41dfaa67512223f446_icgraph">
 <area shape="rect" title=" " alt="" coords="217,5,280,32"/>
 <area shape="rect" href="classc4__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
 </map>
@@ -381,7 +399,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_can_a_c_8cpp.html">CanAC.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 9 2021 21:31:35 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 22 2021 22:39:41 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

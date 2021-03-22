@@ -19,6 +19,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "biomass_leaf_n_limitation.hpp", "biomass__leaf__n__limitation_8hpp.html", [
       [ "biomass_leaf_n_limitation", "classbiomass__leaf__n__limitation.html", "classbiomass__leaf__n__limitation" ]
     ] ],
+    [ "buck_swvp.h", "buck__swvp_8h.html", [
+      [ "buck_swvp", "classbuck__swvp.html", "classbuck__swvp" ]
+    ] ],
     [ "bucket_soil_drainage.hpp", "bucket__soil__drainage_8hpp.html", [
       [ "bucket_soil_drainage", "classbucket__soil__drainage.html", "classbucket__soil__drainage" ]
     ] ],
@@ -231,6 +234,11 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "priestley_transpiration.hpp", "priestley__transpiration_8hpp.html", [
       [ "priestley_transpiration", "classpriestley__transpiration.html", "classpriestley__transpiration" ]
+    ] ],
+    [ "rasmussen_specific_heat.cpp", "rasmussen__specific__heat_8cpp.html", "rasmussen__specific__heat_8cpp" ],
+    [ "rasmussen_specific_heat.h", "rasmussen__specific__heat_8h.html", "rasmussen__specific__heat_8h" ],
+    [ "rh_to_mole_fraction.h", "rh__to__mole__fraction_8h.html", [
+      [ "rh_to_mole_fraction", "classrh__to__mole__fraction.html", "classrh__to__mole__fraction" ]
     ] ],
     [ "se_module.h", "se__module_8h.html", "se__module_8h" ],
     [ "shortwave_atmospheric_scattering.h", "shortwave__atmospheric__scattering_8h.html", [

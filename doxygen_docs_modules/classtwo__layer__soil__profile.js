@@ -33,7 +33,7 @@ var classtwo__layer__soil__profile =
     [ "soil_water_content_op", "classtwo__layer__soil__profile.html#ac692a843df50706af7f45bbdee244c39", null ],
     [ "soil_wilting_point_ip", "classtwo__layer__soil__profile.html#afc98cac4d76f2ee23f784fd0bcc44ec7", null ],
     [ "solar_ip", "classtwo__layer__soil__profile.html#a1c138dcaa6efa0b3ff64d843d7a4f466", null ],
-    [ "specific_heat_ip", "classtwo__layer__soil__profile.html#acbb9cb45fdade77c7cbed890b0630184", null ],
+    [ "specific_heat_of_air_ip", "classtwo__layer__soil__profile.html#aa1f02cc5c576d197734a2fbef434cd2a", null ],
     [ "stefan_boltzman_ip", "classtwo__layer__soil__profile.html#ae38028a24baf03f4fad91313397c9fdd", null ],
     [ "temp_ip", "classtwo__layer__soil__profile.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "windspeed_ip", "classtwo__layer__soil__profile.html#a0ee2446db1ff65e8de5a47b389bf22f9", null ],

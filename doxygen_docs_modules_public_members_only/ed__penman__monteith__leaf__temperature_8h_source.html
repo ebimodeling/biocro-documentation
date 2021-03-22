@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('ed__penman__monteith__leaf__temperatur
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> total_available_energy = *solar_energy_absorbed_leaf_ip - *long_wave_energy_loss_leaf_ip;  <span class="comment">// W / m^2</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Convert temperatures to Kelvin</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> Tak = *temperature_air_ip + physical_constants::celsius_to_kelvin;  <span class="comment">// Kelvin</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> Tak = *temperature_air_ip + conversion_constants::celsius_to_kelvin;  <span class="comment">// Kelvin</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// Calculate the volume of one mole of a gas at air temperature and pressure</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// using the ideal gas law</span></div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('ed__penman__monteith__leaf__temperatur
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__penman__monteith__leaf__temperature_8h.html">ed_penman_monteith_leaf_temperature.h</a></li>
-    <li class="footer">Generated on Tue Mar 9 2021 21:31:58 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 22 2021 22:40:05 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

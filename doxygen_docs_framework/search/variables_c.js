@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['observer_5fmessage_684',['observer_message',['../classboost__system__solver.html#abe9d4e5b9d432971a71aafb0361e2c9c',1,'boost_system_solver']]],
-  ['other_5fsolver_685',['other_solver',['../classauto__solver.html#a7a1c4aa224ecb5a1a213d3671c1fd80c',1,'auto_solver']]],
-  ['output_5fptr_5fpairs_686',['output_ptr_pairs',['../class_standalone___s_s.html#adfbec446f2bd33d8eecebece6ba22e7a',1,'Standalone_SS']]],
-  ['output_5fptrs_687',['output_ptrs',['../classsimultaneous__equations.html#a8ca0c2cee3688f638c6ac97dd7b2c514',1,'simultaneous_equations']]],
-  ['output_5fstep_5fsize_688',['output_step_size',['../classsystem__solver.html#a6a5f01eeecba13bc2f1c03543255b590',1,'system_solver']]]
+  ['ncalls_684',['ncalls',['../classsimultaneous__equations.html#a9c398709d2858a20536907016b4ab7f2',1,'simultaneous_equations::ncalls()'],['../class_system.html#a9c398709d2858a20536907016b4ab7f2',1,'System::ncalls()']]],
+  ['nrb_5fprint_685',['nrb_print',['../newton__raphson__backtrack__boost_8h.html#a89d21124d024b768069970d7051e0fe8',1,'newton_raphson_backtrack_boost.h']]],
+  ['nsteps_686',['nsteps',['../classboost__system__solver.html#ab82d6ab9ed7d16e4b5c6d47c8b4bc589',1,'boost_system_solver']]],
+  ['num_5fiterations_687',['num_iterations',['../classse__solver.html#ab702e2f7530d6172eea3780d8923bd71',1,'se_solver']]]
 ];
