@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>A general module that solves a set of simultaneous equations. </p>
 <p>Note that this module cannot be created by the <a class="el" href="classmodule__wrapper__factory.html">module_wrapper_factory</a> since its constructor has a different signature than a typical module. Instead, it must have concrete derived classes. This class has been made abstract to indicate this. </p>
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00142">142</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00141">141</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9d47a7f003a63e448a5a8df47401ccd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d47a7f003a63e448a5a8df47401ccd4">&#9670;&nbsp;</a></span>base()</h2>
@@ -282,9 +282,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00145">145</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00144">144</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">References <a class="el" href="se__module_8h_source.html#l00193">base::output_ptrs</a>, and <a class="el" href="se__module_8h_source.html#l00187">base::outputs_from_modules</a>.</p>
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00192">base::output_ptrs</a>, and <a class="el" href="se__module_8h_source.html#l00186">base::outputs_from_modules</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Private Attributes</h2></td></tr>
 
 <p>A destructor must be defined, and since the default is overwritten when defining it as pure virtual, add an inline one in the header. </p>
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00203">203</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00202">202</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
 </div>
 </div>
@@ -344,9 +344,9 @@ Private Attributes</h2></td></tr>
 <p>Uses the solver to solve the simultaneous equations for the unknown parameters, and then reports the values of all outputs calculated using the best guess for the unknowns. </p>
 <p>Derived classes need to implement a way to provide a set of possible initial guesses. </p>
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00210">210</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00209">209</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">References <a class="el" href="se__module_8h_source.html#l00183">base::absolute_error_tolerances</a>, <a class="el" href="se__module_8h_source.html#l00186">base::best_guess</a>, <a class="el" href="se__module_8h_source.html#l00189">base::get_default()</a>, <a class="el" href="classse__module_1_1base.html#a282dba52c55600a1ca98b87a3c6e6f3f">base::get_initial_guesses()</a>, <a class="el" href="se__module_8h_source.html#l00191">base::input_ptrs</a>, <a class="el" href="se__module_8h_source.html#l00181">base::lower_bounds</a>, <a class="el" href="se__module_8h_source.html#l00194">base::ncalls_op</a>, <a class="el" href="se__module_8h_source.html#l00195">base::nsteps_op</a>, <a class="el" href="se__module_8h_source.html#l00193">base::output_ptrs</a>, <a class="el" href="se__module_8h_source.html#l00187">base::outputs_from_modules</a>, <a class="el" href="se__module_8h_source.html#l00184">base::relative_error_tolerances</a>, <a class="el" href="se__module_8h_source.html#l00093">se_module::reorder_initial_guesses()</a>, <a class="el" href="se__module_8h_source.html#l00188">base::return_default_on_failure</a>, <a class="el" href="se__module_8h_source.html#l00179">base::se</a>, <a class="el" href="se__module_8h_source.html#l00013">se_module_print</a>, <a class="el" href="se__module_8h_source.html#l00185">base::should_reorder_guesses</a>, <a class="el" href="se__module_8h_source.html#l00180">base::solver</a>, <a class="el" href="se__module_8h_source.html#l00196">base::success_op</a>, and <a class="el" href="se__module_8h_source.html#l00182">base::upper_bounds</a>.</p>
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00182">base::absolute_error_tolerances</a>, <a class="el" href="se__module_8h_source.html#l00185">base::best_guess</a>, <a class="el" href="se__module_8h_source.html#l00188">base::get_default()</a>, <a class="el" href="classse__module_1_1base.html#a282dba52c55600a1ca98b87a3c6e6f3f">base::get_initial_guesses()</a>, <a class="el" href="se__module_8h_source.html#l00190">base::input_ptrs</a>, <a class="el" href="se__module_8h_source.html#l00180">base::lower_bounds</a>, <a class="el" href="se__module_8h_source.html#l00193">base::ncalls_op</a>, <a class="el" href="se__module_8h_source.html#l00194">base::nsteps_op</a>, <a class="el" href="se__module_8h_source.html#l00192">base::output_ptrs</a>, <a class="el" href="se__module_8h_source.html#l00186">base::outputs_from_modules</a>, <a class="el" href="se__module_8h_source.html#l00183">base::relative_error_tolerances</a>, <a class="el" href="se__module_8h_source.html#l00092">se_module::reorder_initial_guesses()</a>, <a class="el" href="se__module_8h_source.html#l00187">base::return_default_on_failure</a>, <a class="el" href="se__module_8h_source.html#l00178">base::se</a>, <a class="el" href="se__module_8h_source.html#l00012">se_module_print</a>, <a class="el" href="se__module_8h_source.html#l00184">base::should_reorder_guesses</a>, <a class="el" href="se__module_8h_source.html#l00179">base::solver</a>, <a class="el" href="se__module_8h_source.html#l00195">base::success_op</a>, and <a class="el" href="se__module_8h_source.html#l00181">base::upper_bounds</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -389,9 +389,9 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classed__nikolov__conductance__free__solve.html#a655f83ef6ed72ffc4567834ead4726ae">ed_nikolov_conductance_free_solve</a>, <a class="el" href="classed__c4__leaf__photosynthesis4.html#a655f83ef6ed72ffc4567834ead4726ae">ed_c4_leaf_photosynthesis4</a>, and <a class="el" href="classed__c4__leaf__photosynthesis2.html#a655f83ef6ed72ffc4567834ead4726ae">ed_c4_leaf_photosynthesis2</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00189">189</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00188">188</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -431,7 +431,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classed__p__m__temperature__solve.html#ae6631c09eeca7afadaeb1a49ce568655">ed_p_m_temperature_solve</a>, <a class="el" href="classed__nikolov__conductance__free__solve.html#ae6631c09eeca7afadaeb1a49ce568655">ed_nikolov_conductance_free_solve</a>, <a class="el" href="classed__c4__leaf__photosynthesis4.html#ae6631c09eeca7afadaeb1a49ce568655">ed_c4_leaf_photosynthesis4</a>, <a class="el" href="classed__c4__leaf__photosynthesis3.html#ae6631c09eeca7afadaeb1a49ce568655">ed_c4_leaf_photosynthesis3</a>, <a class="el" href="classed__c4__leaf__photosynthesis2.html#ae6631c09eeca7afadaeb1a49ce568655">ed_c4_leaf_photosynthesis2</a>, and <a class="el" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655">ed_c4_leaf_photosynthesis</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -467,9 +467,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00183">183</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00182">182</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -493,9 +493,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00186">186</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00185">185</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -519,9 +519,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00191">191</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00190">190</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -545,9 +545,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00181">181</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00180">180</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -571,9 +571,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00194">194</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00193">193</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -597,9 +597,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00195">195</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00194">194</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -623,9 +623,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00193">193</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00192">192</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00145">base::base()</a>, and <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00144">base::base()</a>, and <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -649,9 +649,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00187">187</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00186">186</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00145">base::base()</a>, and <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00144">base::base()</a>, and <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -675,9 +675,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00184">184</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00183">183</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -701,9 +701,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00188">188</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00187">187</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -727,9 +727,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00179">179</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00178">178</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -753,9 +753,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00185">185</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00184">184</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -779,9 +779,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00180">180</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00179">179</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -805,9 +805,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00196">196</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00195">195</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -831,9 +831,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00182">182</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="se__module_8h_source.html#l00181">181</a> of file <a class="el" href="se__module_8h_source.html">se_module.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00210">base::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="se__module_8h_source.html#l00209">base::do_operation()</a>.</p>
 
 </div>
 </div>
@@ -846,7 +846,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacese__module.html">se_module</a></li><li class="navelem"><a class="el" href="classse__module_1_1base.html">base</a></li>
-    <li class="footer">Generated on Mon Mar 22 2021 22:39:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 25 2021 22:10:09 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

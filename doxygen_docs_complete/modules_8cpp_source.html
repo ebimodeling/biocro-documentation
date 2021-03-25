@@ -77,37 +77,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="modules_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_8h.html">modules.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span>  <span class="comment">// for fabs</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// A small number to use when checking to see if a double is different</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// than 0, positive, equal to another number, etc.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="class_module.html#a3d8c24629d725b9ef8c238cf27c9b158">Module::eps</a> = 1e-10;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// This is a helping function that returns the value pointed to by a</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// pointer, throwing an error if NaN occurs.  This should only be used</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// for debugging purposes since it will slow down the module</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// execution.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">   12</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">Module::get_val_debug</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>* ptr, <span class="keyword">const</span> std::string name)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">double</span> val = *ptr;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//if(std::isnan(val)) throw std::logic_error(std::string(&quot;Found NaN when accessing parameter &#39;&quot;) + name + (&quot;&#39;.\n&quot;));    // What is wrong with this line??</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (fabs(val) &gt; 10000) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            std::string(<span class="stringliteral">&quot;Parameter &#39;&quot;</span>) +</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            name +</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="stringliteral">&quot;&#39; has a huge value: &quot;</span> +</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            std::to_string(val) +</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        );</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> val;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="aclass_module_html_a3d8c24629d725b9ef8c238cf27c9b158"><div class="ttname"><a href="class_module.html#a3d8c24629d725b9ef8c238cf27c9b158">Module::eps</a></div><div class="ttdeci">static const double eps</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00071">modules.h:71</a></div></div>
-<div class="ttc" id="aclass_module_html_ac064f5826a0c682a94f8dfedda31f6c4"><div class="ttname"><a href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">Module::get_val_debug</a></div><div class="ttdeci">double get_val_debug(const double *ptr, const std::string name) const</div><div class="ttdef"><b>Definition:</b> <a href="modules_8cpp_source.html#l00012">modules.cpp:12</a></div></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="modules_8cpp.html#a66d745d4b3acb43ae8bc66c3e25aebb4">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_8cpp.html#a66d745d4b3acb43ae8bc66c3e25aebb4">run_module_list</a>(std::vector&lt;std::unique_ptr&lt;Module&gt;&gt; <span class="keyword">const</span>&amp; modules)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span> (std::unique_ptr&lt;Module&gt; <span class="keyword">const</span>&amp; m : modules) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        m-&gt;run();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="ttc" id="amodules_8cpp_html_a66d745d4b3acb43ae8bc66c3e25aebb4"><div class="ttname"><a href="modules_8cpp.html#a66d745d4b3acb43ae8bc66c3e25aebb4">run_module_list</a></div><div class="ttdeci">void run_module_list(std::vector&lt; std::unique_ptr&lt; Module &gt;&gt; const &amp;modules)</div><div class="ttdoc">Runs each module in the input list.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8cpp_source.html#l00008">modules.cpp:8</a></div></div>
 <div class="ttc" id="amodules_8h_html"><div class="ttname"><a href="modules_8h.html">modules.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 22 2021 22:38:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 25 2021 22:09:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

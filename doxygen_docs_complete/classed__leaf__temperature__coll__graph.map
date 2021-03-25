@@ -1,5 +1,5 @@
 <map id="ed_leaf_temperature" name="ed_leaf_temperature">
 <area shape="rect" id="node1" title="Calculates leaf temperature from energy balance without using the Penman&#45;Monteith approximation." alt="" coords="5,155,145,181"/>
-<area shape="rect" id="node2" href="$class_steady_module.html" title=" " alt="" coords="23,80,127,107"/>
-<area shape="rect" id="node3" href="$class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="43,5,107,32"/>
+<area shape="rect" id="node2" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="23,80,127,107"/>
+<area shape="rect" id="node3" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="43,5,107,32"/>
 </map>

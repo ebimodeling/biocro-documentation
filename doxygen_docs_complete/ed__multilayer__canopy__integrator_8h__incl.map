@@ -1,14 +1,12 @@
 <map id="/github/workspace/source/src/module_library/ed_multilayer_canopy_integrator.h" name="/github/workspace/source/src/module_library/ed_multilayer_canopy_integrator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="270,5,473,61"/>
-<area shape="rect" id="node2" href="$modules_8h.html" title=" " alt="" coords="326,109,417,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,333,116,360"/>
-<area shape="rect" id="node4" title=" " alt="" coords="411,333,457,360"/>
-<area shape="rect" id="node5" title=" " alt="" coords="141,333,199,360"/>
-<area shape="rect" id="node6" title=" " alt="" coords="706,184,765,211"/>
-<area shape="rect" id="node7" href="$state__map_8h.html" title=" " alt="" coords="149,259,242,285"/>
-<area shape="rect" id="node9" href="$_bio_cro_8h.html" title=" " alt="" coords="472,184,631,211"/>
-<area shape="rect" id="node10" href="$_aux_bio_cro_8h.html" title=" " alt="" coords="505,259,598,285"/>
-<area shape="rect" id="node11" href="$module__helper__functions_8h.html" title=" " alt="" coords="221,184,397,211"/>
-<area shape="rect" id="node8" title=" " alt="" coords="224,333,279,360"/>
-<area shape="rect" id="node12" title=" " alt="" coords="317,259,396,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,61"/>
+<area shape="rect" id="node2" href="$modules_8h.html" title=" " alt="" coords="61,109,152,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="93,333,152,360"/>
+<area shape="rect" id="node4" title=" " alt="" coords="73,184,141,211"/>
+<area shape="rect" id="node5" href="$module__helper__functions_8h.html" title=" " alt="" coords="165,184,341,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="99,259,178,285"/>
+<area shape="rect" id="node7" title=" " alt="" coords="202,259,249,285"/>
+<area shape="rect" id="node8" href="$state__map_8h.html" title=" " alt="" coords="273,259,367,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="211,333,322,360"/>
+<area shape="rect" id="node10" title=" " alt="" coords="346,333,401,360"/>
 </map>

@@ -88,8 +88,8 @@ $(function() {
 <div class="center"><img src="classc3__canopy__inherit__graph.png" border="0" usemap="#ac3__canopy_inherit__map" alt="Inheritance graph"/></div>
 <map name="ac3__canopy_inherit__map" id="ac3__canopy_inherit__map">
 <area shape="rect" title=" " alt="" coords="15,155,99,181"/>
-<area shape="rect" href="class_steady_module.html" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="25,5,89,32"/>
+<area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="5,80,109,107"/>
+<area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="25,5,89,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -100,8 +100,8 @@ $(function() {
 <div class="center"><img src="classc3__canopy__coll__graph.png" border="0" usemap="#ac3__canopy_coll__map" alt="Collaboration graph"/></div>
 <map name="ac3__canopy_coll__map" id="ac3__canopy_coll__map">
 <area shape="rect" title=" " alt="" coords="15,155,99,181"/>
-<area shape="rect" href="class_steady_module.html" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="25,5,89,32"/>
+<area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="5,80,109,107"/>
+<area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="25,5,89,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -110,12 +110,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfd042b1dc90a331455dc047d77799e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__canopy.html#acfd042b1dc90a331455dc047d77799e3">c3_canopy</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
 <tr class="separator:acfd042b1dc90a331455dc047d77799e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_steady_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_steady_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_steady_module.html">SteadyModule</a></td></tr>
-<tr class="memitem:a98bc5e8c75a87a319a7ef40d2a080fcd inherit pub_methods_class_steady_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steady_module.html#a98bc5e8c75a87a319a7ef40d2a080fcd">SteadyModule</a> (const std::string &amp;module_name, bool adaptive_compatible=true)</td></tr>
+<tr class="memitem:a98bc5e8c75a87a319a7ef40d2a080fcd inherit pub_methods_class_steady_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steady_module.html#a98bc5e8c75a87a319a7ef40d2a080fcd">SteadyModule</a> (const std::string &amp;<a class="el" href="class_module.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>, bool <a class="el" href="class_module.html#a1949356114a900e775676ebc13694f31">adaptive_compatible</a>=true)</td></tr>
 <tr class="separator:a98bc5e8c75a87a319a7ef40d2a080fcd inherit pub_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e84539c7a0c0d8053691c653d09590 inherit pub_methods_class_steady_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steady_module.html#a33e84539c7a0c0d8053691c653d09590">~SteadyModule</a> ()=0</td></tr>
+<tr class="memdesc:a33e84539c7a0c0d8053691c653d09590 inherit pub_methods_class_steady_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overridden when defining it as pure virtual, add an inline one in the header.  <a href="class_steady_module.html#a33e84539c7a0c0d8053691c653d09590">More...</a><br /></td></tr>
+<tr class="separator:a33e84539c7a0c0d8053691c653d09590 inherit pub_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a22ca75c15cbeac14960d34151f285058">Module</a> (std::string const &amp;module_name, bool const &amp;deriv, bool const &amp;adaptive_compatible)</td></tr>
+<tr class="memitem:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a22ca75c15cbeac14960d34151f285058">Module</a> (std::string const &amp;<a class="el" href="class_module.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>, bool const &amp;<a class="el" href="class_module.html#a527dd262217d1457013343b84a9905ac">deriv</a>, bool const &amp;<a class="el" href="class_module.html#a1949356114a900e775676ebc13694f31">adaptive_compatible</a>)</td></tr>
 <tr class="separator:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#aff582bb9b7fe20e76b673a8f7cde898b">~Module</a> ()=0</td></tr>
+<tr class="memdesc:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overridden when defining it as pure virtual, add an inline one in the header.  <a href="class_module.html#aff582bb9b7fe20e76b673a8f7cde898b">More...</a><br /></td></tr>
 <tr class="separator:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0789ba541bd61b1b394ff4d411a40790 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a0789ba541bd61b1b394ff4d411a40790">get_name</a> () const</td></tr>
 <tr class="separator:a0789ba541bd61b1b394ff4d411a40790 inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,13 +223,8 @@ Private Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_steady_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_steady_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_steady_module.html">SteadyModule</a></td></tr>
 <tr class="memitem:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be">update</a> (double *output_ptr, const double &amp;value) const</td></tr>
+<tr class="memdesc:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output parameters of a steady state module are unique, so we can just overwrite the previously stored value.  <a href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be">More...</a><br /></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">get_val_debug</a> (const double *ptr, const std::string name) const</td></tr>
-<tr class="separator:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_module')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a3d8c24629d725b9ef8c238cf27c9b158">eps</a> = 1e-10</td></tr>
-<tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -293,11 +292,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_module.html#a391e9fd4e949f6e987eb654a11b1e451">Module</a>.</p>
+<p>Implements <a class="el" href="class_module.html#a569dd907889f8195d95466f1b2694c42">Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00050">50</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00053">53</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="c3__canopy_8hpp_source.html#l00095">absorptivity_par_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00090">atmospheric_pressure_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00076">b0_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00077">b1_ip</a>, <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00098">canopy_assimilation_rate_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00099">canopy_transpiration_rate_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00074">Catm_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00087">chil_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00063">doy_dbl_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00093">electrons_per_carboxylation_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00094">electrons_per_oxygenation_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00100">GrossAssim_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00091">growth_respiration_fraction_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00078">Gs_min_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00081">heightf_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00071">jmax_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00080">kd_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00083">kpLN_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00062">lai_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00068">lat_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00082">LeafN_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00084">lnb0_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00085">lnb1_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00086">lnfun_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00069">nlayers_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00075">O2_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00073">Rd_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00066">rh_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00064">solar_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00089">specific_heat_of_air_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00088">StomataWS_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00065">temp_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00079">theta_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00072">tpu_rate_max_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="modules_8h_source.html#l00102">SteadyModule::update()</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00070">vmax_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00092">water_stress_approach_ip</a>, and <a class="el" href="c3__canopy_8hpp_source.html#l00067">windspeed_ip</a>.</p>
+<p class="reference">References <a class="el" href="c3__canopy_8hpp_source.html#l00095">absorptivity_par_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::Assim</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00090">atmospheric_pressure_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00076">b0_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00077">b1_ip</a>, <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00098">canopy_assimilation_rate_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00099">canopy_transpiration_rate_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00074">Catm_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00087">chil_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00063">doy_dbl_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00093">electrons_per_carboxylation_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00094">electrons_per_oxygenation_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00049">Can_Str::GrossAssim</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00100">GrossAssim_op</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00091">growth_respiration_fraction_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00078">Gs_min_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00081">heightf_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00071">jmax_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00080">kd_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00083">kpLN_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00062">lai_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00068">lat_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00082">LeafN_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00084">lnb0_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00085">lnb1_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00086">lnfun_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00069">nlayers_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00075">O2_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00073">Rd_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00066">rh_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00064">solar_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00089">specific_heat_of_air_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00088">StomataWS_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00065">temp_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00079">theta_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00072">tpu_rate_max_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::Trans</a>, <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00070">vmax_ip</a>, <a class="el" href="c3__canopy_8hpp_source.html#l00092">water_stress_approach_ip</a>, and <a class="el" href="c3__canopy_8hpp_source.html#l00067">windspeed_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -307,7 +306,7 @@ Additional Inherited Members</h2></td></tr>
 <map name="aclassc3__canopy_a391e9fd4e949f6e987eb654a11b1e451_cgraph" id="aclassc3__canopy_a391e9fd4e949f6e987eb654a11b1e451_cgraph">
 <area shape="rect" title=" " alt="" coords="5,284,101,311"/>
 <area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="185,259,263,285"/>
-<area shape="rect" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title=" " alt="" coords="149,309,299,336"/>
+<area shape="rect" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title="The output parameters of a steady state module are unique, so we can just overwrite the previously st..." alt="" coords="149,309,299,336"/>
 <area shape="rect" href="_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e" title=" " alt="" coords="347,107,452,133"/>
 <area shape="rect" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287" title=" " alt="" coords="361,157,438,184"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="367,208,432,235"/>
@@ -348,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00003">3</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00006">6</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
 
 </div>
 </div>
@@ -375,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00042">42</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__canopy_8cpp_source.html#l00045">45</a> of file <a class="el" href="c3__canopy_8cpp_source.html">c3_canopy.cpp</a>.</p>
 
 </div>
 </div>
@@ -402,7 +401,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00095">95</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -428,7 +427,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00090">90</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -454,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00076">76</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +479,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00077">77</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00098">98</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -532,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00099">99</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -558,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00074">74</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -584,7 +583,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00087">87</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -610,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00063">63</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -636,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00093">93</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -662,7 +661,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00094">94</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -688,7 +687,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00100">100</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +713,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00091">91</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +739,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00078">78</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -766,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00081">81</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -792,7 +791,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00071">71</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -818,7 +817,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00080">80</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -844,7 +843,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00083">83</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -870,7 +869,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00062">62</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -896,7 +895,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00068">68</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -922,7 +921,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00082">82</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -948,7 +947,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00084">84</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -974,7 +973,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00085">85</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +999,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00086">86</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1025,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00069">69</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +1051,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00075">75</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1077,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00073">73</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1103,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00066">66</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1129,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00064">64</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1156,7 +1155,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00089">89</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1181,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00088">88</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1208,7 +1207,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00065">65</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1234,7 +1233,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00079">79</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1259,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00072">72</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1285,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00070">70</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1311,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00092">92</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1337,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3__canopy_8hpp_source.html#l00067">67</a> of file <a class="el" href="c3__canopy_8hpp_source.html">c3_canopy.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00050">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00053">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1348,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 22 2021 22:38:54 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 25 2021 22:09:28 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

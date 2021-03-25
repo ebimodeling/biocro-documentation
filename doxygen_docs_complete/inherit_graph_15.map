@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="5,2109,69,2136"/>
-<area shape="rect" id="node2" href="$class_deriv_module.html" title=" " alt="" coords="122,705,217,732"/>
-<area shape="rect" id="node30" href="$class_steady_module.html" title=" " alt="" coords="117,3488,221,3515"/>
+<area shape="rect" id="node1" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="5,2109,69,2136"/>
+<area shape="rect" id="node2" href="$class_deriv_module.html" title="This class represents a derivative Module." alt="" coords="122,705,217,732"/>
+<area shape="rect" id="node30" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="117,3488,221,3515"/>
 <area shape="rect" id="node3" href="$classaba__decay.html" title=" " alt="" coords="339,5,423,32"/>
 <area shape="rect" id="node4" href="$classbucket__soil__drainage.html" title=" " alt="" coords="309,56,453,83"/>
 <area shape="rect" id="node5" href="$classc3__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="325,107,437,133"/>
@@ -27,7 +27,7 @@
 <area shape="rect" id="node25" href="$classthermal__time__senescence.html" title=" " alt="" coords="293,1184,468,1211"/>
 <area shape="rect" id="node26" href="$classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="307,1235,454,1261"/>
 <area shape="rect" id="node27" href="$classtwo__layer__soil__profile.html" title=" " alt="" coords="308,1285,453,1312"/>
-<area shape="rect" id="node28" href="$classutilization__growth.html" title=" " alt="" coords="319,1336,442,1363"/>
+<area shape="rect" id="node28" href="$classutilization__growth.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="319,1336,442,1363"/>
 <area shape="rect" id="node29" href="$classutilization__senescence.html" title=" " alt="" coords="304,1387,457,1413"/>
 <area shape="rect" id="node31" href="$classmultilayer__canopy__photosynthesis.html" title=" " alt="" coords="271,1437,490,1493"/>
 <area shape="rect" id="node33" href="$classmultilayer__canopy__photosynthesis.html" title=" " alt="" coords="269,1517,492,1573"/>
@@ -100,7 +100,7 @@
 <area shape="rect" id="node112" href="$classstomata__water__stress__linear.html" title=" " alt="" coords="305,5279,456,5321"/>
 <area shape="rect" id="node113" href="$classstomata__water__stress__linear__and__aba__response.html" title=" " alt="" coords="293,5345,469,5386"/>
 <area shape="rect" id="node114" href="$classstomata__water__stress__sigmoid.html" title=" " alt="" coords="305,5410,456,5451"/>
-<area shape="rect" id="node115" href="$classutilization__growth__calculator.html" title=" " alt="" coords="319,5475,442,5517"/>
+<area shape="rect" id="node115" href="$classutilization__growth__calculator.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="319,5475,442,5517"/>
 <area shape="rect" id="node116" href="$classutilization__senescence__calculator.html" title=" " alt="" coords="304,5541,457,5582"/>
 <area shape="rect" id="node117" href="$classwater__vapor__properties__from__air__temperature.html" title=" " alt="" coords="302,5606,459,5647"/>
 <area shape="rect" id="node32" href="$classten__layer__c4__canopy.html" title="A child class of multilayer_canopy_photosynthesis where:" alt="" coords="562,1452,705,1479"/>

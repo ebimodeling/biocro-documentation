@@ -73,9 +73,12 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_deriv_module-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DerivModule Class Reference</div>  </div>
+<div class="title">DerivModule Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class represents a derivative <code><a class="el" href="class_module.html" title="Represents a component of a larger system of differential equations.">Module</a></code>.  
+ <a href="class_deriv_module.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="modules_8h_source.html">modules.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -85,7 +88,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_deriv_module__inherit__graph.png" border="0" usemap="#a_deriv_module_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_deriv_module_inherit__map" id="a_deriv_module_inherit__map">
-<area shape="rect" title=" " alt="" coords="117,680,212,707"/>
+<area shape="rect" title="This class represents a derivative Module." alt="" coords="117,680,212,707"/>
 <area shape="rect" href="classaba__decay.html" title=" " alt="" coords="305,5,389,32"/>
 <area shape="rect" href="classbucket__soil__drainage.html" title=" " alt="" coords="275,56,419,83"/>
 <area shape="rect" href="classc3__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="291,107,403,133"/>
@@ -111,9 +114,9 @@ $(function() {
 <area shape="rect" href="classthermal__time__senescence.html" title=" " alt="" coords="260,1184,435,1211"/>
 <area shape="rect" href="classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="274,1235,421,1261"/>
 <area shape="rect" href="classtwo__layer__soil__profile.html" title=" " alt="" coords="275,1285,420,1312"/>
-<area shape="rect" href="classutilization__growth.html" title=" " alt="" coords="286,1336,409,1363"/>
+<area shape="rect" href="classutilization__growth.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="286,1336,409,1363"/>
 <area shape="rect" href="classutilization__senescence.html" title=" " alt="" coords="271,1387,424,1413"/>
-<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="5,680,69,707"/>
+<area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="5,680,69,707"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -123,19 +126,23 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_deriv_module__coll__graph.png" border="0" usemap="#a_deriv_module_coll__map" alt="Collaboration graph"/></div>
 <map name="a_deriv_module_coll__map" id="a_deriv_module_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,100,107"/>
-<area shape="rect" href="class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="21,5,85,32"/>
+<area shape="rect" title="This class represents a derivative Module." alt="" coords="5,80,100,107"/>
+<area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="21,5,85,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:accb1a683f226e214cf16c707bfd5a17a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deriv_module.html#accb1a683f226e214cf16c707bfd5a17a">DerivModule</a> (const std::string &amp;module_name, bool adaptive_compatible=true)</td></tr>
+<tr class="memitem:accb1a683f226e214cf16c707bfd5a17a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deriv_module.html#accb1a683f226e214cf16c707bfd5a17a">DerivModule</a> (const std::string &amp;<a class="el" href="class_module.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>, bool <a class="el" href="class_module.html#a1949356114a900e775676ebc13694f31">adaptive_compatible</a>=true)</td></tr>
 <tr class="separator:accb1a683f226e214cf16c707bfd5a17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d029c0b11825891be79e6775c5a0ad"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deriv_module.html#a54d029c0b11825891be79e6775c5a0ad">~DerivModule</a> ()=0</td></tr>
+<tr class="memdesc:a54d029c0b11825891be79e6775c5a0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overridden when defining it as pure virtual, add an inline one in the header.  <a href="class_deriv_module.html#a54d029c0b11825891be79e6775c5a0ad">More...</a><br /></td></tr>
+<tr class="separator:a54d029c0b11825891be79e6775c5a0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a22ca75c15cbeac14960d34151f285058">Module</a> (std::string const &amp;module_name, bool const &amp;deriv, bool const &amp;adaptive_compatible)</td></tr>
+<tr class="memitem:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a22ca75c15cbeac14960d34151f285058">Module</a> (std::string const &amp;<a class="el" href="class_module.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>, bool const &amp;<a class="el" href="class_module.html#a527dd262217d1457013343b84a9905ac">deriv</a>, bool const &amp;<a class="el" href="class_module.html#a1949356114a900e775676ebc13694f31">adaptive_compatible</a>)</td></tr>
 <tr class="separator:a22ca75c15cbeac14960d34151f285058 inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#aff582bb9b7fe20e76b673a8f7cde898b">~Module</a> ()=0</td></tr>
+<tr class="memdesc:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overridden when defining it as pure virtual, add an inline one in the header.  <a href="class_module.html#aff582bb9b7fe20e76b673a8f7cde898b">More...</a><br /></td></tr>
 <tr class="separator:aff582bb9b7fe20e76b673a8f7cde898b inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0789ba541bd61b1b394ff4d411a40790 inherit pub_methods_class_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a0789ba541bd61b1b394ff4d411a40790">get_name</a> () const</td></tr>
 <tr class="separator:a0789ba541bd61b1b394ff4d411a40790 inherit pub_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,20 +156,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3f5a6c165abfe31f11a5465b11d645be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deriv_module.html#a3f5a6c165abfe31f11a5465b11d645be">update</a> (double *output_ptr, const double &amp;value) const</td></tr>
+<tr class="memdesc:a3f5a6c165abfe31f11a5465b11d645be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derivative modules calculate terms of a derivative and it is possible for one derivative to be determined by multiple modules; for this reason, the outputs should be added to the previously stored value.  <a href="class_deriv_module.html#a3f5a6c165abfe31f11a5465b11d645be">More...</a><br /></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac064f5826a0c682a94f8dfedda31f6c4">get_val_debug</a> (const double *ptr, const std::string name) const</td></tr>
-<tr class="separator:ac064f5826a0c682a94f8dfedda31f6c4 inherit pro_methods_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_static_attribs_class_module"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_module')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_module.html">Module</a></td></tr>
-<tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a3d8c24629d725b9ef8c238cf27c9b158">eps</a> = 1e-10</td></tr>
-<tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158 inherit pro_static_attribs_class_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00109">109</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
+<div class="textblock"><p>This class represents a derivative <code><a class="el" href="class_module.html" title="Represents a component of a larger system of differential equations.">Module</a></code>. </p>
+<p>This class has a pure virtual destructor to designate it as being intentionally abstract. </p>
+
+<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00116">116</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="accb1a683f226e214cf16c707bfd5a17a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accb1a683f226e214cf16c707bfd5a17a">&#9670;&nbsp;</a></span>DerivModule()</h2>
@@ -198,7 +199,36 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00111">111</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00119">119</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
+
+</div>
+</div>
+<a id="a54d029c0b11825891be79e6775c5a0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d029c0b11825891be79e6775c5a0ad">&#9670;&nbsp;</a></span>~DerivModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="class_deriv_module.html">DerivModule</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A destructor must be defined, and since the default is overridden when defining it as pure virtual, add an inline one in the header. </p>
+
+<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00134">134</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
 
 </div>
 </div>
@@ -237,11 +267,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Derivative modules calculate terms of a derivative and it is possible for one derivative to be determined by multiple modules; for this reason, the outputs should be added to the previously stored value. </p>
+
 <p>Implements <a class="el" href="class_module.html#ad80124505b87e8481aedbed068d749c8">Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00118">118</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00141">141</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="aba__decay_8hpp_source.html#l00042">aba_decay::do_operation()</a>, <a class="el" href="bucket__soil__drainage_8hpp_source.html#l00069">bucket_soil_drainage::do_operation()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00161">c3_assimilation::do_operation()</a>, <a class="el" href="c4__assimilation_8h_source.html#l00161">c4_assimilation::do_operation()</a>, <a class="el" href="grimm__soybean__flowering_8h_source.html#l00046">grimm_soybean_flowering::do_operation()</a>, <a class="el" href="harmonic__oscillator_8hpp_source.html#l00042">harmonic_oscillator::do_operation()</a>, <a class="el" href="magic__clock_8hpp_source.html#l00086">magic_clock::do_operation()</a>, <a class="el" href="night__and__day__trackers_8hpp_source.html#l00051">night_and_day_trackers::do_operation()</a>, <a class="el" href="nr__ex_8hpp_source.html#l00046">nr_ex::do_operation()</a>, <a class="el" href="one__layer__soil__profile_8hpp_source.html#l00078">one_layer_soil_profile::do_operation()</a>, <a class="el" href="one__layer__soil__profile__derivatives_8hpp_source.html#l00075">one_layer_soil_profile_derivatives::do_operation()</a>, <a class="el" href="partitioning__growth_8hpp_source.html#l00105">partitioning_growth::do_operation()</a>, <a class="el" href="phase__clock_8hpp_source.html#l00059">phase_clock::do_operation()</a>, <a class="el" href="poincare__clock_8hpp_source.html#l00086">poincare_clock::do_operation()</a>, <a class="el" href="pokhilko__circadian__clock_8hpp_source.html#l00223">pokhilko_circadian_clock::do_operation()</a>, <a class="el" href="song__flowering_8hpp_source.html#l00126">song_flowering::do_operation()</a>, <a class="el" href="thermal__time__and__frost__senescence_8hpp_source.html#l00127">thermal_time_and_frost_senescence::do_operation()</a>, <a class="el" href="thermal__time__beta_8h_source.html#l00164">thermal_time_beta::do_operation()</a>, <a class="el" href="thermal__time__bilinear_8h_source.html#l00132">thermal_time_bilinear::do_operation()</a>, <a class="el" href="thermal__time__linear_8h_source.html#l00116">thermal_time_linear::do_operation()</a>, <a class="el" href="thermal__time__linear__extended_8h_source.html#l00124">thermal_time_linear_extended::do_operation()</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00112">thermal_time_senescence::do_operation()</a>, <a class="el" href="thermal__time__trilinear_8h_source.html#l00141">thermal_time_trilinear::do_operation()</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00141">two_layer_soil_profile::do_operation()</a>, <a class="el" href="utilization__growth_8hpp_source.html#l00102">utilization_growth::do_operation()</a>, and <a class="el" href="utilization__senescence_8hpp_source.html#l00084">utilization_senescence::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="aba__decay_8hpp_source.html#l00042">aba_decay::do_operation()</a>, <a class="el" href="bucket__soil__drainage_8hpp_source.html#l00069">bucket_soil_drainage::do_operation()</a>, <a class="el" href="c3__assimilation_8h_source.html#l00160">c3_assimilation::do_operation()</a>, <a class="el" href="c4__assimilation_8h_source.html#l00160">c4_assimilation::do_operation()</a>, <a class="el" href="grimm__soybean__flowering_8h_source.html#l00046">grimm_soybean_flowering::do_operation()</a>, <a class="el" href="harmonic__oscillator_8hpp_source.html#l00042">harmonic_oscillator::do_operation()</a>, <a class="el" href="magic__clock_8hpp_source.html#l00086">magic_clock::do_operation()</a>, <a class="el" href="night__and__day__trackers_8hpp_source.html#l00051">night_and_day_trackers::do_operation()</a>, <a class="el" href="nr__ex_8hpp_source.html#l00046">nr_ex::do_operation()</a>, <a class="el" href="one__layer__soil__profile_8hpp_source.html#l00080">one_layer_soil_profile::do_operation()</a>, <a class="el" href="one__layer__soil__profile__derivatives_8hpp_source.html#l00076">one_layer_soil_profile_derivatives::do_operation()</a>, <a class="el" href="partitioning__growth_8hpp_source.html#l00105">partitioning_growth::do_operation()</a>, <a class="el" href="phase__clock_8hpp_source.html#l00059">phase_clock::do_operation()</a>, <a class="el" href="poincare__clock_8hpp_source.html#l00086">poincare_clock::do_operation()</a>, <a class="el" href="pokhilko__circadian__clock_8hpp_source.html#l00223">pokhilko_circadian_clock::do_operation()</a>, <a class="el" href="song__flowering_8hpp_source.html#l00126">song_flowering::do_operation()</a>, <a class="el" href="thermal__time__and__frost__senescence_8hpp_source.html#l00127">thermal_time_and_frost_senescence::do_operation()</a>, <a class="el" href="thermal__time__beta_8h_source.html#l00163">thermal_time_beta::do_operation()</a>, <a class="el" href="thermal__time__bilinear_8h_source.html#l00131">thermal_time_bilinear::do_operation()</a>, <a class="el" href="thermal__time__linear_8h_source.html#l00115">thermal_time_linear::do_operation()</a>, <a class="el" href="thermal__time__linear__extended_8h_source.html#l00123">thermal_time_linear_extended::do_operation()</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00112">thermal_time_senescence::do_operation()</a>, <a class="el" href="thermal__time__trilinear_8h_source.html#l00140">thermal_time_trilinear::do_operation()</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">two_layer_soil_profile::do_operation()</a>, <a class="el" href="utilization__growth_8hpp_source.html#l00103">utilization_growth::do_operation()</a>, and <a class="el" href="utilization__senescence_8hpp_source.html#l00084">utilization_senescence::do_operation()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -249,7 +281,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_deriv_module_a3f5a6c165abfe31f11a5465b11d645be_icgraph.png" border="0" usemap="#aclass_deriv_module_a3f5a6c165abfe31f11a5465b11d645be_icgraph" alt=""/></div>
 <map name="aclass_deriv_module_a3f5a6c165abfe31f11a5465b11d645be_icgraph" id="aclass_deriv_module_a3f5a6c165abfe31f11a5465b11d645be_icgraph">
-<area shape="rect" title=" " alt="" coords="232,779,293,805"/>
+<area shape="rect" title="Derivative modules calculate terms of a derivative and it is possible for one derivative to be determ..." alt="" coords="232,779,293,805"/>
 <area shape="rect" href="classaba__decay.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="13,5,177,32"/>
 <area shape="rect" href="classbucket__soil__drainage.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="23,57,167,98"/>
 <area shape="rect" href="classc3__assimilation.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="29,122,161,163"/>
@@ -287,7 +319,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 22 2021 22:38:54 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 25 2021 22:09:28 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

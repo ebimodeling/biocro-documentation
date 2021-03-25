@@ -6,6 +6,6 @@
 <area shape="rect" id="node7" href="$classed__c4__leaf__photosynthesis4.html" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_stomatal_h2o,..." alt="" coords="368,157,555,184"/>
 <area shape="rect" id="node8" href="$classed__nikolov__conductance__free__solve.html" title="Calculates free boundary layer conductance for water according to the model in Nikolov et al." alt="" coords="379,209,544,250"/>
 <area shape="rect" id="node9" href="$classed__p__m__temperature__solve.html" title="Calculates leaf temperature using the Penman&#45;Monteith equation, where boundary layer conductance is d..." alt="" coords="389,274,533,315"/>
-<area shape="rect" id="node2" href="$class_steady_module.html" title=" " alt="" coords="117,132,221,159"/>
-<area shape="rect" id="node3" href="$class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="5,132,69,159"/>
+<area shape="rect" id="node2" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="117,132,221,159"/>
+<area shape="rect" id="node3" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="5,132,69,159"/>
 </map>

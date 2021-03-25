@@ -1,5 +1,5 @@
 <map id="DerivModule" name="DerivModule">
-<area shape="rect" id="node1" title=" " alt="" coords="117,680,212,707"/>
+<area shape="rect" id="node1" title="This class represents a derivative Module." alt="" coords="117,680,212,707"/>
 <area shape="rect" id="node3" href="$classaba__decay.html" title=" " alt="" coords="305,5,389,32"/>
 <area shape="rect" id="node4" href="$classbucket__soil__drainage.html" title=" " alt="" coords="275,56,419,83"/>
 <area shape="rect" id="node5" href="$classc3__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="291,107,403,133"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="node25" href="$classthermal__time__senescence.html" title=" " alt="" coords="260,1184,435,1211"/>
 <area shape="rect" id="node26" href="$classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="274,1235,421,1261"/>
 <area shape="rect" id="node27" href="$classtwo__layer__soil__profile.html" title=" " alt="" coords="275,1285,420,1312"/>
-<area shape="rect" id="node28" href="$classutilization__growth.html" title=" " alt="" coords="286,1336,409,1363"/>
+<area shape="rect" id="node28" href="$classutilization__growth.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="286,1336,409,1363"/>
 <area shape="rect" id="node29" href="$classutilization__senescence.html" title=" " alt="" coords="271,1387,424,1413"/>
-<area shape="rect" id="node2" href="$class_module.html" title="This class represents a component of a larger system of differential equations." alt="" coords="5,680,69,707"/>
+<area shape="rect" id="node2" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="5,680,69,707"/>
 </map>

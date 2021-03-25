@@ -1,7 +1,7 @@
 <map id="do_operation" name="do_operation">
 <area shape="rect" id="node1" title=" " alt="" coords="5,284,101,311"/>
 <area shape="rect" id="node2" href="$_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="185,259,263,285"/>
-<area shape="rect" id="node15" href="$class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title=" " alt="" coords="149,309,299,336"/>
+<area shape="rect" id="node15" href="$class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title="The output parameters of a steady state module are unique, so we can just overwrite the previously st..." alt="" coords="149,309,299,336"/>
 <area shape="rect" id="node3" href="$_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e" title=" " alt="" coords="347,107,452,133"/>
 <area shape="rect" id="node8" href="$c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287" title=" " alt="" coords="361,157,438,184"/>
 <area shape="rect" id="node9" href="$_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="367,208,432,235"/>
