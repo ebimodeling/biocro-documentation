@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('oscillator__clock__calculator_8hpp_sou
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            SteadyModule(<span class="stringliteral">&quot;oscillator_clock_calculator&quot;</span>),</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="comment">// Get pointers to input parameters</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            doy_dbl_ip(get_ip(input_parameters, <span class="stringliteral">&quot;doy_dbl&quot;</span>)),</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            time_ip(get_ip(input_parameters, <span class="stringliteral">&quot;time&quot;</span>)),</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            kick_strength_ip(get_ip(input_parameters, <span class="stringliteral">&quot;kick_strength&quot;</span>)),</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            night_tracker_ip(get_ip(input_parameters, <span class="stringliteral">&quot;night_tracker&quot;</span>)),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            day_tracker_ip(get_ip(input_parameters, <span class="stringliteral">&quot;day_tracker&quot;</span>)),</div>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('oscillator__clock__calculator_8hpp_sou
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code" href="classoscillator__clock__calculator.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Pointers to input parameters</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* doy_dbl_ip;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* time_ip;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* kick_strength_ip;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* night_tracker_ip;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* day_tracker_ip;</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('oscillator__clock__calculator_8hpp_sou
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classoscillator__clock__calculator.html#a70377e14f631d7fd158d2f3356ed6107">   71</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classoscillator__clock__calculator.html#a70377e14f631d7fd158d2f3356ed6107">oscillator_clock_calculator::get_inputs</a>() {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;doy_dbl&quot;</span>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;time&quot;</span>,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="stringliteral">&quot;kick_strength&quot;</span>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="stringliteral">&quot;night_tracker&quot;</span>,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;day_tracker&quot;</span>,</div>
@@ -208,8 +208,8 @@ $(document).ready(function(){initNavTree('oscillator__clock__calculator_8hpp_sou
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">using</span> math_constants::pi;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// Get the current time value</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> doy_dbl = *doy_dbl_ip;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> hour = 24.0 * (doy_dbl - floor(doy_dbl));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> time = *time_ip;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> hour = 24.0 * (time - floor(time));</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// Get the current light value</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> light = *light_ip;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('oscillator__clock__calculator_8hpp_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="oscillator__clock__calculator_8hpp.html">oscillator_clock_calculator.hpp</a></li>
-    <li class="footer">Generated on Thu Mar 25 2021 22:10:30 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 30 2021 16:17:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

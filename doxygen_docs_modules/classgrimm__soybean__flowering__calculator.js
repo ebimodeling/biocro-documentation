@@ -3,7 +3,6 @@ var classgrimm__soybean__flowering__calculator =
     [ "grimm_soybean_flowering_calculator", "classgrimm__soybean__flowering__calculator.html#ac2c2752571af5a2e9bfa606ce1b3b1d0", null ],
     [ "do_operation", "classgrimm__soybean__flowering__calculator.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
     [ "day_length_ip", "classgrimm__soybean__flowering__calculator.html#aae8315be71180b4c74983a440a04dbb2", null ],
-    [ "doy_dbl_ip", "classgrimm__soybean__flowering__calculator.html#a6b5dc9a941541c7a4ffbf8131a0dc01b", null ],
     [ "grimm_flowering_op", "classgrimm__soybean__flowering__calculator.html#a2c98dfe5d08c20fc662d3b95f23b1e5c", null ],
     [ "grimm_flowering_threshold_ip", "classgrimm__soybean__flowering__calculator.html#a0e2109a86f2c564b375a4e50b13cea21", null ],
     [ "grimm_juvenile_pd_threshold_ip", "classgrimm__soybean__flowering__calculator.html#a403a2a35c2767350c3d388da9bc5cf67", null ],
@@ -20,5 +19,6 @@ var classgrimm__soybean__flowering__calculator =
     [ "grimm_sowing_doy_ip", "classgrimm__soybean__flowering__calculator.html#a5f8f373940eb00258fce3f23654e32ab", null ],
     [ "grimm_T_min_ip", "classgrimm__soybean__flowering__calculator.html#a0a4d9fdb1ddee84069ecca3b8be787a8", null ],
     [ "grimm_T_opt_ip", "classgrimm__soybean__flowering__calculator.html#ade73892fb494067e20bc161bb72ed1d5", null ],
-    [ "temp_ip", "classgrimm__soybean__flowering__calculator.html#ad4d8ed8cef21e9ec43b00468e906680a", null ]
+    [ "temp_ip", "classgrimm__soybean__flowering__calculator.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
+    [ "time_ip", "classgrimm__soybean__flowering__calculator.html#a2cd6b5fc11312ee608b2be51a6c07ce5", null ]
 ];

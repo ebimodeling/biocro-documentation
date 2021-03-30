@@ -2,7 +2,6 @@ var classthermal__time__and__frost__senescence =
 [
     [ "thermal_time_and_frost_senescence", "classthermal__time__and__frost__senescence.html#af9103364347709e5e538d1bda0c5a488", null ],
     [ "do_operation", "classthermal__time__and__frost__senescence.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
-    [ "doy_dbl_ip", "classthermal__time__and__frost__senescence.html#a6b5dc9a941541c7a4ffbf8131a0dc01b", null ],
     [ "Grain_op", "classthermal__time__and__frost__senescence.html#a016fd671a2f9ecf7eb66c9db1cd1df7b", null ],
     [ "kGrain_ip", "classthermal__time__and__frost__senescence.html#ad5c47b38c815579bad7e721edeae40f5", null ],
     [ "kLeaf_ip", "classthermal__time__and__frost__senescence.html#ae110d27db09fe338e4449c45e4eb5221", null ],
@@ -41,5 +40,6 @@ var classthermal__time__and__frost__senescence =
     [ "temp_ip", "classthermal__time__and__frost__senescence.html#ad4d8ed8cef21e9ec43b00468e906680a", null ],
     [ "Tfrosthigh_ip", "classthermal__time__and__frost__senescence.html#a08895026a8e91bf1aca4454a0be07a91", null ],
     [ "Tfrostlow_ip", "classthermal__time__and__frost__senescence.html#af5256a33050a5f7ac049ee4b6aab39fe", null ],
+    [ "time_ip", "classthermal__time__and__frost__senescence.html#a2cd6b5fc11312ee608b2be51a6c07ce5", null ],
     [ "TTc_ip", "classthermal__time__and__frost__senescence.html#acae03faea58ff39b9203b048ae7a9aec", null ]
 ];
