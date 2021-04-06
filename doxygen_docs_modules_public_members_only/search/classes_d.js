@@ -1,13 +1,14 @@
 var searchData=
 [
-  ['parameter_5fcalculator_550',['parameter_calculator',['../classparameter__calculator.html',1,'']]],
-  ['partitioning_5fcoefficient_5fselector_551',['partitioning_coefficient_selector',['../classpartitioning__coefficient__selector.html',1,'']]],
-  ['partitioning_5fgrowth_552',['partitioning_growth',['../classpartitioning__growth.html',1,'']]],
-  ['partitioning_5fgrowth_5fcalculator_553',['partitioning_growth_calculator',['../classpartitioning__growth__calculator.html',1,'']]],
-  ['penman_5fmonteith_5fleaf_5ftemperature_554',['penman_monteith_leaf_temperature',['../classpenman__monteith__leaf__temperature.html',1,'']]],
-  ['penman_5fmonteith_5ftranspiration_555',['penman_monteith_transpiration',['../classpenman__monteith__transpiration.html',1,'']]],
-  ['phase_5fclock_556',['phase_clock',['../classphase__clock.html',1,'']]],
-  ['poincare_5fclock_557',['poincare_clock',['../classpoincare__clock.html',1,'']]],
-  ['pokhilko_5fcircadian_5fclock_558',['pokhilko_circadian_clock',['../classpokhilko__circadian__clock.html',1,'']]],
-  ['priestley_5ftranspiration_559',['priestley_transpiration',['../classpriestley__transpiration.html',1,'']]]
+  ['parameter_5fcalculator_570',['parameter_calculator',['../classparameter__calculator.html',1,'']]],
+  ['partitioning_5fcoefficient_5flogistic_571',['partitioning_coefficient_logistic',['../classpartitioning__coefficient__logistic.html',1,'']]],
+  ['partitioning_5fcoefficient_5fselector_572',['partitioning_coefficient_selector',['../classpartitioning__coefficient__selector.html',1,'']]],
+  ['partitioning_5fgrowth_573',['partitioning_growth',['../classpartitioning__growth.html',1,'']]],
+  ['partitioning_5fgrowth_5fcalculator_574',['partitioning_growth_calculator',['../classpartitioning__growth__calculator.html',1,'']]],
+  ['penman_5fmonteith_5fleaf_5ftemperature_575',['penman_monteith_leaf_temperature',['../classpenman__monteith__leaf__temperature.html',1,'']]],
+  ['penman_5fmonteith_5ftranspiration_576',['penman_monteith_transpiration',['../classpenman__monteith__transpiration.html',1,'']]],
+  ['phase_5fclock_577',['phase_clock',['../classphase__clock.html',1,'']]],
+  ['poincare_5fclock_578',['poincare_clock',['../classpoincare__clock.html',1,'']]],
+  ['pokhilko_5fcircadian_5fclock_579',['pokhilko_circadian_clock',['../classpokhilko__circadian__clock.html',1,'']]],
+  ['priestley_5ftranspiration_580',['priestley_transpiration',['../classpriestley__transpiration.html',1,'']]]
 ];

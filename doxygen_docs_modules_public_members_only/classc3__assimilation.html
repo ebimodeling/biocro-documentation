@@ -138,11 +138,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf using <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code>. </p>
-<h3><a class="anchor" id="autotoc_md3"></a>
+<h3><a class="anchor" id="autotoc_md5"></a>
 Model overview</h3>
 <p>The Ball-Berry stomatal conductance model and the Farquar-von-Cammerer-Berry model for C3 photosynthesis, along with simple 1D gas diffusion, define a set of coupled equations with three unknowns: net assimilation, intercellular CO2 concetration, and stomatal conductance. This function attempts to numerically determine these unknowns using a fixed-point iteration method. Beware: the code often fails to find the true solution, and some parts of the models are implemented incorrectly.</p>
 <p>See the original WIMOVAC paper for a description of the assimilation model and additional citations: <a href="http://dx.doi.org/10.1093/bioinformatics/11.4.361">Humphries, S. W. &amp; Long, S. P. Bioinformatics 11, 361–371 (1995)</a></p>
-<h3><a class="anchor" id="autotoc_md4"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 BioCro module implementation</h3>
 <p>In BioCro, we use the following names for this model's input parameters:</p><ul>
 <li><code>'Qp'</code> for the incident quantum flux density of photosynthetically active radiation</li>
@@ -275,7 +275,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classc3__assimilation.html">c3_assimilation</a></li>
-    <li class="footer">Generated on Tue Mar 30 2021 16:17:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 6 2021 18:07:11 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -105,6 +105,9 @@ $(function() {
 <li>dawn_radius_op
 : <a class="el" href="classoscillator__clock__calculator.html#a49d3bc950537038dbf49fda41689e86f">oscillator_clock_calculator</a>
 </li>
+<li>day_length
+: <a class="el" href="classsoybean__development__rate__calculator.html#a395e97c62cc2fe83bee30b38281960d6">soybean_development_rate_calculator</a>
+</li>
 <li>day_length_ip
 : <a class="el" href="classgrimm__soybean__flowering__calculator.html#aae8315be71180b4c74983a440a04dbb2">grimm_soybean_flowering_calculator</a>
 </li>
@@ -163,6 +166,16 @@ $(function() {
 <li>description
 : <a class="el" href="structparameter.html#a2e1454f6988673f814408646edaeb320">parameter</a>
 </li>
+<li>development_index()
+: <a class="el" href="classdevelopment__index.html#a8237e9bbd8413ca868900f5737326752">development_index</a>
+</li>
+<li>development_rate_per_hour
+: <a class="el" href="classdevelopment__index.html#ae4b5e3e9257eaf21614ba4f58b4a5864">development_index</a>
+</li>
+<li>development_rate_per_hour_op
+: <a class="el" href="classsoybean__development__rate__calculator.html#a89cb3f69ce14f35df12d706d2b3e85b5">soybean_development_rate_calculator</a>
+, <a class="el" href="classthermal__time__development__rate__calculator.html#a89cb3f69ce14f35df12d706d2b3e85b5">thermal_time_development_rate_calculator</a>
+</li>
 <li>diffuse_irradiance
 : <a class="el" href="struct_light__profile.html#ac496d43dbe3b235431f0cb1bb11c75ff">Light_profile</a>
 </li>
@@ -197,6 +210,7 @@ $(function() {
 , <a class="el" href="classc4__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451">c4_leaf_photosynthesis</a>
 , <a class="el" href="classcanac__with__collatz.html#a391e9fd4e949f6e987eb654a11b1e451">canac_with_collatz</a>
 , <a class="el" href="classcollatz__leaf.html#a391e9fd4e949f6e987eb654a11b1e451">collatz_leaf</a>
+, <a class="el" href="classdevelopment__index.html#ab169c4ac6775e2b455d926e845bc66c7">development_index</a>
 , <a class="el" href="classed__abc__blc.html#aba36ef6feb82085d0a909a9b5998e3d8">ed_abc_blc</a>
 , <a class="el" href="classed__apply__stomatal__water__stress__via__assimilation.html#aba36ef6feb82085d0a909a9b5998e3d8">ed_apply_stomatal_water_stress_via_assimilation</a>
 , <a class="el" href="classed__apply__stomatal__water__stress__via__conductance.html#aba36ef6feb82085d0a909a9b5998e3d8">ed_apply_stomatal_water_stress_via_conductance</a>
@@ -242,14 +256,16 @@ $(function() {
 , <a class="el" href="class_module__3.html#a391e9fd4e949f6e987eb654a11b1e451">Module_3</a>
 , <a class="el" href="classmultilayer__canopy__integrator.html#a391e9fd4e949f6e987eb654a11b1e451">multilayer_canopy_integrator</a>
 , <a class="el" href="classnight__and__day__trackers.html#a391e9fd4e949f6e987eb654a11b1e451">night_and_day_trackers</a>
+, <a class="el" href="classno__leaf__resp__neg__assim__partitioning__growth__calculator.html#ab169c4ac6775e2b455d926e845bc66c7">no_leaf_resp_neg_assim_partitioning_growth_calculator</a>
 , <a class="el" href="classno__leaf__resp__partitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451">no_leaf_resp_partitioning_growth_calculator</a>
 , <a class="el" href="classnr__ex.html#a391e9fd4e949f6e987eb654a11b1e451">nr_ex</a>
 , <a class="el" href="classone__layer__soil__profile.html#a391e9fd4e949f6e987eb654a11b1e451">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a391e9fd4e949f6e987eb654a11b1e451">one_layer_soil_profile_derivatives</a>
 , <a class="el" href="classoscillator__clock__calculator.html#a391e9fd4e949f6e987eb654a11b1e451">oscillator_clock_calculator</a>
 , <a class="el" href="classparameter__calculator.html#a391e9fd4e949f6e987eb654a11b1e451">parameter_calculator</a>
+, <a class="el" href="classpartitioning__coefficient__logistic.html#ab169c4ac6775e2b455d926e845bc66c7">partitioning_coefficient_logistic</a>
 , <a class="el" href="classpartitioning__coefficient__selector.html#a391e9fd4e949f6e987eb654a11b1e451">partitioning_coefficient_selector</a>
-, <a class="el" href="classpartitioning__growth.html#a391e9fd4e949f6e987eb654a11b1e451">partitioning_growth</a>
+, <a class="el" href="classpartitioning__growth.html#ab169c4ac6775e2b455d926e845bc66c7">partitioning_growth</a>
 , <a class="el" href="classpartitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451">partitioning_growth_calculator</a>
 , <a class="el" href="classpenman__monteith__leaf__temperature.html#a391e9fd4e949f6e987eb654a11b1e451">penman_monteith_leaf_temperature</a>
 , <a class="el" href="classpenman__monteith__transpiration.html#a391e9fd4e949f6e987eb654a11b1e451">penman_monteith_transpiration</a>
@@ -260,11 +276,14 @@ $(function() {
 , <a class="el" href="classrasmussen__specific__heat.html#a391e9fd4e949f6e987eb654a11b1e451">rasmussen_specific_heat</a>
 , <a class="el" href="classrh__to__mole__fraction.html#a391e9fd4e949f6e987eb654a11b1e451">rh_to_mole_fraction</a>
 , <a class="el" href="classse__module_1_1base.html#aba36ef6feb82085d0a909a9b5998e3d8">base</a>
+, <a class="el" href="classsenescence__coefficient__logistic.html#ab169c4ac6775e2b455d926e845bc66c7">senescence_coefficient_logistic</a>
+, <a class="el" href="classsenescence__logistic.html#ab169c4ac6775e2b455d926e845bc66c7">senescence_logistic</a>
 , <a class="el" href="classshortwave__atmospheric__scattering.html#a391e9fd4e949f6e987eb654a11b1e451">shortwave_atmospheric_scattering</a>
 , <a class="el" href="classsoil__evaporation.html#a391e9fd4e949f6e987eb654a11b1e451">soil_evaporation</a>
 , <a class="el" href="classsoil__type__selector.html#a391e9fd4e949f6e987eb654a11b1e451">soil_type_selector</a>
 , <a class="el" href="classsolar__zenith__angle.html#a391e9fd4e949f6e987eb654a11b1e451">solar_zenith_angle</a>
 , <a class="el" href="classsong__flowering.html#a391e9fd4e949f6e987eb654a11b1e451">song_flowering</a>
+, <a class="el" href="classsoybean__development__rate__calculator.html#ab169c4ac6775e2b455d926e845bc66c7">soybean_development_rate_calculator</a>
 , <a class="el" href="classstomata__water__stress__exponential.html#a391e9fd4e949f6e987eb654a11b1e451">stomata_water_stress_exponential</a>
 , <a class="el" href="classstomata__water__stress__linear.html#a391e9fd4e949f6e987eb654a11b1e451">stomata_water_stress_linear</a>
 , <a class="el" href="classstomata__water__stress__linear__and__aba__response.html#a391e9fd4e949f6e987eb654a11b1e451">stomata_water_stress_linear_and_aba_response</a>
@@ -276,6 +295,7 @@ $(function() {
 , <a class="el" href="classthermal__time__and__frost__senescence.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_and_frost_senescence</a>
 , <a class="el" href="classthermal__time__beta.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_beta</a>
 , <a class="el" href="classthermal__time__bilinear.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_bilinear</a>
+, <a class="el" href="classthermal__time__development__rate__calculator.html#ab169c4ac6775e2b455d926e845bc66c7">thermal_time_development_rate_calculator</a>
 , <a class="el" href="classthermal__time__linear.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_linear</a>
 , <a class="el" href="classthermal__time__linear__extended.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_linear_extended</a>
 , <a class="el" href="classthermal__time__senescence.html#a391e9fd4e949f6e987eb654a11b1e451">thermal_time_senescence</a>
@@ -327,11 +347,20 @@ $(function() {
 <li>dusk_radius_op
 : <a class="el" href="classoscillator__clock__calculator.html#a939d1900bb29ff64e22b4000e39a9ff0">oscillator_clock_calculator</a>
 </li>
+<li>DVI
+: <a class="el" href="classpartitioning__coefficient__logistic.html#a705ca6935016643e8d7ea6f647dc0940">partitioning_coefficient_logistic</a>
+, <a class="el" href="classsenescence__coefficient__logistic.html#a705ca6935016643e8d7ea6f647dc0940">senescence_coefficient_logistic</a>
+, <a class="el" href="classsoybean__development__rate__calculator.html#a705ca6935016643e8d7ea6f647dc0940">soybean_development_rate_calculator</a>
+, <a class="el" href="classthermal__time__development__rate__calculator.html#a705ca6935016643e8d7ea6f647dc0940">thermal_time_development_rate_calculator</a>
+</li>
+<li>DVI_op
+: <a class="el" href="classdevelopment__index.html#a53cecad771360948518a06af858e760e">development_index</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 30 2021 16:16:28 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Apr 6 2021 18:06:11 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classthermal__time__senescence.html','
 </div><!--header-->
 <div class="contents">
 
+<p>Determines senescence rates for several plant organs based on thermal time thresholds and magical time travel; only compatible with a fixed-step Euler solver.  
+ <a href="classthermal__time__senescence.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for thermal_time_senescence:</div>
@@ -105,7 +108,7 @@ $(document).ready(function(){initNavTree('classthermal__time__senescence.html','
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classthermal__time__senescence__inherit__graph.png" border="0" usemap="#athermal__time__senescence_inherit__map" alt="Inheritance graph"/></div>
 <map name="athermal__time__senescence_inherit__map" id="athermal__time__senescence_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,180,107"/>
+<area shape="rect" title="Determines senescence rates for several plant organs based on thermal time thresholds and magical tim..." alt="" coords="5,80,180,107"/>
 <area shape="rect" title=" " alt="" coords="45,5,140,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -116,29 +119,59 @@ $(document).ready(function(){initNavTree('classthermal__time__senescence.html','
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classthermal__time__senescence__coll__graph.png" border="0" usemap="#athermal__time__senescence_coll__map" alt="Collaboration graph"/></div>
 <map name="athermal__time__senescence_coll__map" id="athermal__time__senescence_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,180,107"/>
+<area shape="rect" title="Determines senescence rates for several plant organs based on thermal time thresholds and magical tim..." alt="" coords="5,80,180,107"/>
 <area shape="rect" title=" " alt="" coords="45,5,140,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1230390414a778330b87ec47d2bee5bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#a1230390414a778330b87ec47d2bee5bd">thermal_time_senescence</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a1230390414a778330b87ec47d2bee5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa233ada4f9b6a9cfb01f1683f1774c58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#aa233ada4f9b6a9cfb01f1683f1774c58">thermal_time_senescence</a> (state_map const *input_parameters, state_map *output_parameters)</td></tr>
+<tr class="separator:aa233ada4f9b6a9cfb01f1683f1774c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00006">6</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<div class="textblock"><p>Determines senescence rates for several plant organs based on thermal time thresholds and magical time travel; only compatible with a fixed-step Euler solver. </p>
+<h3><a class="anchor" id="autotoc_md32"></a>
+Model overview</h3>
+<p>This module calculates senescence for the following organs:</p><ul>
+<li><code>Leaf</code></li>
+<li><code>Stem</code></li>
+<li><code>Root</code></li>
+<li><code>Rhizome</code></li>
+</ul>
+<p>For a particular organ, senescence begins to occur after the total thermal time passes a threshold value. When this happens for the leaf, some of its mass is lost, with a fraction being remobilized to other organs and the remainder contributing to the litter. The other organs contribute to litter but their tissue is not remobilized.</p>
+<p>It is possible for the grain to gain mass that was remobilized from the leaf, although grain senescence is not considered here.</p>
+<p>To decide how much mass is being lost, this model looks back in time. For the first timestep after senescence starts, this model assumes that the amount of mass lost is equal to the amount of mass that organ gained during its first timestep of growth. Then, for the second timestep after senescence starts, the organ loses the amount of mass it gained during its second hour of growth. This process is repeated indefinitely.</p>
+<p>For some reason, this model does not consider any mass gained due to carbon remoblization or retranslocation; it only considers the net amount of carbon gained through photosynthesis.</p>
+<p>There are some problems with this type of senescence model:</p><ul>
+<li>In reality, a plant does not "remember" how much it grew at a particular time in the past.</li>
+<li>This method only works with a fixed-step Euler solver.</li>
+<li>If the model runs long enough, it will become oscillatory.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md33"></a>
+Details of implementation</h3>
+<p>In general, this model will be solved for a set of N time points <code>t_0</code>, <code>t_1</code>, ..., <code>t_{N-1}</code>. We can think of them as being labeled by an integer "index" i = 0, 1, ..., N-1. So, at each time point, this module stores the net rate of carbon assimilation due to photosynthesis in its <code>assim_rate_XXX_vec</code> members. When senescence begins for an organ, the senescence rate is determined from the 0th element of its associated <code>assim_rate_XXX_vec</code> vector. For the next timestep, element 1 is used. So on and so forth. This module uses the "senescence index" quantities to keep track of the index to use for senescence calculations.</p>
+<p>Special care must be taken for the rhizome, since it may begin the simulation as a carbon source rather than a carbon sink. In this case, the 0th element of the <code>assim_rate_rhizome_vec</code> vector would not correspond to the rhizome's first timestep of growth. To account for this, the <code>rhizome_senescence_index</code> must be incremented while it is a carbon source. Then, when senescence kicks in later, the rhizome senescence index will refer to the first time point when the rhizome began to grow, rather than the first time point of the simulation.</p>
+<p>Obviously this system is very fragile and requires some assumption about the behavior of the rhizome. Also, if any other organs ever act as carbon sources, they may not be handled properly.</p>
+<h3><a class="anchor" id="autotoc_md34"></a>
+Source</h3>
+<p>The model represented by this module is not officially described anywhere, although it has been used for senescence in several published BioCro papers, such as the following:</p>
+<ul>
+<li>Miguez, F. E., Zhu, X., Humphries, S., Bollero, G. A. &amp; Long, S. P. "A semimechanistic model predicting the growth and production of the bioenergy crop Miscanthus×giganteus: description, parameterization and validation. <a href="https://doi.org/10.1111/j.1757-1707.2009.01019.x">GCB Bioenergy 1, 282–296 (2009)</a></li>
+<li>Jaiswal, D. et al. Brazilian sugarcane ethanol as an expandable green alternative to crude oil use. <a href="https://doi.org/10.1038/nclimate3410">Nature Climate Change 7, 788–792 (2017)</a> </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00089">89</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1230390414a778330b87ec47d2bee5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1230390414a778330b87ec47d2bee5bd">&#9670;&nbsp;</a></span>thermal_time_senescence()</h2>
+<a id="aa233ada4f9b6a9cfb01f1683f1774c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa233ada4f9b6a9cfb01f1683f1774c58">&#9670;&nbsp;</a></span>thermal_time_senescence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,13 +182,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classthermal__time__senescence.html">thermal_time_senescence</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
+          <td class="paramtype">state_map const *&#160;</td>
           <td class="paramname"><em>input_parameters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
           <td class="paramname"><em>output_parameters</em>&#160;</td>
         </tr>
         <tr>
@@ -171,40 +204,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00008">8</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00092">92</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +219,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -226,7 +232,34 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00102">102</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00189">189</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string_vector get_outputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00213">213</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classthermal__time__senescence.html">thermal_time_senescence</a></li>
-    <li class="footer">Generated on Tue Mar 30 2021 16:17:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 6 2021 18:07:12 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

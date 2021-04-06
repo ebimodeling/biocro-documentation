@@ -156,7 +156,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates the rate of thermal time accumulation using an extended linear model. </p>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md30"></a>
 Model overview</h3>
 <p>The thermal time <code>t_th</code> represents the accumulated exposure of a plant to temperatures within some acceptable range that allows the plant to develop. The time rate of change of <code>t_th</code> is often referred to as the development rate <code>DR</code>. For an overview of the different methods that can be used for calculating thermal time and its development rate, see the following references:</p>
 <ul>
@@ -179,7 +179,7 @@ linear" model or a "plateau" model. In this model, <code>DR</code> is determined
 <p>Thermal time has units of <code>degrees C * day</code> and the development rate, as written here, has units of <code>degrees C * day / day = degrees C</code>. This is a common formulation, reflecting the fact that average daily temperatures are often used to calculate the increase in thermal time during an entire day.</p>
 <p>This model is based on the observation that although development proceeds linearly after exceeding a threshold, it eventually reaches a maximum rate at some higher temperature. Although this model is more realistic than the pure linear model which increases indefinitely, it still fails to account for the reduction in development rate that often occurs at still higher temperatures.</p>
 <p>This model can be characterized as a piecewise linear model having two cardinal temperatures. For more realistic piecewise linear models, see the <a class="el" href="classthermal__time__bilinear.html" title="Calculates the rate of thermal time accumulation using a bilinear model.">thermal_time_bilinear</a> model (three cardinal temperatures) or the <a class="el" href="classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model.">thermal_time_trilinear</a> model (four cardinal temperatures). If an upper temperature is unavailable, the <a class="el" href="classthermal__time__linear.html" title="Calculates the rate of thermal time accumulation using a linear model.">thermal_time_linear</a> model may be a more appropriate piecewise linear model.</p>
-<h3><a class="anchor" id="autotoc_md15"></a>
+<h3><a class="anchor" id="autotoc_md31"></a>
 BioCro module implementation</h3>
 <p>In BioCro, we use the following names for this model's parameters:</p><ul>
 <li><code>'TTc'</code> for the thermal time <code>t_th</code></li>
@@ -427,7 +427,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classthermal__time__linear__extended.html">thermal_time_linear_extended</a></li>
-    <li class="footer">Generated on Tue Mar 30 2021 16:17:08 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 6 2021 18:06:50 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

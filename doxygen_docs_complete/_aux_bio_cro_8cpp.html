@@ -152,8 +152,9 @@ Functions</h2></td></tr>
 <tr class="separator:abca736d0dd36b9f00cbd9dcd72ebcf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3da07e791516034e0216568602f71d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsoil_m_l__str.html">soilML_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a1c3da07e791516034e0216568602f71d">soilML</a> (double precipit, double transp, double *cws, double soildepth, double *depths, double soil_field_capacity, double soil_wilting_point, double soil_saturation_capacity, double soil_air_entry, double soil_saturated_conductivity, double soil_b_coefficient, double soil_sand_content, double phi1, double phi2, int wsFun, int layers, double rootDB, double LAI, double k, double AirTemp, double IRad, double winds, double RelH, int hydrDist, double rfl, double rsec, double rsdf, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat_of_air, double stefan_boltzman)</td></tr>
 <tr class="separator:a1c3da07e791516034e0216568602f71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb35169469ef33705592a28743d105bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#aeb35169469ef33705592a28743d105bf">resp</a> (double comp, double mrc, double temp)</td></tr>
-<tr class="separator:aeb35169469ef33705592a28743d105bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cb91d103489dd5260fe85905dbcde9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ac0cb91d103489dd5260fe85905dbcde9">resp</a> (double base_rate, double mrc, double temp)</td></tr>
+<tr class="memdesc:ac0cb91d103489dd5260fe85905dbcde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts respiratory losses from a carbon production rate.  <a href="_aux_bio_cro_8cpp.html#ac0cb91d103489dd5260fe85905dbcde9">More...</a><br /></td></tr>
+<tr class="separator:ac0cb91d103489dd5260fe85905dbcde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668682ce55f6888ab3ec44a7d7a48d07"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structseq_r_d__str.html">seqRD_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a668682ce55f6888ab3ec44a7d7a48d07">seqRootDepth</a> (double to, int lengthOut)</td></tr>
 <tr class="separator:a668682ce55f6888ab3ec44a7d7a48d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4de667caf80cb05fccaff44cccb9b1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structrd__str.html">rd_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ada4de667caf80cb05fccaff44cccb9b1">rootDist</a> (int n_layers, double rootDepth, double *depths, double rfl)</td></tr>
@@ -208,7 +209,7 @@ Functions</h2></td></tr>
 <p>Calculate the exponential term of the Arrhenius function.</p>
 <p>The Arrhenius equation is A * e^(c - E_a / R / temperature). The result has the same units as A, which depends on the quantity of interest. In order to make this function reusable, it only calculates the exponential term, which is always dimensionless. c dimensionless activation_energy J / mol thermodynamic_temperature k return value dimensionless </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01121">1121</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01214">1214</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -483,7 +484,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01112">1112</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01205">1205</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="soil__type__selector_8hpp_source.html#l00067">soil_type_selector::do_operation()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -516,7 +517,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01116">1116</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01209">1209</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00114">soil_parameters</a>.</p>
 
@@ -794,8 +795,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb35169469ef33705592a28743d105bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb35169469ef33705592a28743d105bf">&#9670;&nbsp;</a></span>resp()</h2>
+<a id="ac0cb91d103489dd5260fe85905dbcde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cb91d103489dd5260fe85905dbcde9">&#9670;&nbsp;</a></span>resp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -804,7 +805,7 @@ Functions</h2></td></tr>
           <td class="memname">double resp </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>comp</em>, </td>
+          <td class="paramname"><em>base_rate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -826,19 +827,75 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01044">1044</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p>Subtracts respiratory losses from a carbon production rate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">base_rate</td><td>The base rate of carbon production that does not include respiratory losses. Any units are acceptable, e.g. mol / m^2 / s or Mg / ha / hour.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mrc</td><td>Maintenance respiration coefficient (dimensionless)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Temperature (degrees C)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A modified rate having the same units as <code>base_rate</code> where respiratory losses have been subtracted</dd></dl>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Model overview</h3>
+<p>The idea here is that the net carbon assimilation rate (<code>A_n</code>) is given by</p>
+<blockquote class="doxtable">
+<p><code>A_n = A_g - R</code> (1) </p>
+</blockquote>
+<p>where <code>A_g</code> is the gross assimilation rate or the production rate and <code>R</code> is the respiration rate. A further assumption is that respiration is proportional to production, i.e.</p>
+<blockquote class="doxtable">
+<p><code>R = R_c * A_g</code> (2) </p>
+</blockquote>
+<p>where <code>R_c</code> is a dimensionless coefficient that lies on the interval [0,1]. Combining equations (1) and (2), we can express the net assimilation rate as a function of the gross assimilation rate and the respiration coefficient:</p>
+<blockquote class="doxtable">
+<p><code>A_n = A_g - R_c * A_g = A_g * (1 - R_c)</code> (3) </p>
+</blockquote>
+<p>In this function, the temperature dependence of the respiration coefficient is modeled using a simple "Q10" method where <code>Q10 = 2</code> and the base temperature is 0 degrees C, i.e.,</p>
+<blockquote class="doxtable">
+<p><code>R_c = R_c_0 * 2^(T / 10)</code> (4) </p>
+</blockquote>
+<p>where <code>T</code> is the temperature in Celsius. Combining equations (3) and (4), we finally arrive at a relationship between net assimilation, gross assimilation, and temperature:</p>
+<blockquote class="doxtable">
+<p><code>A_n = A_g * (1 - R_c_0 * 2^(T / 10))</code> (5) </p>
+</blockquote>
+<p>In the code below, <code>base_rate</code> represents the gross assimilation rate <code>A_g</code>, <code>mrc</code> represents the maintenance respiration coefficient <code>R_c_0</code>, and <code>temp</code> represents the temperature <code>T</code>.</p>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Sources</h3>
+<p>In Stephen Humphries's thesis, he describes the respiration model in the following way: "The respiration model of McCree (1970) modified according to Penning de Vries (1972) and Thornley (1970) is used here to predict plant respiration... The respiration associated with each plant structure is modified according to the temperature of the structure using a Q10 approximation with a value of 2 as described by Spain and Keen (1992)."</p>
+<p>I (EBL) believe these references to be to the following documents:</p>
+<ul>
+<li><a href="https://library.wur.nl/WebQuery/wurpubs/fulltext/218533">de Vries, F. P. "Respiration and growth" in "Crop processes in controlled environments" 327–347 (Academic Press, 1972)</a></li>
+<li><a href="https://doi.org/10.1038/227304b0">Thornley, J. H. M. "Respiration, Growth and Maintenance in Plants" Nature 227, 304–305 (1970)</a></li>
+<li>McCree, K. "An equation for the rate of respiration of whiteclover plants
+  grown under controlled conditions" in: "Prediction and measurement
+  of photosynthetic productivity" Wageningen: Centre for Agricultural Publishing and Documentation, 221-229 (1970)</li>
+<li>Keen, R. E. &amp; Spain, J. D. "Computer simulation in biology. A BASIC
+  introduction" (1992)</li>
+</ul>
+<p>I believe the McCree, Thornley, and de Vries papers describe the relationship between gross assimilation and respiration, while the Keen &amp; Spain book describes the temperature dependence. Unfortunately, I can't find an online version of that book so I can't be sure.</p>
+<p>For some general discussions about respiration, see the following two sources:</p>
+<ul>
+<li><a href="https://doi.org/10.1006/anbo.2000.1175">Amthor, J. S. "The McCree–de Wit–Penning de Vries–Thornley Respiration Paradigms: 30 Years Later" Ann Bot 86, 1–20 (2000)</a></li>
+<li><a href="https://doi.org/10.1111/1365-3040.ep11591833">Amthor, J. S. "The role of maintenance respiration in plant growth." Plant, Cell &amp; Environment 7, 561–569 (1984)</a></li>
+</ul>
+<p>The Humphries thesis is also unfortunately not available online:</p>
+<p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change?: development and experiments with WIMOVAC: (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002) </p>
 
-<p class="reference">Referenced by <a class="el" href="no__leaf__resp__partitioning__growth__calculator_8hpp_source.html#l00087">no_leaf_resp_partitioning_growth_calculator::do_operation()</a>, and <a class="el" href="partitioning__growth__calculator_8hpp_source.html#l00089">partitioning_growth_calculator::do_operation()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="no__leaf__resp__partitioning__growth__calculator_8hpp_source.html#l00137">no_leaf_resp_partitioning_growth_calculator::do_operation()</a>, <a class="el" href="partitioning__growth__calculator_8hpp_source.html#l00146">partitioning_growth_calculator::do_operation()</a>, and <a class="el" href="no__leaf__resp__neg__assim__partitioning__growth__calculator_8h_source.html#l00136">no_leaf_resp_neg_assim_partitioning_growth_calculator::do_operation()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_aeb35169469ef33705592a28743d105bf_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_aeb35169469ef33705592a28743d105bf_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_aeb35169469ef33705592a28743d105bf_icgraph" id="a_aux_bio_cro_8cpp_aeb35169469ef33705592a28743d105bf_icgraph">
-<area shape="rect" title=" " alt="" coords="220,56,267,83"/>
-<area shape="rect" href="classno__leaf__resp__partitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,172,61"/>
-<area shape="rect" href="classpartitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="6,85,171,126"/>
+<div class="center"><img src="_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph" id="a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph">
+<area shape="rect" title="Subtracts respiratory losses from a carbon production rate." alt="" coords="255,92,301,119"/>
+<area shape="rect" href="classno__leaf__resp__partitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="23,5,189,61"/>
+<area shape="rect" href="classpartitioning__growth__calculator.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="23,85,189,126"/>
+<area shape="rect" href="classno__leaf__resp__neg__assim__partitioning__growth__calculator.html#ab169c4ac6775e2b455d926e845bc66c7" title=" " alt="" coords="5,149,207,205"/>
 </map>
 </div>
 
@@ -903,7 +960,7 @@ Functions</h2></td></tr>
 <p>In the code below, the <code>RH</code> input argument corresponds to <code>h0</code>, the exponential growth constant <code>kh</code> corresponds to <code>B</code>, and <code>nlayers</code> corresponds to <code>n</code>.</p>
 <hr  />
 <p>Note 1: the explanation for this code was "reverse engineered" by EBL from some crytpic documentation found in earlier versions of this function and from Stephen Humphries's thesis, which is not available online:</p>
-<p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change? : development and experiments with WIMOVAC : (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
+<p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change?: development and experiments with WIMOVAC: (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002).</p>
 <hr  />
 <p>Note 2: Equation (2) can be rewritten by noting that <code>h0 = exp(ln(h0))</code>. With this replacement, the equation becomes</p>
 <p><code>h(x) = exp(ln(h0) - ln(h0) * x) = exp(-B * (1 - x))</code></p>
@@ -975,7 +1032,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01044">1044</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1116,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01044">1044</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1872,7 +1929,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 30 2021 16:16:26 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Apr 6 2021 18:06:09 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['range_5fadjusted_5fatan2_856',['range_adjusted_atan2',['../oscillator__clock__calculator_8hpp.html#adab6a19efa7e9d3ab570ee82de5c9604',1,'oscillator_clock_calculator.hpp']]],
-  ['rasmussen_5fspecific_5fheat_857',['rasmussen_specific_heat',['../classrasmussen__specific__heat.html#a752ea717e01a2273fd830861770a4303',1,'rasmussen_specific_heat']]],
-  ['rasmussen_5fspecific_5fheat_5fof_5fair_858',['rasmussen_specific_heat_of_air',['../rasmussen__specific__heat_8h.html#a71de72e7e3fc0a4a60ce1e9b3e9baee4',1,'rasmussen_specific_heat_of_air(double air_temperature, double mole_fraction_h2o):&#160;rasmussen_specific_heat.cpp'],['../rasmussen__specific__heat_8cpp.html#a71de72e7e3fc0a4a60ce1e9b3e9baee4',1,'rasmussen_specific_heat_of_air(double air_temperature, double mole_fraction_h2o):&#160;rasmussen_specific_heat.cpp']]],
-  ['reorder_5finitial_5fguesses_859',['reorder_initial_guesses',['../namespacese__module.html#ae00780412ea782cae4964f33f994d085',1,'se_module']]],
-  ['resp_860',['resp',['../_bio_cro_8h.html#aeb35169469ef33705592a28743d105bf',1,'resp(double comp, double mrc, double temp):&#160;AuxBioCro.cpp'],['../_aux_bio_cro_8cpp.html#aeb35169469ef33705592a28743d105bf',1,'resp(double comp, double mrc, double temp):&#160;AuxBioCro.cpp']]],
-  ['rh_5fto_5fmole_5ffraction_861',['rh_to_mole_fraction',['../classrh__to__mole__fraction.html#a33afd6e5867c8eff4c349b5ec1e69e10',1,'rh_to_mole_fraction']]],
-  ['rhprof_862',['RHprof',['../_aux_bio_cro_8cpp.html#aa4d2cdd07093428af4830f4c8afd660c',1,'RHprof(double RH, int nlayers, double *relative_humidity_profile):&#160;AuxBioCro.cpp'],['../_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c',1,'RHprof(double RH, int nlayers, double *relative_humidity_profile):&#160;AuxBioCro.cpp']]],
-  ['rootdist_863',['rootDist',['../_aux_bio_cro_8cpp.html#ada4de667caf80cb05fccaff44cccb9b1',1,'rootDist(int n_layers, double rootDepth, double *depths, double rfl):&#160;AuxBioCro.cpp'],['../_aux_bio_cro_8h.html#a783adb847d3703728668171ba4e434a5',1,'rootDist(int layer, double rootDepth, double *depths, double rfl):&#160;AuxBioCro.cpp']]],
-  ['run_864',['run',['../classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'multilayer_canopy_properties::run()'],['../classmultilayer__canopy__photosynthesis.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'multilayer_canopy_photosynthesis::run()'],['../classmultilayer__canopy__integrator.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'multilayer_canopy_integrator::run()'],['../classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'ed_multilayer_canopy_properties::run()'],['../classed__multilayer__canopy__integrator.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'ed_multilayer_canopy_integrator::run()']]]
+  ['parameter_5fcalculator_881',['parameter_calculator',['../classparameter__calculator.html#a0552531af72fdfb30da15b6a2df153a3',1,'parameter_calculator']]],
+  ['partitioning_5fcoefficient_5flogistic_882',['partitioning_coefficient_logistic',['../classpartitioning__coefficient__logistic.html#addeb6c4da31d7d2a55dcb415952d1b4f',1,'partitioning_coefficient_logistic']]],
+  ['partitioning_5fcoefficient_5fselector_883',['partitioning_coefficient_selector',['../classpartitioning__coefficient__selector.html#a88d6129d8b6c7f4d8565c0e4457999c3',1,'partitioning_coefficient_selector']]],
+  ['partitioning_5fgrowth_884',['partitioning_growth',['../classpartitioning__growth.html#a3f6bac0a4acdeed63da8bea7e78882b4',1,'partitioning_growth']]],
+  ['partitioning_5fgrowth_5fcalculator_885',['partitioning_growth_calculator',['../classpartitioning__growth__calculator.html#a5beb679e5f65a92c6239cc73dcab913a',1,'partitioning_growth_calculator']]],
+  ['penman_5fmonteith_5fleaf_5ftemperature_886',['penman_monteith_leaf_temperature',['../classpenman__monteith__leaf__temperature.html#abec2a8d75e2fedb3ebcbbb012fbee1dc',1,'penman_monteith_leaf_temperature']]],
+  ['penman_5fmonteith_5ftranspiration_887',['penman_monteith_transpiration',['../classpenman__monteith__transpiration.html#a6e47e1f5cae96825287ebec7a001c0cb',1,'penman_monteith_transpiration']]],
+  ['phase_5fclock_888',['phase_clock',['../classphase__clock.html#a1bbe554d075d5c54fd967bccfc1b0e3d',1,'phase_clock']]],
+  ['photofunc_889',['photoFunc',['../soybean__development__rate__calculator_8h.html#a0246f292b9177502460b58ac06218fdc',1,'soybean_development_rate_calculator.h']]],
+  ['poincare_5fclock_890',['poincare_clock',['../classpoincare__clock.html#a9d842c586b1e3372c73419f432761695',1,'poincare_clock']]],
+  ['poisson_5fdensity_891',['poisson_density',['../_aux_bio_cro_8cpp.html#add002b19ebc8390b467dd10c31bb2cb5',1,'AuxBioCro.cpp']]],
+  ['pokhilko_5fcircadian_5fclock_892',['pokhilko_circadian_clock',['../classpokhilko__circadian__clock.html#a0142d99ae21248547c634dfd8abdfce0',1,'pokhilko_circadian_clock']]],
+  ['priestley_5ftranspiration_893',['priestley_transpiration',['../classpriestley__transpiration.html#ad234cef52813813580dfe5bd2cbe843a',1,'priestley_transpiration']]]
 ];

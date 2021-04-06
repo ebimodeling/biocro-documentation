@@ -59,6 +59,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "collatz_photo.cpp", "collatz__photo_8cpp.html", "collatz__photo_8cpp" ],
     [ "collatz_photo.hpp", "collatz__photo_8hpp.html", "collatz__photo_8hpp" ],
+    [ "development_index.h", "development__index_8h.html", [
+      [ "development_index", "classdevelopment__index.html", "classdevelopment__index" ]
+    ] ],
     [ "eC4photo.cpp", "e_c4photo_8cpp.html", "e_c4photo_8cpp" ],
     [ "eC4photo.h", "e_c4photo_8h.html", "e_c4photo_8h" ],
     [ "ed_abc_blc.h", "ed__abc__blc_8h.html", [
@@ -191,6 +194,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "night_and_day_trackers.hpp", "night__and__day__trackers_8hpp.html", [
       [ "night_and_day_trackers", "classnight__and__day__trackers.html", "classnight__and__day__trackers" ]
     ] ],
+    [ "no_leaf_resp_neg_assim_partitioning_growth_calculator.h", "no__leaf__resp__neg__assim__partitioning__growth__calculator_8h.html", [
+      [ "no_leaf_resp_neg_assim_partitioning_growth_calculator", "classno__leaf__resp__neg__assim__partitioning__growth__calculator.html", "classno__leaf__resp__neg__assim__partitioning__growth__calculator" ]
+    ] ],
     [ "no_leaf_resp_partitioning_growth_calculator.hpp", "no__leaf__resp__partitioning__growth__calculator_8hpp.html", [
       [ "no_leaf_resp_partitioning_growth_calculator", "classno__leaf__resp__partitioning__growth__calculator.html", "classno__leaf__resp__partitioning__growth__calculator" ]
     ] ],
@@ -207,6 +213,7 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "parameter_calculator.hpp", "parameter__calculator_8hpp.html", [
       [ "parameter_calculator", "classparameter__calculator.html", "classparameter__calculator" ]
     ] ],
+    [ "partitioning_coefficient_logistic.h", "partitioning__coefficient__logistic_8h.html", "partitioning__coefficient__logistic_8h" ],
     [ "partitioning_coefficient_selector.hpp", "partitioning__coefficient__selector_8hpp.html", [
       [ "partitioning_coefficient_selector", "classpartitioning__coefficient__selector.html", "classpartitioning__coefficient__selector" ]
     ] ],
@@ -241,6 +248,10 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
       [ "rh_to_mole_fraction", "classrh__to__mole__fraction.html", "classrh__to__mole__fraction" ]
     ] ],
     [ "se_module.h", "se__module_8h.html", "se__module_8h" ],
+    [ "senescence_coefficient_logistic.h", "senescence__coefficient__logistic_8h.html", "senescence__coefficient__logistic_8h" ],
+    [ "senescence_logistic.h", "senescence__logistic_8h.html", [
+      [ "senescence_logistic", "classsenescence__logistic.html", "classsenescence__logistic" ]
+    ] ],
     [ "shortwave_atmospheric_scattering.h", "shortwave__atmospheric__scattering_8h.html", [
       [ "shortwave_atmospheric_scattering", "classshortwave__atmospheric__scattering.html", "classshortwave__atmospheric__scattering" ]
     ] ],
@@ -256,6 +267,7 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "song_flowering.hpp", "song__flowering_8hpp.html", [
       [ "song_flowering", "classsong__flowering.html", "classsong__flowering" ]
     ] ],
+    [ "soybean_development_rate_calculator.h", "soybean__development__rate__calculator_8h.html", "soybean__development__rate__calculator_8h" ],
     [ "stomata_water_stress_exponential.hpp", "stomata__water__stress__exponential_8hpp.html", [
       [ "stomata_water_stress_exponential", "classstomata__water__stress__exponential.html", "classstomata__water__stress__exponential" ]
     ] ],
@@ -276,6 +288,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "thermal_time_bilinear.h", "thermal__time__bilinear_8h.html", [
       [ "thermal_time_bilinear", "classthermal__time__bilinear.html", "classthermal__time__bilinear" ]
+    ] ],
+    [ "thermal_time_development_rate_calculator.h", "thermal__time__development__rate__calculator_8h.html", [
+      [ "thermal_time_development_rate_calculator", "classthermal__time__development__rate__calculator.html", "classthermal__time__development__rate__calculator" ]
     ] ],
     [ "thermal_time_linear.h", "thermal__time__linear_8h.html", [
       [ "thermal_time_linear", "classthermal__time__linear.html", "classthermal__time__linear" ]

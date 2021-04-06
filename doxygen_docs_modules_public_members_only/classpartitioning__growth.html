@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classpartitioning__growth.html',''); i
 </div><!--header-->
 <div class="contents">
 
-<p>This module determines tissue mass derivatives based on the output of either '<a class="el" href="classpartitioning__growth__calculator.html" title="Records new tissue derived from assimilation.">partitioning_growth_calculator</a>' or '<a class="el" href="classno__leaf__resp__partitioning__growth__calculator.html" title="Records new tissue derived from assimilation.">no_leaf_resp_partitioning_growth_calculator</a>'.  
+<p>This module determines the growth rate for several plant organs from the net rate of carbon assimilation due to photosynthesis (determined by a "partitioning growth calculator" module) and any additional carbon that may come from retranslocation.  
  <a href="classpartitioning__growth.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>&gt;</code></p>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classpartitioning__growth.html',''); i
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classpartitioning__growth__inherit__graph.png" border="0" usemap="#apartitioning__growth_inherit__map" alt="Inheritance graph"/></div>
 <map name="apartitioning__growth_inherit__map" id="apartitioning__growth_inherit__map">
-<area shape="rect" title="This module determines tissue mass derivatives based on the output of either &#39;partitioning_growth_cal..." alt="" coords="5,80,136,107"/>
+<area shape="rect" title="This module determines the growth rate for several plant organs from the net rate of carbon assimilat..." alt="" coords="5,80,136,107"/>
 <area shape="rect" title=" " alt="" coords="23,5,118,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -119,31 +119,41 @@ $(document).ready(function(){initNavTree('classpartitioning__growth.html',''); i
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classpartitioning__growth__coll__graph.png" border="0" usemap="#apartitioning__growth_coll__map" alt="Collaboration graph"/></div>
 <map name="apartitioning__growth_coll__map" id="apartitioning__growth_coll__map">
-<area shape="rect" title="This module determines tissue mass derivatives based on the output of either &#39;partitioning_growth_cal..." alt="" coords="5,80,136,107"/>
+<area shape="rect" title="This module determines the growth rate for several plant organs from the net rate of carbon assimilat..." alt="" coords="5,80,136,107"/>
 <area shape="rect" title=" " alt="" coords="23,5,118,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acbbb40a46bbb17d1eaec640ebfc6f013"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#acbbb40a46bbb17d1eaec640ebfc6f013">partitioning_growth</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:acbbb40a46bbb17d1eaec640ebfc6f013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6bac0a4acdeed63da8bea7e78882b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#a3f6bac0a4acdeed63da8bea7e78882b4">partitioning_growth</a> (const state_map *input_parameters, state_map *output_parameters)</td></tr>
+<tr class="separator:a3f6bac0a4acdeed63da8bea7e78882b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpartitioning__growth.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This module determines tissue mass derivatives based on the output of either '<a class="el" href="classpartitioning__growth__calculator.html" title="Records new tissue derived from assimilation.">partitioning_growth_calculator</a>' or '<a class="el" href="classno__leaf__resp__partitioning__growth__calculator.html" title="Records new tissue derived from assimilation.">no_leaf_resp_partitioning_growth_calculator</a>'. </p>
-<p>While this module will function using an adaptive step size integrator, some aspects of it may not work as intended (e.g. the check for negative rhizome mass). </p>
+<div class="textblock"><p>This module determines the growth rate for several plant organs from the net rate of carbon assimilation due to photosynthesis (determined by a "partitioning growth calculator" module) and any additional carbon that may come from retranslocation. </p>
+<p>If the partitioning coefficient for an organ is negative, this indicates that the organ is donating some of its mass to the other organs. In this case, there is a negative term in the rate of change of that organ's mass, and smaller positive terms in the rates for the other organs.</p>
+<p>If the partitioning coefficient for an organ is positive, it is growing. Its derivative will have a positive term representing the contribution from photosynthesis, and possibly other terms representing retranslocated carbon from other organs.</p>
+<p>Conceptually, there are some problems with this type of carbon allocation model.</p>
+<p>One issue is that the final rates depend on the order in which the organs are addressed when mass is being remobilized. In practice this is rarely an issue since it is uncommon for multiple organs to act as carbon sources at the same time.</p>
+<p>Another issue is that an organ's mass may become negative when it is being retranslocated if the system is being solved using the Euler method with a large step size. The rhizome is especially prone to suffer from this issue, so a clunky check has been included here to try to prevent it from occurring. Note that this check introduces a weird discontinuity and is only relevant when using the Euler solver with a step size of one hour. Strange behavior may occur when using other solvers for a plant with a remobilizing rhizome.</p>
+<p>The model represented by this module is not officially described anywhere, although it has been used for carbon allocation in several published BioCro papers, such as the following:</p>
+<ul>
+<li>Miguez, F. E., Zhu, X., Humphries, S., Bollero, G. A. &amp; Long, S. P. "A semimechanistic model predicting the growth and production of the bioenergy crop Miscanthus×giganteus: description, parameterization and validation. <a href="https://doi.org/10.1111/j.1757-1707.2009.01019.x">GCB Bioenergy 1, 282–296 (2009)</a></li>
+<li>Jaiswal, D. et al. Brazilian sugarcane ethanol as an expandable green alternative to crude oil use. <a href="https://doi.org/10.1038/nclimate3410">Nature Climate Change 7, 788–792 (2017)</a></li>
+</ul>
+<p>Some discussion of similar models can also be found at several points in <a href="http://edepot.wur.nl/167315">Penning de Vries, F. W. T. &amp; Laar, H. H. van. "Simulation of plant growth and crop production" (Pudoc, 1982)</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00014">14</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00060">60</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acbbb40a46bbb17d1eaec640ebfc6f013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbb40a46bbb17d1eaec640ebfc6f013">&#9670;&nbsp;</a></span>partitioning_growth()</h2>
+<a id="a3f6bac0a4acdeed63da8bea7e78882b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f6bac0a4acdeed63da8bea7e78882b4">&#9670;&nbsp;</a></span>partitioning_growth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,13 +164,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classpartitioning__growth.html">partitioning_growth</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
+          <td class="paramtype">const state_map *&#160;</td>
           <td class="paramname"><em>input_parameters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
           <td class="paramname"><em>output_parameters</em>&#160;</td>
         </tr>
         <tr>
@@ -176,13 +186,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00017">17</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00063">63</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +201,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,12 +214,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00075">75</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00127">127</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -231,7 +241,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00094">94</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partitioning__growth_8hpp_source.html#l00149">149</a> of file <a class="el" href="partitioning__growth_8hpp_source.html">partitioning_growth.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +254,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classpartitioning__growth.html">partitioning_growth</a></li>
-    <li class="footer">Generated on Tue Mar 30 2021 16:17:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 6 2021 18:07:12 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
