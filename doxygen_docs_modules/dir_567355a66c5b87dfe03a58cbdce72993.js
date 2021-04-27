@@ -10,10 +10,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "ball_berry_module.hpp", "ball__berry__module_8hpp.html", [
       [ "ball_berry_module", "classball__berry__module.html", "classball__berry__module" ]
     ] ],
-    [ "big_leaf_multilayer_canopy.cpp", "big__leaf__multilayer__canopy_8cpp.html", null ],
-    [ "big_leaf_multilayer_canopy.hpp", "big__leaf__multilayer__canopy_8hpp.html", [
-      [ "big_leaf_multilayer_canopy", "classbig__leaf__multilayer__canopy.html", "classbig__leaf__multilayer__canopy" ]
-    ] ],
     [ "BioCro.h", "_bio_cro_8h.html", "_bio_cro_8h" ],
     [ "biocro_units.h", "biocro__units_8h.html", "biocro__units_8h" ],
     [ "biomass_leaf_n_limitation.hpp", "biomass__leaf__n__limitation_8hpp.html", [
@@ -52,11 +48,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "c4photo.h", "c4photo_8h.html", "c4photo_8h" ],
     [ "CanA.h", "_can_a_8h.html", "_can_a_8h" ],
     [ "CanAC.cpp", "_can_a_c_8cpp.html", "_can_a_c_8cpp" ],
-    [ "canac_with_collatz.hpp", "canac__with__collatz_8hpp.html", "canac__with__collatz_8hpp" ],
-    [ "collatz_leaf.cpp", "collatz__leaf_8cpp.html", null ],
-    [ "collatz_leaf.hpp", "collatz__leaf_8hpp.html", [
-      [ "collatz_leaf", "classcollatz__leaf.html", "classcollatz__leaf" ]
-    ] ],
     [ "collatz_photo.cpp", "collatz__photo_8cpp.html", "collatz__photo_8cpp" ],
     [ "collatz_photo.hpp", "collatz__photo_8hpp.html", "collatz__photo_8hpp" ],
     [ "development_index.h", "development__index_8h.html", [

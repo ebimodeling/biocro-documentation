@@ -1,7 +1,7 @@
 <map id="Module" name="Module">
-<area shape="rect" id="node1" title="Represents a component of a larger system of differential equations." alt="" coords="5,1411,69,1437"/>
+<area shape="rect" id="node1" title="Represents a component of a larger system of differential equations." alt="" coords="5,1407,69,1433"/>
 <area shape="rect" id="node2" href="$class_deriv_module.html" title="This class represents a derivative Module." alt="" coords="122,756,217,783"/>
-<area shape="rect" id="node32" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="117,2011,221,2037"/>
+<area shape="rect" id="node32" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="117,2007,221,2033"/>
 <area shape="rect" id="node3" href="$classaba__decay.html" title=" " alt="" coords="339,5,423,32"/>
 <area shape="rect" id="node4" href="$classbucket__soil__drainage.html" title=" " alt="" coords="309,56,453,83"/>
 <area shape="rect" id="node5" href="$classc3__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="325,107,437,133"/>
@@ -39,13 +39,13 @@
 <area shape="rect" id="node38" href="$class_module__2.html" title=" " alt="" coords="341,1880,420,1907"/>
 <area shape="rect" id="node39" href="$class_module__3.html" title=" " alt="" coords="341,1931,420,1957"/>
 <area shape="rect" id="node40" href="$classball__berry__module.html" title=" " alt="" coords="317,1981,444,2008"/>
-<area shape="rect" id="node41" href="$classbig__leaf__multilayer__canopy.html" title=" " alt="" coords="316,2033,445,2074"/>
-<area shape="rect" id="node42" href="$classbiomass__leaf__n__limitation.html" title=" " alt="" coords="295,2099,467,2125"/>
-<area shape="rect" id="node43" href="$classbuck__swvp.html" title="Determines the saturation water vapor pressure of atmospheric air using the saturation_vapor_pressure..." alt="" coords="337,2149,425,2176"/>
-<area shape="rect" id="node44" href="$classc3__canopy.html" title=" " alt="" coords="339,2200,423,2227"/>
-<area shape="rect" id="node45" href="$classc3__leaf__photosynthesis.html" title="Uses the method from c3CanAC() to calculate leaf photosynthesis parameters for C3 plants." alt="" coords="301,2251,460,2277"/>
-<area shape="rect" id="node46" href="$classc4__canopy.html" title=" " alt="" coords="339,2301,423,2328"/>
-<area shape="rect" id="node47" href="$classc4__leaf__photosynthesis.html" title="Uses the method from CanAC() to calculate leaf photosynthesis parameters for C4 plants." alt="" coords="301,2352,460,2379"/>
-<area shape="rect" id="node48" href="$classcanac__with__collatz.html" title=" " alt="" coords="315,2403,447,2429"/>
-<area shape="rect" id="node49" href="$classcollatz__leaf.html" title=" " alt="" coords="337,2453,424,2480"/>
+<area shape="rect" id="node41" href="$classbiomass__leaf__n__limitation.html" title=" " alt="" coords="295,2032,467,2059"/>
+<area shape="rect" id="node42" href="$classbuck__swvp.html" title="Determines the saturation water vapor pressure of atmospheric air using the saturation_vapor_pressure..." alt="" coords="337,2083,425,2109"/>
+<area shape="rect" id="node43" href="$classc3__canopy.html" title=" " alt="" coords="339,2133,423,2160"/>
+<area shape="rect" id="node44" href="$classc3__leaf__photosynthesis.html" title="Uses the method from c3CanAC() to calculate leaf photosynthesis parameters for C3 plants." alt="" coords="301,2184,460,2211"/>
+<area shape="rect" id="node45" href="$classc4__canopy.html" title=" " alt="" coords="339,2235,423,2261"/>
+<area shape="rect" id="node46" href="$classc4__leaf__photosynthesis.html" title="Uses the method from CanAC() to calculate leaf photosynthesis parameters for C4 plants." alt="" coords="301,2285,460,2312"/>
+<area shape="rect" id="node47" href="$classed__abc__blc.html" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)." alt="" coords="337,2336,425,2363"/>
+<area shape="rect" id="node48" href="$classed__apply__stomatal__water__stress__via__assimilation.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="296,2387,465,2429"/>
+<area shape="rect" id="node49" href="$classed__apply__stomatal__water__stress__via__conductance.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="295,2453,466,2494"/>
 </map>
