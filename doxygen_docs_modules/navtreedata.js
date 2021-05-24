@@ -51,6 +51,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -61,15 +62,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classc3__canopy.html#a0e31d26f7fdada29d51c80541b115fde",
-"classed__c4__leaf__photosynthesis.html#a872b829d92761c7412ee13b5a7f623b5",
-"classed__multilayer__canopy__properties.html#ade547db6ec4eb0491dc4c02f0e31a905",
-"classmultilayer__canopy__photosynthesis.html#a1227af2962146d85c2e7a7f631716b23",
-"classpartitioning__growth__calculator.html#a196cc7b86a74d86dbf3c4a0c7b716a6e",
-"classsoil__type__selector.html",
-"classtwo__layer__soil__profile.html#a0ee2446db1ff65e8de5a47b389bf22f9",
-"ed__multilayer__c4__canopy_8h_source.html",
-"namespaceed__p__m__temperature__solve__stuff.html#a9cddfd62ca7ef4bd61ed4ef0ba00f72c"
+"classc3__assimilation.html#af96679a1a4f3e29a31fab28a3e5ad165",
+"classed__c4__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307",
+"classed__multilayer__canopy__properties.html#ad2a5f5763377f026763e88d6722c8a1f",
+"classmultilayer__canopy__integrator.html#af501ae56f6ec67e80869f967fc1933cb",
+"classpartitioning__growth__calculator.html",
+"classshortwave__atmospheric__scattering.html#a1345531ba44bd0a8c3f3c40fc1e09b96",
+"classthermal__time__senescence.html#a7a4771ead27413407a690ed6a6a52b0e",
+"ed__c4__leaf__photosynthesis4_8h.html#a94a831da259825058873817c6e4e505a",
+"namespaceed__c4__leaf__photosynthesis3__stuff.html#a777dd7a51d2875f942cd24abd787cf46",
+"structrue__str.html#abc345aedd954341b306bec86992287b8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

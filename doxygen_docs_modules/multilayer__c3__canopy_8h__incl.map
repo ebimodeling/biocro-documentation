@@ -1,14 +1,9 @@
 <map id="/github/workspace/source/src/module_library/multilayer_c3_canopy.h" name="/github/workspace/source/src/module_library/multilayer_c3_canopy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="370,5,561,61"/>
-<area shape="rect" id="node2" href="$multilayer__canopy__photosynthesis_8h.html" title=" " alt="" coords="44,109,273,136"/>
-<area shape="rect" id="node6" title=" " alt="" coords="475,184,578,211"/>
-<area shape="rect" id="node7" href="$multilayer__canopy__properties_8h.html" title=" " alt="" coords="298,109,497,136"/>
-<area shape="rect" id="node8" href="$c3__leaf__photosynthesis_8h.html" title=" " alt="" coords="571,109,739,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,80,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="104,184,291,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="352,184,443,211"/>
-<area shape="rect" id="node9" href="$c3photo_8hpp.html" title=" " alt="" coords="606,184,698,211"/>
-<area shape="rect" id="node10" href="$_bio_cro_8h.html" title=" " alt="" coords="722,184,793,211"/>
-<area shape="rect" id="node11" href="$_aux_bio_cro_8h.html" title=" " alt="" coords="711,259,804,285"/>
-<area shape="rect" id="node12" title=" " alt="" coords="734,333,781,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="167,5,357,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="208,184,311,211"/>
+<area shape="rect" id="node3" href="$multilayer__canopy__photosynthesis_8h.html" title=" " alt="" coords="29,109,258,136"/>
+<area shape="rect" id="node6" href="$multilayer__canopy__properties_8h.html" title=" " alt="" coords="283,109,481,136"/>
+<area shape="rect" id="node7" href="$c3__leaf__photosynthesis_8h.html" title=" " alt="" coords="506,109,674,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="106,184,181,211"/>
+<area shape="rect" id="node5" title=" " alt="" coords="337,184,427,211"/>
 </map>

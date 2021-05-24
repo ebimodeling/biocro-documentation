@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classmultilayer__canopy__properties.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part).  
+<p>Calculates environmental properties for sunlit and shaded leaves in each layer of a multilayer canopy, mostly using functions found in <code><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></code>.  
  <a href="classmultilayer__canopy__properties.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>&gt;</code></p>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classmultilayer__canopy__properties.ht
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmultilayer__canopy__properties__inherit__graph.png" border="0" usemap="#amultilayer__canopy__properties_inherit__map" alt="Inheritance graph"/></div>
 <map name="amultilayer__canopy__properties_inherit__map" id="amultilayer__canopy__properties_inherit__map">
-<area shape="rect" title="Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part)." alt="" coords="5,80,195,107"/>
+<area shape="rect" title="Calculates environmental properties for sunlit and shaded leaves in each layer of a multilayer canopy..." alt="" coords="5,80,195,107"/>
 <area shape="rect" href="classten__layer__canopy__properties.html" title="A child class of multilayer_canopy_properties where the number of layers has been defined." alt="" coords="7,155,193,181"/>
 <area shape="rect" title=" " alt="" coords="48,5,152,32"/>
 </map>
@@ -121,15 +121,15 @@ $(document).ready(function(){initNavTree('classmultilayer__canopy__properties.ht
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classmultilayer__canopy__properties__coll__graph.png" border="0" usemap="#amultilayer__canopy__properties_coll__map" alt="Collaboration graph"/></div>
 <map name="amultilayer__canopy__properties_coll__map" id="amultilayer__canopy__properties_coll__map">
-<area shape="rect" title="Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part)." alt="" coords="5,80,195,107"/>
+<area shape="rect" title="Calculates environmental properties for sunlit and shaded leaves in each layer of a multilayer canopy..." alt="" coords="5,80,195,107"/>
 <area shape="rect" title=" " alt="" coords="48,5,152,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad17749fc6bedbe8b9a6452521a4318c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#ad17749fc6bedbe8b9a6452521a4318c7">multilayer_canopy_properties</a> (const std::string &amp;module_name, const int &amp;nlayers, state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
-<tr class="separator:ad17749fc6bedbe8b9a6452521a4318c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6aa52e1a5f9c6f19e67ea6a37623f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#adb6aa52e1a5f9c6f19e67ea6a37623f7">multilayer_canopy_properties</a> (std::string const &amp;module_name, int const &amp;nlayers, state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:adb6aa52e1a5f9c6f19e67ea6a37623f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -155,18 +155,22 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="separator:adb75b1d09c411e2974bce071703efbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part). </p>
-<p>Also includes multiple leaf classes (sunlit &amp; shaded). Leaf class is added to output parameters as a prefix, while layer number is added as a suffix. Note that this module has a non-standard constructor, so it cannot be created using the <a class="el" href="classmodule__wrapper__factory.html">module_wrapper_factory</a>.</p>
-<p>For compatibility with the multilayer canopy photosynthesis module, the outputs of this module must be split into the following categories:</p><ul>
-<li>multiclass_multilayer outputs: these outputs are different for each leaf class and canopy layer</li>
-<li>pure_multilayer outputs: these outputs are different for each canopy layer but not for each leaf class</li>
-<li>other outputs: these outputs do not depend on the leaf class or canopy layer (there are currently no outputs of this type) The base names for the multiclass_multilayer and pure_multilayer outputs will be used by the multilayer canopy photosynthesis module to pass them to a leaf photosynthesis module. </li>
+<div class="textblock"><p>Calculates environmental properties for sunlit and shaded leaves in each layer of a multilayer canopy, mostly using functions found in <code><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></code>. </p>
+<p>In general, a canopy can be divided into different layers and leaf classes, which could be based on factors such as angle or age. Here we only consider sunlit and shaded leaves as separate classes. These leaf classes must be specified by the <code><a class="el" href="classmultilayer__canopy__properties.html#aeb9c45ad7664e55dcb5761d4064ef531" title="Define the different leaf classes included by the module.">define_leaf_classes()</a></code> member function.</p>
+<p>Throughout the canopy, some calculated properties only vary across the layers (such as air temperature), while others also depend on the leaf class (such as incident photosynthetically active photon flux density). The names of these output quantities are formed from a base name (e.g. <code>incident_par</code>), a prefix that indicates the leaf class (e.g. <code>sunlit_</code>), and a suffix that indicates the layer number (e.g. <code>_layer_0</code>).</p>
+<p>For compatibility with the <code><a class="el" href="classmultilayer__canopy__photosynthesis.html" title="Applies a leaf photosynthesis module to each layer and leaf class of a multilayer canopy.">multilayer_canopy_photosynthesis</a></code> module, the outputs of this module must be split into categories according to their dependence on canopy layer and/or leaf class, and the base names for the quantities of each type must be specified:</p>
+<ul>
+<li>multiclass_multilayer outputs: these outputs are different for each leaf class and canopy layer and should be specified by the <code><a class="el" href="classmultilayer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666" title="Define all outputs that have different values for each leaf class and layer.">define_multiclass_multilayer_outputs()</a></code> function.</li>
+<li>pure_multilayer outputs: these outputs are different for each canopy layer but not for each leaf class and should be specified by the <code><a class="el" href="classmultilayer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9" title="Define all outputs that have different values for each layer, not including outputs that also depend ...">define_pure_multilayer_outputs()</a></code> function.</li>
+<li>other outputs: these outputs do not depend on the leaf class or canopy layer and do not need to be specified in a special way (there are currently no outputs of this type)</li>
 </ul>
+<p>The base names for the multiclass_multilayer and pure_multilayer outputs will be used by the <code><a class="el" href="classmultilayer__canopy__photosynthesis.html" title="Applies a leaf photosynthesis module to each layer and leaf class of a multilayer canopy.">multilayer_canopy_photosynthesis</a></code> module to correctly pass these quantities to a leaf photosynthesis module that represents one leaf type (e.g. sunlit leaves in layer 1).</p>
+<p>Note that this module has a non-standard constructor, so it cannot be created using the <a class="el" href="classmodule__wrapper__factory.html">module_wrapper_factory</a>. Rather, it is expected that directly-usable classes will be derived from this class. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00029">29</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00053">53</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad17749fc6bedbe8b9a6452521a4318c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17749fc6bedbe8b9a6452521a4318c7">&#9670;&nbsp;</a></span>multilayer_canopy_properties()</h2>
+<a id="adb6aa52e1a5f9c6f19e67ea6a37623f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6aa52e1a5f9c6f19e67ea6a37623f7">&#9670;&nbsp;</a></span>multilayer_canopy_properties()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,13 +181,13 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classmultilayer__canopy__properties.html">multilayer_canopy_properties</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>module_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramtype">int const &amp;&#160;</td>
           <td class="paramname"><em>nlayers</em>, </td>
         </tr>
         <tr>
@@ -211,7 +215,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00032">32</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00056">56</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
 </div>
 </div>
@@ -241,9 +245,9 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define the different leaf classes included by the module. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">132</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00030">30</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00272">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00150">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00071">get_outputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -285,9 +289,9 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all outputs that have different values for each leaf class and layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00143">143</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00042">42</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00277">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00155">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00071">get_outputs()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -329,9 +333,9 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all outputs that have different values for each layer, not including outputs that also depend on leaf class. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00155">155</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00054">54</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00283">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00161">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00071">get_outputs()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -374,9 +378,9 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all inputs required by the module. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00110">110</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00008">8</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00267">ten_layer_canopy_properties::get_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00145">ten_layer_canopy_properties::get_inputs()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -418,11 +422,11 @@ Static Protected Member Functions</h2></td></tr>
 <p>Define all output names by appending leaf class prefixes and layer number suffixes. </p>
 <p>Here we should make use of the <code>define_XXX</code> functions to reduce code duplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">171</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00071">71</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">define_leaf_classes()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00143">define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00155">define_pure_multilayer_outputs()</a>.</p>
+<p class="reference">References <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00030">define_leaf_classes()</a>, <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00042">define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00054">define_pure_multilayer_outputs()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00289">ten_layer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00167">ten_layer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -473,9 +477,9 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00188">188</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00088">88</a> of file <a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00400">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00381">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::scattered_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00193">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00280">WINDprof()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::diffuse_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::direct_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00400">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00381">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::scattered_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00193">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::total_irradiance</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00280">WINDprof()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -493,8 +497,9 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/github/workspace/source/src/module_library/<a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a></li>
+<li>/github/workspace/source/src/module_library/<a class="el" href="multilayer__canopy__properties_8cpp_source.html">multilayer_canopy_properties.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -502,7 +507,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmultilayer__canopy__properties.html">multilayer_canopy_properties</a></li>
-    <li class="footer">Generated on Mon May 24 2021 18:03:07 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 19:14:48 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

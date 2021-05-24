@@ -46,18 +46,13 @@ var hierarchy =
     [ "module_wrapper_factory", "classmodule__wrapper__factory.html", null ],
     [ "nitroParms", "structnitro_parms.html", null ],
     [ "rd_str", "structrd__str.html", null ],
+    [ "rue_str", "structrue__str.html", null ],
     [ "seqRD_str", "structseq_r_d__str.html", null ],
     [ "soilML_str", "structsoil_m_l__str.html", null ],
     [ "soilText_str", "structsoil_text__str.html", null ],
     [ "SteadyModule", null, [
-      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c4_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
-        [ "ten_layer_c4_canopy", "classten__layer__c4__canopy.html", null ]
-      ] ],
       [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classmultilayer__canopy__photosynthesis.html", [
         [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", null ]
-      ] ],
-      [ "multilayer_canopy_photosynthesis< ten_layer_canopy_properties, c3_leaf_photosynthesis >", "classmultilayer__canopy__photosynthesis.html", [
-        [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", null ]
       ] ],
       [ "FvCB", "class_fv_c_b.html", null ],
       [ "Module_1", "class_module__1.html", null ],
@@ -109,7 +104,11 @@ var hierarchy =
       [ "multilayer_canopy_integrator", "classmultilayer__canopy__integrator.html", [
         [ "ten_layer_canopy_integrator", "classten__layer__canopy__integrator.html", null ]
       ] ],
-      [ "multilayer_canopy_photosynthesis< canopy_module_type, leaf_module_type >", "classmultilayer__canopy__photosynthesis.html", null ],
+      [ "multilayer_canopy_photosynthesis< canopy_module_type, leaf_module_type >", "classmultilayer__canopy__photosynthesis.html", [
+        [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", null ],
+        [ "ten_layer_c4_canopy", "classten__layer__c4__canopy.html", null ],
+        [ "ten_layer_rue_canopy", "classten__layer__rue__canopy.html", null ]
+      ] ],
       [ "multilayer_canopy_properties", "classmultilayer__canopy__properties.html", [
         [ "ten_layer_canopy_properties", "classten__layer__canopy__properties.html", null ]
       ] ],
@@ -125,6 +124,7 @@ var hierarchy =
       [ "priestley_transpiration", "classpriestley__transpiration.html", null ],
       [ "rasmussen_specific_heat", "classrasmussen__specific__heat.html", null ],
       [ "rh_to_mole_fraction", "classrh__to__mole__fraction.html", null ],
+      [ "rue_leaf_photosynthesis", "classrue__leaf__photosynthesis.html", null ],
       [ "base", "classse__module_1_1base.html", [
         [ "ed_c4_leaf_photosynthesis", "classed__c4__leaf__photosynthesis.html", null ],
         [ "ed_c4_leaf_photosynthesis2", "classed__c4__leaf__photosynthesis2.html", null ],
@@ -144,6 +144,7 @@ var hierarchy =
       [ "stomata_water_stress_linear_and_aba_response", "classstomata__water__stress__linear__and__aba__response.html", null ],
       [ "stomata_water_stress_sigmoid", "classstomata__water__stress__sigmoid.html", null ],
       [ "thermal_time_development_rate_calculator", "classthermal__time__development__rate__calculator.html", null ],
+      [ "total_biomass", "classtotal__biomass.html", null ],
       [ "utilization_growth_calculator", "classutilization__growth__calculator.html", null ],
       [ "utilization_senescence_calculator", "classutilization__senescence__calculator.html", null ],
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", null ]

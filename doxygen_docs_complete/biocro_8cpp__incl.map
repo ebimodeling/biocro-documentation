@@ -3,13 +3,15 @@
 <area shape="rect" id="node2" title=" " alt="" coords="5,169,73,196"/>
 <area shape="rect" id="node3" title=" " alt="" coords="366,95,435,121"/>
 <area shape="rect" id="node4" href="$_bio_cro_8h.html" title=" " alt="" coords="183,95,341,121"/>
-<area shape="rect" id="node7" href="$modules_8h.html" title=" " alt="" coords="77,95,159,121"/>
-<area shape="rect" id="node5" href="$_aux_bio_cro_8h.html" title=" " alt="" coords="377,169,470,196"/>
+<area shape="rect" id="node9" href="$modules_8h.html" title=" " alt="" coords="77,95,159,121"/>
+<area shape="rect" id="node5" href="$_aux_bio_cro_8h.html" title=" " alt="" coords="397,169,490,196"/>
 <area shape="rect" id="node6" title=" " alt="" coords="420,244,467,271"/>
-<area shape="rect" id="node8" title=" " alt="" coords="107,319,166,345"/>
-<area shape="rect" id="node9" href="$module__helper__functions_8h.html" title=" " alt="" coords="158,169,334,196"/>
-<area shape="rect" id="node10" title=" " alt="" coords="317,244,396,271"/>
-<area shape="rect" id="node11" href="$state__map_8h.html" title=" " alt="" coords="199,244,293,271"/>
-<area shape="rect" id="node12" title=" " alt="" coords="191,319,301,345"/>
-<area shape="rect" id="node13" title=" " alt="" coords="325,319,380,345"/>
+<area shape="rect" id="node7" href="$constants_8h.html" title=" " alt="" coords="491,244,590,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="467,319,615,360"/>
+<area shape="rect" id="node10" title=" " alt="" coords="107,326,166,353"/>
+<area shape="rect" id="node11" href="$module__helper__functions_8h.html" title=" " alt="" coords="158,169,334,196"/>
+<area shape="rect" id="node12" title=" " alt="" coords="317,244,396,271"/>
+<area shape="rect" id="node13" href="$state__map_8h.html" title=" " alt="" coords="199,244,293,271"/>
+<area shape="rect" id="node14" title=" " alt="" coords="191,326,301,353"/>
+<area shape="rect" id="node15" title=" " alt="" coords="325,326,380,353"/>
 </map>

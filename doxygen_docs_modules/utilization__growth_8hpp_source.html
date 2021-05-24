@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('utilization__growth_8hpp_source.html',
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">//  The leaf gets carbon from canopy photosynthesis (a conceptual rather than physical distinction), uses some for growth, and transfers some to the stem</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//  The stem gets carbon from the leaf, uses some for growth, and transfers some to the root, rhizome, and grain</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//  The root, rhizome, and grain each get carbon from the stem and use some for growth</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// See Thornley, J. H. M. A Model to Describe the Partitioning of Photosynthate during Vegetative Plant Growth. Ann Bot 36, 419430 (1972)</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// See Thornley, J. H. M. A Model to Describe the Partitioning of Photosynthate during Vegetative Plant Growth. Ann Bot 36, 419–430 (1972)</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">double</span> d_substrate_leaf = canopy_assimilation_rate - transport_leaf_to_stem - utilization_leaf;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">double</span> d_substrate_stem = transport_leaf_to_stem - transport_stem_to_grain - transport_stem_to_root - transport_stem_to_rhizome - utilization_stem;</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('utilization__growth_8hpp_source.html',
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//  (1) A fraction YG is used for growth (0 &lt; YG &lt; 1)</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//  (2) The remaining fraction (1 - YG) is lost to respiration</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// In BioCro, the canopy assimilation rate (used here as the carbon input) already includes a negative</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//  respiratory contribution based on Bernacchi et al., Plant, Cell &amp; Environment 24, 253259 (2001)</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">//  respiratory contribution based on Bernacchi et al., Plant, Cell &amp; Environment 24, 253–259 (2001)</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// So we simply set YG = 1 when allocating the substrate for growth, i.e.,</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">//  the rate of change of Leaf is utilization_leaf, etc</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('utilization__growth_8hpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="utilization__growth_8hpp.html">utilization_growth.hpp</a></li>
-    <li class="footer">Generated on Mon May 24 2021 18:02:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 19:14:26 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

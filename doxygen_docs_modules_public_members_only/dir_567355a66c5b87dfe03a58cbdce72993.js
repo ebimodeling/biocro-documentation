@@ -28,6 +28,7 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "c3_canopy.hpp", "c3__canopy_8hpp.html", [
       [ "c3_canopy", "classc3__canopy.html", "classc3__canopy" ]
     ] ],
+    [ "c3_leaf_photosynthesis.cpp", "c3__leaf__photosynthesis_8cpp.html", null ],
     [ "c3_leaf_photosynthesis.h", "c3__leaf__photosynthesis_8h.html", [
       [ "c3_leaf_photosynthesis", "classc3__leaf__photosynthesis.html", "classc3__leaf__photosynthesis" ]
     ] ],
@@ -41,6 +42,7 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "c4_canopy.hpp", "c4__canopy_8hpp.html", [
       [ "c4_canopy", "classc4__canopy.html", "classc4__canopy" ]
     ] ],
+    [ "c4_leaf_photosynthesis.cpp", "c4__leaf__photosynthesis_8cpp.html", null ],
     [ "c4_leaf_photosynthesis.h", "c4__leaf__photosynthesis_8h.html", [
       [ "c4_leaf_photosynthesis", "classc4__leaf__photosynthesis.html", "classc4__leaf__photosynthesis" ]
     ] ],
@@ -167,21 +169,22 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "module_wrapper_factory.h", "module__wrapper__factory_8h.html", [
       [ "module_wrapper_factory", "classmodule__wrapper__factory.html", null ]
     ] ],
-    [ "multilayer_c3_canopy.h", "multilayer__c3__canopy_8h.html", [
-      [ "ten_layer_c3_canopy", "classten__layer__c3__canopy.html", "classten__layer__c3__canopy" ]
-    ] ],
-    [ "multilayer_c4_canopy.h", "multilayer__c4__canopy_8h.html", [
-      [ "ten_layer_c4_canopy", "classten__layer__c4__canopy.html", "classten__layer__c4__canopy" ]
-    ] ],
+    [ "multilayer_c3_canopy.cpp", "multilayer__c3__canopy_8cpp.html", null ],
+    [ "multilayer_c3_canopy.h", "multilayer__c3__canopy_8h.html", "multilayer__c3__canopy_8h" ],
+    [ "multilayer_c4_canopy.cpp", "multilayer__c4__canopy_8cpp.html", null ],
+    [ "multilayer_c4_canopy.h", "multilayer__c4__canopy_8h.html", "multilayer__c4__canopy_8h" ],
     [ "multilayer_canopy_integrator.h", "multilayer__canopy__integrator_8h.html", [
       [ "multilayer_canopy_integrator", "classmultilayer__canopy__integrator.html", "classmultilayer__canopy__integrator" ],
       [ "ten_layer_canopy_integrator", "classten__layer__canopy__integrator.html", "classten__layer__canopy__integrator" ]
     ] ],
     [ "multilayer_canopy_photosynthesis.h", "multilayer__canopy__photosynthesis_8h.html", "multilayer__canopy__photosynthesis_8h" ],
+    [ "multilayer_canopy_properties.cpp", "multilayer__canopy__properties_8cpp.html", null ],
     [ "multilayer_canopy_properties.h", "multilayer__canopy__properties_8h.html", [
       [ "multilayer_canopy_properties", "classmultilayer__canopy__properties.html", "classmultilayer__canopy__properties" ],
       [ "ten_layer_canopy_properties", "classten__layer__canopy__properties.html", "classten__layer__canopy__properties" ]
     ] ],
+    [ "multilayer_rue_canopy.cpp", "multilayer__rue__canopy_8cpp.html", null ],
+    [ "multilayer_rue_canopy.h", "multilayer__rue__canopy_8h.html", "multilayer__rue__canopy_8h" ],
     [ "night_and_day_trackers.hpp", "night__and__day__trackers_8hpp.html", [
       [ "night_and_day_trackers", "classnight__and__day__trackers.html", "classnight__and__day__trackers" ]
     ] ],
@@ -237,6 +240,10 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "rasmussen_specific_heat.h", "rasmussen__specific__heat_8h.html", "rasmussen__specific__heat_8h" ],
     [ "rh_to_mole_fraction.h", "rh__to__mole__fraction_8h.html", [
       [ "rh_to_mole_fraction", "classrh__to__mole__fraction.html", "classrh__to__mole__fraction" ]
+    ] ],
+    [ "rue_leaf_photosynthesis.cpp", "rue__leaf__photosynthesis_8cpp.html", "rue__leaf__photosynthesis_8cpp" ],
+    [ "rue_leaf_photosynthesis.h", "rue__leaf__photosynthesis_8h.html", [
+      [ "rue_leaf_photosynthesis", "classrue__leaf__photosynthesis.html", "classrue__leaf__photosynthesis" ]
     ] ],
     [ "se_module.h", "se__module_8h.html", "se__module_8h" ],
     [ "senescence_coefficient_logistic.h", "senescence__coefficient__logistic_8h.html", "senescence__coefficient__logistic_8h" ],
@@ -294,6 +301,9 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "thermal_time_trilinear.h", "thermal__time__trilinear_8h.html", [
       [ "thermal_time_trilinear", "classthermal__time__trilinear.html", "classthermal__time__trilinear" ]
+    ] ],
+    [ "total_biomass.h", "total__biomass_8h.html", [
+      [ "total_biomass", "classtotal__biomass.html", "classtotal__biomass" ]
     ] ],
     [ "two_layer_soil_profile.hpp", "two__layer__soil__profile_8hpp.html", [
       [ "two_layer_soil_profile", "classtwo__layer__soil__profile.html", "classtwo__layer__soil__profile" ]

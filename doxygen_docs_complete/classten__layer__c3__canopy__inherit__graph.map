@@ -1,6 +1,6 @@
 <map id="ten_layer_c3_canopy" name="ten_layer_c3_canopy">
-<area shape="rect" id="node1" title="A child class of multilayer_canopy_photosynthesis where:" alt="" coords="536,20,679,47"/>
-<area shape="rect" id="node2" href="$classmultilayer__canopy__photosynthesis.html" title=" " alt="" coords="269,5,488,61"/>
-<area shape="rect" id="node3" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="117,20,221,47"/>
-<area shape="rect" id="node4" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="5,20,69,47"/>
+<area shape="rect" id="node1" title="Represents a ten layer canopy where leaf&#45;level photosynthesis is calculated using the Farquhar&#45;von&#45;Ca..." alt="" coords="5,244,148,271"/>
+<area shape="rect" id="node2" href="$classmultilayer__canopy__photosynthesis.html" title="Applies a leaf photosynthesis module to each layer and leaf class of a multilayer canopy." alt="" coords="5,155,148,196"/>
+<area shape="rect" id="node3" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="25,80,129,107"/>
+<area shape="rect" id="node4" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="45,5,109,32"/>
 </map>
