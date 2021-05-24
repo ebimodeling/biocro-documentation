@@ -81,8 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada7812eec0573997d93b4598d3138c52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#ada7812eec0573997d93b4598d3138c52">biocro_simulation</a> (std::unordered_map&lt; std::string, double &gt; const &amp;initial_state, std::unordered_map&lt; std::string, double &gt; const &amp;invariant_parameters, std::unordered_map&lt; std::string, std::vector&lt; double &gt;&gt; const &amp;varying_parameters, std::vector&lt; std::string &gt; const &amp;steady_state_module_names, std::vector&lt; std::string &gt; const &amp;derivative_module_names, std::string solver_name, double output_step_size, double adaptive_rel_error_tol, double adaptive_abs_error_tol, int adaptive_max_steps)</td></tr>
-<tr class="separator:ada7812eec0573997d93b4598d3138c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352a3f1b99c053b7e3ccce034b6c308b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a352a3f1b99c053b7e3ccce034b6c308b">biocro_simulation</a> (std::unordered_map&lt; std::string, double &gt; const &amp;initial_values, std::unordered_map&lt; std::string, double &gt; const &amp;<a class="el" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>, std::unordered_map&lt; std::string, std::vector&lt; double &gt;&gt; const &amp;drivers, std::vector&lt; std::string &gt; const &amp;steady_state_module_names, std::vector&lt; std::string &gt; const &amp;derivative_module_names, std::string solver_name, double output_step_size, double adaptive_rel_error_tol, double adaptive_abs_error_tol, int adaptive_max_steps)</td></tr>
+<tr class="separator:a352a3f1b99c053b7e3ccce034b6c308b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4601baa69b5242561ef06aa530e57473"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a4601baa69b5242561ef06aa530e57473">run_simulation</a> ()</td></tr>
 <tr class="separator:a4601baa69b5242561ef06aa530e57473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922846631dbe478686e03a46e25ab29a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a922846631dbe478686e03a46e25ab29a">generate_report</a> () const</td></tr>
@@ -99,8 +99,8 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="biocro__simulation_8h_source.html#l00011">11</a> of file <a class="el" href="biocro__simulation_8h_source.html">biocro_simulation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ada7812eec0573997d93b4598d3138c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada7812eec0573997d93b4598d3138c52">&#9670;&nbsp;</a></span>biocro_simulation()</h2>
+<a id="a352a3f1b99c053b7e3ccce034b6c308b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352a3f1b99c053b7e3ccce034b6c308b">&#9670;&nbsp;</a></span>biocro_simulation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,19 +112,19 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="classbiocro__simulation.html">biocro_simulation</a> </td>
           <td>(</td>
           <td class="paramtype">std::unordered_map&lt; std::string, double &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>initial_state</em>, </td>
+          <td class="paramname"><em>initial_values</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::unordered_map&lt; std::string, double &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>invariant_parameters</em>, </td>
+          <td class="paramname"><em>parameters</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; double &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>varying_parameters</em>, </td>
+          <td class="paramname"><em>drivers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -183,14 +183,14 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="biocro__simulation_8h_source.html#l00014">14</a> of file <a class="el" href="biocro__simulation_8h_source.html">biocro_simulation.h</a>.</p>
 
-<p class="reference">References <a class="el" href="system__solver__factory_8cpp_source.html#l00031">system_solver_factory::create()</a>, <a class="el" href="biocro__simulation_8h_source.html#l00063">solver</a>, and <a class="el" href="biocro__simulation_8h_source.html#l00062">sys</a>.</p>
+<p class="reference">References <a class="el" href="system__solver__factory_8cpp_source.html#l00031">system_solver_factory::create()</a>, <a class="el" href="parameters_8h_source.html#l00053">parameters</a>, <a class="el" href="biocro__simulation_8h_source.html#l00063">solver</a>, and <a class="el" href="biocro__simulation_8h_source.html#l00062">sys</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classbiocro__simulation_ada7812eec0573997d93b4598d3138c52_cgraph.png" border="0" usemap="#aclassbiocro__simulation_ada7812eec0573997d93b4598d3138c52_cgraph" alt=""/></div>
-<map name="aclassbiocro__simulation_ada7812eec0573997d93b4598d3138c52_cgraph" id="aclassbiocro__simulation_ada7812eec0573997d93b4598d3138c52_cgraph">
+<div class="center"><img src="classbiocro__simulation_a352a3f1b99c053b7e3ccce034b6c308b_cgraph.png" border="0" usemap="#aclassbiocro__simulation_a352a3f1b99c053b7e3ccce034b6c308b_cgraph" alt=""/></div>
+<map name="aclassbiocro__simulation_a352a3f1b99c053b7e3ccce034b6c308b_cgraph" id="aclassbiocro__simulation_a352a3f1b99c053b7e3ccce034b6c308b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,128,39"/>
 <area shape="rect" href="classsystem__solver__factory.html#a30322733da8c2ac4a961ae4dd269dcee" title=" " alt="" coords="176,5,328,47"/>
 </map>
@@ -235,7 +235,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph.png" border="0" usemap="#aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph" alt=""/></div>
 <map name="aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph" id="aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph">
 <area shape="rect" title=" " alt="" coords="155,5,267,32"/>
-<area shape="rect" href="_r___gro_8cpp.html#a32ca0655602b368782a43ffbb555b098" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" href="_r___gro_8cpp.html#a90e769c04c434eca9f998f474e3ed75f" title=" " alt="" coords="5,5,107,32"/>
 </map>
 </div>
 
@@ -277,7 +277,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph.png" border="0" usemap="#aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph" alt=""/></div>
 <map name="aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph" id="aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph">
 <area shape="rect" title=" " alt="" coords="155,5,261,32"/>
-<area shape="rect" href="_r___gro_8cpp.html#a32ca0655602b368782a43ffbb555b098" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" href="_r___gro_8cpp.html#a90e769c04c434eca9f998f474e3ed75f" title=" " alt="" coords="5,5,107,32"/>
 </map>
 </div>
 
@@ -342,7 +342,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 12 2021 19:55:10 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon May 24 2021 18:03:24 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var class_module__1 =
 [
-    [ "Module_1", "class_module__1.html#a495d2541b8b4da00ee0eba340398fe25", null ]
+    [ "Module_1", "class_module__1.html#a7b796ee671a51d62debf97c1e4befba1", null ]
 ];

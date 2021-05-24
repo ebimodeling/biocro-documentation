@@ -1,4 +1,4 @@
 var classsenescence__logistic =
 [
-    [ "senescence_logistic", "classsenescence__logistic.html#ae9388819a427a99d0db9e5d9900930e9", null ]
+    [ "senescence_logistic", "classsenescence__logistic.html#a768b255b07bcdc5d3843342e3f041658", null ]
 ];

@@ -1,6 +1,6 @@
 var classpartitioning__coefficient__logistic =
 [
-    [ "partitioning_coefficient_logistic", "classpartitioning__coefficient__logistic.html#addeb6c4da31d7d2a55dcb415952d1b4f", null ],
+    [ "partitioning_coefficient_logistic", "classpartitioning__coefficient__logistic.html#a29f892a37410188e2fbec28291935a24", null ],
     [ "do_operation", "classpartitioning__coefficient__logistic.html#ab169c4ac6775e2b455d926e845bc66c7", null ],
     [ "alphaLeaf", "classpartitioning__coefficient__logistic.html#a95a10e8d2952018bf943e8cbb10dd835", null ],
     [ "alphaRoot", "classpartitioning__coefficient__logistic.html#ae1962c76df771fcb584de743a96a16a9", null ],

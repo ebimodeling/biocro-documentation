@@ -128,17 +128,17 @@ $(document).ready(function(){initNavTree('classmultilayer__canopy__integrator.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a29fda7694d447efebe831472317e9dd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#a29fda7694d447efebe831472317e9dd6">multilayer_canopy_integrator</a> (const std::string &amp;module_name, const int &amp;nlayers, const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a29fda7694d447efebe831472317e9dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ffedeadf64911ed37c970a598d7fabd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#a2ffedeadf64911ed37c970a598d7fabd">multilayer_canopy_integrator</a> (const std::string &amp;module_name, const int &amp;nlayers, state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a2ffedeadf64911ed37c970a598d7fabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a586f4cb90199901349389ca4553b9365"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#a586f4cb90199901349389ca4553b9365">get_inputs</a> (int nlayers)</td></tr>
-<tr class="memdesc:a586f4cb90199901349389ca4553b9365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all inputs required by the module, adding layer suffixes as required.  <a href="classmultilayer__canopy__integrator.html#a586f4cb90199901349389ca4553b9365">More...</a><br /></td></tr>
-<tr class="separator:a586f4cb90199901349389ca4553b9365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ef272e7460b825b87df850d4ff7174"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#a07ef272e7460b825b87df850d4ff7174">get_outputs</a> (int nlayers)</td></tr>
-<tr class="memdesc:a07ef272e7460b825b87df850d4ff7174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs produced by the module.  <a href="classmultilayer__canopy__integrator.html#a07ef272e7460b825b87df850d4ff7174">More...</a><br /></td></tr>
-<tr class="separator:a07ef272e7460b825b87df850d4ff7174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9591219a4f3f3d9370b77cea0173de50"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#a9591219a4f3f3d9370b77cea0173de50">get_inputs</a> (int nlayers)</td></tr>
+<tr class="memdesc:a9591219a4f3f3d9370b77cea0173de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all inputs required by the module, adding layer suffixes as required.  <a href="classmultilayer__canopy__integrator.html#a9591219a4f3f3d9370b77cea0173de50">More...</a><br /></td></tr>
+<tr class="separator:a9591219a4f3f3d9370b77cea0173de50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb75b1d09c411e2974bce071703efbce"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__integrator.html#adb75b1d09c411e2974bce071703efbce">get_outputs</a> (int nlayers)</td></tr>
+<tr class="memdesc:adb75b1d09c411e2974bce071703efbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs produced by the module.  <a href="classmultilayer__canopy__integrator.html#adb75b1d09c411e2974bce071703efbce">More...</a><br /></td></tr>
+<tr class="separator:adb75b1d09c411e2974bce071703efbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -149,10 +149,10 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part). </p>
 <p>Also includes multiple leaf classes (sunlit &amp; shaded). Leaf class is added to output parameters as a prefix, while layer number is added as a suffix. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00014">14</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00015">15</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a29fda7694d447efebe831472317e9dd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29fda7694d447efebe831472317e9dd6">&#9670;&nbsp;</a></span>multilayer_canopy_integrator()</h2>
+<a id="a2ffedeadf64911ed37c970a598d7fabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ffedeadf64911ed37c970a598d7fabd">&#9670;&nbsp;</a></span>multilayer_canopy_integrator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,14 +175,14 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -197,13 +197,13 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00017">17</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00018">18</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a586f4cb90199901349389ca4553b9365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586f4cb90199901349389ca4553b9365">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="a9591219a4f3f3d9370b77cea0173de50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9591219a4f3f3d9370b77cea0173de50">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +212,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nlayers</em></td><td>)</td>
@@ -228,25 +228,25 @@ Protected Member Functions</h2></td></tr>
 
 <p>Define all inputs required by the module, adding layer suffixes as required. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00084">84</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00085">85</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00212">ten_layer_canopy_integrator::get_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00213">ten_layer_canopy_integrator::get_inputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__integrator_a586f4cb90199901349389ca4553b9365_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__integrator_a586f4cb90199901349389ca4553b9365_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__integrator_a586f4cb90199901349389ca4553b9365_icgraph" id="aclassmultilayer__canopy__integrator_a586f4cb90199901349389ca4553b9365_icgraph">
+<div class="center"><img src="classmultilayer__canopy__integrator_a9591219a4f3f3d9370b77cea0173de50_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__integrator_a9591219a4f3f3d9370b77cea0173de50_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__integrator_a9591219a4f3f3d9370b77cea0173de50_icgraph" id="aclassmultilayer__canopy__integrator_a9591219a4f3f3d9370b77cea0173de50_icgraph">
 <area shape="rect" title="Define all inputs required by the module, adding layer suffixes as required." alt="" coords="236,13,319,39"/>
-<area shape="rect" href="classten__layer__canopy__integrator.html#a70377e14f631d7fd158d2f3356ed6107" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="classten__layer__canopy__integrator.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="5,5,188,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a07ef272e7460b825b87df850d4ff7174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ef272e7460b825b87df850d4ff7174">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="adb75b1d09c411e2974bce071703efbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb75b1d09c411e2974bce071703efbce">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +255,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nlayers</em></td><td>)</td>
@@ -271,18 +271,18 @@ Protected Member Functions</h2></td></tr>
 
 <p>Define all outputs produced by the module. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00113">113</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00114">114</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00217">ten_layer_canopy_integrator::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00218">ten_layer_canopy_integrator::get_outputs()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__integrator_a07ef272e7460b825b87df850d4ff7174_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__integrator_a07ef272e7460b825b87df850d4ff7174_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__integrator_a07ef272e7460b825b87df850d4ff7174_icgraph" id="aclassmultilayer__canopy__integrator_a07ef272e7460b825b87df850d4ff7174_icgraph">
+<div class="center"><img src="classmultilayer__canopy__integrator_adb75b1d09c411e2974bce071703efbce_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__integrator_adb75b1d09c411e2974bce071703efbce_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__integrator_adb75b1d09c411e2974bce071703efbce_icgraph" id="aclassmultilayer__canopy__integrator_adb75b1d09c411e2974bce071703efbce_icgraph">
 <area shape="rect" title="Define all outputs produced by the module." alt="" coords="236,13,327,39"/>
-<area shape="rect" href="classten__layer__canopy__integrator.html#a5a5b9919e2d8b1ee7bc8cc37558c79de" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" href="classten__layer__canopy__integrator.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="5,5,188,47"/>
 </map>
 </div>
 
@@ -311,7 +311,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00128">128</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__integrator_8h_source.html#l00129">129</a> of file <a class="el" href="multilayer__canopy__integrator_8h_source.html">multilayer_canopy_integrator.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmultilayer__canopy__integrator.html">multilayer_canopy_integrator</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:07 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

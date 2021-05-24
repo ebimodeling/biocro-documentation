@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classc3__assimilation.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52fad00065062e414e90baab5bfe2d8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a52fad00065062e414e90baab5bfe2d8a">c3_assimilation</a> (state_map const *input_parameters, state_map *output_parameters)</td></tr>
-<tr class="separator:a52fad00065062e414e90baab5bfe2d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0dff890013571b995ee3cc09d03f9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a5a0dff890013571b995ee3cc09d03f9e">c3_assimilation</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a5a0dff890013571b995ee3cc09d03f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__assimilation.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -198,7 +198,7 @@ Model overview</h3>
 <p>See the original WIMOVAC paper for a description of the assimilation model and additional citations: <a href="http://dx.doi.org/10.1093/bioinformatics/11.4.361">Humphries, S. W. &amp; Long, S. P. Bioinformatics 11, 361–371 (1995)</a></p>
 <h3><a class="anchor" id="autotoc_md6"></a>
 BioCro module implementation</h3>
-<p>In BioCro, we use the following names for this model's input parameters:</p><ul>
+<p>In BioCro, we use the following names for this model's input quantities:</p><ul>
 <li><code>'Qp'</code> for the incident quantum flux density of photosynthetically active radiation</li>
 <li><code>'Tleaf'</code> for the leaf temperature</li>
 <li><code>'rh'</code> for the atmospheric relative humidity</li>
@@ -218,7 +218,7 @@ BioCro module implementation</h3>
 <li><code>'electrons_per_carboxylation'</code> for the number of electrons per carboxylation event</li>
 <li><code>'electrons_per_oxygenation'</code> for the number of electrons per oxygenation event</li>
 </ul>
-<p>We use the following names for the model's output parameters:</p><ul>
+<p>We use the following names for the model's output quantities:</p><ul>
 <li><code>'Assim'</code> for the net CO2 assimilation rate</li>
 <li><code>'Gs'</code> for the stomatal conductance for H2O</li>
 <li><code>'Ci'</code> for the intercellular CO2 concentration</li>
@@ -227,8 +227,8 @@ BioCro module implementation</h3>
 
 <p class="definition">Definition at line <a class="el" href="c3__assimilation_8h_source.html#l00056">56</a> of file <a class="el" href="c3__assimilation_8h_source.html">c3_assimilation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a52fad00065062e414e90baab5bfe2d8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52fad00065062e414e90baab5bfe2d8a">&#9670;&nbsp;</a></span>c3_assimilation()</h2>
+<a id="a5a0dff890013571b995ee3cc09d03f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a0dff890013571b995ee3cc09d03f9e">&#9670;&nbsp;</a></span>c3_assimilation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,14 +239,14 @@ BioCro module implementation</h3>
         <tr>
           <td class="memname"><a class="el" href="classc3__assimilation.html">c3_assimilation</a> </td>
           <td>(</td>
-          <td class="paramtype">state_map const *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">state_map *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -306,8 +306,8 @@ BioCro module implementation</h3>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +316,7 @@ BioCro module implementation</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -333,8 +333,8 @@ BioCro module implementation</h3>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ BioCro module implementation</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -942,7 +942,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classc3__assimilation.html">c3_assimilation</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

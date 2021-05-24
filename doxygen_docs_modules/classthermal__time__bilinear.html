@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classthermal__time__bilinear.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4825845bb1811e42819bce8f39625703"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#a4825845bb1811e42819bce8f39625703">thermal_time_bilinear</a> (state_map const *input_parameters, state_map *output_parameters)</td></tr>
-<tr class="separator:a4825845bb1811e42819bce8f39625703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6671629def61184a864e000a294c381b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#a6671629def61184a864e000a294c381b">thermal_time_bilinear</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a6671629def61184a864e000a294c381b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__bilinear.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -196,8 +196,8 @@ BioCro module implementation</h3>
 
 <p class="definition">Definition at line <a class="el" href="thermal__time__bilinear_8h_source.html#l00078">78</a> of file <a class="el" href="thermal__time__bilinear_8h_source.html">thermal_time_bilinear.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4825845bb1811e42819bce8f39625703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4825845bb1811e42819bce8f39625703">&#9670;&nbsp;</a></span>thermal_time_bilinear()</h2>
+<a id="a6671629def61184a864e000a294c381b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6671629def61184a864e000a294c381b">&#9670;&nbsp;</a></span>thermal_time_bilinear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,14 +208,14 @@ BioCro module implementation</h3>
         <tr>
           <td class="memname"><a class="el" href="classthermal__time__bilinear.html">thermal_time_bilinear</a> </td>
           <td>(</td>
-          <td class="paramtype">state_map const *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">state_map *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,8 +264,8 @@ BioCro module implementation</h3>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +274,7 @@ BioCro module implementation</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -291,8 +291,8 @@ BioCro module implementation</h3>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ BioCro module implementation</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -458,7 +458,7 @@ BioCro module implementation</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classthermal__time__bilinear.html">thermal_time_bilinear</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:30 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

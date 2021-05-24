@@ -1,4 +1,4 @@
 var classthermal__time__beta =
 [
-    [ "thermal_time_beta", "classthermal__time__beta.html#a748fd2e40f7385484a9ba55cc8ae85c8", null ]
+    [ "thermal_time_beta", "classthermal__time__beta.html#ae52f4939ecef7bbccccc8c08b9f012c8", null ]
 ];

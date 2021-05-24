@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bio_cro_8h.html">BioCro.h</a>&quot;</span>     <span class="comment">// For c3CanAC</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span>        <span class="comment">// For floor</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classc3__canopy.html#a70377e14f631d7fd158d2f3356ed6107">    6</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classc3__canopy.html#a70377e14f631d7fd158d2f3356ed6107">c3_canopy::get_inputs</a>() {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">    6</a></span>&#160;string_vector <a class="code" href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">c3_canopy::get_inputs</a>() {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">return</span> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="stringliteral">&quot;lai&quot;</span>,</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="stringliteral">&quot;time&quot;</span>,</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">   45</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">   45</a></span>&#160;string_vector <a class="code" href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">c3_canopy::get_outputs</a>() {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="stringliteral">&quot;canopy_transpiration_rate&quot;</span>,</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            *electrons_per_carboxylation_ip, *electrons_per_oxygenation_ip,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            *absorptivity_par_ip);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Update the output parameter list</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Update the output quantity list</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    update(canopy_assimilation_rate_op, can_result.<a class="code" href="struct_can___str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>);  <span class="comment">// Mg / ha / hr.</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    update(canopy_transpiration_rate_op, can_result.<a class="code" href="struct_can___str.html#af8fba6423eb33d2551d878ee6675cb79">Trans</a>); <span class="comment">// Mg / ha / hr.</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    update(GrossAssim_op, can_result.<a class="code" href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
@@ -169,8 +169,8 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div class="ttc" id="a_bio_cro_8h_html"><div class="ttname"><a href="_bio_cro_8h.html">BioCro.h</a></div></div>
 <div class="ttc" id="a_bio_cro_8h_html_a0fbab86b987b44dc72c614df14e320d0"><div class="ttname"><a href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0">c3CanAC</a></div><div class="ttdeci">struct Can_Str c3CanAC(double LAI, int DOY, double hr, double solarR, double Temp, double RH, double WindSpeed, double lat, int nlayers, double Vmax, double Jmax, double tpu_rate_max, double Rd, double Catm, double o2, double b0, double b1, double Gs_min, double theta, double kd, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double chil, double StomataWS, double specific_heat_of_air, double atmospheric_pressure, double growth_respiration_fraction, int water_stress_approach, double electrons_per_carboxylation, double electrons_per_oxygenation, double absorptivity_par)</div><div class="ttdef"><b>Definition:</b> <a href="c3_can_a_c_8cpp_source.html#l00001">c3CanAC.cpp:4</a></div></div>
 <div class="ttc" id="ac3__canopy_8hpp_html"><div class="ttname"><a href="c3__canopy_8hpp.html">c3_canopy.hpp</a></div></div>
-<div class="ttc" id="aclassc3__canopy_html_a5a5b9919e2d8b1ee7bc8cc37558c79de"><div class="ttname"><a href="classc3__canopy.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">c3_canopy::get_outputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00045">c3_canopy.cpp:45</a></div></div>
-<div class="ttc" id="aclassc3__canopy_html_a70377e14f631d7fd158d2f3356ed6107"><div class="ttname"><a href="classc3__canopy.html#a70377e14f631d7fd158d2f3356ed6107">c3_canopy::get_inputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00006">c3_canopy.cpp:6</a></div></div>
+<div class="ttc" id="aclassc3__canopy_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">c3_canopy::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00045">c3_canopy.cpp:45</a></div></div>
+<div class="ttc" id="aclassc3__canopy_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">c3_canopy::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00006">c3_canopy.cpp:6</a></div></div>
 <div class="ttc" id="astruct_can___str_html"><div class="ttname"><a href="struct_can___str.html">Can_Str</a></div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00046">AuxBioCro.h:46</a></div></div>
 <div class="ttc" id="astruct_can___str_html_a7adeee8f55ac1ffe5e9c226823ae4251"><div class="ttname"><a href="struct_can___str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Can_Str::Assim</a></div><div class="ttdeci">double Assim</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00047">AuxBioCro.h:47</a></div></div>
 <div class="ttc" id="astruct_can___str_html_ac2cb333c4e7bdd22c4c9672c80ed977f"><div class="ttname"><a href="struct_can___str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">Can_Str::GrossAssim</a></div><div class="ttdeci">double GrossAssim</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00049">AuxBioCro.h:49</a></div></div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('c3__canopy_8cpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3__canopy_8cpp.html">c3_canopy.cpp</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:51 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:06 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

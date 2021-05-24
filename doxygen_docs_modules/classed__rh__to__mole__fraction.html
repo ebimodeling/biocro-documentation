@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classed__rh__to__mole__fraction.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a59f7c80f4693cb7920a55de45f548109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#a59f7c80f4693cb7920a55de45f548109">ed_rh_to_mole_fraction</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a59f7c80f4693cb7920a55de45f548109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0c3834b6ab3ac3ba2b13edf889c8a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#a0f0c3834b6ab3ac3ba2b13edf889c8a0">ed_rh_to_mole_fraction</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a0f0c3834b6ab3ac3ba2b13edf889c8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__rh__to__mole__fraction.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -160,10 +160,10 @@ Private Attributes</h2></td></tr>
 <p>Here we just use the definitions of mole fraction and relative humidity:</p>
 <p>mole_fraction = partial_pressure / atmospheric_pressure = saturation_water_vapor_pressure * relative_humidity / atmospheric_pressure </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00020">20</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00021">21</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a59f7c80f4693cb7920a55de45f548109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59f7c80f4693cb7920a55de45f548109">&#9670;&nbsp;</a></span>ed_rh_to_mole_fraction()</h2>
+<a id="a0f0c3834b6ab3ac3ba2b13edf889c8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0c3834b6ab3ac3ba2b13edf889c8a0">&#9670;&nbsp;</a></span>ed_rh_to_mole_fraction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,14 +174,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classed__rh__to__mole__fraction.html">ed_rh_to_mole_fraction</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,7 +196,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00023">23</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00024">24</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
 </div>
 </div>
@@ -224,9 +224,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">67</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">68</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00042">atmospheric_pressure_ip</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00046">mole_fraction_h2o_atmosphere_op</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00044">relative_humidity_atmosphere_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00043">temperature_air_ip</a>.</p>
+<p class="reference">References <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00043">atmospheric_pressure_ip</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00047">mole_fraction_h2o_atmosphere_op</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00045">relative_humidity_atmosphere_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00044">temperature_air_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -241,8 +241,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -264,12 +264,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00051">51</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00052">52</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +278,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -291,7 +291,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00060">60</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00061">61</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
 </div>
 </div>
@@ -316,9 +316,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00042">42</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00043">43</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -342,9 +342,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00046">46</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00047">47</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +368,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00044">44</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00045">45</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -394,9 +394,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00043">43</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00044">44</a> of file <a class="el" href="ed__rh__to__mole__fraction_8h_source.html">ed_rh_to_mole_fraction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00067">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__rh__to__mole__fraction.html">ed_rh_to_mole_fraction</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

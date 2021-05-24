@@ -1,6 +1,6 @@
 var classthermal__time__beta =
 [
-    [ "thermal_time_beta", "classthermal__time__beta.html#a748fd2e40f7385484a9ba55cc8ae85c8", null ],
+    [ "thermal_time_beta", "classthermal__time__beta.html#ae52f4939ecef7bbccccc8c08b9f012c8", null ],
     [ "do_operation", "classthermal__time__beta.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
     [ "talpha", "classthermal__time__beta.html#ad6bc22b74112bd54ffb16825fd7be041", null ],
     [ "tbase", "classthermal__time__beta.html#a7d868f9486d306c393ba61754662f541", null ],

@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classleaf__shape__factor.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05cc5c235aeec2073043429fe06ca187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#a05cc5c235aeec2073043429fe06ca187">leaf_shape_factor</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a05cc5c235aeec2073043429fe06ca187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c618080288d41d30346d8d0b07e6f75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#a0c618080288d41d30346d8d0b07e6f75">leaf_shape_factor</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a0c618080288d41d30346d8d0b07e6f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classleaf__shape__factor.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -160,10 +160,10 @@ Private Attributes</h2></td></tr>
 <p>Note that although k is nominally dimensionless (m^2 / m^2), we should be careful to distinguish between ground and leaf area. With this in mind, k has units (m^2 ground) / (m^2 leaf).</p>
 <p>Also note that as cos_zenith_angle approaches 0, the leaf shadow area A_h becomes infinite and so does the leaf shape factor k. This is the expected behavior and isn't an actual error. </p>
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00031">31</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00032">32</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a05cc5c235aeec2073043429fe06ca187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05cc5c235aeec2073043429fe06ca187">&#9670;&nbsp;</a></span>leaf_shape_factor()</h2>
+<a id="a0c618080288d41d30346d8d0b07e6f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c618080288d41d30346d8d0b07e6f75">&#9670;&nbsp;</a></span>leaf_shape_factor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,14 +174,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classleaf__shape__factor.html">leaf_shape_factor</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,7 +196,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00034">34</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00035">35</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
 </div>
 </div>
@@ -224,14 +224,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00074">74</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00075">75</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
-<p class="reference">References <a class="el" href="leaf__shape__factor_8h_source.html#l00052">chil</a>, <a class="el" href="leaf__shape__factor_8h_source.html#l00051">cosine_zenith_angle</a>, and <a class="el" href="leaf__shape__factor_8h_source.html#l00054">leaf_shape_factor_op</a>.</p>
+<p class="reference">References <a class="el" href="leaf__shape__factor_8h_source.html#l00053">chil</a>, <a class="el" href="leaf__shape__factor_8h_source.html#l00052">cosine_zenith_angle</a>, and <a class="el" href="leaf__shape__factor_8h_source.html#l00055">leaf_shape_factor_op</a>.</p>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -253,12 +253,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00059">59</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00060">60</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +267,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -280,7 +280,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00067">67</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00068">68</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
 </div>
 </div>
@@ -305,9 +305,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00052">52</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00053">53</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00074">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00075">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -331,9 +331,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00051">51</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00052">52</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00074">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00075">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -357,9 +357,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00054">54</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="leaf__shape__factor_8h_source.html#l00055">55</a> of file <a class="el" href="leaf__shape__factor_8h_source.html">leaf_shape_factor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00074">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="leaf__shape__factor_8h_source.html#l00075">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classleaf__shape__factor.html">leaf_shape_factor</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

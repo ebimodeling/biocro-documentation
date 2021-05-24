@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classed__ball__berry.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a28fc04767b26e36caec39cc4a84689b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#a28fc04767b26e36caec39cc4a84689b8">ed_ball_berry</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a28fc04767b26e36caec39cc4a84689b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb02a46e0d9b38c9cdbd71b9ef3e0e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#a7fb02a46e0d9b38c9cdbd71b9ef3e0e7">ed_ball_berry</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a7fb02a46e0d9b38c9cdbd71b9ef3e0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__ball__berry.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -180,10 +180,10 @@ Private Attributes</h2></td></tr>
 <p>It is also important to note that when A_n &lt; 0, the Ball-Berry model just predicts its minimum conductance value: the intercept.</p>
 <p>In BioCro we also may want to include the effects of water stress as a modification to the stomatal conductance. To do this, we treat the Ball-Berry conductance as a maximum value corresponding to ideal water availability. We use a conductance_adjustment_factor to linearly switch between a minimum conductance value and the maximum one from the Ball-Berry model. I.e., when conductance_adjustment_factor is zero, conductance is the minimum value. When it is one, conductance is the maximum (Ball-Berry) value. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00048">48</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00049">49</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a28fc04767b26e36caec39cc4a84689b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28fc04767b26e36caec39cc4a84689b8">&#9670;&nbsp;</a></span>ed_ball_berry()</h2>
+<a id="a7fb02a46e0d9b38c9cdbd71b9ef3e0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb02a46e0d9b38c9cdbd71b9ef3e0e7">&#9670;&nbsp;</a></span>ed_ball_berry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,14 +194,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classed__ball__berry.html">ed_ball_berry</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,7 +216,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00051">51</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00052">52</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
@@ -244,9 +244,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00113">113</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00114">114</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__ball__berry_8h_source.html#l00078">assimilation_net_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00079">atmospheric_pressure_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00077">ball_berry_intercept_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00076">ball_berry_slope_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00083">conductance_adjustment_factor_WS_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00084">conductance_stomatal_h2o_min_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00086">conductance_stomatal_h2o_op</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00082">mole_fraction_co2_leaf_surface_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00081">mole_fraction_h2o_leaf_surface_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__ball__berry_8h_source.html#l00080">temperature_leaf_ip</a>.</p>
+<p class="reference">References <a class="el" href="ed__ball__berry_8h_source.html#l00079">assimilation_net_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00080">atmospheric_pressure_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00078">ball_berry_intercept_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00077">ball_berry_slope_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00084">conductance_adjustment_factor_WS_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00085">conductance_stomatal_h2o_min_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00087">conductance_stomatal_h2o_op</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00083">mole_fraction_co2_leaf_surface_ip</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00082">mole_fraction_h2o_leaf_surface_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__ball__berry_8h_source.html#l00081">temperature_leaf_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -261,8 +261,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -284,12 +284,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00091">91</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00092">92</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +298,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -311,7 +311,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00106">106</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00107">107</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
 </div>
 </div>
@@ -336,9 +336,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00078">78</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00079">79</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -362,9 +362,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00079">79</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00080">80</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +388,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00077">77</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00078">78</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +414,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00076">76</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00077">77</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +440,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00083">83</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00084">84</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -466,9 +466,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00084">84</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00085">85</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -492,9 +492,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00086">86</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00087">87</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -518,9 +518,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00082">82</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00083">83</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -544,9 +544,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00081">81</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00082">82</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +570,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00080">80</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__ball__berry_8h_source.html#l00081">81</a> of file <a class="el" href="ed__ball__berry_8h_source.html">ed_ball_berry.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00113">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__ball__berry_8h_source.html#l00114">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__ball__berry.html">ed_ball_berry</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

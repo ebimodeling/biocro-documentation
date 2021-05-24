@@ -1,6 +1,6 @@
 var classed__ball__berry =
 [
-    [ "ed_ball_berry", "classed__ball__berry.html#a28fc04767b26e36caec39cc4a84689b8", null ],
+    [ "ed_ball_berry", "classed__ball__berry.html#a7fb02a46e0d9b38c9cdbd71b9ef3e0e7", null ],
     [ "do_operation", "classed__ball__berry.html#aba36ef6feb82085d0a909a9b5998e3d8", null ],
     [ "assimilation_net_ip", "classed__ball__berry.html#ac13596d40db7755dfc1ebdab6445518e", null ],
     [ "atmospheric_pressure_ip", "classed__ball__berry.html#a993c71f463b2372eff9e62e897f0fae1", null ],

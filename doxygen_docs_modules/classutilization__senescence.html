@@ -125,15 +125,15 @@ $(document).ready(function(){initNavTree('classutilization__senescence.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3967c66fed0653c4ab2d1676769b1f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#a3967c66fed0653c4ab2d1676769b1f05">utilization_senescence</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a3967c66fed0653c4ab2d1676769b1f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91762f9c579ae8d3013be59c3c2c2642"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#a91762f9c579ae8d3013be59c3c2c2642">utilization_senescence</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a91762f9c579ae8d3013be59c3c2c2642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classutilization__senescence.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -179,10 +179,10 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00006">6</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00007">7</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3967c66fed0653c4ab2d1676769b1f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3967c66fed0653c4ab2d1676769b1f05">&#9670;&nbsp;</a></span>utilization_senescence()</h2>
+<a id="a91762f9c579ae8d3013be59c3c2c2642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91762f9c579ae8d3013be59c3c2c2642">&#9670;&nbsp;</a></span>utilization_senescence()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,14 +193,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classutilization__senescence.html">utilization_senescence</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -215,7 +215,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00008">8</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00009">9</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
 </div>
 </div>
@@ -243,14 +243,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00084">84</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00085">85</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="utilization__senescence_8hpp_source.html#l00041">Leaf_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00043">LeafLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00035">remobilization_fraction_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00050">Rhizome_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00052">RhizomeLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00047">Root_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00049">RootLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00036">senescence_leaf_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00039">senescence_rhizome_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00038">senescence_root_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00037">senescence_stem_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00044">Stem_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00046">StemLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00042">substrate_pool_leaf_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00051">substrate_pool_rhizome_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00048">substrate_pool_root_op</a>, and <a class="el" href="utilization__senescence_8hpp_source.html#l00045">substrate_pool_stem_op</a>.</p>
+<p class="reference">References <a class="el" href="utilization__senescence_8hpp_source.html#l00042">Leaf_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00044">LeafLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00036">remobilization_fraction_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00051">Rhizome_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00053">RhizomeLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00048">Root_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00050">RootLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00037">senescence_leaf_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00040">senescence_rhizome_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00039">senescence_root_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00038">senescence_stem_ip</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00045">Stem_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00047">StemLitter_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00043">substrate_pool_leaf_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00052">substrate_pool_rhizome_op</a>, <a class="el" href="utilization__senescence_8hpp_source.html#l00049">substrate_pool_root_op</a>, and <a class="el" href="utilization__senescence_8hpp_source.html#l00046">substrate_pool_stem_op</a>.</p>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +259,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -272,12 +272,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00057">57</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00058">58</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +286,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -299,7 +299,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00067">67</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00068">68</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
 </div>
 </div>
@@ -324,9 +324,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00041">41</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00042">42</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -350,9 +350,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00043">43</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00044">44</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -376,9 +376,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00035">35</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00036">36</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -402,9 +402,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00050">50</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00051">51</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -428,9 +428,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00052">52</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00053">53</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -454,9 +454,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00047">47</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00048">48</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -480,9 +480,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00049">49</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00050">50</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -506,9 +506,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00036">36</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00037">37</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -532,9 +532,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00039">39</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00040">40</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -558,9 +558,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00038">38</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00039">39</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -584,9 +584,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00037">37</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00038">38</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -610,9 +610,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00044">44</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00045">45</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -636,9 +636,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00046">46</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00047">47</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -662,9 +662,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00042">42</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00043">43</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -688,9 +688,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00051">51</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00052">52</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -714,9 +714,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00048">48</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00049">49</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -740,9 +740,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00045">45</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utilization__senescence_8hpp_source.html#l00046">46</a> of file <a class="el" href="utilization__senescence_8hpp_source.html">utilization_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00084">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="utilization__senescence_8hpp_source.html#l00085">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -755,7 +755,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classutilization__senescence.html">utilization_senescence</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:30 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

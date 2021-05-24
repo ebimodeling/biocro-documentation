@@ -82,6 +82,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="constants_8h_source.html">../constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="modules_8h_source.html">../modules.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="state__map_8h_source.html">../state_map.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for oscillator_clock_calculator.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -89,19 +90,19 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="oscillator__clock__calculator_8hpp__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2module__library_2oscillator__clock__calculator_8hpp" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2module__library_2oscillator__clock__calculator_8hpp" id="a_2github_2workspace_2source_2src_2module__library_2oscillator__clock__calculator_8hpp">
-<area shape="rect" title=" " alt="" coords="44,5,231,61"/>
-<area shape="rect" title=" " alt="" coords="5,109,64,136"/>
-<area shape="rect" href="constants_8h.html" title=" " alt="" coords="88,109,187,136"/>
-<area shape="rect" href="modules_8h.html" title=" " alt="" coords="243,109,333,136"/>
-<area shape="rect" title=" " alt="" coords="47,184,195,225"/>
-<area shape="rect" title=" " alt="" coords="292,348,351,375"/>
-<area shape="rect" title=" " alt="" coords="271,191,339,218"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="364,191,540,218"/>
-<area shape="rect" title=" " alt="" coords="298,273,377,300"/>
-<area shape="rect" title=" " alt="" coords="401,273,447,300"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="472,273,565,300"/>
-<area shape="rect" title=" " alt="" coords="410,348,521,375"/>
-<area shape="rect" title=" " alt="" coords="545,348,599,375"/>
+<area shape="rect" title=" " alt="" coords="110,5,297,61"/>
+<area shape="rect" title=" " alt="" coords="13,109,71,136"/>
+<area shape="rect" href="constants_8h.html" title=" " alt="" coords="95,109,194,136"/>
+<area shape="rect" href="modules_8h.html" title=" " alt="" coords="218,109,309,136"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="473,273,566,300"/>
+<area shape="rect" title=" " alt="" coords="5,184,153,225"/>
+<area shape="rect" title=" " alt="" coords="231,348,290,375"/>
+<area shape="rect" title=" " alt="" coords="229,191,297,218"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="322,191,498,218"/>
+<area shape="rect" title=" " alt="" coords="299,273,377,300"/>
+<area shape="rect" title=" " alt="" coords="401,273,448,300"/>
+<area shape="rect" title=" " alt="" coords="411,348,521,375"/>
+<area shape="rect" title=" " alt="" coords="545,348,600,375"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -166,9 +167,9 @@ Functions</h2></td></tr>
 
 <p>This is like atan2 but with a range of [0, 2pi) instead of (-pi, pi]: When the point (x, y) is in the third or fourth quadrant (i.e., when y &lt; 0), add 2pi to the value in (-pi, 0) returned by atan2 so that dawn_phase is always in the interval [0, 2pi). </p>
 
-<p class="definition">Definition at line <a class="el" href="oscillator__clock__calculator_8hpp_source.html#l00108">108</a> of file <a class="el" href="oscillator__clock__calculator_8hpp_source.html">oscillator_clock_calculator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oscillator__clock__calculator_8hpp_source.html#l00109">109</a> of file <a class="el" href="oscillator__clock__calculator_8hpp_source.html">oscillator_clock_calculator.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="oscillator__clock__calculator_8hpp_source.html#l00115">oscillator_clock_calculator::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="oscillator__clock__calculator_8hpp_source.html#l00116">oscillator_clock_calculator::do_operation()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -186,7 +187,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 12 2021 19:53:48 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon May 24 2021 18:02:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

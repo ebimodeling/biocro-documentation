@@ -128,8 +128,8 @@ $(document).ready(function(){initNavTree('classmultilayer__canopy__properties.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aee3c0ef743d7a019bf25abc318c60df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#aee3c0ef743d7a019bf25abc318c60df6">multilayer_canopy_properties</a> (const std::string &amp;module_name, const int &amp;nlayers, const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:aee3c0ef743d7a019bf25abc318c60df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17749fc6bedbe8b9a6452521a4318c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#ad17749fc6bedbe8b9a6452521a4318c7">multilayer_canopy_properties</a> (const std::string &amp;module_name, const int &amp;nlayers, state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:ad17749fc6bedbe8b9a6452521a4318c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -138,21 +138,21 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a586f4cb90199901349389ca4553b9365"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#a586f4cb90199901349389ca4553b9365">get_inputs</a> (int nlayers)</td></tr>
-<tr class="memdesc:a586f4cb90199901349389ca4553b9365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all inputs required by the module.  <a href="classmultilayer__canopy__properties.html#a586f4cb90199901349389ca4553b9365">More...</a><br /></td></tr>
-<tr class="separator:a586f4cb90199901349389ca4553b9365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab232ea5bbeedc24a5ea77e3beaa65ac2"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#ab232ea5bbeedc24a5ea77e3beaa65ac2">define_leaf_classes</a> ()</td></tr>
-<tr class="memdesc:ab232ea5bbeedc24a5ea77e3beaa65ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the different leaf classes included by the module.  <a href="classmultilayer__canopy__properties.html#ab232ea5bbeedc24a5ea77e3beaa65ac2">More...</a><br /></td></tr>
-<tr class="separator:ab232ea5bbeedc24a5ea77e3beaa65ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae876d69fd574732592e0dd251dc59d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#acae876d69fd574732592e0dd251dc59d">define_multiclass_multilayer_outputs</a> ()</td></tr>
-<tr class="memdesc:acae876d69fd574732592e0dd251dc59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs that have different values for each leaf class and layer.  <a href="classmultilayer__canopy__properties.html#acae876d69fd574732592e0dd251dc59d">More...</a><br /></td></tr>
-<tr class="separator:acae876d69fd574732592e0dd251dc59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5a4dcd7ac9e83f3b434ed8bede9bd8"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#aeb5a4dcd7ac9e83f3b434ed8bede9bd8">define_pure_multilayer_outputs</a> ()</td></tr>
-<tr class="memdesc:aeb5a4dcd7ac9e83f3b434ed8bede9bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs that have different values for each layer, not including outputs that also depend on leaf class.  <a href="classmultilayer__canopy__properties.html#aeb5a4dcd7ac9e83f3b434ed8bede9bd8">More...</a><br /></td></tr>
-<tr class="separator:aeb5a4dcd7ac9e83f3b434ed8bede9bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ef272e7460b825b87df850d4ff7174"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#a07ef272e7460b825b87df850d4ff7174">get_outputs</a> (int nlayers)</td></tr>
-<tr class="memdesc:a07ef272e7460b825b87df850d4ff7174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all output names by appending leaf class prefixes and layer number suffixes.  <a href="classmultilayer__canopy__properties.html#a07ef272e7460b825b87df850d4ff7174">More...</a><br /></td></tr>
-<tr class="separator:a07ef272e7460b825b87df850d4ff7174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9591219a4f3f3d9370b77cea0173de50"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#a9591219a4f3f3d9370b77cea0173de50">get_inputs</a> (int nlayers)</td></tr>
+<tr class="memdesc:a9591219a4f3f3d9370b77cea0173de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all inputs required by the module.  <a href="classmultilayer__canopy__properties.html#a9591219a4f3f3d9370b77cea0173de50">More...</a><br /></td></tr>
+<tr class="separator:a9591219a4f3f3d9370b77cea0173de50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9c45ad7664e55dcb5761d4064ef531"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#aeb9c45ad7664e55dcb5761d4064ef531">define_leaf_classes</a> ()</td></tr>
+<tr class="memdesc:aeb9c45ad7664e55dcb5761d4064ef531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the different leaf classes included by the module.  <a href="classmultilayer__canopy__properties.html#aeb9c45ad7664e55dcb5761d4064ef531">More...</a><br /></td></tr>
+<tr class="separator:aeb9c45ad7664e55dcb5761d4064ef531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e67a7e869cc1baa6d9efdd30ea7666"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666">define_multiclass_multilayer_outputs</a> ()</td></tr>
+<tr class="memdesc:a32e67a7e869cc1baa6d9efdd30ea7666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs that have different values for each leaf class and layer.  <a href="classmultilayer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666">More...</a><br /></td></tr>
+<tr class="separator:a32e67a7e869cc1baa6d9efdd30ea7666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154d2a8e38b051c0eede33986ef0f9a9"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9">define_pure_multilayer_outputs</a> ()</td></tr>
+<tr class="memdesc:a154d2a8e38b051c0eede33986ef0f9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all outputs that have different values for each layer, not including outputs that also depend on leaf class.  <a href="classmultilayer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9">More...</a><br /></td></tr>
+<tr class="separator:a154d2a8e38b051c0eede33986ef0f9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb75b1d09c411e2974bce071703efbce"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce">get_outputs</a> (int nlayers)</td></tr>
+<tr class="memdesc:adb75b1d09c411e2974bce071703efbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define all output names by appending leaf class prefixes and layer number suffixes.  <a href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce">More...</a><br /></td></tr>
+<tr class="separator:adb75b1d09c411e2974bce071703efbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part). </p>
@@ -163,10 +163,10 @@ Static Protected Member Functions</h2></td></tr>
 <li>other outputs: these outputs do not depend on the leaf class or canopy layer (there are currently no outputs of this type) The base names for the multiclass_multilayer and pure_multilayer outputs will be used by the multilayer canopy photosynthesis module to pass them to a leaf photosynthesis module. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00028">28</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00029">29</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aee3c0ef743d7a019bf25abc318c60df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee3c0ef743d7a019bf25abc318c60df6">&#9670;&nbsp;</a></span>multilayer_canopy_properties()</h2>
+<a id="ad17749fc6bedbe8b9a6452521a4318c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17749fc6bedbe8b9a6452521a4318c7">&#9670;&nbsp;</a></span>multilayer_canopy_properties()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,14 +189,14 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -211,13 +211,13 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00031">31</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00032">32</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab232ea5bbeedc24a5ea77e3beaa65ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab232ea5bbeedc24a5ea77e3beaa65ac2">&#9670;&nbsp;</a></span>define_leaf_classes()</h2>
+<a id="aeb9c45ad7664e55dcb5761d4064ef531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9c45ad7664e55dcb5761d4064ef531">&#9670;&nbsp;</a></span>define_leaf_classes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +226,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; define_leaf_classes </td>
+          <td class="memname">string_vector define_leaf_classes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -241,27 +241,27 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define the different leaf classes included by the module. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00131">131</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">132</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00271">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00170">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00272">ten_layer_canopy_properties::define_leaf_classes()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_ab232ea5bbeedc24a5ea77e3beaa65ac2_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_ab232ea5bbeedc24a5ea77e3beaa65ac2_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_ab232ea5bbeedc24a5ea77e3beaa65ac2_icgraph" id="aclassmultilayer__canopy__properties_ab232ea5bbeedc24a5ea77e3beaa65ac2_icgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_aeb9c45ad7664e55dcb5761d4064ef531_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_aeb9c45ad7664e55dcb5761d4064ef531_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_aeb9c45ad7664e55dcb5761d4064ef531_icgraph" id="aclassmultilayer__canopy__properties_aeb9c45ad7664e55dcb5761d4064ef531_icgraph">
 <area shape="rect" title="Define the different leaf classes included by the module." alt="" coords="475,42,611,69"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#ab232ea5bbeedc24a5ea77e3beaa65ac2" title=" " alt="" coords="240,5,427,47"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#a07ef272e7460b825b87df850d4ff7174" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="288,71,379,98"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#a5a5b9919e2d8b1ee7bc8cc37558c79de" title=" " alt="" coords="5,64,192,105"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#aeb9c45ad7664e55dcb5761d4064ef531" title=" " alt="" coords="240,5,427,47"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="288,71,379,98"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="5,64,192,105"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="acae876d69fd574732592e0dd251dc59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acae876d69fd574732592e0dd251dc59d">&#9670;&nbsp;</a></span>define_multiclass_multilayer_outputs()</h2>
+<a id="a32e67a7e869cc1baa6d9efdd30ea7666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e67a7e869cc1baa6d9efdd30ea7666">&#9670;&nbsp;</a></span>define_multiclass_multilayer_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +270,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; define_multiclass_multilayer_outputs </td>
+          <td class="memname">string_vector define_multiclass_multilayer_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -285,27 +285,27 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all outputs that have different values for each leaf class and layer. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00142">142</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00143">143</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00276">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00170">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00277">ten_layer_canopy_properties::define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_acae876d69fd574732592e0dd251dc59d_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_acae876d69fd574732592e0dd251dc59d_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_acae876d69fd574732592e0dd251dc59d_icgraph" id="aclassmultilayer__canopy__properties_acae876d69fd574732592e0dd251dc59d_icgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_a32e67a7e869cc1baa6d9efdd30ea7666_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a32e67a7e869cc1baa6d9efdd30ea7666_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_a32e67a7e869cc1baa6d9efdd30ea7666_icgraph" id="aclassmultilayer__canopy__properties_a32e67a7e869cc1baa6d9efdd30ea7666_icgraph">
 <area shape="rect" title="Define all outputs that have different values for each leaf class and layer." alt="" coords="479,46,663,87"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#acae876d69fd574732592e0dd251dc59d" title=" " alt="" coords="240,5,431,61"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#a07ef272e7460b825b87df850d4ff7174" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="290,85,381,112"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#a5a5b9919e2d8b1ee7bc8cc37558c79de" title=" " alt="" coords="5,78,192,119"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666" title=" " alt="" coords="240,5,431,61"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="290,85,381,112"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="5,78,192,119"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aeb5a4dcd7ac9e83f3b434ed8bede9bd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb5a4dcd7ac9e83f3b434ed8bede9bd8">&#9670;&nbsp;</a></span>define_pure_multilayer_outputs()</h2>
+<a id="a154d2a8e38b051c0eede33986ef0f9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154d2a8e38b051c0eede33986ef0f9a9">&#9670;&nbsp;</a></span>define_pure_multilayer_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; define_pure_multilayer_outputs </td>
+          <td class="memname">string_vector define_pure_multilayer_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -329,27 +329,27 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all outputs that have different values for each layer, not including outputs that also depend on leaf class. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00154">154</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00155">155</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00282">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00170">get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00283">ten_layer_canopy_properties::define_pure_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">get_outputs()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_aeb5a4dcd7ac9e83f3b434ed8bede9bd8_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_aeb5a4dcd7ac9e83f3b434ed8bede9bd8_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_aeb5a4dcd7ac9e83f3b434ed8bede9bd8_icgraph" id="aclassmultilayer__canopy__properties_aeb5a4dcd7ac9e83f3b434ed8bede9bd8_icgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_a154d2a8e38b051c0eede33986ef0f9a9_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a154d2a8e38b051c0eede33986ef0f9a9_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_a154d2a8e38b051c0eede33986ef0f9a9_icgraph" id="aclassmultilayer__canopy__properties_a154d2a8e38b051c0eede33986ef0f9a9_icgraph">
 <area shape="rect" title="Define all outputs that have different values for each layer, not including outputs that also depend ..." alt="" coords="475,46,625,87"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#aeb5a4dcd7ac9e83f3b434ed8bede9bd8" title=" " alt="" coords="240,5,427,61"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#a07ef272e7460b825b87df850d4ff7174" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="288,85,379,112"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#a5a5b9919e2d8b1ee7bc8cc37558c79de" title=" " alt="" coords="5,78,192,119"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9" title=" " alt="" coords="240,5,427,61"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="288,85,379,112"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="5,78,192,119"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a586f4cb90199901349389ca4553b9365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a586f4cb90199901349389ca4553b9365">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="a9591219a4f3f3d9370b77cea0173de50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9591219a4f3f3d9370b77cea0173de50">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +358,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nlayers</em></td><td>)</td>
@@ -374,25 +374,25 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Define all inputs required by the module. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00109">109</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00110">110</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00266">ten_layer_canopy_properties::get_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00267">ten_layer_canopy_properties::get_inputs()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_a586f4cb90199901349389ca4553b9365_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a586f4cb90199901349389ca4553b9365_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_a586f4cb90199901349389ca4553b9365_icgraph" id="aclassmultilayer__canopy__properties_a586f4cb90199901349389ca4553b9365_icgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_a9591219a4f3f3d9370b77cea0173de50_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a9591219a4f3f3d9370b77cea0173de50_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_a9591219a4f3f3d9370b77cea0173de50_icgraph" id="aclassmultilayer__canopy__properties_a9591219a4f3f3d9370b77cea0173de50_icgraph">
 <area shape="rect" title="Define all inputs required by the module." alt="" coords="240,13,323,39"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#a70377e14f631d7fd158d2f3356ed6107" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="5,5,192,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a07ef272e7460b825b87df850d4ff7174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ef272e7460b825b87df850d4ff7174">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="adb75b1d09c411e2974bce071703efbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb75b1d09c411e2974bce071703efbce">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,7 +401,7 @@ Static Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nlayers</em></td><td>)</td>
@@ -418,22 +418,22 @@ Static Protected Member Functions</h2></td></tr>
 <p>Define all output names by appending leaf class prefixes and layer number suffixes. </p>
 <p>Here we should make use of the <code>define_XXX</code> functions to reduce code duplication. </p>
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00170">170</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00171">171</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
-<p class="reference">References <a class="el" href="multilayer__canopy__properties_8h_source.html#l00131">define_leaf_classes()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00142">define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00154">define_pure_multilayer_outputs()</a>.</p>
+<p class="reference">References <a class="el" href="multilayer__canopy__properties_8h_source.html#l00132">define_leaf_classes()</a>, <a class="el" href="multilayer__canopy__properties_8h_source.html#l00143">define_multiclass_multilayer_outputs()</a>, and <a class="el" href="multilayer__canopy__properties_8h_source.html#l00155">define_pure_multilayer_outputs()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00288">ten_layer_canopy_properties::get_outputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="multilayer__canopy__properties_8h_source.html#l00289">ten_layer_canopy_properties::get_outputs()</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_cgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_cgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_cgraph" id="aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_cgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_cgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_cgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_cgraph" id="aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_cgraph">
 <area shape="rect" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="5,64,96,91"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#ab232ea5bbeedc24a5ea77e3beaa65ac2" title="Define the different leaf classes included by the module." alt="" coords="168,5,304,32"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#acae876d69fd574732592e0dd251dc59d" title="Define all outputs that have different values for each leaf class and layer." alt="" coords="144,57,328,98"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#aeb5a4dcd7ac9e83f3b434ed8bede9bd8" title="Define all outputs that have different values for each layer, not including outputs that also depend ..." alt="" coords="161,122,311,163"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#aeb9c45ad7664e55dcb5761d4064ef531" title="Define the different leaf classes included by the module." alt="" coords="168,5,304,32"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#a32e67a7e869cc1baa6d9efdd30ea7666" title="Define all outputs that have different values for each leaf class and layer." alt="" coords="144,57,328,98"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#a154d2a8e38b051c0eede33986ef0f9a9" title="Define all outputs that have different values for each layer, not including outputs that also depend ..." alt="" coords="161,122,311,163"/>
 </map>
 </div>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -441,10 +441,10 @@ Static Protected Member Functions</h2></td></tr>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_icgraph" alt=""/></div>
-<map name="aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_icgraph" id="aclassmultilayer__canopy__properties_a07ef272e7460b825b87df850d4ff7174_icgraph">
+<div class="center"><img src="classmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_icgraph.png" border="0" usemap="#aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_icgraph" alt=""/></div>
+<map name="aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_icgraph" id="aclassmultilayer__canopy__properties_adb75b1d09c411e2974bce071703efbce_icgraph">
 <area shape="rect" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="240,13,331,39"/>
-<area shape="rect" href="classten__layer__canopy__properties.html#a5a5b9919e2d8b1ee7bc8cc37558c79de" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="5,5,192,47"/>
 </map>
 </div>
 
@@ -473,7 +473,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00187">187</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multilayer__canopy__properties_8h_source.html#l00188">188</a> of file <a class="el" href="multilayer__canopy__properties_8h_source.html">multilayer_canopy_properties.h</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::diffuse_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::direct_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00400">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00381">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::scattered_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00193">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::total_irradiance</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00280">WINDprof()</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -502,7 +502,7 @@ Static Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmultilayer__canopy__properties.html">multilayer_canopy_properties</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:07 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

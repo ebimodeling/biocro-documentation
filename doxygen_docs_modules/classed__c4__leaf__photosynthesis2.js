@@ -1,6 +1,6 @@
 var classed__c4__leaf__photosynthesis2 =
 [
-    [ "ed_c4_leaf_photosynthesis2", "classed__c4__leaf__photosynthesis2.html#aedb25f44f130a1b71484a9ddc8c4c0f1", null ],
+    [ "ed_c4_leaf_photosynthesis2", "classed__c4__leaf__photosynthesis2.html#a5ff484eb982062cb2aebc82c2e160bae", null ],
     [ "get_default", "classed__c4__leaf__photosynthesis2.html#a655f83ef6ed72ffc4567834ead4726ae", null ],
     [ "get_initial_guesses", "classed__c4__leaf__photosynthesis2.html#ae6631c09eeca7afadaeb1a49ce568655", null ],
     [ "ball_berry_intercept", "classed__c4__leaf__photosynthesis2.html#a37dcb6f84af613f5c0279aaa033a1add", null ],

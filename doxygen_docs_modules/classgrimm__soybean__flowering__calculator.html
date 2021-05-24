@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classgrimm__soybean__flowering__calcul
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac2c2752571af5a2e9bfa606ce1b3b1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#ac2c2752571af5a2e9bfa606ce1b3b1d0">grimm_soybean_flowering_calculator</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:ac2c2752571af5a2e9bfa606ce1b3b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab026d60a0351c01bd258aac52143722c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#ab026d60a0351c01bd258aac52143722c">grimm_soybean_flowering_calculator</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:ab026d60a0351c01bd258aac52143722c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrimm__soybean__flowering__calculator.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -196,10 +196,10 @@ Private Attributes</h2></td></tr>
 <p>When using oscillators to determine the day length, there is a slight lag compared to the celestial calculations. However, the error during typical Illinois soybean growth days is generally within +/- 30 minutes, so no correction is applied.</p>
 <p>References: <code>Grimm, S. S., Jones, J. W., Boote, K. J. &amp; Hesketh, J. D. Parameter Estimation for Predicting Flowering Date of Soybean Cultivars. Crop Science 33, 137–144 (1993)</code> <code>Piper, E. L., Boote, K. J., Jones, J. W. &amp; Grimm, S. S. Comparison of Two Phenology Models for Predicting Flowering and Maturity Date of Soybean. Crop Science 36, 1606–1614 (1996)</code> <code>Goudriaan, J. &amp; Van Laar, H. Calculation of dairy totals of the gross CO2 assimilation of leaf canopies. Netherlands Journal of Agricultural Science 26, 373–382 (1978)</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00043">43</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00044">44</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac2c2752571af5a2e9bfa606ce1b3b1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2c2752571af5a2e9bfa606ce1b3b1d0">&#9670;&nbsp;</a></span>grimm_soybean_flowering_calculator()</h2>
+<a id="ab026d60a0351c01bd258aac52143722c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab026d60a0351c01bd258aac52143722c">&#9670;&nbsp;</a></span>grimm_soybean_flowering_calculator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,14 +210,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classgrimm__soybean__flowering__calculator.html">grimm_soybean_flowering_calculator</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -232,7 +232,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00046">46</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00047">47</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -260,14 +260,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">134</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">135</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">References <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00093">day_length_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00098">grimm_flowering_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00090">grimm_flowering_threshold_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00085">grimm_juvenile_pd_threshold_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00081">grimm_juvenile_T0_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00082">grimm_juvenile_T1_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00083">grimm_juvenile_T2_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00084">grimm_juvenile_T3_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00088">grimm_N_min_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00089">grimm_N_opt_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00080">grimm_physiological_age_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00095">grimm_rate_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00097">grimm_rate_photoperiod_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00096">grimm_rate_temperature_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00079">grimm_sowing_doy_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00086">grimm_T_min_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00087">grimm_T_opt_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00092">temp_ip</a>, and <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00091">time_ip</a>.</p>
+<p class="reference">References <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00094">day_length_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00099">grimm_flowering_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00091">grimm_flowering_threshold_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00086">grimm_juvenile_pd_threshold_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00082">grimm_juvenile_T0_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00083">grimm_juvenile_T1_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00084">grimm_juvenile_T2_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00085">grimm_juvenile_T3_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00089">grimm_N_min_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00090">grimm_N_opt_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00081">grimm_physiological_age_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00096">grimm_rate_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00098">grimm_rate_photoperiod_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00097">grimm_rate_temperature_op</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00080">grimm_sowing_doy_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00087">grimm_T_min_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00088">grimm_T_opt_ip</a>, <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00093">temp_ip</a>, and <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00092">time_ip</a>.</p>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +276,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -289,12 +289,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00103">103</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00104">104</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -316,7 +316,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00124">124</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00125">125</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -341,9 +341,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00093">93</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00094">94</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +367,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00098">98</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00099">99</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -393,9 +393,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00090">90</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00091">91</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -419,9 +419,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00085">85</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00086">86</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +445,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00081">81</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00082">82</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -471,9 +471,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00082">82</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00083">83</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -497,9 +497,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00083">83</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00084">84</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +523,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00084">84</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00085">85</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +549,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00088">88</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00089">89</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +575,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00089">89</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00090">90</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -601,9 +601,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00080">80</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00081">81</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -627,9 +627,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00095">95</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00096">96</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -653,9 +653,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00097">97</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00098">98</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -679,9 +679,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00096">96</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00097">97</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +705,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00079">79</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00080">80</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -731,9 +731,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00086">86</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00087">87</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -757,9 +757,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00087">87</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00088">88</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -783,9 +783,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00092">92</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00093">93</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -809,9 +809,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00091">91</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00092">92</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00134">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00135">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -824,7 +824,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgrimm__soybean__flowering__calculator.html">grimm_soybean_flowering_calculator</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

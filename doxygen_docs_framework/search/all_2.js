@@ -3,7 +3,7 @@ var searchData=
   ['back_5fedge_21',['back_edge',['../classcycle__detector.html#aba7519cf03c735865d86983ef7b363e8',1,'cycle_detector']]],
   ['bad_5fstate_5fvector_5fmap_5findex_22',['bad_state_vector_map_index',['../structbad__state__vector__map__index.html#a96cb5a0d88d27bc06c85c5c27eb474d2',1,'bad_state_vector_map_index::bad_state_vector_map_index()'],['../structbad__state__vector__map__index.html',1,'bad_state_vector_map_index']]],
   ['biocro_2ecpp_23',['biocro.cpp',['../biocro_8cpp.html',1,'']]],
-  ['biocro_5fsimulation_24',['biocro_simulation',['../classbiocro__simulation.html',1,'biocro_simulation'],['../classbiocro__simulation.html#ada7812eec0573997d93b4598d3138c52',1,'biocro_simulation::biocro_simulation()']]],
+  ['biocro_5fsimulation_24',['biocro_simulation',['../classbiocro__simulation.html',1,'biocro_simulation'],['../classbiocro__simulation.html#a352a3f1b99c053b7e3ccce034b6c308b',1,'biocro_simulation::biocro_simulation()']]],
   ['biocro_5fsimulation_2eh_25',['biocro_simulation.h',['../biocro__simulation_8h.html',1,'']]],
   ['boost_5ferror_5fstring_26',['boost_error_string',['../classboost__system__solver.html#a0752f71a0bb49ccbbb72cb9cf5ce45fd',1,'boost_system_solver']]],
   ['boost_5feuler_5fsystem_5fsolver_27',['boost_euler_system_solver',['../classboost__euler__system__solver.html',1,'boost_euler_system_solver&lt; state_type &gt;'],['../classboost__euler__system__solver.html#afd3f78dff38c8e147ae4d96d59198554',1,'boost_euler_system_solver::boost_euler_system_solver()']]],

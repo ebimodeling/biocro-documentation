@@ -128,15 +128,15 @@ $(document).ready(function(){initNavTree('classed__gas__concentrations.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38ca914227b18cb97b793c360dd95f54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#a38ca914227b18cb97b793c360dd95f54">ed_gas_concentrations</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:a38ca914227b18cb97b793c360dd95f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025e2d4e53529746f7f31519ab7cbe16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#a025e2d4e53529746f7f31519ab7cbe16">ed_gas_concentrations</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:a025e2d4e53529746f7f31519ab7cbe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__gas__concentrations.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -184,10 +184,10 @@ Private Attributes</h2></td></tr>
 <p>The H2O mole fraction in the intercellular spaces is calculated by assuming relative humidity in the leaf is 1, i.e., water vapor pressure = saturation water vapor pressure.</p>
 <p>The H2O mole fraction at the leaf surface is calculated by assuming equal flux across the stomata and the boundary layer, i.e. g_s * (h_s - h_i) = F = g_b * (h_a - h_s), where 'h' is the H2O mole fraction, 'g' is water vapor conductance, and the subscripts 's', 'i', and 'a' refer to surface, intercellular, and atmospheric concentrations, respectively. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00034">34</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00035">35</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38ca914227b18cb97b793c360dd95f54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38ca914227b18cb97b793c360dd95f54">&#9670;&nbsp;</a></span>ed_gas_concentrations()</h2>
+<a id="a025e2d4e53529746f7f31519ab7cbe16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a025e2d4e53529746f7f31519ab7cbe16">&#9670;&nbsp;</a></span>ed_gas_concentrations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,14 +198,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classed__gas__concentrations.html">ed_gas_concentrations</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -220,7 +220,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00037">37</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00038">38</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
 </div>
 </div>
@@ -248,9 +248,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">114</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">115</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">assimilation_net_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">atmospheric_pressure_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00077">conductance_boundary_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00067">conductance_boundary_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">conductance_ratio_boundary_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">conductance_ratio_stomata_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">conductance_stomatal_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">conductance_stomatal_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">mole_fraction_co2_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">mole_fraction_co2_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">mole_fraction_co2_leaf_surface_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">mole_fraction_h2o_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">mole_fraction_h2o_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">mole_fraction_h2o_leaf_surface_op</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">temperature_leaf_ip</a>.</p>
+<p class="reference">References <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">assimilation_net_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00076">atmospheric_pressure_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">conductance_boundary_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">conductance_boundary_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">conductance_ratio_boundary_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">conductance_ratio_stomata_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">conductance_stomatal_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">conductance_stomatal_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">mole_fraction_co2_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">mole_fraction_co2_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">mole_fraction_co2_leaf_surface_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">mole_fraction_h2o_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00083">mole_fraction_h2o_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">mole_fraction_h2o_leaf_surface_op</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, and <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">temperature_leaf_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -265,8 +265,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +275,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -288,12 +288,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00087">87</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00088">88</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +302,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -315,7 +315,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00102">102</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00103">103</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
 </div>
 </div>
@@ -340,9 +340,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">71</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">72</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -366,9 +366,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">75</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00076">76</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +392,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00077">77</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">78</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +418,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00067">67</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">68</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -444,9 +444,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">69</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">70</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -470,9 +470,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">70</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">71</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -496,9 +496,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">78</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">79</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -522,9 +522,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">68</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">69</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -548,9 +548,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">72</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">73</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -574,9 +574,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">80</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">81</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -600,9 +600,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">79</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">80</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -626,9 +626,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">73</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">74</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -652,9 +652,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">82</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00083">83</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -678,9 +678,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">81</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">82</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +704,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">74</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">75</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00114">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__gas__concentrations.html">ed_gas_concentrations</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:29 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -55,7 +55,6 @@ var menudata={children:[
 {text:"s",url:"functions_s.html#index_s"},
 {text:"t",url:"functions_t.html#index_t"},
 {text:"u",url:"functions_u.html#index_u"},
-{text:"v",url:"functions_v.html#index_v"},
 {text:"~",url:"functions_~.html#index__7E"}]},
 {text:"Functions",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
@@ -88,11 +87,11 @@ var menudata={children:[
 {text:"m",url:"functions_vars.html#index_m"},
 {text:"n",url:"functions_vars.html#index_n"},
 {text:"o",url:"functions_vars.html#index_o"},
+{text:"p",url:"functions_vars.html#index_p"},
 {text:"q",url:"functions_vars.html#index_q"},
 {text:"s",url:"functions_vars.html#index_s"},
 {text:"t",url:"functions_vars.html#index_t"},
-{text:"u",url:"functions_vars.html#index_u"},
-{text:"v",url:"functions_vars.html#index_v"}]},
+{text:"u",url:"functions_vars.html#index_u"}]},
 {text:"Typedefs",url:"functions_type.html"}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},

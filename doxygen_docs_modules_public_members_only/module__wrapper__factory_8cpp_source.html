@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="title">module_wrapper_factory.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="module__wrapper__factory_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// for std::transform</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span>   <span class="comment">// for std::tolower</span></div>
+<a href="module__wrapper__factory_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span>  <span class="comment">// for std::transform</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span>     <span class="comment">// for std::tolower</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__wrapper__factory_8h.html">module_wrapper_factory.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Include all the header files that define the modules.</span></div>
@@ -327,9 +327,9 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;     {<span class="stringliteral">&quot;rh_to_mole_fraction&quot;</span>,                                   &amp;create_wrapper&lt;rh_to_mole_fraction&gt;}</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classmodule__wrapper__factory.html#ac6958892e04a5dfc7c72c73e39318015">  239</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classmodule__wrapper__factory.html#ac6958892e04a5dfc7c72c73e39318015">module_wrapper_factory::get_modules</a>()</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361">  239</a></span>&#160;string_vector <a class="code" href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361">module_wrapper_factory::get_modules</a>()</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    std::vector&lt;std::string&gt; module_name_vector;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    string_vector module_name_vector;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; x : module_wrapper_creators) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        module_name_vector.push_back(x.first);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
@@ -352,13 +352,13 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> module_name_vector;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classmodule__wrapper__factory.html#afde6d703ab3e6581b0716e0c5543dcab">  264</a></span>&#160;std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; <a class="code" href="classmodule__wrapper__factory.html#afde6d703ab3e6581b0716e0c5543dcab">module_wrapper_factory::get_all_quantities</a>()</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classmodule__wrapper__factory.html#a33a2ab042dd4f7e1c2d1cb253989f4ba">  264</a></span>&#160;std::unordered_map&lt;std::string, string_vector&gt; <a class="code" href="classmodule__wrapper__factory.html#a33a2ab042dd4f7e1c2d1cb253989f4ba">module_wrapper_factory::get_all_quantities</a>()</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">// Make the output map</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; quantity_map = {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {<span class="stringliteral">&quot;module_name&quot;</span>,     std::vector&lt;std::string&gt;{}},</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        {<span class="stringliteral">&quot;quantity_type&quot;</span>,   std::vector&lt;std::string&gt;{}},</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {<span class="stringliteral">&quot;quantity_name&quot;</span>,   std::vector&lt;std::string&gt;{}}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    std::unordered_map&lt;std::string, string_vector&gt; quantity_map = {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        {<span class="stringliteral">&quot;module_name&quot;</span>,     string_vector{}},</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        {<span class="stringliteral">&quot;quantity_type&quot;</span>,   string_vector{}},</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        {<span class="stringliteral">&quot;quantity_name&quot;</span>,   string_vector{}}</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    };</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="comment">// Make a lambda function for adding entries to the map</span></div>
@@ -369,7 +369,7 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    };</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="comment">// Fill the output map with all the quantities</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> : <a class="code" href="classmodule__wrapper__factory.html#ac6958892e04a5dfc7c72c73e39318015">module_wrapper_factory::get_modules</a>()) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> : <a class="code" href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361">module_wrapper_factory::get_modules</a>()) {</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keyword">auto</span> w = <a class="code" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>);</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="comment">// Add the module&#39;s inputs to the parameter map</span></div>
@@ -397,9 +397,9 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="ttc" id="ac4__assimilation_8h_html"><div class="ttname"><a href="c4__assimilation_8h.html">c4_assimilation.h</a></div></div>
 <div class="ttc" id="ac4__canopy_8hpp_html"><div class="ttname"><a href="c4__canopy_8hpp.html">c4_canopy.hpp</a></div></div>
 <div class="ttc" id="ac4__leaf__photosynthesis_8h_html"><div class="ttname"><a href="c4__leaf__photosynthesis_8h.html">c4_leaf_photosynthesis.h</a></div></div>
+<div class="ttc" id="aclassmodule__wrapper__factory_html_a33a2ab042dd4f7e1c2d1cb253989f4ba"><div class="ttname"><a href="classmodule__wrapper__factory.html#a33a2ab042dd4f7e1c2d1cb253989f4ba">module_wrapper_factory::get_all_quantities</a></div><div class="ttdeci">static std::unordered_map&lt; std::string, string_vector &gt; get_all_quantities()</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00264">module_wrapper_factory.cpp:264</a></div></div>
 <div class="ttc" id="aclassmodule__wrapper__factory_html_a88c7e6e99de6589d718c74152040e94d"><div class="ttname"><a href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a></div><div class="ttdeci">static std::unique_ptr&lt; module_wrapper_base &gt; create(std::string const &amp;module_name)</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00114">module_wrapper_factory.cpp:114</a></div></div>
-<div class="ttc" id="aclassmodule__wrapper__factory_html_ac6958892e04a5dfc7c72c73e39318015"><div class="ttname"><a href="classmodule__wrapper__factory.html#ac6958892e04a5dfc7c72c73e39318015">module_wrapper_factory::get_modules</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_modules()</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00239">module_wrapper_factory.cpp:239</a></div></div>
-<div class="ttc" id="aclassmodule__wrapper__factory_html_afde6d703ab3e6581b0716e0c5543dcab"><div class="ttname"><a href="classmodule__wrapper__factory.html#afde6d703ab3e6581b0716e0c5543dcab">module_wrapper_factory::get_all_quantities</a></div><div class="ttdeci">static std::unordered_map&lt; std::string, std::vector&lt; std::string &gt; &gt; get_all_quantities()</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00264">module_wrapper_factory.cpp:264</a></div></div>
+<div class="ttc" id="aclassmodule__wrapper__factory_html_ab2a5936b9f8488a4c52554310cf63361"><div class="ttname"><a href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361">module_wrapper_factory::get_modules</a></div><div class="ttdeci">static string_vector get_modules()</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00239">module_wrapper_factory.cpp:239</a></div></div>
 <div class="ttc" id="adevelopment__index_8h_html"><div class="ttname"><a href="development__index_8h.html">development_index.h</a></div></div>
 <div class="ttc" id="aed__abc__blc_8h_html"><div class="ttname"><a href="ed__abc__blc_8h.html">ed_abc_blc.h</a></div></div>
 <div class="ttc" id="aed__apply__water__stress_8h_html"><div class="ttname"><a href="ed__apply__water__stress_8h.html">ed_apply_water_stress.h</a></div></div>
@@ -442,7 +442,7 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div class="ttc" id="amultilayer__c4__canopy_8h_html"><div class="ttname"><a href="multilayer__c4__canopy_8h.html">multilayer_c4_canopy.h</a></div></div>
 <div class="ttc" id="amultilayer__canopy__integrator_8h_html"><div class="ttname"><a href="multilayer__canopy__integrator_8h.html">multilayer_canopy_integrator.h</a></div></div>
 <div class="ttc" id="amultilayer__canopy__properties_8h_html"><div class="ttname"><a href="multilayer__canopy__properties_8h.html">multilayer_canopy_properties.h</a></div></div>
-<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a0b37c5938e82da1fb19ed599f7c71217"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">ed_c4_leaf_photosynthesis_stuff::module_name</a></div><div class="ttdeci">std::string const module_name</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00016">ed_c4_leaf_photosynthesis.h:16</a></div></div>
+<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a0b37c5938e82da1fb19ed599f7c71217"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">ed_c4_leaf_photosynthesis_stuff::module_name</a></div><div class="ttdeci">std::string const module_name</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00017">ed_c4_leaf_photosynthesis.h:17</a></div></div>
 <div class="ttc" id="anight__and__day__trackers_8hpp_html"><div class="ttname"><a href="night__and__day__trackers_8hpp.html">night_and_day_trackers.hpp</a></div></div>
 <div class="ttc" id="ano__leaf__resp__neg__assim__partitioning__growth__calculator_8h_html"><div class="ttname"><a href="no__leaf__resp__neg__assim__partitioning__growth__calculator_8h.html">no_leaf_resp_neg_assim_partitioning_growth_calculator.h</a></div></div>
 <div class="ttc" id="ano__leaf__resp__partitioning__growth__calculator_8hpp_html"><div class="ttname"><a href="no__leaf__resp__partitioning__growth__calculator_8hpp.html">no_leaf_resp_partitioning_growth_calculator.hpp</a></div></div>
@@ -495,7 +495,7 @@ $(document).ready(function(){initNavTree('module__wrapper__factory_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="module__wrapper__factory_8cpp.html">module_wrapper_factory.cpp</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:06 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

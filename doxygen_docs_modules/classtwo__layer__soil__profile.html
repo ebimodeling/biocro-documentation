@@ -125,15 +125,15 @@ $(document).ready(function(){initNavTree('classtwo__layer__soil__profile.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace7754a7e4645dec9f26ad07a6897872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#ace7754a7e4645dec9f26ad07a6897872">two_layer_soil_profile</a> (const std::unordered_map&lt; std::string, double &gt; *input_parameters, std::unordered_map&lt; std::string, double &gt; *output_parameters)</td></tr>
-<tr class="separator:ace7754a7e4645dec9f26ad07a6897872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ec8b4d79ec1d0e578ade8d00dd950c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#ab6ec8b4d79ec1d0e578ade8d00dd950c">two_layer_soil_profile</a> (state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
+<tr class="separator:ab6ec8b4d79ec1d0e578ade8d00dd950c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70377e14f631d7fd158d2f3356ed6107"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a> ()</td></tr>
-<tr class="separator:a70377e14f631d7fd158d2f3356ed6107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a> ()</td></tr>
-<tr class="separator:a5a5b9919e2d8b1ee7bc8cc37558c79de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6bcae9586eb99fffb12a684814a4e6"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a> ()</td></tr>
+<tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtwo__layer__soil__profile.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
+<tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -217,10 +217,10 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00008">8</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00009">9</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ace7754a7e4645dec9f26ad07a6897872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace7754a7e4645dec9f26ad07a6897872">&#9670;&nbsp;</a></span>two_layer_soil_profile()</h2>
+<a id="ab6ec8b4d79ec1d0e578ade8d00dd950c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ec8b4d79ec1d0e578ade8d00dd950c">&#9670;&nbsp;</a></span>two_layer_soil_profile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,14 +231,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtwo__layer__soil__profile.html">two_layer_soil_profile</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>input_parameters</em>, </td>
+          <td class="paramtype">state_map const &amp;&#160;</td>
+          <td class="paramname"><em>input_quantities</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; *&#160;</td>
-          <td class="paramname"><em>output_parameters</em>&#160;</td>
+          <td class="paramtype">state_map *&#160;</td>
+          <td class="paramname"><em>output_quantities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,7 +253,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00010">10</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00011">11</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,9 +281,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">143</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">144</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00062">canopy_transpiration_rate_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00066">soilML_str::cws</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00056">cws1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00090">cws1_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00057">cws2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00091">cws2_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00079">hydrDist_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00074">lai_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00070">phi1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00071">phi2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00061">precip_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00080">rfl_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00078">rh_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00073">Root_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00082">rsdf_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00081">rsec_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00066">soil_air_entry_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00068">soil_b_coefficient_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00083">soil_clod_size_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00058">soil_depth1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00059">soil_depth2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00060">soil_depth3_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00063">soil_field_capacity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00084">soil_reflectance_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00069">soil_sand_content_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00067">soil_saturated_conductivity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00065">soil_saturation_capacity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00085">soil_transmission_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00088">soil_water_content_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00092">soil_water_content_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00064">soil_wilting_point_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00853">soilML()</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00076">solar_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00086">specific_heat_of_air_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00087">stefan_boltzman_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00075">temp_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00077">windspeed_ip</a>, and <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00072">wsFun_ip</a>.</p>
+<p class="reference">References <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00063">canopy_transpiration_rate_ip</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00066">soilML_str::cws</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00057">cws1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00091">cws1_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00058">cws2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00092">cws2_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00080">hydrDist_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00075">lai_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00071">phi1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00072">phi2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00062">precip_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00081">rfl_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00079">rh_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00074">Root_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00083">rsdf_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00082">rsec_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00067">soil_air_entry_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00069">soil_b_coefficient_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00084">soil_clod_size_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00059">soil_depth1_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00060">soil_depth2_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00061">soil_depth3_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00064">soil_field_capacity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00085">soil_reflectance_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00070">soil_sand_content_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00068">soil_saturated_conductivity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00066">soil_saturation_capacity_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00086">soil_transmission_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00089">soil_water_content_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00093">soil_water_content_op</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00065">soil_wilting_point_ip</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00853">soilML()</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00077">solar_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00087">specific_heat_of_air_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00088">stefan_boltzman_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00076">temp_ip</a>, <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00078">windspeed_ip</a>, and <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00073">wsFun_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -298,8 +298,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70377e14f631d7fd158d2f3356ed6107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70377e14f631d7fd158d2f3356ed6107">&#9670;&nbsp;</a></span>get_inputs()</h2>
+<a id="abc6bcae9586eb99fffb12a684814a4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6bcae9586eb99fffb12a684814a4e6">&#9670;&nbsp;</a></span>get_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +308,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_inputs </td>
+          <td class="memname">string_vector get_inputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -321,12 +321,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00097">97</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00098">98</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a5a5b9919e2d8b1ee7bc8cc37558c79de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a5b9919e2d8b1ee7bc8cc37558c79de">&#9670;&nbsp;</a></span>get_outputs()</h2>
+<a id="a7eff545285286763183243b1d473e6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eff545285286763183243b1d473e6df">&#9670;&nbsp;</a></span>get_outputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +335,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; get_outputs </td>
+          <td class="memname">string_vector get_outputs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -348,7 +348,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00135">135</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00136">136</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,9 +373,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00062">62</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00063">63</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -399,9 +399,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00056">56</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00057">57</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -425,9 +425,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00090">90</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00091">91</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -451,9 +451,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00057">57</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00058">58</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +477,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00091">91</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00092">92</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -503,9 +503,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00079">79</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00080">80</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -529,9 +529,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00074">74</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00075">75</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -555,9 +555,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00070">70</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00071">71</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -581,9 +581,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00071">71</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00072">72</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -607,9 +607,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00061">61</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00062">62</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -633,9 +633,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00080">80</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00081">81</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -659,9 +659,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00078">78</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00079">79</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -685,9 +685,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00073">73</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00074">74</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -711,9 +711,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00082">82</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00083">83</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -737,9 +737,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00081">81</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00082">82</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -763,9 +763,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00066">66</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00067">67</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +789,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00068">68</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00069">69</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -815,9 +815,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00083">83</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00084">84</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -841,9 +841,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00058">58</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00059">59</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -867,9 +867,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00059">59</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00060">60</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -893,9 +893,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00060">60</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00061">61</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -919,9 +919,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00063">63</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00064">64</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -945,9 +945,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00084">84</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00085">85</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -971,9 +971,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00069">69</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00070">70</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -997,9 +997,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00067">67</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00068">68</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1023,9 +1023,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00065">65</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00066">66</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1049,9 +1049,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00085">85</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00086">86</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1075,9 +1075,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00088">88</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00089">89</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1101,9 +1101,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00092">92</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00093">93</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1127,9 +1127,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00064">64</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00065">65</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1153,9 +1153,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00076">76</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00077">77</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1179,9 +1179,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00086">86</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00087">87</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1205,9 +1205,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00087">87</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00088">88</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1231,9 +1231,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00075">75</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00076">76</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1257,9 +1257,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00077">77</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00078">78</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1283,9 +1283,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00072">72</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00073">73</a> of file <a class="el" href="two__layer__soil__profile_8hpp_source.html">two_layer_soil_profile.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00143">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1298,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtwo__layer__soil__profile.html">two_layer_soil_profile</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:30 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:02:43 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

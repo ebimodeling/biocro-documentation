@@ -104,38 +104,38 @@ $(document).ready(function(){initNavTree('rh__to__mole__fraction_8h_source.html'
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classrh__to__mole__fraction.html">rh_to_mole_fraction</a> : <span class="keyword">public</span> SteadyModule</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#a33afd6e5867c8eff4c349b5ec1e69e10">   42</a></span>&#160;    <a class="code" href="classrh__to__mole__fraction.html#a33afd6e5867c8eff4c349b5ec1e69e10">rh_to_mole_fraction</a>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        state_map <span class="keyword">const</span>* input_parameters,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        state_map* output_parameters)</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#af6b259b1fb8cf83927824621be1fd582">   42</a></span>&#160;    <a class="code" href="classrh__to__mole__fraction.html#af6b259b1fb8cf83927824621be1fd582">rh_to_mole_fraction</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          SteadyModule(<span class="stringliteral">&quot;rh_to_mole_fraction&quot;</span>),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="comment">// Get references to input parameters</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          rh{get_input(input_parameters, <span class="stringliteral">&quot;rh&quot;</span>)},</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          atmospheric_pressure{get_input(input_parameters, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)},</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          saturation_water_vapor_pressure_atmosphere{get_input(input_parameters, <span class="stringliteral">&quot;saturation_water_vapor_pressure_atmosphere&quot;</span>)},</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          rh{get_input(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)},</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          atmospheric_pressure{get_input(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)},</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          saturation_water_vapor_pressure_atmosphere{get_input(input_quantities, <span class="stringliteral">&quot;saturation_water_vapor_pressure_atmosphere&quot;</span>)},</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          <span class="comment">// Get pointers to output parameters</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          mole_fraction_h2o_atmosphere_op{get_op(output_parameters, <span class="stringliteral">&quot;mole_fraction_h2o_atmosphere&quot;</span>)}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          mole_fraction_h2o_atmosphere_op{get_op(output_quantities, <span class="stringliteral">&quot;mole_fraction_h2o_atmosphere&quot;</span>)}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code" href="classrh__to__mole__fraction.html#a70377e14f631d7fd158d2f3356ed6107">get_inputs</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code" href="classrh__to__mole__fraction.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">get_outputs</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrh__to__mole__fraction.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrh__to__mole__fraction.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// References to input parameters</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// References to input quantities</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; rh;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; atmospheric_pressure;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; saturation_water_vapor_pressure_atmosphere;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Pointers to output parameters</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">double</span>* mole_fraction_h2o_atmosphere_op;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Main operation</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#a70377e14f631d7fd158d2f3356ed6107">   73</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classrh__to__mole__fraction.html#a70377e14f631d7fd158d2f3356ed6107">rh_to_mole_fraction::get_inputs</a>()</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#abc6bcae9586eb99fffb12a684814a4e6">   73</a></span>&#160;string_vector <a class="code" href="classrh__to__mole__fraction.html#abc6bcae9586eb99fffb12a684814a4e6">rh_to_mole_fraction::get_inputs</a>()</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;rh&quot;</span>,                                          <span class="comment">// dimensionless</span></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('rh__to__mole__fraction_8h_source.html'
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    };</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">   82</a></span>&#160;std::vector&lt;std::string&gt; <a class="code" href="classrh__to__mole__fraction.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">rh_to_mole_fraction::get_outputs</a>()</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classrh__to__mole__fraction.html#a7eff545285286763183243b1d473e6df">   82</a></span>&#160;string_vector <a class="code" href="classrh__to__mole__fraction.html#a7eff545285286763183243b1d473e6df">rh_to_mole_fraction::get_outputs</a>()</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="stringliteral">&quot;mole_fraction_h2o_atmosphere&quot;</span>  <span class="comment">// dimensionless</span></div>
@@ -169,16 +169,16 @@ $(document).ready(function(){initNavTree('rh__to__mole__fraction_8h_source.html'
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_aux_bio_cro_8h_html"><div class="ttname"><a href="_aux_bio_cro_8h.html">AuxBioCro.h</a></div></div>
 <div class="ttc" id="aclassrh__to__mole__fraction_html"><div class="ttname"><a href="classrh__to__mole__fraction.html">rh_to_mole_fraction</a></div><div class="ttdoc">Converts atmospheric relative humidity into a water vapor concentration expressed as a dimensionless ...</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00039">rh_to_mole_fraction.h:40</a></div></div>
-<div class="ttc" id="aclassrh__to__mole__fraction_html_a33afd6e5867c8eff4c349b5ec1e69e10"><div class="ttname"><a href="classrh__to__mole__fraction.html#a33afd6e5867c8eff4c349b5ec1e69e10">rh_to_mole_fraction::rh_to_mole_fraction</a></div><div class="ttdeci">rh_to_mole_fraction(state_map const *input_parameters, state_map *output_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00042">rh_to_mole_fraction.h:42</a></div></div>
-<div class="ttc" id="aclassrh__to__mole__fraction_html_a5a5b9919e2d8b1ee7bc8cc37558c79de"><div class="ttname"><a href="classrh__to__mole__fraction.html#a5a5b9919e2d8b1ee7bc8cc37558c79de">rh_to_mole_fraction::get_outputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00082">rh_to_mole_fraction.h:82</a></div></div>
-<div class="ttc" id="aclassrh__to__mole__fraction_html_a70377e14f631d7fd158d2f3356ed6107"><div class="ttname"><a href="classrh__to__mole__fraction.html#a70377e14f631d7fd158d2f3356ed6107">rh_to_mole_fraction::get_inputs</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00073">rh_to_mole_fraction.h:73</a></div></div>
+<div class="ttc" id="aclassrh__to__mole__fraction_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classrh__to__mole__fraction.html#a7eff545285286763183243b1d473e6df">rh_to_mole_fraction::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00082">rh_to_mole_fraction.h:82</a></div></div>
+<div class="ttc" id="aclassrh__to__mole__fraction_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classrh__to__mole__fraction.html#abc6bcae9586eb99fffb12a684814a4e6">rh_to_mole_fraction::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00073">rh_to_mole_fraction.h:73</a></div></div>
+<div class="ttc" id="aclassrh__to__mole__fraction_html_af6b259b1fb8cf83927824621be1fd582"><div class="ttname"><a href="classrh__to__mole__fraction.html#af6b259b1fb8cf83927824621be1fd582">rh_to_mole_fraction::rh_to_mole_fraction</a></div><div class="ttdeci">rh_to_mole_fraction(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="rh__to__mole__fraction_8h_source.html#l00042">rh_to_mole_fraction.h:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="rh__to__mole__fraction_8h.html">rh_to_mole_fraction.h</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:06 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -101,16 +101,16 @@ $(document).ready(function(){initNavTree('development__index_8h_source.html','')
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classdevelopment__index.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdevelopment__index.html">development_index</a> : <span class="keyword">public</span> DerivModule</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classdevelopment__index.html#a8237e9bbd8413ca868900f5737326752">   57</a></span>&#160;    <a class="code" href="classdevelopment__index.html#a8237e9bbd8413ca868900f5737326752">development_index</a>(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> state_map* input_parameters,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        state_map* output_parameters)</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classdevelopment__index.html#a9f4781475fde1673d5a2d7a4e42ebe9c">   57</a></span>&#160;    <a class="code" href="classdevelopment__index.html#a9f4781475fde1673d5a2d7a4e42ebe9c">development_index</a>(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : DerivModule{<span class="stringliteral">&quot;development_index&quot;</span>},</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          <span class="comment">// Get references to input parameters</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          development_rate_per_hour{get_input(input_parameters, <span class="stringliteral">&quot;development_rate_per_hour&quot;</span>)},</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          development_rate_per_hour{get_input(input_quantities, <span class="stringliteral">&quot;development_rate_per_hour&quot;</span>)},</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="comment">// Get pointers to output parameters</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          DVI_op{get_op(output_parameters, <span class="stringliteral">&quot;DVI&quot;</span>)}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          DVI_op{get_op(output_quantities, <span class="stringliteral">&quot;DVI&quot;</span>)}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
@@ -119,10 +119,10 @@ $(document).ready(function(){initNavTree('development__index_8h_source.html','')
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classdevelopment__index.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// References to input parameters</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// References to input quantities</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; development_rate_per_hour;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Pointers to output parameters</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">double</span>* DVI_op;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// Implement the pure virtual function do_operation():</span></div>
@@ -145,14 +145,14 @@ $(document).ready(function(){initNavTree('development__index_8h_source.html','')
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> development_index::do_operation()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Update the output parameter list</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Update the output quantity list</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    update(DVI_op, development_rate_per_hour);  <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassdevelopment__index_html"><div class="ttname"><a href="classdevelopment__index.html">development_index</a></div><div class="ttdoc">Calculates the development index (DVI) corresponding to plant growth rate.</div><div class="ttdef"><b>Definition:</b> <a href="development__index_8h_source.html#l00054">development_index.h:55</a></div></div>
 <div class="ttc" id="aclassdevelopment__index_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classdevelopment__index.html#a7eff545285286763183243b1d473e6df">development_index::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="development__index_8h_source.html#l00092">development_index.h:92</a></div></div>
-<div class="ttc" id="aclassdevelopment__index_html_a8237e9bbd8413ca868900f5737326752"><div class="ttname"><a href="classdevelopment__index.html#a8237e9bbd8413ca868900f5737326752">development_index::development_index</a></div><div class="ttdeci">development_index(const state_map *input_parameters, state_map *output_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="development__index_8h_source.html#l00057">development_index.h:57</a></div></div>
+<div class="ttc" id="aclassdevelopment__index_html_a9f4781475fde1673d5a2d7a4e42ebe9c"><div class="ttname"><a href="classdevelopment__index.html#a9f4781475fde1673d5a2d7a4e42ebe9c">development_index::development_index</a></div><div class="ttdeci">development_index(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="development__index_8h_source.html#l00057">development_index.h:57</a></div></div>
 <div class="ttc" id="aclassdevelopment__index_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classdevelopment__index.html#abc6bcae9586eb99fffb12a684814a4e6">development_index::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="development__index_8h_source.html#l00085">development_index.h:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('development__index_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="development__index_8h.html">development_index.h</a></li>
-    <li class="footer">Generated on Wed May 12 2021 19:54:51 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon May 24 2021 18:03:06 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

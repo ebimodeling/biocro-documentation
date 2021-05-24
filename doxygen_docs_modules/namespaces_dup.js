@@ -87,10 +87,10 @@ var namespaces_dup =
       [ "upper_bounds", "namespaceed__p__m__temperature__solve__stuff.html#a46f09bbd32fd1332a877072d2e36a444", null ]
     ] ],
     [ "MLCP", "namespace_m_l_c_p.html", [
-      [ "get_leaf_input_subset", "namespace_m_l_c_p.html#a8219c805904c9f20e83a4444b8d50d8a", null ],
-      [ "get_multiclass_multilayer_leaf_inputs", "namespace_m_l_c_p.html#acc0d60c420dc5fa420e348b7d669a07f", null ],
-      [ "get_other_leaf_inputs", "namespace_m_l_c_p.html#a0883da15071ed42e20b28e58c4542813", null ],
-      [ "get_pure_multilayer_leaf_inputs", "namespace_m_l_c_p.html#a3a7f36cf7f11044822bd1b03f848875e", null ]
+      [ "get_leaf_input_subset", "namespace_m_l_c_p.html#a2f7ce3fca652c14f355c4e024f23aef3", null ],
+      [ "get_multiclass_multilayer_leaf_inputs", "namespace_m_l_c_p.html#aa08b2a43ba0f7f71ff19c0adc7b33f75", null ],
+      [ "get_other_leaf_inputs", "namespace_m_l_c_p.html#a69694c1fb39346dd889b10586d972d01", null ],
+      [ "get_pure_multilayer_leaf_inputs", "namespace_m_l_c_p.html#a69bebe5a84d6c32b4d630d3fdf0ba2aa", null ]
     ] ],
     [ "nikolov", "namespacenikolov.html", [
       [ "temperature_exponent", "namespacenikolov.html#af08ea1f00199ed198691dd2eebe4390e", null ],
