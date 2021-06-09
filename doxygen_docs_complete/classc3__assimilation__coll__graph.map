@@ -1,5 +1,5 @@
 <map id="c3_assimilation" name="c3_assimilation">
 <area shape="rect" id="node1" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C3 leaf ..." alt="" coords="5,155,117,181"/>
-<area shape="rect" id="node2" href="$class_deriv_module.html" title="This class represents a derivative Module." alt="" coords="14,80,109,107"/>
+<area shape="rect" id="node2" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="9,80,113,107"/>
 <area shape="rect" id="node3" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="29,5,93,32"/>
 </map>
