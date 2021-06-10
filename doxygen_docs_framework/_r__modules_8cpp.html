@@ -112,20 +112,65 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3bf623952876844a44049b5ddce4c618"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__modules_8cpp.html#a3bf623952876844a44049b5ddce4c618">R_get_module_info</a> (SEXP module_name_input, SEXP verbose)</td></tr>
-<tr class="separator:a3bf623952876844a44049b5ddce4c618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c75cd613279b950f047c30907259253"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__modules_8cpp.html#a0c75cd613279b950f047c30907259253">R_test_module</a> (SEXP module_name_input, SEXP input_parameters)</td></tr>
-<tr class="separator:a0c75cd613279b950f047c30907259253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da849bfe74b421a27eb7ef7f14fc82e"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__modules_8cpp.html#a4da849bfe74b421a27eb7ef7f14fc82e">R_module_info</a> (SEXP module_name_input, SEXP verbose)</td></tr>
+<tr class="separator:a4da849bfe74b421a27eb7ef7f14fc82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105b923bf4ee98033ed1f916e58a2d28"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__modules_8cpp.html#a105b923bf4ee98033ed1f916e58a2d28">R_evaluate_module</a> (SEXP module_name_input, SEXP input_parameters)</td></tr>
+<tr class="separator:a105b923bf4ee98033ed1f916e58a2d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3bf623952876844a44049b5ddce4c618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf623952876844a44049b5ddce4c618">&#9670;&nbsp;</a></span>R_get_module_info()</h2>
+<a id="a105b923bf4ee98033ed1f916e58a2d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105b923bf4ee98033ed1f916e58a2d28">&#9670;&nbsp;</a></span>R_evaluate_module()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SEXP R_get_module_info </td>
+          <td class="memname">SEXP R_evaluate_module </td>
+          <td>(</td>
+          <td class="paramtype">SEXP&#160;</td>
+          <td class="paramname"><em>module_name_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SEXP&#160;</td>
+          <td class="paramname"><em>input_parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00130">130</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="_r__helper__functions_8cpp_source.html#l00101">list_from_map()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00079">make_vector()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00048">map_from_list()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_r__modules_8cpp_a105b923bf4ee98033ed1f916e58a2d28_cgraph.png" border="0" usemap="#a_r__modules_8cpp_a105b923bf4ee98033ed1f916e58a2d28_cgraph" alt=""/></div>
+<map name="a_r__modules_8cpp_a105b923bf4ee98033ed1f916e58a2d28_cgraph" id="a_r__modules_8cpp_a105b923bf4ee98033ed1f916e58a2d28_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,141,83"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="189,5,293,32"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895" title=" " alt="" coords="193,56,290,83"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff" title=" " alt="" coords="189,107,293,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4da849bfe74b421a27eb7ef7f14fc82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da849bfe74b421a27eb7ef7f14fc82e">&#9670;&nbsp;</a></span>R_module_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SEXP R_module_info </td>
           <td>(</td>
           <td class="paramtype">SEXP&#160;</td>
           <td class="paramname"><em>module_name_input</em>, </td>
@@ -146,62 +191,19 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00011">11</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_r__helper__functions_8cpp_source.html#l00083">list_from_map()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00063">make_vector()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_r__modules_8cpp_a3bf623952876844a44049b5ddce4c618_cgraph.png" border="0" usemap="#a_r__modules_8cpp_a3bf623952876844a44049b5ddce4c618_cgraph" alt=""/></div>
-<map name="a_r__modules_8cpp_a3bf623952876844a44049b5ddce4c618_cgraph" id="a_r__modules_8cpp_a3bf623952876844a44049b5ddce4c618_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,139,57"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="187,5,291,32"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895" title=" " alt="" coords="190,56,287,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a0c75cd613279b950f047c30907259253"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c75cd613279b950f047c30907259253">&#9670;&nbsp;</a></span>R_test_module()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SEXP R_test_module </td>
-          <td>(</td>
-          <td class="paramtype">SEXP&#160;</td>
-          <td class="paramname"><em>module_name_input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SEXP&#160;</td>
-          <td class="paramname"><em>input_parameters</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00112">112</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="_r__helper__functions_8cpp_source.html#l00083">list_from_map()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00063">make_vector()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00033">map_from_list()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
+<p class="reference">References <a class="el" href="_r__helper__functions_8cpp_source.html#l00163">list_from_module_info()</a>, and <a class="el" href="_r__helper__functions_8cpp_source.html#l00079">make_vector()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_r__modules_8cpp_a0c75cd613279b950f047c30907259253_cgraph.png" border="0" usemap="#a_r__modules_8cpp_a0c75cd613279b950f047c30907259253_cgraph" alt=""/></div>
-<map name="a_r__modules_8cpp_a0c75cd613279b950f047c30907259253_cgraph" id="a_r__modules_8cpp_a0c75cd613279b950f047c30907259253_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,115,83"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="163,5,267,32"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895" title=" " alt="" coords="166,56,263,83"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff" title=" " alt="" coords="163,107,267,133"/>
+<div class="center"><img src="_r__modules_8cpp_a4da849bfe74b421a27eb7ef7f14fc82e_cgraph.png" border="0" usemap="#a_r__modules_8cpp_a4da849bfe74b421a27eb7ef7f14fc82e_cgraph" alt=""/></div>
+<map name="a_r__modules_8cpp_a4da849bfe74b421a27eb7ef7f14fc82e_cgraph" id="a_r__modules_8cpp_a4da849bfe74b421a27eb7ef7f14fc82e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,113,83"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a6473aed220d2c6f4030740ac1789e8ac" title=" " alt="" coords="161,31,311,57"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895" title=" " alt="" coords="187,81,285,108"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="359,5,463,32"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#ae7cd48b3b7f6069c84e3abe2aa449a6a" title=" " alt="" coords="369,56,452,83"/>
 </map>
 </div>
 
@@ -210,7 +212,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 16:58:13 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 10 2021 22:27:04 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

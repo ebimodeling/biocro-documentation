@@ -308,7 +308,7 @@ $(function() {
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// Calculate stem senescence</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthermal__time__and__frost__senescence.html#a6fdea3652676280eb850049a21742d9c">TTc</a> &gt;= <a class="code" href="classthermal__time__and__frost__senescence.html#a2e68da6fea94dba2f2531ce531996a82">seneStem</a>) {</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="comment">// Look back in time to find out how much the tissue grew in the past.</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#ac0a57bd08b931948dd46d0642efb6f5c">assim_rate_stem_vec</a>[<a class="code" href="classthermal__time__and__frost__senescence.html#a726a9356479b081580811c8b17a0567c">stem_senescence_index</a>];</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#ac0a57bd08b931948dd46d0642efb6f5c">assim_rate_stem_vec</a>.at(<a class="code" href="classthermal__time__and__frost__senescence.html#a726a9356479b081580811c8b17a0567c">stem_senescence_index</a>);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">// Subtract the new growth from the tissue derivative</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        dStem -= change;</div>
@@ -323,7 +323,7 @@ $(function() {
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">// Calculate root senescence</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthermal__time__and__frost__senescence.html#a6fdea3652676280eb850049a21742d9c">TTc</a> &gt;= <a class="code" href="classthermal__time__and__frost__senescence.html#a9587ca54df0d46c2285e36c454766e24">seneRoot</a>) {</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="comment">// Look back in time to find out how much the tissue grew in the past.</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#a6b0475b657888dae4bd86dbb754c0814">assim_rate_root_vec</a>[<a class="code" href="classthermal__time__and__frost__senescence.html#a8a821da8299fffdfeac8e342e6b11dbb">root_senescence_index</a>];</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#a6b0475b657888dae4bd86dbb754c0814">assim_rate_root_vec</a>.at(<a class="code" href="classthermal__time__and__frost__senescence.html#a8a821da8299fffdfeac8e342e6b11dbb">root_senescence_index</a>);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">// Subtract the new growth from the tissue derivative</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        dRoot -= change;</div>
@@ -343,7 +343,7 @@ $(function() {
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// Calculate rhizome senescence</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthermal__time__and__frost__senescence.html#a6fdea3652676280eb850049a21742d9c">TTc</a> &gt;= <a class="code" href="classthermal__time__and__frost__senescence.html#a2ce20edc23f1b82d5350fe4aeb9a67fa">seneRhizome</a>) {</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="comment">// Look back in time to find out how much the tissue grew in the past.</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#a454f893a0479a961a0dccf9d8f5fd386">assim_rate_rhizome_vec</a>[<a class="code" href="classthermal__time__and__frost__senescence.html#af3be647e8efe9ebeef9a92ef0d897e7a">rhizome_senescence_index</a>];</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordtype">double</span> change = <a class="code" href="classthermal__time__and__frost__senescence.html#a454f893a0479a961a0dccf9d8f5fd386">assim_rate_rhizome_vec</a>.at(<a class="code" href="classthermal__time__and__frost__senescence.html#af3be647e8efe9ebeef9a92ef0d897e7a">rhizome_senescence_index</a>);</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">// Subtract the new growth from the tissue derivative</span></div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        dRhizome -= change;</div>
@@ -430,7 +430,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 9 2021 16:56:59 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 10 2021 22:25:38 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
