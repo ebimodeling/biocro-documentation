@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-14" />
+<meta name="date" content="2021-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -133,6 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-info"><i class="fa fa-check"></i>Version Info</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#note-about-the-types-of-documentation-in-biocro"><i class="fa fa-check"></i>Note about the types of documentation in BioCro</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html"><i class="fa fa-check"></i><b>1</b> Contributing to BioCro</a><ul>
@@ -240,30 +241,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4><span class="header-section-number">1.2.1.2</span> Document units in the code</h4>
 <ul>
 <li><p>After every <a href="https://en.wikipedia.org/wiki/Physical_quantity">physical quantity</a>, include a comment with the units. The idea is that every quantity will roughly be read as if it were written in normal text: <code>double yield = 10  // Mg / ha</code> is something like “the yield was 10 Mg / ha”. Using dimensions instead of units is acceptable if the code is written with the expectation that <a href="https://en.wikipedia.org/wiki/Coherence_%28units_of_measurement%29">coherent units</a> are used.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="contributing-to-biocro.html#cb1-1"></a><span class="co">// In function signatures</span></span>
-<span id="cb1-2"><a href="contributing-to-biocro.html#cb1-2"></a><span class="dt">double</span> ball_berry(<span class="dt">double</span> assimilation,                   <span class="co">// mol / m^2 / s</span></span>
-<span id="cb1-3"><a href="contributing-to-biocro.html#cb1-3"></a>                  <span class="dt">double</span> atmospheric_co2_concentration,  <span class="co">// mol / mol</span></span>
-<span id="cb1-4"><a href="contributing-to-biocro.html#cb1-4"></a>                  <span class="dt">double</span> atmospheric_relative_humidity,  <span class="co">// Pa / Pa</span></span>
-<span id="cb1-5"><a href="contributing-to-biocro.html#cb1-5"></a>                  <span class="dt">double</span> beta0,                          <span class="co">// mol / m^2 / s</span></span>
-<span id="cb1-6"><a href="contributing-to-biocro.html#cb1-6"></a>                  <span class="dt">double</span> beta1)                          <span class="co">// dimensionless from [mol / m^2 / s] / [mol / m^2 / s]</span></span>
-<span id="cb1-7"><a href="contributing-to-biocro.html#cb1-7"></a></span>
-<span id="cb1-8"><a href="contributing-to-biocro.html#cb1-8"></a><span class="co">// In assignments</span></span>
-<span id="cb1-9"><a href="contributing-to-biocro.html#cb1-9"></a><span class="dt">double</span> leaf_temperature = air_temperature - <span class="dt">delta_t</span>;  <span class="co">// K.</span></span>
-<span id="cb1-10"><a href="contributing-to-biocro.html#cb1-10"></a></span>
-<span id="cb1-11"><a href="contributing-to-biocro.html#cb1-11"></a><span class="co">// In return statements</span></span>
-<span id="cb1-12"><a href="contributing-to-biocro.html#cb1-12"></a><span class="cf">return</span> assimilation_rate;  <span class="co">// micromoles / m^2 / s.</span></span>
-<span id="cb1-13"><a href="contributing-to-biocro.html#cb1-13"></a></span>
-<span id="cb1-14"><a href="contributing-to-biocro.html#cb1-14"></a><span class="co">// In tables</span></span>
-<span id="cb1-15"><a href="contributing-to-biocro.html#cb1-15"></a><span class="at">const</span> <span class="bu">std::</span>map&lt;SoilType, soilText_str&gt; soil_parameters =</span>
-<span id="cb1-16"><a href="contributing-to-biocro.html#cb1-16"></a>{</span>
-<span id="cb1-17"><a href="contributing-to-biocro.html#cb1-17"></a>    <span class="co">//                        d = dimensionless</span></span>
-<span id="cb1-18"><a href="contributing-to-biocro.html#cb1-18"></a>    <span class="co">//                        d     d     d     J kg^-1     d     J s m^-3     d     d      d     Mg m^-3</span></span>
-<span id="cb1-19"><a href="contributing-to-biocro.html#cb1-19"></a>    <span class="co">//                        silt  clay  sand  air_entry   b     Ks           satur fieldc wiltp bulk_density</span></span>
-<span id="cb1-20"><a href="contributing-to-biocro.html#cb1-20"></a>    { SoilType::sand,       { <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.92</span>,      -<span class="fl">0.7</span>,  <span class="fl">1.7</span>,  <span class="fl">5.8e-3</span>,      <span class="fl">0.87</span>, <span class="fl">0.09</span>,  <span class="fl">0.03</span>, <span class="fl">1.60</span> } },</span>
-<span id="cb1-21"><a href="contributing-to-biocro.html#cb1-21"></a>    { SoilType::loamy_sand, { <span class="fl">0.12</span>, <span class="fl">0.07</span>, <span class="fl">0.81</span>,      -<span class="fl">0.9</span>,  <span class="fl">2.1</span>,  <span class="fl">1.7e-3</span>,      <span class="fl">0.72</span>, <span class="fl">0.13</span>,  <span class="fl">0.06</span>, <span class="fl">1.55</span> } },</span>
-<span id="cb1-22"><a href="contributing-to-biocro.html#cb1-22"></a>};</span></code></pre></div></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="contributing-to-biocro.html#cb2-1"></a><span class="co">// In function signatures</span></span>
+<span id="cb2-2"><a href="contributing-to-biocro.html#cb2-2"></a><span class="dt">double</span> ball_berry(<span class="dt">double</span> assimilation,                   <span class="co">// mol / m^2 / s</span></span>
+<span id="cb2-3"><a href="contributing-to-biocro.html#cb2-3"></a>                  <span class="dt">double</span> atmospheric_co2_concentration,  <span class="co">// mol / mol</span></span>
+<span id="cb2-4"><a href="contributing-to-biocro.html#cb2-4"></a>                  <span class="dt">double</span> atmospheric_relative_humidity,  <span class="co">// Pa / Pa</span></span>
+<span id="cb2-5"><a href="contributing-to-biocro.html#cb2-5"></a>                  <span class="dt">double</span> beta0,                          <span class="co">// mol / m^2 / s</span></span>
+<span id="cb2-6"><a href="contributing-to-biocro.html#cb2-6"></a>                  <span class="dt">double</span> beta1)                          <span class="co">// dimensionless from [mol / m^2 / s] / [mol / m^2 / s]</span></span>
+<span id="cb2-7"><a href="contributing-to-biocro.html#cb2-7"></a></span>
+<span id="cb2-8"><a href="contributing-to-biocro.html#cb2-8"></a><span class="co">// In assignments</span></span>
+<span id="cb2-9"><a href="contributing-to-biocro.html#cb2-9"></a><span class="dt">double</span> leaf_temperature = air_temperature - <span class="dt">delta_t</span>;  <span class="co">// K.</span></span>
+<span id="cb2-10"><a href="contributing-to-biocro.html#cb2-10"></a></span>
+<span id="cb2-11"><a href="contributing-to-biocro.html#cb2-11"></a><span class="co">// In return statements</span></span>
+<span id="cb2-12"><a href="contributing-to-biocro.html#cb2-12"></a><span class="cf">return</span> assimilation_rate;  <span class="co">// micromoles / m^2 / s.</span></span>
+<span id="cb2-13"><a href="contributing-to-biocro.html#cb2-13"></a></span>
+<span id="cb2-14"><a href="contributing-to-biocro.html#cb2-14"></a><span class="co">// In tables</span></span>
+<span id="cb2-15"><a href="contributing-to-biocro.html#cb2-15"></a><span class="at">const</span> <span class="bu">std::</span>map&lt;SoilType, soilText_str&gt; soil_parameters =</span>
+<span id="cb2-16"><a href="contributing-to-biocro.html#cb2-16"></a>{</span>
+<span id="cb2-17"><a href="contributing-to-biocro.html#cb2-17"></a>    <span class="co">//                        d = dimensionless</span></span>
+<span id="cb2-18"><a href="contributing-to-biocro.html#cb2-18"></a>    <span class="co">//                        d     d     d     J kg^-1     d     J s m^-3     d     d      d     Mg m^-3</span></span>
+<span id="cb2-19"><a href="contributing-to-biocro.html#cb2-19"></a>    <span class="co">//                        silt  clay  sand  air_entry   b     Ks           satur fieldc wiltp bulk_density</span></span>
+<span id="cb2-20"><a href="contributing-to-biocro.html#cb2-20"></a>    { SoilType::sand,       { <span class="fl">0.05</span>, <span class="fl">0.03</span>, <span class="fl">0.92</span>,      -<span class="fl">0.7</span>,  <span class="fl">1.7</span>,  <span class="fl">5.8e-3</span>,      <span class="fl">0.87</span>, <span class="fl">0.09</span>,  <span class="fl">0.03</span>, <span class="fl">1.60</span> } },</span>
+<span id="cb2-21"><a href="contributing-to-biocro.html#cb2-21"></a>    { SoilType::loamy_sand, { <span class="fl">0.12</span>, <span class="fl">0.07</span>, <span class="fl">0.81</span>,      -<span class="fl">0.9</span>,  <span class="fl">2.1</span>,  <span class="fl">1.7e-3</span>,      <span class="fl">0.72</span>, <span class="fl">0.13</span>,  <span class="fl">0.06</span>, <span class="fl">1.55</span> } },</span>
+<span id="cb2-22"><a href="contributing-to-biocro.html#cb2-22"></a>};</span></code></pre></div></li>
 <li><p>If you would like to include other details, include the units in the same way, and include details <strong>following</strong> the units so that the variables are still read like regular text. For example, write</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="contributing-to-biocro.html#cb2-1"></a>✓ <span class="cf">return</span> gswmol * <span class="dv">1000</span>;  <span class="co">// mmol / m^2 / s. Convert from mol to mmol.</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb3-1"><a href="contributing-to-biocro.html#cb3-1"></a>✓ <span class="cf">return</span> gswmol * <span class="dv">1000</span>;  <span class="co">// mmol / m^2 / s. Convert from mol to mmol.</span></span></code></pre></div>
 <p><em>not</em>
 <code>c++   ✗ return gswmol * 1000;  // Converting from mol / m^2 / s to mmol / m^2 / s.</code></p></li>
 <li><p>Use SI conventions for units and dimensions, including capitalization. Specifically, use “<code>degrees C</code>”, not “<code>C</code>”, to indicate °C.</p></li>
@@ -307,17 +308,17 @@ difficult-to-find errors. The coherent set of SI units consists of
 all the units without prefixes, except that kg is the coherent unit
 of mass, not g.</p></li>
 <li><p>Do not copy and paste code, changing only small parts. Choose a design that eliminates the duplication. Duplication is often the result of not separating control flow from data. Consider the following R code.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="contributing-to-biocro.html#cb3-1"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;lattice&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
-<span id="cb3-2"><a href="contributing-to-biocro.html#cb3-2"></a>  <span class="kw">install.packages</span>(<span class="st">&quot;lattice&quot;</span>, <span class="dt">repos=</span><span class="st">&quot;http://R-Forge.R-project.org&quot;</span>, <span class="dt">type=</span><span class="st">&quot;source&quot;</span>)</span>
-<span id="cb3-3"><a href="contributing-to-biocro.html#cb3-3"></a>}</span>
-<span id="cb3-4"><a href="contributing-to-biocro.html#cb3-4"></a></span>
-<span id="cb3-5"><a href="contributing-to-biocro.html#cb3-5"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;BioCro&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
-<span id="cb3-6"><a href="contributing-to-biocro.html#cb3-6"></a>  devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ebimodeling/biocro&quot;</span>)</span>
-<span id="cb3-7"><a href="contributing-to-biocro.html#cb3-7"></a>}</span>
-<span id="cb3-8"><a href="contributing-to-biocro.html#cb3-8"></a></span>
-<span id="cb3-9"><a href="contributing-to-biocro.html#cb3-9"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;boot&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
-<span id="cb3-10"><a href="contributing-to-biocro.html#cb3-10"></a>  devtools<span class="op">::</span><span class="kw">install_url</span>(<span class="st">&quot;http://cran.r-project.org/src/contrib/Archive/boot/boot_1.3-7.tar.gz&quot;</span>)</span>
-<span id="cb3-11"><a href="contributing-to-biocro.html#cb3-11"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="contributing-to-biocro.html#cb4-1"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;lattice&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
+<span id="cb4-2"><a href="contributing-to-biocro.html#cb4-2"></a>  <span class="kw">install.packages</span>(<span class="st">&quot;lattice&quot;</span>, <span class="dt">repos=</span><span class="st">&quot;http://R-Forge.R-project.org&quot;</span>, <span class="dt">type=</span><span class="st">&quot;source&quot;</span>)</span>
+<span id="cb4-3"><a href="contributing-to-biocro.html#cb4-3"></a>}</span>
+<span id="cb4-4"><a href="contributing-to-biocro.html#cb4-4"></a></span>
+<span id="cb4-5"><a href="contributing-to-biocro.html#cb4-5"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;BioCro&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
+<span id="cb4-6"><a href="contributing-to-biocro.html#cb4-6"></a>  devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ebimodeling/biocro&quot;</span>)</span>
+<span id="cb4-7"><a href="contributing-to-biocro.html#cb4-7"></a>}</span>
+<span id="cb4-8"><a href="contributing-to-biocro.html#cb4-8"></a></span>
+<span id="cb4-9"><a href="contributing-to-biocro.html#cb4-9"></a><span class="cf">if</span> (<span class="op">!</span>(<span class="st">&quot;boot&quot;</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])) {</span>
+<span id="cb4-10"><a href="contributing-to-biocro.html#cb4-10"></a>  devtools<span class="op">::</span><span class="kw">install_url</span>(<span class="st">&quot;http://cran.r-project.org/src/contrib/Archive/boot/boot_1.3-7.tar.gz&quot;</span>)</span>
+<span id="cb4-11"><a href="contributing-to-biocro.html#cb4-11"></a>}</span></code></pre></div>
 <p>The data and behavior can be separated.
 ```r
 required_packages = list(
@@ -363,16 +364,16 @@ facilitates presenting material in a more readable format. In the
 following snippet from the module library documentation, for
 example, we have allowed slighly-longer lines in order to be able to
 maintain one line per interval:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="contributing-to-biocro.html#cb4-1"></a><span class="co">/*</span></span>
-<span id="cb4-2"><a href="contributing-to-biocro.html#cb4-2"></a><span class="co">*  However, this definition is flexible. For example, for our soybean model</span></span>
-<span id="cb4-3"><a href="contributing-to-biocro.html#cb4-3"></a><span class="co">*  (soybean_development_rate_calculator.h) we define the intervals as follows:</span></span>
-<span id="cb4-4"><a href="contributing-to-biocro.html#cb4-4"></a><span class="co">*  -1 &lt;= DVI &lt; 0 : Sowing to Emergence</span></span>
-<span id="cb4-5"><a href="contributing-to-biocro.html#cb4-5"></a><span class="co">*   0 &lt;= DVI &lt; 1  :  Emergence to R1 (Flowering) is broken into three stages.</span></span>
-<span id="cb4-6"><a href="contributing-to-biocro.html#cb4-6"></a><span class="co">*       0 &lt;= DVI &lt; 0.333        : Emergence to V0 (Cotyledon stage)</span></span>
-<span id="cb4-7"><a href="contributing-to-biocro.html#cb4-7"></a><span class="co">*       0.333 &lt;= DVI &lt; 0.667    : V0 (Cotyledon stage) to R0 (End of Floral Induction)</span></span>
-<span id="cb4-8"><a href="contributing-to-biocro.html#cb4-8"></a><span class="co">*       0.667 &lt;= DVI &lt; 1        : R0 (End of Floral Induction) to R1 (Flowering)</span></span>
-<span id="cb4-9"><a href="contributing-to-biocro.html#cb4-9"></a><span class="co">*  1 &lt;= DVI &lt; 2 : R1 (Flowering) to R7 (Maturity)</span></span>
-<span id="cb4-10"><a href="contributing-to-biocro.html#cb4-10"></a><span class="co">*/</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb5-1"><a href="contributing-to-biocro.html#cb5-1"></a><span class="co">/*</span></span>
+<span id="cb5-2"><a href="contributing-to-biocro.html#cb5-2"></a><span class="co">*  However, this definition is flexible. For example, for our soybean model</span></span>
+<span id="cb5-3"><a href="contributing-to-biocro.html#cb5-3"></a><span class="co">*  (soybean_development_rate_calculator.h) we define the intervals as follows:</span></span>
+<span id="cb5-4"><a href="contributing-to-biocro.html#cb5-4"></a><span class="co">*  -1 &lt;= DVI &lt; 0 : Sowing to Emergence</span></span>
+<span id="cb5-5"><a href="contributing-to-biocro.html#cb5-5"></a><span class="co">*   0 &lt;= DVI &lt; 1  :  Emergence to R1 (Flowering) is broken into three stages.</span></span>
+<span id="cb5-6"><a href="contributing-to-biocro.html#cb5-6"></a><span class="co">*       0 &lt;= DVI &lt; 0.333        : Emergence to V0 (Cotyledon stage)</span></span>
+<span id="cb5-7"><a href="contributing-to-biocro.html#cb5-7"></a><span class="co">*       0.333 &lt;= DVI &lt; 0.667    : V0 (Cotyledon stage) to R0 (End of Floral Induction)</span></span>
+<span id="cb5-8"><a href="contributing-to-biocro.html#cb5-8"></a><span class="co">*       0.667 &lt;= DVI &lt; 1        : R0 (End of Floral Induction) to R1 (Flowering)</span></span>
+<span id="cb5-9"><a href="contributing-to-biocro.html#cb5-9"></a><span class="co">*  1 &lt;= DVI &lt; 2 : R1 (Flowering) to R7 (Maturity)</span></span>
+<span id="cb5-10"><a href="contributing-to-biocro.html#cb5-10"></a><span class="co">*/</span></span></code></pre></div>
 <p>As for the code lines themselves, we point to the following advice
 from the Linux kernel project:<sup id="a1"><a href="contributing-to-biocro.html#f1">1</a></sup></p>
 <blockquote>

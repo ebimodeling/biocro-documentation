@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-14" />
+<meta name="date" content="2021-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -133,6 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-info"><i class="fa fa-check"></i>Version Info</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#note-about-the-types-of-documentation-in-biocro"><i class="fa fa-check"></i>Note about the types of documentation in BioCro</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html"><i class="fa fa-check"></i><b>1</b> Contributing to BioCro</a><ul>
@@ -387,13 +388,13 @@ and install a TeX distribution designed for your platform.</p></li>
 you can install the R <code>tinytex</code> package along with some extra needed
 LaTeX packages not included in TinyTeX by default by proceeding as
 follows:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="generating-documentation.html#cb8-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
-<span id="cb8-2"><a href="generating-documentation.html#cb8-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span>
-<span id="cb8-3"><a href="generating-documentation.html#cb8-3"></a><span class="co"># Install a few LaTeX packages needed by the vignettes but not</span></span>
-<span id="cb8-4"><a href="generating-documentation.html#cb8-4"></a><span class="co"># included in tinytex:</span></span>
-<span id="cb8-5"><a href="generating-documentation.html#cb8-5"></a>tinytex<span class="op">::</span><span class="kw">tlmgr_install</span>(<span class="kw">c</span>(<span class="st">&#39;siunitx&#39;</span>, <span class="st">&#39;babel-english&#39;</span>,</span>
-<span id="cb8-6"><a href="generating-documentation.html#cb8-6"></a>                         <span class="st">&#39;footnotebackref&#39;</span>, <span class="st">&#39;listings&#39;</span>,</span>
-<span id="cb8-7"><a href="generating-documentation.html#cb8-7"></a>                         <span class="st">&#39;appendix&#39;</span>, <span class="st">&#39;pgf&#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="generating-documentation.html#cb9-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;tinytex&#39;</span>)</span>
+<span id="cb9-2"><a href="generating-documentation.html#cb9-2"></a>tinytex<span class="op">::</span><span class="kw">install_tinytex</span>()</span>
+<span id="cb9-3"><a href="generating-documentation.html#cb9-3"></a><span class="co"># Install a few LaTeX packages needed by the vignettes but not</span></span>
+<span id="cb9-4"><a href="generating-documentation.html#cb9-4"></a><span class="co"># included in tinytex:</span></span>
+<span id="cb9-5"><a href="generating-documentation.html#cb9-5"></a>tinytex<span class="op">::</span><span class="kw">tlmgr_install</span>(<span class="kw">c</span>(<span class="st">&#39;siunitx&#39;</span>, <span class="st">&#39;babel-english&#39;</span>,</span>
+<span id="cb9-6"><a href="generating-documentation.html#cb9-6"></a>                         <span class="st">&#39;footnotebackref&#39;</span>, <span class="st">&#39;listings&#39;</span>,</span>
+<span id="cb9-7"><a href="generating-documentation.html#cb9-7"></a>                         <span class="st">&#39;appendix&#39;</span>, <span class="st">&#39;pgf&#39;</span>))</span></code></pre></div>
 <p>(If you install TeX in this way, you will either need to build the
 vignettes using one of the <em>Alternative options</em> given below or add
 TinyTex’s bin directory to your shell path. You can find the root
@@ -401,7 +402,7 @@ of the TinyTex installation with the R function
 <code>tinytex::tinytex_root()</code>.)</p>
 <p>If you use the second alternative build option listed below, you
 will also need the R package <code>devtools</code>:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="generating-documentation.html#cb9-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;devtools&#39;</span>)</span></code></pre></div></li>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="generating-documentation.html#cb10-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;devtools&#39;</span>)</span></code></pre></div></li>
 </ul>
 </div>
 <div id="build-procedure" class="section level3">

@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-05-14" />
+<meta name="date" content="2021-06-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -133,6 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-info"><i class="fa fa-check"></i>Version Info</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#note-about-the-types-of-documentation-in-biocro"><i class="fa fa-check"></i>Note about the types of documentation in BioCro</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="contributing-to-biocro.html"><a href="contributing-to-biocro.html"><i class="fa fa-check"></i><b>1</b> Contributing to BioCro</a><ul>
@@ -277,9 +278,9 @@ overriding the default reporter of the testing function using the
 <em>reporter</em> argument.</p>
 <p>A particularly useful and informative reporter is the <em>Summary</em>
 reporter. To use it, replace step 2 above with</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="running-the-testthat-tests.html#cb10-1"></a><span class="kw">library</span>(BioCro)</span>
-<span id="cb10-2"><a href="running-the-testthat-tests.html#cb10-2"></a><span class="kw">library</span>(testthat)</span>
-<span id="cb10-3"><a href="running-the-testthat-tests.html#cb10-3"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="running-the-testthat-tests.html#cb11-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb11-2"><a href="running-the-testthat-tests.html#cb11-2"></a><span class="kw">library</span>(testthat)</span>
+<span id="cb11-3"><a href="running-the-testthat-tests.html#cb11-3"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
 <p>(Note: If you have already sourced <code>testthat.R</code> at least once, there
 is no need to reload the <em>BioCro</em> and <em>testthat</em> packages!)</p>
 <p>The <em>Summary</em> reporter is useful in two ways: It clearly indicates
@@ -327,7 +328,7 @@ several minutes while it does this!</em>)</p>
 if you prefer the <em>Summary</em> reporter, which gives better progress
 indication and prints the name of each test file it runs, you can
 switch:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="running-the-testthat-tests.html#cb11-1"></a><span class="kw">test_local</span>(<span class="st">&#39;&lt;path to the tests directory of some BioCro source tree&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)<span class="st">`</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="running-the-testthat-tests.html#cb12-1"></a><span class="kw">test_local</span>(<span class="st">&#39;&lt;path to the tests directory of some BioCro source tree&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)<span class="st">`</span></span></code></pre></div>
 </div>
 </div>
 <div id="running-individual-test-files" class="section level2">
@@ -343,12 +344,12 @@ source code.</p>
 <li>Start an R session.</li>
 <li>Load the <em>BioCro</em> and <em>testthat</em> packages:</li>
 </ol>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="running-the-testthat-tests.html#cb12-1"></a><span class="kw">library</span>(BioCro)</span>
-<span id="cb12-2"><a href="running-the-testthat-tests.html#cb12-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="running-the-testthat-tests.html#cb13-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb13-2"><a href="running-the-testthat-tests.html#cb13-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
 <ol style="list-style-type: decimal">
 <li>Call the <code>test_file</code> function on the path to a test file:</li>
 </ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="running-the-testthat-tests.html#cb13-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="running-the-testthat-tests.html#cb14-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>)</span></code></pre></div>
 <p>Note the path can be either a relative or an absolute path. It
 doesn’t matter what directory the R session was started in or what the
 current R directory is as long as the path is correct. (Making the
@@ -356,7 +357,7 @@ current R directory is as long as the path is correct. (Making the
 shorter path names.)</p>
 <p>Once again, the default reporter (“CompactProgress”, in this case) may
 be overridden:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="running-the-testthat-tests.html#cb14-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="running-the-testthat-tests.html#cb15-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
 <p>See the documentation for <code>testthat::Reporter</code> for a list of
 reporters.</p>
 <p>Method 2</p>
@@ -367,8 +368,8 @@ reporters.</p>
 (or start R anywhere and use <code>setwd()</code> to move to that directory).</li>
 <li>Load the <em>BioCro</em> and <em>testthat</em> packages:</li>
 </ol>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="running-the-testthat-tests.html#cb15-1"></a><span class="kw">library</span>(BioCro)</span>
-<span id="cb15-2"><a href="running-the-testthat-tests.html#cb15-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="running-the-testthat-tests.html#cb16-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb16-2"><a href="running-the-testthat-tests.html#cb16-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
 <ol style="list-style-type: decimal">
 <li>Call the <code>test_check</code> function with a filter option to select the
 desired test file. The filter pattern should be a regular expression
@@ -376,7 +377,7 @@ matching the main part of the test file. For example, to run the
 tests in <code>test.HarmonicOscillationModeling.R</code>, we could call
 <code>test_check</code> as follows:</li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="running-the-testthat-tests.html#cb16-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="running-the-testthat-tests.html#cb17-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>)</span></code></pre></div>
 <p>The filter matching is performed on file names after they are
 stripped of “<code>test-</code>” and “<code>.R</code>”.</p>
 <p>Again, a <em>reporter</em> option may be specified.</p>
