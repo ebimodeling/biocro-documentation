@@ -1,12 +1,12 @@
 var searchData=
 [
   ['abs_1',['abs',['../state__map_8h.html#a2ffa14ffb8d0754a8bece80bb8a68481',1,'state_map.h']]],
-  ['adaptive_5fabs_5ferror_5ftol_2',['adaptive_abs_error_tol',['../classsystem__solver.html#add6a4201d5f92453d0438f56c4dd65d4',1,'system_solver']]],
+  ['adaptive_5fabs_5ferror_5ftol_2',['adaptive_abs_error_tol',['../classintegrator.html#add6a4201d5f92453d0438f56c4dd65d4',1,'integrator']]],
   ['adaptive_5fcompatible_3',['adaptive_compatible',['../class_module.html#a1949356114a900e775676ebc13694f31',1,'Module']]],
-  ['adaptive_5fmax_5fsteps_4',['adaptive_max_steps',['../classsystem__solver.html#ad422fe3945d2896607e023053b81ec6e',1,'system_solver']]],
-  ['adaptive_5frel_5ferror_5ftol_5',['adaptive_rel_error_tol',['../classsystem__solver.html#aad7bb5e0daa29d2574235a5b4dbbe1b2',1,'system_solver']]],
-  ['adaptive_5fsolver_6',['adaptive_solver',['../classauto__solver.html#a88a3e34320dbee0ba0c37908a3e4ad1f',1,'auto_solver']]],
-  ['adaptive_5fsolver_5fmost_5frecent_7',['adaptive_solver_most_recent',['../classauto__solver.html#a06b976d46c88763a50b43eb4e734dbd7',1,'auto_solver']]],
+  ['adaptive_5fintegrator_4',['adaptive_integrator',['../classauto__integrator.html#abf69236879c5b0e4c1a7257ae67154ad',1,'auto_integrator']]],
+  ['adaptive_5fintegrator_5fmost_5frecent_5',['adaptive_integrator_most_recent',['../classauto__integrator.html#a88887dc4260867c308fc2e657d889156',1,'auto_integrator']]],
+  ['adaptive_5fmax_5fsteps_6',['adaptive_max_steps',['../classintegrator.html#ad422fe3945d2896607e023053b81ec6e',1,'integrator']]],
+  ['adaptive_5frel_5ferror_5ftol_7',['adaptive_rel_error_tol',['../classintegrator.html#aad7bb5e0daa29d2574235a5b4dbbe1b2',1,'integrator']]],
   ['add_8',['add',['../structparameter__list.html#ae291bec8c30284046f8f940afdad7fe8',1,'parameter_list::add(parameter_entry const &amp;entry)'],['../structparameter__list.html#acb606edeae6a605292a046d074a2b9f3',1,'parameter_list::add(std::string const &amp;s, char const delim, bool const trim)'],['../structparameter__list.html#a0a24e5b0a0ea498c603d57c003449580',1,'parameter_list::add(parameter_entries const &amp;l)']]],
   ['add_5fclass_5fprefix_5fto_5fquantity_5fname_9',['add_class_prefix_to_quantity_name',['../module__helper__functions_8cpp.html#a905f2abf2b3e46bf7f8215552fe20544',1,'add_class_prefix_to_quantity_name(std::string class_name, std::string quantity_name):&#160;module_helper_functions.cpp'],['../module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544',1,'add_class_prefix_to_quantity_name(std::string class_name, std::string quantity_name):&#160;module_helper_functions.cpp']]],
   ['add_5findented_5fline_10',['add_indented_line',['../validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a',1,'add_indented_line(std::string message, std::string text_to_add, int num_spaces):&#160;validate_system.cpp'],['../validate__system_8cpp.html#acbca89ff1657b5c4b07ad672dbd47f1a',1,'add_indented_line(std::string message, std::string text_to_add, int num_spaces):&#160;validate_system.cpp']]],
@@ -18,6 +18,6 @@ var searchData=
   ['analyze_5fsystem_5finputs_16',['analyze_system_inputs',['../validate__system_8h.html#a8ab45d36f5e25c3c4686af4fabb0865b',1,'analyze_system_inputs(state_map initial_values, state_map params, state_vector_map drivers, string_vector ss_module_names, string_vector deriv_module_names):&#160;validate_system.cpp'],['../validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b',1,'analyze_system_inputs(state_map initial_values, state_map params, state_vector_map drivers, string_vector ss_module_names, string_vector deriv_module_names):&#160;validate_system.cpp']]],
   ['at_17',['at',['../state__map_8cpp.html#a698066d68dbdbd7d3afbff90e8481ae8',1,'at(const state_vector_map &amp;vector_map, std::vector&lt; double &gt;::size_type n):&#160;state_map.cpp'],['../state__map_8h.html#a698066d68dbdbd7d3afbff90e8481ae8',1,'at(const state_vector_map &amp;vector_map, std::vector&lt; double &gt;::size_type n):&#160;state_map.cpp']]],
   ['atmospheric_5fpressure_5fat_5fsea_5flevel_18',['atmospheric_pressure_at_sea_level',['../namespacephysical__constants.html#a942ef2e6b3483c7d4e7942a83d61a743',1,'physical_constants']]],
-  ['auto_5fsolver_19',['auto_solver',['../classauto__solver.html#a9d47c11b3f52f5facb1738ffc3101077',1,'auto_solver::auto_solver()'],['../classauto__solver.html',1,'auto_solver&lt; state_type &gt;']]],
-  ['auto_5fsolver_2eh_20',['auto_solver.h',['../auto__solver_8h.html',1,'']]]
+  ['auto_5fintegrator_19',['auto_integrator',['../classauto__integrator.html#a824cd9ef1088f9b919bfa370e5e7c2ed',1,'auto_integrator::auto_integrator()'],['../classauto__integrator.html',1,'auto_integrator&lt; state_type &gt;']]],
+  ['auto_5fintegrator_2eh_20',['auto_integrator.h',['../auto__integrator_8h.html',1,'']]]
 ];

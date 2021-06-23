@@ -188,12 +188,18 @@ $(function() {
 <li>direct_irradiance_fraction
 : <a class="el" href="struct_light__model.html#adbd9b09d7568e85d0f64380f3dcdcb47">Light_model</a>
 </li>
-<li>do_boost_solve()
-: <a class="el" href="classboost__euler__system__solver.html#a0fcf2234893d3cab06bcec18e21337d4">boost_euler_system_solver&lt; state_type &gt;</a>
-, <a class="el" href="classboost__rk4__system__solver.html#a0fcf2234893d3cab06bcec18e21337d4">boost_rk4_system_solver&lt; state_type &gt;</a>
-, <a class="el" href="classboost__rkck54__system__solver.html#a0fcf2234893d3cab06bcec18e21337d4">boost_rkck54_system_solver&lt; state_type &gt;</a>
-, <a class="el" href="classboost__rsnbrk__system__solver.html#a0ce370311f33ea03b21be8a1ceaf289d">boost_rsnbrk_system_solver</a>
-, <a class="el" href="classboost__system__solver.html#aa3a364d80c862f9b35f1902fc703587c">boost_system_solver&lt; state_type &gt;</a>
+<li>do_boost_integrate()
+: <a class="el" href="classboost__euler__integrator.html#a198cd8fb356d6a484ec576db386ab382">boost_euler_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classboost__integrator.html#ad810ac15a89ff14fe3ebed0f7aafe4da">boost_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classboost__rk4__integrator.html#a198cd8fb356d6a484ec576db386ab382">boost_rk4_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classboost__rkck54__integrator.html#a198cd8fb356d6a484ec576db386ab382">boost_rkck54_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classboost__rsnbrk__integrator.html#a845fb908b7dcb6f344091332de2d7f94">boost_rsnbrk_integrator</a>
+</li>
+<li>do_integrate()
+: <a class="el" href="classauto__integrator.html#abf72cb43e73eae25a3b954f8682dfd93">auto_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classboost__integrator.html#abf72cb43e73eae25a3b954f8682dfd93">boost_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classhomemade__euler__integrator.html#abf72cb43e73eae25a3b954f8682dfd93">homemade_euler_integrator&lt; state_type &gt;</a>
+, <a class="el" href="classintegrator.html#a10d3b3170651cac670fcc6b5a95862e9">integrator</a>
 </li>
 <li>do_operation()
 : <a class="el" href="classaba__decay.html#a391e9fd4e949f6e987eb654a11b1e451">aba_decay</a>
@@ -307,12 +313,6 @@ $(function() {
 , <a class="el" href="classutilization__senescence__calculator.html#a391e9fd4e949f6e987eb654a11b1e451">utilization_senescence_calculator</a>
 , <a class="el" href="classwater__vapor__properties__from__air__temperature.html#a391e9fd4e949f6e987eb654a11b1e451">water_vapor_properties_from_air_temperature</a>
 </li>
-<li>do_solve()
-: <a class="el" href="classauto__solver.html#a6fe6170383b97c93d5a7a2830d664173">auto_solver&lt; state_type &gt;</a>
-, <a class="el" href="classboost__system__solver.html#a973b5423e0d0124d254cc85b1f56fd1c">boost_system_solver&lt; state_type &gt;</a>
-, <a class="el" href="classhomemade__euler__solver.html#a973b5423e0d0124d254cc85b1f56fd1c">homemade_euler_solver&lt; state_type &gt;</a>
-, <a class="el" href="classsystem__solver.html#a07ee904f4b81684e78447bb4b26b5739">system_solver</a>
-</li>
 <li>drainage
 : <a class="el" href="structsoil_m_l__str.html#a6b156f63a9c5f2185dcb004e85518998">soilML_str</a>
 </li>
@@ -366,7 +366,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 10 2021 22:25:40 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 23 2021 14:51:03 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

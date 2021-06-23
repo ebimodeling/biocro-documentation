@@ -1,22 +1,11 @@
 var searchData=
 [
-  ['se_5fsolver_2ecpp_408',['se_solver.cpp',['../se__solver_8cpp.html',1,'']]],
-  ['se_5fsolver_2eh_409',['se_solver.h',['../se__solver_8h.html',1,'']]],
-  ['se_5fsolver_5ffactory_2ecpp_410',['se_solver_factory.cpp',['../se__solver__factory_8cpp.html',1,'']]],
-  ['se_5fsolver_5ffactory_2eh_411',['se_solver_factory.h',['../se__solver__factory_8h.html',1,'']]],
-  ['se_5fsolver_5fhelper_5ffunctions_2ecpp_412',['se_solver_helper_functions.cpp',['../se__solver__helper__functions_8cpp.html',1,'']]],
-  ['se_5fsolver_5fhelper_5ffunctions_2eh_413',['se_solver_helper_functions.h',['../se__solver__helper__functions_8h.html',1,'']]],
-  ['simultaneous_5fequations_2ecpp_414',['simultaneous_equations.cpp',['../simultaneous__equations_8cpp.html',1,'']]],
-  ['simultaneous_5fequations_2eh_415',['simultaneous_equations.h',['../simultaneous__equations_8h.html',1,'']]],
-  ['state_5fmap_2ecpp_416',['state_map.cpp',['../state__map_8cpp.html',1,'']]],
-  ['state_5fmap_2eh_417',['state_map.h',['../state__map_8h.html',1,'']]],
-  ['system_2ecpp_418',['system.cpp',['../system_8cpp.html',1,'']]],
-  ['system_2eh_419',['system.h',['../system_8h.html',1,'']]],
-  ['system_5fcaller_2eh_420',['system_caller.h',['../system__caller_8h.html',1,'']]],
-  ['system_5fhelper_5ffunctions_2ecpp_421',['system_helper_functions.cpp',['../system__helper__functions_8cpp.html',1,'']]],
-  ['system_5fhelper_5ffunctions_2eh_422',['system_helper_functions.h',['../system__helper__functions_8h.html',1,'']]],
-  ['system_5fsolver_2ecpp_423',['system_solver.cpp',['../system__solver_8cpp.html',1,'']]],
-  ['system_5fsolver_2eh_424',['system_solver.h',['../system__solver_8h.html',1,'']]],
-  ['system_5fsolver_5ffactory_2ecpp_425',['system_solver_factory.cpp',['../system__solver__factory_8cpp.html',1,'']]],
-  ['system_5fsolver_5ffactory_2eh_426',['system_solver_factory.h',['../system__solver__factory_8h.html',1,'']]]
+  ['r_5fget_5fall_2ecpp_411',['R_get_all.cpp',['../_r__get__all_8cpp.html',1,'']]],
+  ['r_5fgro_2ecpp_412',['R_Gro.cpp',['../_r___gro_8cpp.html',1,'']]],
+  ['r_5fhelper_5ffunctions_2ecpp_413',['R_helper_functions.cpp',['../_r__helper__functions_8cpp.html',1,'']]],
+  ['r_5fhelper_5ffunctions_2eh_414',['R_helper_functions.h',['../_r__helper__functions_8h.html',1,'']]],
+  ['r_5fmodules_2ecpp_415',['R_modules.cpp',['../_r__modules_8cpp.html',1,'']]],
+  ['r_5frun_5fbiocro_2ecpp_416',['R_run_biocro.cpp',['../_r__run__biocro_8cpp.html',1,'']]],
+  ['r_5fsimultaneous_5fequations_2ecpp_417',['R_simultaneous_equations.cpp',['../_r__simultaneous__equations_8cpp.html',1,'']]],
+  ['r_5fsystem_2ecpp_418',['R_system.cpp',['../_r__system_8cpp.html',1,'']]]
 ];

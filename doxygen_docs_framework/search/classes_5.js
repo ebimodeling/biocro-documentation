@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['homemade_5feuler_5fsolver_356',['homemade_euler_solver',['../classhomemade__euler__solver.html',1,'']]]
+  ['homemade_5feuler_5fintegrator_362',['homemade_euler_integrator',['../classhomemade__euler__integrator.html',1,'']]]
 ];
