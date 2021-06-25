@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vmaxb0_1066',['Vmaxb0',['../structnitro_parms.html#a518b100123bc67830c26f15177a8172f',1,'nitroParms']]],
-  ['vmaxb1_1067',['Vmaxb1',['../structnitro_parms.html#ad7e57d8efdd075a1b184551d20eb44b3',1,'nitroParms']]]
+  ['vmaxb0_1071',['Vmaxb0',['../structnitro_parms.html#a518b100123bc67830c26f15177a8172f',1,'nitroParms']]],
+  ['vmaxb1_1072',['Vmaxb1',['../structnitro_parms.html#ad7e57d8efdd075a1b184551d20eb44b3',1,'nitroParms']]]
 ];

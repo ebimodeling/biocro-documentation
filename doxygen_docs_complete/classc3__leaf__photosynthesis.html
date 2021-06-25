@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Uses the method from <code><a class="el" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0">c3CanAC()</a></code> to calculate leaf photosynthesis parameters for C3 plants.  
+<p>Uses the method from <code><a class="el" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53">c3CanAC()</a></code> to calculate leaf photosynthesis parameters for C3 plants.  
  <a href="classc3__leaf__photosynthesis.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>&gt;</code></p>
@@ -147,10 +147,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a198a7ec452f5e9bc7d893648fdbcd435"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a198a7ec452f5e9bc7d893648fdbcd435">par_energy_content</a></td></tr>
-<tr class="separator:a198a7ec452f5e9bc7d893648fdbcd435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52186626924512b7b4ce6b75053daafa"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a52186626924512b7b4ce6b75053daafa">incident_par</a></td></tr>
-<tr class="separator:a52186626924512b7b4ce6b75053daafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55adde591eb2997c40a3e6dcb0c118c0"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a55adde591eb2997c40a3e6dcb0c118c0">incident_ppfd</a></td></tr>
+<tr class="separator:a55adde591eb2997c40a3e6dcb0c118c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a677d8e15fc11df2b4559409565c2a269"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a677d8e15fc11df2b4559409565c2a269">temp</a></td></tr>
 <tr class="separator:a677d8e15fc11df2b4559409565c2a269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f67da21f6e79f0947abccc50100475d"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a6f67da21f6e79f0947abccc50100475d">rh</a></td></tr>
@@ -185,8 +183,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4225e790eb8e14873957f4e70fcb8638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914fef1ec1756cab231b94329813a704"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a914fef1ec1756cab231b94329813a704">electrons_per_oxygenation</a></td></tr>
 <tr class="separator:a914fef1ec1756cab231b94329813a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c763d4348a3f8a5f1fefe5d6ca17ef"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a42c763d4348a3f8a5f1fefe5d6ca17ef">incident_average_par</a></td></tr>
-<tr class="separator:a42c763d4348a3f8a5f1fefe5d6ca17ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa014c16ca517182274c7bfd77ea369"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#acfa014c16ca517182274c7bfd77ea369">average_absorbed_shortwave</a></td></tr>
+<tr class="separator:acfa014c16ca517182274c7bfd77ea369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8b922d527ba4c662b5a3a7320f4d2f"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#a4e8b922d527ba4c662b5a3a7320f4d2f">windspeed</a></td></tr>
 <tr class="separator:a4e8b922d527ba4c662b5a3a7320f4d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc420ce7ba0fef60ec0c64bb83312a2b"><td class="memItemLeft" align="right" valign="top">double const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc3__leaf__photosynthesis.html#abc420ce7ba0fef60ec0c64bb83312a2b">height</a></td></tr>
@@ -218,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Uses the method from <code><a class="el" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0">c3CanAC()</a></code> to calculate leaf photosynthesis parameters for C3 plants. </p>
+<div class="textblock"><p>Uses the method from <code><a class="el" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53">c3CanAC()</a></code> to calculate leaf photosynthesis parameters for C3 plants. </p>
 
 <p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00013">13</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -286,9 +284,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_module.html#a569dd907889f8195d95466f1b2694c42">Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">48</a> of file <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html">c3_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">47</a> of file <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html">c3_leaf_photosynthesis.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00088">Assim_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00075">atmospheric_pressure</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00071">b0</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00072">b1</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00028">c3photoC()</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00074">Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00011">c3_str::Ci</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00090">Ci_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00043">ET_Str::Deltat</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00080">electrons_per_carboxylation</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00081">electrons_per_oxygenation</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00041">ET_Str::EPenman</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00093">EPenman_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00042">ET_Str::EPriestly</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00094">EPriestly_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00089">GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00073">Gs_min</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00091">Gs_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00084">height</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00082">incident_average_par</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00064">incident_par</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00068">jmax</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00095">leaf_temperature_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00076">O2</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00063">par_energy_content</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00070">Rd</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00066">rh</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00085">specific_heat_of_air</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00078">StomataWS</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00065">temp</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00077">theta</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00069">tpu_rate_max</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00040">ET_Str::TransR</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00092">TransR_op</a>, <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00067">vmax1</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00079">water_stress_approach</a>, and <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00083">windspeed</a>.</p>
+<p class="reference">References <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00086">Assim_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00073">atmospheric_pressure</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00080">average_absorbed_shortwave</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00069">b0</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00070">b1</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00028">c3photoC()</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00072">Catm</a>, <a class="el" href="c3photo_8hpp_source.html#l00011">c3_str::Ci</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00088">Ci_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00046">ET_Str::Deltat</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00078">electrons_per_carboxylation</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00079">electrons_per_oxygenation</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00044">ET_Str::EPenman</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00091">EPenman_op</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00045">ET_Str::EPriestly</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00092">EPriestly_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00087">GrossAssim_op</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00071">Gs_min</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00089">Gs_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00082">height</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00062">incident_ppfd</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00066">jmax</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00093">leaf_temperature_op</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00074">O2</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00068">Rd</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00064">rh</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00083">specific_heat_of_air</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00076">StomataWS</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00063">temp</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00075">theta</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00067">tpu_rate_max</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00043">ET_Str::TransR</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00090">TransR_op</a>, <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00065">vmax1</a>, <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00077">water_stress_approach</a>, and <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00081">windspeed</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -359,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00034">34</a> of file <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html">c3_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00033">33</a> of file <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html">c3_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -384,9 +382,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00088">88</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00086">86</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -410,9 +408,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00075">75</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00073">73</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
+
+</div>
+</div>
+<a id="acfa014c16ca517182274c7bfd77ea369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa014c16ca517182274c7bfd77ea369">&#9670;&nbsp;</a></span>average_absorbed_shortwave</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double const&amp; average_absorbed_shortwave</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00080">80</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -436,9 +460,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00071">71</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00069">69</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -462,9 +486,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00072">72</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00070">70</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -488,9 +512,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00074">74</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00072">72</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -514,9 +538,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00090">90</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00088">88</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -540,9 +564,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00080">80</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00078">78</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -566,9 +590,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00081">81</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00079">79</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -592,9 +616,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00093">93</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00091">91</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -618,9 +642,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00094">94</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00092">92</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -644,9 +668,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00089">89</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00087">87</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -670,9 +694,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00073">73</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00071">71</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -696,9 +720,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00091">91</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00089">89</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -722,40 +746,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00084">84</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
-
-</div>
-</div>
-<a id="a42c763d4348a3f8a5f1fefe5d6ca17ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42c763d4348a3f8a5f1fefe5d6ca17ef">&#9670;&nbsp;</a></span>incident_average_par</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double const&amp; incident_average_par</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 <p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00082">82</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
-<a id="a52186626924512b7b4ce6b75053daafa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52186626924512b7b4ce6b75053daafa">&#9670;&nbsp;</a></span>incident_par</h2>
+<a id="a55adde591eb2997c40a3e6dcb0c118c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55adde591eb2997c40a3e6dcb0c118c0">&#9670;&nbsp;</a></span>incident_ppfd</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +762,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double const&amp; incident_par</td>
+          <td class="memname">double const&amp; incident_ppfd</td>
         </tr>
       </table>
   </td>
@@ -774,9 +772,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00064">64</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00062">62</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -800,9 +798,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00068">68</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00066">66</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -826,9 +824,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00095">95</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00093">93</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -852,35 +850,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00076">76</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00074">74</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
-
-</div>
-</div>
-<a id="a198a7ec452f5e9bc7d893648fdbcd435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a198a7ec452f5e9bc7d893648fdbcd435">&#9670;&nbsp;</a></span>par_energy_content</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double const&amp; par_energy_content</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00063">63</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -904,9 +876,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00070">70</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00068">68</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -930,9 +902,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00066">66</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00064">64</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -956,9 +928,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00085">85</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00083">83</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -982,9 +954,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00078">78</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00076">76</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1008,9 +980,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00065">65</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00063">63</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1034,9 +1006,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00077">77</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00075">75</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1060,9 +1032,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00069">69</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00067">67</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1086,9 +1058,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00092">92</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00090">90</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1112,9 +1084,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00067">67</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00065">65</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1138,9 +1110,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00079">79</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00077">77</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1164,9 +1136,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00083">83</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="c3__leaf__photosynthesis_8h_source.html#l00081">81</a> of file <a class="el" href="c3__leaf__photosynthesis_8h_source.html">c3_leaf_photosynthesis.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00048">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1177,7 +1149,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 25 2021 20:27:05 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jun 25 2021 21:17:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

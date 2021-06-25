@@ -2,9 +2,10 @@ var _bio_cro_8h =
 [
     [ "Light_model", "struct_light__model.html", "struct_light__model" ],
     [ "AbiotEff", "_bio_cro_8h.html#a1061dc2ec428954d1e4fd2abd8e17957", null ],
-    [ "c3CanAC", "_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0", null ],
+    [ "absorbed_shortwave_from_incident_ppfd", "_bio_cro_8h.html#ac923d835bbf1f5120b1cafcbf3da046d", null ],
+    [ "c3CanAC", "_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53", null ],
     [ "c3EvapoTrans", "_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e", null ],
-    [ "CanAC", "_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e", null ],
+    [ "CanAC", "_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97", null ],
     [ "cos_zenith_angle", "_bio_cro_8h.html#a81eccf5a903a575f17d799d959397f61", null ],
     [ "EvapoTrans2", "_bio_cro_8h.html#acc74eaf9c54c2a6d11747e6edc475fd6", null ],
     [ "flow", "_bio_cro_8h.html#a3f6a4f8b6e407fdca09efcebc32bf86c", null ],
@@ -12,9 +13,9 @@ var _bio_cro_8h =
     [ "lightME", "_bio_cro_8h.html#ab42734c0830c9fbf4c4ae7198aae4f4e", null ],
     [ "resp", "_bio_cro_8h.html#aeb35169469ef33705592a28743d105bf", null ],
     [ "RHprof", "_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c", null ],
-    [ "SoilEvapo", "_bio_cro_8h.html#a328b632960a007b22292abb8fc900fe8", null ],
-    [ "soilML", "_bio_cro_8h.html#a1c3da07e791516034e0216568602f71d", null ],
-    [ "sunML", "_bio_cro_8h.html#a64bd8756746aad8945df554c1ab8871d", null ],
+    [ "SoilEvapo", "_bio_cro_8h.html#a7d593504053ccaaafcf7351861572c5b", null ],
+    [ "soilML", "_bio_cro_8h.html#af8a3ab26b1d0bbcd07eb0fcdd342a1bc", null ],
+    [ "sunML", "_bio_cro_8h.html#a2456535797cbd6f87f5a4d3fc4255c4c", null ],
     [ "watstr", "_bio_cro_8h.html#a5039fd6db860b5b611fb3c90b00ef7e8", null ],
     [ "WINDprof", "_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7", null ]
 ];

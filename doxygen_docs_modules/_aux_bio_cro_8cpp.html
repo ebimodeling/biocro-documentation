@@ -131,9 +131,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af098591a7e2a925fc6d2c7b333cb365b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_light__model.html">Light_model</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b">lightME</a> (const double latitude, const int day_of_year, const double hour_of_day, const double atmospheric_pressure)</td></tr>
 <tr class="memdesc:af098591a7e2a925fc6d2c7b333cb365b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates some properties of the "light macro environment," i.e., the light just above the top of the canopy.  <a href="_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b">More...</a><br /></td></tr>
 <tr class="separator:af098591a7e2a925fc6d2c7b333cb365b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b5147b6957ced2534f8a36e1d587e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_light__profile.html">Light_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ab8b5147b6957ced2534f8a36e1d587e5">sunML</a> (double Idir, double Idiff, double LAI, int nlayers, double cosTheta, double kd, double chil, double absorptivity, double heightf)</td></tr>
-<tr class="memdesc:ab8b5147b6957ced2534f8a36e1d587e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an n-layered light profile from the direct light, diffuse light, leaf area index, solar zenith angle, and other parameters.  <a href="_aux_bio_cro_8cpp.html#ab8b5147b6957ced2534f8a36e1d587e5">More...</a><br /></td></tr>
-<tr class="separator:ab8b5147b6957ced2534f8a36e1d587e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac923d835bbf1f5120b1cafcbf3da046d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ac923d835bbf1f5120b1cafcbf3da046d">absorbed_shortwave_from_incident_ppfd</a> (double incident_ppfd, double par_energy_content, double par_energy_fraction, double leaf_reflectance, double leaf_transmittance)</td></tr>
+<tr class="memdesc:ac923d835bbf1f5120b1cafcbf3da046d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes total absorbed shortwave radiation from the photosynthetically active photon flux density (PPFD) incident on a leaf.  <a href="_aux_bio_cro_8cpp.html#ac923d835bbf1f5120b1cafcbf3da046d">More...</a><br /></td></tr>
+<tr class="separator:ac923d835bbf1f5120b1cafcbf3da046d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa642fb79dd7e9bc444cb8eae150fd64c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_light__profile.html">Light_profile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#aa642fb79dd7e9bc444cb8eae150fd64c">sunML</a> (double ambient_ppfd_beam, double ambient_ppfd_diffuse, double lai, int nlayers, double cosine_zenith_angle, double kd, double chil, double absorptivity, double heightf, double par_energy_content, double par_energy_fraction, double leaf_transmittance, double leaf_reflectance)</td></tr>
+<tr class="memdesc:aa642fb79dd7e9bc444cb8eae150fd64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an n-layered light profile from the direct light, diffuse light, leaf area index, solar zenith angle, and other parameters.  <a href="_aux_bio_cro_8cpp.html#aa642fb79dd7e9bc444cb8eae150fd64c">More...</a><br /></td></tr>
+<tr class="separator:aa642fb79dd7e9bc444cb8eae150fd64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f0fc680176f312e47c32701ce779f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7">WINDprof</a> (double WindSpeed, double LAI, int nlayers, double *wind_speed_profile)</td></tr>
 <tr class="memdesc:ad5f0fc680176f312e47c32701ce779f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">RH and Wind profile function.  <a href="_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7">More...</a><br /></td></tr>
 <tr class="separator:ad5f0fc680176f312e47c32701ce779f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,18 +158,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a117fba2c85ba6d52345e7cefc05a43ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff">saturation_vapor_pressure</a> (double air_temperature)</td></tr>
 <tr class="memdesc:a117fba2c85ba6d52345e7cefc05a43ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck equation.  <a href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff">More...</a><br /></td></tr>
 <tr class="separator:a117fba2c85ba6d52345e7cefc05a43ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352b4fc954f084b38bdd36a5784a6bc2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_e_t___str.html">ET_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a352b4fc954f084b38bdd36a5784a6bc2">EvapoTrans2</a> (const double Rad, const double Iave, const double airTemp, const double RH, double WindSpeed, const double LeafAreaIndex, double CanopyHeight, const double stomatal_conductance, const double leaf_width, const double specific_heat_of_air, const int eteq)</td></tr>
-<tr class="separator:a352b4fc954f084b38bdd36a5784a6bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add676bd834cf0cbca32d7cbf8b1cc9ed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_e_t___str.html">ET_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#add676bd834cf0cbca32d7cbf8b1cc9ed">EvapoTrans2</a> (const double absorbed_shortwave_radiation_et, const double absorbed_shortwave_radiation_lt, const double airTemp, const double RH, double WindSpeed, const double LeafAreaIndex, double CanopyHeight, const double stomatal_conductance, const double leaf_width, const double specific_heat_of_air, const int eteq)</td></tr>
+<tr class="separator:add676bd834cf0cbca32d7cbf8b1cc9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac010f205c5523680171638102192ce39"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ac010f205c5523680171638102192ce39">leaf_boundary_layer_conductance</a> (double windspeed, double leafwidth, double air_temperature, double delta_t, double stomcond, double water_vapor_pressure)</td></tr>
 <tr class="separator:ac010f205c5523680171638102192ce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace43a160ba19f2f018c96d5e820c1260"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ace43a160ba19f2f018c96d5e820c1260">SoilEvapo</a> (double LAI, double k, double air_temperature, double ppfd, double soil_water_content, double fieldc, double wiltp, double winds, double RelH, double rsec, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat_of_air, double stefan_boltzman)</td></tr>
-<tr class="separator:ace43a160ba19f2f018c96d5e820c1260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d593504053ccaaafcf7351861572c5b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a7d593504053ccaaafcf7351861572c5b">SoilEvapo</a> (double LAI, double k, double air_temperature, double ppfd, double soil_water_content, double fieldc, double wiltp, double winds, double RelH, double rsec, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat_of_air, double stefan_boltzman, double par_energy_content)</td></tr>
+<tr class="separator:a7d593504053ccaaafcf7351861572c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058be0e6ed718b377d7c6056cceb09a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a058be0e6ed718b377d7c6056cceb09a8">compute_wsPhoto</a> (int wsFun, double fieldc, double wiltp, double phi1, double awc)</td></tr>
 <tr class="separator:a058be0e6ed718b377d7c6056cceb09a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abca736d0dd36b9f00cbd9dcd72ebcf14"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structws__str.html">ws_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#abca736d0dd36b9f00cbd9dcd72ebcf14">watstr</a> (double precipit, double evapo, double cws, double soildepth, double fieldc, double wiltp, double phi1, double phi2, double soil_saturation_capacity, double sand, double Ks, double air_entry, double b)</td></tr>
 <tr class="separator:abca736d0dd36b9f00cbd9dcd72ebcf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3da07e791516034e0216568602f71d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsoil_m_l__str.html">soilML_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a1c3da07e791516034e0216568602f71d">soilML</a> (double precipit, double transp, double *cws, double soildepth, double *depths, double soil_field_capacity, double soil_wilting_point, double soil_saturation_capacity, double soil_air_entry, double soil_saturated_conductivity, double soil_b_coefficient, double soil_sand_content, double phi1, double phi2, int wsFun, int layers, double rootDB, double LAI, double k, double AirTemp, double IRad, double winds, double RelH, int hydrDist, double rfl, double rsec, double rsdf, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat_of_air, double stefan_boltzman)</td></tr>
-<tr class="separator:a1c3da07e791516034e0216568602f71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a3ab26b1d0bbcd07eb0fcdd342a1bc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structsoil_m_l__str.html">soilML_str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#af8a3ab26b1d0bbcd07eb0fcdd342a1bc">soilML</a> (double precipit, double transp, double *cws, double soildepth, double *depths, double soil_field_capacity, double soil_wilting_point, double soil_saturation_capacity, double soil_air_entry, double soil_saturated_conductivity, double soil_b_coefficient, double soil_sand_content, double phi1, double phi2, int wsFun, int layers, double rootDB, double LAI, double k, double AirTemp, double IRad, double winds, double RelH, int hydrDist, double rfl, double rsec, double rsdf, double soil_clod_size, double soil_reflectance, double soil_transmission, double specific_heat_of_air, double stefan_boltzman, double par_energy_content)</td></tr>
+<tr class="separator:af8a3ab26b1d0bbcd07eb0fcdd342a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cb91d103489dd5260fe85905dbcde9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ac0cb91d103489dd5260fe85905dbcde9">resp</a> (double base_rate, double mrc, double temp)</td></tr>
 <tr class="memdesc:ac0cb91d103489dd5260fe85905dbcde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts respiratory losses from a carbon production rate.  <a href="_aux_bio_cro_8cpp.html#ac0cb91d103489dd5260fe85905dbcde9">More...</a><br /></td></tr>
 <tr class="separator:ac0cb91d103489dd5260fe85905dbcde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,6 +183,94 @@ Functions</h2></td></tr>
 <tr class="separator:af355fd8964ae8eef5aad1c74a4ed0771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac923d835bbf1f5120b1cafcbf3da046d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac923d835bbf1f5120b1cafcbf3da046d">&#9670;&nbsp;</a></span>absorbed_shortwave_from_incident_ppfd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double absorbed_shortwave_from_incident_ppfd </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>incident_ppfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_fraction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>leaf_reflectance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>leaf_transmittance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes total absorbed shortwave radiation from the photosynthetically active photon flux density (PPFD) incident on a leaf. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">incident_ppfd</td><td>Photosynthetically active photon flux density (PPFD) incident on a leaf expressed in micromol / m^2 / s</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">par_energy_content</td><td>The energy content of PPFD expressed in J / micromol</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">par_energy_fraction</td><td>The fraction of total shortwave energy contained in the PAR band expressed as a real number between 0 and 1</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leaf_reflectance</td><td>The fractional amount of shortwave radiation reflected by the leaf (weighted across all shortwave radiation)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">leaf_transmittance</td><td>The fractional amount of shortwave radiation transmitted through the leaf (weighted across all shortwave radiation)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The total shortwave radiation absorbed by the leaf expressed in J / m^2 / s</dd></dl>
+<p>The total absorbed shortwave radiation is determined using the following steps:</p><ul>
+<li>determine the incident photosynthetically active radiation (PAR) using the energy content of PAR</li>
+<li>determine the incident near-infrared radiation (NIR) from the incident PAR using the PAR energy fraction</li>
+<li>determine the total incident radiation by adding the incident PAR and NIR</li>
+<li>determine the total absorbed radiation using the leaf's reflection and transmission coefficients </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00178">178</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_aux_bio_cro_8cpp_source.html#l00243">sunML()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_ac923d835bbf1f5120b1cafcbf3da046d_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ac923d835bbf1f5120b1cafcbf3da046d_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_ac923d835bbf1f5120b1cafcbf3da046d_icgraph" id="a_aux_bio_cro_8cpp_ac923d835bbf1f5120b1cafcbf3da046d_icgraph">
+<area shape="rect" title="Computes total absorbed shortwave radiation from the photosynthetically active photon flux density (P..." alt="" coords="612,78,755,119"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#aa642fb79dd7e9bc444cb8eae150fd64c" title="Computes an n&#45;layered light profile from the direct light, diffuse light, leaf area index,..." alt="" coords="501,85,564,112"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="308,5,385,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="315,56,378,83"/>
+<area shape="rect" href="classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="273,107,420,149"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="240,176,453,203"/>
+<area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,5,181,32"/>
+<area shape="rect" href="classc4__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,56,181,83"/>
+<area shape="rect" href="classed__ten__layer__canopy__properties.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="15,107,182,149"/>
+<area shape="rect" href="classten__layer__canopy__properties.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,173,192,214"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a058be0e6ed718b377d7c6056cceb09a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a058be0e6ed718b377d7c6056cceb09a8">&#9670;&nbsp;</a></span>compute_wsPhoto()</h2>
 
@@ -224,7 +315,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00745">745</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00843">843</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,18 +367,18 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00072">72</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="solar__zenith__angle_8h_source.html#l00057">solar_zenith_angle::do_operation()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00117">lightME()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a81eccf5a903a575f17d799d959397f61_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a81eccf5a903a575f17d799d959397f61_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a81eccf5a903a575f17d799d959397f61_icgraph" id="a_aux_bio_cro_8cpp_a81eccf5a903a575f17d799d959397f61_icgraph">
 <area shape="rect" title="Computation of the cosine of the zenith angle from latitute (lat), day of the year (DOY),..." alt="" coords="520,42,643,69"/>
 <area shape="rect" href="classsolar__zenith__angle.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="343,5,472,47"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="375,71,440,98"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="217,46,295,73"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="225,97,287,123"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="217,46,295,73"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="225,97,287,123"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,46,169,73"/>
 <area shape="rect" href="classc4__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,97,169,123"/>
 </map>
@@ -327,12 +418,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00416">416</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00531">531</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a352b4fc954f084b38bdd36a5784a6bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352b4fc954f084b38bdd36a5784a6bc2">&#9670;&nbsp;</a></span>EvapoTrans2()</h2>
+<a id="add676bd834cf0cbca32d7cbf8b1cc9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add676bd834cf0cbca32d7cbf8b1cc9ed">&#9670;&nbsp;</a></span>EvapoTrans2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,13 +432,13 @@ Functions</h2></td></tr>
           <td class="memname">struct <a class="el" href="struct_e_t___str.html">ET_Str</a> EvapoTrans2 </td>
           <td>(</td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>Rad</em>, </td>
+          <td class="paramname"><em>absorbed_shortwave_radiation_et</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>Iave</em>, </td>
+          <td class="paramname"><em>absorbed_shortwave_radiation_lt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -411,18 +502,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">469</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00584">584</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="c4__leaf__photosynthesis_8cpp_source.html#l00050">c4_leaf_photosynthesis::do_operation()</a>, <a class="el" href="ed__canac__leaf_8h_source.html#l00142">ed_canac_leaf::do_operation()</a>, and <a class="el" href="ed__evapotrans2_8h_source.html#l00082">ed_evapotrans2::do_operation()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="c4__leaf__photosynthesis_8cpp_source.html#l00050">c4_leaf_photosynthesis::do_operation()</a>, <a class="el" href="ed__canac__leaf_8h_source.html#l00142">ed_canac_leaf::do_operation()</a>, and <a class="el" href="ed__evapotrans2_8h_source.html#l00083">ed_evapotrans2::do_operation()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_a352b4fc954f084b38bdd36a5784a6bc2_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a352b4fc954f084b38bdd36a5784a6bc2_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_a352b4fc954f084b38bdd36a5784a6bc2_icgraph" id="a_aux_bio_cro_8cpp_a352b4fc954f084b38bdd36a5784a6bc2_icgraph">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_add676bd834cf0cbca32d7cbf8b1cc9ed_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_add676bd834cf0cbca32d7cbf8b1cc9ed_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_add676bd834cf0cbca32d7cbf8b1cc9ed_icgraph" id="a_aux_bio_cro_8cpp_add676bd834cf0cbca32d7cbf8b1cc9ed_icgraph">
 <area shape="rect" title=" " alt="" coords="452,93,551,120"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="279,5,342,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="279,5,342,32"/>
 <area shape="rect" href="classc4__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="231,57,390,98"/>
 <area shape="rect" href="classed__canac__leaf.html#aba36ef6feb82085d0a909a9b5998e3d8" title=" " alt="" coords="217,123,404,149"/>
 <area shape="rect" href="classed__evapotrans2.html#aba36ef6feb82085d0a909a9b5998e3d8" title=" " alt="" coords="243,174,378,215"/>
@@ -448,14 +539,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01205">1205</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01306">1306</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="soil__type__selector_8hpp_source.html#l00068">soil_type_selector::do_operation()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ad89278eed741e51c6e3b8e5c0d97318c_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ad89278eed741e51c6e3b8e5c0d97318c_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ad89278eed741e51c6e3b8e5c0d97318c_icgraph" id="a_aux_bio_cro_8cpp_ad89278eed741e51c6e3b8e5c0d97318c_icgraph">
 <area shape="rect" title=" " alt="" coords="180,13,311,39"/>
@@ -481,9 +572,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01209">1209</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01310">1310</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00115">soil_parameters</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00118">soil_parameters</a>.</p>
 
 </div>
 </div>
@@ -537,27 +628,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00627">627</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00723">723</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00584">saturation_vapor_pressure()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ed__abc__blc_8h_source.html#l00076">ed_abc_blc::do_operation()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_cgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_cgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_cgraph" id="a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,141,47"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="189,13,364,39"/>
 </map>
 </div>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_icgraph" id="a_aux_bio_cro_8cpp_ac010f205c5523680171638102192ce39_icgraph">
 <area shape="rect" title=" " alt="" coords="221,5,357,47"/>
@@ -627,27 +718,27 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00072">cos_zenith_angle()</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, and <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, and <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_cgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_cgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_cgraph" id="a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_cgraph">
 <area shape="rect" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="5,5,71,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a81eccf5a903a575f17d799d959397f61" title="Computation of the cosine of the zenith angle from latitute (lat), day of the year (DOY),..." alt="" coords="119,5,241,32"/>
 </map>
 </div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_icgraph" id="a_aux_bio_cro_8cpp_af098591a7e2a925fc6d2c7b333cb365b_icgraph">
 <area shape="rect" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="343,31,408,57"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="217,5,295,32"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="225,56,287,83"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="217,5,295,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="225,56,287,83"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
 <area shape="rect" href="classc4__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,56,169,83"/>
 </map>
@@ -699,19 +790,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00400">400</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00515">515</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00204">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00088">multilayer_canopy_properties::run()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00210">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00094">multilayer_canopy_properties::run()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a2905c23b422ad454d9577841ca594d0d_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a2905c23b422ad454d9577841ca594d0d_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a2905c23b422ad454d9577841ca594d0d_icgraph" id="a_aux_bio_cro_8cpp_a2905c23b422ad454d9577841ca594d0d_icgraph">
 <area shape="rect" title=" " alt="" coords="501,85,564,112"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="308,5,385,32"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="315,56,378,83"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="308,5,385,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="315,56,378,83"/>
 <area shape="rect" href="classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="273,107,420,149"/>
 <area shape="rect" href="classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="240,176,453,203"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,5,181,32"/>
@@ -840,14 +931,14 @@ Sources</h3>
 <p>The Humphries thesis is also unfortunately not available online:</p>
 <p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change?: development and experiments with WIMOVAC: (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002) </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01238">1238</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="no__leaf__resp__partitioning__growth__calculator_8hpp_source.html#l00137">no_leaf_resp_partitioning_growth_calculator::do_operation()</a>, <a class="el" href="partitioning__growth__calculator_8hpp_source.html#l00146">partitioning_growth_calculator::do_operation()</a>, and <a class="el" href="no__leaf__resp__neg__assim__partitioning__growth__calculator_8h_source.html#l00136">no_leaf_resp_neg_assim_partitioning_growth_calculator::do_operation()</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph" id="a_aux_bio_cro_8cpp_ac0cb91d103489dd5260fe85905dbcde9_icgraph">
 <area shape="rect" title="Subtracts respiratory losses from a carbon production rate." alt="" coords="255,92,301,119"/>
@@ -924,21 +1015,21 @@ Sources</h3>
 <p><code>h(x) = exp(ln(h0) - ln(h0) * x) = exp(-B * (1 - x))</code></p>
 <p>The equation takes this form in Humphries's thesis. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00381">381</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00496">496</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00018">MAXLAY</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00204">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00088">multilayer_canopy_properties::run()</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00210">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00094">multilayer_canopy_properties::run()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph" id="a_aux_bio_cro_8cpp_aa4d2cdd07093428af4830f4c8afd660c_icgraph">
 <area shape="rect" title="Calculates a relative humidity profile throughout a multilayer canopy." alt="" coords="501,85,564,112"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="308,5,385,32"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="315,56,378,83"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="308,5,385,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="315,56,378,83"/>
 <area shape="rect" href="classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="273,107,420,149"/>
 <area shape="rect" href="classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="240,176,453,203"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,5,181,32"/>
@@ -988,7 +1079,7 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01238">1238</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1013,14 +1104,14 @@ Sources</h3>
 <p>In 1996, some of the fitting coefficients were updated. Here we use these values, found in <a href="http://www.hygrometers.com/wp-content/uploads/CR-1A-users-manual-2009-12.pdf">a Buck hygrometer manual</a>, and also displayed on the <a href="https://en.wikipedia.org/wiki/Arden_Buck_equation">Wikipedia page for the Arden Buck equation</a>.</p>
 <p>We use the values for vapor over water (rather than ice) and disregard the "enhancement factor" since we are only concerned with the pressure at saturation. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">469</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00584">584</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="buck__swvp_8h_source.html#l00059">buck_swvp::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00114">ed_ball_berry::do_operation()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">ed_gas_concentrations::do_operation()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00236">ed_nikolov_conductance_free::do_operation()</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">ed_rh_to_mole_fraction::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00627">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00677">SoilEvapo()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="buck__swvp_8h_source.html#l00059">buck_swvp::do_operation()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__ball__berry_8h_source.html#l00114">ed_ball_berry::do_operation()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">ed_gas_concentrations::do_operation()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00236">ed_nikolov_conductance_free::do_operation()</a>, <a class="el" href="ed__rh__to__mole__fraction_8h_source.html#l00068">ed_rh_to_mole_fraction::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00723">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00773">SoilEvapo()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a117fba2c85ba6d52345e7cefc05a43ff_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a117fba2c85ba6d52345e7cefc05a43ff_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a117fba2c85ba6d52345e7cefc05a43ff_icgraph" id="a_aux_bio_cro_8cpp_a117fba2c85ba6d52345e7cefc05a43ff_icgraph">
 <area shape="rect" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="660,369,835,396"/>
@@ -1034,8 +1125,8 @@ Sources</h3>
 <area shape="rect" href="classed__rh__to__mole__fraction.html#aba36ef6feb82085d0a909a9b5998e3d8" title=" " alt="" coords="444,493,601,534"/>
 <area shape="rect" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655" title=" " alt="" coords="433,558,612,599"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ac010f205c5523680171638102192ce39" title=" " alt="" coords="455,623,591,665"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ace43a160ba19f2f018c96d5e820c1260" title=" " alt="" coords="483,689,563,716"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="263,5,340,32"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a7d593504053ccaaafcf7351861572c5b" title=" " alt="" coords="483,689,563,716"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="263,5,340,32"/>
 <area shape="rect" href="classc3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="222,57,381,98"/>
 <area shape="rect" href="classrue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="220,122,383,163"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
@@ -1072,12 +1163,12 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01137">1137</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01238">1238</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ace43a160ba19f2f018c96d5e820c1260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace43a160ba19f2f018c96d5e820c1260">&#9670;&nbsp;</a></span>SoilEvapo()</h2>
+<a id="a7d593504053ccaaafcf7351861572c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d593504053ccaaafcf7351861572c5b">&#9670;&nbsp;</a></span>SoilEvapo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1170,7 +1261,13 @@ Sources</h3>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>stefan_boltzman</em>&#160;</td>
+          <td class="paramname"><em>stefan_boltzman</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_content</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1180,18 +1277,18 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00677">677</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00773">773</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00469">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00410">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00427">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00445">TempToSFS()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00584">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00525">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00542">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00560">TempToSFS()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="soil__evaporation_8hpp_source.html#l00080">soil_evaporation::do_operation()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="soil__evaporation_8hpp_source.html#l00094">soil_evaporation::do_operation()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_cgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_cgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_cgraph" id="a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_cgraph">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_cgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_cgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_cgraph" id="a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,85,108"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="133,5,308,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title=" " alt="" coords="168,56,273,83"/>
@@ -1199,13 +1296,13 @@ Sources</h3>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title=" " alt="" coords="173,157,269,184"/>
 </map>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_icgraph" id="a_aux_bio_cro_8cpp_ace43a160ba19f2f018c96d5e820c1260_icgraph">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_icgraph" id="a_aux_bio_cro_8cpp_a7d593504053ccaaafcf7351861572c5b_icgraph">
 <area shape="rect" title=" " alt="" coords="189,13,269,39"/>
 <area shape="rect" href="classsoil__evaporation.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,141,47"/>
 </map>
@@ -1213,8 +1310,8 @@ Sources</h3>
 
 </div>
 </div>
-<a id="a1c3da07e791516034e0216568602f71d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c3da07e791516034e0216568602f71d">&#9670;&nbsp;</a></span>soilML()</h2>
+<a id="af8a3ab26b1d0bbcd07eb0fcdd342a1bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a3ab26b1d0bbcd07eb0fcdd342a1bc">&#9670;&nbsp;</a></span>soilML()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1409,7 +1506,13 @@ Sources</h3>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>stefan_boltzman</em>&#160;</td>
+          <td class="paramname"><em>stefan_boltzman</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_content</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1419,16 +1522,16 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00745">745</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00843">843</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00144">two_layer_soil_profile::do_operation()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="two__layer__soil__profile_8hpp_source.html#l00158">two_layer_soil_profile::do_operation()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_a1c3da07e791516034e0216568602f71d_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a1c3da07e791516034e0216568602f71d_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_a1c3da07e791516034e0216568602f71d_icgraph" id="a_aux_bio_cro_8cpp_a1c3da07e791516034e0216568602f71d_icgraph">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_af8a3ab26b1d0bbcd07eb0fcdd342a1bc_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_af8a3ab26b1d0bbcd07eb0fcdd342a1bc_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_af8a3ab26b1d0bbcd07eb0fcdd342a1bc_icgraph" id="a_aux_bio_cro_8cpp_af8a3ab26b1d0bbcd07eb0fcdd342a1bc_icgraph">
 <area shape="rect" title=" " alt="" coords="199,13,260,39"/>
 <area shape="rect" href="classtwo__layer__soil__profile.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,151,47"/>
 </map>
@@ -1436,8 +1539,8 @@ Sources</h3>
 
 </div>
 </div>
-<a id="ab8b5147b6957ced2534f8a36e1d587e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b5147b6957ced2534f8a36e1d587e5">&#9670;&nbsp;</a></span>sunML()</h2>
+<a id="aa642fb79dd7e9bc444cb8eae150fd64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa642fb79dd7e9bc444cb8eae150fd64c">&#9670;&nbsp;</a></span>sunML()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1446,19 +1549,19 @@ Sources</h3>
           <td class="memname"><a class="el" href="struct_light__profile.html">Light_profile</a> sunML </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>Idir</em>, </td>
+          <td class="paramname"><em>ambient_ppfd_beam</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>Idiff</em>, </td>
+          <td class="paramname"><em>ambient_ppfd_diffuse</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>LAI</em>, </td>
+          <td class="paramname"><em>lai</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1470,7 +1573,7 @@ Sources</h3>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>cosTheta</em>, </td>
+          <td class="paramname"><em>cosine_zenith_angle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1494,7 +1597,31 @@ Sources</h3>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>heightf</em>&#160;</td>
+          <td class="paramname"><em>heightf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>par_energy_fraction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>leaf_transmittance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>leaf_reflectance</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1507,11 +1634,11 @@ Sources</h3>
 <p>Computes an n-layered light profile from the direct light, diffuse light, leaf area index, solar zenith angle, and other parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">Idir</td><td>Photon flux density for direct light at the top of the canopy (micromol / m^2 / s)</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">Idiff</td><td>Photon flux density for diffuse light at the top of the canopy (micromol / m^2 / s)</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">LAI</td><td>Leaf area index (LAI) of the entire canopy (dimensionless from m^2 leaf / m^2 ground)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ambient_ppfd_beam</td><td>Photosynthetically active photon flux density (PPFD) for beam light passing through a surface perpendicular to the beam direction at the top of the canopy; this represents direct sunlight for a plant in a field (micromol / (m^2 beam) / s)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ambient_ppfd_diffuse</td><td>Photosynthetically active photon flux density (PPFD) for diffuse light at the top of the canopy; this represents diffuse light scattered out of the solar beam by the Earth's atmosphere for a plant in a field; as a diffuse flux density, this represents the flux through any surface (micromol / m^2 / s)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lai</td><td>Leaf area index (LAI) of the entire canopy, which represents the leaf area per unit of ground area (dimensionless from m^2 leaf / m^2 ground)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nlayers</td><td>Integer number of layers in the canopy</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cosTheta</td><td>Cosine of the solar zenith angle (dimensionless)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cosine_zenith_angle</td><td>Cosine of the solar zenith angle (dimensionless)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">kd</td><td>Extinction coefficient for diffuse light (dimensionless)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">chil</td><td>Ratio of average projected areas of canopy elements on horizontal surfaces; for a spherical leaf distribution, <code>chil = 0</code>; for a vertical leaf distribution, <code>chil = 1</code>; for a horizontal leaf distribution, <code>chil</code> approaches infinity (dimensionless from m^2 / m^2)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">absorptivity</td><td>The leaf absorptivity on a quantum basis (dimensionless from mol / mol)</td></tr>
@@ -1519,25 +1646,34 @@ Sources</h3>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An n-layered light profile representing quantities within the canopy, including several photon flux densities and the relative fractions of shaded and sunlit leaves</dd></dl>
-<p>Note 1: Although the input and output light parameters (e.g. <code>Idir</code> and <code>light_profile.direct_irradiance</code>) are specified as being photon flux densities measured in micromol / m^2 / s, all the calculations within this function are linear in these light parameters. So if the inputs actually represent something else, e.g. irradiance expressed in units of J / m^2 / s, this function can still be used and the outputs will have the same units as the inputs (J / m^2 / s in this example).</p>
-<p>Note 2: Nothing in this function is specialized for a specific band of light, so <code>sunML</code> can be used for photosynthetically active photon flux density (PPFD), photosynthetically active radiation (PAR), near-infrared radiation (NIR), etc., as long as the extinction coefficients and absorptivities are appropriately chosen. </p>
+<dl class="section return"><dt>Returns</dt><dd>An n-layered light profile representing quantities within the canopy, including several photon flux densities and the relative fractions of shaded and sunlit leaves </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00193">193</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00243">243</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::diffuse_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::direct_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::scattered_irradiance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::sunlit_fraction</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::total_irradiance</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00178">absorbed_shortwave_from_incident_ppfd()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">Light_profile::average_absorbed_shortwave</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00033">Light_profile::average_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00031">Light_profile::incident_ppfd_scattered</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00018">MAXLAY</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">Light_profile::shaded_absorbed_shortwave</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00038">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::shaded_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">Light_profile::sunlit_absorbed_shortwave</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00037">Light_profile::sunlit_fraction</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::sunlit_incident_ppfd</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00204">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00088">multilayer_canopy_properties::run()</a>.</p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00210">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00094">multilayer_canopy_properties::run()</a>.</p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_ab8b5147b6957ced2534f8a36e1d587e5_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ab8b5147b6957ced2534f8a36e1d587e5_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_ab8b5147b6957ced2534f8a36e1d587e5_icgraph" id="a_aux_bio_cro_8cpp_ab8b5147b6957ced2534f8a36e1d587e5_icgraph">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_cgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_cgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_cgraph" id="a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_cgraph">
+<area shape="rect" title="Computes an n&#45;layered light profile from the direct light, diffuse light, leaf area index,..." alt="" coords="5,13,68,39"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#ac923d835bbf1f5120b1cafcbf3da046d" title="Computes total absorbed shortwave radiation from the photosynthetically active photon flux density (P..." alt="" coords="116,5,259,47"/>
+</map>
+</div>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_icgraph" id="a_aux_bio_cro_8cpp_aa642fb79dd7e9bc444cb8eae150fd64c_icgraph">
 <area shape="rect" title="Computes an n&#45;layered light profile from the direct light, diffuse light, leaf area index,..." alt="" coords="501,85,564,112"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="308,5,385,32"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="315,56,378,83"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="308,5,385,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="315,56,378,83"/>
 <area shape="rect" href="classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="273,107,420,149"/>
 <area shape="rect" href="classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="240,176,453,203"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,5,181,32"/>
@@ -1565,14 +1701,14 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00410">410</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00525">525</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00677">SoilEvapo()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00773">SoilEvapo()</a>.</p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph" id="a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph">
 <area shape="rect" title=" " alt="" coords="655,195,760,221"/>
@@ -1580,8 +1716,8 @@ Sources</h3>
 <area shape="rect" href="classed__water__vapor__properties.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="428,115,607,157"/>
 <area shape="rect" href="classwater__vapor__properties__from__air__temperature.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="439,180,596,236"/>
 <area shape="rect" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655" title=" " alt="" coords="428,259,607,301"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ace43a160ba19f2f018c96d5e820c1260" title=" " alt="" coords="477,325,557,352"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="260,5,337,32"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a7d593504053ccaaafcf7351861572c5b" title=" " alt="" coords="477,325,557,352"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="260,5,337,32"/>
 <area shape="rect" href="classc3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="219,57,378,98"/>
 <area shape="rect" href="classrue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="217,122,380,163"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
@@ -1613,14 +1749,14 @@ Sources</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00427">427</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00542">542</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00677">SoilEvapo()</a>.</p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00773">SoilEvapo()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph" id="a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph">
 <area shape="rect" title=" " alt="" coords="655,195,752,221"/>
@@ -1628,8 +1764,8 @@ Sources</h3>
 <area shape="rect" href="classed__water__vapor__properties.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="428,115,607,157"/>
 <area shape="rect" href="classwater__vapor__properties__from__air__temperature.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="439,180,596,236"/>
 <area shape="rect" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655" title=" " alt="" coords="428,259,607,301"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ace43a160ba19f2f018c96d5e820c1260" title=" " alt="" coords="477,325,557,352"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="260,5,337,32"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a7d593504053ccaaafcf7351861572c5b" title=" " alt="" coords="477,325,557,352"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="260,5,337,32"/>
 <area shape="rect" href="classc3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="219,57,378,98"/>
 <area shape="rect" href="classrue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="217,122,380,163"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
@@ -1655,14 +1791,14 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00445">445</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00560">560</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00677">SoilEvapo()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="ed__water__vapor__properties_8h_source.html#l00079">ed_water_vapor_properties::do_operation()</a>, <a class="el" href="water__vapor__properties__from__air__temperature_8hpp_source.html#l00074">water_vapor_properties_from_air_temperature::do_operation()</a>, <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00167">ed_c4_leaf_photosynthesis::get_initial_guesses()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00773">SoilEvapo()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph" id="a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph">
 <area shape="rect" title=" " alt="" coords="655,195,751,221"/>
@@ -1670,8 +1806,8 @@ Sources</h3>
 <area shape="rect" href="classed__water__vapor__properties.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="428,115,607,157"/>
 <area shape="rect" href="classwater__vapor__properties__from__air__temperature.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="439,180,596,236"/>
 <area shape="rect" href="classed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655" title=" " alt="" coords="428,259,607,301"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ace43a160ba19f2f018c96d5e820c1260" title=" " alt="" coords="477,325,557,352"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="260,5,337,32"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a7d593504053ccaaafcf7351861572c5b" title=" " alt="" coords="477,325,557,352"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="260,5,337,32"/>
 <area shape="rect" href="classc3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="219,57,378,98"/>
 <area shape="rect" href="classrue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="217,122,380,163"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
@@ -1703,7 +1839,7 @@ Sources</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00435">435</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00550">550</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1799,14 +1935,14 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00745">745</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00843">843</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="one__layer__soil__profile_8hpp_source.html#l00081">one_layer_soil_profile::do_operation()</a>.</p>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_abca736d0dd36b9f00cbd9dcd72ebcf14_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_abca736d0dd36b9f00cbd9dcd72ebcf14_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_abca736d0dd36b9f00cbd9dcd72ebcf14_icgraph" id="a_aux_bio_cro_8cpp_abca736d0dd36b9f00cbd9dcd72ebcf14_icgraph">
 <area shape="rect" title=" " alt="" coords="199,13,257,39"/>
@@ -1857,19 +1993,19 @@ Sources</h3>
 <p>RH and Wind profile function. </p>
 <p>Preconditions: <code>WindSpeed</code> is non-negative. <code>LAI</code> is non-negative <code>nlayers</code> is at least 1 and at most MAXLAY. <code>wind_speed_profile</code> is an array of at least size <code>nlayers</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00280">280</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00395">395</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00204">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00088">multilayer_canopy_properties::run()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00004">c3CanAC()</a>, <a class="el" href="_can_a_c_8cpp_source.html#l00004">CanAC()</a>, <a class="el" href="ed__multilayer__canopy__properties_8h_source.html#l00210">ed_multilayer_canopy_properties::run()</a>, and <a class="el" href="multilayer__canopy__properties_8cpp_source.html#l00094">multilayer_canopy_properties::run()</a>.</p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_ad5f0fc680176f312e47c32701ce779f7_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ad5f0fc680176f312e47c32701ce779f7_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_ad5f0fc680176f312e47c32701ce779f7_icgraph" id="a_aux_bio_cro_8cpp_ad5f0fc680176f312e47c32701ce779f7_icgraph">
 <area shape="rect" title="RH and Wind profile function." alt="" coords="501,85,580,112"/>
-<area shape="rect" href="_bio_cro_8h.html#a0fbab86b987b44dc72c614df14e320d0" title=" " alt="" coords="308,5,385,32"/>
-<area shape="rect" href="_bio_cro_8h.html#adee4b16730e6bc7909c0ce389d19c18e" title=" " alt="" coords="315,56,378,83"/>
+<area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="308,5,385,32"/>
+<area shape="rect" href="_bio_cro_8h.html#a0ca3e6e5da99573ff15996069755ba97" title=" " alt="" coords="315,56,378,83"/>
 <area shape="rect" href="classed__multilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="273,107,420,149"/>
 <area shape="rect" href="classmultilayer__canopy__properties.html#aa6b7bb009af6cd63f442559d3b8d1ab2" title=" " alt="" coords="240,176,453,203"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="17,5,181,32"/>
@@ -1887,7 +2023,7 @@ Sources</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 25 2021 20:27:48 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 25 2021 21:18:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
