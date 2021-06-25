@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "The BioCro C++ Library", "index.html", [
+    [ "About", "page3.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -69,9 +70,9 @@ var NAVTREEINDEX =
 "classpartitioning__growth__calculator.html",
 "classshortwave__atmospheric__scattering.html#a1345531ba44bd0a8c3f3c40fc1e09b96",
 "classthermal__time__senescence.html#a7a4771ead27413407a690ed6a6a52b0e",
-"ed__c4__leaf__photosynthesis4_8h.html#a94a831da259825058873817c6e4e505a",
-"namespaceed__c4__leaf__photosynthesis3__stuff.html#a777dd7a51d2875f942cd24abd787cf46",
-"structrue__str.html#abc345aedd954341b306bec86992287b8"
+"ed__c4__leaf__photosynthesis4_8h.html#a81319b8e9e14a29c9f32788eadfe6439",
+"namespaceed__c4__leaf__photosynthesis3__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b",
+"structrue__str.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
