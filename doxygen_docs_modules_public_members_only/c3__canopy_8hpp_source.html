@@ -107,108 +107,100 @@ $(document).ready(function(){initNavTree('c3__canopy_8hpp_source.html',''); init
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;          SteadyModule(<span class="stringliteral">&quot;c3_canopy&quot;</span>),</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;          lai{get_input(input_quantities, <span class="stringliteral">&quot;lai&quot;</span>)},</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          time{get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)},</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          solar{get_input(input_quantities, <span class="stringliteral">&quot;solar&quot;</span>)},</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;          temp{get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)},</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;          rh{get_input(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)},</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;          windspeed{get_input(input_quantities, <span class="stringliteral">&quot;windspeed&quot;</span>)},</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          lat{get_input(input_quantities, <span class="stringliteral">&quot;lat&quot;</span>)},</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;          nlayers{get_input(input_quantities, <span class="stringliteral">&quot;nlayers&quot;</span>)},</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          vmax{get_input(input_quantities, <span class="stringliteral">&quot;vmax&quot;</span>)},</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          jmax{get_input(input_quantities, <span class="stringliteral">&quot;jmax&quot;</span>)},</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          tpu_rate_max{get_input(input_quantities, <span class="stringliteral">&quot;tpu_rate_max&quot;</span>)},</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          Rd{get_input(input_quantities, <span class="stringliteral">&quot;Rd&quot;</span>)},</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          Catm{get_input(input_quantities, <span class="stringliteral">&quot;Catm&quot;</span>)},</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;          O2{get_input(input_quantities, <span class="stringliteral">&quot;O2&quot;</span>)},</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          b0{get_input(input_quantities, <span class="stringliteral">&quot;b0&quot;</span>)},</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          b1{get_input(input_quantities, <span class="stringliteral">&quot;b1&quot;</span>)},</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          Gs_min{get_input(input_quantities, <span class="stringliteral">&quot;Gs_min&quot;</span>)},</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          theta{get_input(input_quantities, <span class="stringliteral">&quot;theta&quot;</span>)},</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          kd{get_input(input_quantities, <span class="stringliteral">&quot;kd&quot;</span>)},</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          heightf{get_input(input_quantities, <span class="stringliteral">&quot;heightf&quot;</span>)},</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          LeafN{get_input(input_quantities, <span class="stringliteral">&quot;LeafN&quot;</span>)},</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          kpLN{get_input(input_quantities, <span class="stringliteral">&quot;kpLN&quot;</span>)},</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          lnb0{get_input(input_quantities, <span class="stringliteral">&quot;lnb0&quot;</span>)},</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          lnb1{get_input(input_quantities, <span class="stringliteral">&quot;lnb1&quot;</span>)},</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          lnfun{get_input(input_quantities, <span class="stringliteral">&quot;lnfun&quot;</span>)},</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          chil{get_input(input_quantities, <span class="stringliteral">&quot;chil&quot;</span>)},</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          StomataWS{get_input(input_quantities, <span class="stringliteral">&quot;StomataWS&quot;</span>)},</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          specific_heat_of_air{get_input(input_quantities, <span class="stringliteral">&quot;specific_heat_of_air&quot;</span>)},</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          atmospheric_pressure{get_input(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)},</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          growth_respiration_fraction{get_input(input_quantities, <span class="stringliteral">&quot;growth_respiration_fraction&quot;</span>)},</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          water_stress_approach{get_input(input_quantities, <span class="stringliteral">&quot;water_stress_approach&quot;</span>)},</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          electrons_per_carboxylation{get_input(input_quantities, <span class="stringliteral">&quot;electrons_per_carboxylation&quot;</span>)},</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          electrons_per_oxygenation{get_input(input_quantities, <span class="stringliteral">&quot;electrons_per_oxygenation&quot;</span>)},</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          absorptivity_par{get_input(input_quantities, <span class="stringliteral">&quot;absorptivity_par&quot;</span>)},</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          par_energy_content{get_input(input_quantities, <span class="stringliteral">&quot;par_energy_content&quot;</span>)},</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          par_energy_fraction{get_input(input_quantities, <span class="stringliteral">&quot;par_energy_fraction&quot;</span>)},</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          leaf_transmittance{get_input(input_quantities, <span class="stringliteral">&quot;leaf_transmittance&quot;</span>)},</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          leaf_reflectance{get_input(input_quantities, <span class="stringliteral">&quot;leaf_reflectance&quot;</span>)},</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;          canopy_assimilation_rate_op{get_op(output_quantities, <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>)},</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          canopy_transpiration_rate_op{get_op(output_quantities, <span class="stringliteral">&quot;canopy_transpiration_rate&quot;</span>)},</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          GrossAssim_op{get_op(output_quantities, <span class="stringliteral">&quot;GrossAssim&quot;</span>)}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// References to input quantities</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; lai;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; time;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; solar;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; temp;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; rh;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; windspeed;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; lat;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; nlayers;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; vmax;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; jmax;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; tpu_rate_max;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; Rd;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; Catm;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; O2;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; b0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; b1;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; Gs_min;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; theta;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; kd;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; heightf;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; LeafN;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; kpLN;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; lnb0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; lnb1;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; lnfun;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; chil;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; StomataWS;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; specific_heat_of_air;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; atmospheric_pressure;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; growth_respiration_fraction;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; water_stress_approach;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; electrons_per_carboxylation;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; electrons_per_oxygenation;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; absorptivity_par;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; par_energy_content;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; par_energy_fraction;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; leaf_transmittance;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; leaf_reflectance;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span>* canopy_assimilation_rate_op;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">double</span>* canopy_transpiration_rate_op;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">double</span>* GrossAssim_op;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Main operation</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;          lai_ip(get_ip(input_quantities, <span class="stringliteral">&quot;lai&quot;</span>)),</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          time_ip(get_ip(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)),</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          solar_ip(get_ip(input_quantities, <span class="stringliteral">&quot;solar&quot;</span>)),</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;          temp_ip(get_ip(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;          rh_ip(get_ip(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;          windspeed_ip(get_ip(input_quantities, <span class="stringliteral">&quot;windspeed&quot;</span>)),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          lat_ip(get_ip(input_quantities, <span class="stringliteral">&quot;lat&quot;</span>)),</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;          nlayers_ip(get_ip(input_quantities, <span class="stringliteral">&quot;nlayers&quot;</span>)),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          vmax_ip(get_ip(input_quantities, <span class="stringliteral">&quot;vmax&quot;</span>)),</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          jmax_ip(get_ip(input_quantities, <span class="stringliteral">&quot;jmax&quot;</span>)),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          tpu_rate_max_ip(get_ip(input_quantities, <span class="stringliteral">&quot;tpu_rate_max&quot;</span>)),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          Rd_ip(get_ip(input_quantities, <span class="stringliteral">&quot;Rd&quot;</span>)),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          Catm_ip(get_ip(input_quantities, <span class="stringliteral">&quot;Catm&quot;</span>)),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;          O2_ip(get_ip(input_quantities, <span class="stringliteral">&quot;O2&quot;</span>)),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;          b0_ip(get_ip(input_quantities, <span class="stringliteral">&quot;b0&quot;</span>)),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          b1_ip(get_ip(input_quantities, <span class="stringliteral">&quot;b1&quot;</span>)),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          Gs_min_ip(get_ip(input_quantities, <span class="stringliteral">&quot;Gs_min&quot;</span>)),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          theta_ip(get_ip(input_quantities, <span class="stringliteral">&quot;theta&quot;</span>)),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          kd_ip(get_ip(input_quantities, <span class="stringliteral">&quot;kd&quot;</span>)),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          heightf_ip(get_ip(input_quantities, <span class="stringliteral">&quot;heightf&quot;</span>)),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          LeafN_ip(get_ip(input_quantities, <span class="stringliteral">&quot;LeafN&quot;</span>)),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          kpLN_ip(get_ip(input_quantities, <span class="stringliteral">&quot;kpLN&quot;</span>)),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          lnb0_ip(get_ip(input_quantities, <span class="stringliteral">&quot;lnb0&quot;</span>)),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          lnb1_ip(get_ip(input_quantities, <span class="stringliteral">&quot;lnb1&quot;</span>)),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          lnfun_ip(get_ip(input_quantities, <span class="stringliteral">&quot;lnfun&quot;</span>)),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          chil_ip(get_ip(input_quantities, <span class="stringliteral">&quot;chil&quot;</span>)),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          StomataWS_ip(get_ip(input_quantities, <span class="stringliteral">&quot;StomataWS&quot;</span>)),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          specific_heat_of_air_ip(get_ip(input_quantities, <span class="stringliteral">&quot;specific_heat_of_air&quot;</span>)),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          atmospheric_pressure_ip(get_ip(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          growth_respiration_fraction_ip(get_ip(input_quantities, <span class="stringliteral">&quot;growth_respiration_fraction&quot;</span>)),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          water_stress_approach_ip(get_ip(input_quantities, <span class="stringliteral">&quot;water_stress_approach&quot;</span>)),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          electrons_per_carboxylation_ip(get_ip(input_quantities, <span class="stringliteral">&quot;electrons_per_carboxylation&quot;</span>)),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          electrons_per_oxygenation_ip(get_ip(input_quantities, <span class="stringliteral">&quot;electrons_per_oxygenation&quot;</span>)),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          absorptivity_par_ip(get_ip(input_quantities, <span class="stringliteral">&quot;absorptivity_par&quot;</span>)),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          canopy_assimilation_rate_op(get_op(output_quantities, <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>)),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          canopy_transpiration_rate_op(get_op(output_quantities, <span class="stringliteral">&quot;canopy_transpiration_rate&quot;</span>)),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          GrossAssim_op(get_op(output_quantities, <span class="stringliteral">&quot;GrossAssim&quot;</span>))</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Pointers to input quantities</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* lai_ip;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* time_ip;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* solar_ip;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* temp_ip;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* rh_ip;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* windspeed_ip;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* lat_ip;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* nlayers_ip;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* vmax_ip;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* jmax_ip;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* tpu_rate_max_ip;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* Rd_ip;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* Catm_ip;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* O2_ip;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* b0_ip;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* b1_ip;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* Gs_min_ip;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* theta_ip;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* kd_ip;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* heightf_ip;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* LeafN_ip;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* kpLN_ip;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* lnb0_ip;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* lnb1_ip;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* lnfun_ip;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* chil_ip;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* StomataWS_ip;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* specific_heat_of_air_ip;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* atmospheric_pressure_ip;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* growth_respiration_fraction_ip;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* water_stress_approach_ip;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* electrons_per_carboxylation_ip;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* electrons_per_oxygenation_ip;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span>* absorptivity_par_ip;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">double</span>* canopy_assimilation_rate_op;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">double</span>* canopy_transpiration_rate_op;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">double</span>* GrossAssim_op;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// Main operation</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassc3__canopy_html"><div class="ttname"><a href="classc3__canopy.html">c3_canopy</a></div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00007">c3_canopy.hpp:8</a></div></div>
-<div class="ttc" id="aclassc3__canopy_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">c3_canopy::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00050">c3_canopy.cpp:50</a></div></div>
+<div class="ttc" id="aclassc3__canopy_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classc3__canopy.html#a7eff545285286763183243b1d473e6df">c3_canopy::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00045">c3_canopy.cpp:45</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classc3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6">c3_canopy::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8cpp_source.html#l00006">c3_canopy.cpp:6</a></div></div>
 <div class="ttc" id="aclassc3__canopy_html_af90d78d048115ea86b02a3d2183756d8"><div class="ttname"><a href="classc3__canopy.html#af90d78d048115ea86b02a3d2183756d8">c3_canopy::c3_canopy</a></div><div class="ttdeci">c3_canopy(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="c3__canopy_8hpp_source.html#l00010">c3_canopy.hpp:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -217,7 +209,7 @@ $(document).ready(function(){initNavTree('c3__canopy_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3__canopy_8hpp.html">c3_canopy.hpp</a></li>
-    <li class="footer">Generated on Fri Jun 25 2021 21:18:19 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jun 26 2021 17:30:35 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
