@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['about_1',['About',['../page3.html',1,'']]],
+  ['about_1',['About',['../about.html',1,'']]],
   ['about_2emd_2',['about.md',['../about_8md.html',1,'']]],
   ['abs_3',['abs',['../state__map_8h.html#a2ffa14ffb8d0754a8bece80bb8a68481',1,'state_map.h']]],
   ['adaptive_5fabs_5ferror_5ftol_4',['adaptive_abs_error_tol',['../classintegrator.html#add6a4201d5f92453d0438f56c4dd65d4',1,'integrator']]],

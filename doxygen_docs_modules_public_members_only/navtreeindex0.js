@@ -83,6 +83,7 @@ var NAVTREEINDEX0 =
 "_fv_c_b_8hpp_source.html":[3,0,1,0,59],
 "aba__decay_8hpp.html":[3,0,1,0,0],
 "aba__decay_8hpp_source.html":[3,0,1,0,0],
+"about.html":[0],
 "annotated.html":[2,0],
 "ball__berry_8cpp.html":[3,0,1,0,3],
 "ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c":[3,0,1,0,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classes.html":[2,1],
 "classfake__solar.html":[2,0,53],
 "classfake__solar.html#a3d0310fe870e575fd0258f9e61d5ec7e":[2,0,53,0],
-"classgolden__ratio__hyperbola.html":[2,0,56],
-"classgolden__ratio__hyperbola.html#ae0c44165e4f18f23184aa04b2aa7b1db":[2,0,56,0]
+"classgolden__ratio__hyperbola.html":[2,0,56]
 };

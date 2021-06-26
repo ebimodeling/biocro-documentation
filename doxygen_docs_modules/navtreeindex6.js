@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classshortwave__atmospheric__scattering.html#a07008ae1791649b9b8d4fd8b715d85c0":[2,0,104,9],
 "classshortwave__atmospheric__scattering.html#a1345531ba44bd0a8c3f3c40fc1e09b96":[2,0,104,4],
 "classshortwave__atmospheric__scattering.html#a17fda3cbb74a9ac2dfb880c944966568":[2,0,104,3],
 "classshortwave__atmospheric__scattering.html#a391e9fd4e949f6e987eb654a11b1e451":[2,0,104,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classthermal__time__senescence.html#a6b0475b657888dae4bd86dbb754c0814":[2,0,127,4],
 "classthermal__time__senescence.html#a6fdea3652676280eb850049a21742d9c":[2,0,127,36],
 "classthermal__time__senescence.html#a702a9ca9a21d837c6d4e4c6526242ff7":[2,0,127,10],
-"classthermal__time__senescence.html#a726a9356479b081580811c8b17a0567c":[2,0,127,33],
-"classthermal__time__senescence.html#a7450dd084f57179d7118711901467d96":[2,0,127,8]
+"classthermal__time__senescence.html#a726a9356479b081580811c8b17a0567c":[2,0,127,33]
 };
