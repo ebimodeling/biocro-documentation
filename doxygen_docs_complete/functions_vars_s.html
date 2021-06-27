@@ -87,9 +87,6 @@ $(function() {
 : <a class="el" href="classed__water__vapor__properties.html#a85821f38953c76569fab227f6e1fbaf8">ed_water_vapor_properties</a>
 , <a class="el" href="classwater__vapor__properties__from__air__temperature.html#a85821f38953c76569fab227f6e1fbaf8">water_vapor_properties_from_air_temperature</a>
 </li>
-<li>scattered_irradiance
-: <a class="el" href="struct_light__profile.html#ab1cb927f9aec47ac40e504ec039a7573">Light_profile</a>
-</li>
 <li>se
 : <a class="el" href="classse__module_1_1base.html#a7052d8f78736b8f289bb92f319a84dce">base</a>
 </li>
@@ -142,6 +139,12 @@ $(function() {
 <li>sensible_heat_loss_op
 : <a class="el" href="classed__leaf__temperature.html#ae94550ba8928700b64992a79b711b33b">ed_leaf_temperature</a>
 </li>
+<li>shaded_absorbed_shortwave
+: <a class="el" href="struct_light__profile.html#aba2bdb68bcb2ed561da09a980ff0373b">Light_profile</a>
+</li>
+<li>shaded_absorbed_shortwave_ops
+: <a class="el" href="classmultilayer__canopy__properties.html#a05a900c506c677d8b8cdefd97cad1732">multilayer_canopy_properties</a>
+</li>
 <li>shaded_Assim_ips
 : <a class="el" href="classmultilayer__canopy__integrator.html#a25d807f8858566bf08ba2240d15be70b">multilayer_canopy_integrator</a>
 </li>
@@ -176,7 +179,12 @@ $(function() {
 </li>
 <li>shaded_incident_par_ops
 : <a class="el" href="classed__multilayer__canopy__properties.html#a7529e4bc65da93c197a1fcadf1f39233">ed_multilayer_canopy_properties</a>
-, <a class="el" href="classmultilayer__canopy__properties.html#a7529e4bc65da93c197a1fcadf1f39233">multilayer_canopy_properties</a>
+</li>
+<li>shaded_incident_ppfd
+: <a class="el" href="struct_light__profile.html#a73dba19296f83ec076a71483ae244d51">Light_profile</a>
+</li>
+<li>shaded_incident_ppfd_ops
+: <a class="el" href="classmultilayer__canopy__properties.html#ae6f86dbfa7e13b0cf45c1b10ba6803c6">multilayer_canopy_properties</a>
 </li>
 <li>shaded_transpiration_rate_ips
 : <a class="el" href="classed__multilayer__canopy__integrator.html#a2b04a1c087df3b164a350e8a9ac678bd">ed_multilayer_canopy_integrator</a>
@@ -210,20 +218,24 @@ $(function() {
 <li>soil_aba_concentration_op
 : <a class="el" href="classaba__decay.html#aed96860e4b1955dfe5ff3e3b5d5b4fb3">aba_decay</a>
 </li>
+<li>soil_air_entry
+: <a class="el" href="classtwo__layer__soil__profile.html#af037f27e4f2cb2205d66a093f74c679e">two_layer_soil_profile</a>
+</li>
 <li>soil_air_entry_ip
 : <a class="el" href="classbucket__soil__drainage.html#a1735a0eb71e2eff53efb21e3d8a34f1c">bucket_soil_drainage</a>
 , <a class="el" href="classone__layer__soil__profile.html#a1735a0eb71e2eff53efb21e3d8a34f1c">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a1735a0eb71e2eff53efb21e3d8a34f1c">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a1735a0eb71e2eff53efb21e3d8a34f1c">two_layer_soil_profile</a>
 </li>
 <li>soil_air_entry_op
 : <a class="el" href="classsoil__type__selector.html#a6586751c9559bf47aa38692c6039ca5b">soil_type_selector</a>
+</li>
+<li>soil_b_coefficient
+: <a class="el" href="classtwo__layer__soil__profile.html#a3c8eff4488eedd58e524671149d5a57f">two_layer_soil_profile</a>
 </li>
 <li>soil_b_coefficient_ip
 : <a class="el" href="classbucket__soil__drainage.html#a0e035ae6a49cef3a30d07cd7ab518ddf">bucket_soil_drainage</a>
 , <a class="el" href="classone__layer__soil__profile.html#a0e035ae6a49cef3a30d07cd7ab518ddf">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a0e035ae6a49cef3a30d07cd7ab518ddf">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a0e035ae6a49cef3a30d07cd7ab518ddf">two_layer_soil_profile</a>
 </li>
 <li>soil_b_coefficient_op
 : <a class="el" href="classsoil__type__selector.html#ab3ed992f3d775cbed7b7d21ed0cd0996">soil_type_selector</a>
@@ -234,18 +246,18 @@ $(function() {
 <li>soil_clay_content_op
 : <a class="el" href="classsoil__type__selector.html#a62fc229a647b293d2c11fd431394c8c5">soil_type_selector</a>
 </li>
-<li>soil_clod_size_ip
-: <a class="el" href="classsoil__evaporation.html#a4ad5d4f5ca03c4d7106b117d405232d5">soil_evaporation</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a4ad5d4f5ca03c4d7106b117d405232d5">two_layer_soil_profile</a>
+<li>soil_clod_size
+: <a class="el" href="classsoil__evaporation.html#a9767fdba794dc60fd07a7b0ad2fde531">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#a9767fdba794dc60fd07a7b0ad2fde531">two_layer_soil_profile</a>
 </li>
-<li>soil_depth1_ip
-: <a class="el" href="classtwo__layer__soil__profile.html#a3da706d79555b5dee23d57f1153648e0">two_layer_soil_profile</a>
+<li>soil_depth1
+: <a class="el" href="classtwo__layer__soil__profile.html#a2238fe11b8aab0eb55db44da36b46ca7">two_layer_soil_profile</a>
 </li>
-<li>soil_depth2_ip
-: <a class="el" href="classtwo__layer__soil__profile.html#a1a2389d9318da18ab180f07b9ca0fe77">two_layer_soil_profile</a>
+<li>soil_depth2
+: <a class="el" href="classtwo__layer__soil__profile.html#a9d6ee6db7de5e70383cf1b6d67bc2452">two_layer_soil_profile</a>
 </li>
-<li>soil_depth3_ip
-: <a class="el" href="classtwo__layer__soil__profile.html#abb80626f93e776739592484e66f71211">two_layer_soil_profile</a>
+<li>soil_depth3
+: <a class="el" href="classtwo__layer__soil__profile.html#a38b3517d75b13cef9569114aa59fe9d2">two_layer_soil_profile</a>
 </li>
 <li>soil_depth_ip
 : <a class="el" href="classbucket__soil__drainage.html#a5f9f6e7b4dc6378fbdd479a87c648844">bucket_soil_drainage</a>
@@ -259,18 +271,20 @@ $(function() {
 <li>soil_evaporation_rate_op
 : <a class="el" href="classsoil__evaporation.html#a663bb9c260f1278623d95535113ab695">soil_evaporation</a>
 </li>
+<li>soil_field_capacity
+: <a class="el" href="classsoil__evaporation.html#aed494d36974ea02067e34c032225c9e8">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#aed494d36974ea02067e34c032225c9e8">two_layer_soil_profile</a>
+</li>
 <li>soil_field_capacity_ip
 : <a class="el" href="classbucket__soil__drainage.html#a210267a25eacc12fe688911e6145816e">bucket_soil_drainage</a>
 , <a class="el" href="classed__stomata__water__stress__linear.html#a210267a25eacc12fe688911e6145816e">ed_stomata_water_stress_linear</a>
 , <a class="el" href="classleaf__water__stress__exponential.html#a210267a25eacc12fe688911e6145816e">leaf_water_stress_exponential</a>
 , <a class="el" href="classone__layer__soil__profile.html#a210267a25eacc12fe688911e6145816e">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a210267a25eacc12fe688911e6145816e">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classsoil__evaporation.html#a210267a25eacc12fe688911e6145816e">soil_evaporation</a>
 , <a class="el" href="classstomata__water__stress__exponential.html#a210267a25eacc12fe688911e6145816e">stomata_water_stress_exponential</a>
 , <a class="el" href="classstomata__water__stress__linear.html#a210267a25eacc12fe688911e6145816e">stomata_water_stress_linear</a>
 , <a class="el" href="classstomata__water__stress__linear__and__aba__response.html#a210267a25eacc12fe688911e6145816e">stomata_water_stress_linear_and_aba_response</a>
 , <a class="el" href="classstomata__water__stress__sigmoid.html#a210267a25eacc12fe688911e6145816e">stomata_water_stress_sigmoid</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a210267a25eacc12fe688911e6145816e">two_layer_soil_profile</a>
 </li>
 <li>soil_field_capacity_op
 : <a class="el" href="classsoil__type__selector.html#a1f59bb2747ca076a49e62483f85608fc">soil_type_selector</a>
@@ -278,32 +292,38 @@ $(function() {
 <li>soil_n_content_op
 : <a class="el" href="classone__layer__soil__profile__derivatives.html#a5091530af4a60e0ca5e1ff5e1f92cc41">one_layer_soil_profile_derivatives</a>
 </li>
-<li>soil_reflectance_ip
-: <a class="el" href="classsoil__evaporation.html#a399e9e2e9109b46609f3cd76576adce0">soil_evaporation</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a399e9e2e9109b46609f3cd76576adce0">two_layer_soil_profile</a>
+<li>soil_reflectance
+: <a class="el" href="classsoil__evaporation.html#ac7f2333c3630389a2edd7466ca45641f">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#ac7f2333c3630389a2edd7466ca45641f">two_layer_soil_profile</a>
+</li>
+<li>soil_sand_content
+: <a class="el" href="classtwo__layer__soil__profile.html#a2cd08ea8d1c63ba19b8170f0f99e7f66">two_layer_soil_profile</a>
 </li>
 <li>soil_sand_content_ip
 : <a class="el" href="classone__layer__soil__profile.html#a6dabf1c1d1926d234993d1c7e4857c91">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a6dabf1c1d1926d234993d1c7e4857c91">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a6dabf1c1d1926d234993d1c7e4857c91">two_layer_soil_profile</a>
 </li>
 <li>soil_sand_content_op
 : <a class="el" href="classsoil__type__selector.html#ad83404c39e94c91e37f41b55e67b211d">soil_type_selector</a>
+</li>
+<li>soil_saturated_conductivity
+: <a class="el" href="classtwo__layer__soil__profile.html#a65730b68197ad6c00234bf8c5a34f286">two_layer_soil_profile</a>
 </li>
 <li>soil_saturated_conductivity_ip
 : <a class="el" href="classbucket__soil__drainage.html#a13033629206eccc77ea0ead93e52246e">bucket_soil_drainage</a>
 , <a class="el" href="classone__layer__soil__profile.html#a13033629206eccc77ea0ead93e52246e">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a13033629206eccc77ea0ead93e52246e">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a13033629206eccc77ea0ead93e52246e">two_layer_soil_profile</a>
 </li>
 <li>soil_saturated_conductivity_op
 : <a class="el" href="classsoil__type__selector.html#acb96686eb8ff61c124d7de39b6478302">soil_type_selector</a>
+</li>
+<li>soil_saturation_capacity
+: <a class="el" href="classtwo__layer__soil__profile.html#a313902671c3be80b93305cd8b47a6c22">two_layer_soil_profile</a>
 </li>
 <li>soil_saturation_capacity_ip
 : <a class="el" href="classbucket__soil__drainage.html#a97d313e6c3232f7b550e180209170749">bucket_soil_drainage</a>
 , <a class="el" href="classone__layer__soil__profile.html#a97d313e6c3232f7b550e180209170749">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#a97d313e6c3232f7b550e180209170749">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a97d313e6c3232f7b550e180209170749">two_layer_soil_profile</a>
 </li>
 <li>soil_saturation_capacity_op
 : <a class="el" href="classsoil__type__selector.html#a649d3beab68b30b3f7c97a29fe11509b">soil_type_selector</a>
@@ -311,12 +331,16 @@ $(function() {
 <li>soil_silt_content_op
 : <a class="el" href="classsoil__type__selector.html#ae86b34a3494739ae8a5a5b8e76a3f4ff">soil_type_selector</a>
 </li>
-<li>soil_transmission_ip
-: <a class="el" href="classsoil__evaporation.html#a4c1b9d377976eb78727ada6716c2990b">soil_evaporation</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a4c1b9d377976eb78727ada6716c2990b">two_layer_soil_profile</a>
+<li>soil_transmission
+: <a class="el" href="classsoil__evaporation.html#ac1c2422a49cf8775640665191d02ff63">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#ac1c2422a49cf8775640665191d02ff63">two_layer_soil_profile</a>
 </li>
 <li>soil_type_indicator_ip
 : <a class="el" href="classsoil__type__selector.html#ac07656b1f2fa5aeef3811d5aeb68b5e5">soil_type_selector</a>
+</li>
+<li>soil_water_content
+: <a class="el" href="classsoil__evaporation.html#ac1d52b176a7622828bf3d5c8f7849fa5">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#ac1d52b176a7622828bf3d5c8f7849fa5">two_layer_soil_profile</a>
 </li>
 <li>soil_water_content_ip
 : <a class="el" href="classbucket__soil__drainage.html#af6f92f691315e6c4996c2d18db52dac0">bucket_soil_drainage</a>
@@ -324,12 +348,10 @@ $(function() {
 , <a class="el" href="classleaf__water__stress__exponential.html#af6f92f691315e6c4996c2d18db52dac0">leaf_water_stress_exponential</a>
 , <a class="el" href="classone__layer__soil__profile.html#af6f92f691315e6c4996c2d18db52dac0">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#af6f92f691315e6c4996c2d18db52dac0">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classsoil__evaporation.html#af6f92f691315e6c4996c2d18db52dac0">soil_evaporation</a>
 , <a class="el" href="classstomata__water__stress__exponential.html#af6f92f691315e6c4996c2d18db52dac0">stomata_water_stress_exponential</a>
 , <a class="el" href="classstomata__water__stress__linear.html#af6f92f691315e6c4996c2d18db52dac0">stomata_water_stress_linear</a>
 , <a class="el" href="classstomata__water__stress__linear__and__aba__response.html#af6f92f691315e6c4996c2d18db52dac0">stomata_water_stress_linear_and_aba_response</a>
 , <a class="el" href="classstomata__water__stress__sigmoid.html#af6f92f691315e6c4996c2d18db52dac0">stomata_water_stress_sigmoid</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#af6f92f691315e6c4996c2d18db52dac0">two_layer_soil_profile</a>
 </li>
 <li>soil_water_content_op
 : <a class="el" href="classbucket__soil__drainage.html#ac692a843df50706af7f45bbdee244c39">bucket_soil_drainage</a>
@@ -337,17 +359,19 @@ $(function() {
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#ac692a843df50706af7f45bbdee244c39">one_layer_soil_profile_derivatives</a>
 , <a class="el" href="classtwo__layer__soil__profile.html#ac692a843df50706af7f45bbdee244c39">two_layer_soil_profile</a>
 </li>
+<li>soil_wilting_point
+: <a class="el" href="classsoil__evaporation.html#a8b04a61110858d2cb3706a89aec95bd3">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#a8b04a61110858d2cb3706a89aec95bd3">two_layer_soil_profile</a>
+</li>
 <li>soil_wilting_point_ip
 : <a class="el" href="classbucket__soil__drainage.html#afc98cac4d76f2ee23f784fd0bcc44ec7">bucket_soil_drainage</a>
 , <a class="el" href="classed__stomata__water__stress__linear.html#afc98cac4d76f2ee23f784fd0bcc44ec7">ed_stomata_water_stress_linear</a>
 , <a class="el" href="classone__layer__soil__profile.html#afc98cac4d76f2ee23f784fd0bcc44ec7">one_layer_soil_profile</a>
 , <a class="el" href="classone__layer__soil__profile__derivatives.html#afc98cac4d76f2ee23f784fd0bcc44ec7">one_layer_soil_profile_derivatives</a>
-, <a class="el" href="classsoil__evaporation.html#afc98cac4d76f2ee23f784fd0bcc44ec7">soil_evaporation</a>
 , <a class="el" href="classstomata__water__stress__exponential.html#afc98cac4d76f2ee23f784fd0bcc44ec7">stomata_water_stress_exponential</a>
 , <a class="el" href="classstomata__water__stress__linear.html#afc98cac4d76f2ee23f784fd0bcc44ec7">stomata_water_stress_linear</a>
 , <a class="el" href="classstomata__water__stress__linear__and__aba__response.html#afc98cac4d76f2ee23f784fd0bcc44ec7">stomata_water_stress_linear_and_aba_response</a>
 , <a class="el" href="classstomata__water__stress__sigmoid.html#afc98cac4d76f2ee23f784fd0bcc44ec7">stomata_water_stress_sigmoid</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#afc98cac4d76f2ee23f784fd0bcc44ec7">two_layer_soil_profile</a>
 </li>
 <li>soil_wilting_point_op
 : <a class="el" href="classsoil__type__selector.html#a78a1fcd8d2f395a5337d2bedfa537c41">soil_type_selector</a>
@@ -356,7 +380,11 @@ $(function() {
 : <a class="el" href="structsoil_m_l__str.html#a1181d419ee6ec88951ccc5d991626005">soilML_str</a>
 </li>
 <li>solar
-: <a class="el" href="classincident__shortwave__from__ground__par.html#ae7efb5bff7d9116303426ce8627bdf2c">incident_shortwave_from_ground_par</a>
+: <a class="el" href="classc3__canopy.html#ae7efb5bff7d9116303426ce8627bdf2c">c3_canopy</a>
+, <a class="el" href="classc4__canopy.html#ae7efb5bff7d9116303426ce8627bdf2c">c4_canopy</a>
+, <a class="el" href="classincident__shortwave__from__ground__par.html#ae7efb5bff7d9116303426ce8627bdf2c">incident_shortwave_from_ground_par</a>
+, <a class="el" href="classsoil__evaporation.html#ae7efb5bff7d9116303426ce8627bdf2c">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#ae7efb5bff7d9116303426ce8627bdf2c">two_layer_soil_profile</a>
 </li>
 <li>solar_energy_absorbed_leaf
 : <a class="el" href="classed__c4__leaf__photosynthesis.html#a5cabddc5a90d2c0d2a43ddb176557579">ed_c4_leaf_photosynthesis</a>
@@ -372,13 +400,9 @@ $(function() {
 : <a class="el" href="classed__multilayer__canopy__properties.html#a6ffc57c502c9b3dd079a523990df0d68">ed_multilayer_canopy_properties</a>
 </li>
 <li>solar_ip
-: <a class="el" href="classc3__canopy.html#a1c138dcaa6efa0b3ff64d843d7a4f466">c3_canopy</a>
-, <a class="el" href="classc4__canopy.html#a1c138dcaa6efa0b3ff64d843d7a4f466">c4_canopy</a>
-, <a class="el" href="classlight__from__solar.html#a1c138dcaa6efa0b3ff64d843d7a4f466">light_from_solar</a>
+: <a class="el" href="classlight__from__solar.html#a1c138dcaa6efa0b3ff64d843d7a4f466">light_from_solar</a>
 , <a class="el" href="classpokhilko__circadian__clock.html#a1c138dcaa6efa0b3ff64d843d7a4f466">pokhilko_circadian_clock</a>
-, <a class="el" href="classsoil__evaporation.html#a1c138dcaa6efa0b3ff64d843d7a4f466">soil_evaporation</a>
 , <a class="el" href="classsong__flowering.html#a1c138dcaa6efa0b3ff64d843d7a4f466">song_flowering</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#a1c138dcaa6efa0b3ff64d843d7a4f466">two_layer_soil_profile</a>
 </li>
 <li>solar_op
 : <a class="el" href="classfake__solar.html#af89a438d4cab3c28047cfa615e3cf4f9">fake_solar</a>
@@ -399,20 +423,20 @@ $(function() {
 : <a class="el" href="classparameter__calculator.html#abd6c70ac83db2801642577652ddd1fd3">parameter_calculator</a>
 </li>
 <li>specific_heat_of_air
-: <a class="el" href="classc3__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2">c3_leaf_photosynthesis</a>
+: <a class="el" href="classc3__canopy.html#a345bf0d8fd9232d0570dee396c845af2">c3_canopy</a>
+, <a class="el" href="classc3__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2">c3_leaf_photosynthesis</a>
+, <a class="el" href="classc4__canopy.html#a345bf0d8fd9232d0570dee396c845af2">c4_canopy</a>
 , <a class="el" href="classc4__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2">c4_leaf_photosynthesis</a>
 , <a class="el" href="classed__c4__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2">ed_c4_leaf_photosynthesis</a>
 , <a class="el" href="classed__leaf__temperature.html#a345bf0d8fd9232d0570dee396c845af2">ed_leaf_temperature</a>
 , <a class="el" href="classrue__leaf__photosynthesis.html#a345bf0d8fd9232d0570dee396c845af2">rue_leaf_photosynthesis</a>
+, <a class="el" href="classsoil__evaporation.html#a345bf0d8fd9232d0570dee396c845af2">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#a345bf0d8fd9232d0570dee396c845af2">two_layer_soil_profile</a>
 </li>
 <li>specific_heat_of_air_ip
-: <a class="el" href="classc3__canopy.html#aa1f02cc5c576d197734a2fbef434cd2a">c3_canopy</a>
-, <a class="el" href="classc4__canopy.html#aa1f02cc5c576d197734a2fbef434cd2a">c4_canopy</a>
-, <a class="el" href="classed__canac__leaf.html#aa1f02cc5c576d197734a2fbef434cd2a">ed_canac_leaf</a>
+: <a class="el" href="classed__canac__leaf.html#aa1f02cc5c576d197734a2fbef434cd2a">ed_canac_leaf</a>
 , <a class="el" href="classed__evapotrans2.html#aa1f02cc5c576d197734a2fbef434cd2a">ed_evapotrans2</a>
 , <a class="el" href="classed__water__vapor__properties.html#aa1f02cc5c576d197734a2fbef434cd2a">ed_water_vapor_properties</a>
-, <a class="el" href="classsoil__evaporation.html#aa1f02cc5c576d197734a2fbef434cd2a">soil_evaporation</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#aa1f02cc5c576d197734a2fbef434cd2a">two_layer_soil_profile</a>
 , <a class="el" href="classwater__vapor__properties__from__air__temperature.html#aa1f02cc5c576d197734a2fbef434cd2a">water_vapor_properties_from_air_temperature</a>
 </li>
 <li>specific_heat_of_air_op
@@ -457,9 +481,9 @@ $(function() {
 <li>steady_state_ptrs
 : <a class="el" href="classsimultaneous__equations.html#ac2d6a810a519f32972f5050751e8d1ca">simultaneous_equations</a>
 </li>
-<li>stefan_boltzman_ip
-: <a class="el" href="classsoil__evaporation.html#ae38028a24baf03f4fad91313397c9fdd">soil_evaporation</a>
-, <a class="el" href="classtwo__layer__soil__profile.html#ae38028a24baf03f4fad91313397c9fdd">two_layer_soil_profile</a>
+<li>stefan_boltzman
+: <a class="el" href="classsoil__evaporation.html#aab329890389c4b058b75666db56bcbd6">soil_evaporation</a>
+, <a class="el" href="classtwo__layer__soil__profile.html#aab329890389c4b058b75666db56bcbd6">two_layer_soil_profile</a>
 </li>
 <li>stem
 : <a class="el" href="structcrop__phenology.html#a368c5d9027045426132cf396fca3d8c8">crop_phenology</a>
@@ -504,8 +528,10 @@ $(function() {
 </li>
 <li>StomataWS
 : <a class="el" href="classc3__assimilation.html#a44c4cacc15dd7ff869806611b7306307">c3_assimilation</a>
+, <a class="el" href="classc3__canopy.html#a44c4cacc15dd7ff869806611b7306307">c3_canopy</a>
 , <a class="el" href="classc3__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307">c3_leaf_photosynthesis</a>
 , <a class="el" href="classc4__assimilation.html#a44c4cacc15dd7ff869806611b7306307">c4_assimilation</a>
+, <a class="el" href="classc4__canopy.html#a44c4cacc15dd7ff869806611b7306307">c4_canopy</a>
 , <a class="el" href="classc4__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307">c4_leaf_photosynthesis</a>
 , <a class="el" href="classed__c4__leaf__photosynthesis2.html#a44c4cacc15dd7ff869806611b7306307">ed_c4_leaf_photosynthesis2</a>
 , <a class="el" href="classed__c4__leaf__photosynthesis3.html#a44c4cacc15dd7ff869806611b7306307">ed_c4_leaf_photosynthesis3</a>
@@ -513,9 +539,7 @@ $(function() {
 , <a class="el" href="classed__c4__leaf__photosynthesis.html#a44c4cacc15dd7ff869806611b7306307">ed_c4_leaf_photosynthesis</a>
 </li>
 <li>StomataWS_ip
-: <a class="el" href="classc3__canopy.html#a806fc8bd36d2b4eebe201b37a002317e">c3_canopy</a>
-, <a class="el" href="classc4__canopy.html#a806fc8bd36d2b4eebe201b37a002317e">c4_canopy</a>
-, <a class="el" href="classed__apply__stomatal__water__stress__via__assimilation.html#a806fc8bd36d2b4eebe201b37a002317e">ed_apply_stomatal_water_stress_via_assimilation</a>
+: <a class="el" href="classed__apply__stomatal__water__stress__via__assimilation.html#a806fc8bd36d2b4eebe201b37a002317e">ed_apply_stomatal_water_stress_via_assimilation</a>
 , <a class="el" href="classed__apply__stomatal__water__stress__via__conductance.html#a806fc8bd36d2b4eebe201b37a002317e">ed_apply_stomatal_water_stress_via_conductance</a>
 , <a class="el" href="classed__c4photo.html#a806fc8bd36d2b4eebe201b37a002317e">ed_c4photo</a>
 , <a class="el" href="classed__canac__leaf.html#a806fc8bd36d2b4eebe201b37a002317e">ed_canac_leaf</a>
@@ -567,6 +591,12 @@ $(function() {
 <li>success_op
 : <a class="el" href="classse__module_1_1base.html#a3defba01099d559562b39fe007d33589">base</a>
 </li>
+<li>sunlit_absorbed_shortwave
+: <a class="el" href="struct_light__profile.html#acf30e3338a8853fb5496c2c232459e8b">Light_profile</a>
+</li>
+<li>sunlit_absorbed_shortwave_ops
+: <a class="el" href="classmultilayer__canopy__properties.html#ab88ff5412b07c668415c6ec7a8fc4ef8">multilayer_canopy_properties</a>
+</li>
 <li>sunlit_Assim_ips
 : <a class="el" href="classmultilayer__canopy__integrator.html#a364f020e716cae1a8a901c77ffbee030">multilayer_canopy_integrator</a>
 </li>
@@ -601,7 +631,12 @@ $(function() {
 </li>
 <li>sunlit_incident_par_ops
 : <a class="el" href="classed__multilayer__canopy__properties.html#aba0f98a532c9b6a7f85ee4e2df69eeee">ed_multilayer_canopy_properties</a>
-, <a class="el" href="classmultilayer__canopy__properties.html#aba0f98a532c9b6a7f85ee4e2df69eeee">multilayer_canopy_properties</a>
+</li>
+<li>sunlit_incident_ppfd
+: <a class="el" href="struct_light__profile.html#a9be4ce772b6a8d75462522bab9c0512a">Light_profile</a>
+</li>
+<li>sunlit_incident_ppfd_ops
+: <a class="el" href="classmultilayer__canopy__properties.html#aa877df951c881f553c1c65ea291a9a1c">multilayer_canopy_properties</a>
 </li>
 <li>sunlit_transpiration_rate_ips
 : <a class="el" href="classed__multilayer__canopy__integrator.html#ab9094b81939a97ae6836c500e428aaf7">ed_multilayer_canopy_integrator</a>
@@ -626,7 +661,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 26 2021 17:53:45 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jun 27 2021 02:08:04 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "The BioCro C++ Library", "index.html", [
-    [ "About", "about.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -62,7 +61,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classgolden__ratio__hyperbola.html#ae0c44165e4f18f23184aa04b2aa7b1db",
+"classgolden__ratio__hyperbola.html",
 "ed__nikolov__conductance_8h.html#a3836facf5cbd16c504b526a6c454c436",
 "no__leaf__resp__partitioning__growth__calculator_8hpp.html"
 ];

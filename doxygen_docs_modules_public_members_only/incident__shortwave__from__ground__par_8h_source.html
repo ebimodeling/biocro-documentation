@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          solar(get_input(input_quantities, <span class="stringliteral">&quot;solar&quot;</span>)),</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          irradiance_direct_fraction(get_input(input_quantities, <span class="stringliteral">&quot;irradiance_direct_fraction&quot;</span>)),</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          irradiance_diffuse_fraction(get_input(input_quantities, <span class="stringliteral">&quot;irradiance_diffuse_fraction&quot;</span>)),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          par_energy_fraction_of_sunlight(get_input(input_quantities, <span class="stringliteral">&quot;par_energy_fraction_of_sunlight&quot;</span>)),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          par_energy_fraction(get_input(input_quantities, <span class="stringliteral">&quot;par_energy_fraction&quot;</span>)),</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          par_energy_content(get_input(input_quantities, <span class="stringliteral">&quot;par_energy_content&quot;</span>)),</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          par_incident_direct_op(get_op(output_quantities, <span class="stringliteral">&quot;par_incident_direct&quot;</span>)),</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; solar;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; irradiance_direct_fraction;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; irradiance_diffuse_fraction;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; par_energy_fraction_of_sunlight;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; par_energy_fraction;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; par_energy_content;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span>* par_incident_direct_op;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="stringliteral">&quot;solar&quot;</span>,                            <span class="comment">// micromol / (m^2 beam) / s [area perpendicular to beam]</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="stringliteral">&quot;irradiance_direct_fraction&quot;</span>,       <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;irradiance_diffuse_fraction&quot;</span>,      <span class="comment">// dimensionless</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;par_energy_fraction_of_sunlight&quot;</span>,  <span class="comment">// dimensionless</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;par_energy_fraction&quot;</span>,              <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;par_energy_content&quot;</span>                <span class="comment">// J / micromol</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
@@ -168,13 +168,13 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Calculate the NIR flux density in the direct beam and as diffuse radiation</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Here we just assume that a constant fraction of solar energy lies in the PAR band,</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//  with the remainder being in the NIR band.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> nir_incident_direct = par_incident_direct * (1.0 / par_energy_fraction_of_sunlight - 1.0);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> nir_incident_diffuse = par_incident_diffuse * (1.0 / par_energy_fraction_of_sunlight - 1.0);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// with the remainder being in the NIR band.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> nir_incident_direct = par_incident_direct * (1.0 / par_energy_fraction - 1.0);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> nir_incident_diffuse = par_incident_diffuse * (1.0 / par_energy_fraction - 1.0);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Check for error conditions</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::map&lt;std::string, bool&gt; errors_to_check = {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {<span class="stringliteral">&quot;par_energy_fraction_of_sunlight cannot be zero&quot;</span>, par_energy_fraction_of_sunlight == 0}  <span class="comment">// divide by zero</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {<span class="stringliteral">&quot;par_energy_fraction cannot be zero&quot;</span>, par_energy_fraction == 0}  <span class="comment">// divide by zero</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    check_error_conditions(errors_to_check, get_name());</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="incident__shortwave__from__ground__par_8h.html">incident_shortwave_from_ground_par.h</a></li>
-    <li class="footer">Generated on Sat Jun 26 2021 17:54:53 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Jun 27 2021 02:09:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
