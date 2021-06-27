@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Model crop growth. — Gro • BioCro</title>
+<title>Model crop growth. — run_biocro • BioCro</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Model crop growth. — Gro" />
-<meta property="og:description" content="Gro() models crop growth over time given species-specific parameters and climate data. It can be used to predict yield, determine regions that are suitable for growing a crop, and identify traits that have the most influence on yield." />
+<meta property="og:title" content="Model crop growth. — run_biocro" />
+<meta property="og:description" content="run_biocro() models crop growth over time given species-specific parameters and climate data. It can be used to predict yield, determine regions that are suitable for growing a crop, and identify traits that have the most influence on yield." />
 
 
 
@@ -120,14 +120,14 @@
     <div class="page-header">
     <h1>Model crop growth.</h1>
     
-    <div class="hidden name"><code>Gro.Rd</code></div>
+    <div class="hidden name"><code>run_biocro.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p><code>Gro()</code> models crop growth over time given species-specific parameters and climate data. It can be used to predict yield, determine regions that are suitable for growing a crop, and identify traits that have the most influence on yield.</p>
+    <p><code>run_biocro()</code> models crop growth over time given species-specific parameters and climate data. It can be used to predict yield, determine regions that are suitable for growing a crop, and identify traits that have the most influence on yield.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>Gro</span><span class='op'>(</span><span class='va'>initial_values</span>, <span class='va'>parameters</span>, <span class='va'>varying_parameters</span>, <span class='va'>modules</span>, verbose <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>run_biocro</span><span class='op'>(</span><span class='va'>initial_values</span>, <span class='va'>parameters</span>, <span class='va'>drivers</span>, <span class='va'>steady_state_modules</span>, <span class='va'>derivative_modules</span>, <span class='va'>integrator</span>, verbose <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -141,12 +141,20 @@
       <td><p>Parameter values that are constant for the entire simulation period. These are not recorded in the result. (a list of named numeric values)</p></td>
     </tr>
     <tr>
-      <th>varying_parameters</th>
+      <th>drivers</th>
       <td><p>Times at which a solution is desired and parameter values that are known <em>a priori</em> for the entire simulation period. These are not recorded in the result. (a data frame with at least the columns <code>year</code>, <code>doy</code>, and <code>hour</code> and optionally columns for parameters that are known <em>a priori</em>.)</p></td>
     </tr>
     <tr>
-      <th>modules</th>
-      <td><p>The model modules that should be run. Required modules are given in the details. (a list of named character values)</p></td>
+      <th>steady_state_modules</th>
+      <td><p>The steady state modules that should be run. (a list of character values)</p></td>
+    </tr>
+    <tr>
+      <th>derivative_modules</th>
+      <td><p>The derivative modules that should be run. (a list of character values)</p></td>
+    </tr>
+    <tr>
+      <th>integrator</th>
+      <td><p>Information specifying the numerical integration algorithm to use</p></td>
     </tr>
     <tr>
       <th>verbose</th>
@@ -156,24 +164,24 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A data frame with the columns <code>year</code>, <code>doy</code>, and <code>hour</code>; and a column for each parameter in <code>initial_values</code>; and a row for each row in <code>varying_parameters</code>:</p>
+    <p>A data frame with the columns <code>year</code>, <code>doy</code>, and <code>hour</code>; and a column for each parameter in <code>initial_values</code>; and a row for each row in <code>drivers</code>:</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>An overview of model definitions</h3>
 <p>A model can be fully defined using two types of arguments: (1) the set of equations and (2) the parameters required by those equations. The set of all parameters in the model is commonly called the state.</p>
 <p>State values can be known, <em>a priori</em>, for the entire simulation (<em>a priori</em> state), or known only at the start of the simulation period (calculated state).</p>
 
-<p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Model implementation using Gro()</h3>
-<p>In Gro(), the sets of equations are passed via the modules argument, and the state is passed via the <code>initial_values</code>, <code>parameters</code>, and <code>varying_parameters</code> arguments.</p>
+<p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Model implementation using run_biocro()</h3>
+<p>In run_biocro(), the sets of equations are passed via the modules argument, and the state is passed via the <code>initial_values</code>, <code>parameters</code>, and <code>drivers</code> arguments.</p>
 <p>The set of modules determines the parameters that must be defined in the state arguments. Each module has parameters it requires, which must be defined in exactly one of the state arguments</p>
-<p>The state argument in which a parameter is defined determines whether a parameter is considered calculated state or <em>a priori</em> state. Parameters defined in <code>initial_values</code> are considered calculated state, whereas parameters defined in either <code>parameters</code> or <code>varying_parameters</code> are considered <em>a priori</em> state. The difference between <code>parameters</code> and <code>varying_parameters</code> is that values in <code>parameters</code> are considered constant for the simulation period, whereas values in <code>varying_parameters</code> may be different for each time point. Only calculated state variables are recorded in the output. A priori state variable values will overwrite any calculations of those values performed internally by the model.</p>
+<p>The state argument in which a parameter is defined determines whether a parameter is considered calculated state or <em>a priori</em> state. Parameters defined in <code>initial_values</code> are considered calculated state, whereas parameters defined in either <code>parameters</code> or <code>drivers</code> are considered <em>a priori</em> state. The difference between <code>parameters</code> and <code>drivers</code> is that values in <code>parameters</code> are considered constant for the simulation period, whereas values in <code>drivers</code> may be different for each time point. Only calculated state variables are recorded in the output. A priori state variable values will overwrite any calculations of those values performed internally by the model.</p>
 
 
 <p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>State argument details</h3>
 <p><code>initial_values</code>: Parameter values that are known only at the start of the simulation period. Parameter values are recorded in the output. If the model calculates the parameter value, it will change with time. If the model does not calculate the value, it will be constant with time, but it will still be recorded.</p>
 <p><code>parameters</code>: Parameter values that are known and constant for the entire simulation period. Values are not recorded in the output. If the model calculates the parameter value, the calculated value will be overwritten by the value in <code>parameters</code>.</p>
-<p><code>varying_parameters</code>: Parameter values that are known <em>a priori</em> at every time step in the entire simulation period. Values are not recorded in the output. If the model calculates the parameter value, the calculated value will be overwritten by the value in <code>varying_parameters</code>.</p>
-<p>The data frame <code>varying_parameters</code> must contain at least the columns <code>year</code>, <code>doy</code>, and <code>hour</code>, specifying the times at which a solution is required. Times must be evenly spaced, and the difference in times must be given in the <code>timestep</code> parameter (units are hours).</p>
+<p><code>drivers</code>: Parameter values that are known <em>a priori</em> at every time step in the entire simulation period. Values are not recorded in the output. If the model calculates the parameter value, the calculated value will be overwritten by the value in <code>drivers</code>.</p>
+<p>The data frame <code>drivers</code> must contain at least the columns <code>year</code>, <code>doy</code>, and <code>hour</code>, specifying the times at which a solution is required. Times must be evenly spaced, and the difference in times must be given in the <code>timestep</code> parameter (units are hours).</p>
 
 <p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Required module names and available modules</h3>
 <p></p><ul>
@@ -192,30 +200,33 @@
 </ul><p></p>
 
 <p></p><h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Precompiled module and parameter sets</h3>
-<p>Sets of parameters and modules are provided for sorghum, miscanthus, and willow, and are named [crop]_initial_state, [crop]_parameters, and [crop]_modules, e.g., sorghum_initial_state.</p>
+<p>Sets of parameters and modules are provided for sorghum, miscanthus, and willow, and are named [crop]_initial_values, [crop]_parameters, and [crop]_modules, e.g., sorghum_initial_values.</p>
 <p>Weather data are provided. These are typically for one year (January 1 to December 31) and should be subsetted to include only the period of growth. The function <code>get_growing_season_climate()</code> is provided as one means of subsetting climate data.</p>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>## Simulate sorghum growth</span>
-<span class='va'>result</span> <span class='op'>=</span> <span class='fu'>Gro</span><span class='op'>(</span><span class='va'>sorghum_initial_state</span>, <span class='va'>sorghum_parameters</span>,
-             <span class='fu'>get_growing_season_climate</span><span class='op'>(</span><span class='va'>weather05</span><span class='op'>)</span>, <span class='va'>sorghum_modules</span><span class='op'>)</span>
+<span class='va'>result</span> <span class='op'>=</span> <span class='fu'>run_biocro</span><span class='op'>(</span><span class='va'>sorghum_initial_values</span>, <span class='va'>sorghum_parameters</span>,
+             <span class='fu'>get_growing_season_climate</span><span class='op'>(</span><span class='va'>weather05</span><span class='op'>)</span>, <span class='va'>sorghum_steady_state_modules</span>,
+             <span class='va'>sorghum_derivative_modules</span>, <span class='va'>sorghum_integrator</span><span class='op'>)</span>
 <span class='fu'>lattice</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/lattice/man/xyplot.html'>xyplot</a></span><span class='op'>(</span><span class='va'>Stem</span> <span class='op'>+</span> <span class='va'>Leaf</span> <span class='op'>+</span> <span class='va'>Root</span> <span class='op'>~</span> <span class='va'>TTc</span>, data<span class='op'>=</span><span class='va'>result</span>, type<span class='op'>=</span><span class='st'>'l'</span>,
                 auto<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>points<span class='op'>=</span><span class='cn'>FALSE</span>, lines<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>,
                 ylab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='st'>'Biomass'</span><span class='op'>~</span><span class='op'>(</span><span class='va'>Mg</span><span class='op'>/</span><span class='va'>ha</span><span class='op'>)</span><span class='op'>)</span>,
                 xlab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='st'>'Thermal time'</span><span class='op'>~</span><span class='op'>(</span><span class='va'>degree</span><span class='op'>*</span><span class='va'>C</span><span class='op'>~</span><span class='va'>day</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='img'><img src='Gro-1.png' alt='' width='700' height='433' /></div><div class='input'>
+</div><div class='img'><img src='run_biocro-1.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'>### The results can be combined with the data that were used to drive the model.</span>
 <span class='va'>result</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span><span class='va'>result</span>, <span class='fu'>get_growing_season_climate</span><span class='op'>(</span><span class='va'>weather05</span><span class='op'>)</span><span class='op'>)</span>
 
 <span class='co'>## Change a subset of the parameters.</span>
 <span class='va'>canopy_architecture</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/with.html'>within</a></span><span class='op'>(</span><span class='va'>sorghum_parameters</span>, <span class='op'>{</span><span class='va'>chil</span> <span class='op'>=</span> <span class='fl'>1.2</span>; <span class='va'>leafwidth</span> <span class='op'>=</span> <span class='fl'>0.05</span><span class='op'>}</span><span class='op'>)</span>
-<span class='va'>architechture_result</span> <span class='op'>=</span> <span class='fu'>Gro</span><span class='op'>(</span><span class='va'>sorghum_initial_state</span>, <span class='va'>canopy_architecture</span>,
-                           <span class='fu'>get_growing_season_climate</span><span class='op'>(</span><span class='va'>weather05</span><span class='op'>)</span>, <span class='va'>sorghum_modules</span><span class='op'>)</span>
+<span class='va'>architechture_result</span> <span class='op'>=</span> <span class='fu'>run_biocro</span><span class='op'>(</span><span class='va'>sorghum_initial_values</span>, <span class='va'>canopy_architecture</span>,
+                           <span class='fu'>get_growing_season_climate</span><span class='op'>(</span><span class='va'>weather05</span><span class='op'>)</span>,
+                           <span class='va'>sorghum_steady_state_modules</span>, <span class='va'>sorghum_derivative_modules</span>,
+                           <span class='va'>sorghum_integrator</span><span class='op'>)</span>
 <span class='fu'>lattice</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/lattice/man/xyplot.html'>xyplot</a></span><span class='op'>(</span><span class='va'>Stem</span> <span class='op'>+</span> <span class='va'>Leaf</span> <span class='op'>+</span> <span class='va'>Root</span> <span class='op'>~</span> <span class='va'>TTc</span>, data<span class='op'>=</span><span class='va'>architechture_result</span>, type<span class='op'>=</span><span class='st'>'l'</span>,
                 auto<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>points<span class='op'>=</span><span class='cn'>FALSE</span>, lines<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>, ylab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='st'>'Biomass'</span><span class='op'>~</span><span class='op'>(</span><span class='va'>Mg</span><span class='op'>/</span><span class='va'>ha</span><span class='op'>)</span><span class='op'>)</span>,
                 xlab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/expression.html'>expression</a></span><span class='op'>(</span><span class='st'>'Thermal time'</span><span class='op'>~</span><span class='op'>(</span><span class='va'>degree</span><span class='op'>*</span><span class='va'>C</span><span class='op'>~</span><span class='va'>day</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='img'><img src='Gro-2.png' alt='' width='700' height='433' /></div><div class='input'>
+</div><div class='img'><img src='run_biocro-2.png' alt='' width='700' height='433' /></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
