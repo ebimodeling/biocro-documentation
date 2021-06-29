@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "The BioCro C++ Library", "index.html", [
+    [ "About", "about.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -62,16 +63,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classc3__assimilation.html#ae03d9c25c89b60e689463931d6a2f188",
-"classed__boundary__conductance__quadrature.html#aba36ef6feb82085d0a909a9b5998e3d8",
-"classed__multilayer__canopy__properties.html#a739c210020ca179054ffde8e0f5fea8d",
-"classmultilayer__canopy__integrator.html#a6e6abd692b5bf84d029909e52ab8a5a0",
-"classpartitioning__growth.html#a4d45566ef15e4151304fdc6c630642cb",
-"classsenescence__logistic.html#a888b7523d83c6e17563420fb78d14855",
-"classthermal__time__senescence.html#a03080b897b00c3c50c36753b8bccaae6",
-"ed__c4__leaf__photosynthesis3_8h.html#a46f09bbd32fd1332a877072d2e36a444",
-"namespacebiocro__units.html#a937f0225cad93539cf6ecfb056fce6fe",
-"structfrost_parms.html#ac6561f3ade0d5d8062369c736983abe6"
+"classc3__assimilation.html#aad6da92b059dda2eb15b87844f975cec",
+"classed__boundary__conductance__quadrature.html#a9f069384cda2498a81847df18293ea4b",
+"classed__multilayer__canopy__properties.html#a6ffc57c502c9b3dd079a523990df0d68",
+"classmultilayer__canopy__integrator.html#a4fdddf6c5bb5cfc4d42787b3d89e6097",
+"classpartitioning__growth.html#a4c327e555a2cd6f58556d9db6e54e3c3",
+"classsenescence__logistic.html#a7d334f6331d585f373283ba009ed7bab",
+"classthermal__time__senescence.html#a016fd671a2f9ecf7eb66c9db1cd1df7b",
+"ed__c4__leaf__photosynthesis3_8h.html#a3836facf5cbd16c504b526a6c454c436",
+"namespacebiocro__units.html#a2393fbbe722fce0781df043f36dbf840",
+"structfrost_parms.html#a7e492e8176f296b394e607f6e6aaeeed"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
