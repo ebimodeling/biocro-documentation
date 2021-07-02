@@ -34,7 +34,7 @@ tldr
 required-r-packages
 running-the-tests
 running-the-test-suite-on-the-installed-version-of-biocro
-running-the-test-suite-against-the-biocro-source-code
+sec:testing-local
 running-individual-test-files
 running-an-individual-test-file-on-the-installed-package
 running-an-individual-test-file-against-the-package-source-code

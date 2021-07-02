@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-06-29" />
+<meta name="date" content="2021-07-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -169,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#required-r-packages"><i class="fa fa-check"></i><b>3.2</b> Required R Packages</a></li>
 <li class="chapter" data-level="3.3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-the-tests"><i class="fa fa-check"></i><b>3.3</b> Running the Tests</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-the-test-suite-on-the-installed-version-of-biocro"><i class="fa fa-check"></i><b>3.3.1</b> Running the test suite on the installed version of BioCro</a></li>
-<li class="chapter" data-level="3.3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-the-test-suite-against-the-biocro-source-code"><i class="fa fa-check"></i><b>3.3.2</b> Running the test suite against the BioCro source code</a></li>
+<li class="chapter" data-level="3.3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:testing-local"><i class="fa fa-check"></i><b>3.3.2</b> Running the test suite against the BioCro source code</a></li>
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-individual-test-files"><i class="fa fa-check"></i><b>3.4</b> Running individual test files</a><ul>
 <li class="chapter" data-level="3.4.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-an-individual-test-file-on-the-installed-package"><i class="fa fa-check"></i><b>3.4.1</b> Running an individual test file on the installed package</a></li>
@@ -256,9 +256,11 @@ in the<code>tests</code> directory of the source tree, and call
 </div>
 <div id="running-the-tests" class="section level2">
 <h2><span class="header-section-number">3.3</span> Running the Tests</h2>
-<p>There are two main ways to run the <code>testthat</code> tests:
-- Run tests in the <code>tests/testthat</code> directory of a source tree against an installed version of BioCro
-- Run tests in the <code>tests/testthat</code> directory of a source tree against the package code in that source tree</p>
+<p>There are two main ways to run the <code>testthat</code> tests:</p>
+<ul>
+<li>Run tests in the <code>tests/testthat</code> directory of a source tree against an installed version of BioCro</li>
+<li>Run tests in the <code>tests/testthat</code> directory of a source tree against the package code in that source tree</li>
+</ul>
 <p>(A third scenario exists—running installed <em>testthat</em> tests against the
 installed package—but currently the BioCro package does not install
 any of its tests.)</p>
@@ -266,9 +268,11 @@ any of its tests.)</p>
 <h3><span class="header-section-number">3.3.1</span> Running the test suite on the installed version of BioCro</h3>
 <p>The simplest way to do this is as follows:</p>
 <ol style="list-style-type: decimal">
-<li><p>Start an R session in the <code>tests</code> directory of a BioCro source tree
-(or start R anywhere and use <code>setwd()</code> to move to that directory).</p></li>
-<li><p>Run <code>source('testthat.R')</code>.</p></li>
+<li><p>Start an R session.</p></li>
+<li><p>Run <code>xfun::in_dir('&lt;path to tests directory&gt;', source('testthat.R'))</code>, where <code>&lt;path to tests directory&gt;</code> is the path
+to the <code>tests</code> directory of a BioCro source tree. (Alternatively, use
+<code>setwd()</code> to move to the <code>tests</code> directory (if you aren’t there
+already) and just run <code>source('testthat.R')</code>.)</p></li>
 </ol>
 <p>This will run the <em>testthat</em> tests in the same way that <code>R CMD check</code> would run them.</p>
 <p>The default output of the test method used by <code>testthat.R</code> can be
@@ -280,8 +284,11 @@ overriding the default reporter of the testing function using the
 reporter. To use it, replace step 2 above with</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="running-the-testthat-tests.html#cb11-1"></a><span class="kw">library</span>(BioCro)</span>
 <span id="cb11-2"><a href="running-the-testthat-tests.html#cb11-2"></a><span class="kw">library</span>(testthat)</span>
-<span id="cb11-3"><a href="running-the-testthat-tests.html#cb11-3"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
-<p>(Note: If you have already sourced <code>testthat.R</code> at least once, there
+<span id="cb11-3"><a href="running-the-testthat-tests.html#cb11-3"></a>xfun<span class="op">::</span><span class="kw">in_dir</span>(<span class="st">&#39;&lt;path to tests directory&gt;&#39;</span>, <span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>))</span></code></pre></div>
+<p>(Note: If you are <em>in</em> the <code>tests</code> directory, the third line can be
+simply</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="running-the-testthat-tests.html#cb12-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
+<p>And if you have already sourced <code>testthat.R</code> at least once, there
 is no need to reload the <em>BioCro</em> and <em>testthat</em> packages!)</p>
 <p>The <em>Summary</em> reporter is useful in two ways: It clearly indicates
 testing progress by printing a character to the screen each time a
@@ -293,14 +300,9 @@ message.</p>
 Crucially and inconveniently, it doesn’t print the names of the test
 files being run. On the other hand, it gives a better numerical
 summary of the test results—how many tests passed, failed, or were
-skipped.</p>
-<p>[Comment: The names “Progress” and “Summary” almost seem to me as if
-they have been reversed! After all, it is the <em>Summary</em> reporter
-which most clearly indicates how the testing is progressing and the
-<em>Progress</em> reporter that gives the best numerical summary of how many
-tests failed.]</p>
+skipped.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
 </div>
-<div id="running-the-test-suite-against-the-biocro-source-code" class="section level3">
+<div id="sec:testing-local" class="section level3">
 <h3><span class="header-section-number">3.3.2</span> Running the test suite against the BioCro source code</h3>
 <p>If you are making changes to the R code or to the C++ code (or even to
 the package data) and you want to test your changes to the source code
@@ -318,17 +320,18 @@ copy of it installed!)</p></li>
 started R there or because you moved there with <code>setwd()</code>), you
 needn’t even supply the <code>path</code> argument; you can just run
 <code>test_local()</code> because the path defaults to <code>'.'</code>.</p>
-<p>Note that this function expects to find an up-to-date copy of
-<code>BioCro.so</code> in the <code>src</code> directory. If it doesn’t find it (or if it
-is out of date with respect to the C++ source files), it will try to
-re-create it. This will happen even if none of the tests use any of
-the package code. (<em>So be patient if the function seems to hang for
-several minutes while it does this!</em>)</p>
+<p>Note that this function expects to find an up-to-date copy of the
+BioCro C++ library file (<code>BioCro.so</code>, or <code>BioCro.dll</code> on Windows) in
+the <code>src</code> directory. If it doesn’t find it (or if it is out of date
+with respect to the C++ source files), it will try to re-create it.
+This will happen even if none of the tests use any of the package
+code. (<em>So be patient if the function seems to hang for several
+minutes while it does this!</em>)</p>
 <p>The default reporter for <code>test_local</code> is the <em>Progress</em> reporter, but
 if you prefer the <em>Summary</em> reporter, which gives better progress
 indication and prints the name of each test file it runs, you can
 switch:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="running-the-testthat-tests.html#cb12-1"></a><span class="kw">test_local</span>(<span class="st">&#39;&lt;path to the tests directory of some BioCro source tree&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)<span class="st">`</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="running-the-testthat-tests.html#cb13-1"></a><span class="kw">test_local</span>(<span class="st">&#39;&lt;path to the tests directory of some BioCro source tree&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)<span class="st">`</span></span></code></pre></div>
 </div>
 </div>
 <div id="running-individual-test-files" class="section level2">
@@ -339,54 +342,54 @@ against the installed version of the BioCro package, or against the
 source code.</p>
 <div id="running-an-individual-test-file-on-the-installed-package" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Running an individual test file on the installed package</h3>
-<p>Method 1</p>
+<p><strong>Method 1</strong></p>
 <ol style="list-style-type: decimal">
-<li>Start an R session.</li>
-<li>Load the <em>BioCro</em> and <em>testthat</em> packages:</li>
+<li><p>Start an R session.</p></li>
+<li><p>Load the <em>BioCro</em> and <em>testthat</em> packages:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="running-the-testthat-tests.html#cb14-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb14-2"><a href="running-the-testthat-tests.html#cb14-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div></li>
+<li><p>Call the <code>test_file</code> function on the path to a test file:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="running-the-testthat-tests.html#cb15-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>)</span></code></pre></div></li>
 </ol>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="running-the-testthat-tests.html#cb13-1"></a><span class="kw">library</span>(BioCro)</span>
-<span id="cb13-2"><a href="running-the-testthat-tests.html#cb13-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
-<ol style="list-style-type: decimal">
-<li>Call the <code>test_file</code> function on the path to a test file:</li>
-</ol>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="running-the-testthat-tests.html#cb14-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>)</span></code></pre></div>
-<p>Note the path can be either a relative or an absolute path. It
-doesn’t matter what directory the R session was started in or what the
-current R directory is as long as the path is correct. (Making the
-<code>testthat</code> directory the current directory, however, will make for
-shorter path names.)</p>
+<p>Note the path passed to <code>test_file</code> can be either a relative or an
+absolute path. It doesn’t matter what directory the R session was
+started in or what the current R directory is as long as the path is
+correct. (Making the <code>testthat</code> directory the current directory,
+however, will make for shorter path names.)</p>
 <p>Once again, the default reporter (“CompactProgress”, in this case) may
 be overridden:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="running-the-testthat-tests.html#cb15-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="running-the-testthat-tests.html#cb16-1"></a><span class="kw">test_file</span>(<span class="st">&#39;&lt;path to test file to run&gt;&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
 <p>See the documentation for <code>testthat::Reporter</code> for a list of
 reporters.</p>
-<p>Method 2</p>
+<p><strong>Method 2</strong></p>
 <p>This uses the <code>test_check</code> function we used earlier, but with a
 “filter” option.</p>
 <ol style="list-style-type: decimal">
-<li>Start an R session in the <code>tests</code> directory of a BioCro source tree
-(or start R anywhere and use <code>setwd()</code> to move to that directory).</li>
-<li>Load the <em>BioCro</em> and <em>testthat</em> packages:</li>
-</ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="running-the-testthat-tests.html#cb16-1"></a><span class="kw">library</span>(BioCro)</span>
-<span id="cb16-2"><a href="running-the-testthat-tests.html#cb16-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div>
-<ol style="list-style-type: decimal">
-<li>Call the <code>test_check</code> function with a filter option to select the
+<li><p>Start an R session.</p></li>
+<li><p>Load the <em>BioCro</em> and <em>testthat</em> packages:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="running-the-testthat-tests.html#cb17-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb17-2"><a href="running-the-testthat-tests.html#cb17-2"></a><span class="kw">library</span>(testthat)</span></code></pre></div></li>
+<li><p>Call the <code>test_check</code> function with a filter option to select the
 desired test file. The filter pattern should be a regular expression
 matching the main part of the test file. For example, to run the
 tests in <code>test.HarmonicOscillationModeling.R</code>, we could call
-<code>test_check</code> as follows:</li>
+<code>test_check</code> as follows:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="running-the-testthat-tests.html#cb18-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>)</span></code></pre></div></li>
 </ol>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="running-the-testthat-tests.html#cb17-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>)</span></code></pre></div>
-<p>The filter matching is performed on file names after they are
-stripped of “<code>test-</code>” and “<code>.R</code>”.</p>
-<p>Again, a <em>reporter</em> option may be specified.</p>
+<p>The filter matching is performed on file names after they are stripped
+of “<code>test-</code>” and “<code>.R</code>”.</p>
+<p>Again, a <em>reporter</em> option may be specified. For example,</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="running-the-testthat-tests.html#cb19-1"></a><span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>, <span class="dt">reporter =</span> <span class="st">&#39;Summary&#39;</span>)</span></code></pre></div>
+<p>Note that step 3 assumes you are in the BioCro <code>tests</code> directory when
+<code>test_check</code> is called. If you aren’t, either use<code>setwd()</code> get there
+first, or use the <code>xfun::in_dir</code> wrapper:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="running-the-testthat-tests.html#cb20-1"></a>xfun<span class="op">::</span><span class="kw">in_dir</span>(<span class="st">&#39;&lt;path to tests directory&gt;&#39;</span>, <span class="kw">test_check</span>(<span class="st">&#39;BioCro&#39;</span>, <span class="dt">filter =</span> <span class="st">&#39;Harm&#39;</span>))</span></code></pre></div>
 </div>
 <div id="running-an-individual-test-file-against-the-package-source-code" class="section level3">
 <h3><span class="header-section-number">3.4.2</span> Running an individual test file against the package source code</h3>
 <p>Again, the <code>test_local</code> function is used. The method is exactly the
-same as specified above except that a <em>filter</em> option is used to limit
-testing to matching file(s).</p>
+same as specified above in section <a href="running-the-testthat-tests.html#sec:testing-local">3.3.2</a> except
+that a <em>filter</em> option is used to limit testing to matching file(s).</p>
 </div>
 </div>
 <div id="using-devtools" class="section level2">
@@ -396,7 +399,7 @@ provides a particularly easy way to run tests against the package
 source code:</p>
 <ol style="list-style-type: decimal">
 <li><p>Start an R session inside any directory in package source tree of
-the source code you are testing (or <code>setwd()</code> to such a directory).</p></li>
+the source code you are testing (or <code>setwd()</code> to such a directory).<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p></li>
 <li><p>Load the <em>devtools</em> package: <code>library(devtools)</code></p></li>
 <li><p>Call <code>test()</code>.</p></li>
 </ol>
@@ -405,6 +408,20 @@ tests run, and the default reporter may be overridden with the
 <em>reporter</em> option.</p>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p>The names “Progress” and “Summary” almost seem to me as if
+they have been reversed! After all, it is the <em>Summary</em> reporter
+which most clearly indicates how the testing is progressing and the
+<em>Progress</em> reporter that gives the best numerical summary of how many
+tests failed.<a href="running-the-testthat-tests.html#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>Again, if the working directory is <em>not</em> inside the
+package source tree, you could use <code>xfun::in_dir</code> instead of <code>setwd</code>
+to make things work:</p>
+<p><code>xfun::in_dir('&lt;path to some directory in the package source tree&gt;', test())</code><a href="running-the-testthat-tests.html#fnref7" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
