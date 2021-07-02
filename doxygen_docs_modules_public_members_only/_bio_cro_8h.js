@@ -13,8 +13,8 @@ var _bio_cro_8h =
     [ "lightME", "_bio_cro_8h.html#ab42734c0830c9fbf4c4ae7198aae4f4e", null ],
     [ "resp", "_bio_cro_8h.html#aeb35169469ef33705592a28743d105bf", null ],
     [ "RHprof", "_bio_cro_8h.html#aa4d2cdd07093428af4830f4c8afd660c", null ],
-    [ "SoilEvapo", "_bio_cro_8h.html#a7d593504053ccaaafcf7351861572c5b", null ],
-    [ "soilML", "_bio_cro_8h.html#af8a3ab26b1d0bbcd07eb0fcdd342a1bc", null ],
+    [ "SoilEvapo", "_bio_cro_8h.html#ab163aedfdfb73c66e5eb8dca307016be", null ],
+    [ "soilML", "_bio_cro_8h.html#a109fb8f39e5145b8716a494dc13e2db5", null ],
     [ "sunML", "_bio_cro_8h.html#a2456535797cbd6f87f5a4d3fc4255c4c", null ],
     [ "watstr", "_bio_cro_8h.html#a5039fd6db860b5b611fb3c90b00ef7e8", null ],
     [ "WINDprof", "_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7", null ]

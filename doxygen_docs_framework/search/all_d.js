@@ -22,6 +22,7 @@ var searchData=
   ['module_5fwrapper_5fbase_195',['module_wrapper_base',['../classmodule__wrapper__base.html',1,'']]],
   ['modules_2ecpp_196',['modules.cpp',['../modules_8cpp.html',1,'']]],
   ['modules_2eh_197',['modules.h',['../modules_8h.html',1,'']]],
-  ['molar_5fmass_5fof_5fwater_198',['molar_mass_of_water',['../namespacephysical__constants.html#a7162c8c2c8cfdb894219fadabc0a764c',1,'physical_constants']]],
-  ['msg_199',['msg',['../structpush__back__state__and__time.html#a6db7cae67cbb66306fa126261eccaf5e',1,'push_back_state_and_time']]]
+  ['molar_5fmass_5fof_5fglucose_198',['molar_mass_of_glucose',['../namespacephysical__constants.html#acfbf75583a5095f83578d42612970094',1,'physical_constants']]],
+  ['molar_5fmass_5fof_5fwater_199',['molar_mass_of_water',['../namespacephysical__constants.html#a7162c8c2c8cfdb894219fadabc0a764c',1,'physical_constants']]],
+  ['msg_200',['msg',['../structpush__back__state__and__time.html#a6db7cae67cbb66306fa126261eccaf5e',1,'push_back_state_and_time']]]
 ];

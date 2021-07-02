@@ -13,8 +13,6 @@ var _aux_bio_cro_8h =
     [ "nitroParms", "structnitro_parms.html", "structnitro_parms" ],
     [ "crop_phenology", "structcrop__phenology.html", "structcrop__phenology" ],
     [ "minerals1", "structcrop__phenology_1_1minerals1.html", "structcrop__phenology_1_1minerals1" ],
-    [ "M_E", "_aux_bio_cro_8h.html#a9bf5d952c5c93c70f9e66c9794d406c9", null ],
-    [ "M_PI", "_aux_bio_cro_8h.html#ae71449b1cc6e6250b91f539153a7a0d3", null ],
     [ "MAXLAY", "_aux_bio_cro_8h.html#a57179778cb6aed95fb9f484b55873d6f", null ],
     [ "SoilType", "_aux_bio_cro_8h.html#a32f5636a03443547a8c316772610c4c1", [
       [ "sand", "_aux_bio_cro_8h.html#a32f5636a03443547a8c316772610c4c1a88336b5bb2a1cc21bac7cf33fd451270", null ],

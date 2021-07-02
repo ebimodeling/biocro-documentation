@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structfrost_parms.html#a7e492e8176f296b394e607f6e6aaeeed":[2,0,54,2],
-"structfrost_parms.html#ab2e84936f862ec5ea263c43004d91ceb":[2,0,54,1],
-"structfrost_parms.html#ac6561f3ade0d5d8062369c736983abe6":[2,0,54,0],
-"structfrost_parms.html#acfef848392e573c5e5869c60f1bf189a":[2,0,54,7],
 "structnitro_parms.html":[2,0,78],
 "structnitro_parms.html#a037b192d95c501c8cd461bc931a1a0f4":[2,0,78,10],
 "structnitro_parms.html#a4020d72bf2f4de6d518eec319f123e2e":[2,0,78,7],

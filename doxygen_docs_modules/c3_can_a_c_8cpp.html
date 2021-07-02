@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('c3_can_a_c_8cpp.html',''); initResizab
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_bio_cro_8h_source.html">BioCro.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c3photo_8hpp_source.html">c3photo.hpp</a>&quot;</code><br />
+<code>#include &quot;../constants.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for c3CanAC.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,12 +104,12 @@ $(document).ready(function(){initNavTree('c3_can_a_c_8cpp.html',''); initResizab
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="c3_can_a_c_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2module__library_2c3_can_a_c_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2module__library_2c3_can_a_c_8cpp" id="a_2github_2workspace_2source_2src_2module__library_2c3_can_a_c_8cpp">
-<area shape="rect" title=" " alt="" coords="21,5,236,47"/>
-<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="41,95,112,121"/>
-<area shape="rect" href="c3photo_8hpp.html" title=" " alt="" coords="136,95,228,121"/>
-<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="30,169,123,196"/>
-<area shape="rect" title=" " alt="" coords="5,244,52,271"/>
-<area shape="rect" title=" " alt="" coords="77,244,175,271"/>
+<area shape="rect" title=" " alt="" coords="29,5,243,47"/>
+<area shape="rect" href="_bio_cro_8h.html" title=" " alt="" coords="22,95,93,121"/>
+<area shape="rect" title=" " alt="" coords="87,244,185,271"/>
+<area shape="rect" href="c3photo_8hpp.html" title=" " alt="" coords="174,95,266,121"/>
+<area shape="rect" href="_aux_bio_cro_8h.html" title=" " alt="" coords="5,169,99,196"/>
+<area shape="rect" title=" " alt="" coords="15,244,62,271"/>
 </map>
 </div>
 </div>
@@ -370,7 +371,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3_can_a_c_8cpp_source.html#l00001">1</a> of file <a class="el" href="c3_can_a_c_8cpp_source.html">c3CanAC.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00051">Can_Str::Assim</a>, <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">Light_profile::average_absorbed_shortwave</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00018">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00028">c3photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00057">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00055">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00056">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00046">ET_Str::Deltat</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00044">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00045">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00053">Can_Str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00039">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00117">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00515">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00496">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00038">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00032">Light_profile::shaded_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00037">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::sunlit_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00243">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00052">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00043">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00395">WINDprof()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00042">Can_Str::Assim</a>, <a class="el" href="c3photo_8hpp_source.html#l00009">c3_str::Assim</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00027">Light_profile::average_absorbed_shortwave</a>, <a class="el" href="c3_evapo_trans_8cpp_source.html#l00020">c3EvapoTrans()</a>, <a class="el" href="c3photo_8cpp_source.html#l00029">c3photoC()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00048">Can_Str::canopy_conductance</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00046">Can_Str::canopy_transpiration_penman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00047">Can_Str::canopy_transpiration_priestly</a>, <a class="el" href="_bio_cro_8h_source.html#l00012">Light_model::cosine_zenith_angle</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00037">ET_Str::Deltat</a>, <a class="el" href="_bio_cro_8h_source.html#l00011">Light_model::diffuse_irradiance_fraction</a>, <a class="el" href="_bio_cro_8h_source.html#l00010">Light_model::direct_irradiance_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00044">Can_Str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00012">c3_str::GrossAssim</a>, <a class="el" href="c3photo_8hpp_source.html#l00010">c3_str::Gs</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00030">Light_profile::height</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00119">lightME()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00517">LNprof()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00498">RHprof()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00029">Light_profile::shaded_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00023">Light_profile::shaded_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00028">Light_profile::sunlit_fraction</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00021">Light_profile::sunlit_incident_ppfd</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00245">sunML()</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00043">Can_Str::Trans</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00034">ET_Str::TransR</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00397">WINDprof()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3__canopy_8cpp_source.html#l00059">c3_canopy::do_operation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -416,7 +417,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3_can_a_c_8cpp.html">c3CanAC.cpp</a></li>
-    <li class="footer">Generated on Tue Jun 29 2021 17:27:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 2 2021 20:28:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

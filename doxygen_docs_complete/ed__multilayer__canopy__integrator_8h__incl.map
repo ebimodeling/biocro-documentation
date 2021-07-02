@@ -1,12 +1,14 @@
 <map id="/github/workspace/source/src/module_library/ed_multilayer_canopy_integrator.h" name="/github/workspace/source/src/module_library/ed_multilayer_canopy_integrator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="97,5,300,61"/>
-<area shape="rect" id="node2" href="$modules_8h.html" title=" " alt="" coords="91,109,181,136"/>
-<area shape="rect" id="node8" href="$state__map_8h.html" title=" " alt="" coords="272,259,365,285"/>
-<area shape="rect" id="node3" title=" " alt="" coords="31,333,89,360"/>
-<area shape="rect" id="node4" title=" " alt="" coords="29,184,97,211"/>
-<area shape="rect" id="node5" href="$module__helper__functions_8h.html" title=" " alt="" coords="121,184,297,211"/>
-<area shape="rect" id="node6" title=" " alt="" coords="98,259,177,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="201,259,247,285"/>
-<area shape="rect" id="node9" title=" " alt="" coords="210,333,321,360"/>
-<area shape="rect" id="node10" title=" " alt="" coords="345,333,399,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="235,5,438,61"/>
+<area shape="rect" id="node2" href="$modules_8h.html" title=" " alt="" coords="92,109,183,136"/>
+<area shape="rect" id="node8" href="$state__map_8h.html" title=" " alt="" coords="274,273,367,300"/>
+<area shape="rect" id="node11" href="$constants_8h.html" title=" " alt="" coords="386,109,484,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="32,348,91,375"/>
+<area shape="rect" id="node4" title=" " alt="" coords="30,191,98,218"/>
+<area shape="rect" id="node5" href="$module__helper__functions_8h.html" title=" " alt="" coords="123,191,299,218"/>
+<area shape="rect" id="node6" title=" " alt="" coords="100,273,178,300"/>
+<area shape="rect" id="node7" title=" " alt="" coords="202,273,249,300"/>
+<area shape="rect" id="node9" title=" " alt="" coords="212,348,322,375"/>
+<area shape="rect" id="node10" title=" " alt="" coords="346,348,401,375"/>
+<area shape="rect" id="node12" title=" " alt="" coords="374,184,522,225"/>
 </map>

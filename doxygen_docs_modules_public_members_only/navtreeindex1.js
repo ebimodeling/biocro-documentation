@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classfake__solar.html#a3d0310fe870e575fd0258f9e61d5ec7e":[2,0,53,0],
-"classgolden__ratio__hyperbola.html":[2,0,56],
 "classgolden__ratio__hyperbola.html#ae0c44165e4f18f23184aa04b2aa7b1db":[2,0,56,0],
 "classgrimm__soybean__flowering.html":[2,0,57],
 "classgrimm__soybean__flowering.html#ad575e2e71e7c544859b2dcb1aca16f02":[2,0,57,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "ed__multilayer__canopy__integrator_8h.html":[3,0,1,0,49],
 "ed__multilayer__canopy__integrator_8h_source.html":[3,0,1,0,49],
 "ed__multilayer__canopy__properties_8h.html":[3,0,1,0,50],
-"ed__multilayer__canopy__properties_8h_source.html":[3,0,1,0,50]
+"ed__multilayer__canopy__properties_8h_source.html":[3,0,1,0,50],
+"ed__nikolov__conductance_8h.html":[3,0,1,0,51],
+"ed__nikolov__conductance_8h.html#a0b37c5938e82da1fb19ed599f7c71217":[3,0,1,0,51,6]
 };

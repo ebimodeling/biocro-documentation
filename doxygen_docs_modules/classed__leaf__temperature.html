@@ -186,12 +186,12 @@ Private Attributes</h2></td></tr>
 <p>The evapotranspiration rate can be determined according to:</p>
 <p>E = g_s * (w_s - w_i), (4)</p>
 <p>where g_s is the stomatal conductance to water (mol / m^2 / s), w_s is the mole fraction of water vapor at the leaf surface (mol / mol), and w_i is the mole fraction of water vapor inside the leaf (mol / mol).</p>
-<p>Finally, we assume that the boundary layer conductances for water and heat are identical following Equation 14.4j in Thornley. On page 408, he writes: "For turbulent flow, transport of both heat and water vapor is dominated by eddy
-diffusion so that the processes are the same."</p>
+<p>Finally, we assume that the boundary layer conductances for water and heat are identical following Equation 14.4j in Thornley. On page 408, he writes: "For turbulent flow, transport of both heat and water vapor is dominated by
+eddy diffusion so that the processes are the same."</p>
 <p>Note that Campbell &amp; Norman take a more nuanced approach, as seen in Table 7.6 on page 109. Here the conductances for heat and vapor transport are the same in the "free" convection regime where buoyancy effects dominate, but in the "forced" convection regime the heat conductance is smaller by a factor of 0.135 / 0.147 = 0.918. In the future we may wish to account for this by adding boundary layer conductance to heat as an additional output from the boundary layer conductance module.</p>
 <p>Note that several terms on the right hand side of Equation 3 depend on the leaf temperature, either explicitly or implicitly. Therefore, it is expected that a self-consistent value for the leaf temperature will be found using an se_solver. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00064">64</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00065">65</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a66540879455f9da372b9e56ce3307f96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66540879455f9da372b9e56ce3307f96">&#9670;&nbsp;</a></span>ed_leaf_temperature()</h2>
@@ -227,7 +227,7 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00067">67</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00068">68</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
 </div>
 </div>
@@ -255,9 +255,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">139</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">142</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__leaf__temperature_8h_source.html#l00098">conductance_boundary_h2o</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00099">conductance_stomatal_h2o</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00096">latent_heat_vaporization_of_water</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00094">long_wave_energy_loss_leaf</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00101">mole_fraction_h2o_intercellular</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00100">mole_fraction_h2o_leaf_surface</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00108">sensible_heat_loss_op</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00095">solar_energy_absorbed_leaf</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00097">specific_heat_of_air</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00102">temperature_air</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00105">temperature_leaf_op</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00107">transpiration_energy_op</a>, and <a class="el" href="ed__leaf__temperature_8h_source.html#l00106">transpiration_rate_op</a>.</p>
+<p class="reference">References <a class="el" href="ed__leaf__temperature_8h_source.html#l00101">conductance_boundary_h2o</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00102">conductance_stomatal_h2o</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00099">latent_heat_vaporization_of_water</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00097">long_wave_energy_loss_leaf</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00104">mole_fraction_h2o_intercellular</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00103">mole_fraction_h2o_leaf_surface</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00111">sensible_heat_loss_op</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00098">solar_energy_absorbed_leaf</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00100">specific_heat_of_air</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00105">temperature_air</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00108">temperature_leaf_op</a>, <a class="el" href="ed__leaf__temperature_8h_source.html#l00110">transpiration_energy_op</a>, and <a class="el" href="ed__leaf__temperature_8h_source.html#l00109">transpiration_rate_op</a>.</p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00114">114</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00117">117</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00129">129</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00132">132</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
 </div>
 </div>
@@ -336,9 +336,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00098">98</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00101">101</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -362,9 +362,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00099">99</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00102">102</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +388,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00096">96</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00099">99</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +414,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00094">94</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00097">97</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -440,9 +440,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00101">101</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00104">104</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -466,9 +466,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00100">100</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00103">103</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -492,9 +492,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00108">108</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00111">111</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -518,9 +518,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00095">95</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00098">98</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -544,9 +544,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00097">97</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00100">100</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +570,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00102">102</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00105">105</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -596,9 +596,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00105">105</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00108">108</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -622,9 +622,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00107">107</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00110">110</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -648,9 +648,9 @@ diffusion so that the processes are the same."</p>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00106">106</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__leaf__temperature_8h_source.html#l00109">109</a> of file <a class="el" href="ed__leaf__temperature_8h_source.html">ed_leaf_temperature.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00139">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ed__leaf__temperature_8h_source.html#l00142">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -663,7 +663,7 @@ diffusion so that the processes are the same."</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__leaf__temperature.html">ed_leaf_temperature</a></li>
-    <li class="footer">Generated on Tue Jun 29 2021 17:27:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 2 2021 20:28:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"no__leaf__resp__neg__assim__partitioning__growth__calculator_8h.html":[3,0,1,0,84],
-"no__leaf__resp__neg__assim__partitioning__growth__calculator_8h_source.html":[3,0,1,0,84],
 "no__leaf__resp__partitioning__growth__calculator_8hpp.html":[3,0,1,0,85],
 "no__leaf__resp__partitioning__growth__calculator_8hpp_source.html":[3,0,1,0,85],
 "nr__ex_8hpp.html":[3,0,1,0,86],

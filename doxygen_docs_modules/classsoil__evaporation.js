@@ -15,7 +15,6 @@ var classsoil__evaporation =
     [ "soil_wilting_point", "classsoil__evaporation.html#a8b04a61110858d2cb3706a89aec95bd3", null ],
     [ "solar", "classsoil__evaporation.html#ae7efb5bff7d9116303426ce8627bdf2c", null ],
     [ "specific_heat_of_air", "classsoil__evaporation.html#a345bf0d8fd9232d0570dee396c845af2", null ],
-    [ "stefan_boltzman", "classsoil__evaporation.html#aab329890389c4b058b75666db56bcbd6", null ],
     [ "temp", "classsoil__evaporation.html#a677d8e15fc11df2b4559409565c2a269", null ],
     [ "windspeed", "classsoil__evaporation.html#a4e8b922d527ba4c662b5a3a7320f4d2f", null ]
 ];

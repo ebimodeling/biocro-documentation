@@ -35,7 +35,6 @@ var classtwo__layer__soil__profile =
     [ "soil_wilting_point", "classtwo__layer__soil__profile.html#a8b04a61110858d2cb3706a89aec95bd3", null ],
     [ "solar", "classtwo__layer__soil__profile.html#ae7efb5bff7d9116303426ce8627bdf2c", null ],
     [ "specific_heat_of_air", "classtwo__layer__soil__profile.html#a345bf0d8fd9232d0570dee396c845af2", null ],
-    [ "stefan_boltzman", "classtwo__layer__soil__profile.html#aab329890389c4b058b75666db56bcbd6", null ],
     [ "temp", "classtwo__layer__soil__profile.html#a677d8e15fc11df2b4559409565c2a269", null ],
     [ "windspeed", "classtwo__layer__soil__profile.html#a4e8b922d527ba4c662b5a3a7320f4d2f", null ],
     [ "wsFun", "classtwo__layer__soil__profile.html#a4d64589e1f885c7a069adc9bb4e31a69", null ]

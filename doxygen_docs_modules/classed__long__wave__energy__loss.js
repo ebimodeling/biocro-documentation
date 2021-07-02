@@ -2,8 +2,8 @@ var classed__long__wave__energy__loss =
 [
     [ "ed_long_wave_energy_loss", "classed__long__wave__energy__loss.html#ac33a384770797f93ac4d67b3bdc8b619", null ],
     [ "do_operation", "classed__long__wave__energy__loss.html#aba36ef6feb82085d0a909a9b5998e3d8", null ],
-    [ "emissivity_leaf_ip", "classed__long__wave__energy__loss.html#aa5a85820b79937a7552931dadbc923a8", null ],
+    [ "emissivity_leaf", "classed__long__wave__energy__loss.html#a09860275d3dbe8f39f1effe7f6e2339d", null ],
     [ "long_wave_energy_loss_leaf_op", "classed__long__wave__energy__loss.html#ab266c068ef098cadb86f69d20266e20a", null ],
-    [ "temperature_air_ip", "classed__long__wave__energy__loss.html#ac63c97f9467e03bc37d32004c7e7ea6a", null ],
-    [ "temperature_leaf_ip", "classed__long__wave__energy__loss.html#a5bad0bb4be07567fb982f60e360b1b66", null ]
+    [ "temperature_air", "classed__long__wave__energy__loss.html#a25bcce655d45dfd99af5c50b5532300c", null ],
+    [ "temperature_leaf", "classed__long__wave__energy__loss.html#a7891e9da08561d4ddce1e1625f32a9ec", null ]
 ];

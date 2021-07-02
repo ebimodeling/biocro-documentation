@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classed__boundary__conductance__quadrature.html#a9f069384cda2498a81847df18293ea4b":[2,0,24,2],
-"classed__boundary__conductance__quadrature.html#aba36ef6feb82085d0a909a9b5998e3d8":[2,0,24,1],
 "classed__c4__leaf__photosynthesis.html":[2,0,25],
 "classed__c4__leaf__photosynthesis.html#a243c732c4e41d27978972f303d5db218":[2,0,25,12],
 "classed__c4__leaf__photosynthesis.html#a25bcce655d45dfd99af5c50b5532300c":[2,0,25,18],
@@ -207,12 +205,12 @@ var NAVTREEINDEX2 =
 "classed__leaf__temperature.html#ad266373a7bd989fea84b990a0a491d32":[2,0,35,6],
 "classed__leaf__temperature.html#ae94550ba8928700b64992a79b711b33b":[2,0,35,8],
 "classed__long__wave__energy__loss.html":[2,0,36],
-"classed__long__wave__energy__loss.html#a5bad0bb4be07567fb982f60e360b1b66":[2,0,36,5],
-"classed__long__wave__energy__loss.html#aa5a85820b79937a7552931dadbc923a8":[2,0,36,2],
+"classed__long__wave__energy__loss.html#a09860275d3dbe8f39f1effe7f6e2339d":[2,0,36,2],
+"classed__long__wave__energy__loss.html#a25bcce655d45dfd99af5c50b5532300c":[2,0,36,4],
+"classed__long__wave__energy__loss.html#a7891e9da08561d4ddce1e1625f32a9ec":[2,0,36,5],
 "classed__long__wave__energy__loss.html#ab266c068ef098cadb86f69d20266e20a":[2,0,36,3],
 "classed__long__wave__energy__loss.html#aba36ef6feb82085d0a909a9b5998e3d8":[2,0,36,1],
 "classed__long__wave__energy__loss.html#ac33a384770797f93ac4d67b3bdc8b619":[2,0,36,0],
-"classed__long__wave__energy__loss.html#ac63c97f9467e03bc37d32004c7e7ea6a":[2,0,36,4],
 "classed__multilayer__canopy__integrator.html":[2,0,37],
 "classed__multilayer__canopy__integrator.html#a0c134eda9135e32abdcd6bba69ecddb1":[2,0,37,12],
 "classed__multilayer__canopy__integrator.html#a17a2b40ddfd4e983e811487ae3715dcb":[2,0,37,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "classed__multilayer__canopy__properties.html#a613c3fd763f6736c1c71134c4b791e14":[2,0,38,18],
 "classed__multilayer__canopy__properties.html#a6d168c19e1953ea4c08eda55704cbc86":[2,0,38,19],
 "classed__multilayer__canopy__properties.html#a6f67da21f6e79f0947abccc50100475d":[2,0,38,21],
-"classed__multilayer__canopy__properties.html#a6f91df5d2a45af43347e0e67fc2e0d77":[2,0,38,13]
+"classed__multilayer__canopy__properties.html#a6f91df5d2a45af43347e0e67fc2e0d77":[2,0,38,13],
+"classed__multilayer__canopy__properties.html#a6ffc57c502c9b3dd079a523990df0d68":[2,0,38,26],
+"classed__multilayer__canopy__properties.html#a739c210020ca179054ffde8e0f5fea8d":[2,0,38,10]
 };
