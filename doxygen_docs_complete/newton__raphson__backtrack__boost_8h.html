@@ -150,14 +150,14 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnewton__raphson__backtrack__boost.html">newton_raphson_backtrack_boost</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements the backtracking Newton-Raphson method for solving simultaneous equations, as described in section 9.7 of Numerical Recipes in C.  <a href="classnewton__raphson__backtrack__boost.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements the backtracking Newton-Raphson method for solving simultaneous equations, as described in section 9.7 of Numerical Recipes in C. Matrix operations are accomplished using the boost ublas library.  <a href="classnewton__raphson__backtrack__boost.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8814a3b63c3ea2185a89df10e22f1ab2"><td class="memTemplParams" colspan="2">template&lt;typename equation_ptr_type , typename vector_type &gt; </td></tr>
 <tr class="memitem:a8814a3b63c3ea2185a89df10e22f1ab2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="newton__raphson__backtrack__boost_8h.html#a8814a3b63c3ea2185a89df10e22f1ab2">newton_raphson_line_search_boost</a> (vector_type const &amp;lower_bounds, vector_type const &amp;upper_bounds, double min_rescale_factor, double min_step_factor, double f_decrease_factor, boost::numeric::ublas::vector&lt; double &gt; direction, boost::numeric::ublas::vector&lt; double &gt; const &amp;F_vec_old, boost::numeric::ublas::matrix&lt; double &gt; const &amp;jacobian, equation_ptr_type const &amp;F_vec, vector_type const &amp;x_old, vector_type &amp;x_new, vector_type &amp;F_vec_new)</td></tr>
-<tr class="memdesc:a8814a3b63c3ea2185a89df10e22f1ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches along a line for a point that sufficiently decreases the non-negative scalar-valued function f_scalar = 0.5 * |F_vec|^2, where F_vec is the vector-valued function whose root is being found by the calling function.  <a href="newton__raphson__backtrack__boost_8h.html#a8814a3b63c3ea2185a89df10e22f1ab2">More...</a><br /></td></tr>
+<tr class="memdesc:a8814a3b63c3ea2185a89df10e22f1ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches along a line for a point that sufficiently decreases the non-negative scalar-valued function f_scalar = 0.5 * |F_vec|^2, where F_vec is the vector-valued function whose root is being found by the calling function. Guesses are determined by x_new = x_old + lambda * direction. Here <code>direction</code> is typically the Newton-Raphson step and <code>lambda</code> is a number in (0,1]. We begin with the full step (lambda = 1). If this lambda value is rejected, we try smaller values until f_scalar is found to decrease by a sufficient amount. See section 9.7 of Numerical Recipes in C.  <a href="newton__raphson__backtrack__boost_8h.html#a8814a3b63c3ea2185a89df10e22f1ab2">More...</a><br /></td></tr>
 <tr class="separator:a8814a3b63c3ea2185a89df10e22f1ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -252,8 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Searches along a line for a point that sufficiently decreases the non-negative scalar-valued function f_scalar = 0.5 * |F_vec|^2, where F_vec is the vector-valued function whose root is being found by the calling function. </p>
-<p>Guesses are determined by x_new = x_old + lambda * direction. Here <code>direction</code> is typically the Newton-Raphson step and <code>lambda</code> is a number in (0,1]. We begin with the full step (lambda = 1). If this lambda value is rejected, we try smaller values until f_scalar is found to decrease by a sufficient amount. See section 9.7 of Numerical Recipes in C. </p>
+<p>Searches along a line for a point that sufficiently decreases the non-negative scalar-valued function f_scalar = 0.5 * |F_vec|^2, where F_vec is the vector-valued function whose root is being found by the calling function. Guesses are determined by x_new = x_old + lambda * direction. Here <code>direction</code> is typically the Newton-Raphson step and <code>lambda</code> is a number in (0,1]. We begin with the full step (lambda = 1). If this lambda value is rejected, we try smaller values until f_scalar is found to decrease by a sufficient amount. See section 9.7 of Numerical Recipes in C. </p>
 
 <p class="definition">Definition at line <a class="el" href="newton__raphson__backtrack__boost_8h_source.html#l00026">26</a> of file <a class="el" href="newton__raphson__backtrack__boost_8h_source.html">newton_raphson_backtrack_boost.h</a>.</p>
 
@@ -307,7 +306,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:28:13 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:58:16 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

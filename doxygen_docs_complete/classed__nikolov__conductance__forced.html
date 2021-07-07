@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Calculates forced boundary layer conductance for water according to the model in Nikolov et al.  
+<p>Calculates forced boundary layer conductance for water according to the model in Nikolov et al. Ecological Modelling 80, 205–235 (1995). Currently only intended for use by Ed.  
  <a href="classed__nikolov__conductance__forced.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>&gt;</code></p>
@@ -90,7 +90,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__nikolov__conductance__forced__inherit__graph.png" border="0" usemap="#aed__nikolov__conductance__forced_inherit__map" alt="Inheritance graph"/></div>
 <map name="aed__nikolov__conductance__forced_inherit__map" id="aed__nikolov__conductance__forced_inherit__map">
-<area shape="rect" title="Calculates forced boundary layer conductance for water according to the model in Nikolov et al." alt="" coords="5,155,171,196"/>
+<area shape="rect" title="Calculates forced boundary layer conductance for water according to the model in Nikolov et al...." alt="" coords="5,155,171,196"/>
 <area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="36,80,140,107"/>
 <area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="56,5,120,32"/>
 </map>
@@ -102,7 +102,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__nikolov__conductance__forced__coll__graph.png" border="0" usemap="#aed__nikolov__conductance__forced_coll__map" alt="Collaboration graph"/></div>
 <map name="aed__nikolov__conductance__forced_coll__map" id="aed__nikolov__conductance__forced_coll__map">
-<area shape="rect" title="Calculates forced boundary layer conductance for water according to the model in Nikolov et al." alt="" coords="5,155,171,196"/>
+<area shape="rect" title="Calculates forced boundary layer conductance for water according to the model in Nikolov et al...." alt="" coords="5,155,171,196"/>
 <area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="36,80,140,107"/>
 <area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="56,5,120,32"/>
 </map>
@@ -168,8 +168,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculates forced boundary layer conductance for water according to the model in Nikolov et al. </p>
-<p>Ecological Modelling 80, 205–235 (1995). Currently only intended for use by Ed.</p>
+<div class="textblock"><p>Calculates forced boundary layer conductance for water according to the model in Nikolov et al. Ecological Modelling 80, 205–235 (1995). Currently only intended for use by Ed. </p>
 <p>Discussion of conductance units and assumptions about temperature:</p>
 <p>In the Nikolov paper, conductances are expressed in units of m / s. This is appropriate when calculating an energy flux (units: J / m^2 / s) driven by a gas pressure gradient (units: Pa = N / m^2 = J / m^3). However, in BioCro we think of molecular fluxes being driven by a gradient in the mole fraction of a gas.</p>
 <p>To shift between these two conventions, note that the internal energy of a gas is proportional to its temperature and the number of molecules according to E = n * R * T, where R is the ideal gas constant, n is the number of moles, and T is the temperature. So if molecular conductance is defined according to</p>
@@ -254,7 +253,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00129">129</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__nikolov__conductance_8h_source.html#l00101">atmospheric_pressure_ip</a>, <a class="el" href="constants_8h_source.html#l00023">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00190">check_error_conditions()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00106">conductance_boundary_h2o_forced_op</a>, <a class="el" href="constants_8h_source.html#l00015">calculation_constants::eps_zero</a>, <a class="el" href="modules_8h_source.html#l00045">Module::get_name()</a>, <a class="el" href="constants_8h_source.html#l00035">physical_constants::ideal_gas_constant</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00103">leafwidth_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00104">nikolov_cf_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00100">temperature_air_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00014">nikolov::temperature_exponent</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00015">nikolov::temperature_offset</a>, <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00102">windspeed_ip</a>.</p>
+<p class="reference">References <a class="el" href="ed__nikolov__conductance_8h_source.html#l00101">atmospheric_pressure_ip</a>, <a class="el" href="constants_8h_source.html#l00032">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00190">check_error_conditions()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00106">conductance_boundary_h2o_forced_op</a>, <a class="el" href="constants_8h_source.html#l00023">calculation_constants::eps_zero</a>, <a class="el" href="modules_8h_source.html#l00045">Module::get_name()</a>, <a class="el" href="constants_8h_source.html#l00062">physical_constants::ideal_gas_constant</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00103">leafwidth_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00104">nikolov_cf_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00100">temperature_air_ip</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00014">nikolov::temperature_exponent</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00015">nikolov::temperature_offset</a>, <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00102">windspeed_ip</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -263,7 +262,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classed__nikolov__conductance__forced_aba36ef6feb82085d0a909a9b5998e3d8_cgraph.png" border="0" usemap="#aclassed__nikolov__conductance__forced_aba36ef6feb82085d0a909a9b5998e3d8_cgraph" alt=""/></div>
 <map name="aclassed__nikolov__conductance__forced_aba36ef6feb82085d0a909a9b5998e3d8_cgraph" id="aclassed__nikolov__conductance__forced_aba36ef6feb82085d0a909a9b5998e3d8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,101,83"/>
-<area shape="rect" href="module__helper__functions_8cpp.html#a57dc78c0a1397cf148187ddd09382f00" title="Checks over an error_map for problems." alt="" coords="149,5,305,32"/>
+<area shape="rect" href="module__helper__functions_8cpp.html#a57dc78c0a1397cf148187ddd09382f00" title="Checks over an error_map for problems. The error_map should pair a string description of an important..." alt="" coords="149,5,305,32"/>
 <area shape="rect" href="class_module.html#a0789ba541bd61b1b394ff4d411a40790" title=" " alt="" coords="164,56,291,83"/>
 <area shape="rect" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title="The output parameters of a steady state module are unique, so we can just overwrite the previously st..." alt="" coords="153,107,302,133"/>
 </map>
@@ -488,7 +487,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:28:14 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:58:16 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

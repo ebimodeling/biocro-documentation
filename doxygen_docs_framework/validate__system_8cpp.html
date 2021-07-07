@@ -128,14 +128,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:aba001562bc25daec2902a32b6fac72d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds quantities that are defined multiple times in a vector of strings.  <a href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9">More...</a><br /></td></tr>
 <tr class="separator:aba001562bc25daec2902a32b6fac72d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3304d4593d3a71799f61af8eb18774f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f">find_undefined_module_inputs</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> quantity_names, std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
-<tr class="memdesc:af3304d4593d3a71799f61af8eb18774f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds quantities that are required by modules but are not defined by quantity_names.  <a href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f">More...</a><br /></td></tr>
+<tr class="memdesc:af3304d4593d3a71799f61af8eb18774f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds quantities that are required by modules but are not defined by quantity_names. The output includes the module associated with each undefined input.  <a href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f">More...</a><br /></td></tr>
 <tr class="separator:af3304d4593d3a71799f61af8eb18774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa25f5bb56b550c099a38bc4dab7576e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6">find_undefined_module_outputs</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> quantity_names, std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
-<tr class="memdesc:aa25f5bb56b550c099a38bc4dab7576e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds quantities that are output by modules but are not defined by quantity_names.  <a href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6">More...</a><br /></td></tr>
+<tr class="memdesc:aa25f5bb56b550c099a38bc4dab7576e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds quantities that are output by modules but are not defined by quantity_names. The output includes the module associated with each undefined output.  <a href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6">More...</a><br /></td></tr>
 <tr class="separator:aa25f5bb56b550c099a38bc4dab7576e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dd87bd1a34f11b6b2df3c5669cdfbbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#a2dd87bd1a34f11b6b2df3c5669cdfbbd">find_misordered_modules</a> (std::vector&lt; <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> &gt; state_maps, std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
-<tr class="memdesc:a2dd87bd1a34f11b6b2df3c5669cdfbbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds modules that access variables before their values have been calculated.  <a href="validate__system_8cpp.html#a2dd87bd1a34f11b6b2df3c5669cdfbbd">More...</a><br /></td></tr>
-<tr class="separator:a2dd87bd1a34f11b6b2df3c5669cdfbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95935e4a12b3c26794fa8d67f88e7d7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a296e7261543d479bb5717d96d3fd2285">string_set</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#a95935e4a12b3c26794fa8d67f88e7d7a">find_unique_module_inputs</a> (std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
 <tr class="memdesc:a95935e4a12b3c26794fa8d67f88e7d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a set containing all unique inputs to the modules.  <a href="validate__system_8cpp.html#a95935e4a12b3c26794fa8d67f88e7d7a">More...</a><br /></td></tr>
 <tr class="separator:a95935e4a12b3c26794fa8d67f88e7d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,7 +140,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a96840539e64ce8ccec9df05cc320222e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a set containing all unique outputs produced by the modules.  <a href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e">More...</a><br /></td></tr>
 <tr class="separator:a96840539e64ce8ccec9df05cc320222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb01cae7442e3f44e4431f42c5fd79e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="validate__system_8h.html#a296e7261543d479bb5717d96d3fd2285">string_set</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e">find_strictly_required_inputs</a> (std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
-<tr class="memdesc:abeb01cae7442e3f44e4431f42c5fd79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all inputs to the set of modules that are not outputs produced by previous modules.  <a href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e">More...</a><br /></td></tr>
+<tr class="memdesc:abeb01cae7442e3f44e4431f42c5fd79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector containing all inputs to the set of modules that are not outputs produced by previous modules. Note that the order of modules is important here.  <a href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e">More...</a><br /></td></tr>
 <tr class="separator:abeb01cae7442e3f44e4431f42c5fd79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4319836f9eb8ed82828f3f12fca3142e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#a4319836f9eb8ed82828f3f12fca3142e">find_unused_input_parameters</a> (std::vector&lt; <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> &gt; state_maps, std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vectors)</td></tr>
 <tr class="memdesc:a4319836f9eb8ed82828f3f12fca3142e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns parameters in the state maps that are not used as inputs to the modules.  <a href="validate__system_8cpp.html#a4319836f9eb8ed82828f3f12fca3142e">More...</a><br /></td></tr>
@@ -164,7 +161,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acbca89ff1657b5c4b07ad672dbd47f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an indented line to a message.  <a href="validate__system_8cpp.html#acbca89ff1657b5c4b07ad672dbd47f1a">More...</a><br /></td></tr>
 <tr class="separator:acbca89ff1657b5c4b07ad672dbd47f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae000a5a42ee470ce3b44ae220dfeae4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d">insert_quantity_name_if_new</a> (std::string quantity_name, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &amp;target_vector, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &amp;duplicates)</td></tr>
-<tr class="memdesc:ae000a5a42ee470ce3b44ae220dfeae4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts quantity_name into target_vector if it is not already there.  <a href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d">More...</a><br /></td></tr>
+<tr class="memdesc:ae000a5a42ee470ce3b44ae220dfeae4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate, quantity_name is inserted into duplicates.  <a href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d">More...</a><br /></td></tr>
 <tr class="separator:ae000a5a42ee470ce3b44ae220dfeae4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68ab75e71590ce4a83b56f348360dced"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">insert_module_param_if_undefined</a> (std::string param_name, std::string module_name, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> defined_quantity_names, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &amp;undefined_module_names)</td></tr>
 <tr class="memdesc:a68ab75e71590ce4a83b56f348360dced"><td class="mdescLeft">&#160;</td><td class="mdescRight">If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_module_names that includes param_name and its associated module_name.  <a href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced">More...</a><br /></td></tr>
@@ -222,9 +219,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string consisting of the input message followed num_spaces space characters followed by text_to_add. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00613">613</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00594">594</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8h_source.html#l00162">create_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="validate__system_8h_source.html#l00159">create_message()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -236,7 +233,7 @@ Functions</h2></td></tr>
 <area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="660,97,779,124"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#a4116e1accbd144688ad8b523c9145743" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="453,57,603,98"/>
 <area shape="rect" href="validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="234,5,390,32"/>
-<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="444,188,612,215"/>
+<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc. This function should be used i..." alt="" coords="444,188,612,215"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="453,122,603,163"/>
 <area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="229,57,395,98"/>
 <area shape="rect" href="_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,72,180,99"/>
@@ -303,7 +300,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00144">144</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8h_source.html#l00162">create_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00525">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00330">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__system_8cpp_source.html#l00554">find_mischaracterized_modules()</a>, <a class="el" href="validate__system_8cpp_source.html#l00502">find_static_output_parameters()</a>, <a class="el" href="validate__system_8cpp_source.html#l00420">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00479">find_unused_input_parameters()</a>, <a class="el" href="validate__system_8h_source.html#l00262">get_defined_quantity_names()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00327">get_evaluation_order()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00241">has_cyclic_dependency()</a>, and <a class="el" href="module__dependency__utilities_8cpp_source.html#l00257">order_ok()</a>.</p>
+<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8h_source.html#l00159">create_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00505">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00331">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__system_8cpp_source.html#l00535">find_mischaracterized_modules()</a>, <a class="el" href="validate__system_8cpp_source.html#l00481">find_static_output_parameters()</a>, <a class="el" href="validate__system_8cpp_source.html#l00396">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00457">find_unused_input_parameters()</a>, <a class="el" href="validate__system_8h_source.html#l00259">get_defined_quantity_names()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00337">get_evaluation_order()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00251">has_cyclic_dependency()</a>, and <a class="el" href="module__dependency__utilities_8cpp_source.html#l00267">order_ok()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__system_8cpp_source.html#l00011">R_validate_system_inputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -329,7 +326,7 @@ Functions</h2></td></tr>
 <area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="474,5,601,32"/>
 <area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="469,107,605,149"/>
 <area shape="rect" href="validate__system_8cpp.html#a222beed56ca8861db9da56282dd002aa" title="Returns a vector of unique_ptrs to module objects." alt="" coords="471,56,603,83"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="465,458,610,499"/>
+<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="465,458,610,499"/>
 <area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="477,290,597,331"/>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="688,356,737,383"/>
 <area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="474,407,601,433"/>
@@ -428,9 +425,9 @@ Functions</h2></td></tr>
 
 <p>Returns modules that are not compatible with adaptive step size algorithms. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00525">525</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00505">505</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00420">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00438">find_unique_module_outputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00583">get_module_vector()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00396">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00564">get_module_vector()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -488,9 +485,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A alphabetized list (presented as a vector of strings) of all quantities appearing more than once in the input list. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00330">330</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00331">331</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00636">insert_quantity_name_if_new()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00618">insert_quantity_name_if_new()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -501,7 +498,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="validate__system_8cpp_aba001562bc25daec2902a32b6fac72d9_cgraph.png" border="0" usemap="#avalidate__system_8cpp_aba001562bc25daec2902a32b6fac72d9_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_aba001562bc25daec2902a32b6fac72d9_cgraph" id="avalidate__system_8cpp_aba001562bc25daec2902a32b6fac72d9_cgraph">
 <area shape="rect" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="5,5,159,47"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="207,5,352,47"/>
+<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="207,5,352,47"/>
 </map>
 </div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -552,9 +549,9 @@ Functions</h2></td></tr>
 
 <p>Returns mischaracterized modules, i.e., steady-state modules in the derivative module list or vice-versa. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00554">554</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00535">535</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00420">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00438">find_unique_module_outputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00583">get_module_vector()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00396">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00564">get_module_vector()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -580,54 +577,6 @@ Functions</h2></td></tr>
 <area shape="rect" title="Returns mischaracterized modules, i.e., steady&#45;state modules in the derivative module list or vice&#45;ve..." alt="" coords="432,5,579,47"/>
 <area shape="rect" href="validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="228,13,384,39"/>
 <area shape="rect" href="_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,13,180,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2dd87bd1a34f11b6b2df3c5669cdfbbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dd87bd1a34f11b6b2df3c5669cdfbbd">&#9670;&nbsp;</a></span>find_misordered_modules()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> find_misordered_modules </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> &gt;&#160;</td>
-          <td class="paramname"><em>state_maps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt;&#160;</td>
-          <td class="paramname"><em>module_name_vectors</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Finds modules that access variables before their values have been calculated. </p>
-
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00393">393</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00304">all_are_in_list()</a>, and <a class="el" href="validate__system_8h_source.html#l00262">get_defined_quantity_names()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="validate__system_8cpp_a2dd87bd1a34f11b6b2df3c5669cdfbbd_cgraph.png" border="0" usemap="#avalidate__system_8cpp_a2dd87bd1a34f11b6b2df3c5669cdfbbd_cgraph" alt=""/></div>
-<map name="avalidate__system_8cpp_a2dd87bd1a34f11b6b2df3c5669cdfbbd_cgraph" id="avalidate__system_8cpp_a2dd87bd1a34f11b6b2df3c5669cdfbbd_cgraph">
-<area shape="rect" title="Finds modules that access variables before their values have been calculated." alt="" coords="5,35,175,61"/>
-<area shape="rect" href="validate__system_8h.html#aa2cbf30004d8adf86fb89601a0d5aa85" title="Checks whether all of the elements of list find_these are in the list in_this." alt="" coords="242,5,343,32"/>
-<area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="223,57,363,98"/>
-<area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="411,64,537,91"/>
-<area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="585,64,635,91"/>
 </map>
 </div>
 
@@ -661,16 +610,16 @@ Functions</h2></td></tr>
 
 <p>Returns parameters in the state maps that are not provided as outputs from the modules. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00502">502</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00481">481</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00438">find_unique_module_outputs()</a>, <a class="el" href="validate__system_8h_source.html#l00290">insert_quantity_if_undefined()</a>, <a class="el" href="state__map_8h_source.html#l00052">keys()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, <a class="el" href="validate__system_8h_source.html#l00287">insert_quantity_if_undefined()</a>, <a class="el" href="state__map_8h_source.html#l00056">keys()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>.</p>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a280618a73668f85935954999dac254cc_cgraph.png" border="0" usemap="#avalidate__system_8cpp_a280618a73668f85935954999dac254cc_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a280618a73668f85935954999dac254cc_cgraph" id="avalidate__system_8cpp_a280618a73668f85935954999dac254cc_cgraph">
 <area shape="rect" title="Returns parameters in the state maps that are not provided as outputs from the modules." alt="" coords="5,71,129,112"/>
@@ -679,11 +628,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="221,137,270,163"/>
 </map>
 </div>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a280618a73668f85935954999dac254cc_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a280618a73668f85935954999dac254cc_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a280618a73668f85935954999dac254cc_icgraph" id="avalidate__system_8cpp_a280618a73668f85935954999dac254cc_icgraph">
 <area shape="rect" title="Returns parameters in the state maps that are not provided as outputs from the modules." alt="" coords="432,5,556,47"/>
@@ -710,19 +659,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a vector containing all inputs to the set of modules that are not outputs produced by previous modules. </p>
-<p>Note that the order of modules is important here. </p>
+<p>Returns a vector containing all inputs to the set of modules that are not outputs produced by previous modules. Note that the order of modules is important here. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00457">457</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00434">434</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00290">insert_quantity_if_undefined()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00680">string_vector_to_string_set()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00287">insert_quantity_if_undefined()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00662">string_vector_to_string_set()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">analyze_simultaneous_equations_inputs()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00233">get_unknown_quantities()</a>.</p>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">analyze_simultaneous_equations_inputs()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_cgraph.png" border="0" usemap="#avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_cgraph" id="avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_cgraph">
 <area shape="rect" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="5,35,145,76"/>
@@ -730,11 +678,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="193,71,372,98"/>
 </map>
 </div>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_icgraph.png" border="0" usemap="#avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_icgraph" id="avalidate__system_8cpp_abeb01cae7442e3f44e4431f42c5fd79e_icgraph">
 <area shape="rect" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="631,31,771,72"/>
@@ -774,33 +722,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finds quantities that are required by modules but are not defined by quantity_names. </p>
-<p>The output includes the module associated with each undefined input. </p>
+<p>Finds quantities that are required by modules but are not defined by quantity_names. The output includes the module associated with each undefined input. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00348">348</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00350">350</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00653">insert_module_param_if_undefined()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00635">insert_module_param_if_undefined()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_cgraph.png" border="0" usemap="#avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_cgraph" id="avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_cgraph">
-<area shape="rect" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="5,5,159,47"/>
+<area shape="rect" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="5,5,159,47"/>
 <area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="207,5,353,47"/>
 </map>
 </div>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_icgraph.png" border="0" usemap="#avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_icgraph" id="avalidate__system_8cpp_af3304d4593d3a71799f61af8eb18774f_icgraph">
-<area shape="rect" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="435,100,588,141"/>
+<area shape="rect" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="435,100,588,141"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,71,383,112"/>
 <area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,137,387,163"/>
 <area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="9,5,176,47"/>
@@ -838,33 +785,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finds quantities that are output by modules but are not defined by quantity_names. </p>
-<p>The output includes the module associated with each undefined output. </p>
+<p>Finds quantities that are output by modules but are not defined by quantity_names. The output includes the module associated with each undefined output. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00371">371</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00374">374</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00653">insert_module_param_if_undefined()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00635">insert_module_param_if_undefined()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_cgraph.png" border="0" usemap="#avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_cgraph" id="avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_cgraph">
-<area shape="rect" title="Finds quantities that are output by modules but are not defined by quantity_names." alt="" coords="5,5,159,47"/>
+<area shape="rect" title="Finds quantities that are output by modules but are not defined by quantity_names...." alt="" coords="5,5,159,47"/>
 <area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="207,5,353,47"/>
 </map>
 </div>
-<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_icgraph.png" border="0" usemap="#avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_icgraph" id="avalidate__system_8cpp_aa25f5bb56b550c099a38bc4dab7576e6_icgraph">
-<area shape="rect" title="Finds quantities that are output by modules but are not defined by quantity_names." alt="" coords="435,23,588,65"/>
+<area shape="rect" title="Finds quantities that are output by modules but are not defined by quantity_names...." alt="" coords="435,23,588,65"/>
 <area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,31,387,57"/>
 <area shape="rect" href="_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,5,180,32"/>
 <area shape="rect" href="class_system.html#a9899b5a77ca518ed2e3774898d7534b6" title=" " alt="" coords="35,56,151,83"/>
@@ -891,14 +837,14 @@ Functions</h2></td></tr>
 
 <p>Returns a set containing all unique inputs to the modules. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00420">420</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00396">396</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00525">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00554">find_mischaracterized_modules()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00479">find_unused_input_parameters()</a>.</p>
-<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00505">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00535">find_mischaracterized_modules()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00457">find_unused_input_parameters()</a>.</p>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a95935e4a12b3c26794fa8d67f88e7d7a_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a95935e4a12b3c26794fa8d67f88e7d7a_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a95935e4a12b3c26794fa8d67f88e7d7a_icgraph" id="avalidate__system_8cpp_a95935e4a12b3c26794fa8d67f88e7d7a_icgraph">
 <area shape="rect" title="Returns a set containing all unique inputs to the modules." alt="" coords="679,54,815,95"/>
@@ -930,14 +876,14 @@ Functions</h2></td></tr>
 
 <p>Returns a set containing all unique outputs produced by the modules. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00438">438</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00415">415</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">analyze_simultaneous_equations_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00525">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00554">find_mischaracterized_modules()</a>, <a class="el" href="validate__system_8cpp_source.html#l00502">find_static_output_parameters()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00233">get_unknown_quantities()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
-<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">analyze_simultaneous_equations_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00505">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00535">find_mischaracterized_modules()</a>, <a class="el" href="validate__system_8cpp_source.html#l00481">find_static_output_parameters()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a96840539e64ce8ccec9df05cc320222e_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a96840539e64ce8ccec9df05cc320222e_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a96840539e64ce8ccec9df05cc320222e_icgraph" id="avalidate__system_8cpp_a96840539e64ce8ccec9df05cc320222e_icgraph">
 <area shape="rect" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="667,181,803,222"/>
@@ -985,16 +931,16 @@ Functions</h2></td></tr>
 
 <p>Returns parameters in the state maps that are not used as inputs to the modules. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00479">479</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00457">457</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00420">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8h_source.html#l00290">insert_quantity_if_undefined()</a>, <a class="el" href="state__map_8h_source.html#l00052">keys()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00396">find_unique_module_inputs()</a>, <a class="el" href="validate__system_8h_source.html#l00287">insert_quantity_if_undefined()</a>, <a class="el" href="state__map_8h_source.html#l00056">keys()</a>, and <a class="el" href="parameters_8h_source.html#l00053">parameters</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>.</p>
-<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_cgraph.png" border="0" usemap="#avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_cgraph" id="avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_cgraph">
 <area shape="rect" title="Returns parameters in the state maps that are not used as inputs to the modules." alt="" coords="5,78,204,105"/>
@@ -1003,11 +949,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="295,137,345,163"/>
 </map>
 </div>
-<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_icgraph" id="avalidate__system_8cpp_a4319836f9eb8ed82828f3f12fca3142e_icgraph">
 <area shape="rect" title="Returns parameters in the state maps that are not used as inputs to the modules." alt="" coords="432,5,631,32"/>
@@ -1052,14 +998,14 @@ Functions</h2></td></tr>
 
 <p>Returns a vector of unique_ptrs to module objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00583">583</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00564">564</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00525">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00554">find_mischaracterized_modules()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
-<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00505">find_adaptive_incompatibility()</a>, <a class="el" href="validate__system_8cpp_source.html#l00535">find_mischaracterized_modules()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a222beed56ca8861db9da56282dd002aa_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a222beed56ca8861db9da56282dd002aa_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a222beed56ca8861db9da56282dd002aa_icgraph" id="avalidate__system_8cpp_a222beed56ca8861db9da56282dd002aa_icgraph">
 <area shape="rect" title="Returns a vector of unique_ptrs to module objects." alt="" coords="667,97,799,124"/>
@@ -1114,19 +1060,19 @@ Functions</h2></td></tr>
 
 <p>If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_module_names that includes param_name and its associated module_name. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00653">653</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00635">635</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00348">find_undefined_module_inputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00371">find_undefined_module_outputs()</a>.</p>
-<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00350">find_undefined_module_inputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00374">find_undefined_module_outputs()</a>.</p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a68ab75e71590ce4a83b56f348360dced_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a68ab75e71590ce4a83b56f348360dced_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a68ab75e71590ce4a83b56f348360dced_icgraph" id="avalidate__system_8cpp_a68ab75e71590ce4a83b56f348360dced_icgraph">
 <area shape="rect" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="636,103,783,144"/>
-<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="435,69,588,111"/>
-<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names." alt="" coords="435,135,588,176"/>
+<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="435,69,588,111"/>
+<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names...." alt="" coords="435,135,588,176"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,69,383,111"/>
 <area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,139,387,166"/>
 <area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="9,5,176,47"/>
@@ -1170,8 +1116,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts quantity_name into target_vector if it is not already there. </p>
-<p>In the case of a duplicate, quantity_name is inserted into duplicates.</p>
+<p>Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate, quantity_name is inserted into duplicates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">quantity_name</td><td>A string (the name of a quantity).</td></tr>
@@ -1181,17 +1126,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00636">636</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00618">618</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00330">find_duplicate_quantity_definitions()</a>.</p>
-<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00331">find_duplicate_quantity_definitions()</a>.</p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_ae000a5a42ee470ce3b44ae220dfeae4d_icgraph.png" border="0" usemap="#avalidate__system_8cpp_ae000a5a42ee470ce3b44ae220dfeae4d_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_ae000a5a42ee470ce3b44ae220dfeae4d_icgraph" id="avalidate__system_8cpp_ae000a5a42ee470ce3b44ae220dfeae4d_icgraph">
-<area shape="rect" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="636,129,781,171"/>
+<area shape="rect" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="636,129,781,171"/>
 <area shape="rect" href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="435,129,588,171"/>
 <area shape="rect" href="validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="229,137,385,163"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,71,383,112"/>
@@ -1223,14 +1168,14 @@ Functions</h2></td></tr>
 
 <p>Converts a string_set to a string_vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00667">667</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00649">649</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00233">get_unknown_quantities()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
-<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_a81af0c9fd2ef95fe7d844d49301408d7_icgraph.png" border="0" usemap="#avalidate__system_8cpp_a81af0c9fd2ef95fe7d844d49301408d7_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_a81af0c9fd2ef95fe7d844d49301408d7_icgraph" id="avalidate__system_8cpp_a81af0c9fd2ef95fe7d844d49301408d7_icgraph">
 <area shape="rect" title="Converts a string_set to a string_vector." alt="" coords="631,129,767,171"/>
@@ -1271,27 +1216,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00689">689</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00671">671</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00290">insert_quantity_if_undefined()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00287">insert_quantity_if_undefined()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>.</p>
-<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_cgraph.png" border="0" usemap="#avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_cgraph" id="avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,165,39"/>
 <area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="213,5,333,47"/>
 </map>
 </div>
-<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_icgraph.png" border="0" usemap="#avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_icgraph" id="avalidate__system_8cpp_ade9afc8d0488c1ba6c692845d5c5086f_icgraph">
 <area shape="rect" title=" " alt="" coords="420,46,580,73"/>
@@ -1321,14 +1266,14 @@ Functions</h2></td></tr>
 
 <p>Creates a string_set from all the elements of a string_vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00680">680</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00662">662</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00457">find_strictly_required_inputs()</a>.</p>
-<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00434">find_strictly_required_inputs()</a>.</p>
+<div id="dynsection-29" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-29-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_af056787c60e69c4bd097ed626a8b3e7a_icgraph.png" border="0" usemap="#avalidate__system_8cpp_af056787c60e69c4bd097ed626a8b3e7a_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_af056787c60e69c4bd097ed626a8b3e7a_icgraph" id="avalidate__system_8cpp_af056787c60e69c4bd097ed626a8b3e7a_icgraph">
 <area shape="rect" title="Creates a string_set from all the elements of a string_vector." alt="" coords="819,38,997,65"/>
@@ -1413,28 +1358,28 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="validate__system_8cpp_source.html#l00043">43</a> of file <a class="el" href="validate__system_8cpp_source.html">validate_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8h_source.html#l00214">create_marked_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00330">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__system_8cpp_source.html#l00348">find_undefined_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00371">find_undefined_module_outputs()</a>, <a class="el" href="validate__system_8h_source.html#l00262">get_defined_quantity_names()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00241">has_cyclic_dependency()</a>, and <a class="el" href="state__map_8h_source.html#l00052">keys()</a>.</p>
+<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8h_source.html#l00211">create_marked_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00331">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__system_8cpp_source.html#l00350">find_undefined_module_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00374">find_undefined_module_outputs()</a>, <a class="el" href="validate__system_8h_source.html#l00259">get_defined_quantity_names()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00251">has_cyclic_dependency()</a>, and <a class="el" href="state__map_8h_source.html#l00056">keys()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__system_8cpp_source.html#l00011">R_validate_system_inputs()</a>, and <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>.</p>
-<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-30-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_cgraph.png" border="0" usemap="#avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_cgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_cgraph" id="avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_cgraph">
 <area shape="rect" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="5,213,164,240"/>
 <area shape="rect" href="state__map_8cpp.html#a698066d68dbdbd7d3afbff90e8481ae8" title="Given a sequence of states (presented as a state_vector_map) and an index n, return the n&#39;th state in..." alt="" coords="277,5,315,32"/>
-<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="212,56,380,83"/>
+<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc. This function should be used i..." alt="" coords="212,56,380,83"/>
 <area shape="rect" href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="219,107,373,149"/>
-<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="219,173,373,214"/>
-<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names." alt="" coords="219,238,373,279"/>
+<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="219,173,373,214"/>
+<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names...." alt="" coords="219,238,373,279"/>
 <area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="226,303,366,345"/>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="669,344,719,371"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#af5856a9dbcbed658f7e55b0c422ec032" title="Given a list of steady&#45;state module names (presented as a vector of strings), determine if the list c..." alt="" coords="217,420,375,447"/>
 <area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="446,56,565,83"/>
 <area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="631,56,757,83"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="433,107,578,149"/>
+<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="433,107,578,149"/>
 <area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="432,205,579,246"/>
 <area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="442,315,569,341"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#ae9c50cc2f222a71c9365788833336340" title="Creates and returns a graph that models the dependency structure of the steady&#45;state modules listed i..." alt="" coords="428,420,583,447"/>
@@ -1444,11 +1389,11 @@ Functions</h2></td></tr>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a3f348ce6f97125b22e943f5c6a609939" title="Returns a list (presented as a sorted vector of strings) of all outputs for the module having name mo..." alt="" coords="805,445,944,472"/>
 </map>
 </div>
-<div id="dynsection-32" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-32-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-31-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="validate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_icgraph.png" border="0" usemap="#avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_icgraph" alt=""/></div>
 <map name="avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_icgraph" id="avalidate__system_8cpp_ace0a0e21b8b548c8d7ee5d0c6dd8934e_icgraph">
 <area shape="rect" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,31,387,57"/>
@@ -1462,7 +1407,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:29:32 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:59:29 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

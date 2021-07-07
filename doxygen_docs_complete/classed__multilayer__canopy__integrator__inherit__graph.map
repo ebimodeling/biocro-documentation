@@ -1,6 +1,6 @@
 <map id="ed_multilayer_canopy_integrator" name="ed_multilayer_canopy_integrator">
-<area shape="rect" id="node1" title="Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part)." alt="" coords="5,155,152,196"/>
-<area shape="rect" id="node4" href="$classed__ten__layer__canopy__integrator.html" title="A child class of ed_multilayer_canopy_integrator where the number of layers has been defined." alt="" coords="7,244,150,285"/>
+<area shape="rect" id="node1" title="Calculates properties of each canopy layer using functions found in AuxBioCro (for the most part)...." alt="" coords="5,155,152,196"/>
+<area shape="rect" id="node4" href="$classed__ten__layer__canopy__integrator.html" title="A child class of ed_multilayer_canopy_integrator where the number of layers has been defined...." alt="" coords="7,244,150,285"/>
 <area shape="rect" id="node2" href="$class_steady_module.html" title="This class represents a steady state Module." alt="" coords="27,80,131,107"/>
 <area shape="rect" id="node3" href="$class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="47,5,111,32"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="lightME" name="lightME">
 <area shape="rect" id="node1" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="5,5,71,32"/>
-<area shape="rect" id="node2" href="$_aux_bio_cro_8cpp.html#a81eccf5a903a575f17d799d959397f61" title="Computation of the cosine of the zenith angle from latitute (lat), day of the year (DOY),..." alt="" coords="119,5,241,32"/>
+<area shape="rect" id="node2" href="$_aux_bio_cro_8cpp.html#a81eccf5a903a575f17d799d959397f61" title="Computation of the cosine of the zenith angle from the latitute, day of the year, and the time of day..." alt="" coords="119,5,241,32"/>
 </map>

@@ -6,7 +6,7 @@
 <area shape="rect" id="node4" href="$classbucket__soil__drainage.html" title=" " alt="" coords="309,56,453,83"/>
 <area shape="rect" id="node5" href="$classdevelopment__index.html" title="Calculates the development index (DVI) corresponding to plant growth rate." alt="" coords="314,107,447,133"/>
 <area shape="rect" id="node6" href="$classempty__senescence.html" title=" " alt="" coords="313,157,448,184"/>
-<area shape="rect" id="node7" href="$classgrimm__soybean__flowering.html" title="Model for soybean development and flowering based on Grimm et al." alt="" coords="295,208,466,235"/>
+<area shape="rect" id="node7" href="$classgrimm__soybean__flowering.html" title="Model for soybean development and flowering based on Grimm et al. (1993). See grimm_soybean_flowering..." alt="" coords="295,208,466,235"/>
 <area shape="rect" id="node8" href="$classharmonic__oscillator.html" title=" " alt="" coords="313,259,448,285"/>
 <area shape="rect" id="node9" href="$classmagic__clock.html" title=" " alt="" coords="333,309,428,336"/>
 <area shape="rect" id="node10" href="$classnight__and__day__trackers.html" title=" " alt="" coords="301,360,460,387"/>
@@ -43,9 +43,9 @@
 <area shape="rect" id="node42" href="$classc4__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf ..." alt="" coords="325,2024,437,2051"/>
 <area shape="rect" id="node43" href="$classc4__canopy.html" title=" " alt="" coords="339,2075,423,2101"/>
 <area shape="rect" id="node44" href="$classc4__leaf__photosynthesis.html" title="Uses the method from CanAC() to calculate leaf photosynthesis parameters for C4 plants." alt="" coords="301,2125,460,2152"/>
-<area shape="rect" id="node45" href="$classed__abc__blc.html" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)." alt="" coords="337,2176,425,2203"/>
+<area shape="rect" id="node45" href="$classed__abc__blc.html" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)...." alt="" coords="337,2176,425,2203"/>
 <area shape="rect" id="node46" href="$classed__apply__stomatal__water__stress__via__assimilation.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="296,2227,465,2269"/>
 <area shape="rect" id="node47" href="$classed__apply__stomatal__water__stress__via__conductance.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="295,2293,466,2334"/>
-<area shape="rect" id="node48" href="$classed__ball__berry.html" title="Uses the Ball&#45;Berry equation to calculate stomatal conductance to water vapor." alt="" coords="331,2359,430,2385"/>
-<area shape="rect" id="node49" href="$classed__boundary__conductance__max.html" title="Determines an overall value for the boundary layer conductance from the free and forced conductances." alt="" coords="277,2409,484,2436"/>
+<area shape="rect" id="node48" href="$classed__ball__berry.html" title="Uses the Ball&#45;Berry equation to calculate stomatal conductance to water vapor. Currently only intende..." alt="" coords="331,2359,430,2385"/>
+<area shape="rect" id="node49" href="$classed__boundary__conductance__max.html" title="Determines an overall value for the boundary layer conductance from the free and forced conductances...." alt="" coords="277,2409,484,2436"/>
 </map>

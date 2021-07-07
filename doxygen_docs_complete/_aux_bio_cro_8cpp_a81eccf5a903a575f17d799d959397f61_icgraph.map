@@ -1,5 +1,5 @@
 <map id="cos_zenith_angle" name="cos_zenith_angle">
-<area shape="rect" id="node1" title="Computation of the cosine of the zenith angle from latitute (lat), day of the year (DOY),..." alt="" coords="520,42,643,69"/>
+<area shape="rect" id="node1" title="Computation of the cosine of the zenith angle from the latitute, day of the year, and the time of day..." alt="" coords="520,42,643,69"/>
 <area shape="rect" id="node2" href="$classsolar__zenith__angle.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="343,5,472,47"/>
 <area shape="rect" id="node3" href="$_aux_bio_cro_8cpp.html#af098591a7e2a925fc6d2c7b333cb365b" title="Calculates some properties of the &quot;light macro environment,&quot; i.e., the light just above the top of th..." alt="" coords="375,71,440,98"/>
 <area shape="rect" id="node4" href="$_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="217,46,295,73"/>

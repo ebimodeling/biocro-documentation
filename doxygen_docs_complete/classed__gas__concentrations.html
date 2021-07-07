@@ -79,7 +79,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Determines mole fractions of CO2 and H2O at several important locations.  
+<p>Determines mole fractions of CO2 and H2O at several important locations. Currently only intended for use by Ed.  
  <a href="classed__gas__concentrations.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>&gt;</code></p>
@@ -90,7 +90,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__gas__concentrations__inherit__graph.png" border="0" usemap="#aed__gas__concentrations_inherit__map" alt="Inheritance graph"/></div>
 <map name="aed__gas__concentrations_inherit__map" id="aed__gas__concentrations_inherit__map">
-<area shape="rect" title="Determines mole fractions of CO2 and H2O at several important locations." alt="" coords="5,155,161,181"/>
+<area shape="rect" title="Determines mole fractions of CO2 and H2O at several important locations. Currently only intended for ..." alt="" coords="5,155,161,181"/>
 <area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="31,80,135,107"/>
 <area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="51,5,115,32"/>
 </map>
@@ -102,7 +102,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__gas__concentrations__coll__graph.png" border="0" usemap="#aed__gas__concentrations_coll__map" alt="Collaboration graph"/></div>
 <map name="aed__gas__concentrations_coll__map" id="aed__gas__concentrations_coll__map">
-<area shape="rect" title="Determines mole fractions of CO2 and H2O at several important locations." alt="" coords="5,155,161,181"/>
+<area shape="rect" title="Determines mole fractions of CO2 and H2O at several important locations. Currently only intended for ..." alt="" coords="5,155,161,181"/>
 <area shape="rect" href="class_steady_module.html" title="This class represents a steady state Module." alt="" coords="31,80,135,107"/>
 <area shape="rect" href="class_module.html" title="Represents a component of a larger system of differential equations." alt="" coords="51,5,115,32"/>
 </map>
@@ -186,8 +186,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_class_steady_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Determines mole fractions of CO2 and H2O at several important locations. </p>
-<p>Currently only intended for use by Ed.</p>
+<div class="textblock"><p>Determines mole fractions of CO2 and H2O at several important locations. Currently only intended for use by Ed. </p>
 <p>CO2 conductances for transport through the boundary layer and stomata are calculated from the corresponding water vapor conductances using proportionality factors. These factors depend on the ratio of molecular diffusivity (H20 / CO2) and the primary transport mechanism the relevant area. See e.g. Table 7.4 on page 106 of Campbell &amp; Norman (1998).</p>
 <p>CO2 mole fractions at the leaf surface and in the intercellular spaces are calculated from the atmospheric value using the relevant conductances and the net carbon assimilation, assuming steady state conditions. Here we just use a simple 1D diffusion equation: assimilation = conductance * mole_fraction_difference (see e.g. Equation 6.7 on page 79 of Campbell &amp; Norman (1998)).</p>
 <p>The H2O mole fraction in the intercellular spaces is calculated by assuming relative humidity in the leaf is 1, i.e., water vapor pressure = saturation water vapor pressure.</p>
@@ -261,7 +260,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ed__gas__concentrations_8h_source.html#l00115">115</a> of file <a class="el" href="ed__gas__concentrations_8h_source.html">ed_gas_concentrations.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">assimilation_net_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00076">atmospheric_pressure_ip</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00190">check_error_conditions()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">conductance_boundary_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">conductance_boundary_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">conductance_ratio_boundary_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">conductance_ratio_stomata_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">conductance_stomatal_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">conductance_stomatal_h2o_ip</a>, <a class="el" href="constants_8h_source.html#l00015">calculation_constants::eps_zero</a>, <a class="el" href="modules_8h_source.html#l00045">Module::get_name()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">mole_fraction_co2_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">mole_fraction_co2_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">mole_fraction_co2_leaf_surface_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">mole_fraction_h2o_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00083">mole_fraction_h2o_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">mole_fraction_h2o_leaf_surface_op</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00586">saturation_vapor_pressure()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">temperature_leaf_ip</a>, and <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>.</p>
+<p class="reference">References <a class="el" href="ed__gas__concentrations_8h_source.html#l00072">assimilation_net_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00076">atmospheric_pressure_ip</a>, <a class="el" href="module__helper__functions_8cpp_source.html#l00190">check_error_conditions()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00078">conductance_boundary_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00068">conductance_boundary_h2o_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00070">conductance_ratio_boundary_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00071">conductance_ratio_stomata_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00079">conductance_stomatal_co2_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00069">conductance_stomatal_h2o_ip</a>, <a class="el" href="constants_8h_source.html#l00023">calculation_constants::eps_zero</a>, <a class="el" href="modules_8h_source.html#l00045">Module::get_name()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00073">mole_fraction_co2_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00081">mole_fraction_co2_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00080">mole_fraction_co2_leaf_surface_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00074">mole_fraction_h2o_atmosphere_ip</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00083">mole_fraction_h2o_intercellular_op</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00082">mole_fraction_h2o_leaf_surface_op</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">saturation_vapor_pressure()</a>, <a class="el" href="ed__gas__concentrations_8h_source.html#l00075">temperature_leaf_ip</a>, and <a class="el" href="modules_8h_source.html#l00103">SteadyModule::update()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -270,7 +269,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="center"><img src="classed__gas__concentrations_aba36ef6feb82085d0a909a9b5998e3d8_cgraph.png" border="0" usemap="#aclassed__gas__concentrations_aba36ef6feb82085d0a909a9b5998e3d8_cgraph" alt=""/></div>
 <map name="aclassed__gas__concentrations_aba36ef6feb82085d0a909a9b5998e3d8_cgraph" id="aclassed__gas__concentrations_aba36ef6feb82085d0a909a9b5998e3d8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,101,108"/>
-<area shape="rect" href="module__helper__functions_8cpp.html#a57dc78c0a1397cf148187ddd09382f00" title="Checks over an error_map for problems." alt="" coords="159,5,315,32"/>
+<area shape="rect" href="module__helper__functions_8cpp.html#a57dc78c0a1397cf148187ddd09382f00" title="Checks over an error_map for problems. The error_map should pair a string description of an important..." alt="" coords="159,5,315,32"/>
 <area shape="rect" href="class_module.html#a0789ba541bd61b1b394ff4d411a40790" title=" " alt="" coords="173,56,300,83"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="149,107,324,133"/>
 <area shape="rect" href="class_steady_module.html#a3f5a6c165abfe31f11a5465b11d645be" title="The output parameters of a steady state module are unique, so we can just overwrite the previously st..." alt="" coords="162,157,311,184"/>
@@ -730,7 +729,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:28:14 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:58:16 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

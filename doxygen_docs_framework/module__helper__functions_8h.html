@@ -176,10 +176,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a69c7d723c47a9c28164f179d48d43b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to an element of a module input map.  <a href="module__helper__functions_8h.html#a69c7d723c47a9c28164f179d48d43b3d">More...</a><br /></td></tr>
 <tr class="separator:a69c7d723c47a9c28164f179d48d43b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905f2abf2b3e46bf7f8215552fe20544"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">add_class_prefix_to_quantity_name</a> (std::string class_name, std::string quantity_name)</td></tr>
-<tr class="memdesc:a905f2abf2b3e46bf7f8215552fe20544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g.  <a href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">More...</a><br /></td></tr>
+<tr class="memdesc:a905f2abf2b3e46bf7f8215552fe20544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. sunlit or shaded.  <a href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">More...</a><br /></td></tr>
 <tr class="separator:a905f2abf2b3e46bf7f8215552fe20544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">generate_multiclass_quantity_names</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> class_names, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> quantity_names)</td></tr>
-<tr class="memdesc:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds class name prefixes to each quantity name indicating that it was calculated for a certain class.  <a href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">More...</a><br /></td></tr>
+<tr class="memdesc:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes.  <a href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">More...</a><br /></td></tr>
 <tr class="separator:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dee5551e0c27e098260a3385114ffa3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a6dee5551e0c27e098260a3385114ffa3">add_layer_suffix_to_quantity_name</a> (int nlayers, int current_layer, std::string quantity_name)</td></tr>
 <tr class="memdesc:a6dee5551e0c27e098260a3385114ffa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a suffix to a quantity name indicating that it was calculated for a certain layer.  <a href="module__helper__functions_8h.html#a6dee5551e0c27e098260a3385114ffa3">More...</a><br /></td></tr>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa5b16a638a620b56938bb7659d101f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analagous to <code>get_ip</code> but returns a vector of output pointers, as required for a multilayer module.  <a href="module__helper__functions_8h.html#aa5b16a638a620b56938bb7659d101f41">More...</a><br /></td></tr>
 <tr class="separator:aa5b16a638a620b56938bb7659d101f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57dc78c0a1397cf148187ddd09382f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">check_error_conditions</a> (std::map&lt; std::string, bool &gt; errors_to_check, std::string module_name)</td></tr>
-<tr class="memdesc:a57dc78c0a1397cf148187ddd09382f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over an <code>error_map</code> for problems.  <a href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">More...</a><br /></td></tr>
+<tr class="memdesc:a57dc78c0a1397cf148187ddd09382f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over an <code>error_map</code> for problems. The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred.  <a href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">More...</a><br /></td></tr>
 <tr class="separator:a57dc78c0a1397cf148187ddd09382f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -224,8 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. </p>
-<p>sunlit or shaded. </p>
+<p>Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. sunlit or shaded. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00080">80</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -238,7 +237,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="module__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph.png" border="0" usemap="#amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph" id="amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph">
 <area shape="rect" title="Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class,..." alt="" coords="192,5,328,47"/>
-<area shape="rect" href="module__helper__functions_8cpp.html#a56f535cdb2c1ac3d809e2808fc588bc4" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class." alt="" coords="5,5,144,47"/>
+<area shape="rect" href="module__helper__functions_8cpp.html#a56f535cdb2c1ac3d809e2808fc588bc4" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="5,5,144,47"/>
 </map>
 </div>
 
@@ -323,8 +322,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks over an <code>error_map</code> for problems. </p>
-<p>The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred. </p>
+<p>Checks over an <code>error_map</code> for problems. The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00190">190</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -356,8 +354,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. </p>
-<p>E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes. </p>
+<p>Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00092">92</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -369,7 +366,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph.png" border="0" usemap="#amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph" id="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph">
-<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class." alt="" coords="5,5,144,47"/>
+<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="5,5,144,47"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#a905f2abf2b3e46bf7f8215552fe20544" title="Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class,..." alt="" coords="192,5,328,47"/>
 </map>
 </div>
@@ -758,7 +755,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:29:32 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:59:29 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

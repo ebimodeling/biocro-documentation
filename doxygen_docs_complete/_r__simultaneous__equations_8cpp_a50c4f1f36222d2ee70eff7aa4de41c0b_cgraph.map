@@ -15,10 +15,10 @@
 <area shape="rect" id="node8" href="$validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="828,530,1007,557"/>
 <area shape="rect" id="node11" href="$validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="639,457,775,499"/>
 <area shape="rect" id="node16" href="$validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="427,28,581,69"/>
-<area shape="rect" id="node18" href="$validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="427,224,581,265"/>
+<area shape="rect" id="node18" href="$validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="427,224,581,265"/>
 <area shape="rect" id="node20" href="$validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="434,115,574,156"/>
 <area shape="rect" id="node23" href="$validate__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="424,290,584,317"/>
-<area shape="rect" id="node17" href="$validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="634,5,779,47"/>
+<area shape="rect" id="node17" href="$validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="634,5,779,47"/>
 <area shape="rect" id="node19" href="$validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="633,173,780,215"/>
 <area shape="rect" id="node21" href="$validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="643,71,770,98"/>
 <area shape="rect" id="node22" href="$state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="893,71,942,98"/>

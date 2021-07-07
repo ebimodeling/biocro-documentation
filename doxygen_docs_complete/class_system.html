@@ -78,7 +78,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a system of differential equations.  
+<p>Defines a system of differential equations. Intended to be passed to a integrator object.  
  <a href="class_system.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="system_8h_source.html">system.h</a>&gt;</code></p>
@@ -89,7 +89,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_system__coll__graph.png" border="0" usemap="#a_system_coll__map" alt="Collaboration graph"/></div>
 <map name="a_system_coll__map" id="a_system_coll__map">
-<area shape="rect" title="Defines a system of differential equations." alt="" coords="5,95,72,121"/>
+<area shape="rect" title="Defines a system of differential equations. Intended to be passed to a integrator object." alt="" coords="5,95,72,121"/>
 <area shape="rect" title=" " alt="" coords="11,5,66,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -101,7 +101,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2609863c5851f1e04f56b49f8e87efad"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system.html#a2609863c5851f1e04f56b49f8e87efad">get_ntimes</a> () const</td></tr>
 <tr class="separator:a2609863c5851f1e04f56b49f8e87efad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0752ee6c5bef508d66ee480b77a19c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system.html#a4a0752ee6c5bef508d66ee480b77a19c">is_adaptive_compatible</a> () const</td></tr>
-<tr class="memdesc:a4a0752ee6c5bef508d66ee480b77a19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the system is adaptive compatible based on the modules that it uses.  <a href="class_system.html#a4a0752ee6c5bef508d66ee480b77a19c">More...</a><br /></td></tr>
 <tr class="separator:a4a0752ee6c5bef508d66ee480b77a19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887438c6bcb226a0c77598ed73ff14e6"><td class="memTemplParams" colspan="2">template&lt;typename state_type &gt; </td></tr>
 <tr class="memitem:a887438c6bcb226a0c77598ed73ff14e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system.html#a887438c6bcb226a0c77598ed73ff14e6">get_state</a> (state_type &amp;x) const</td></tr>
@@ -113,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a518e406f08df3ca0c267515a5fdeecea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07050afee017f060cc0cf3bfdd460362"><td class="memTemplParams" colspan="2">template&lt;typename state_type , typename time_type &gt; </td></tr>
 <tr class="memitem:a07050afee017f060cc0cf3bfdd460362"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system.html#a07050afee017f060cc0cf3bfdd460362">operator()</a> (const state_type &amp;x, state_type &amp;dxdt, const time_type &amp;t)</td></tr>
-<tr class="memdesc:a07050afee017f060cc0cf3bfdd460362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a derivative given an input state and time.  <a href="class_system.html#a07050afee017f060cc0cf3bfdd460362">More...</a><br /></td></tr>
+<tr class="memdesc:a07050afee017f060cc0cf3bfdd460362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a derivative given an input state and time. Function signature is set by the boost::odeint library.  <a href="class_system.html#a07050afee017f060cc0cf3bfdd460362">More...</a><br /></td></tr>
 <tr class="separator:a07050afee017f060cc0cf3bfdd460362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ff4af4a228ef67fcf2814a3a4b222f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system.html#a11ff4af4a228ef67fcf2814a3a4b222f">get_quantity_access_ptrs</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> quantity_names) const</td></tr>
 <tr class="memdesc:a11ff4af4a228ef67fcf2814a3a4b222f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pointers that can be used to access quantity values from the system's central map of quantities.  <a href="class_system.html#a11ff4af4a228ef67fcf2814a3a4b222f">More...</a><br /></td></tr>
@@ -142,7 +141,7 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ad2994d904767ac1aab548f55a7b4da65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf85c6999f6cf78ea54e748e50c619ca"><td class="memTemplParams" colspan="2">template&lt;typename time_type &gt; </td></tr>
 <tr class="memitem:acf85c6999f6cf78ea54e748e50c619ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system.html#acf85c6999f6cf78ea54e748e50c619ca">update_drivers</a> (time_type time_indx)</td></tr>
-<tr class="memdesc:acf85c6999f6cf78ea54e748e50c619ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets values of the drivers using a discrete time index (e.g.  <a href="class_system.html#acf85c6999f6cf78ea54e748e50c619ca">More...</a><br /></td></tr>
+<tr class="memdesc:acf85c6999f6cf78ea54e748e50c619ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets values of the drivers using a discrete time index (e.g. int or size_t)  <a href="class_system.html#acf85c6999f6cf78ea54e748e50c619ca">More...</a><br /></td></tr>
 <tr class="separator:acf85c6999f6cf78ea54e748e50c619ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab722e7e5ef669a73a73a45da49bc1672"><td class="memTemplParams" colspan="2">template&lt;class vector_type &gt; </td></tr>
 <tr class="memitem:ab722e7e5ef669a73a73a45da49bc1672"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system.html#ab722e7e5ef669a73a73a45da49bc1672">update_state_params</a> (vector_type const &amp;new_state)</td></tr>
@@ -187,8 +186,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afe0b4c8dff8e601de7e9b2bb27d69611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a system of differential equations. </p>
-<p>Intended to be passed to a integrator object. </p>
+<div class="textblock"><p>Defines a system of differential equations. Intended to be passed to a integrator object. </p>
 
 <p class="definition">Definition at line <a class="el" href="system_8h_source.html#l00017">17</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -238,7 +236,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="system_8cpp_source.html#l00005">5</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="system_8h_source.html#l00081">derivative_module_outputs</a>, <a class="el" href="system_8h_source.html#l00085">derivative_modules</a>, <a class="el" href="system_8h_source.html#l00091">driver_ptr_pairs</a>, <a class="el" href="system_8h_source.html#l00075">drivers</a>, <a class="el" href="validate__system_8cpp_source.html#l00438">find_unique_module_outputs()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00327">get_evaluation_order()</a>, <a class="el" href="validate__system_8cpp_source.html#l00583">get_module_vector()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00018">get_pointer_pairs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00039">get_pointers()</a>, <a class="el" href="state__map_8h_source.html#l00052">keys()</a>, <a class="el" href="system_8h_source.html#l00080">quantities</a>, <a class="el" href="system_8h_source.html#l00107">startup_message</a>, <a class="el" href="system_8h_source.html#l00090">state_ptr_pairs</a>, <a class="el" href="system_8h_source.html#l00089">state_ptrs</a>, <a class="el" href="system_8h_source.html#l00076">steady_state_module_names</a>, <a class="el" href="system_8h_source.html#l00084">steady_state_modules</a>, <a class="el" href="validate__system_8cpp_source.html#l00667">string_set_to_string_vector()</a>, <a class="el" href="system_8h_source.html#l00088">timestep_ptr</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
+<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="system_8h_source.html#l00081">derivative_module_outputs</a>, <a class="el" href="system_8h_source.html#l00085">derivative_modules</a>, <a class="el" href="system_8h_source.html#l00091">driver_ptr_pairs</a>, <a class="el" href="system_8h_source.html#l00075">drivers</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00337">get_evaluation_order()</a>, <a class="el" href="validate__system_8cpp_source.html#l00564">get_module_vector()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00020">get_pointer_pairs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00044">get_pointers()</a>, <a class="el" href="state__map_8h_source.html#l00056">keys()</a>, <a class="el" href="system_8h_source.html#l00080">quantities</a>, <a class="el" href="system_8h_source.html#l00107">startup_message</a>, <a class="el" href="system_8h_source.html#l00090">state_ptr_pairs</a>, <a class="el" href="system_8h_source.html#l00089">state_ptrs</a>, <a class="el" href="system_8h_source.html#l00076">steady_state_module_names</a>, <a class="el" href="system_8h_source.html#l00084">steady_state_modules</a>, <a class="el" href="validate__system_8cpp_source.html#l00649">string_set_to_string_vector()</a>, <a class="el" href="system_8h_source.html#l00088">timestep_ptr</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -253,7 +251,7 @@ Private Attributes</h2></td></tr>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a496239ab0d24a759d07e848d985e0139" title="Given a list of steady&#45;state module names (presented as a vector of strings), return the same list in..." alt="" coords="128,611,271,637"/>
 <area shape="rect" href="validate__system_8cpp.html#a222beed56ca8861db9da56282dd002aa" title="Returns a vector of unique_ptrs to module objects." alt="" coords="933,672,1065,699"/>
 <area shape="rect" href="system__helper__functions_8h.html#a1e06900ea3338ca300c33d8582211d4c" title="Returns pairs of pointers that each point to the same named quantity in each of the two input maps." alt="" coords="139,737,260,764"/>
-<area shape="rect" href="system__helper__functions_8h.html#ab35470319479a69326a1de4f23c05545" title="Returns a vector of pointers that point to elements of map whose targets are specified by quantity_na..." alt="" coords="153,788,246,815"/>
+<area shape="rect" href="system__helper__functions_8h.html#ab35470319479a69326a1de4f23c05545" title="Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_..." alt="" coords="153,788,246,815"/>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="789,160,838,187"/>
 <area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="131,839,267,881"/>
 <area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="120,371,279,397"/>
@@ -263,15 +261,15 @@ Private Attributes</h2></td></tr>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a28395d96ccaf43116bd4656097979d8a" title="Determines if the module named by m1 depends on the module named by m2, returning true if it does and..." alt="" coords="767,581,859,608"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a00b9d2a11de3ede9d3ec7388a1986225" title="Returns a list (presented as a sorted vector of strings) of all inputs for the module having name mod..." alt="" coords="934,581,1065,608"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a3f348ce6f97125b22e943f5c6a609939" title="Returns a list (presented as a sorted vector of strings) of all outputs for the module having name mo..." alt="" coords="930,531,1069,557"/>
-<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="327,312,495,339"/>
+<area shape="rect" href="validate__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc. This function should be used i..." alt="" coords="327,312,495,339"/>
 <area shape="rect" href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="334,494,487,535"/>
-<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="334,363,487,405"/>
-<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names." alt="" coords="334,429,487,470"/>
+<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="334,363,487,405"/>
+<area shape="rect" href="validate__system_8cpp.html#aa25f5bb56b550c099a38bc4dab7576e6" title="Finds quantities that are output by modules but are not defined by quantity_names...." alt="" coords="334,429,487,470"/>
 <area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="341,246,481,287"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#af5856a9dbcbed658f7e55b0c422ec032" title="Given a list of steady&#45;state module names (presented as a vector of strings), determine if the list c..." alt="" coords="331,560,490,587"/>
 <area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="561,312,679,339"/>
 <area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="750,312,877,339"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="547,531,693,573"/>
+<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="547,531,693,573"/>
 <area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="547,414,693,455"/>
 <area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="557,211,683,237"/>
 <area shape="rect" href="module__dependency__utilities_8cpp.html#a3d4b95b648daed0361a13b8953f0e0d1" title="Given a directed graph g, return true if g has a cycle, false otherwise." alt="" coords="580,597,660,624"/>
@@ -418,7 +416,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="system_8cpp_source.html#l00135">135</a> of file <a class="el" href="system_8cpp_source.html">system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="system_8h_source.html#l00075">drivers</a>, <a class="el" href="validate__system_8h_source.html#l00262">get_defined_quantity_names()</a>, <a class="el" href="system_8h_source.html#l00073">initial_values</a>, and <a class="el" href="system_8h_source.html#l00076">steady_state_module_names</a>.</p>
+<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="system_8h_source.html#l00075">drivers</a>, <a class="el" href="validate__system_8h_source.html#l00259">get_defined_quantity_names()</a>, <a class="el" href="system_8h_source.html#l00073">initial_values</a>, and <a class="el" href="system_8h_source.html#l00076">steady_state_module_names</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -530,7 +528,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="system_8h_source.html#l00054">54</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="system_8h_source.html#l00073">initial_values</a>, and <a class="el" href="state__map_8h_source.html#l00052">keys()</a>.</p>
+<p class="reference">References <a class="el" href="system_8h_source.html#l00073">initial_values</a>, and <a class="el" href="state__map_8h_source.html#l00056">keys()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r___gro_8cpp_source.html#l00014">R_Gro_deriv()</a>, and <a class="el" href="_r___gro_8cpp_source.html#l00069">R_Gro_ode()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -581,12 +579,11 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
 <p>Check that the system is adaptive compatible based on the modules that it uses. </p>
 
 <p class="definition">Definition at line <a class="el" href="system_8h_source.html#l00036">36</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="system__helper__functions_8cpp_source.html#l00007">check_adaptive_compatible()</a>, <a class="el" href="system_8h_source.html#l00085">derivative_modules</a>, and <a class="el" href="system_8h_source.html#l00084">steady_state_modules</a>.</p>
+<p class="reference">References <a class="el" href="system__helper__functions_8cpp_source.html#l00008">check_adaptive_compatible()</a>, <a class="el" href="system_8h_source.html#l00085">derivative_modules</a>, and <a class="el" href="system_8h_source.html#l00084">steady_state_modules</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -594,7 +591,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_system_a4a0752ee6c5bef508d66ee480b77a19c_cgraph.png" border="0" usemap="#aclass_system_a4a0752ee6c5bef508d66ee480b77a19c_cgraph" alt=""/></div>
 <map name="aclass_system_a4a0752ee6c5bef508d66ee480b77a19c_cgraph" id="aclass_system_a4a0752ee6c5bef508d66ee480b77a19c_cgraph">
-<area shape="rect" title="Check that the system is adaptive compatible based on the modules that it uses." alt="" coords="5,5,164,32"/>
+<area shape="rect" title=" " alt="" coords="5,5,164,32"/>
 <area shape="rect" href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d" title="Checks whether the collection of modules is compatible with adaptive step size solvers." alt="" coords="212,5,395,32"/>
 </map>
 </div>
@@ -633,8 +630,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates a derivative given an input state and time. </p>
-<p>Function signature is set by the boost::odeint library.</p>
+<p>Calculates a derivative given an input state and time. Function signature is set by the boost::odeint library. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>values of the state parameters </td></tr>
@@ -654,7 +650,7 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_system_a07050afee017f060cc0cf3bfdd460362_cgraph.png" border="0" usemap="#aclass_system_a07050afee017f060cc0cf3bfdd460362_cgraph" alt=""/></div>
 <map name="aclass_system_a07050afee017f060cc0cf3bfdd460362_cgraph" id="aclass_system_a07050afee017f060cc0cf3bfdd460362_cgraph">
-<area shape="rect" title="Calculates a derivative given an input state and time." alt="" coords="5,31,83,57"/>
+<area shape="rect" title="Calculates a derivative given an input state and time. Function signature is set by the boost::odeint..." alt="" coords="5,31,83,57"/>
 <area shape="rect" href="class_system.html#aff8a443b6b31f3c08e78ff14d0096e24" title="Calculates a derivative from the internally stored quantity map by running all the derivative modules..." alt="" coords="131,5,289,32"/>
 <area shape="rect" href="class_system.html#a518e406f08df3ca0c267515a5fdeecea" title="Updates all quantities (including ones calculated by steady state modules) based on the input state a..." alt="" coords="179,56,241,83"/>
 <area shape="rect" href="modules_8cpp.html#a66d745d4b3acb43ae8bc66c3e25aebb4" title="Runs each module in the input list." alt="" coords="354,5,467,32"/>
@@ -785,7 +781,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="class_system_aff8a443b6b31f3c08e78ff14d0096e24_icgraph.png" border="0" usemap="#aclass_system_aff8a443b6b31f3c08e78ff14d0096e24_icgraph" alt=""/></div>
 <map name="aclass_system_aff8a443b6b31f3c08e78ff14d0096e24_icgraph" id="aclass_system_aff8a443b6b31f3c08e78ff14d0096e24_icgraph">
 <area shape="rect" title="Calculates a derivative from the internally stored quantity map by running all the derivative modules..." alt="" coords="131,5,289,32"/>
-<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time." alt="" coords="5,5,83,32"/>
+<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time. Function signature is set by the boost::odeint..." alt="" coords="5,5,83,32"/>
 </map>
 </div>
 
@@ -852,7 +848,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="class_system_a518e406f08df3ca0c267515a5fdeecea_icgraph.png" border="0" usemap="#aclass_system_a518e406f08df3ca0c267515a5fdeecea_icgraph" alt=""/></div>
 <map name="aclass_system_a518e406f08df3ca0c267515a5fdeecea_icgraph" id="aclass_system_a518e406f08df3ca0c267515a5fdeecea_icgraph">
 <area shape="rect" title="Updates all quantities (including ones calculated by steady state modules) based on the input state a..." alt="" coords="131,5,192,32"/>
-<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time." alt="" coords="5,5,83,32"/>
+<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time. Function signature is set by the boost::odeint..." alt="" coords="5,5,83,32"/>
 </map>
 </div>
 
@@ -899,7 +895,7 @@ Private Attributes</h2></td></tr>
 <area shape="rect" title="Gets values from the drivers at the input time (double)" alt="" coords="240,31,347,57"/>
 <area shape="rect" href="class_system.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets all quantities back to their original values." alt="" coords="136,5,187,32"/>
 <area shape="rect" href="class_system.html#a518e406f08df3ca0c267515a5fdeecea" title="Updates all quantities (including ones calculated by steady state modules) based on the input state a..." alt="" coords="131,56,192,83"/>
-<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time." alt="" coords="5,56,83,83"/>
+<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time. Function signature is set by the boost::odeint..." alt="" coords="5,56,83,83"/>
 </map>
 </div>
 
@@ -929,8 +925,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets values of the drivers using a discrete time index (e.g. </p>
-<p>int or size_t) </p>
+<p>Gets values of the drivers using a discrete time index (e.g. int or size_t) </p>
 
 <p class="definition">Definition at line <a class="el" href="system_8h_source.html#l00157">157</a> of file <a class="el" href="system_8h_source.html">system.h</a>.</p>
 
@@ -978,7 +973,7 @@ Private Attributes</h2></td></tr>
 <map name="aclass_system_ab722e7e5ef669a73a73a45da49bc1672_icgraph" id="aclass_system_ab722e7e5ef669a73a73a45da49bc1672_icgraph">
 <area shape="rect" title="Updates the system&#39;s internally stored state parameter values to the new ones in new_state." alt="" coords="240,5,387,32"/>
 <area shape="rect" href="class_system.html#a518e406f08df3ca0c267515a5fdeecea" title="Updates all quantities (including ones calculated by steady state modules) based on the input state a..." alt="" coords="131,5,192,32"/>
-<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time." alt="" coords="5,5,83,32"/>
+<area shape="rect" href="class_system.html#a07050afee017f060cc0cf3bfdd460362" title="Calculates a derivative given an input state and time. Function signature is set by the boost::odeint..." alt="" coords="5,5,83,32"/>
 </map>
 </div>
 
@@ -1378,7 +1373,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:28:14 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:58:17 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -103,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2672a8862459cb88a9ad500570f01720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be68ff867d1ac0a7e1b797ffc8561d5"><td class="memTemplParams" colspan="2">template&lt;typename vector_type &gt; </td></tr>
 <tr class="memitem:a2be68ff867d1ac0a7e1b797ffc8561d5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsimultaneous__equations.html#a2be68ff867d1ac0a7e1b797ffc8561d5">get_all_outputs</a> (std::vector&lt; double &gt; &amp;vector_to_update, vector_type const &amp;unknown_quantity_vector)</td></tr>
-<tr class="memdesc:a2be68ff867d1ac0a7e1b797ffc8561d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the values of <code>vector_to_update</code> using the values pointed to by the elements of the private member <code>output_ptrs. </code> <a href="classsimultaneous__equations.html#a2be68ff867d1ac0a7e1b797ffc8561d5">More...</a><br /></td></tr>
+<tr class="memdesc:a2be68ff867d1ac0a7e1b797ffc8561d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the values of <code>vector_to_update</code> using the values pointed to by the elements of the private member <code>output_ptrs.</code> The elements of <code>vector_to_update</code> must be sorted according to quantity name. Values of the unknown quantities are used to calculate the outputs.  <a href="classsimultaneous__equations.html#a2be68ff867d1ac0a7e1b797ffc8561d5">More...</a><br /></td></tr>
 <tr class="separator:a2be68ff867d1ac0a7e1b797ffc8561d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a3097168dcf10cc2c5f0c2cde4851a"><td class="memTemplParams" colspan="2">template&lt;typename in_vector_type , typename out_vector_type &gt; </td></tr>
 <tr class="memitem:ae2a3097168dcf10cc2c5f0c2cde4851a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsimultaneous__equations.html#ae2a3097168dcf10cc2c5f0c2cde4851a">operator()</a> (in_vector_type const &amp;unknown_quantity_vector, out_vector_type &amp;difference_vector)</td></tr>
@@ -189,7 +189,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">152</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="validate__system_8cpp_source.html#l00438">find_unique_module_outputs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00057">get_const_pointers()</a>, <a class="el" href="validate__system_8cpp_source.html#l00583">get_module_vector()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00018">get_pointer_pairs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00039">get_pointers()</a>, <a class="el" href="state__map_8h_source.html#l00052">keys()</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00059">known_ptrs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00053">module_output_map</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00062">output_ptrs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00052">quantities</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00072">startup_message</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00056">steady_state_modules</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00064">steady_state_ptr_pairs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00061">steady_state_ptrs</a>, <a class="el" href="validate__system_8cpp_source.html#l00667">string_set_to_string_vector()</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00063">unknown_ptr_pairs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00060">unknown_ptrs</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>.</p>
+<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00065">get_const_pointers()</a>, <a class="el" href="validate__system_8cpp_source.html#l00564">get_module_vector()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00020">get_pointer_pairs()</a>, <a class="el" href="system__helper__functions_8h_source.html#l00044">get_pointers()</a>, <a class="el" href="state__map_8h_source.html#l00056">keys()</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00059">known_ptrs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00053">module_output_map</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00062">output_ptrs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00052">quantities</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00072">startup_message</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00056">steady_state_modules</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00064">steady_state_ptr_pairs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00061">steady_state_ptrs</a>, <a class="el" href="validate__system_8cpp_source.html#l00649">string_set_to_string_vector()</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00063">unknown_ptr_pairs</a>, <a class="el" href="simultaneous__equations_8h_source.html#l00060">unknown_ptrs</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -200,21 +200,21 @@ Private Attributes</h2></td></tr>
 <area shape="rect" title=" " alt="" coords="5,208,168,235"/>
 <area shape="rect" href="validate__system_8cpp.html#a07fd44b643a27c692a22032bf63f4319" title="Assembles a &quot;master&quot; state_map from a group of state_maps and a list of modules." alt="" coords="221,5,361,32"/>
 <area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="631,106,767,147"/>
-<area shape="rect" href="system__helper__functions_8h.html#ae8d8433e352300150a183ae058a753d2" title="Returns a vector of pointers that point to elements of map whose targets are specified by quantity_na..." alt="" coords="225,107,357,133"/>
+<area shape="rect" href="system__helper__functions_8h.html#ae8d8433e352300150a183ae058a753d2" title="Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_..." alt="" coords="225,107,357,133"/>
 <area shape="rect" href="validate__system_8cpp.html#a222beed56ca8861db9da56282dd002aa" title="Returns a vector of unique_ptrs to module objects." alt="" coords="225,157,357,184"/>
 <area shape="rect" href="system__helper__functions_8h.html#a1e06900ea3338ca300c33d8582211d4c" title="Returns pairs of pointers that each point to the same named quantity in each of the two input maps." alt="" coords="231,208,352,235"/>
-<area shape="rect" href="system__helper__functions_8h.html#ab35470319479a69326a1de4f23c05545" title="Returns a vector of pointers that point to elements of map whose targets are specified by quantity_na..." alt="" coords="245,259,338,285"/>
+<area shape="rect" href="system__helper__functions_8h.html#ab35470319479a69326a1de4f23c05545" title="Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_..." alt="" coords="245,259,338,285"/>
 <area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="885,576,934,603"/>
 <area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="631,294,767,335"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="216,411,367,453"/>
 <area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="437,543,555,569"/>
 <area shape="rect" href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="419,594,573,635"/>
-<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names." alt="" coords="419,411,573,453"/>
+<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="419,411,573,453"/>
 <area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="426,477,566,518"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c" title="Finds the unknown quantities defined by the set of modules." alt="" coords="415,247,577,273"/>
 <area shape="rect" href="validate__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="416,360,576,387"/>
 <area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="635,543,762,569"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="626,594,771,635"/>
+<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="626,594,771,635"/>
 <area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="625,411,772,453"/>
 <area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="635,488,762,515"/>
 <area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="629,229,769,270"/>
@@ -310,8 +310,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the values of <code>vector_to_update</code> using the values pointed to by the elements of the private member <code>output_ptrs. </code></p>
-<p>The elements of <code>vector_to_update</code> must be sorted according to quantity name. Values of the unknown quantities are used to calculate the outputs. </p>
+<p>Updates the values of <code>vector_to_update</code> using the values pointed to by the elements of the private member <code>output_ptrs.</code> The elements of <code>vector_to_update</code> must be sorted according to quantity name. Values of the unknown quantities are used to calculate the outputs. </p>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8h_source.html#l00081">81</a> of file <a class="el" href="simultaneous__equations_8h_source.html">simultaneous_equations.h</a>.</p>
 
@@ -506,7 +505,7 @@ Private Attributes</h2></td></tr>
 <p>Updates the values of the known quantities using the values pointed to by the elements of ptrs_to_values. </p>
 <p>The elements of <code>ptr_to_values</code> must be sorted according to quantity name. </p>
 
-<p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00207">207</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00210">210</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="simultaneous__equations_8h_source.html#l00059">known_ptrs</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00005">se_update_print</a>.</p>
 
@@ -535,7 +534,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8h_source.html#l00059">59</a> of file <a class="el" href="simultaneous__equations_8h_source.html">simultaneous_equations.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00207">update_known_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00210">update_known_quantities()</a>.</p>
 
 </div>
 </div>
@@ -806,7 +805,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:29:32 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:59:29 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

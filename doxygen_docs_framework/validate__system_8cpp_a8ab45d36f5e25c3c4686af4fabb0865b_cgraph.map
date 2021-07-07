@@ -15,7 +15,7 @@
 <area shape="rect" id="node4" href="$validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="474,5,601,32"/>
 <area shape="rect" id="node7" href="$validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="469,107,605,149"/>
 <area shape="rect" id="node8" href="$validate__system_8cpp.html#a222beed56ca8861db9da56282dd002aa" title="Returns a vector of unique_ptrs to module objects." alt="" coords="471,56,603,83"/>
-<area shape="rect" id="node10" href="$validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there." alt="" coords="465,458,610,499"/>
+<area shape="rect" id="node10" href="$validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="465,458,610,499"/>
 <area shape="rect" id="node13" href="$validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="477,290,597,331"/>
 <area shape="rect" id="node14" href="$state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="688,356,737,383"/>
 <area shape="rect" id="node17" href="$validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="474,407,601,433"/>

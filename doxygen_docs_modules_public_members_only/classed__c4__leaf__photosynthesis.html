@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classed__c4__leaf__photosynthesis.html
 </div><!--header-->
 <div class="contents">
 
-<p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf.  
+<p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant.  
  <a href="classed__c4__leaf__photosynthesis.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>&gt;</code></p>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('classed__c4__leaf__photosynthesis.html
 <div class="center"><img src="classed__c4__leaf__photosynthesis__inherit__graph.png" border="0" usemap="#aed__c4__leaf__photosynthesis_inherit__map" alt="Inheritance graph"/></div>
 <map name="aed__c4__leaf__photosynthesis_inherit__map" id="aed__c4__leaf__photosynthesis_inherit__map">
 <area shape="rect" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free,..." alt="" coords="5,155,184,181"/>
-<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations." alt="" coords="69,80,120,107"/>
+<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="69,80,120,107"/>
 <area shape="rect" title=" " alt="" coords="43,5,147,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classed__c4__leaf__photosynthesis.html
 <div class="center"><img src="classed__c4__leaf__photosynthesis__coll__graph.png" border="0" usemap="#aed__c4__leaf__photosynthesis_coll__map" alt="Collaboration graph"/></div>
 <map name="aed__c4__leaf__photosynthesis_coll__map" id="aed__c4__leaf__photosynthesis_coll__map">
 <area shape="rect" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free,..." alt="" coords="5,155,184,181"/>
-<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations." alt="" coords="69,80,120,107"/>
+<area shape="rect" href="classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="69,80,120,107"/>
 <area shape="rect" title=" " alt="" coords="43,5,147,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -134,7 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cdd3c661d33521dacc2dd00adb2c5d0 inherit pub_methods_classse__module_1_1base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">base</a> (std::string module_name, string_vector sub_module_names, std::string solver_name, int max_iterations, std::vector&lt; double &gt; lower_bounds, std::vector&lt; double &gt; upper_bounds, std::vector&lt; double &gt; absolute_error_tolerances, std::vector&lt; double &gt; relative_error_tolerances, bool should_reorder_guesses, bool return_default_on_failure, state_map const &amp;input_quantities, state_map *output_quantities)</td></tr>
 <tr class="separator:a3cdd3c661d33521dacc2dd00adb2c5d0 inherit pub_methods_classse__module_1_1base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">~base</a> ()=0</td></tr>
-<tr class="memdesc:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor must be defined, and since the default is overwritten when defining it as pure virtual, add an inline one in the header.  <a href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">More...</a><br /></td></tr>
 <tr class="separator:a8b83bb8ea9b486fe827db6c0cdb17520 inherit pub_methods_classse__module_1_1base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -145,8 +144,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. </p>
-<p>Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant. </p>
+<div class="textblock"><p>Solves a set of modules for the unknown quantities assimilation_net, conductance_boundary_h2o_free, conductance_stomatal_h2o, and temperature_leaf. Also returns other quantities derived from these. Represents photosynthesis at the leaf level for a c4 plant. </p>
 
 <p class="definition">Definition at line <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00089">89</a> of file <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html">ed_c4_leaf_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -281,7 +279,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__c4__leaf__photosynthesis.html">ed_c4_leaf_photosynthesis</a></li>
-    <li class="footer">Generated on Fri Jul 2 2021 20:29:15 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 7 2021 18:59:12 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

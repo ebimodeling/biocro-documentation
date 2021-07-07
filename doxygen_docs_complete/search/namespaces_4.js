@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nikolov_1782',['nikolov',['../namespacenikolov.html',1,'']]]
+  ['nikolov_1781',['nikolov',['../namespacenikolov.html',1,'']]]
 ];

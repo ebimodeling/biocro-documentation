@@ -79,23 +79,23 @@ $(function() {
 <a href="system__helper__functions_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="system__helper__functions_8h.html">system_helper_functions.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="validate__system_8h.html">validate_system.h</a>&quot;</span>  <span class="comment">// For module_vector</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">    7</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">check_adaptive_compatible</a>(<span class="keyword">const</span> <a class="code" href="validate__system_8h.html#a34da96d6b93ff9b355ec5b508d622d29">module_vector</a>* ptr_to_module_vector)</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">bool</span> adaptive_compatible = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">const</span> <a class="code" href="validate__system_8h.html#a34da96d6b93ff9b355ec5b508d622d29">module_vector</a>&amp; module_vector_reference = *ptr_to_module_vector;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; module_vector_reference.size(); i++) {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        adaptive_compatible *= module_vector_reference[i]-&gt;is_adaptive_compatible();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    }</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> adaptive_compatible;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="ttc" id="asystem__helper__functions_8cpp_html_a683bfc8eb4a6e07f74a7b77fc1cfdb6d"><div class="ttname"><a href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">check_adaptive_compatible</a></div><div class="ttdeci">bool check_adaptive_compatible(const module_vector *ptr_to_module_vector)</div><div class="ttdoc">Checks whether the collection of modules is compatible with adaptive step size solvers.</div><div class="ttdef"><b>Definition:</b> <a href="system__helper__functions_8cpp_source.html#l00007">system_helper_functions.cpp:7</a></div></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">    8</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">check_adaptive_compatible</a>(<span class="keyword">const</span> <a class="code" href="validate__system_8h.html#a34da96d6b93ff9b355ec5b508d622d29">module_vector</a>* ptr_to_module_vector)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">bool</span> adaptive_compatible = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">const</span> <a class="code" href="validate__system_8h.html#a34da96d6b93ff9b355ec5b508d622d29">module_vector</a>&amp; module_vector_reference = *ptr_to_module_vector;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; module_vector_reference.size(); i++) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        adaptive_compatible *= module_vector_reference[i]-&gt;is_adaptive_compatible();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> adaptive_compatible;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="ttc" id="asystem__helper__functions_8cpp_html_a683bfc8eb4a6e07f74a7b77fc1cfdb6d"><div class="ttname"><a href="system__helper__functions_8cpp.html#a683bfc8eb4a6e07f74a7b77fc1cfdb6d">check_adaptive_compatible</a></div><div class="ttdeci">bool check_adaptive_compatible(const module_vector *ptr_to_module_vector)</div><div class="ttdoc">Checks whether the collection of modules is compatible with adaptive step size solvers.</div><div class="ttdef"><b>Definition:</b> <a href="system__helper__functions_8cpp_source.html#l00008">system_helper_functions.cpp:8</a></div></div>
 <div class="ttc" id="asystem__helper__functions_8h_html"><div class="ttname"><a href="system__helper__functions_8h.html">system_helper_functions.h</a></div></div>
 <div class="ttc" id="avalidate__system_8h_html"><div class="ttname"><a href="validate__system_8h.html">validate_system.h</a></div></div>
 <div class="ttc" id="avalidate__system_8h_html_a34da96d6b93ff9b355ec5b508d622d29"><div class="ttname"><a href="validate__system_8h.html#a34da96d6b93ff9b355ec5b508d622d29">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Module &gt; &gt; module_vector</div><div class="ttdef"><b>Definition:</b> <a href="validate__system_8h_source.html#l00015">validate_system.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:29:32 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:59:29 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

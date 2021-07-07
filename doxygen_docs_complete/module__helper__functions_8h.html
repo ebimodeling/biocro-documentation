@@ -185,10 +185,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a69c7d723c47a9c28164f179d48d43b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to an element of a module input map.  <a href="module__helper__functions_8h.html#a69c7d723c47a9c28164f179d48d43b3d">More...</a><br /></td></tr>
 <tr class="separator:a69c7d723c47a9c28164f179d48d43b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a905f2abf2b3e46bf7f8215552fe20544"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">add_class_prefix_to_quantity_name</a> (std::string class_name, std::string quantity_name)</td></tr>
-<tr class="memdesc:a905f2abf2b3e46bf7f8215552fe20544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g.  <a href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">More...</a><br /></td></tr>
+<tr class="memdesc:a905f2abf2b3e46bf7f8215552fe20544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. sunlit or shaded.  <a href="module__helper__functions_8h.html#a905f2abf2b3e46bf7f8215552fe20544">More...</a><br /></td></tr>
 <tr class="separator:a905f2abf2b3e46bf7f8215552fe20544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">generate_multiclass_quantity_names</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> class_names, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> quantity_names)</td></tr>
-<tr class="memdesc:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds class name prefixes to each quantity name indicating that it was calculated for a certain class.  <a href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">More...</a><br /></td></tr>
+<tr class="memdesc:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes.  <a href="module__helper__functions_8h.html#a56f535cdb2c1ac3d809e2808fc588bc4">More...</a><br /></td></tr>
 <tr class="separator:a56f535cdb2c1ac3d809e2808fc588bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dee5551e0c27e098260a3385114ffa3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a6dee5551e0c27e098260a3385114ffa3">add_layer_suffix_to_quantity_name</a> (int nlayers, int current_layer, std::string quantity_name)</td></tr>
 <tr class="memdesc:a6dee5551e0c27e098260a3385114ffa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a suffix to a quantity name indicating that it was calculated for a certain layer.  <a href="module__helper__functions_8h.html#a6dee5551e0c27e098260a3385114ffa3">More...</a><br /></td></tr>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa5b16a638a620b56938bb7659d101f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analagous to <code>get_ip</code> but returns a vector of output pointers, as required for a multilayer module.  <a href="module__helper__functions_8h.html#aa5b16a638a620b56938bb7659d101f41">More...</a><br /></td></tr>
 <tr class="separator:aa5b16a638a620b56938bb7659d101f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57dc78c0a1397cf148187ddd09382f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">check_error_conditions</a> (std::map&lt; std::string, bool &gt; errors_to_check, std::string module_name)</td></tr>
-<tr class="memdesc:a57dc78c0a1397cf148187ddd09382f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over an <code>error_map</code> for problems.  <a href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">More...</a><br /></td></tr>
+<tr class="memdesc:a57dc78c0a1397cf148187ddd09382f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over an <code>error_map</code> for problems. The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred.  <a href="module__helper__functions_8h.html#a57dc78c0a1397cf148187ddd09382f00">More...</a><br /></td></tr>
 <tr class="separator:a57dc78c0a1397cf148187ddd09382f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -233,8 +233,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. </p>
-<p>sunlit or shaded. </p>
+<p>Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class, e.g. sunlit or shaded. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00080">80</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -247,12 +246,12 @@ Functions</h2></td></tr>
 <div class="center"><img src="module__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph.png" border="0" usemap="#amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph" id="amodule__helper__functions_8h_a905f2abf2b3e46bf7f8215552fe20544_icgraph">
 <area shape="rect" title="Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class,..." alt="" coords="780,472,916,513"/>
-<area shape="rect" href="module__helper__functions_8cpp.html#a56f535cdb2c1ac3d809e2808fc588bc4" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class." alt="" coords="550,439,689,480"/>
+<area shape="rect" href="module__helper__functions_8cpp.html#a56f535cdb2c1ac3d809e2808fc588bc4" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="550,439,689,480"/>
 <area shape="rect" href="classmultilayer__canopy__photosynthesis.html#a6ef6f51bf0482716a1a9350eb49bcf07" title="Constructor for a multilayer canopy photosynthesis module, which initializes the leaf module and prep..." alt="" coords="507,504,732,545"/>
 <area shape="rect" href="classmultilayer__canopy__photosynthesis.html#aa0b1d95207b7c923ac0a8fb2a2cde5f7" title=" " alt="" coords="240,136,459,177"/>
 <area shape="rect" href="classmultilayer__canopy__photosynthesis.html#a9f3c2d2463e9d1ca95240b6ed558321b" title=" " alt="" coords="240,397,459,439"/>
-<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="269,480,429,521"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="255,561,444,603"/>
+<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,480,429,521"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="255,561,444,603"/>
 <area shape="rect" href="classed__ten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="17,5,181,47"/>
 <area shape="rect" href="classten__layer__c3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,71,170,112"/>
 <area shape="rect" href="classten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,136,170,177"/>
@@ -321,8 +320,8 @@ Functions</h2></td></tr>
 <area shape="rect" href="classmultilayer__canopy__integrator.html#a9591219a4f3f3d9370b77cea0173de50" title="Define all inputs required by the module, adding layer suffixes as required." alt="" coords="256,560,443,601"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#aa5b16a638a620b56938bb7659d101f41" title="Analagous to get_ip but returns a vector of output pointers, as required for a multilayer module." alt="" coords="290,626,409,653"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#a0781e900076a7d51603dc77e2cdea9ad" title="Analagous to get_op but returns a vector of output pointers, as required for a multilayer module." alt="" coords="288,677,411,703"/>
-<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="269,728,429,769"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="255,793,444,835"/>
+<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,728,429,769"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="255,793,444,835"/>
 <area shape="rect" href="classed__ten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="17,5,181,47"/>
 <area shape="rect" href="classten__layer__c3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,71,170,112"/>
 <area shape="rect" href="classten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,136,170,177"/>
@@ -366,8 +365,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks over an <code>error_map</code> for problems. </p>
-<p>The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred. </p>
+<p>Checks over an <code>error_map</code> for problems. The <code>error_map</code> should pair a string description of an important criterion which must be met, e.g. "Parameter_A must be non-zero", with a boolean indicating whether it has been met. If the condition was not met, an appropriate error message will be generated indicating both the problem and the module in which it occurred. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00190">190</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -381,7 +379,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__helper__functions_8h_a57dc78c0a1397cf148187ddd09382f00_icgraph.png" border="0" usemap="#amodule__helper__functions_8h_a57dc78c0a1397cf148187ddd09382f00_icgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a57dc78c0a1397cf148187ddd09382f00_icgraph" id="amodule__helper__functions_8h_a57dc78c0a1397cf148187ddd09382f00_icgraph">
-<area shape="rect" title="Checks over an error_map for problems." alt="" coords="233,340,389,367"/>
+<area shape="rect" title="Checks over an error_map for problems. The error_map should pair a string description of an important..." alt="" coords="233,340,389,367"/>
 <area shape="rect" href="classincident__shortwave__from__ground__par.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="22,5,169,61"/>
 <area shape="rect" href="classrh__to__mole__fraction.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="27,85,163,126"/>
 <area shape="rect" href="classed__ball__berry.html#aba36ef6feb82085d0a909a9b5998e3d8" title=" " alt="" coords="6,151,185,177"/>
@@ -424,8 +422,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. </p>
-<p>E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes. </p>
+<p>Adds class name prefixes to each quantity name indicating that it was calculated for a certain class. E.g., a multilayer canopy model may calculate different incident light irradiance values for sunlit and shaded leaves. In this case, "sunlit" and "shaded" would be the two leaf classes. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__helper__functions_8cpp_source.html#l00092">92</a> of file <a class="el" href="module__helper__functions_8cpp_source.html">module_helper_functions.cpp</a>.</p>
 
@@ -439,7 +436,7 @@ Functions</h2></td></tr>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph.png" border="0" usemap="#amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph" id="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_cgraph">
-<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class." alt="" coords="5,5,144,47"/>
+<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="5,5,144,47"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#a905f2abf2b3e46bf7f8215552fe20544" title="Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class,..." alt="" coords="192,5,328,47"/>
 </map>
 </div>
@@ -450,11 +447,11 @@ Functions</h2></td></tr>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_icgraph.png" border="0" usemap="#amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_icgraph" alt=""/></div>
 <map name="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_icgraph" id="amodule__helper__functions_8h_a56f535cdb2c1ac3d809e2808fc588bc4_icgraph">
-<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class." alt="" coords="507,431,645,472"/>
+<area shape="rect" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="507,431,645,472"/>
 <area shape="rect" href="classmultilayer__canopy__photosynthesis.html#aa0b1d95207b7c923ac0a8fb2a2cde5f7" title=" " alt="" coords="240,136,459,177"/>
 <area shape="rect" href="classmultilayer__canopy__photosynthesis.html#a9f3c2d2463e9d1ca95240b6ed558321b" title=" " alt="" coords="240,397,459,439"/>
-<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="269,480,429,521"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="255,561,444,603"/>
+<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,480,429,521"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="255,561,444,603"/>
 <area shape="rect" href="classed__ten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="17,5,181,47"/>
 <area shape="rect" href="classten__layer__c3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,71,170,112"/>
 <area shape="rect" href="classten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,136,170,177"/>
@@ -528,8 +525,8 @@ Functions</h2></td></tr>
 <area shape="rect" href="classmultilayer__canopy__integrator.html#a9591219a4f3f3d9370b77cea0173de50" title="Define all inputs required by the module, adding layer suffixes as required." alt="" coords="256,560,443,601"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#aa5b16a638a620b56938bb7659d101f41" title="Analagous to get_ip but returns a vector of output pointers, as required for a multilayer module." alt="" coords="290,626,409,653"/>
 <area shape="rect" href="module__helper__functions_8cpp.html#a0781e900076a7d51603dc77e2cdea9ad" title="Analagous to get_op but returns a vector of output pointers, as required for a multilayer module." alt="" coords="288,677,411,703"/>
-<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="269,728,429,769"/>
-<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="255,793,444,835"/>
+<area shape="rect" href="classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,728,429,769"/>
+<area shape="rect" href="classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="255,793,444,835"/>
 <area shape="rect" href="classed__ten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="17,5,181,47"/>
 <area shape="rect" href="classten__layer__c3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,71,170,112"/>
 <area shape="rect" href="classten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,136,170,177"/>
@@ -870,7 +867,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 20:28:13 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jul 7 2021 18:58:16 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

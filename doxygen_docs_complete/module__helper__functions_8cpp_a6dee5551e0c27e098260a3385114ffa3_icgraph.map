@@ -8,8 +8,8 @@
 <area shape="rect" id="node15" href="$classmultilayer__canopy__integrator.html#a9591219a4f3f3d9370b77cea0173de50" title="Define all inputs required by the module, adding layer suffixes as required." alt="" coords="256,560,443,601"/>
 <area shape="rect" id="node17" href="$module__helper__functions_8cpp.html#aa5b16a638a620b56938bb7659d101f41" title="Analagous to get_ip but returns a vector of output pointers, as required for a multilayer module." alt="" coords="290,626,409,653"/>
 <area shape="rect" id="node18" href="$module__helper__functions_8cpp.html#a0781e900076a7d51603dc77e2cdea9ad" title="Analagous to get_op but returns a vector of output pointers, as required for a multilayer module." alt="" coords="288,677,411,703"/>
-<area shape="rect" id="node19" href="$classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="269,728,429,769"/>
-<area shape="rect" id="node21" href="$classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes." alt="" coords="255,793,444,835"/>
+<area shape="rect" id="node19" href="$classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,728,429,769"/>
+<area shape="rect" id="node21" href="$classmultilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="255,793,444,835"/>
 <area shape="rect" id="node4" href="$classed__ten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="17,5,181,47"/>
 <area shape="rect" id="node5" href="$classten__layer__c3__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,71,170,112"/>
 <area shape="rect" id="node6" href="$classten__layer__c4__canopy.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="27,136,170,177"/>
