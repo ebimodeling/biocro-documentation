@@ -140,14 +140,20 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Model for soybean development and flowering based on Grimm et al. (1993) </p>
 <p>This module is intended to be used to model soybean development and flowering following the model introduced by Grimm et al. (1993) and further investigated by Piper et al. (1996).</p>
 <p>Once the day of year exceeds the sowing date, the plant is assumed to be in a photoperiod-insensitive juvenile stage where physiological days accumulate at a rate solely determined by temperature. Here the temperature dependence is given by a piecewise-linear function defined by four critical temperature values.</p>
-<p>Once the plant's physiological age exceeds a threshold value, it enters a photoperiod-sensitive stage where physological days accumulate at a rate determined by both temperature and night length. Here the overall rate is the product of two factors: R = F(T) * F(N), where F(T) is a linear-plateau function of temperature with two critical temperature values and F(N) is a linear-plateau function of night length with two critical night length values.</p>
-<p>When the physological age exceeds a third threshold, the plant begins to flower (R1). Here this is represented by the state variable <code>grimm_flowering,</code> whose rate of change becomes nonzero when the plant begins to flower.</p>
-<p>The Grimm model cites the method from Goudriaan (1978) for calculating day length. Unfortunately the Goudriaan paper includes two day lengths: the astronomical and effective day lengths. The Grimm model does not explicitly mention the effective day length, which seems to be used in Goudriaan for calculating average carbon assimilation by a plant canopy. Here we assume the Grimm model requires the astronomical day length, although a day length correction factor is included in the code in case it is required in the future.</p>
-<p>(For the effective day length, sunrise and sunset are defined to occur when the solar zenith angle is equal to 8 degrees, rather than 0 degrees (or -0.53 degrees) as is typically used in astronomical calculations. Using 2018 as an example, we have determined that for 90 &lt;= DOY &lt;= 250 (a range that includes typical sowing and flowering dates in Illinois), the effective day length calculated using the 8 degree method is 88% of the astronomical day length.)</p>
-<p>When using oscillators to determine the day length, there is a slight lag compared to the celestial calculations. However, the error during typical Illinois soybean growth days is generally within +/- 30 minutes, so no correction is applied.</p>
-<p>References: <code>Grimm, S. S., Jones, J. W., Boote, K. J. &amp; Hesketh, J. D. Parameter Estimation for Predicting Flowering Date of Soybean Cultivars. Crop Science 33, 137–144 (1993)</code> <code>Piper, E. L., Boote, K. J., Jones, J. W. &amp; Grimm, S. S. Comparison of Two Phenology Models for Predicting Flowering and Maturity Date of Soybean. Crop Science 36, 1606–1614 (1996)</code> <code>Goudriaan, J. &amp; Van Laar, H. Calculation of dairy totals of the gross CO2 assimilation of leaf canopies. Netherlands Journal of Agricultural Science 26, 373–382 (1978)</code> </p>
+<p>Once the plant's physiological age exceeds a threshold value, it enters a photoperiod-sensitive stage where physiological days accumulate at a rate determined by both temperature and night length. Here the overall rate is the product of two factors:</p>
+<blockquote class="doxtable">
+<p><code>R = F(T) * F(N)</code> </p>
+</blockquote>
+<p>where <code>F(T)</code> is a linear-plateau function of temperature with two critical temperature values and <code>F(N)</code> is a linear-plateau function of night length with two critical night length values.</p>
+<p>When the physiological age exceeds a third threshold, the plant begins to flower (R1). Here this is represented by the quantity <code>grimm_flowering,</code> whose value becomes nonzero when the plant begins to flower.</p>
+<p>The Grimm model cites the method from Goudriaan (1978) for calculating day length. Unfortunately the Goudriaan paper includes two day lengths: the astronomical and effective day lengths. The Grimm model does not explicitly mention the effective day length, which seems to be used in Goudriaan for calculating average carbon assimilation by a plant canopy. Here we assume the Grimm model requires the astronomical day length.</p>
+<p>References:</p><ul>
+<li>Grimm, S. S., Jones, J. W., Boote, K. J. &amp; Hesketh, J. D. Parameter Estimation for Predicting Flowering Date of Soybean Cultivars. Crop Science 33, 137–144 (1993)</li>
+<li>Piper, E. L., Boote, K. J., Jones, J. W. &amp; Grimm, S. S. Comparison of Two Phenology Models for Predicting Flowering and Maturity Date of Soybean. Crop Science 36, 1606–1614 (1996)</li>
+<li>Goudriaan, J. &amp; Van Laar, H. Calculation of daily totals of the gross CO2 assimilation of leaf canopies. Netherlands Journal of Agricultural Science 26, 373–382 (1978) </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00044">44</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00056">56</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab026d60a0351c01bd258aac52143722c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab026d60a0351c01bd258aac52143722c">&#9670;&nbsp;</a></span>grimm_soybean_flowering_calculator()</h2>
@@ -183,7 +189,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00047">47</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00059">59</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00104">104</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00120">120</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00125">125</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html#l00141">141</a> of file <a class="el" href="grimm__soybean__flowering__calculator_8h_source.html">grimm_soybean_flowering_calculator.h</a>.</p>
 
 </div>
 </div>
@@ -251,7 +257,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgrimm__soybean__flowering__calculator.html">grimm_soybean_flowering_calculator</a></li>
-    <li class="footer">Generated on Mon Jul 12 2021 15:35:22 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 15 2021 21:37:16 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
