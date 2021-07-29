@@ -152,33 +152,32 @@ $(document).ready(function(){initNavTree('c4__leaf__photosynthesis_8cpp_source.h
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            .<a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>;  <span class="comment">// mmol / m^2 / s</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Calculate a new value for leaf temperature</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> constexpr LAI = 0.0;  <span class="comment">// EvapoTrans2 does not actually use LAI for anything</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct_e_t___str.html">ET_Str</a> et =</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="_aux_bio_cro_8cpp.html#add676bd834cf0cbca32d7cbf8b1cc9ed">EvapoTrans2</a>(</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            average_absorbed_shortwave, absorbed_shortwave, temp, rh, windspeed,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            LAI, height, initial_stomatal_conductance, leafwidth,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            specific_heat_of_air, et_equation);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> leaf_temperature = temp + et.<a class="code" href="struct_e_t___str.html#ac321dc561843cb5d3f74604036a3a8da">Deltat</a>;  <span class="comment">// deg. C</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Calculate final values for assimilation, stomatal conductance, and Ci using the new leaf temperature</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structc4__str.html">c4_str</a> photo =</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a>(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            incident_ppfd, leaf_temperature, rh, vmax1, alpha1, kparm,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            theta, beta, Rd, b0, b1, Gs_min * 1e3, StomataWS, Catm,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            atmospheric_pressure, water_stress_approach, upperT, lowerT);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Update the outputs</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    update(Assim_op, photo.<a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    update(GrossAssim_op, photo.<a class="code" href="structc4__str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    update(Ci_op, photo.<a class="code" href="structc4__str.html#abc345aedd954341b306bec86992287b8">Ci</a>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    update(Gs_op, photo.<a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    update(TransR_op, et.<a class="code" href="struct_e_t___str.html#a53d1afc42e3609e6eb8145169c7b5aaf">TransR</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    update(EPenman_op, et.<a class="code" href="struct_e_t___str.html#a7ee08add5c06f347e177447a6516ca01">EPenman</a>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    update(EPriestly_op, et.<a class="code" href="struct_e_t___str.html#a45c6793a51f491bf058f154777e48ec9">EPriestly</a>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    update(leaf_temperature_op, leaf_temperature);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="ttc" id="a_aux_bio_cro_8cpp_html_add676bd834cf0cbca32d7cbf8b1cc9ed"><div class="ttname"><a href="_aux_bio_cro_8cpp.html#add676bd834cf0cbca32d7cbf8b1cc9ed">EvapoTrans2</a></div><div class="ttdeci">struct ET_Str EvapoTrans2(const double absorbed_shortwave_radiation_et, const double absorbed_shortwave_radiation_lt, const double airTemp, const double RH, double WindSpeed, const double LeafAreaIndex, double CanopyHeight, const double stomatal_conductance, const double leaf_width, const double specific_heat_of_air, const int eteq)</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8cpp_source.html#l00587">AuxBioCro.cpp:594</a></div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="struct_e_t___str.html">ET_Str</a> et =</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="_aux_bio_cro_8cpp.html#a12be01fecf06189c4dac547bc8d9ae10">EvapoTrans2</a>(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            absorbed_shortwave, average_absorbed_shortwave, temp, rh, windspeed,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            height, initial_stomatal_conductance, leafwidth,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            specific_heat_of_air, et_equation);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> leaf_temperature = temp + et.<a class="code" href="struct_e_t___str.html#ac321dc561843cb5d3f74604036a3a8da">Deltat</a>;  <span class="comment">// deg. C</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Calculate final values for assimilation, stomatal conductance, and Ci using the new leaf temperature</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structc4__str.html">c4_str</a> photo =</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a>(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            incident_ppfd, leaf_temperature, rh, vmax1, alpha1, kparm,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            theta, beta, Rd, b0, b1, Gs_min * 1e3, StomataWS, Catm,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            atmospheric_pressure, water_stress_approach, upperT, lowerT);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Update the outputs</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    update(Assim_op, photo.<a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    update(GrossAssim_op, photo.<a class="code" href="structc4__str.html#ac2cb333c4e7bdd22c4c9672c80ed977f">GrossAssim</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    update(Ci_op, photo.<a class="code" href="structc4__str.html#abc345aedd954341b306bec86992287b8">Ci</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    update(Gs_op, photo.<a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    update(TransR_op, et.<a class="code" href="struct_e_t___str.html#a53d1afc42e3609e6eb8145169c7b5aaf">TransR</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    update(EPenman_op, et.<a class="code" href="struct_e_t___str.html#a7ee08add5c06f347e177447a6516ca01">EPenman</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    update(EPriestly_op, et.<a class="code" href="struct_e_t___str.html#a45c6793a51f491bf058f154777e48ec9">EPriestly</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    update(leaf_temperature_op, leaf_temperature);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="a_aux_bio_cro_8cpp_html_a12be01fecf06189c4dac547bc8d9ae10"><div class="ttname"><a href="_aux_bio_cro_8cpp.html#a12be01fecf06189c4dac547bc8d9ae10">EvapoTrans2</a></div><div class="ttdeci">struct ET_Str EvapoTrans2(const double absorbed_shortwave_radiation_et, const double absorbed_shortwave_radiation_lt, const double airTemp, const double RH, double WindSpeed, double CanopyHeight, const double stomatal_conductance, const double leaf_width, const double specific_heat_of_air, const int eteq)</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8cpp_source.html#l00587">AuxBioCro.cpp:594</a></div></div>
 <div class="ttc" id="a_bio_cro_8h_html"><div class="ttname"><a href="_bio_cro_8h.html">BioCro.h</a></div></div>
 <div class="ttc" id="ac4__leaf__photosynthesis_8h_html"><div class="ttname"><a href="c4__leaf__photosynthesis_8h.html">c4_leaf_photosynthesis.h</a></div></div>
 <div class="ttc" id="ac4photo_8cpp_html_a2613ca2f3d1f34c768aacfbd0de1dd3e"><div class="ttname"><a href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a></div><div class="ttdeci">struct c4_str c4photoC(double Qp, double leaf_temperature, double relative_humidity, double vmax, double alpha, double kparm, double theta, double beta, double Rd, double bb0, double bb1, double Gs_min, double StomaWS, double Ca, double atmospheric_pressure, int water_stress_approach, double upperT, double lowerT)</div><div class="ttdef"><b>Definition:</b> <a href="c4photo_8cpp_source.html#l00001">c4photo.cpp:15</a></div></div>
@@ -201,7 +200,7 @@ $(document).ready(function(){initNavTree('c4__leaf__photosynthesis_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c4__leaf__photosynthesis_8cpp.html">c4_leaf_photosynthesis.cpp</a></li>
-    <li class="footer">Generated on Thu Jul 15 2021 21:37:15 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jul 29 2021 15:53:08 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -26,8 +26,6 @@ var classc4__canopy =
     [ "leaf_transmittance", "classc4__canopy.html#a6f91df5d2a45af43347e0e67fc2e0d77", null ],
     [ "LeafN", "classc4__canopy.html#a9cbaff735de77f1ca6486b1773cff089", null ],
     [ "leafwidth", "classc4__canopy.html#a5f759bfd8cbcf56deba3b046488878ea", null ],
-    [ "lnb0", "classc4__canopy.html#acd641b27962a75dfeca7770f763c5844", null ],
-    [ "lnb1", "classc4__canopy.html#a0cb6e569a4dcf9830a82442fa687759d", null ],
     [ "lnfun", "classc4__canopy.html#a601b8490737087441a7423fbfbf8939d", null ],
     [ "lowerT", "classc4__canopy.html#a875830859abc2c5dca767b9af3ac712d", null ],
     [ "nalphab0", "classc4__canopy.html#a412e9ff8d620a7aca7e00750b2abbb42", null ],

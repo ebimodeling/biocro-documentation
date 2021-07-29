@@ -195,7 +195,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classmodule__wrapper__factory.html#aad0572cf54f1ce9b0b06ba73e105c0ba">module_wrapper_factory::module_wrapper_creators</a>.at(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>)();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    } <span class="keywordflow">catch</span> (std::out_of_range) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    } <span class="keywordflow">catch</span> (std::out_of_range <span class="keyword">const</span>&amp;) {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        std::string message = std::string(<span class="stringliteral">&quot;\&quot;&quot;</span>) + <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> +</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                       std::string(<span class="stringliteral">&quot;\&quot;&quot;</span>) +</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                       std::string(<span class="stringliteral">&quot; was given as a module name, &quot;</span>) +</div>
@@ -495,7 +495,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 21:35:57 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jul 29 2021 15:52:08 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

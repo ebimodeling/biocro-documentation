@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classed__multilayer__canopy__properties.html#a7529e4bc65da93c197a1fcadf1f39233":[2,0,38,25],
-"classed__multilayer__canopy__properties.html#a80b1ac44877d972acf96ed1a93d04ab0":[2,0,38,28],
 "classed__multilayer__canopy__properties.html#a8e531f8d7059ce59972eda36cba45d11":[2,0,38,12],
 "classed__multilayer__canopy__properties.html#a90953813bc784f36dcd15867aa9c0f28":[2,0,38,23],
 "classed__multilayer__canopy__properties.html#a91b57f40c4cbd3884e0c2e77e8ff4cea":[2,0,38,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "classmultilayer__canopy__integrator.html#a391e9fd4e949f6e987eb654a11b1e451":[2,0,74,1],
 "classmultilayer__canopy__integrator.html#a3aa0536cbfb3424bf7bae3d73fc99eba":[2,0,74,0],
 "classmultilayer__canopy__integrator.html#a4fdddf6c5bb5cfc4d42787b3d89e6097":[2,0,74,3],
-"classmultilayer__canopy__integrator.html#a6e6abd692b5bf84d029909e52ab8a5a0":[2,0,74,7]
+"classmultilayer__canopy__integrator.html#a6e6abd692b5bf84d029909e52ab8a5a0":[2,0,74,7],
+"classmultilayer__canopy__integrator.html#a7386f613dfe2c4999b3a8818e00dabac":[2,0,74,5],
+"classmultilayer__canopy__integrator.html#a7c3d66c5b6e4a701032c2d87b1bf2f90":[2,0,74,13]
 };

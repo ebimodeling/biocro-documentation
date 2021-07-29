@@ -4,7 +4,7 @@ var _aux_bio_cro_8cpp =
     [ "compute_wsPhoto", "_aux_bio_cro_8cpp.html#a058be0e6ed718b377d7c6056cceb09a8", null ],
     [ "cos_zenith_angle", "_aux_bio_cro_8cpp.html#a81eccf5a903a575f17d799d959397f61", null ],
     [ "dry_air_density", "_aux_bio_cro_8cpp.html#a6979290fdcfafddf3aaa343a367c1f81", null ],
-    [ "EvapoTrans2", "_aux_bio_cro_8cpp.html#add676bd834cf0cbca32d7cbf8b1cc9ed", null ],
+    [ "EvapoTrans2", "_aux_bio_cro_8cpp.html#a12be01fecf06189c4dac547bc8d9ae10", null ],
     [ "get_soil_properties", "_aux_bio_cro_8cpp.html#ad89278eed741e51c6e3b8e5c0d97318c", null ],
     [ "get_soil_properties", "_aux_bio_cro_8cpp.html#af355fd8964ae8eef5aad1c74a4ed0771", null ],
     [ "leaf_boundary_layer_conductance", "_aux_bio_cro_8cpp.html#ac010f205c5523680171638102192ce39", null ],
@@ -23,6 +23,6 @@ var _aux_bio_cro_8cpp =
     [ "TempToLHV", "_aux_bio_cro_8cpp.html#ae810651283c6640ef4669d0eede1c942", null ],
     [ "TempToSFS", "_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a", null ],
     [ "water_latent_heat_of_vaporization_henderson", "_aux_bio_cro_8cpp.html#ae316a7cc0aa11d92732e36c4665361ce", null ],
-    [ "watstr", "_aux_bio_cro_8cpp.html#abca736d0dd36b9f00cbd9dcd72ebcf14", null ],
+    [ "watstr", "_aux_bio_cro_8cpp.html#a3e42b1f6357490f2be99959174fe503f", null ],
     [ "WINDprof", "_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7", null ]
 ];
