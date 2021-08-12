@@ -181,10 +181,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>/src/c3EvapoTrans.c by Fernando Ezequiel Miguez Copyright (C) 2010</p>
+<p>Part of the code here (sunML, EvapoTrans, SoilEvapo, TempTo and the *prof functions) are based on code in WIMOVAC. WIMOVAC is copyright of Stephen Long and Stephen Humphries. Documentation for WIMOVAC can be found at <a href="http://www.life.illinois.edu/plantbio/wimovac/">http://www.life.illinois.edu/plantbio/wimovac/</a> (checked 02-13-2010)</p>
+<p>Many of these functions come from Chapter 14 of Thornley and Johnson (1990).</p>
+<p>Thornley, J.H.M. and Johnson, I.R. (1990) Plant and Crop Modelling. A Mathematical Approach to Plant and Crop Physiology. </p>
 
 <p class="definition">Definition at line <a class="el" href="c3_evapo_trans_8cpp_source.html#l00001">1</a> of file <a class="el" href="c3_evapo_trans_8cpp_source.html">c3EvapoTrans.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00037">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00528">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00545">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00563">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00034">ET_Str::TransR</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00037">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">ET_Str::EPriestly</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00692">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00553">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00609">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00662">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00034">ET_Str::TransR</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -196,9 +200,9 @@ Functions</h2></td></tr>
 <map name="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph" id="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,111,108"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="159,5,333,32"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title=" " alt="" coords="193,56,299,83"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ae810651283c6640ef4669d0eede1c942" title=" " alt="" coords="197,107,295,133"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title=" " alt="" coords="198,157,294,184"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="193,56,299,83"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="197,107,295,133"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="198,157,294,184"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -221,7 +225,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3_evapo_trans_8cpp.html">c3EvapoTrans.cpp</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 15:53:08 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 12 2021 15:22:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

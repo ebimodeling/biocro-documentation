@@ -146,14 +146,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a2905c23b422ad454d9577841ca594d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a2905c23b422ad454d9577841ca594d0d">LNprof</a> (double LeafN, double LAI, int nlayers, double kpLN, double *leafN_profile)</td></tr>
 <tr class="separator:a2905c23b422ad454d9577841ca594d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6380d8cd4192408df76baefe6b369a70"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70">TempToDdryA</a> (double air_temperature)</td></tr>
+<tr class="memdesc:a6380d8cd4192408df76baefe6b369a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the density of dry air from the air temperature.  <a href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70">More...</a><br /></td></tr>
 <tr class="separator:a6380d8cd4192408df76baefe6b369a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6979290fdcfafddf3aaa343a367c1f81"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a6979290fdcfafddf3aaa343a367c1f81">dry_air_density</a> (const double air_temperature, const double air_pressure)</td></tr>
+<tr class="memdesc:a6979290fdcfafddf3aaa343a367c1f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the density of dry air from temperature and pressure using the ideal gas law.  <a href="_aux_bio_cro_8cpp.html#a6979290fdcfafddf3aaa343a367c1f81">More...</a><br /></td></tr>
 <tr class="separator:a6979290fdcfafddf3aaa343a367c1f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae810651283c6640ef4669d0eede1c942"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ae810651283c6640ef4669d0eede1c942">TempToLHV</a> (double air_temperature)</td></tr>
-<tr class="separator:ae810651283c6640ef4669d0eede1c942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460579178484521ecc50b488c58bb0dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd">TempToLHV</a> (double temperature)</td></tr>
+<tr class="memdesc:a460579178484521ecc50b488c58bb0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the latent heat of vaporization for water from its temperature.  <a href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd">More...</a><br /></td></tr>
+<tr class="separator:a460579178484521ecc50b488c58bb0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae316a7cc0aa11d92732e36c4665361ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#ae316a7cc0aa11d92732e36c4665361ce">water_latent_heat_of_vaporization_henderson</a> (double temperature)</td></tr>
+<tr class="memdesc:ae316a7cc0aa11d92732e36c4665361ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the latent heat of vaporization of water from its temperature.  <a href="_aux_bio_cro_8cpp.html#ae316a7cc0aa11d92732e36c4665361ce">More...</a><br /></td></tr>
 <tr class="separator:ae316a7cc0aa11d92732e36c4665361ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f381bbff6170709a8d0e2e34f4556a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a">TempToSFS</a> (double air_temperature)</td></tr>
+<tr class="memdesc:a05f381bbff6170709a8d0e2e34f4556a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the derivative of saturation water vapor pressure with respect to temperature at a particular value of air temperature.  <a href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a">More...</a><br /></td></tr>
 <tr class="separator:a05f381bbff6170709a8d0e2e34f4556a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117fba2c85ba6d52345e7cefc05a43ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff">saturation_vapor_pressure</a> (double air_temperature)</td></tr>
 <tr class="memdesc:a117fba2c85ba6d52345e7cefc05a43ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck equation.  <a href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff">More...</a><br /></td></tr>
@@ -311,7 +316,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00864">864</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00971">971</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -404,14 +409,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calculate the density of dry air from temperature and pressure using the ideal gas law. </p>
+<p>See <a href="https://en.wikipedia.org/wiki/Density_of_air">https://en.wikipedia.org/wiki/Density_of_air</a> for details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">air_temperature</td><td>Calculate the density of dry air from temperature and pressure. This is based on the ideal gas law. See <a href="https://en.wikipedia.org/wiki/Density_of_air">https://en.wikipedia.org/wiki/Density_of_air</a> for details. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">air_temperature</td><td>Air temperature in kelvin</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">air_pressure</td><td>Air pressure in Pa</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Density of dry air in kg / m^3 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00534">534</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00572">572</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +499,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">587</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00692">692</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_can_a_c_8cpp_source.html#l00005">CanAC()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -522,7 +532,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01327">1327</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01434">1434</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -542,7 +552,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01331">1331</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01438">1438</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00109">soil_parameters</a>.</p>
 
@@ -598,9 +608,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00744">744</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00851">851</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">saturation_vapor_pressure()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00692">saturation_vapor_pressure()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -882,7 +892,7 @@ Sources</h3>
 <p>The Humphries thesis is also unfortunately not available online:</p>
 <p>Humphries, S. "Will mechanistically rich models provide us with new insights into the response of plant production to climate change?: development and experiments with WIMOVAC: (Windows Intuitive Model of Vegetation response to Atmosphere &amp; Climate Change)" (University of Essex, 2002) </p>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01259">1259</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01366">1366</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1021,7 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01259">1259</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01366">1366</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1034,11 +1044,18 @@ Sources</h3>
 <p>Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck equation. </p>
 <p>Equations of this form were used by Arden Buck to model saturation water vapor pressure in 1981: <a href="https://doi.org/10.1175/1520-0450(1981)020%3C1527:NEFCVP%3E2.0.CO;2">A. L. Buck, J. Appl. Meteor. 20, 1527–1532 (1981)</a></p>
 <p>In 1996, some of the fitting coefficients were updated. Here we use these values, found in <a href="http://www.hygrometers.com/wp-content/uploads/CR-1A-users-manual-2009-12.pdf">a Buck hygrometer manual</a>, and also displayed on the <a href="https://en.wikipedia.org/wiki/Arden_Buck_equation">Wikipedia page for the Arden Buck equation</a>.</p>
-<p>We use the values for vapor over water (rather than ice) and disregard the "enhancement factor" since we are only concerned with the pressure at saturation. </p>
+<p>We use the values for vapor over water (rather than ice) and disregard the "enhancement factor" since we are only concerned with the pressure at saturation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">air_temperature</td><td>Air temperature in degrees C</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Saturation water vapor pressure in Pa </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">587</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00692">692</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00020">c3EvapoTrans()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00744">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00794">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00024">c3EvapoTrans()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00851">leaf_boundary_layer_conductance()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00901">SoilEvapo()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -1082,7 +1099,7 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01259">1259</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l01366">1366</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1190,9 +1207,9 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00794">794</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00901">901</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00587">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00528">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00545">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00563">TempToSFS()</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8cpp_source.html#l00692">saturation_vapor_pressure()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00553">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00609">TempToLHV()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00662">TempToSFS()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -1202,9 +1219,9 @@ Sources</h3>
 <map name="a_aux_bio_cro_8cpp_ab163aedfdfb73c66e5eb8dca307016be_cgraph" id="a_aux_bio_cro_8cpp_ab163aedfdfb73c66e5eb8dca307016be_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,85,108"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="133,5,308,32"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title=" " alt="" coords="168,56,273,83"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#ae810651283c6640ef4669d0eede1c942" title=" " alt="" coords="172,107,269,133"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title=" " alt="" coords="173,157,269,184"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="168,56,273,83"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="172,107,269,133"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="173,157,269,184"/>
 </map>
 </div>
 
@@ -1416,7 +1433,7 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00864">864</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00971">971</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1578,9 +1595,42 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00528">528</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p>Determines the density of dry air from the air temperature. </p>
+<p>This function appears to be derived from fitting a linear equation to the values of <code>rho</code> in Table 14.3 on pg. 408 in Thornley and Johnson (1990):</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">T (degrees C)   </th><th class="markdownTableHeadCenter"><code>rho</code> (kg / m^3)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">1.29    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">1.27    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">10   </td><td class="markdownTableBodyCenter">1.25    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">15   </td><td class="markdownTableBodyCenter">1.23    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">20   </td><td class="markdownTableBodyCenter">1.20    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">25   </td><td class="markdownTableBodyCenter">1.18    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">30   </td><td class="markdownTableBodyCenter">1.16    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">35   </td><td class="markdownTableBodyCenter">1.15    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">40   </td><td class="markdownTableBodyCenter">1.13   </td></tr>
+</table>
+<p>Thornley, J.H.M. and Johnson, I.R. (1990) Plant and Crop Modelling. A Mathematical Approach to Plant and Crop Physiology.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">air_temperature</td><td>Air temperature in degrees C</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Density of dry air in kg / m^3 </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00020">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00794">SoilEvapo()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00553">553</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00024">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00901">SoilEvapo()</a>.</p>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
@@ -1588,7 +1638,7 @@ Sources</h3>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph" id="a_aux_bio_cro_8cpp_a6380d8cd4192408df76baefe6b369a70_icgraph">
-<area shape="rect" title=" " alt="" coords="284,31,389,57"/>
+<area shape="rect" title="Determines the density of dry air from the air temperature." alt="" coords="284,31,389,57"/>
 <area shape="rect" href="_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e" title=" " alt="" coords="131,5,236,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ab163aedfdfb73c66e5eb8dca307016be" title=" " alt="" coords="143,56,223,83"/>
 <area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="5,5,83,32"/>
@@ -1597,8 +1647,8 @@ Sources</h3>
 
 </div>
 </div>
-<a id="ae810651283c6640ef4669d0eede1c942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae810651283c6640ef4669d0eede1c942">&#9670;&nbsp;</a></span>TempToLHV()</h2>
+<a id="a460579178484521ecc50b488c58bb0dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460579178484521ecc50b488c58bb0dd">&#9670;&nbsp;</a></span>TempToLHV()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1607,29 +1657,56 @@ Sources</h3>
           <td class="memname">double TempToLHV </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>air_temperature</em></td><td>)</td>
+          <td class="paramname"><em>temperature</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Determine the latent heat of vaporization for water from its temperature. </p>
+<p>This function appears to be derived from fitting a linear equation to the values of <code>lambda</code> in Table 14.3 on pg. 408 in Thornley and Johnson (1990):</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">T (degrees C)   </th><th class="markdownTableHeadCenter"><code>lambda</code> (J / kg)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">2.50    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">2.49    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">10   </td><td class="markdownTableBodyCenter">2.48    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">15   </td><td class="markdownTableBodyCenter">2.47    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">20   </td><td class="markdownTableBodyCenter">2.45    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">25   </td><td class="markdownTableBodyCenter">2.44    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">30   </td><td class="markdownTableBodyCenter">2.43    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">35   </td><td class="markdownTableBodyCenter">2.42    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">40   </td><td class="markdownTableBodyCenter">2.41   </td></tr>
+</table>
+<p>Thornley, J.H.M. and Johnson, I.R. (1990) Plant and Crop Modelling. A Mathematical Approach to Plant and Crop Physiology.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">air_temperature</td><td>Calculate latent heat of vaporization from air temperature. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temperature</td><td>Water temperature in degrees C</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Latent heat of vaporization for water in J / kg </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00545">545</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00609">609</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00020">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00794">SoilEvapo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00024">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00901">SoilEvapo()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph" alt=""/></div>
-<map name="a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph" id="a_aux_bio_cro_8cpp_ae810651283c6640ef4669d0eede1c942_icgraph">
-<area shape="rect" title=" " alt="" coords="284,31,381,57"/>
+<div class="center"><img src="_aux_bio_cro_8cpp_a460579178484521ecc50b488c58bb0dd_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a460579178484521ecc50b488c58bb0dd_icgraph" alt=""/></div>
+<map name="a_aux_bio_cro_8cpp_a460579178484521ecc50b488c58bb0dd_icgraph" id="a_aux_bio_cro_8cpp_a460579178484521ecc50b488c58bb0dd_icgraph">
+<area shape="rect" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="284,31,381,57"/>
 <area shape="rect" href="_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e" title=" " alt="" coords="131,5,236,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ab163aedfdfb73c66e5eb8dca307016be" title=" " alt="" coords="143,56,223,83"/>
 <area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="5,5,83,32"/>
@@ -1654,9 +1731,42 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00563">563</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p>Determine the derivative of saturation water vapor pressure with respect to temperature at a particular value of air temperature. </p>
+<p>This function appears to be derived from fitting a quadratic function to the values of <code>s</code> in Table 14.3 on pg. 408 in Thornley and Johnson (1990):</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">T (degrees C)   </th><th class="markdownTableHeadCenter"><code>s</code> (10^(-3) kg / m^3 / K)    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">0   </td><td class="markdownTableBodyCenter">0.33    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyCenter">0.45    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">10   </td><td class="markdownTableBodyCenter">0.60    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">15   </td><td class="markdownTableBodyCenter">0.78    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">20   </td><td class="markdownTableBodyCenter">1.01    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">25   </td><td class="markdownTableBodyCenter">1.30    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">30   </td><td class="markdownTableBodyCenter">1.65    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">35   </td><td class="markdownTableBodyCenter">2.07    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">40   </td><td class="markdownTableBodyCenter">2.57   </td></tr>
+</table>
+<p>Thornley, J.H.M. and Johnson, I.R. (1990) Plant and Crop Modelling. A Mathematical Approach to Plant and Crop Physiology.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">air_temperature</td><td>Air temperature in degrees C</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derivative of saturation water vapor pressure with respect to temperature in kg / m^3 / K (equivalent to Pa / K) </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00020">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00794">SoilEvapo()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00662">662</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="c3_evapo_trans_8cpp_source.html#l00024">c3EvapoTrans()</a>, and <a class="el" href="_aux_bio_cro_8cpp_source.html#l00901">SoilEvapo()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1664,7 +1774,7 @@ Sources</h3>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph.png" border="0" usemap="#a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph" alt=""/></div>
 <map name="a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph" id="a_aux_bio_cro_8cpp_a05f381bbff6170709a8d0e2e34f4556a_icgraph">
-<area shape="rect" title=" " alt="" coords="284,31,380,57"/>
+<area shape="rect" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="284,31,380,57"/>
 <area shape="rect" href="_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e" title=" " alt="" coords="131,5,236,32"/>
 <area shape="rect" href="_aux_bio_cro_8cpp.html#ab163aedfdfb73c66e5eb8dca307016be" title=" " alt="" coords="143,56,223,83"/>
 <area shape="rect" href="_bio_cro_8h.html#a71b6ec7f186989eadc9d6196f7514c53" title=" " alt="" coords="5,5,83,32"/>
@@ -1688,14 +1798,18 @@ Sources</h3>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Determine the latent heat of vaporization of water from its temperature. </p>
+<p>Here we use Equation 8 from <a href="https://doi.org/10.1002/qj.49711046626">Henderson-Sellers, B. "A new formula for latent heat of vaporization of water as a function of temperature" Quarterly Journal of the Royal Meteorological Society 110, 1186–1190 (1984)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">temperature</td><td>Calculate the latent heat of vaporization of water from temperature. B. Henderson-Sellers. 1984. Quarterly journal of royal meterological society. 110(446): 1186-1190. DOI: 10.1002/qj.49711046626. Equation 8. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temperature</td><td>Water temperature in kelvin</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Latent heat of vaporization for water in J / kg </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00553">553</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00629">629</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1779,7 +1893,7 @@ Sources</h3>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00864">864</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_aux_bio_cro_8cpp_source.html#l00971">971</a> of file <a class="el" href="_aux_bio_cro_8cpp_source.html">AuxBioCro.cpp</a>.</p>
 
 </div>
 </div>
@@ -1850,7 +1964,7 @@ Sources</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 15:53:08 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 12 2021 15:22:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
