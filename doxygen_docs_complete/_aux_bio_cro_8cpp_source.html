@@ -661,7 +661,7 @@ $(function() {
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <span class="keywordtype">double</span> vapor_density_deficit = SWVC * (1 - RelH / 100);</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="keywordtype">double</span> BoundaryLayerThickness = 4e-3 * sqrt(soil_clod_size / winds);</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordtype">double</span> DiffCoef = 2.126e-5 * 1.48e-7 * SoilTemp;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordtype">double</span> DiffCoef = 2.126e-5 + 1.48e-7 * SoilTemp;</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    <span class="keywordtype">double</span> SoilBoundaryLayer = DiffCoef / BoundaryLayerThickness;</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160; </div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordtype">double</span> Ja = 2 * TotalRadiation * ((1 - soil_reflectance - soil_transmission) / (1 - soil_transmission));</div>
@@ -1136,7 +1136,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 12 2021 15:21:39 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Aug 31 2021 15:16:32 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

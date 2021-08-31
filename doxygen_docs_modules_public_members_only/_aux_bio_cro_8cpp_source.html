@@ -677,7 +677,7 @@ $(document).ready(function(){initNavTree('_aux_bio_cro_8cpp_source.html',''); in
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <span class="keywordtype">double</span> vapor_density_deficit = SWVC * (1 - RelH / 100);</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    <span class="keywordtype">double</span> BoundaryLayerThickness = 4e-3 * sqrt(soil_clod_size / winds);</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordtype">double</span> DiffCoef = 2.126e-5 * 1.48e-7 * SoilTemp;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    <span class="keywordtype">double</span> DiffCoef = 2.126e-5 + 1.48e-7 * SoilTemp;</div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    <span class="keywordtype">double</span> SoilBoundaryLayer = DiffCoef / BoundaryLayerThickness;</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160; </div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordtype">double</span> Ja = 2 * TotalRadiation * ((1 - soil_reflectance - soil_transmission) / (1 - soil_transmission));</div>
@@ -1149,7 +1149,7 @@ $(document).ready(function(){initNavTree('_aux_bio_cro_8cpp_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="_aux_bio_cro_8cpp.html">AuxBioCro.cpp</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 15:22:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
