@@ -187,9 +187,8 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a dynamical system which can be solved using an integrator. </p>
-<p>A true dynamical system requires three elements:</p>
+<p>A dynamical system requires three elements:</p>
 <ul>
-<li>A state, which consists of one or more quantities; here we use the term <code>quantity</code> to refer to an entity with a name and a numeric value; likewise, the value of the state is determined by the values of each of its constituent quantities.</li>
 <li>A state space, which may generally be thought of as consisting of one or more quantities; here we use the term <em>quantity</em> to refer to a named variable that represents some particular attribute of the state.</li>
 <li>An independent quantity upon which the value of the state depends, which is typically taken to be the time.</li>
 <li>An evolution rule which describes how to determine the value of the state at a future time given its value at the current time.</li>
@@ -220,7 +219,7 @@ Private Attributes</h2></td></tr>
 <p>When using a differential equation solver to determine the time evolution of a dynamical system's state, it is typically necessary to treat the values of the differential quantities as a vector where they take a particular order, in contrast to our usual method of storing quantities in <code>state_map</code> objects where their values are accessed via their names and do not have a defined order. In this situation, the <code>get_differential_quantity_names</code> and <code>get_differential_quantities</code> methods are essential, since they return the names and values of the differential quantities in a defined order. When the <code>calculate_derivative</code> method is called, the values of the differential quantities are expected to be supplied in the same order defined by <code>get_differential_quantity_names</code>, and the derivatives are also returned in that order.</p>
 <p>Once a time sequence of differential quantity values has been determined by a solver, it is typically necessary to retrieve the values of all state quantities that change during a simulation. This can be achieved using additional public methods. First, the names of all such quantities can be determined using the <code>get_output_quantity_names</code> method. Then, pointers to the values of these quantities in the central map can be obtained using the <code>get_quantity_access_ptrs</code> method. Finally, for each value of time and the differential quantities, the <code>update_all_quantities</code> method can be called to update <code>all_quantities</code>, and the access pointers can be used to retrieve the updated values from <code>all_quantities</code>. Rather than explicitly calling these methods, this procedure can be performed using the <code>get_results_from_system</code> free function. </p>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00144">144</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00139">139</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a31c3def616b7cba2bbf765ebdf6b7028"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31c3def616b7cba2bbf765ebdf6b7028">&#9670;&nbsp;</a></span>dynamical_system()</h2>
@@ -268,7 +267,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8cpp_source.html#l00005">5</a> of file <a class="el" href="dynamical__system_8cpp_source.html">dynamical_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00206">all_quantities</a>, <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="dynamical__system_8h_source.html#l00203">differential_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00211">differential_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00207">differential_quantity_derivatives</a>, <a class="el" href="dynamical__system_8h_source.html#l00215">differential_quantity_ptr_pairs</a>, <a class="el" href="dynamical__system_8h_source.html#l00202">direct_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00210">direct_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00216">driver_quantity_ptr_pairs</a>, <a class="el" href="dynamical__system_8h_source.html#l00201">drivers</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00337">get_evaluation_order()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00563">get_module_vector()</a>, <a class="el" href="dynamical__system__helper__functions_8h_source.html#l00020">get_pointer_pairs()</a>, <a class="el" href="state__map_8h_source.html#l00057">keys()</a>, <a class="el" href="dynamical__system_8h_source.html#l00232">startup_message</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00648">string_set_to_string_vector()</a>, <a class="el" href="dynamical__system_8h_source.html#l00214">timestep_ptr</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00043">validate_dynamical_system_inputs()</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00201">all_quantities</a>, <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00292">define_quantity_map()</a>, <a class="el" href="dynamical__system_8h_source.html#l00198">differential_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00206">differential_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00202">differential_quantity_derivatives</a>, <a class="el" href="dynamical__system_8h_source.html#l00210">differential_quantity_ptr_pairs</a>, <a class="el" href="dynamical__system_8h_source.html#l00197">direct_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00205">direct_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00211">driver_quantity_ptr_pairs</a>, <a class="el" href="dynamical__system_8h_source.html#l00196">drivers</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, <a class="el" href="module__dependency__utilities_8cpp_source.html#l00337">get_evaluation_order()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00563">get_module_vector()</a>, <a class="el" href="dynamical__system__helper__functions_8h_source.html#l00020">get_pointer_pairs()</a>, <a class="el" href="state__map_8h_source.html#l00057">keys()</a>, <a class="el" href="dynamical__system_8h_source.html#l00227">startup_message</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00648">string_set_to_string_vector()</a>, <a class="el" href="dynamical__system_8h_source.html#l00209">timestep_ptr</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00043">validate_dynamical_system_inputs()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -352,9 +351,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00286">286</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00281">281</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00231">ncalls</a>, <a class="el" href="dynamical__system_8h_source.html#l00327">run_differential_modules()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00264">update_all_quantities()</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00226">ncalls</a>, <a class="el" href="dynamical__system_8h_source.html#l00322">run_differential_modules()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00259">update_all_quantities()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__system__derivatives_8cpp_source.html#l00041">R_system_derivatives()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -409,9 +408,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00187">187</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00182">182</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00232">startup_message</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00227">startup_message</a>.</p>
 
 </div>
 </div>
@@ -438,9 +437,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00189">189</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00184">184</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00231">ncalls</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00226">ncalls</a>.</p>
 
 </div>
 </div>
@@ -468,9 +467,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00244">244</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00239">239</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00215">differential_quantity_ptr_pairs</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00210">differential_quantity_ptr_pairs</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__system__derivatives_8cpp_source.html#l00041">R_system_derivatives()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -510,9 +509,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00181">181</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00176">176</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00199">initial_values</a>, and <a class="el" href="state__map_8h_source.html#l00057">keys()</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00194">initial_values</a>, and <a class="el" href="state__map_8h_source.html#l00057">keys()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__system__derivatives_8cpp_source.html#l00041">R_system_derivatives()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -563,9 +562,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00185">185</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00180">180</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00231">ncalls</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00226">ncalls</a>.</p>
 
 </div>
 </div>
@@ -592,9 +591,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00155">155</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00150">150</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00201">drivers</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00196">drivers</a>.</p>
 
 </div>
 </div>
@@ -624,7 +623,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8cpp_source.html#l00170">170</a> of file <a class="el" href="dynamical__system_8cpp_source.html">dynamical_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="dynamical__system_8h_source.html#l00202">direct_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00201">drivers</a>, <a class="el" href="validate__dynamical__system_8h_source.html#l00259">get_defined_quantity_names()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00199">initial_values</a>.</p>
+<p class="reference">References <a class="el" href="state__map_8cpp_source.html#l00024">at()</a>, <a class="el" href="dynamical__system_8h_source.html#l00197">direct_module_names</a>, <a class="el" href="dynamical__system_8h_source.html#l00196">drivers</a>, <a class="el" href="validate__dynamical__system_8h_source.html#l00259">get_defined_quantity_names()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00194">initial_values</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -663,7 +662,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8cpp_source.html#l00140">140</a> of file <a class="el" href="dynamical__system_8cpp_source.html">dynamical_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00206">all_quantities</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00201">all_quantities</a>.</p>
 
 </div>
 </div>
@@ -691,9 +690,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Check whether the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> requires a fixed step Euler integrator based on the modules that it uses. </p>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00163">163</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00158">158</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system__helper__functions_8cpp_source.html#l00006">check_euler_requirement()</a>, <a class="el" href="dynamical__system_8h_source.html#l00211">differential_modules</a>, and <a class="el" href="dynamical__system_8h_source.html#l00210">direct_modules</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system__helper__functions_8cpp_source.html#l00006">check_euler_requirement()</a>, <a class="el" href="dynamical__system_8h_source.html#l00206">differential_modules</a>, and <a class="el" href="dynamical__system_8h_source.html#l00205">direct_modules</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -727,7 +726,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8cpp_source.html#l00107">107</a> of file <a class="el" href="dynamical__system_8cpp_source.html">dynamical_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00206">all_quantities</a>, <a class="el" href="dynamical__system_8h_source.html#l00210">direct_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00199">initial_values</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00120">update_drivers()</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00201">all_quantities</a>, <a class="el" href="dynamical__system_8h_source.html#l00205">direct_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00194">initial_values</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00120">update_drivers()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -766,9 +765,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00186">186</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00181">181</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00231">ncalls</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00226">ncalls</a>.</p>
 
 </div>
 </div>
@@ -804,11 +803,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00327">327</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00322">322</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00211">differential_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00207">differential_quantity_derivatives</a>, <a class="el" href="dynamical__system_8h_source.html#l00215">differential_quantity_ptr_pairs</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00214">timestep_ptr</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00206">differential_modules</a>, <a class="el" href="dynamical__system_8h_source.html#l00202">differential_quantity_derivatives</a>, <a class="el" href="dynamical__system_8h_source.html#l00210">differential_quantity_ptr_pairs</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00209">timestep_ptr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00286">calculate_derivative()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00281">calculate_derivative()</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -870,11 +869,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00264">264</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00259">259</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00210">direct_modules</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, <a class="el" href="dynamical__system_8h_source.html#l00312">update_differential_quantities()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00120">update_drivers()</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00205">direct_modules</a>, <a class="el" href="modules_8cpp_source.html#l00008">run_module_list()</a>, <a class="el" href="dynamical__system_8h_source.html#l00307">update_differential_quantities()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00120">update_drivers()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00286">calculate_derivative()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00281">calculate_derivative()</a>.</p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -929,11 +928,11 @@ Private Attributes</h2></td></tr>
 
 <p>Updates the system's internally stored values for the differential quantities to the ones in new_values. </p>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00312">312</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00307">307</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00215">differential_quantity_ptr_pairs</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00210">differential_quantity_ptr_pairs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00264">update_all_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00259">update_all_quantities()</a>.</p>
 <div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
@@ -978,9 +977,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dynamical__system_8cpp_source.html#l00120">120</a> of file <a class="el" href="dynamical__system_8cpp_source.html">dynamical_system.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00216">driver_quantity_ptr_pairs</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00211">driver_quantity_ptr_pairs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00264">update_all_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00259">update_all_quantities()</a>.</p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
@@ -1024,9 +1023,9 @@ Private Attributes</h2></td></tr>
 
 <p>Updates values of the drivers in the internally stored quantity map to match their values in the internally stored drivers table at time <code>time_index</code>, which should be a discrete index such as an <code>int</code> or <code>size_t</code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00300">300</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00295">295</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00216">driver_quantity_ptr_pairs</a>.</p>
+<p class="reference">References <a class="el" href="dynamical__system_8h_source.html#l00211">driver_quantity_ptr_pairs</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1050,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00206">206</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00201">201</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00140">get_quantity_access_ptrs()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>.</p>
 
@@ -1077,7 +1076,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00203">203</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00198">198</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>.</p>
 
@@ -1103,9 +1102,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00211">211</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00206">206</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00163">requires_euler_integrator()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00327">run_differential_modules()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00158">requires_euler_integrator()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00322">run_differential_modules()</a>.</p>
 
 </div>
 </div>
@@ -1129,9 +1128,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00207">207</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00202">202</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00327">run_differential_modules()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00322">run_differential_modules()</a>.</p>
 
 </div>
 </div>
@@ -1155,9 +1154,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00215">215</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00210">210</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00244">get_differential_quantities()</a>, <a class="el" href="dynamical__system_8h_source.html#l00327">run_differential_modules()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00312">update_differential_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00239">get_differential_quantities()</a>, <a class="el" href="dynamical__system_8h_source.html#l00322">run_differential_modules()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00307">update_differential_quantities()</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1180,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00202">202</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00197">197</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00170">get_output_quantity_names()</a>.</p>
 
@@ -1207,9 +1206,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00210">210</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00205">205</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00163">requires_euler_integrator()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00264">update_all_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00158">requires_euler_integrator()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00259">update_all_quantities()</a>.</p>
 
 </div>
 </div>
@@ -1233,7 +1232,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00216">216</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00211">211</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00120">update_drivers()</a>.</p>
 
@@ -1259,9 +1258,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00201">201</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00196">196</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00155">get_ntimes()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00170">get_output_quantity_names()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, <a class="el" href="dynamical__system_8h_source.html#l00150">get_ntimes()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00170">get_output_quantity_names()</a>.</p>
 
 </div>
 </div>
@@ -1285,9 +1284,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00199">199</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00194">194</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00181">get_differential_quantity_names()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00170">get_output_quantity_names()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00176">get_differential_quantity_names()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00170">get_output_quantity_names()</a>, and <a class="el" href="dynamical__system_8cpp_source.html#l00107">reset()</a>.</p>
 
 </div>
 </div>
@@ -1311,9 +1310,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00231">231</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00226">226</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00286">calculate_derivative()</a>, <a class="el" href="dynamical__system_8h_source.html#l00189">generate_usage_report()</a>, <a class="el" href="dynamical__system_8h_source.html#l00185">get_ncalls()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00186">reset_ncalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8h_source.html#l00281">calculate_derivative()</a>, <a class="el" href="dynamical__system_8h_source.html#l00184">generate_usage_report()</a>, <a class="el" href="dynamical__system_8h_source.html#l00180">get_ncalls()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00181">reset_ncalls()</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1336,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00200">200</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00195">195</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
 </div>
 </div>
@@ -1361,9 +1360,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00232">232</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00227">227</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00187">generate_startup_report()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00182">generate_startup_report()</a>.</p>
 
 </div>
 </div>
@@ -1387,9 +1386,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00214">214</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dynamical__system_8h_source.html#l00209">209</a> of file <a class="el" href="dynamical__system_8h_source.html">dynamical_system.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00327">run_differential_modules()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system()</a>, and <a class="el" href="dynamical__system_8h_source.html#l00322">run_differential_modules()</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1399,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 20:47:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 1 2021 21:40:02 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
