@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('ed__multilayer__canopy__integrator_8h_
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../constants.h&quot;</span>  <span class="comment">// for molar_mass_of_water, molar_mass_of_glucose</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classed__multilayer__canopy__integrator.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__multilayer__canopy__integrator.html">ed_multilayer_canopy_integrator</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classed__multilayer__canopy__integrator.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__multilayer__canopy__integrator.html">ed_multilayer_canopy_integrator</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classed__multilayer__canopy__integrator.html#af6d80974c44babc59c9ad5d896661432">   19</a></span>&#160;    <a class="code" href="classed__multilayer__canopy__integrator.html#af6d80974c44babc59c9ad5d896661432">ed_multilayer_canopy_integrator</a>(</div>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('ed__multilayer__canopy__integrator_8h_
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          SteadyModule(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          direct_module(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>),</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;          <span class="comment">// Store the number of layers</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          nlayers{nlayers},</div>
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('ed__multilayer__canopy__integrator_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__multilayer__canopy__integrator_8h.html">ed_multilayer_canopy_integrator.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

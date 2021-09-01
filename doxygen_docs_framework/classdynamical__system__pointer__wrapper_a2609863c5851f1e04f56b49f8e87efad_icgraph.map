@@ -1,0 +1,7 @@
+<map id="get_ntimes" name="get_ntimes">
+<area shape="rect" id="node1" title=" " alt="" coords="401,78,488,105"/>
+<area shape="rect" id="node2" href="$classboost__integrator.html#af2522a014178214c94e910651fadf2a6" title=" " alt="" coords="215,71,353,112"/>
+<area shape="rect" id="node3" href="$classboost__euler__integrator.html#a8479286172d4b8191dbe63954e3d6484" title=" " alt="" coords="11,5,161,47"/>
+<area shape="rect" id="node4" href="$classboost__rk4__integrator.html#a8479286172d4b8191dbe63954e3d6484" title=" " alt="" coords="16,71,156,112"/>
+<area shape="rect" id="node5" href="$classboost__rkck54__integrator.html#a8479286172d4b8191dbe63954e3d6484" title=" " alt="" coords="5,136,167,177"/>
+</map>

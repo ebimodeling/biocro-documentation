@@ -1,13 +1,13 @@
 <map id="/github/workspace/source/src/module_library/ed_boundary_conductance.h" name="/github/workspace/source/src/module_library/ed_boundary_conductance.h">
-<area shape="rect" id="node1" title=" " alt="" coords="63,5,235,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,109,80,136"/>
-<area shape="rect" id="node3" href="$modules_8h.html" title=" " alt="" coords="104,109,195,136"/>
-<area shape="rect" id="node9" href="$state__map_8h.html" title=" " alt="" coords="285,259,379,285"/>
-<area shape="rect" id="node4" title=" " alt="" coords="44,333,103,360"/>
-<area shape="rect" id="node5" title=" " alt="" coords="42,184,110,211"/>
-<area shape="rect" id="node6" href="$module__helper__functions_8h.html" title=" " alt="" coords="135,184,311,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="111,259,190,285"/>
-<area shape="rect" id="node8" title=" " alt="" coords="214,259,261,285"/>
-<area shape="rect" id="node10" title=" " alt="" coords="223,333,334,360"/>
-<area shape="rect" id="node11" title=" " alt="" coords="358,333,413,360"/>
+<area shape="rect" id="node1" title=" " alt="" coords="15,5,187,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,333,80,360"/>
+<area shape="rect" id="node3" href="$modules_8h.html" title=" " alt="" coords="255,109,345,136"/>
+<area shape="rect" id="node9" href="$state__map_8h.html" title=" " alt="" coords="85,259,179,285"/>
+<area shape="rect" id="node4" title=" " alt="" coords="319,333,377,360"/>
+<area shape="rect" id="node5" title=" " alt="" coords="339,184,407,211"/>
+<area shape="rect" id="node6" href="$module__helper__functions_8h.html" title=" " alt="" coords="139,184,315,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="326,259,405,285"/>
+<area shape="rect" id="node8" title=" " alt="" coords="203,259,250,285"/>
+<area shape="rect" id="node10" title=" " alt="" coords="183,333,294,360"/>
+<area shape="rect" id="node11" title=" " alt="" coords="105,333,159,360"/>
 </map>

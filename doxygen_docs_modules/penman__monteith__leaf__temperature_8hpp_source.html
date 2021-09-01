@@ -98,14 +98,14 @@ $(document).ready(function(){initNavTree('penman__monteith__leaf__temperature_8h
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classpenman__monteith__leaf__temperature.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpenman__monteith__leaf__temperature.html">penman_monteith_leaf_temperature</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classpenman__monteith__leaf__temperature.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpenman__monteith__leaf__temperature.html">penman_monteith_leaf_temperature</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classpenman__monteith__leaf__temperature.html#ab32b8ade29b0ad3fb9485a765ed4a0f0">   10</a></span>&#160;    <a class="code" href="classpenman__monteith__leaf__temperature.html#ab32b8ade29b0ad3fb9485a765ed4a0f0">penman_monteith_leaf_temperature</a>(</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;          SteadyModule(<span class="stringliteral">&quot;penman_monteith_leaf_temperature&quot;</span>),</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;          direct_module(<span class="stringliteral">&quot;penman_monteith_leaf_temperature&quot;</span>),</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;          <a class="code" href="classpenman__monteith__leaf__temperature.html#acf0c8a3f4deddfe37d210490140aec66">slope_water_vapor</a>{get_input(input_quantities, <span class="stringliteral">&quot;slope_water_vapor&quot;</span>)},</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('penman__monteith__leaf__temperature_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="penman__monteith__leaf__temperature_8hpp.html">penman_monteith_leaf_temperature.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

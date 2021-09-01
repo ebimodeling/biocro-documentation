@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$namespacese__module.html#a0deba55fff452c66c7aeac0d592c61b1" title="Returns the name of an output quantity that describes the number of steps the solver took." alt="" coords="157,71,311,112"/>
 <area shape="rect" id="node4" href="$namespacese__module.html#af2174a94990bf851cacb36d66fde90c0" title="Returns a sorted list of outputs produced by the modules." alt="" coords="144,137,324,163"/>
 <area shape="rect" id="node8" href="$namespacese__module.html#a14db4d8eca98af3ed59d063b1f888d75" title="Returns the name of an output quantity that indicates whether the solver was successful in finding a ..." alt="" coords="151,188,317,229"/>
-<area shape="rect" id="node5" href="$validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="372,97,508,139"/>
-<area shape="rect" id="node7" href="$validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="372,163,508,204"/>
+<area shape="rect" id="node5" href="$validate__dynamical__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="372,97,508,139"/>
+<area shape="rect" id="node7" href="$validate__dynamical__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="372,163,508,204"/>
 <area shape="rect" id="node6" href="$classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="556,97,719,139"/>
 </map>

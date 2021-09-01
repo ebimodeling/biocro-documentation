@@ -98,14 +98,14 @@ $(document).ready(function(){initNavTree('thermal__time__linear_8h_source.html',
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classthermal__time__linear.html">   68</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthermal__time__linear.html">thermal_time_linear</a> : <span class="keyword">public</span> DerivModule</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classthermal__time__linear.html">   68</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthermal__time__linear.html">thermal_time_linear</a> : <span class="keyword">public</span> differential_module</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classthermal__time__linear.html#adeac27fdf6c2b4699809a055bbdde157">   71</a></span>&#160;    <a class="code" href="classthermal__time__linear.html#adeac27fdf6c2b4699809a055bbdde157">thermal_time_linear</a>(</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          DerivModule(<span class="stringliteral">&quot;thermal_time_linear&quot;</span>),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          differential_module(<span class="stringliteral">&quot;thermal_time_linear&quot;</span>),</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <a class="code" href="classthermal__time__linear.html#aea092e452134a2b15705dc9220367fba">time</a>{get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)},</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('thermal__time__linear_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="thermal__time__linear_8h.html">thermal_time_linear.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

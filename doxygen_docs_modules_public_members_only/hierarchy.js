@@ -6,7 +6,7 @@ var hierarchy =
     [ "collatz_result", "structcollatz__result.html", null ],
     [ "crop_phenology", "structcrop__phenology.html", null ],
     [ "dbp_str", "structdbp__str.html", null ],
-    [ "DerivModule", null, [
+    [ "differential_module", null, [
       [ "aba_decay", "classaba__decay.html", null ],
       [ "bucket_soil_drainage", "classbucket__soil__drainage.html", null ],
       [ "development_index", "classdevelopment__index.html", null ],
@@ -35,20 +35,7 @@ var hierarchy =
       [ "utilization_growth", "classutilization__growth.html", null ],
       [ "utilization_senescence", "classutilization__senescence.html", null ]
     ] ],
-    [ "ed_collatz_assimilation", "classed__collatz__assimilation.html", null ],
-    [ "ET_Str", "struct_e_t___str.html", null ],
-    [ "frostParms", "structfrost_parms.html", null ],
-    [ "Light_model", "struct_light__model.html", null ],
-    [ "Light_profile", "struct_light__profile.html", null ],
-    [ "crop_phenology::minerals1", "structcrop__phenology_1_1minerals1.html", null ],
-    [ "module_wrapper_factory", "classmodule__wrapper__factory.html", null ],
-    [ "nitroParms", "structnitro_parms.html", null ],
-    [ "rd_str", "structrd__str.html", null ],
-    [ "rue_str", "structrue__str.html", null ],
-    [ "seqRD_str", "structseq_r_d__str.html", null ],
-    [ "soilML_str", "structsoil_m_l__str.html", null ],
-    [ "soilText_str", "structsoil_text__str.html", null ],
-    [ "SteadyModule", null, [
+    [ "direct_module", null, [
       [ "multilayer_canopy_photosynthesis< ed_ten_layer_canopy_properties, ed_c4_leaf_photosynthesis4 >", "classmultilayer__canopy__photosynthesis.html", [
         [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", null ]
       ] ],
@@ -149,5 +136,18 @@ var hierarchy =
       [ "utilization_senescence_calculator", "classutilization__senescence__calculator.html", null ],
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", null ]
     ] ],
+    [ "ed_collatz_assimilation", "classed__collatz__assimilation.html", null ],
+    [ "ET_Str", "struct_e_t___str.html", null ],
+    [ "frostParms", "structfrost_parms.html", null ],
+    [ "Light_model", "struct_light__model.html", null ],
+    [ "Light_profile", "struct_light__profile.html", null ],
+    [ "crop_phenology::minerals1", "structcrop__phenology_1_1minerals1.html", null ],
+    [ "module_wrapper_factory", "classmodule__wrapper__factory.html", null ],
+    [ "nitroParms", "structnitro_parms.html", null ],
+    [ "rd_str", "structrd__str.html", null ],
+    [ "rue_str", "structrue__str.html", null ],
+    [ "seqRD_str", "structseq_r_d__str.html", null ],
+    [ "soilML_str", "structsoil_m_l__str.html", null ],
+    [ "soilText_str", "structsoil_text__str.html", null ],
     [ "ws_str", "structws__str.html", null ]
 ];

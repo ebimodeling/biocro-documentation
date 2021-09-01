@@ -83,6 +83,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for state_map.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -90,10 +91,11 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="state__map_8h__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2state__map_8h" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2state__map_8h" id="a_2github_2workspace_2source_2src_2state__map_8h">
-<area shape="rect" title=" " alt="" coords="85,5,255,47"/>
+<area shape="rect" title=" " alt="" coords="125,5,295,47"/>
 <area shape="rect" title=" " alt="" coords="5,95,116,121"/>
 <area shape="rect" title=" " alt="" coords="141,95,199,121"/>
 <area shape="rect" title=" " alt="" coords="224,95,279,121"/>
+<area shape="rect" title=" " alt="" coords="303,95,378,121"/>
 </map>
 </div>
 </div>
@@ -121,7 +123,7 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a5505795a40869494568f362567ff51e8"><td class="memTemplParams" colspan="2">template&lt;typename map_with_string_key_type &gt; </td></tr>
 <tr class="memitem:a5505795a40869494568f362567ff51e8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a> (map_with_string_key_type const &amp;map)</td></tr>
-<tr class="memdesc:a5505795a40869494568f362567ff51e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a map, return a list of its keys.  <a href="state__map_8h.html#a5505795a40869494568f362567ff51e8">More...</a><br /></td></tr>
+<tr class="memdesc:a5505795a40869494568f362567ff51e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a map, return a sorted list of its keys.  <a href="state__map_8h.html#a5505795a40869494568f362567ff51e8">More...</a><br /></td></tr>
 <tr class="separator:a5505795a40869494568f362567ff51e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698066d68dbdbd7d3afbff90e8481ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="state__map_8h.html#a698066d68dbdbd7d3afbff90e8481ae8">at</a> (const <a class="el" href="state__map_8h.html#acc562c42c1d464c702e0abd69e05673d">state_vector_map</a> &amp;vector_map, std::vector&lt; double &gt;::size_type n)</td></tr>
 <tr class="memdesc:a698066d68dbdbd7d3afbff90e8481ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a sequence of states (presented as a state_vector_map) and an index n, return the n'th state in the sequence (counting from 0) in the form of a state_map.  <a href="state__map_8h.html#a698066d68dbdbd7d3afbff90e8481ae8">More...</a><br /></td></tr>
@@ -149,7 +151,7 @@ Functions</h2></td></tr>
 <p>A <code>state_map</code> represents the <em>state</em> of a system. </p>
 <p>It maps names of system quantities to the values they have at some particular time. </p>
 
-<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00041">41</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00042">42</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
 
 </div>
 </div>
@@ -168,7 +170,7 @@ Functions</h2></td></tr>
 <p>A <code>state_vector_map</code> represents a chronologically-ordered sequence of states of a system over some period of time. </p>
 <p>The keys of the map are quantities of the system; each value is a vector representing the sequence of values of one of those quantities as it changes over time. To be a valid representation, each of the mapped-to vectors should be of the same length. </p>
 
-<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00025">25</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00026">26</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
 
 </div>
 </div>
@@ -187,7 +189,7 @@ Functions</h2></td></tr>
 <p><code>string_vector</code> serves as an alias for a type widely used to hold lists of module names or lists of module parameters. </p>
 <p>Formally, it is simply a <code>std::vector</code> of <code>std::string</code>s. </p>
 
-<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00014">14</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00015">15</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +256,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="state__map_8cpp_source.html#l00024">24</a> of file <a class="el" href="state__map_8cpp_source.html">state_map.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00144">analyze_system_inputs()</a>, <a class="el" href="system_8cpp_source.html#l00135">System::get_output_param_names()</a>, <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="validate__dynamical__system_8cpp_source.html#l00144">analyze_system_inputs()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system::dynamical_system()</a>, <a class="el" href="dynamical__system_8cpp_source.html#l00170">dynamical_system::get_output_quantity_names()</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00043">validate_dynamical_system_inputs()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -262,12 +264,12 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="state__map_8h_a698066d68dbdbd7d3afbff90e8481ae8_icgraph.png" border="0" usemap="#astate__map_8h_a698066d68dbdbd7d3afbff90e8481ae8_icgraph" alt=""/></div>
 <map name="astate__map_8h_a698066d68dbdbd7d3afbff90e8481ae8_icgraph" id="astate__map_8h_a698066d68dbdbd7d3afbff90e8481ae8_icgraph">
-<area shape="rect" title="Given a sequence of states (presented as a state_vector_map) and an index n, return the n&#39;th state in..." alt="" coords="435,93,473,120"/>
-<area shape="rect" href="validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="229,5,385,32"/>
-<area shape="rect" href="class_system.html#a946ff8e32c98121439225cde6405a32a" title="Returns a vector of the names of all quantities that change throughout a simulation." alt="" coords="241,57,374,98"/>
-<area shape="rect" href="class_system.html#a9899b5a77ca518ed2e3774898d7534b6" title=" " alt="" coords="35,148,151,175"/>
-<area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,123,387,149"/>
-<area shape="rect" href="_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,52,180,79"/>
+<area shape="rect" title="Given a sequence of states (presented as a state_vector_map) and an index n, return the n&#39;th state in..." alt="" coords="457,97,496,124"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a78161af3796f3d2cb465b80a761a276a" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="250,5,406,32"/>
+<area shape="rect" href="classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,122,199,163"/>
+<area shape="rect" href="classdynamical__system.html#aeb27e1710f1091003e963ff95149d8c1" title="Returns a vector of the names of all quantities that may change throughout a simulation." alt="" coords="247,122,409,163"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#adfa13994900055c1c513e7a130dce658" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="262,57,394,98"/>
+<area shape="rect" href="_r__dynamical__system_8cpp.html#a4671688e3fc2a22db458dfccfd6cd677" title=" " alt="" coords="28,27,176,69"/>
 </map>
 </div>
 
@@ -289,7 +291,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Given a map, return a list of its keys. </p>
+<p>Given a map, return a sorted list of its keys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">map</td><td>A map having keys of type <code>std::string</code>.</td></tr>
@@ -299,9 +301,9 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing all of the keys of the map.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The minimal requirement on the "map" argument is that it be a "range" or "sequence" of objects that have a "first" member function yielding a string, what we are considering to be the "key" of the object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00056">56</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00057">57</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="validate__system_8cpp_source.html#l00481">find_static_output_parameters()</a>, <a class="el" href="validate__system_8cpp_source.html#l00457">find_unused_input_parameters()</a>, <a class="el" href="system_8h_source.html#l00054">System::get_state_parameter_names()</a>, <a class="el" href="validate__system_8h_source.html#l00228">insert_key_names()</a>, <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00014">R_solve_simultaneous_equations()</a>, <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00154">R_test_simultaneous_equations()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, <a class="el" href="system_8cpp_source.html#l00005">System::System()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00043">validate_system_inputs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dynamical__system_8cpp_source.html#l00005">dynamical_system::dynamical_system()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00481">find_static_output_parameters()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00457">find_unused_input_parameters()</a>, <a class="el" href="dynamical__system_8h_source.html#l00181">dynamical_system::get_differential_quantity_names()</a>, <a class="el" href="validate__dynamical__system_8h_source.html#l00228">insert_key_names()</a>, <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00014">R_solve_simultaneous_equations()</a>, <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00154">R_test_simultaneous_equations()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00043">validate_dynamical_system_inputs()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -309,24 +311,23 @@ Functions</h2></td></tr>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="state__map_8h_a5505795a40869494568f362567ff51e8_icgraph.png" border="0" usemap="#astate__map_8h_a5505795a40869494568f362567ff51e8_icgraph" alt=""/></div>
 <map name="astate__map_8h_a5505795a40869494568f362567ff51e8_icgraph" id="astate__map_8h_a5505795a40869494568f362567ff51e8_icgraph">
-<area shape="rect" title="Given a map, return a list of its keys." alt="" coords="920,239,969,266"/>
-<area shape="rect" href="validate__system_8cpp.html#a280618a73668f85935954999dac254cc" title="Returns parameters in the state maps that are not provided as outputs from the modules." alt="" coords="472,5,596,47"/>
-<area shape="rect" href="validate__system_8cpp.html#a4319836f9eb8ed82828f3f12fca3142e" title="Returns parameters in the state maps that are not used as inputs to the modules." alt="" coords="435,71,633,98"/>
-<area shape="rect" href="class_system.html#a97d9cba73f83626831a6d3cc78dbe09b" title=" " alt="" coords="681,375,872,416"/>
-<area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="713,134,840,161"/>
-<area shape="rect" href="classsimultaneous__equations.html#a7ae8cd6501dac563518119132accd194" title=" " alt="" coords="9,349,177,391"/>
-<area shape="rect" href="validate__system_8cpp.html#ace0a0e21b8b548c8d7ee5d0c6dd8934e" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="228,189,387,215"/>
-<area shape="rect" href="class_system.html#a9899b5a77ca518ed2e3774898d7534b6" title=" " alt="" coords="35,211,151,238"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a6985a3d7ebd6bf32013f1bab80ab280f" title=" " alt="" coords="700,440,853,481"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a822765e42eb9712919b0303e5d5ea0eb" title=" " alt="" coords="705,505,849,547"/>
-<area shape="rect" href="validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="229,71,385,98"/>
-<area shape="rect" href="_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,117,180,143"/>
-<area shape="rect" href="_r___gro_8cpp.html#a7c6e75fc686b690d49a324a51391aceb" title=" " alt="" coords="487,381,581,407"/>
-<area shape="rect" href="_r___gro_8cpp.html#a73ddb58163d39c44bf28dea808b1ba2b" title=" " alt="" coords="491,431,577,458"/>
-<area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="464,123,604,164"/>
-<area shape="rect" href="class_system.html#a946ff8e32c98121439225cde6405a32a" title="Returns a vector of the names of all quantities that change throughout a simulation." alt="" coords="241,123,374,164"/>
-<area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,291,383,332"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="9,284,176,325"/>
+<area shape="rect" title="Given a map, return a sorted list of its keys." alt="" coords="939,287,988,314"/>
+<area shape="rect" href="classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,65,199,106"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a280618a73668f85935954999dac254cc" title="Returns parameters in the state maps that are not provided as outputs from the modules." alt="" coords="495,280,619,321"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a4319836f9eb8ed82828f3f12fca3142e" title="Returns parameters in the state maps that are not used as inputs to the modules." alt="" coords="457,228,656,255"/>
+<area shape="rect" href="classdynamical__system.html#a44ba4c71eea248f2d6f85ffde15d4318" title=" " alt="" coords="704,393,891,434"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="734,175,861,202"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#adfa13994900055c1c513e7a130dce658" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="262,94,394,136"/>
+<area shape="rect" href="classsimultaneous__equations.html#abfc5d8ecf986091ff15e799e6e4cc088" title=" " alt="" coords="18,338,186,380"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a0716f03334bd18d1a8181cd08812af61" title=" " alt="" coords="721,458,874,500"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a7e42e179de37e90b58c04a4f47dfbfe3" title=" " alt="" coords="725,524,869,565"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a78161af3796f3d2cb465b80a761a276a" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="250,291,406,318"/>
+<area shape="rect" href="_r__dynamical__system_8cpp.html#a4671688e3fc2a22db458dfccfd6cd677" title=" " alt="" coords="28,273,176,314"/>
+<area shape="rect" href="_r__system__derivatives_8cpp.html#a8fdeee9bd8f0b9dafa2c1268efffca3b" title="Creates a dynamical_system object from the differential quantities, parameters, drivers,..." alt="" coords="481,400,632,427"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="487,162,627,204"/>
+<area shape="rect" href="classdynamical__system.html#aeb27e1710f1091003e963ff95149d8c1" title="Returns a vector of the names of all quantities that may change throughout a simulation." alt="" coords="247,160,409,201"/>
+<area shape="rect" href="simultaneous__equations_8cpp.html#a54f6b30e4565b104e3716544115c6138" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="253,225,403,266"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a40e5e82ef3a7610245120dcb076a10c6" title=" " alt="" coords="19,208,185,249"/>
 </map>
 </div>
 
@@ -350,14 +351,14 @@ Functions</h2></td></tr>
 
 <p>Given a list of names, create a <code>state_map</code> object whose keys are precisely those names and whose values are all zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00073">73</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="state__map_8h_source.html#l00075">75</a> of file <a class="el" href="state__map_8h_source.html">state_map.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 31 2021 15:16:33 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 1 2021 20:47:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

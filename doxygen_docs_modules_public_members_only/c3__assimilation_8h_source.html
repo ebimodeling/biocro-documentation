@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('c3__assimilation_8h_source.html',''); 
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="c3photo_8hpp.html">c3photo.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classc3__assimilation.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classc3__assimilation.html">c3_assimilation</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classc3__assimilation.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classc3__assimilation.html">c3_assimilation</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classc3__assimilation.html#a5a0dff890013571b995ee3cc09d03f9e">   59</a></span>&#160;    <a class="code" href="classc3__assimilation.html#a5a0dff890013571b995ee3cc09d03f9e">c3_assimilation</a>(</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          SteadyModule(<span class="stringliteral">&quot;c3_assimilation&quot;</span>),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          direct_module(<span class="stringliteral">&quot;c3_assimilation&quot;</span>),</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          Qp(get_input(input_quantities, <span class="stringliteral">&quot;Qp&quot;</span>)),</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('c3__assimilation_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c3__assimilation_8h.html">c3_assimilation.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

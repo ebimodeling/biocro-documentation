@@ -1,9 +1,0 @@
-<map id="get_module_vector" name="get_module_vector">
-<area shape="rect" id="node1" title="Returns a vector of unique_ptrs to module objects." alt="" coords="667,97,799,124"/>
-<area shape="rect" id="node2" href="$validate__system_8cpp.html#a00f5591c1ba8d0ab50c4e967fb0018ff" title="Returns modules that are not compatible with adaptive step size algorithms." alt="" coords="432,5,619,32"/>
-<area shape="rect" id="node5" href="$validate__system_8cpp.html#adaa2b5fc6f7bec11c00a500b41bb9473" title="Returns mischaracterized modules, i.e., steady&#45;state modules in the derivative module list or vice&#45;ve..." alt="" coords="452,57,599,98"/>
-<area shape="rect" id="node6" href="$classsimultaneous__equations.html#a7ae8cd6501dac563518119132accd194" title=" " alt="" coords="441,122,609,163"/>
-<area shape="rect" id="node7" href="$class_system.html#a9899b5a77ca518ed2e3774898d7534b6" title=" " alt="" coords="467,188,583,215"/>
-<area shape="rect" id="node3" href="$validate__system_8cpp.html#a8ab45d36f5e25c3c4686af4fabb0865b" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="228,35,384,61"/>
-<area shape="rect" id="node4" href="$_r__system_8cpp.html#ab335e645320b0f4109408a1d898776f0" title=" " alt="" coords="5,35,180,61"/>
-</map>

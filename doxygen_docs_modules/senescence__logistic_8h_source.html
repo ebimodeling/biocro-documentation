@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('senescence__logistic_8h_source.html','
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classsenescence__logistic.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsenescence__logistic.html">senescence_logistic</a> : <span class="keyword">public</span> DerivModule</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classsenescence__logistic.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsenescence__logistic.html">senescence_logistic</a> : <span class="keyword">public</span> differential_module</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classsenescence__logistic.html#a768b255b07bcdc5d3843342e3f041658">   23</a></span>&#160;    <a class="code" href="classsenescence__logistic.html#a768b255b07bcdc5d3843342e3f041658">senescence_logistic</a>(</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        : DerivModule{<span class="stringliteral">&quot;senescence_logistic&quot;</span>},</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        : differential_module{<span class="stringliteral">&quot;senescence_logistic&quot;</span>},</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          <a class="code" href="classsenescence__logistic.html#aa18a68c5599a2556741e443074750f17">Leaf</a>{get_input(input_quantities, <span class="stringliteral">&quot;Leaf&quot;</span>)},</div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('senescence__logistic_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="senescence__logistic_8h.html">senescence_logistic.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

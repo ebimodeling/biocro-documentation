@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('multilayer__canopy__photosynthesis_8h_
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace MLCP</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> canopy_module_type, <span class="keyword">typename</span> leaf_module_type&gt;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classmultilayer__canopy__photosynthesis.html">  154</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmultilayer__canopy__photosynthesis.html">multilayer_canopy_photosynthesis</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classmultilayer__canopy__photosynthesis.html">  154</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmultilayer__canopy__photosynthesis.html">multilayer_canopy_photosynthesis</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classmultilayer__canopy__photosynthesis.html#a6ef6f51bf0482716a1a9350eb49bcf07">  157</a></span>&#160;    <a class="code" href="classmultilayer__canopy__photosynthesis.html#a6ef6f51bf0482716a1a9350eb49bcf07">multilayer_canopy_photosynthesis</a>(</div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('multilayer__canopy__photosynthesis_8h_
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Leaf photosynthesis module</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    state_map leaf_module_quantities;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    state_map leaf_module_output_map;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    std::unique_ptr&lt;Module&gt; leaf_module;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    std::unique_ptr&lt;module_base&gt; leaf_module;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// Pointers to input parameters</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    std::vector&lt;std::vector&lt;std::pair&lt;double*, const double*&gt;&gt;&gt; leaf_input_ptr_pairs;</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('multilayer__canopy__photosynthesis_8h_
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; nlayers,</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    state_map* output_quantities)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    : SteadyModule(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>),</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    : direct_module(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>),</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      nlayers(nlayers)</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// Define a lambda for making quantity maps from vectors of inputs and outputs</span></div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('multilayer__canopy__photosynthesis_8h_
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">// Create the leaf photosynthesis module</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    leaf_module =</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        std::unique_ptr&lt;Module&gt;(<span class="keyword">new</span> leaf_module_type(</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        std::unique_ptr&lt;module_base&gt;(<span class="keyword">new</span> leaf_module_type(</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            leaf_module_quantities,</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            &amp;leaf_module_output_map));</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('multilayer__canopy__photosynthesis_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="multilayer__canopy__photosynthesis_8h.html">multilayer_canopy_photosynthesis.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

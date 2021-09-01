@@ -81,7 +81,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &quot;<a class="el" href="simultaneous__equations_8h_source.html">simultaneous_equations.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="system__helper__functions_8h_source.html">system_helper_functions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dynamical__system__helper__functions_8h_source.html">dynamical_system_helper_functions.h</a>&quot;</code><br />
 <code>#include &lt;Rinternals.h&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for simultaneous_equations.cpp:</div>
@@ -90,26 +90,26 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="simultaneous__equations_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2simultaneous__equations_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2simultaneous__equations_8cpp" id="a_2github_2workspace_2source_2src_2simultaneous__equations_8cpp">
-<area shape="rect" title=" " alt="" coords="529,5,741,47"/>
-<area shape="rect" title=" " alt="" coords="37,251,111,278"/>
-<area shape="rect" href="simultaneous__equations_8h.html" title=" " alt="" coords="443,95,615,121"/>
-<area shape="rect" href="system__helper__functions_8h.html" title=" " alt="" coords="655,95,831,121"/>
-<area shape="rect" title=" " alt="" coords="855,95,946,121"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="426,408,519,435"/>
-<area shape="rect" href="validate__system_8h.html" title=" " alt="" coords="465,169,592,196"/>
-<area shape="rect" title=" " alt="" coords="492,483,603,509"/>
-<area shape="rect" title=" " alt="" coords="727,483,786,509"/>
-<area shape="rect" title=" " alt="" coords="172,483,227,509"/>
-<area shape="rect" title=" " alt="" coords="723,251,763,278"/>
-<area shape="rect" title=" " alt="" coords="412,251,491,278"/>
-<area shape="rect" title=" " alt="" coords="820,333,888,360"/>
-<area shape="rect" title=" " alt="" coords="237,244,388,285"/>
-<area shape="rect" href="modules_8h.html" title=" " alt="" coords="567,251,648,278"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="566,333,742,360"/>
-<area shape="rect" title=" " alt="" coords="615,408,693,435"/>
-<area shape="rect" title=" " alt="" coords="544,408,591,435"/>
-<area shape="rect" href="constants_8h.html" title=" " alt="" coords="799,169,888,196"/>
-<area shape="rect" title=" " alt="" coords="787,244,935,285"/>
+<area shape="rect" title=" " alt="" coords="517,5,729,47"/>
+<area shape="rect" title=" " alt="" coords="19,512,93,539"/>
+<area shape="rect" href="simultaneous__equations_8h.html" title=" " alt="" coords="401,102,573,129"/>
+<area shape="rect" href="dynamical__system__helper__functions_8h.html" title=" " alt="" coords="673,95,844,136"/>
+<area shape="rect" title=" " alt="" coords="868,102,959,129"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="332,437,425,464"/>
+<area shape="rect" href="validate__dynamical__system_8h.html" title=" " alt="" coords="421,184,553,225"/>
+<area shape="rect" title=" " alt="" coords="502,512,613,539"/>
+<area shape="rect" title=" " alt="" coords="684,512,743,539"/>
+<area shape="rect" title=" " alt="" coords="351,512,406,539"/>
+<area shape="rect" title=" " alt="" coords="681,281,721,307"/>
+<area shape="rect" title=" " alt="" coords="195,281,274,307"/>
+<area shape="rect" title=" " alt="" coords="703,363,771,389"/>
+<area shape="rect" title=" " alt="" coords="298,273,449,315"/>
+<area shape="rect" href="modules_8h.html" title=" " alt="" coords="525,281,606,307"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="452,363,628,389"/>
+<area shape="rect" title=" " alt="" coords="450,437,529,464"/>
+<area shape="rect" title=" " alt="" coords="553,437,599,464"/>
+<area shape="rect" href="constants_8h.html" title=" " alt="" coords="963,191,1053,218"/>
+<area shape="rect" title=" " alt="" coords="949,273,1097,315"/>
 </map>
 </div>
 </div>
@@ -117,12 +117,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae5eb48d46cc1e008c6a4b0d0400c7678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678">validate_simultaneous_equations_inputs</a> (std::string &amp;message, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;known_quantities, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;unknown_quantities, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;ss_module_names)</td></tr>
-<tr class="memdesc:ae5eb48d46cc1e008c6a4b0d0400c7678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over a group of quantities and modules to ensure they can be used to create a valid set of simultaneous equations.  <a href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678">More...</a><br /></td></tr>
-<tr class="separator:ae5eb48d46cc1e008c6a4b0d0400c7678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4116e1accbd144688ad8b523c9145743"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simultaneous__equations_8cpp.html#a4116e1accbd144688ad8b523c9145743">analyze_simultaneous_equations_inputs</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;ss_module_names)</td></tr>
-<tr class="memdesc:a4116e1accbd144688ad8b523c9145743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides information about a set of <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> inputs that is not strictly required to check validity.  <a href="simultaneous__equations_8cpp.html#a4116e1accbd144688ad8b523c9145743">More...</a><br /></td></tr>
-<tr class="separator:a4116e1accbd144688ad8b523c9145743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f6b30e4565b104e3716544115c6138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simultaneous__equations_8cpp.html#a54f6b30e4565b104e3716544115c6138">validate_simultaneous_equations_inputs</a> (std::string &amp;message, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;known_quantities, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;unknown_quantities, <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;direct_module_names)</td></tr>
+<tr class="memdesc:a54f6b30e4565b104e3716544115c6138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks over a group of quantities and modules to ensure they can be used to create a valid set of simultaneous equations.  <a href="simultaneous__equations_8cpp.html#a54f6b30e4565b104e3716544115c6138">More...</a><br /></td></tr>
+<tr class="separator:a54f6b30e4565b104e3716544115c6138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2529c6d6cf951839b696745d26c82e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simultaneous__equations_8cpp.html#af2529c6d6cf951839b696745d26c82e1">analyze_simultaneous_equations_inputs</a> (<a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;direct_module_names)</td></tr>
+<tr class="memdesc:af2529c6d6cf951839b696745d26c82e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides information about a set of <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> inputs that is not strictly required to check validity.  <a href="simultaneous__equations_8cpp.html#af2529c6d6cf951839b696745d26c82e1">More...</a><br /></td></tr>
+<tr class="separator:af2529c6d6cf951839b696745d26c82e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2a605d520f1fc493875c92029c21e7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c">get_unknown_quantities</a> (std::vector&lt; <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> &gt; module_name_vector)</td></tr>
 <tr class="memdesc:ae2a605d520f1fc493875c92029c21e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the unknown quantities defined by the set of modules.  <a href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c">More...</a><br /></td></tr>
 <tr class="separator:ae2a605d520f1fc493875c92029c21e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,8 +133,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6c72bcdcbbe971e6c7b44eb673e18429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4116e1accbd144688ad8b523c9145743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4116e1accbd144688ad8b523c9145743">&#9670;&nbsp;</a></span>analyze_simultaneous_equations_inputs()</h2>
+<a id="af2529c6d6cf951839b696745d26c82e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2529c6d6cf951839b696745d26c82e1">&#9670;&nbsp;</a></span>analyze_simultaneous_equations_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ Variables</h2></td></tr>
           <td class="memname">std::string analyze_simultaneous_equations_inputs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ss_module_names</em></td><td>)</td>
+          <td class="paramname"><em>direct_module_names</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -158,7 +158,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">115</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00159">create_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00434">find_strictly_required_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>.</p>
+<p class="reference">References <a class="el" href="validate__dynamical__system_8h_source.html#l00159">create_message()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00434">find_strictly_required_inputs()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00109">R_validate_simultaneous_equations()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -166,17 +166,17 @@ Variables</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="simultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_cgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_cgraph" alt=""/></div>
-<map name="asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_cgraph" id="asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_cgraph">
+<div class="center"><img src="simultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_cgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_cgraph" alt=""/></div>
+<map name="asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_cgraph" id="asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_cgraph">
 <area shape="rect" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="5,93,155,134"/>
-<area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="225,9,343,36"/>
-<area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="413,57,553,98"/>
-<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="415,187,551,229"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="225,9,343,36"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="413,57,553,98"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="415,187,551,229"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c" title="Finds the unknown quantities defined by the set of modules." alt="" coords="203,125,365,152"/>
-<area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="420,5,547,32"/>
-<area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="631,27,751,69"/>
-<area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="601,93,780,120"/>
-<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="415,122,551,163"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="420,5,547,32"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="631,27,751,69"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="601,93,780,120"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="415,122,551,163"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -184,10 +184,10 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="simultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_icgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_icgraph" alt=""/></div>
-<map name="asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_icgraph" id="asimultaneous__equations_8cpp_a4116e1accbd144688ad8b523c9145743_icgraph">
+<div class="center"><img src="simultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_icgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_icgraph" alt=""/></div>
+<map name="asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_icgraph" id="asimultaneous__equations_8cpp_af2529c6d6cf951839b696745d26c82e1_icgraph">
 <area shape="rect" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="220,5,369,47"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a40e5e82ef3a7610245120dcb076a10c6" title=" " alt="" coords="5,5,172,47"/>
 </map>
 </div>
 
@@ -214,7 +214,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">236</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8cpp_source.html#l00434">find_strictly_required_inputs()</a>, <a class="el" href="validate__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00649">string_set_to_string_vector()</a>.</p>
+<p class="reference">References <a class="el" href="validate__dynamical__system_8cpp_source.html#l00434">find_strictly_required_inputs()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00415">find_unique_module_outputs()</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00648">string_set_to_string_vector()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="simultaneous__equations_8cpp_source.html#l00115">analyze_simultaneous_equations_inputs()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">validate_simultaneous_equations_inputs()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -225,11 +225,11 @@ Variables</h2></td></tr>
 <div class="center"><img src="simultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_cgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_cgraph" alt=""/></div>
 <map name="asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_cgraph" id="asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_cgraph">
 <area shape="rect" title="Finds the unknown quantities defined by the set of modules." alt="" coords="5,107,168,134"/>
-<area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="216,35,356,76"/>
-<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="218,100,354,141"/>
-<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="218,165,354,207"/>
-<area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="433,5,553,47"/>
-<area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="404,71,583,98"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="216,35,356,76"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="218,100,354,141"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="218,165,354,207"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="433,5,553,47"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="404,71,583,98"/>
 </map>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -240,17 +240,17 @@ Variables</h2></td></tr>
 <div class="center"><img src="simultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_icgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_icgraph" alt=""/></div>
 <map name="asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_icgraph" id="asimultaneous__equations_8cpp_ae2a605d520f1fc493875c92029c21e7c_icgraph">
 <area shape="rect" title="Finds the unknown quantities defined by the set of modules." alt="" coords="420,46,583,73"/>
-<area shape="rect" href="simultaneous__equations_8cpp.html#a4116e1accbd144688ad8b523c9145743" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="222,5,371,47"/>
-<area shape="rect" href="simultaneous__equations_8cpp.html#ae5eb48d46cc1e008c6a4b0d0400c7678" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="221,71,372,112"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="6,5,173,47"/>
-<area shape="rect" href="classsimultaneous__equations.html#a7ae8cd6501dac563518119132accd194" title=" " alt="" coords="5,71,173,112"/>
+<area shape="rect" href="simultaneous__equations_8cpp.html#af2529c6d6cf951839b696745d26c82e1" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="222,5,371,47"/>
+<area shape="rect" href="simultaneous__equations_8cpp.html#a54f6b30e4565b104e3716544115c6138" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="221,71,372,112"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a40e5e82ef3a7610245120dcb076a10c6" title=" " alt="" coords="6,5,173,47"/>
+<area shape="rect" href="classsimultaneous__equations.html#abfc5d8ecf986091ff15e799e6e4cc088" title=" " alt="" coords="5,71,173,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ae5eb48d46cc1e008c6a4b0d0400c7678"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5eb48d46cc1e008c6a4b0d0400c7678">&#9670;&nbsp;</a></span>validate_simultaneous_equations_inputs()</h2>
+<a id="a54f6b30e4565b104e3716544115c6138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f6b30e4565b104e3716544115c6138">&#9670;&nbsp;</a></span>validate_simultaneous_equations_inputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +277,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ss_module_names</em>&#160;</td>
+          <td class="paramname"><em>direct_module_names</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -296,7 +296,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the inputs are valid, false otherwise.</dd></dl>
 <p>When discussing a <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> object, it is helpful to define several terms as follows:</p>
-<p>We consider a quantity to have been "specified" (or "defined") if it is a key in <code>known_quantities</code> or if it is an output variable of one of the steady-state modules listed in <code>ss_module_names</code>.</p>
+<p>We consider a quantity to have been "specified" (or "defined") if it is a key in <code>known_quantities</code> or if it is an output variable of one of the direct modules listed in <code>direct_module_names</code>.</p>
 <p>We consider a quantity to be strictly required as a module input if (i) a module requires it as an input and (ii) it has not been produced as the output of a previous module. Thus the set of strictly required inputs depends on the order of the modules.</p>
 <p>If a quantity is (i) strictly required as an input and (ii) is produced as the output of a module, it is said to be an "unknown quantity" since its value will be determined by the set of simultaneous equations that this class represents. Thus the set of unknown quantities also depends on the order of the modules.</p>
 <p>While constructing a <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> object, the following criteria determine the validity of the inputs:</p><ul>
@@ -308,7 +308,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="simultaneous__equations_8cpp_source.html#l00037">37</a> of file <a class="el" href="simultaneous__equations_8cpp_source.html">simultaneous_equations.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="validate__system_8h_source.html#l00159">create_message()</a>, <a class="el" href="validate__system_8cpp_source.html#l00331">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__system_8cpp_source.html#l00350">find_undefined_module_inputs()</a>, <a class="el" href="validate__system_8h_source.html#l00259">get_defined_quantity_names()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>, and <a class="el" href="validate__system_8cpp_source.html#l00671">string_vector_difference()</a>.</p>
+<p class="reference">References <a class="el" href="validate__dynamical__system_8h_source.html#l00159">create_message()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00331">find_duplicate_quantity_definitions()</a>, <a class="el" href="validate__dynamical__system_8cpp_source.html#l00350">find_undefined_module_inputs()</a>, <a class="el" href="validate__dynamical__system_8h_source.html#l00259">get_defined_quantity_names()</a>, <a class="el" href="simultaneous__equations_8cpp_source.html#l00236">get_unknown_quantities()</a>, and <a class="el" href="validate__dynamical__system_8cpp_source.html#l00670">string_vector_difference()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_r__simultaneous__equations_8cpp_source.html#l00109">R_validate_simultaneous_equations()</a>, and <a class="el" href="simultaneous__equations_8cpp_source.html#l00152">simultaneous_equations::simultaneous_equations()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -316,25 +316,25 @@ Variables</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="simultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_cgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_cgraph" alt=""/></div>
-<map name="asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_cgraph" id="asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_cgraph">
+<div class="center"><img src="simultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_cgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_cgraph" alt=""/></div>
+<map name="asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_cgraph" id="asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_cgraph">
 <area shape="rect" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="5,155,156,197"/>
-<area shape="rect" href="validate__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="226,5,345,32"/>
-<area shape="rect" href="validate__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="209,57,362,98"/>
-<area shape="rect" href="validate__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="209,122,362,163"/>
-<area shape="rect" href="validate__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="215,187,355,229"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="226,5,345,32"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9" title="Finds quantities that are defined multiple times in a vector of strings." alt="" coords="209,57,362,98"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#af3304d4593d3a71799f61af8eb18774f" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="209,122,362,163"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#a3b0ba0722c4dd20bfc36e6f92ff276ff" title="Assembles the names of all quantities defined by a group of state_maps and module outputs,..." alt="" coords="215,187,355,229"/>
 <area shape="rect" href="simultaneous__equations_8cpp.html#ae2a605d520f1fc493875c92029c21e7c" title="Finds the unknown quantities defined by the set of modules." alt="" coords="204,283,367,309"/>
-<area shape="rect" href="validate__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="205,369,365,396"/>
-<area shape="rect" href="validate__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="425,5,551,32"/>
-<area shape="rect" href="validate__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="415,57,561,98"/>
-<area shape="rect" href="validate__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="415,122,561,163"/>
-<area shape="rect" href="validate__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="425,188,551,215"/>
-<area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="674,188,723,215"/>
-<area shape="rect" href="validate__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="418,239,558,281"/>
-<area shape="rect" href="validate__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="420,305,556,346"/>
-<area shape="rect" href="validate__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="420,370,556,411"/>
-<area shape="rect" href="validate__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="639,363,759,405"/>
-<area shape="rect" href="validate__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="609,247,788,273"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#ade9afc8d0488c1ba6c692845d5c5086f" title=" " alt="" coords="205,369,365,396"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#acbca89ff1657b5c4b07ad672dbd47f1a" title="Adds an indented line to a message." alt="" coords="425,5,551,32"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d" title="Inserts quantity_name into target_vector if it is not already there. In the case of a duplicate,..." alt="" coords="415,57,561,98"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a68ab75e71590ce4a83b56f348360dced" title="If param_name is not included in defined_quantity_names, a new entry is inserted into undefined_modul..." alt="" coords="415,122,561,163"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#ad2321956b4c48d7bbb29b60b00722982" title="Inserts all the keys from map into name_vector." alt="" coords="425,188,551,215"/>
+<area shape="rect" href="state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a sorted list of its keys." alt="" coords="674,188,723,215"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#abeb01cae7442e3f44e4431f42c5fd79e" title="Returns a vector containing all inputs to the set of modules that are not outputs produced by previou..." alt="" coords="418,239,558,281"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a96840539e64ce8ccec9df05cc320222e" title="Returns a set containing all unique outputs produced by the modules." alt="" coords="420,305,556,346"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#a81af0c9fd2ef95fe7d844d49301408d7" title="Converts a string_set to a string_vector." alt="" coords="420,370,556,411"/>
+<area shape="rect" href="validate__dynamical__system_8h.html#aa7d00f772a8481e700ff6e6ac2fae3a9" title="If quantity_name is not included in defined_quantity_names, it is inserted into undefined_quantity_na..." alt="" coords="639,363,759,405"/>
+<area shape="rect" href="validate__dynamical__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a" title="Creates a string_set from all the elements of a string_vector." alt="" coords="609,247,788,273"/>
 </map>
 </div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -342,11 +342,11 @@ Variables</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="simultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_icgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_icgraph" alt=""/></div>
-<map name="asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_icgraph" id="asimultaneous__equations_8cpp_ae5eb48d46cc1e008c6a4b0d0400c7678_icgraph">
+<div class="center"><img src="simultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_icgraph.png" border="0" usemap="#asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_icgraph" alt=""/></div>
+<map name="asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_icgraph" id="asimultaneous__equations_8cpp_a54f6b30e4565b104e3716544115c6138_icgraph">
 <area shape="rect" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="221,39,372,80"/>
-<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a50c4f1f36222d2ee70eff7aa4de41c0b" title=" " alt="" coords="6,5,173,47"/>
-<area shape="rect" href="classsimultaneous__equations.html#a7ae8cd6501dac563518119132accd194" title=" " alt="" coords="5,71,173,112"/>
+<area shape="rect" href="_r__simultaneous__equations_8cpp.html#a40e5e82ef3a7610245120dcb076a10c6" title=" " alt="" coords="6,5,173,47"/>
+<area shape="rect" href="classsimultaneous__equations.html#abfc5d8ecf986091ff15e799e6e4cc088" title=" " alt="" coords="5,71,173,112"/>
 </map>
 </div>
 
@@ -374,7 +374,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 31 2021 15:17:56 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 1 2021 20:48:19 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

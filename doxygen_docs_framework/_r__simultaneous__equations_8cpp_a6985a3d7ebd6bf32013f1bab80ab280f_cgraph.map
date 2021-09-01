@@ -1,9 +1,0 @@
-<map id="R_solve_simultaneous_equations" name="R_solve_simultaneous_equations">
-<area shape="rect" id="node1" title=" " alt="" coords="5,140,159,181"/>
-<area shape="rect" id="node2" href="$classse__solver__factory.html#a8e3f3dbf5dbc272fc8ca22682ebcd9af" title=" " alt="" coords="225,5,356,47"/>
-<area shape="rect" id="node3" href="$se__solver_8cpp.html#a46f4930316942b5ecb1a7a49a60761c9" title="Converts the output from an se_observer_push_back into a format that can easily be passed to R." alt="" coords="207,71,375,98"/>
-<area shape="rect" id="node4" href="$state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a list of its keys." alt="" coords="266,122,315,149"/>
-<area shape="rect" id="node5" href="$_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="239,173,343,199"/>
-<area shape="rect" id="node6" href="$_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895" title=" " alt="" coords="242,223,339,250"/>
-<area shape="rect" id="node7" href="$_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff" title=" " alt="" coords="239,274,343,301"/>
-</map>

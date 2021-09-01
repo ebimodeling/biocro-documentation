@@ -110,11 +110,11 @@ $(document).ready(function(){initNavTree('song__flowering_8hpp_source.html','');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//  &quot;Structured data 1&quot; in the supplement to Locke (2005) as viewed with an online SBML viewer (http://sv.insysbio.com/online/)</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classsong__flowering.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsong__flowering.html">song_flowering</a> : <span class="keyword">public</span> DerivModule {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classsong__flowering.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsong__flowering.html">song_flowering</a> : <span class="keyword">public</span> differential_module {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classsong__flowering.html#a56f832568009b53c352a17a3b5a77c44">   21</a></span>&#160;                <a class="code" href="classsong__flowering.html#a56f832568009b53c352a17a3b5a77c44">song_flowering</a>(state_map <span class="keyword">const</span>&amp; input_quantities, state_map* output_quantities) :</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        DerivModule(<span class="stringliteral">&quot;song_flowering&quot;</span>),</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                        differential_module(<span class="stringliteral">&quot;song_flowering&quot;</span>),</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        <a class="code" href="classsong__flowering.html#a1c138dcaa6efa0b3ff64d843d7a4f466">solar_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;solar&quot;</span>)),</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        <a class="code" href="classsong__flowering.html#a8b30bfededd07f9f5e64eef739a7310e">cLm_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;cLm&quot;</span>)),</div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('song__flowering_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="song__flowering_8hpp.html">song_flowering.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

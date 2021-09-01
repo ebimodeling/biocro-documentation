@@ -103,14 +103,14 @@ $(document).ready(function(){initNavTree('ed__collatz__c4__assimilation_8h_sourc
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="ed__collatz__c4__assimilation_8h.html#ab1f7fbaa766c29954b02566feb73f364">    9</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="ed__collatz__c4__assimilation_8h.html#ab1f7fbaa766c29954b02566feb73f364">collatz_print</a> = <span class="keyword">false</span>;  <span class="comment">// for debugging</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classed__collatz__c4__assimilation.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__collatz__c4__assimilation.html">ed_collatz_c4_assimilation</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classed__collatz__c4__assimilation.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__collatz__c4__assimilation.html">ed_collatz_c4_assimilation</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classed__collatz__c4__assimilation.html#abdcfbbfeda9ffdb9a82447c71e040d66">   29</a></span>&#160;    <a class="code" href="classed__collatz__c4__assimilation.html#abdcfbbfeda9ffdb9a82447c71e040d66">ed_collatz_c4_assimilation</a>(</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          SteadyModule(<span class="stringliteral">&quot;ed_collatz_c4_assimilation&quot;</span>),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          direct_module(<span class="stringliteral">&quot;ed_collatz_c4_assimilation&quot;</span>),</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          collatz_q10_ip(get_ip(input_quantities, <span class="stringliteral">&quot;collatz_q10&quot;</span>)),</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          temperature_leaf_ip(get_ip(input_quantities, <span class="stringliteral">&quot;temperature_leaf&quot;</span>)),</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('ed__collatz__c4__assimilation_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__collatz__c4__assimilation_8h.html">ed_collatz_c4_assimilation.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

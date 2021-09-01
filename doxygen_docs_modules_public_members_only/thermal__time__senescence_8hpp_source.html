@@ -98,16 +98,16 @@ $(document).ready(function(){initNavTree('thermal__time__senescence_8hpp_source.
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classthermal__time__senescence.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthermal__time__senescence.html">thermal_time_senescence</a> : <span class="keyword">public</span> DerivModule</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classthermal__time__senescence.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthermal__time__senescence.html">thermal_time_senescence</a> : <span class="keyword">public</span> differential_module</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classthermal__time__senescence.html#a1cbddf8207e8b40e0a53bffc69a1f190">   92</a></span>&#160;    <a class="code" href="classthermal__time__senescence.html#a1cbddf8207e8b40e0a53bffc69a1f190">thermal_time_senescence</a>(</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           <span class="comment">// class and indicate that this module is not compatible with</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;           <span class="comment">// adaptive step size integrators</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          DerivModule(<span class="stringliteral">&quot;thermal_time_senescence&quot;</span>, false),</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           <span class="comment">// class and indicate that this module requires a fixed step size</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;           <span class="comment">// Euler integrator</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          differential_module(<span class="stringliteral">&quot;thermal_time_senescence&quot;</span>, true),</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          TTc{get_input(input_quantities, <span class="stringliteral">&quot;TTc&quot;</span>)},</div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('thermal__time__senescence_8hpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="thermal__time__senescence_8hpp.html">thermal_time_senescence.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:38 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

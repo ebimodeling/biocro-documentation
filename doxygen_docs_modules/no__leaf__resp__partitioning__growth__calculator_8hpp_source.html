@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('no__leaf__resp__partitioning__growth__
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bio_cro_8h.html">BioCro.h</a>&quot;</span>  <span class="comment">// for resp</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classno__leaf__resp__partitioning__growth__calculator.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classno__leaf__resp__partitioning__growth__calculator.html">no_leaf_resp_partitioning_growth_calculator</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classno__leaf__resp__partitioning__growth__calculator.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classno__leaf__resp__partitioning__growth__calculator.html">no_leaf_resp_partitioning_growth_calculator</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classno__leaf__resp__partitioning__growth__calculator.html#af2a53da1e2b86c2b07ffb276a5e3d9dc">   60</a></span>&#160;    <a class="code" href="classno__leaf__resp__partitioning__growth__calculator.html#af2a53da1e2b86c2b07ffb276a5e3d9dc">no_leaf_resp_partitioning_growth_calculator</a>(</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          SteadyModule(<span class="stringliteral">&quot;no_leaf_resp_partitioning_growth_calculator&quot;</span>),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          direct_module(<span class="stringliteral">&quot;no_leaf_resp_partitioning_growth_calculator&quot;</span>),</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          <a class="code" href="classno__leaf__resp__partitioning__growth__calculator.html#ace52b88935d5acb630ed428517377389">kLeaf</a>{get_input(input_quantities, <span class="stringliteral">&quot;kLeaf&quot;</span>)},</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('no__leaf__resp__partitioning__growth__
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="no__leaf__resp__partitioning__growth__calculator_8hpp.html">no_leaf_resp_partitioning_growth_calculator.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

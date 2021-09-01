@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('ed__evapotrans2_8h_source.html',''); i
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="c4photo_8h.html">c4photo.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bio_cro_8h.html">BioCro.h</a>&quot;</span>  <span class="comment">// for absorbed_shortwave_from_incident_ppfd</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classed__evapotrans2.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__evapotrans2.html">ed_evapotrans2</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classed__evapotrans2.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__evapotrans2.html">ed_evapotrans2</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classed__evapotrans2.html#ad825bacc88d3ccfb8aa262b04a7677d8">   18</a></span>&#160;    <a class="code" href="classed__evapotrans2.html#ad825bacc88d3ccfb8aa262b04a7677d8">ed_evapotrans2</a>(</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;          SteadyModule(<span class="stringliteral">&quot;ed_evapotrans2&quot;</span>),</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;          direct_module(<span class="stringliteral">&quot;ed_evapotrans2&quot;</span>),</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;          <a class="code" href="classed__evapotrans2.html#ac63c97f9467e03bc37d32004c7e7ea6a">temperature_air_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;          <a class="code" href="classed__evapotrans2.html#af6c231b4b8c0e2ec7ef1d728b2855701">rh_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)),</div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('ed__evapotrans2_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__evapotrans2_8h.html">ed_evapotrans2.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

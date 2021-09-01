@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('partitioning__coefficient__logistic_8h
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">double</span> <a class="code" href="partitioning__coefficient__logistic_8h.html#a2419ba0999a70240547aa4e03c20e271">kcoeff</a>(<span class="keywordtype">double</span> alpha, <span class="keywordtype">double</span> beta, <span class="keywordtype">double</span> DVI, <span class="keywordtype">double</span> denom);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classpartitioning__coefficient__logistic.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpartitioning__coefficient__logistic.html">partitioning_coefficient_logistic</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classpartitioning__coefficient__logistic.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpartitioning__coefficient__logistic.html">partitioning_coefficient_logistic</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classpartitioning__coefficient__logistic.html#a29f892a37410188e2fbec28291935a24">   50</a></span>&#160;    <a class="code" href="classpartitioning__coefficient__logistic.html#a29f892a37410188e2fbec28291935a24">partitioning_coefficient_logistic</a>(</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        : SteadyModule{<span class="stringliteral">&quot;partitioning_coefficient_logistic&quot;</span>},</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        : direct_module{<span class="stringliteral">&quot;partitioning_coefficient_logistic&quot;</span>},</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          DVI{get_input(input_quantities, <span class="stringliteral">&quot;DVI&quot;</span>)},</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('partitioning__coefficient__logistic_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="partitioning__coefficient__logistic_8h.html">partitioning_coefficient_logistic.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:38 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

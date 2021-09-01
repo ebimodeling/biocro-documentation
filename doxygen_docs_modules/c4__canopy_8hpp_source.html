@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('c4__canopy_8hpp_source.html',''); init
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_aux_bio_cro_8h.html">AuxBioCro.h</a>&quot;</span>  <span class="comment">// For nitroParms and Can_Str</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bio_cro_8h.html">BioCro.h</a>&quot;</span>     <span class="comment">// For CanAC</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classc4__canopy.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classc4__canopy.html">c4_canopy</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classc4__canopy.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classc4__canopy.html">c4_canopy</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classc4__canopy.html#a94d23dfe2a067f56b731d38f379f2d9c">   12</a></span>&#160;    <a class="code" href="classc4__canopy.html#a94d23dfe2a067f56b731d38f379f2d9c">c4_canopy</a>(</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;          SteadyModule(<span class="stringliteral">&quot;c4_canopy&quot;</span>),</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;          direct_module(<span class="stringliteral">&quot;c4_canopy&quot;</span>),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          <a class="code" href="classc4__canopy.html#ad4f95dd8362e5de8635715d7cddb639e">nileafn</a>(get_input(input_quantities, <span class="stringliteral">&quot;nileafn&quot;</span>)),</div>
@@ -413,7 +413,7 @@ $(document).ready(function(){initNavTree('c4__canopy_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c4__canopy_8hpp.html">c4_canopy.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

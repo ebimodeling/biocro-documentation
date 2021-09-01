@@ -110,14 +110,14 @@ $(document).ready(function(){initNavTree('ed__nikolov__conductance_8h_source.htm
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}  <span class="comment">// namespace nikolov</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__forced.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__nikolov__conductance__forced.html">ed_nikolov_conductance_forced</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__forced.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__nikolov__conductance__forced.html">ed_nikolov_conductance_forced</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__forced.html#ab0ace35e003f0decb670fb12395bee98">   80</a></span>&#160;    <a class="code" href="classed__nikolov__conductance__forced.html#ab0ace35e003f0decb670fb12395bee98">ed_nikolov_conductance_forced</a>(</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          SteadyModule(<span class="stringliteral">&quot;ed_nikolov_conductance_forced&quot;</span>),</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          direct_module(<span class="stringliteral">&quot;ed_nikolov_conductance_forced&quot;</span>),</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <a class="code" href="classed__nikolov__conductance__forced.html#ac63c97f9467e03bc37d32004c7e7ea6a">temperature_air_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <a class="code" href="classed__nikolov__conductance__forced.html#a993c71f463b2372eff9e62e897f0fae1">atmospheric_pressure_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)),</div>
@@ -193,14 +193,14 @@ $(document).ready(function(){initNavTree('ed__nikolov__conductance_8h_source.htm
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    update(<a class="code" href="classed__nikolov__conductance__forced.html#aea4565c685bb68fb6ee9f15c974a7f24">conductance_boundary_h2o_forced_op</a>, gbv_forced);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__free.html">  172</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__nikolov__conductance__free.html">ed_nikolov_conductance_free</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__free.html">  172</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__nikolov__conductance__free.html">ed_nikolov_conductance_free</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classed__nikolov__conductance__free.html#a2819d14f56f72d9e6aaf58e5573df1be">  175</a></span>&#160;    <a class="code" href="classed__nikolov__conductance__free.html#a2819d14f56f72d9e6aaf58e5573df1be">ed_nikolov_conductance_free</a>(</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;          SteadyModule(<span class="stringliteral">&quot;ed_nikolov_conductance_free&quot;</span>),</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;          direct_module(<span class="stringliteral">&quot;ed_nikolov_conductance_free&quot;</span>),</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;          <a class="code" href="classed__nikolov__conductance__free.html#ac63c97f9467e03bc37d32004c7e7ea6a">temperature_air_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          <a class="code" href="classed__nikolov__conductance__free.html#a5bad0bb4be07567fb982f60e360b1b66">temperature_leaf_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;temperature_leaf&quot;</span>)),</div>
@@ -464,7 +464,7 @@ $(document).ready(function(){initNavTree('ed__nikolov__conductance_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__nikolov__conductance_8h.html">ed_nikolov_conductance.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('fake__solar_8hpp_source.html',''); ini
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classfake__solar.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfake__solar.html">fake_solar</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classfake__solar.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfake__solar.html">fake_solar</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classfake__solar.html#a3d0310fe870e575fd0258f9e61d5ec7e">   13</a></span>&#160;    <a class="code" href="classfake__solar.html#a3d0310fe870e575fd0258f9e61d5ec7e">fake_solar</a>(</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : SteadyModule(<span class="stringliteral">&quot;fake_solar&quot;</span>),</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        : direct_module(<span class="stringliteral">&quot;fake_solar&quot;</span>),</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;          <a class="code" href="classfake__solar.html#a2cd6b5fc11312ee608b2be51a6c07ce5">time_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)),</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          <a class="code" href="classfake__solar.html#af2cd7167ab570f698da146d23f984846">target_time_ip</a>(get_ip(input_quantities, <span class="stringliteral">&quot;target_time&quot;</span>)),</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('fake__solar_8hpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="fake__solar_8hpp.html">fake_solar.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:47:39 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('ed__leaf__temperature_8h_source.html',
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classed__leaf__temperature.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__leaf__temperature.html">ed_leaf_temperature</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classed__leaf__temperature.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="classed__leaf__temperature.html">ed_leaf_temperature</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classed__leaf__temperature.html#a66540879455f9da372b9e56ce3307f96">   68</a></span>&#160;    <a class="code" href="classed__leaf__temperature.html#a66540879455f9da372b9e56ce3307f96">ed_leaf_temperature</a>(</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          SteadyModule(<span class="stringliteral">&quot;ed_leaf_temperature&quot;</span>),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          direct_module(<span class="stringliteral">&quot;ed_leaf_temperature&quot;</span>),</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          long_wave_energy_loss_leaf{get_input(input_quantities, <span class="stringliteral">&quot;long_wave_energy_loss_leaf&quot;</span>)},</div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('ed__leaf__temperature_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ed__leaf__temperature_8h.html">ed_leaf_temperature.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

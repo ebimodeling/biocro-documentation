@@ -81,8 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56db9a5a14aedea788c3fdd09783da16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a56db9a5a14aedea788c3fdd09783da16">biocro_simulation</a> (std::unordered_map&lt; std::string, double &gt; const &amp;initial_values, std::unordered_map&lt; std::string, double &gt; const &amp;<a class="el" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>, std::unordered_map&lt; std::string, std::vector&lt; double &gt;&gt; const &amp;drivers, std::vector&lt; std::string &gt; const &amp;steady_state_module_names, std::vector&lt; std::string &gt; const &amp;derivative_module_names, std::string integrator_name, double output_step_size, double adaptive_rel_error_tol, double adaptive_abs_error_tol, int adaptive_max_steps)</td></tr>
-<tr class="separator:a56db9a5a14aedea788c3fdd09783da16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b3e573455f1f017fb3c563f263d07e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a15b3e573455f1f017fb3c563f263d07e">biocro_simulation</a> (std::unordered_map&lt; std::string, double &gt; const &amp;initial_values, std::unordered_map&lt; std::string, double &gt; const &amp;<a class="el" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>, std::unordered_map&lt; std::string, std::vector&lt; double &gt;&gt; const &amp;drivers, std::vector&lt; std::string &gt; const &amp;direct_module_names, std::vector&lt; std::string &gt; const &amp;differential_module_names, std::string integrator_name, double output_step_size, double adaptive_rel_error_tol, double adaptive_abs_error_tol, int adaptive_max_steps)</td></tr>
+<tr class="separator:a15b3e573455f1f017fb3c563f263d07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4601baa69b5242561ef06aa530e57473"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a4601baa69b5242561ef06aa530e57473">run_simulation</a> ()</td></tr>
 <tr class="separator:a4601baa69b5242561ef06aa530e57473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922846631dbe478686e03a46e25ab29a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a922846631dbe478686e03a46e25ab29a">generate_report</a> () const</td></tr>
@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a49c0a1a5457ae5474ea84e244183c659"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_system.html">System</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a49c0a1a5457ae5474ea84e244183c659">sys</a></td></tr>
-<tr class="separator:a49c0a1a5457ae5474ea84e244183c659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4a5afb523573a41e3b59d8f15187ce"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdynamical__system.html">dynamical_system</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a5e4a5afb523573a41e3b59d8f15187ce">sys</a></td></tr>
+<tr class="separator:a5e4a5afb523573a41e3b59d8f15187ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a418a308f5842792f0e6a81ef90d2965b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classintegrator.html">integrator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbiocro__simulation.html#a418a308f5842792f0e6a81ef90d2965b">system_solver</a></td></tr>
 <tr class="separator:a418a308f5842792f0e6a81ef90d2965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -99,8 +99,8 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="biocro__simulation_8h_source.html#l00011">11</a> of file <a class="el" href="biocro__simulation_8h_source.html">biocro_simulation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a56db9a5a14aedea788c3fdd09783da16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56db9a5a14aedea788c3fdd09783da16">&#9670;&nbsp;</a></span>biocro_simulation()</h2>
+<a id="a15b3e573455f1f017fb3c563f263d07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b3e573455f1f017fb3c563f263d07e">&#9670;&nbsp;</a></span>biocro_simulation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,13 +130,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; std::string &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>steady_state_module_names</em>, </td>
+          <td class="paramname"><em>direct_module_names</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; std::string &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>derivative_module_names</em>, </td>
+          <td class="paramname"><em>differential_module_names</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -189,8 +189,8 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classbiocro__simulation_a56db9a5a14aedea788c3fdd09783da16_cgraph.png" border="0" usemap="#aclassbiocro__simulation_a56db9a5a14aedea788c3fdd09783da16_cgraph" alt=""/></div>
-<map name="aclassbiocro__simulation_a56db9a5a14aedea788c3fdd09783da16_cgraph" id="aclassbiocro__simulation_a56db9a5a14aedea788c3fdd09783da16_cgraph">
+<div class="center"><img src="classbiocro__simulation_a15b3e573455f1f017fb3c563f263d07e_cgraph.png" border="0" usemap="#aclassbiocro__simulation_a15b3e573455f1f017fb3c563f263d07e_cgraph" alt=""/></div>
+<map name="aclassbiocro__simulation_a15b3e573455f1f017fb3c563f263d07e_cgraph" id="aclassbiocro__simulation_a15b3e573455f1f017fb3c563f263d07e_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,128,39"/>
 <area shape="rect" href="classintegrator__factory.html#adcd6dae8b44dbd40609ee03edc619710" title=" " alt="" coords="176,5,299,47"/>
 </map>
@@ -235,7 +235,7 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph.png" border="0" usemap="#aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph" alt=""/></div>
 <map name="aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph" id="aclassbiocro__simulation_a922846631dbe478686e03a46e25ab29a_icgraph">
 <area shape="rect" title=" " alt="" coords="152,5,264,32"/>
-<area shape="rect" href="_r__run__biocro_8cpp.html#afef7d150133fb7333bcb58c3060bd580" title=" " alt="" coords="5,5,104,32"/>
+<area shape="rect" href="_r__run__biocro_8cpp.html#a0a4dc99e578f69d10d9be2f9c240b461" title=" " alt="" coords="5,5,104,32"/>
 </map>
 </div>
 
@@ -277,15 +277,15 @@ Private Attributes</h2></td></tr>
 <div class="center"><img src="classbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph.png" border="0" usemap="#aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph" alt=""/></div>
 <map name="aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph" id="aclassbiocro__simulation_a4601baa69b5242561ef06aa530e57473_icgraph">
 <area shape="rect" title=" " alt="" coords="152,5,259,32"/>
-<area shape="rect" href="_r__run__biocro_8cpp.html#afef7d150133fb7333bcb58c3060bd580" title=" " alt="" coords="5,5,104,32"/>
+<area shape="rect" href="_r__run__biocro_8cpp.html#a0a4dc99e578f69d10d9be2f9c240b461" title=" " alt="" coords="5,5,104,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a49c0a1a5457ae5474ea84e244183c659"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49c0a1a5457ae5474ea84e244183c659">&#9670;&nbsp;</a></span>sys</h2>
+<a id="a5e4a5afb523573a41e3b59d8f15187ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4a5afb523573a41e3b59d8f15187ce">&#9670;&nbsp;</a></span>sys</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,7 +294,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_system.html">System</a>&gt; sys</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdynamical__system.html">dynamical_system</a>&gt; sys</td>
         </tr>
       </table>
   </td>
@@ -342,7 +342,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 31 2021 15:16:33 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Sep 1 2021 20:47:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

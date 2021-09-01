@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../constants.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classincident__shortwave__from__ground__par.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classincident__shortwave__from__ground__par.html">incident_shortwave_from_ground_par</a> : <span class="keyword">public</span> SteadyModule</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classincident__shortwave__from__ground__par.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classincident__shortwave__from__ground__par.html">incident_shortwave_from_ground_par</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classincident__shortwave__from__ground__par.html#a9325be657d8cd0d183b0ce9f5fffa4bd">   28</a></span>&#160;    <a class="code" href="classincident__shortwave__from__ground__par.html#a9325be657d8cd0d183b0ce9f5fffa4bd">incident_shortwave_from_ground_par</a>(</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        state_map* output_quantities)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          SteadyModule(<span class="stringliteral">&quot;incident_shortwave_from_ground_par&quot;</span>),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          direct_module(<span class="stringliteral">&quot;incident_shortwave_from_ground_par&quot;</span>),</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;          solar(get_input(input_quantities, <span class="stringliteral">&quot;solar&quot;</span>)),</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          irradiance_direct_fraction(get_input(input_quantities, <span class="stringliteral">&quot;irradiance_direct_fraction&quot;</span>)),</div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('incident__shortwave__from__ground__par
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="incident__shortwave__from__ground__par_8h.html">incident_shortwave_from_ground_par.h</a></li>
-    <li class="footer">Generated on Tue Aug 31 2021 15:17:37 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 1 2021 20:48:01 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

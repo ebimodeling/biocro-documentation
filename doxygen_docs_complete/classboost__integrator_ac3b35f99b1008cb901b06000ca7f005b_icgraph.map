@@ -1,6 +1,0 @@
-<map id="run_integrate_const" name="run_integrate_const">
-<area shape="rect" id="node1" title=" " alt="" coords="215,78,351,105"/>
-<area shape="rect" id="node2" href="$classboost__euler__integrator.html#a198cd8fb356d6a484ec576db386ab382" title=" " alt="" coords="11,5,161,47"/>
-<area shape="rect" id="node3" href="$classboost__rk4__integrator.html#a198cd8fb356d6a484ec576db386ab382" title=" " alt="" coords="16,71,156,112"/>
-<area shape="rect" id="node4" href="$classboost__rkck54__integrator.html#a198cd8fb356d6a484ec576db386ab382" title=" " alt="" coords="5,136,167,177"/>
-</map>

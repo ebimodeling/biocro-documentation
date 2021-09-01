@@ -1,4 +1,0 @@
-<map id="run_derivative_modules" name="run_derivative_modules">
-<area shape="rect" id="node1" title="Calculates a derivative from the internally stored quantity map by running all the derivative modules..." alt="" coords="5,5,164,32"/>
-<area shape="rect" id="node2" href="$modules_8cpp.html#a66d745d4b3acb43ae8bc66c3e25aebb4" title="Runs each module in the input list." alt="" coords="212,5,325,32"/>
-</map>
