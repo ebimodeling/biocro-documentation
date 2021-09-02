@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Try to create an instance of the module</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">bool</span> create_success = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">bool</span> is_differential = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> requires_euler_integrator = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> requires_euler_ode_solver = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::string creation_error_message = <span class="stringliteral">&quot;none&quot;</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::unique_ptr&lt;module_base&gt; module_ptr = w-&gt;createModule(</div>
@@ -130,8 +130,8 @@ $(function() {
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// Check to see if the module is a differential module</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            is_differential = module_ptr-&gt;is_differential();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">// Check to see if the module requires an Euler integrator</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            requires_euler_integrator = module_ptr-&gt;requires_euler_integrator();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">// Check to see if the module requires an Euler ode_solver</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            requires_euler_ode_solver = module_ptr-&gt;requires_euler_ode_solver();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        } <span class="keywordflow">catch</span> (std::exception <span class="keyword">const</span>&amp; e) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            create_success = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            creation_error_message = e.what();</div>
@@ -173,8 +173,8 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    Rprintf(<span class="stringliteral">&quot;direct\n\n&quot;</span>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="comment">// Euler requirement</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                Rprintf(<span class="stringliteral">&quot;Requires a fixed step size Euler integrator:\n  &quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">if</span> (requires_euler_integrator)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                Rprintf(<span class="stringliteral">&quot;Requires a fixed step size Euler ode_solver:\n  &quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">if</span> (requires_euler_ode_solver)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    Rprintf(<span class="stringliteral">&quot;yes\n\n&quot;</span>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    Rprintf(<span class="stringliteral">&quot;no\n\n&quot;</span>);</div>
@@ -187,12 +187,12 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">// Return a list containing information about the module</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">list_from_module_info</a>(</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a>(</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            module_inputs,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            module_outputs,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            is_differential,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            requires_euler_integrator,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            requires_euler_ode_solver,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            creation_error_message);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    } <span class="keywordflow">catch</span> (<a class="code" href="classquantity__access__error.html">quantity_access_error</a> <span class="keyword">const</span>&amp; qae) {</div>
@@ -241,7 +241,7 @@ $(function() {
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a427d311e926df18071cfb272015d6dff"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a></div><div class="ttdeci">state_map map_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00048">R_helper_functions.cpp:48</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a6310116404ff62eabbeb384e02482895"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a></div><div class="ttdeci">vector&lt; string &gt; make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
-<div class="ttc" id="a_r__helper__functions_8cpp_html_a7dc103050ba8b3f2d4deaf75b3d4b898"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, state_map const &amp;module_inputs, state_map const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_integrator, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
+<div class="ttc" id="a_r__helper__functions_8cpp_html_a6768bd717c46873352f21b1f706d526d"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, state_map const &amp;module_inputs, state_map const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_ode_solver, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a958bd8cf9a5ec1a05b6af932cd5ab1aa"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">list_from_map</a></div><div class="ttdeci">SEXP list_from_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00101">R_helper_functions.cpp:101</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8h_html"><div class="ttname"><a href="_r__helper__functions_8h.html">R_helper_functions.h</a></div></div>
 <div class="ttc" id="a_r__modules_8cpp_html_a105b923bf4ee98033ed1f916e58a2d28"><div class="ttname"><a href="_r__modules_8cpp.html#a105b923bf4ee98033ed1f916e58a2d28">R_evaluate_module</a></div><div class="ttdeci">SEXP R_evaluate_module(SEXP module_name_input, SEXP input_parameters)</div><div class="ttdef"><b>Definition:</b> <a href="_r__modules_8cpp_source.html#l00129">R_modules.cpp:129</a></div></div>
@@ -257,7 +257,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 21:40:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Sep 2 2021 17:48:43 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

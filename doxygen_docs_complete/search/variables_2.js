@@ -23,7 +23,7 @@ var searchData=
   ['betaseneroot_2428',['betaSeneRoot',['../classsenescence__coefficient__logistic.html#a6d418b47aaaf1429ffff9116cca4428b',1,'senescence_coefficient_logistic']]],
   ['betasenestem_2429',['betaSeneStem',['../classsenescence__coefficient__logistic.html#aad27a223269ce2170ed611c62732fe4d',1,'senescence_coefficient_logistic']]],
   ['betastem_2430',['betaStem',['../classpartitioning__coefficient__logistic.html#afbbad4e3a11febc76ee864ed1ea4aff6',1,'partitioning_coefficient_logistic']]],
-  ['boost_5ferror_5fstring_2431',['boost_error_string',['../classboost__integrator.html#a0752f71a0bb49ccbbb72cb9cf5ce45fd',1,'boost_integrator']]],
+  ['boost_5ferror_5fstring_2431',['boost_error_string',['../classboost__ode__solver.html#a0752f71a0bb49ccbbb72cb9cf5ce45fd',1,'boost_ode_solver']]],
   ['boundary_5flayer_5fconductance_2432',['boundary_layer_conductance',['../struct_e_t___str.html#a488dc75fbd1ec09aba81e6016377c7f0',1,'ET_Str']]],
   ['bulk_5fdensity_2433',['bulk_density',['../structsoil_text__str.html#a850ef2134a24abd314f6ce1c5ef6b8d5',1,'soilText_str']]]
 ];

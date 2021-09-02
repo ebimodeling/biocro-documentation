@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['newton_5fraphson_5fbacktrack_5fboost_377',['newton_raphson_backtrack_boost',['../classnewton__raphson__backtrack__boost.html',1,'']]],
-  ['newton_5fraphson_5fboost_378',['newton_raphson_boost',['../classnewton__raphson__boost.html',1,'']]]
+  ['ode_5fsolver_377',['ode_solver',['../classode__solver.html',1,'']]],
+  ['ode_5fsolver_5ffactory_378',['ode_solver_factory',['../classode__solver__factory.html',1,'']]]
 ];

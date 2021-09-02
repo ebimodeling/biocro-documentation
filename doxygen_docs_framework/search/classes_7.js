@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['module_5fbase_374',['module_base',['../classmodule__base.html',1,'']]],
-  ['module_5fwrapper_375',['module_wrapper',['../classmodule__wrapper.html',1,'']]],
-  ['module_5fwrapper_5fbase_376',['module_wrapper_base',['../classmodule__wrapper__base.html',1,'']]]
+  ['newton_5fraphson_5fbacktrack_5fboost_375',['newton_raphson_backtrack_boost',['../classnewton__raphson__backtrack__boost.html',1,'']]],
+  ['newton_5fraphson_5fboost_376',['newton_raphson_boost',['../classnewton__raphson__boost.html',1,'']]]
 ];

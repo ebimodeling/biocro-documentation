@@ -1,8 +1,8 @@
 var searchData=
 [
   ['r_5fevaluate_5fmodule_584',['R_evaluate_module',['../_r__modules_8cpp.html#a105b923bf4ee98033ed1f916e58a2d28',1,'R_modules.cpp']]],
-  ['r_5fget_5fall_5fintegrators_585',['R_get_all_integrators',['../_r__get__all_8cpp.html#abae161fa696625562364e21fc68cd2e7',1,'R_get_all.cpp']]],
-  ['r_5fget_5fall_5fmodules_586',['R_get_all_modules',['../_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737',1,'R_get_all.cpp']]],
+  ['r_5fget_5fall_5fmodules_585',['R_get_all_modules',['../_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737',1,'R_get_all.cpp']]],
+  ['r_5fget_5fall_5fode_5fsolvers_586',['R_get_all_ode_solvers',['../_r__get__all_8cpp.html#abf21ef28d77d0a35c3e2270066147a74',1,'R_get_all.cpp']]],
   ['r_5fget_5fall_5fquantities_587',['R_get_all_quantities',['../_r__get__all_8cpp.html#a5f774d138b47709a8a354da35d32a768',1,'R_get_all.cpp']]],
   ['r_5fget_5fall_5fse_5fsolvers_588',['R_get_all_se_solvers',['../_r__get__all_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb',1,'R_get_all.cpp']]],
   ['r_5flogical_5ffrom_5fboolean_589',['r_logical_from_boolean',['../_r__helper__functions_8h.html#a4b6b522dfb157c35def3e405095fd5e5',1,'r_logical_from_boolean(bool b):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8cpp.html#a4b6b522dfb157c35def3e405095fd5e5',1,'r_logical_from_boolean(bool b):&#160;R_helper_functions.cpp']]],
@@ -16,12 +16,12 @@ var searchData=
   ['r_5fvalidate_5fsimultaneous_5fequations_597',['R_validate_simultaneous_equations',['../_r__simultaneous__equations_8cpp.html#a40e5e82ef3a7610245120dcb076a10c6',1,'R_simultaneous_equations.cpp']]],
   ['rand_5f01_598',['rand_01',['../namespacese__solver__rand.html#a72a434d343698609714e40bbfe29e489',1,'se_solver_rand']]],
   ['random_5fvector_5fon_5fn_5fdimensional_5fsphere_599',['random_vector_on_n_dimensional_sphere',['../namespacese__solver__rand.html#a9f56be3c41c4ce78f588169480cb5e7b',1,'se_solver_rand']]],
-  ['requires_5feuler_5fintegrator_600',['requires_euler_integrator',['../classmodule__base.html#aaca9a876de1f7a337efb34ce5439861b',1,'module_base::requires_euler_integrator()'],['../classdynamical__system.html#aaca9a876de1f7a337efb34ce5439861b',1,'dynamical_system::requires_euler_integrator() const']]],
+  ['requires_5feuler_5fode_5fsolver_600',['requires_euler_ode_solver',['../classmodule__base.html#a20c3edfc2e6b8c2d2ec9135af419efba',1,'module_base::requires_euler_ode_solver()'],['../classdynamical__system.html#a20c3edfc2e6b8c2d2ec9135af419efba',1,'dynamical_system::requires_euler_ode_solver() const']]],
   ['reset_601',['reset',['../classdynamical__system.html#ad20897c5c8bd47f5d4005989bead0e55',1,'dynamical_system']]],
   ['reset_5fncalls_602',['reset_ncalls',['../classsimultaneous__equations.html#a5566d03e0a3f087a7af2c15aa733167e',1,'simultaneous_equations::reset_ncalls()'],['../classdynamical__system.html#a5566d03e0a3f087a7af2c15aa733167e',1,'dynamical_system::reset_ncalls()']]],
   ['run_603',['run',['../classmodule__base.html#aa6b7bb009af6cd63f442559d3b8d1ab2',1,'module_base']]],
   ['run_5fdifferential_5fmodules_604',['run_differential_modules',['../classdynamical__system.html#ab1942c1f4d1019fbf2babf75d3b093e4',1,'dynamical_system']]],
-  ['run_5fintegrate_5fconst_605',['run_integrate_const',['../classboost__integrator.html#af2522a014178214c94e910651fadf2a6',1,'boost_integrator']]],
+  ['run_5fintegrate_5fconst_605',['run_integrate_const',['../classboost__ode__solver.html#af2522a014178214c94e910651fadf2a6',1,'boost_ode_solver']]],
   ['run_5fmodule_5flist_606',['run_module_list',['../modules_8cpp.html#ac9be9629e5a42b6eec44936214d89040',1,'run_module_list(std::vector&lt; std::unique_ptr&lt; module_base &gt;&gt; const &amp;modules):&#160;modules.cpp'],['../modules_8h.html#ac9be9629e5a42b6eec44936214d89040',1,'run_module_list(std::vector&lt; std::unique_ptr&lt; module_base &gt;&gt; const &amp;modules):&#160;modules.cpp']]],
   ['run_5fmodules_607',['run_modules',['../classsimultaneous__equations.html#aa2d9526103223c80eda0f5dbde4541c3',1,'simultaneous_equations']]],
   ['run_5fsimulation_608',['run_simulation',['../classbiocro__simulation.html#a4601baa69b5242561ef06aa530e57473',1,'biocro_simulation']]]

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['integrator_372',['integrator',['../classintegrator.html',1,'']]],
-  ['integrator_5ffactory_373',['integrator_factory',['../classintegrator__factory.html',1,'']]]
+  ['module_5fbase_372',['module_base',['../classmodule__base.html',1,'']]],
+  ['module_5fwrapper_373',['module_wrapper',['../classmodule__wrapper.html',1,'']]],
+  ['module_5fwrapper_5fbase_374',['module_wrapper_base',['../classmodule__wrapper__base.html',1,'']]]
 ];

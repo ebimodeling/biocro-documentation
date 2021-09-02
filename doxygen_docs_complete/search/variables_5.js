@@ -29,7 +29,7 @@ var searchData=
   ['eps_5fderiv_2616',['eps_deriv',['../namespacecalculation__constants.html#acb144317409226d5823ce37fd69fadb3',1,'calculation_constants']]],
   ['eps_5fzero_2617',['eps_zero',['../namespacecalculation__constants.html#a6a90aaea0e48c0b808854c3cbe682eb7',1,'calculation_constants']]],
   ['et_5fequation_2618',['et_equation',['../classc4__leaf__photosynthesis.html#a40f467a63ddfcfce7341f44d79bc15e1',1,'c4_leaf_photosynthesis::et_equation()'],['../classc4__canopy.html#a40f467a63ddfcfce7341f44d79bc15e1',1,'c4_canopy::et_equation()']]],
-  ['euler_5fintegrator_2619',['euler_integrator',['../classauto__integrator.html#ae7dcdef5b700b2eeab540d5f9764a4d8',1,'auto_integrator']]],
+  ['euler_5fode_5fsolver_2619',['euler_ode_solver',['../classauto__ode__solver.html#a6dd6000639ad5caee702077961339715',1,'auto_ode_solver']]],
   ['evapotranspiration_2620',['evapotranspiration',['../classone__layer__soil__profile__derivatives.html#a164ac24d9cdd69ba0aa0b30d84451001',1,'one_layer_soil_profile_derivatives']]],
   ['evapotranspiration_5fpenman_5fmonteith_5fop_2621',['evapotranspiration_penman_monteith_op',['../classed__evapotrans2.html#a9811e5eac02f11663a653906a742262c',1,'ed_evapotrans2::evapotranspiration_penman_monteith_op()'],['../classed__canac__leaf.html#a9811e5eac02f11663a653906a742262c',1,'ed_canac_leaf::evapotranspiration_penman_monteith_op()']]],
   ['evapotranspiration_5fpenman_5fop_2622',['evapotranspiration_penman_op',['../classed__canac__leaf.html#a195ddce2b2d4fb4985b0c2da42d5d084',1,'ed_canac_leaf::evapotranspiration_penman_op()'],['../classed__evapotrans2.html#a195ddce2b2d4fb4985b0c2da42d5d084',1,'ed_evapotrans2::evapotranspiration_penman_op()']]],

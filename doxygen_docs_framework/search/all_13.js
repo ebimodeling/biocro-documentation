@@ -18,7 +18,7 @@ var searchData=
   ['second_297',['second',['../classdynamical__system__caller.html#a82ec37d92fa8ab0b6f831066c09e0d75',1,'dynamical_system_caller']]],
   ['second_5ftype_298',['second_type',['../classdynamical__system__caller.html#af04273b570caf2c1cabdaf1ad18142e5',1,'dynamical_system_caller']]],
   ['seshf_5fprint_299',['seshf_print',['../se__solver__helper__functions_8h.html#aa86cb8b815b848a0d65bcdfe8e2c4e53',1,'se_solver_helper_functions.h']]],
-  ['should_5fcheck_5feuler_5frequirement_300',['should_check_euler_requirement',['../classintegrator.html#a2356c20494d60945341032e371b8d26e',1,'integrator']]],
+  ['should_5fcheck_5feuler_5frequirement_300',['should_check_euler_requirement',['../classode__solver.html#a2356c20494d60945341032e371b8d26e',1,'ode_solver']]],
   ['simultaneous_5fequations_301',['simultaneous_equations',['../classsimultaneous__equations.html',1,'simultaneous_equations'],['../classsimultaneous__equations.html#abfc5d8ecf986091ff15e799e6e4cc088',1,'simultaneous_equations::simultaneous_equations()']]],
   ['simultaneous_5fequations_2ecpp_302',['simultaneous_equations.cpp',['../simultaneous__equations_8cpp.html',1,'']]],
   ['simultaneous_5fequations_2eh_303',['simultaneous_equations.h',['../simultaneous__equations_8h.html',1,'']]],
@@ -26,12 +26,12 @@ var searchData=
   ['solve_5fmethod_5fhas_5fbeen_5fcalled_305',['solve_method_has_been_called',['../classse__solver.html#aaa97699924b7bf84e1761e81d7ec32c3',1,'se_solver']]],
   ['solver_5fname_306',['solver_name',['../classse__solver.html#aa34a143f4c843869da8e11e92724f4da',1,'se_solver']]],
   ['startup_5fmessage_307',['startup_message',['../classdynamical__system.html#aab4ae2f0c633be19e170fc6c8d823fd9',1,'dynamical_system::startup_message()'],['../classsimultaneous__equations.html#afe0b4c8dff8e601de7e9b2bb27d69611',1,'simultaneous_equations::startup_message()']]],
-  ['state_308',['state',['../classboost__integrator.html#ac1c6ac02c90e1d7f9b1b3d40b9be61ec',1,'boost_integrator']]],
+  ['state_308',['state',['../classboost__ode__solver.html#ac1c6ac02c90e1d7f9b1b3d40b9be61ec',1,'boost_ode_solver']]],
   ['state_5fmap_309',['state_map',['../state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28',1,'state_map.h']]],
   ['state_5fmap_2ecpp_310',['state_map.cpp',['../state__map_8cpp.html',1,'']]],
   ['state_5fmap_2eh_311',['state_map.h',['../state__map_8h.html',1,'']]],
   ['state_5fmap_5ffrom_5fnames_312',['state_map_from_names',['../state__map_8h.html#a4f6664c5a7a1b55a9992ab3d47cf5bb2',1,'state_map.h']]],
-  ['state_5fvec_313',['state_vec',['../classboost__integrator.html#a1ba2f3fa93d16bcfdf69d708a03772b9',1,'boost_integrator']]],
+  ['state_5fvec_313',['state_vec',['../classboost__ode__solver.html#a1ba2f3fa93d16bcfdf69d708a03772b9',1,'boost_ode_solver']]],
   ['state_5fvector_5fmap_314',['state_vector_map',['../state__map_8h.html#acc562c42c1d464c702e0abd69e05673d',1,'state_map.h']]],
   ['states_315',['states',['../structpush__back__state__and__time.html#a2045a4c2e84b6245c2b58a1621c402ab',1,'push_back_state_and_time']]],
   ['stefan_5fboltzmann_316',['stefan_boltzmann',['../namespacephysical__constants.html#ab993d2950483e6b20ca63c46f8134241',1,'physical_constants']]],
@@ -42,5 +42,5 @@ var searchData=
   ['string_5fvector_5fto_5fstring_5fset_321',['string_vector_to_string_set',['../validate__dynamical__system_8h.html#af056787c60e69c4bd097ed626a8b3e7a',1,'string_vector_to_string_set(string_vector sv):&#160;validate_dynamical_system.cpp'],['../validate__dynamical__system_8cpp.html#af056787c60e69c4bd097ed626a8b3e7a',1,'string_vector_to_string_set(string_vector sv):&#160;validate_dynamical_system.cpp']]],
   ['success_5fmark_322',['success_mark',['../validate__dynamical__system_8h.html#a98668b0a55bdf1b44d27545595f46fe1',1,'validate_dynamical_system.h']]],
   ['sys_323',['sys',['../classdynamical__system__pointer__wrapper.html#a5e4a5afb523573a41e3b59d8f15187ce',1,'dynamical_system_pointer_wrapper::sys()'],['../classbiocro__simulation.html#a5e4a5afb523573a41e3b59d8f15187ce',1,'biocro_simulation::sys()']]],
-  ['system_5fsolver_324',['system_solver',['../classbiocro__simulation.html#a418a308f5842792f0e6a81ef90d2965b',1,'biocro_simulation']]]
+  ['system_5fsolver_324',['system_solver',['../classbiocro__simulation.html#a154128df7c1bc9d9c3f74b528a8d1338',1,'biocro_simulation']]]
 ];

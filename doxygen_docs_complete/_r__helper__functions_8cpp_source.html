@@ -238,12 +238,12 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> list;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">  163</a></span>&#160;SEXP <a class="code" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">list_from_module_info</a>(</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">  163</a></span>&#160;SEXP <a class="code" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a>(</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::string <span class="keyword">const</span>&amp; <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> <span class="keyword">const</span>&amp; module_inputs,</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> <span class="keyword">const</span>&amp; module_outputs,</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; is_differential,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; requires_euler_integrator,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span>&amp; requires_euler_ode_solver,</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::string <span class="keyword">const</span>&amp; creation_error_message)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// Module inputs and outputs (these do not require an UNPROTECT here)</span></div>
@@ -265,10 +265,10 @@ $(function() {
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// Euler requirement</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    SEXP requires_euler = PROTECT(Rf_allocVector(STRSXP, 1));</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">string</span> euler_msg;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (requires_euler_integrator) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        euler_msg = <span class="stringliteral">&quot;requires a fixed-step Euler integrator&quot;</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (requires_euler_ode_solver) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        euler_msg = <span class="stringliteral">&quot;requires a fixed-step Euler ode_solver&quot;</span>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        euler_msg = <span class="stringliteral">&quot;does not require a fixed-step Euler integrator&quot;</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        euler_msg = <span class="stringliteral">&quot;does not require a fixed-step Euler ode_solver&quot;</span>;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    SET_STRING_ELT(requires_euler, 0, Rf_mkChar(euler_msg.c_str()));</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
@@ -363,8 +363,8 @@ $(function() {
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a427d311e926df18071cfb272015d6dff"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a></div><div class="ttdeci">state_map map_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00048">R_helper_functions.cpp:48</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a4b6b522dfb157c35def3e405095fd5e5"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a4b6b522dfb157c35def3e405095fd5e5">r_logical_from_boolean</a></div><div class="ttdeci">SEXP r_logical_from_boolean(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00241">R_helper_functions.cpp:241</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a6310116404ff62eabbeb384e02482895"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a></div><div class="ttdeci">vector&lt; string &gt; make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
+<div class="ttc" id="a_r__helper__functions_8cpp_html_a6768bd717c46873352f21b1f706d526d"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, state_map const &amp;module_inputs, state_map const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_ode_solver, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a67e83ec273c9dc741daeea862c9017b9"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a67e83ec273c9dc741daeea862c9017b9">vector_from_map</a></div><div class="ttdeci">SEXP vector_from_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00225">R_helper_functions.cpp:225</a></div></div>
-<div class="ttc" id="a_r__helper__functions_8cpp_html_a7dc103050ba8b3f2d4deaf75b3d4b898"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, state_map const &amp;module_inputs, state_map const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_integrator, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a958bd8cf9a5ec1a05b6af932cd5ab1aa"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">list_from_map</a></div><div class="ttdeci">SEXP list_from_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00101">R_helper_functions.cpp:101</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_ab1ad5788019eeb84e44498c8a936021d"><div class="ttname"><a href="_r__helper__functions_8cpp.html#ab1ad5788019eeb84e44498c8a936021d">output_map</a></div><div class="ttdeci">void output_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00249">R_helper_functions.cpp:249</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_ae7cd48b3b7f6069c84e3abe2aa449a6a"><div class="ttname"><a href="_r__helper__functions_8cpp.html#ae7cd48b3b7f6069c84e3abe2aa449a6a">output_list</a></div><div class="ttdeci">void output_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00265">R_helper_functions.cpp:265</a></div></div>
@@ -376,7 +376,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 21:40:01 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Sep 2 2021 17:48:43 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

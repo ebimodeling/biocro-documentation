@@ -8,10 +8,10 @@
 <area shape="rect" id="node3" href="$dynamical__system__caller_8h.html" title=" " alt="" coords="112,191,315,233"/>
 <area shape="rect" id="node9" href="$newton__raphson__backtrack__boost_8h.html" title=" " alt="" coords="515,288,701,359"/>
 <area shape="rect" id="node11" href="$newton__raphson__boost_8h.html" title=" " alt="" coords="389,184,560,240"/>
-<area shape="rect" id="node4" href="$boost__integrators_8h.html" title=" " alt="" coords="128,295,299,351"/>
-<area shape="rect" id="node5" href="$auto__integrator_8h.html" title=" " alt="" coords="5,407,176,463"/>
-<area shape="rect" id="node6" href="$integrator__factory_8cpp.html" title=" " alt="" coords="67,511,237,567"/>
-<area shape="rect" id="node7" href="$boost__integrators_8cpp.html" title=" " alt="" coords="251,407,421,463"/>
+<area shape="rect" id="node4" href="$boost__ode__solvers_8h.html" title=" " alt="" coords="128,295,299,351"/>
+<area shape="rect" id="node5" href="$auto__ode__solver_8h.html" title=" " alt="" coords="5,407,176,463"/>
+<area shape="rect" id="node6" href="$ode__solver__factory_8cpp.html" title=" " alt="" coords="67,511,237,567"/>
+<area shape="rect" id="node7" href="$boost__ode__solvers_8cpp.html" title=" " alt="" coords="251,407,421,463"/>
 <area shape="rect" id="node10" href="$se__solver__factory_8cpp.html" title=" " alt="" coords="595,407,765,463"/>
 <area shape="rect" id="node13" href="$se__solver_8cpp.html" title=" " alt="" coords="736,191,907,233"/>
 <area shape="rect" id="node14" href="$fixed__point_8h.html" title=" " alt="" coords="931,184,1101,240"/>

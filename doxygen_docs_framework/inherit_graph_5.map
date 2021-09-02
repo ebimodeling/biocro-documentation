@@ -1,11 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classintegrator.html" title=" " alt="" coords="5,125,81,152"/>
-<area shape="rect" id="node2" href="$classboost__integrator.html" title=" " alt="" coords="141,5,300,61"/>
-<area shape="rect" id="node4" href="$classauto__integrator.html" title=" " alt="" coords="147,85,295,126"/>
-<area shape="rect" id="node5" href="$classboost__integrator.html" title="A class representing a generic boost system integrator." alt="" coords="143,150,298,191"/>
-<area shape="rect" id="node9" href="$classhomemade__euler__integrator.html" title=" " alt="" coords="129,215,312,257"/>
-<area shape="rect" id="node3" href="$classboost__rsnbrk__integrator.html" title=" " alt="" coords="361,20,520,47"/>
-<area shape="rect" id="node6" href="$classboost__euler__integrator.html" title=" " alt="" coords="365,85,516,126"/>
-<area shape="rect" id="node7" href="$classboost__rk4__integrator.html" title=" " alt="" coords="371,150,511,191"/>
-<area shape="rect" id="node8" href="$classboost__rkck54__integrator.html" title=" " alt="" coords="360,215,521,257"/>
+<area shape="rect" id="node1" href="$classmodule__base.html" title="Represents one or more equations." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node2" href="$classdifferential__module.html" title="This class represents a differential module." alt="" coords="152,5,283,32"/>
+<area shape="rect" id="node3" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="166,56,269,83"/>
 </map>

@@ -1,7 +1,0 @@
-<map id="boost_integrator&lt; state_type &gt;" name="boost_integrator&lt; state_type &gt;">
-<area shape="rect" id="node1" title="A class representing a generic boost system integrator." alt="" coords="129,71,284,112"/>
-<area shape="rect" id="node3" href="$classboost__euler__integrator.html" title=" " alt="" coords="337,5,488,47"/>
-<area shape="rect" id="node4" href="$classboost__rk4__integrator.html" title=" " alt="" coords="343,71,483,112"/>
-<area shape="rect" id="node5" href="$classboost__rkck54__integrator.html" title=" " alt="" coords="332,136,493,177"/>
-<area shape="rect" id="node2" href="$classintegrator.html" title=" " alt="" coords="5,78,81,105"/>
-</map>

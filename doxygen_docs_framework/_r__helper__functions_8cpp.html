@@ -124,8 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3f84e4d08cabe91d1c643c296a9644ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6171a9e5242d08199deff73b2250f02"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__helper__functions_8cpp.html#ac6171a9e5242d08199deff73b2250f02">list_from_map</a> (std::unordered_map&lt; string, vector&lt; string &gt;&gt; const &amp;m)</td></tr>
 <tr class="separator:ac6171a9e5242d08199deff73b2250f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc103050ba8b3f2d4deaf75b3d4b898"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898">list_from_module_info</a> (std::string const &amp;module_name, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;module_inputs, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_integrator, std::string const &amp;creation_error_message)</td></tr>
-<tr class="separator:a7dc103050ba8b3f2d4deaf75b3d4b898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6768bd717c46873352f21b1f706d526d"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a> (std::string const &amp;module_name, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;module_inputs, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_ode_solver, std::string const &amp;creation_error_message)</td></tr>
+<tr class="separator:a6768bd717c46873352f21b1f706d526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e83ec273c9dc741daeea862c9017b9"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__helper__functions_8cpp.html#a67e83ec273c9dc741daeea862c9017b9">vector_from_map</a> (<a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;m)</td></tr>
 <tr class="separator:a67e83ec273c9dc741daeea862c9017b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6b522dfb157c35def3e405095fd5e5"><td class="memItemLeft" align="right" valign="top">SEXP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r__helper__functions_8cpp.html#a4b6b522dfb157c35def3e405095fd5e5">r_logical_from_boolean</a> (bool b)</td></tr>
@@ -163,7 +163,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="_r__helper__functions_8cpp_a958bd8cf9a5ec1a05b6af932cd5ab1aa_icgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a958bd8cf9a5ec1a05b6af932cd5ab1aa_icgraph" alt=""/></div>
 <map name="a_r__helper__functions_8cpp_a958bd8cf9a5ec1a05b6af932cd5ab1aa_icgraph" id="a_r__helper__functions_8cpp_a958bd8cf9a5ec1a05b6af932cd5ab1aa_icgraph">
 <area shape="rect" title=" " alt="" coords="363,157,467,184"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898" title=" " alt="" coords="163,5,313,32"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d" title=" " alt="" coords="163,5,313,32"/>
 <area shape="rect" href="_r__modules_8cpp.html#a105b923bf4ee98033ed1f916e58a2d28" title=" " alt="" coords="170,56,306,83"/>
 <area shape="rect" href="_r__get__all_8cpp.html#a5f774d138b47709a8a354da35d32a768" title=" " alt="" coords="169,107,307,133"/>
 <area shape="rect" href="_r__run__biocro_8cpp.html#a0a4dc99e578f69d10d9be2f9c240b461" title=" " alt="" coords="189,157,287,184"/>
@@ -216,8 +216,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7dc103050ba8b3f2d4deaf75b3d4b898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dc103050ba8b3f2d4deaf75b3d4b898">&#9670;&nbsp;</a></span>list_from_module_info()</h2>
+<a id="a6768bd717c46873352f21b1f706d526d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6768bd717c46873352f21b1f706d526d">&#9670;&nbsp;</a></span>list_from_module_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +250,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool const &amp;&#160;</td>
-          <td class="paramname"><em>requires_euler_integrator</em>, </td>
+          <td class="paramname"><em>requires_euler_ode_solver</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -276,8 +276,8 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_cgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_cgraph" alt=""/></div>
-<map name="a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_cgraph" id="a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_cgraph">
+<div class="center"><img src="_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_cgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_cgraph" alt=""/></div>
+<map name="a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_cgraph" id="a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,155,57"/>
 <area shape="rect" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="203,5,307,32"/>
 <area shape="rect" href="_r__helper__functions_8cpp.html#ae7cd48b3b7f6069c84e3abe2aa449a6a" title=" " alt="" coords="213,56,296,83"/>
@@ -288,8 +288,8 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_icgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_icgraph" alt=""/></div>
-<map name="a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_icgraph" id="a_r__helper__functions_8cpp_a7dc103050ba8b3f2d4deaf75b3d4b898_icgraph">
+<div class="center"><img src="_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_icgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_icgraph" alt=""/></div>
+<map name="a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_icgraph" id="a_r__helper__functions_8cpp_a6768bd717c46873352f21b1f706d526d_icgraph">
 <area shape="rect" title=" " alt="" coords="161,5,311,32"/>
 <area shape="rect" href="_r__modules_8cpp.html#a4da849bfe74b421a27eb7ef7f14fc82e" title=" " alt="" coords="5,5,113,32"/>
 </map>
@@ -438,7 +438,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="_r__helper__functions_8cpp_ae7cd48b3b7f6069c84e3abe2aa449a6a_icgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_ae7cd48b3b7f6069c84e3abe2aa449a6a_icgraph" alt=""/></div>
 <map name="a_r__helper__functions_8cpp_ae7cd48b3b7f6069c84e3abe2aa449a6a_icgraph" id="a_r__helper__functions_8cpp_ae7cd48b3b7f6069c84e3abe2aa449a6a_icgraph">
 <area shape="rect" title=" " alt="" coords="359,5,441,32"/>
-<area shape="rect" href="_r__helper__functions_8cpp.html#a7dc103050ba8b3f2d4deaf75b3d4b898" title=" " alt="" coords="161,5,311,32"/>
+<area shape="rect" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d" title=" " alt="" coords="161,5,311,32"/>
 <area shape="rect" href="_r__modules_8cpp.html#a4da849bfe74b421a27eb7ef7f14fc82e" title=" " alt="" coords="5,5,113,32"/>
 </map>
 </div>
@@ -517,7 +517,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_r__helper__functions_8cpp_source.html#l00090">90</a> of file <a class="el" href="_r__helper__functions_8cpp_source.html">R_helper_functions.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_r__get__all_8cpp_source.html#l00035">R_get_all_integrators()</a>, <a class="el" href="_r__get__all_8cpp_source.html#l00011">R_get_all_modules()</a>, and <a class="el" href="_r__get__all_8cpp_source.html#l00047">R_get_all_se_solvers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_r__get__all_8cpp_source.html#l00011">R_get_all_modules()</a>, <a class="el" href="_r__get__all_8cpp_source.html#l00035">R_get_all_ode_solvers()</a>, and <a class="el" href="_r__get__all_8cpp_source.html#l00047">R_get_all_se_solvers()</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
@@ -525,10 +525,10 @@ Functions</h2></td></tr>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_r__helper__functions_8cpp_a20174d2581cdd66b207aaff27865532a_icgraph.png" border="0" usemap="#a_r__helper__functions_8cpp_a20174d2581cdd66b207aaff27865532a_icgraph" alt=""/></div>
 <map name="a_r__helper__functions_8cpp_a20174d2581cdd66b207aaff27865532a_icgraph" id="a_r__helper__functions_8cpp_a20174d2581cdd66b207aaff27865532a_icgraph">
-<area shape="rect" title=" " alt="" coords="200,49,341,90"/>
-<area shape="rect" href="_r__get__all_8cpp.html#abae161fa696625562364e21fc68cd2e7" title=" " alt="" coords="7,5,151,32"/>
-<area shape="rect" href="_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737" title=" " alt="" coords="13,56,145,83"/>
-<area shape="rect" href="_r__get__all_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb" title=" " alt="" coords="5,107,152,133"/>
+<area shape="rect" title=" " alt="" coords="207,49,348,90"/>
+<area shape="rect" href="_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737" title=" " alt="" coords="16,5,148,32"/>
+<area shape="rect" href="_r__get__all_8cpp.html#abf21ef28d77d0a35c3e2270066147a74" title=" " alt="" coords="5,56,159,83"/>
+<area shape="rect" href="_r__get__all_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb" title=" " alt="" coords="9,107,155,133"/>
 </map>
 </div>
 
@@ -557,7 +557,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 21:41:18 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Sep 2 2021 17:50:05 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

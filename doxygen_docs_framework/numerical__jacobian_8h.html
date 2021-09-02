@@ -124,10 +124,10 @@ $(function() {
 <area shape="rect" href="_r__simultaneous__equations_8cpp.html" title=" " alt="" coords="339,102,567,143"/>
 <area shape="rect" href="newton__raphson__backtrack__boost_8h.html" title=" " alt="" coords="513,199,698,269"/>
 <area shape="rect" href="newton__raphson__boost_8h.html" title=" " alt="" coords="643,95,813,151"/>
-<area shape="rect" href="boost__integrators_8h.html" title=" " alt="" coords="128,206,299,262"/>
-<area shape="rect" href="auto__integrator_8h.html" title=" " alt="" coords="5,317,176,373"/>
-<area shape="rect" href="integrator__factory_8cpp.html" title=" " alt="" coords="67,421,237,477"/>
-<area shape="rect" href="boost__integrators_8cpp.html" title=" " alt="" coords="251,317,421,373"/>
+<area shape="rect" href="boost__ode__solvers_8h.html" title=" " alt="" coords="128,206,299,262"/>
+<area shape="rect" href="auto__ode__solver_8h.html" title=" " alt="" coords="5,317,176,373"/>
+<area shape="rect" href="ode__solver__factory_8cpp.html" title=" " alt="" coords="67,421,237,477"/>
+<area shape="rect" href="boost__ode__solvers_8cpp.html" title=" " alt="" coords="251,317,421,373"/>
 <area shape="rect" href="se__solver__factory_8cpp.html" title=" " alt="" coords="585,317,756,373"/>
 </map>
 </div>
@@ -138,7 +138,7 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a3663e16fd2cb02e7095f93993cf8f463"><td class="memTemplParams" colspan="2">template&lt;typename vector_type , typename time_type &gt; </td></tr>
 <tr class="memitem:a3663e16fd2cb02e7095f93993cf8f463"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="numerical__jacobian_8h.html#a3663e16fd2cb02e7095f93993cf8f463">evaluate_equations</a> (std::shared_ptr&lt; <a class="el" href="classdynamical__system.html">dynamical_system</a> &gt; const &amp;sys, vector_type const &amp;x, time_type t, vector_type &amp;y)</td></tr>
-<tr class="memdesc:a3663e16fd2cb02e7095f93993cf8f463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define <code>evaluation</code> behavior for a set of equations defined by a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> object.  <a href="numerical__jacobian_8h.html#a3663e16fd2cb02e7095f93993cf8f463">More...</a><br /></td></tr>
+<tr class="memdesc:a3663e16fd2cb02e7095f93993cf8f463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define <code>evaluation</code> behavior for a set of equations defined by a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> object.  <a href="numerical__jacobian_8h.html#a3663e16fd2cb02e7095f93993cf8f463">More...</a><br /></td></tr>
 <tr class="separator:a3663e16fd2cb02e7095f93993cf8f463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbf8fe6cbab80ba3cb5d119f181e1d0"><td class="memTemplParams" colspan="2">template&lt;typename in_vector_type , typename time_type , typename out_vector_type &gt; </td></tr>
 <tr class="memitem:a2bbf8fe6cbab80ba3cb5d119f181e1d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="numerical__jacobian_8h.html#a2bbf8fe6cbab80ba3cb5d119f181e1d0">evaluate_equations</a> (std::unique_ptr&lt; <a class="el" href="classsimultaneous__equations.html">simultaneous_equations</a> &gt; const &amp;se, in_vector_type const &amp;x, time_type, out_vector_type &amp;y)</td></tr>
@@ -759,13 +759,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Define <code>evaluation</code> behavior for a set of equations defined by a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> object. </p>
+<p>Define <code>evaluation</code> behavior for a set of equations defined by a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sys</td><td>a shared pointer to a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> object.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>a vector to be passed to the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> as an input. Since we are evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a>, x contains values of the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a>'s differential quantities.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>a time to be passed to the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> as an input.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>the vector output. Since we are evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a> object, y contains the time derivative of each differential quantity. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sys</td><td>a shared pointer to a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> object.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>a vector to be passed to the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> as an input. Since we are evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a>, x contains values of the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a>'s differential quantities.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>a time to be passed to the <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> as an input.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>the vector output. Since we are evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a> object, y contains the time derivative of each differential quantity. </td></tr>
   </table>
   </dd>
 </dl>
@@ -838,7 +838,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">sys</td><td>a shared pointer to a <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> object</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>a vector to be passed to the <a class="el" href="classsimultaneous__equations.html" title="Defines a set of simultaneous equations.">simultaneous_equations</a> as an input. Since we are evaluating simultaneous equations, x contains values of the unknown variables.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>an unused parameter included here to produce the same function signature as when evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an integrator.">dynamical_system</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>an unused parameter included here to produce the same function signature as when evaluating a <a class="el" href="classdynamical__system.html" title="Defines a dynamical system which can be solved using an ode_solver.">dynamical_system</a>.</td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">y</td><td>the vector output. Since we are evaluating simultaneous equations, y contains the change in the value of each unknown variable produced by running the modules. </td></tr>
   </table>
   </dd>
@@ -851,7 +851,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 21:41:18 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Sep 2 2021 17:50:05 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

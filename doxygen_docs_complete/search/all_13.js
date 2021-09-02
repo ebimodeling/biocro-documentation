@@ -69,7 +69,7 @@ var searchData=
   ['shaded_5ftransr_5fips_1245',['shaded_TransR_ips',['../classmultilayer__canopy__integrator.html#af5464568e804483658f82279753c1e4c',1,'multilayer_canopy_integrator']]],
   ['shortwave_5fatmospheric_5fscattering_1246',['shortwave_atmospheric_scattering',['../classshortwave__atmospheric__scattering.html',1,'shortwave_atmospheric_scattering'],['../classshortwave__atmospheric__scattering.html#a768ae860f395e4f5f4fce3a29bf41dcf',1,'shortwave_atmospheric_scattering::shortwave_atmospheric_scattering()']]],
   ['shortwave_5fatmospheric_5fscattering_2eh_1247',['shortwave_atmospheric_scattering.h',['../shortwave__atmospheric__scattering_8h.html',1,'']]],
-  ['should_5fcheck_5feuler_5frequirement_1248',['should_check_euler_requirement',['../classintegrator.html#a2356c20494d60945341032e371b8d26e',1,'integrator']]],
+  ['should_5fcheck_5feuler_5frequirement_1248',['should_check_euler_requirement',['../classode__solver.html#a2356c20494d60945341032e371b8d26e',1,'ode_solver']]],
   ['should_5freorder_5fguesses_1249',['should_reorder_guesses',['../namespaceed__c4__leaf__photosynthesis__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_c4_leaf_photosynthesis_stuff::should_reorder_guesses()'],['../classse__module_1_1base.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'se_module::base::should_reorder_guesses()'],['../namespaceed__c4__leaf__photosynthesis2__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_c4_leaf_photosynthesis2_stuff::should_reorder_guesses()'],['../namespaceed__c4__leaf__photosynthesis3__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_c4_leaf_photosynthesis3_stuff::should_reorder_guesses()'],['../namespaceed__c4__leaf__photosynthesis4__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_c4_leaf_photosynthesis4_stuff::should_reorder_guesses()'],['../namespaceed__nikolov__conductance__free__solve__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_nikolov_conductance_free_solve_stuff::should_reorder_guesses()'],['../namespaceed__p__m__temperature__solve__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b',1,'ed_p_m_temperature_solve_stuff::should_reorder_guesses()']]],
   ['silt_1250',['silt',['../structsoil_text__str.html#ae79461a167b7ed357bb1ef0c89128b5c',1,'soilText_str']]],
   ['silt_5floam_1251',['silt_loam',['../_aux_bio_cro_8h.html#a32f5636a03443547a8c316772610c4c1aa2417846c80e97d401f889af5ca1f65f',1,'AuxBioCro.h']]],
@@ -160,12 +160,12 @@ var searchData=
   ['spring_5fconstant_1336',['spring_constant',['../classharmonic__oscillator.html#adf1cb4cd2104db90f94ec82306ffd1b1',1,'harmonic_oscillator::spring_constant()'],['../classharmonic__energy.html#adf1cb4cd2104db90f94ec82306ffd1b1',1,'harmonic_energy::spring_constant()']]],
   ['spring_5fenergy_5fop_1337',['spring_energy_op',['../classharmonic__energy.html#a22cb2dc4376d9976b7b0ae554fb5fc8f',1,'harmonic_energy']]],
   ['startup_5fmessage_1338',['startup_message',['../classsimultaneous__equations.html#afe0b4c8dff8e601de7e9b2bb27d69611',1,'simultaneous_equations::startup_message()'],['../classdynamical__system.html#aab4ae2f0c633be19e170fc6c8d823fd9',1,'dynamical_system::startup_message()']]],
-  ['state_1339',['state',['../classboost__integrator.html#ac1c6ac02c90e1d7f9b1b3d40b9be61ec',1,'boost_integrator']]],
+  ['state_1339',['state',['../classboost__ode__solver.html#ac1c6ac02c90e1d7f9b1b3d40b9be61ec',1,'boost_ode_solver']]],
   ['state_5fmap_1340',['state_map',['../state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28',1,'state_map.h']]],
   ['state_5fmap_2ecpp_1341',['state_map.cpp',['../state__map_8cpp.html',1,'']]],
   ['state_5fmap_2eh_1342',['state_map.h',['../state__map_8h.html',1,'']]],
   ['state_5fmap_5ffrom_5fnames_1343',['state_map_from_names',['../state__map_8h.html#a4f6664c5a7a1b55a9992ab3d47cf5bb2',1,'state_map.h']]],
-  ['state_5fvec_1344',['state_vec',['../classboost__integrator.html#a1ba2f3fa93d16bcfdf69d708a03772b9',1,'boost_integrator']]],
+  ['state_5fvec_1344',['state_vec',['../classboost__ode__solver.html#a1ba2f3fa93d16bcfdf69d708a03772b9',1,'boost_ode_solver']]],
   ['state_5fvector_5fmap_1345',['state_vector_map',['../state__map_8h.html#acc562c42c1d464c702e0abd69e05673d',1,'state_map.h']]],
   ['states_1346',['states',['../structpush__back__state__and__time.html#a2045a4c2e84b6245c2b58a1621c402ab',1,'push_back_state_and_time']]],
   ['stefan_5fboltzmann_1347',['stefan_boltzmann',['../namespacephysical__constants.html#ab993d2950483e6b20ca63c46f8134241',1,'physical_constants']]],
@@ -229,5 +229,5 @@ var searchData=
   ['sunrise_5fop_1405',['sunrise_op',['../classoscillator__clock__calculator.html#a52bf0be04d7b4422e023424701606131',1,'oscillator_clock_calculator']]],
   ['sunset_5fop_1406',['sunset_op',['../classoscillator__clock__calculator.html#ace1259edd18a88730dcbb535ceb6c3dc',1,'oscillator_clock_calculator']]],
   ['sys_1407',['sys',['../classbiocro__simulation.html#a5e4a5afb523573a41e3b59d8f15187ce',1,'biocro_simulation::sys()'],['../classdynamical__system__pointer__wrapper.html#a5e4a5afb523573a41e3b59d8f15187ce',1,'dynamical_system_pointer_wrapper::sys()']]],
-  ['system_5fsolver_1408',['system_solver',['../classbiocro__simulation.html#a418a308f5842792f0e6a81ef90d2965b',1,'biocro_simulation']]]
+  ['system_5fsolver_1408',['system_solver',['../classbiocro__simulation.html#a154128df7c1bc9d9c3f74b528a8d1338',1,'biocro_simulation']]]
 ];
