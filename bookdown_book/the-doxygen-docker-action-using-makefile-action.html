@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 The Doxygen Docker Action using Makefile Action | BioCro Development</title>
   <meta name="description" content="6 The Doxygen Docker Action using Makefile Action | BioCro Development" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 The Doxygen Docker Action using Makefile Action | BioCro Development" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-07" />
+<meta name="date" content="2021-10-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,8 @@
   
 <link rel="prev" href="the-update-documentation-workflow.html"/>
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -40,7 +41,6 @@
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -163,19 +163,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2.2" data-path="generating-documentation.html"><a href="generating-documentation.html#build-procedure"><i class="fa fa-check"></i><b>2.2.2</b> Build procedure</a></li>
 <li class="chapter" data-level="2.2.3" data-path="generating-documentation.html"><a href="generating-documentation.html#alternative-options"><i class="fa fa-check"></i><b>2.2.3</b> Alternative options</a></li>
 </ul></li>
+<li class="chapter" data-level="2.3" data-path="generating-documentation.html"><a href="generating-documentation.html#compiling-and-viewing-the-bookdown-book"><i class="fa fa-check"></i><b>2.3</b> Compiling and viewing the <em>bookdown</em> book</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html"><i class="fa fa-check"></i><b>3</b> Running the <em>testthat</em> Tests</a><ul>
-<li class="chapter" data-level="3.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#tldr"><i class="fa fa-check"></i><b>3.1</b> tl;dr</a></li>
-<li class="chapter" data-level="3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#required-r-packages"><i class="fa fa-check"></i><b>3.2</b> Required R Packages</a></li>
-<li class="chapter" data-level="3.3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-the-tests"><i class="fa fa-check"></i><b>3.3</b> Running the Tests</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-the-test-suite-on-the-installed-version-of-biocro"><i class="fa fa-check"></i><b>3.3.1</b> Running the test suite on the installed version of BioCro</a></li>
-<li class="chapter" data-level="3.3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:testing-local"><i class="fa fa-check"></i><b>3.3.2</b> Running the test suite against the BioCro source code</a></li>
+<li class="chapter" data-level="3.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#requirements"><i class="fa fa-check"></i><b>3.1</b> Requirements</a></li>
+<li class="chapter" data-level="3.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#tldr"><i class="fa fa-check"></i><b>3.2</b> tl;dr</a></li>
+<li class="chapter" data-level="3.3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:TLDR"><i class="fa fa-check"></i><b>3.3</b> tl;dr for devtools users</a></li>
+<li class="chapter" data-level="3.4" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#continuous-integration-workflow-why-run-tests-manually"><i class="fa fa-check"></i><b>3.4</b> Continuous integration workflow; why run tests manually?</a></li>
+<li class="chapter" data-level="3.5" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#test-running-scenarios"><i class="fa fa-check"></i><b>3.5</b> Test-running scenarios</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:test-installed"><i class="fa fa-check"></i><b>3.5.1</b> Running the test suite on the installed version of BioCro</a></li>
+<li class="chapter" data-level="3.5.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:switching-reporters"><i class="fa fa-check"></i><b>3.5.2</b> Switching reporters</a></li>
+<li class="chapter" data-level="3.5.3" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#sec:testing-local"><i class="fa fa-check"></i><b>3.5.3</b> Running the test suite against the BioCro source code</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-individual-test-files"><i class="fa fa-check"></i><b>3.4</b> Running individual test files</a><ul>
-<li class="chapter" data-level="3.4.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-an-individual-test-file-on-the-installed-package"><i class="fa fa-check"></i><b>3.4.1</b> Running an individual test file on the installed package</a></li>
-<li class="chapter" data-level="3.4.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-an-individual-test-file-against-the-package-source-code"><i class="fa fa-check"></i><b>3.4.2</b> Running an individual test file against the package source code</a></li>
+<li class="chapter" data-level="3.6" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-individual-test-files"><i class="fa fa-check"></i><b>3.6</b> Running individual test files</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-an-individual-test-file-on-the-installed-package"><i class="fa fa-check"></i><b>3.6.1</b> Running an individual test file on the installed package</a></li>
+<li class="chapter" data-level="3.6.2" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#running-an-individual-test-file-against-the-package-source-code"><i class="fa fa-check"></i><b>3.6.2</b> Running an individual test file against the package source code</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#using-devtools"><i class="fa fa-check"></i><b>3.5</b> Using devtools</a></li>
+<li class="chapter" data-level="3.7" data-path="running-the-testthat-tests.html"><a href="running-the-testthat-tests.html#using_devtools"><i class="fa fa-check"></i><b>3.7</b> Using devtools</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="adding-the-boost-libraries.html"><a href="adding-the-boost-libraries.html"><i class="fa fa-check"></i><b>4</b> Adding the Boost libraries</a><ul>
 <li class="chapter" data-level="4.1" data-path="adding-the-boost-libraries.html"><a href="adding-the-boost-libraries.html#why-this-is-needed"><i class="fa fa-check"></i><b>4.1</b> Why this is needed</a></li>
@@ -307,8 +311,6 @@ change the output directory for module-docs-* targets from
 
 
 
-
-
             </section>
 
           </div>
@@ -319,7 +321,6 @@ change the output directory for module-docs-* targets from
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -359,6 +360,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
