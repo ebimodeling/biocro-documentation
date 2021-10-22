@@ -96,7 +96,7 @@
 <area shape="rect" id="node109" href="$classshortwave__atmospheric__scattering.html" title="Calculates the amount of sunlight scattered out of the direct beam by the atmosphere...." alt="" coords="362,5015,522,5057"/>
 <area shape="rect" id="node110" href="$classsoil__evaporation.html" title=" " alt="" coords="384,5081,500,5108"/>
 <area shape="rect" id="node111" href="$classsoil__type__selector.html" title=" " alt="" coords="379,5132,505,5159"/>
-<area shape="rect" id="node112" href="$classsolar__zenith__angle.html" title="Calculates the solar zenith angle using a simple model. A major shortcoming of this model is that sol..." alt="" coords="377,5183,507,5209"/>
+<area shape="rect" id="node112" href="$classsolar__position__michalsky.html" title="Calculates the solar position using the model described in &lt;a href=&quot;https://doi.org/10...." alt="" coords="359,5183,525,5209"/>
 <area shape="rect" id="node113" href="$classsoybean__development__rate__calculator.html" title="Determines hourly soybean developments rate using photothermal functions." alt="" coords="367,5234,517,5275"/>
 <area shape="rect" id="node114" href="$classstomata__water__stress__exponential.html" title=" " alt="" coords="367,5299,517,5341"/>
 <area shape="rect" id="node115" href="$classstomata__water__stress__linear.html" title=" " alt="" coords="367,5365,517,5406"/>

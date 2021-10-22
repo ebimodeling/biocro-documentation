@@ -124,7 +124,7 @@ var hierarchy =
       [ "shortwave_atmospheric_scattering", "classshortwave__atmospheric__scattering.html", null ],
       [ "soil_evaporation", "classsoil__evaporation.html", null ],
       [ "soil_type_selector", "classsoil__type__selector.html", null ],
-      [ "solar_zenith_angle", "classsolar__zenith__angle.html", null ],
+      [ "solar_position_michalsky", "classsolar__position__michalsky.html", null ],
       [ "soybean_development_rate_calculator", "classsoybean__development__rate__calculator.html", null ],
       [ "stomata_water_stress_exponential", "classstomata__water__stress__exponential.html", null ],
       [ "stomata_water_stress_linear", "classstomata__water__stress__linear.html", null ],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classgolden__ratio__hyperbola.html#ae0c44165e4f18f23184aa04b2aa7b1db":[2,0,56,0],
-"classgrimm__soybean__flowering.html":[2,0,57],
 "classgrimm__soybean__flowering.html#ad575e2e71e7c544859b2dcb1aca16f02":[2,0,57,0],
 "classgrimm__soybean__flowering__calculator.html":[2,0,58],
 "classgrimm__soybean__flowering__calculator.html#ab026d60a0351c01bd258aac52143722c":[2,0,58,0],
@@ -88,8 +86,8 @@ var NAVTREEINDEX1 =
 "classsoil__evaporation.html#abcb2d174f51682df5b4dd49a68968dec":[2,0,105,0],
 "classsoil__type__selector.html":[2,0,106],
 "classsoil__type__selector.html#af36d3978ae2cd6c3bc8ffe34309a293e":[2,0,106,0],
-"classsolar__zenith__angle.html":[2,0,109],
-"classsolar__zenith__angle.html#a11a26923fbffea59b90e8ea1f977eb6f":[2,0,109,0],
+"classsolar__position__michalsky.html":[2,0,109],
+"classsolar__position__michalsky.html#a1dc91942098d3d4eee213ca5497a702f":[2,0,109,0],
 "classsong__flowering.html":[2,0,110],
 "classsong__flowering.html#a56f832568009b53c352a17a3b5a77c44":[2,0,110,0],
 "classsoybean__development__rate__calculator.html":[2,0,111],
@@ -249,5 +247,7 @@ var NAVTREEINDEX1 =
 "ed__multilayer__canopy__properties_8h.html":[3,0,1,0,50],
 "ed__multilayer__canopy__properties_8h_source.html":[3,0,1,0,50],
 "ed__nikolov__conductance_8h.html":[3,0,1,0,51],
-"ed__nikolov__conductance_8h.html#a0b37c5938e82da1fb19ed599f7c71217":[3,0,1,0,51,6]
+"ed__nikolov__conductance_8h.html#a0b37c5938e82da1fb19ed599f7c71217":[3,0,1,0,51,6],
+"ed__nikolov__conductance_8h.html#a3836facf5cbd16c504b526a6c454c436":[3,0,1,0,51,7],
+"ed__nikolov__conductance_8h.html#a46f09bbd32fd1332a877072d2e36a444":[3,0,1,0,51,15]
 };

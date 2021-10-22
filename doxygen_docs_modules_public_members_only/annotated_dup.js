@@ -111,7 +111,7 @@ var annotated_dup =
     [ "soil_type_selector", "classsoil__type__selector.html", "classsoil__type__selector" ],
     [ "soilML_str", "structsoil_m_l__str.html", "structsoil_m_l__str" ],
     [ "soilText_str", "structsoil_text__str.html", "structsoil_text__str" ],
-    [ "solar_zenith_angle", "classsolar__zenith__angle.html", "classsolar__zenith__angle" ],
+    [ "solar_position_michalsky", "classsolar__position__michalsky.html", "classsolar__position__michalsky" ],
     [ "song_flowering", "classsong__flowering.html", "classsong__flowering" ],
     [ "soybean_development_rate_calculator", "classsoybean__development__rate__calculator.html", "classsoybean__development__rate__calculator" ],
     [ "stomata_water_stress_exponential", "classstomata__water__stress__exponential.html", "classstomata__water__stress__exponential" ],

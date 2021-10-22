@@ -259,8 +259,8 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "soil_type_selector.hpp", "soil__type__selector_8hpp.html", [
       [ "soil_type_selector", "classsoil__type__selector.html", "classsoil__type__selector" ]
     ] ],
-    [ "solar_zenith_angle.h", "solar__zenith__angle_8h.html", [
-      [ "solar_zenith_angle", "classsolar__zenith__angle.html", "classsolar__zenith__angle" ]
+    [ "solar_position_michalsky.h", "solar__position__michalsky_8h.html", [
+      [ "solar_position_michalsky", "classsolar__position__michalsky.html", "classsolar__position__michalsky" ]
     ] ],
     [ "song_flowering.hpp", "song__flowering_8hpp.html", [
       [ "song_flowering", "classsong__flowering.html", "classsong__flowering" ]
