@@ -107,9 +107,9 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> R_NilValue;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> direct_names = <a class="code" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a>(direct_module_names);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> direct_names = <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(direct_module_names);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> differential_names =</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a>(differential_module_names);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(differential_module_names);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">double</span> t = REAL(time)[0];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a1c40ce5c7a2d8a2d3968c7d71812002c"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c">map_vector_from_list</a></div><div class="ttdeci">state_vector_map map_vector_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00060">R_helper_functions.cpp:60</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a427d311e926df18071cfb272015d6dff"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a></div><div class="ttdeci">state_map map_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00048">R_helper_functions.cpp:48</a></div></div>
-<div class="ttc" id="a_r__helper__functions_8cpp_html_a6310116404ff62eabbeb384e02482895"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a></div><div class="ttdeci">vector&lt; string &gt; make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
+<div class="ttc" id="a_r__helper__functions_8cpp_html_a78b4dc65c356615f963ff971d9c28424"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a></div><div class="ttdeci">string_vector make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a958bd8cf9a5ec1a05b6af932cd5ab1aa"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">list_from_map</a></div><div class="ttdeci">SEXP list_from_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00101">R_helper_functions.cpp:101</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8h_html"><div class="ttname"><a href="_r__helper__functions_8h.html">R_helper_functions.h</a></div></div>
 <div class="ttc" id="a_r__system__derivatives_8cpp_html_a8fdeee9bd8f0b9dafa2c1268efffca3b"><div class="ttname"><a href="_r__system__derivatives_8cpp.html#a8fdeee9bd8f0b9dafa2c1268efffca3b">R_system_derivatives</a></div><div class="ttdeci">SEXP R_system_derivatives(SEXP differential_quantities, SEXP time, SEXP parameters, SEXP drivers, SEXP direct_module_names, SEXP differential_module_names)</div><div class="ttdoc">Creates a dynamical_system object from the differential quantities, parameters, drivers,...</div><div class="ttdef"><b>Definition:</b> <a href="_r__system__derivatives_8cpp_source.html#l00041">R_system_derivatives.cpp:41</a></div></div>
@@ -174,7 +174,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 1 2021 00:31:59 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 1 2021 18:05:45 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -4,8 +4,8 @@ var classc3__assimilation =
     [ "do_operation", "classc3__assimilation.html#a391e9fd4e949f6e987eb654a11b1e451", null ],
     [ "Assim_op", "classc3__assimilation.html#a29678a5f4d4da10e4d36afa9f124ed8a", null ],
     [ "atmospheric_pressure", "classc3__assimilation.html#aad6da92b059dda2eb15b87844f975cec", null ],
-    [ "bb0", "classc3__assimilation.html#a4ec1d74a4aa2bedc046ed3103e785e6c", null ],
-    [ "bb1", "classc3__assimilation.html#af96679a1a4f3e29a31fab28a3e5ad165", null ],
+    [ "b0", "classc3__assimilation.html#ad6e27daca623aa836eaa82805dc4757c", null ],
+    [ "b1", "classc3__assimilation.html#aef7251c38f83faca1cb32230d9afa43c", null ],
     [ "Catm", "classc3__assimilation.html#a919fc3e37d4f8a3b9037ffcc80efcbdc", null ],
     [ "Ci_op", "classc3__assimilation.html#aa45fc0251d3da47ec22a2b2850c2129f", null ],
     [ "electrons_per_carboxylation", "classc3__assimilation.html#a4225e790eb8e14873957f4e70fcb8638", null ],
@@ -22,6 +22,6 @@ var classc3__assimilation =
     [ "theta", "classc3__assimilation.html#a445246433426d1729d266a2074c97fb5", null ],
     [ "Tleaf", "classc3__assimilation.html#a132d331026951ef9174634c153a179f6", null ],
     [ "tpu_rate_max", "classc3__assimilation.html#a4b2d365dbb700ba6ecc81954cfc61720", null ],
-    [ "vmax", "classc3__assimilation.html#a7ef3055f6bf8efe57981f271d0f174ce", null ],
+    [ "vmax1", "classc3__assimilation.html#a72102c8a0062c66b8e290f2adb7024bc", null ],
     [ "water_stress_approach", "classc3__assimilation.html#a71b149842a57c9e197411f556cf68853", null ]
 ];

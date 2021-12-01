@@ -16,7 +16,7 @@ var searchData=
   ['r_5frun_5fbiocro_2ecpp_1094',['R_run_biocro.cpp',['../_r__run__biocro_8cpp.html',1,'']]],
   ['r_5fsimultaneous_5fequations_2ecpp_1095',['R_simultaneous_equations.cpp',['../_r__simultaneous__equations_8cpp.html',1,'']]],
   ['r_5fsolve_5fsimultaneous_5fequations_1096',['R_solve_simultaneous_equations',['../_r__simultaneous__equations_8cpp.html#a0716f03334bd18d1a8181cd08812af61',1,'R_simultaneous_equations.cpp']]],
-  ['r_5fstring_5fvector_5ffrom_5fvector_1097',['r_string_vector_from_vector',['../_r__helper__functions_8h.html#a804a6819e7de829ba23f6e24a43f8995',1,'r_string_vector_from_vector(string_vector const &amp;v):&#160;R_helper_functions.h'],['../_r__helper__functions_8cpp.html#a20174d2581cdd66b207aaff27865532a',1,'r_string_vector_from_vector(vector&lt; string &gt; const &amp;v):&#160;R_helper_functions.cpp']]],
+  ['r_5fstring_5fvector_5ffrom_5fvector_1097',['r_string_vector_from_vector',['../_r__helper__functions_8h.html#a804a6819e7de829ba23f6e24a43f8995',1,'r_string_vector_from_vector(string_vector const &amp;v):&#160;R_helper_functions.cpp'],['../_r__helper__functions_8cpp.html#a804a6819e7de829ba23f6e24a43f8995',1,'r_string_vector_from_vector(string_vector const &amp;v):&#160;R_helper_functions.cpp']]],
   ['r_5fsystem_5fderivatives_1098',['R_system_derivatives',['../_r__system__derivatives_8cpp.html#a8fdeee9bd8f0b9dafa2c1268efffca3b',1,'R_system_derivatives.cpp']]],
   ['r_5fsystem_5fderivatives_2ecpp_1099',['R_system_derivatives.cpp',['../_r__system__derivatives_8cpp.html',1,'']]],
   ['r_5ftest_5fsimultaneous_5fequations_1100',['R_test_simultaneous_equations',['../_r__simultaneous__equations_8cpp.html#a7e42e179de37e90b58c04a4f47dfbfe3',1,'R_simultaneous_equations.cpp']]],

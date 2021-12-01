@@ -91,7 +91,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="comment">// module_name_input should be a string vector with one element</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::vector&lt;std::string&gt; module_name_vector =</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a>(module_name_input);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(module_name_input);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        std::string module_name = module_name_vector[0];</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="comment">// Convert verbose to a boolean</span></div>
@@ -187,10 +187,10 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">// Return a list containing information about the module</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a>(</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a06fbd415e83fdf0b67bf744fc88ed8f4">list_from_module_info</a>(</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            module_name,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            module_inputs,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            module_outputs,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a>(module_inputs),</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a>(module_outputs),</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            is_differential,</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            requires_euler_ode_solver,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            creation_error_message);</div>
@@ -208,7 +208,7 @@ $(function() {
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">// module_name_input should be a string vector with one element</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        std::vector&lt;std::string&gt; module_name_vector = <a class="code" href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a>(module_name_input);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        std::vector&lt;std::string&gt; module_name_vector = <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(module_name_input);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        std::string module_name = module_name_vector[0];</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// input_quantities should be a state map</span></div>
@@ -239,9 +239,9 @@ $(function() {
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="ttc" id="a_r__helper__functions_8cpp_html_a06fbd415e83fdf0b67bf744fc88ed8f4"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a06fbd415e83fdf0b67bf744fc88ed8f4">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, string_vector const &amp;module_inputs, string_vector const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_ode_solver, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a427d311e926df18071cfb272015d6dff"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a></div><div class="ttdeci">state_map map_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00048">R_helper_functions.cpp:48</a></div></div>
-<div class="ttc" id="a_r__helper__functions_8cpp_html_a6310116404ff62eabbeb384e02482895"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6310116404ff62eabbeb384e02482895">make_vector</a></div><div class="ttdeci">vector&lt; string &gt; make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
-<div class="ttc" id="a_r__helper__functions_8cpp_html_a6768bd717c46873352f21b1f706d526d"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a6768bd717c46873352f21b1f706d526d">list_from_module_info</a></div><div class="ttdeci">SEXP list_from_module_info(std::string const &amp;module_name, state_map const &amp;module_inputs, state_map const &amp;module_outputs, bool const &amp;is_differential, bool const &amp;requires_euler_ode_solver, std::string const &amp;creation_error_message)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00163">R_helper_functions.cpp:163</a></div></div>
+<div class="ttc" id="a_r__helper__functions_8cpp_html_a78b4dc65c356615f963ff971d9c28424"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a></div><div class="ttdeci">string_vector make_vector(SEXP const &amp;r_string_vector)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00079">R_helper_functions.cpp:79</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a958bd8cf9a5ec1a05b6af932cd5ab1aa"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">list_from_map</a></div><div class="ttdeci">SEXP list_from_map(state_map const &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00101">R_helper_functions.cpp:101</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8h_html"><div class="ttname"><a href="_r__helper__functions_8h.html">R_helper_functions.h</a></div></div>
 <div class="ttc" id="a_r__modules_8cpp_html_a054412167bc4aafda64c84590ea3d341"><div class="ttname"><a href="_r__modules_8cpp.html#a054412167bc4aafda64c84590ea3d341">R_evaluate_module</a></div><div class="ttdeci">SEXP R_evaluate_module(SEXP module_name_input, SEXP input_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="_r__modules_8cpp_source.html#l00129">R_modules.cpp:129</a></div></div>
@@ -250,10 +250,11 @@ $(function() {
 <div class="ttc" id="amodules_8h_html"><div class="ttname"><a href="modules_8h.html">modules.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a4dec1ecf04058a525b4009c473a76c28"><div class="ttname"><a href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a></div><div class="ttdeci">std::unordered_map&lt; std::string, double &gt; state_map</div><div class="ttdoc">A state_map represents the state of a system.</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00042">state_map.h:42</a></div></div>
+<div class="ttc" id="astate__map_8h_html_a5505795a40869494568f362567ff51e8"><div class="ttname"><a href="state__map_8h.html#a5505795a40869494568f362567ff51e8">keys</a></div><div class="ttdeci">string_vector keys(map_with_string_key_type const &amp;map)</div><div class="ttdoc">Given a map, return a sorted list of its keys.</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00057">state_map.h:57</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 1 2021 00:31:59 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 1 2021 18:05:45 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
