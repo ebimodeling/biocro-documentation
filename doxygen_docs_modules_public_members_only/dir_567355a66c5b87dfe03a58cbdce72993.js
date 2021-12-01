@@ -145,6 +145,12 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "incident_shortwave_from_ground_par.h", "incident__shortwave__from__ground__par_8h.html", [
       [ "incident_shortwave_from_ground_par", "classincident__shortwave__from__ground__par.html", "classincident__shortwave__from__ground__par" ]
     ] ],
+    [ "leaf_gbw_nikolov.h", "leaf__gbw__nikolov_8h.html", [
+      [ "leaf_gbw_nikolov", "classleaf__gbw__nikolov.html", "classleaf__gbw__nikolov" ]
+    ] ],
+    [ "leaf_gbw_thornley.h", "leaf__gbw__thornley_8h.html", [
+      [ "leaf_gbw_thornley", "classleaf__gbw__thornley.html", "classleaf__gbw__thornley" ]
+    ] ],
     [ "leaf_shape_factor.h", "leaf__shape__factor_8h.html", [
       [ "leaf_shape_factor", "classleaf__shape__factor.html", "classleaf__shape__factor" ]
     ] ],

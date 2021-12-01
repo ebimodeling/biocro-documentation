@@ -65,6 +65,8 @@ var annotated_dup =
     [ "harmonic_oscillator", "classharmonic__oscillator.html", "classharmonic__oscillator" ],
     [ "hyperbola_2d", "classhyperbola__2d.html", "classhyperbola__2d" ],
     [ "incident_shortwave_from_ground_par", "classincident__shortwave__from__ground__par.html", "classincident__shortwave__from__ground__par" ],
+    [ "leaf_gbw_nikolov", "classleaf__gbw__nikolov.html", "classleaf__gbw__nikolov" ],
+    [ "leaf_gbw_thornley", "classleaf__gbw__thornley.html", "classleaf__gbw__thornley" ],
     [ "leaf_shape_factor", "classleaf__shape__factor.html", "classleaf__shape__factor" ],
     [ "leaf_water_stress_exponential", "classleaf__water__stress__exponential.html", "classleaf__water__stress__exponential" ],
     [ "light_from_solar", "classlight__from__solar.html", "classlight__from__solar" ],

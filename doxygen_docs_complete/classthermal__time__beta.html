@@ -175,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates the rate of thermal time accumulation using a beta distribution function. </p>
-<h3><a class="anchor" id="autotoc_md31"></a>
+<h3><a class="anchor" id="autotoc_md33"></a>
 Model overview</h3>
 <p>The thermal time <code>t_th</code> represents the accumulated exposure of a plant to temperatures within some acceptable range that allows the plant to develop. The time rate of change of <code>t_th</code> is often referred to as the development rate <code>DR</code>. For an overview of the different methods that can be used for calculating thermal time and its development rate, see the following references:</p>
 <ul>
@@ -200,7 +200,7 @@ Model overview</h3>
       beta^beta *
       [(T_c - T_b) / (alpha + beta)]^(alpha + beta).
 </pre><p> This model can be characterized as a nonlinear model having three cardinal temperatures. Note that although only two temperatures are directly specified (<code>T_b</code> and <code>T_c</code>), an optimal temperature nevertheless exists and is determined by the values of <code>alpha</code> and <code>beta</code>. In this sense it is most directly comparable to the <a class="el" href="classthermal__time__bilinear.html" title="Calculates the rate of thermal time accumulation using a bilinear model.">thermal_time_bilinear</a> model. However, there is a range of temperatures where the development rate is close to its maximum value and there are actually four parameters that define the shape of the curve, so this model also has some similarity to the <a class="el" href="classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model.">thermal_time_trilinear</a> model.</p>
-<h3><a class="anchor" id="autotoc_md32"></a>
+<h3><a class="anchor" id="autotoc_md34"></a>
 Suggestion for choosing a value for the scaling factor</h3>
 <p>Taking inspiration from the <a class="el" href="classthermal__time__bilinear.html" title="Calculates the rate of thermal time accumulation using a bilinear model.">thermal_time_bilinear</a> and <a class="el" href="classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model.">thermal_time_trilinear</a> models, we can require that the maximum development rate in units of <code>degrees C</code> should be given by the difference between the optimal temperature and the temperature below which development cannot occur. Using Yin et al.'s notation, we have: </p><pre class="fragment">R_o = (T_o - T_b) / 24.0,
 </pre><p> where this rate is given in units of <code>degrees C * day / hr</code>. In this case, we can use the formula for <code>R_o</code> shown above to solve for <code>exp(mu)</code>: </p><pre class="fragment">exp(mu) = (T_o - T_b) /
@@ -209,7 +209,7 @@ Suggestion for choosing a value for the scaling factor</h3>
           [(T_c - T_b) / (alpha + beta)]^(alpha + beta)) /
           24.0,
 </pre><p> where <code>exp(mu)</code> has units of <code>degrees C * day / hr</code> and <code>T_o</code> is defined as above.</p>
-<h3><a class="anchor" id="autotoc_md33"></a>
+<h3><a class="anchor" id="autotoc_md35"></a>
 BioCro module implementation</h3>
 <p>In their paper, Yin et al. report the development rate in units of <code>day^-1</code>. However, due to the scaling factor in the formula for development rate, the choice of units is rather arbitrary. For simplicity and for consistency with other thermal time modules available in BioCro, we replace <code>exp(mu)</code> with a scaling factor <code>'ttc_scale'</code> having units of <code>degrees C * day / hr</code> and treat the other two factors in the formula for <code>DR</code> as being dimensionless. Thus, the overall development rate has the correct units of <code>degrees C * day / hr</code>.</p>
 <p>Additionally, we use the following names for the remaining parameters in this model:</p><ul>
@@ -599,7 +599,7 @@ BioCro module implementation</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 22 2021 16:43:24 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 1 2021 00:30:26 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

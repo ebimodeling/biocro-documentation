@@ -179,18 +179,16 @@ $(function() {
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structc4__str.html#abc345aedd954341b306bec86992287b8">Ci</a> = InterCellularCO2 / atmospheric_pressure * 1e6;  <span class="comment">// micromole / mol</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a> &gt; 600) <a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a> = 600;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">struct </span><a class="code" href="structc4__str.html">c4_str</a> result {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            .<a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> = <a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>,           <span class="comment">// micromole / m^2 /s</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            .Gs = <a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>,                 <span class="comment">// mmol / m^2 / s</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            .Ci = <a class="code" href="structc4__str.html#abc345aedd954341b306bec86992287b8">Ci</a>,                 <span class="comment">// micromole / mol</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            .GrossAssim = <a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> + RT  <span class="comment">// micromole / m^2 / s</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    };</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">struct </span><a class="code" href="structc4__str.html">c4_str</a> result {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            .<a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> = <a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a>,           <span class="comment">// micromole / m^2 /s</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            .Gs = <a class="code" href="structc4__str.html#ac72aab455ed835560d5b9afd64c777eb">Gs</a>,                 <span class="comment">// mmol / m^2 / s</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            .Ci = <a class="code" href="structc4__str.html#abc345aedd954341b306bec86992287b8">Ci</a>,                 <span class="comment">// micromole / mol</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            .GrossAssim = <a class="code" href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">Assim</a> + RT  <span class="comment">// micromole / m^2 / s</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="ttc" id="aball__berry_8cpp_html_a6e9346e63ae6f11483c7104df9ecf92c"><div class="ttname"><a href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a></div><div class="ttdeci">double ball_berry(double assimilation, double atmospheric_co2_concentration, double atmospheric_relative_humidity, double beta0, double beta1)</div><div class="ttdef"><b>Definition:</b> <a href="ball__berry_8cpp_source.html#l00014">ball_berry.cpp:14</a></div></div>
 <div class="ttc" id="aball__berry_8hpp_html"><div class="ttname"><a href="ball__berry_8hpp.html">ball_berry.hpp</a></div></div>
 <div class="ttc" id="ac4photo_8cpp_html_a2613ca2f3d1f34c768aacfbd0de1dd3e"><div class="ttname"><a href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a></div><div class="ttdeci">struct c4_str c4photoC(double Qp, double leaf_temperature, double relative_humidity, double vmax, double alpha, double kparm, double theta, double beta, double Rd, double bb0, double bb1, double Gs_min, double StomaWS, double Ca, double atmospheric_pressure, int water_stress_approach, double upperT, double lowerT)</div><div class="ttdef"><b>Definition:</b> <a href="c4photo_8cpp_source.html#l00001">c4photo.cpp:15</a></div></div>
@@ -203,7 +201,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 22 2021 16:43:22 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 1 2021 00:30:24 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -138,7 +138,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates leaf photosynthesis parameters using a simple radiation use efficiency (RUE) model where gross CO2 assimilation is assumed to be directly proportional to the incident photosynthetically active photon flux density (PPFD). </p>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 General overview of RUE models</h3>
 <p>The general RUE concept is based on the empirical observation that a measure of plant growth is often found to be directly proportional to a measure of light exposure. There are three distinct factors involved in a RUE model:</p>
 <ul>
@@ -153,7 +153,7 @@ General overview of RUE models</h3>
 <li>RUE must be recharacterized for different crops, locations, years, and other environmental values, giving it limited predictive power in situations outside of experience. A crucial shortcoming is its inability to predict changes in crop photosynthesis that would result from increases in atmospheric [CO2] (Humphries and Long (1995)).</li>
 </ul>
 <p>This model is included in BioCro primarily to highlight the importance of using mechanistic photosynthesis models and should be avoided in non-pedagogical situations.</p>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 This particular RUE model</h3>
 <p>Here we use a RUE model where the measure of growth is the leaf-level gross CO2 assimilation rate (<code>A_g</code>) and the measure of light exposure is the amount of PPFD intercepted by the leaf (<code>Q</code>). Both of these quantities are considered to be instantaneous rates, and the equation relating them is</p>
 <blockquote class="doxtable">
@@ -169,10 +169,10 @@ This particular RUE model</h3>
 <ul>
 <li>It uses the same equation to calculate respiration from leaf temperature.</li>
 <li>It uses the Ball-Berry model to calculate stomatal conductance from <code>A_n</code>.</li>
-<li>It uses the <code><a class="el" href="_bio_cro_8h.html#a191f03165ae677daef878bf61f3d118e">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
+<li>It uses the <code><a class="el" href="_bio_cro_8h.html#a61b7d88adafff31f703008da477eb090">c3EvapoTrans()</a></code> function to handle transpiration and determine leaf temperature.</li>
 </ul>
 <p>However, it is important to note that assimilation and stomatal conductance are not determined iteratively since stomatal conductance has no impact on assimilation, in contrast to the C3 and C4 cases (described by <code><a class="el" href="c3photo_8cpp.html#a3993a75c6ee7f15cf42a0df4e1abe287">c3photoC()</a></code> and <code><a class="el" href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC()</a></code> functions, respectively).</p>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
 Sources</h3>
 <ul>
 <li>Arkebauer, T. J., Weiss, A., Sinclair, T. R. &amp; Blum, A. "In defense of
@@ -274,7 +274,7 @@ Sources</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00086">86</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00088">88</a> of file <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html">rue_leaf_photosynthesis.cpp</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Sources</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classrue__leaf__photosynthesis.html">rue_leaf_photosynthesis</a></li>
-    <li class="footer">Generated on Fri Oct 22 2021 16:44:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Dec 1 2021 00:31:40 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

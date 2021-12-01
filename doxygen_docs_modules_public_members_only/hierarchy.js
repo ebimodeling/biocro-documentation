@@ -84,6 +84,8 @@ var hierarchy =
       [ "harmonic_energy", "classharmonic__energy.html", null ],
       [ "hyperbola_2d", "classhyperbola__2d.html", null ],
       [ "incident_shortwave_from_ground_par", "classincident__shortwave__from__ground__par.html", null ],
+      [ "leaf_gbw_nikolov", "classleaf__gbw__nikolov.html", null ],
+      [ "leaf_gbw_thornley", "classleaf__gbw__thornley.html", null ],
       [ "leaf_shape_factor", "classleaf__shape__factor.html", null ],
       [ "leaf_water_stress_exponential", "classleaf__water__stress__exponential.html", null ],
       [ "light_from_solar", "classlight__from__solar.html", null ],

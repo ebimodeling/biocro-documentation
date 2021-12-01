@@ -107,12 +107,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aff67a46646ccb9ba3ea1c0f1f2e1e3e4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_e_t___str.html">ET_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c3_evapo_trans_8cpp.html#aff67a46646ccb9ba3ea1c0f1f2e1e3e4">c3EvapoTrans</a> (double absorbed_shortwave_radiation, double air_temperature, double RH, double WindSpeed, double CanopyHeight, double specific_heat_of_air, double stomatal_conductance)</td></tr>
-<tr class="separator:aff67a46646ccb9ba3ea1c0f1f2e1e3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b7d88adafff31f703008da477eb090"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_e_t___str.html">ET_Str</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c3_evapo_trans_8cpp.html#a61b7d88adafff31f703008da477eb090">c3EvapoTrans</a> (double absorbed_shortwave_radiation, double air_temperature, double RH, double WindSpeed, double CanopyHeight, double specific_heat_of_air, double stomatal_conductance, double minimum_gbw, double WindSpeedHeight)</td></tr>
+<tr class="separator:a61b7d88adafff31f703008da477eb090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aff67a46646ccb9ba3ea1c0f1f2e1e3e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff67a46646ccb9ba3ea1c0f1f2e1e3e4">&#9670;&nbsp;</a></span>c3EvapoTrans()</h2>
+<a id="a61b7d88adafff31f703008da477eb090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b7d88adafff31f703008da477eb090">&#9670;&nbsp;</a></span>c3EvapoTrans()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +157,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>stomatal_conductance</em>&#160;</td>
+          <td class="paramname"><em>stomatal_conductance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minimum_gbw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>WindSpeedHeight</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -173,21 +185,22 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c3_evapo_trans_8cpp_source.html#l00001">1</a> of file <a class="el" href="c3_evapo_trans_8cpp_source.html">c3EvapoTrans.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="constants_8h_source.html#l00032">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00037">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">ET_Str::EPriestly</a>, <a class="el" href="constants_8h_source.html#l00062">physical_constants::ideal_gas_constant</a>, <a class="el" href="constants_8h_source.html#l00063">physical_constants::molar_mass_of_water</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">saturation_vapor_pressure()</a>, <a class="el" href="constants_8h_source.html#l00061">physical_constants::stefan_boltzmann</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00492">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00548">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00601">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00034">ET_Str::TransR</a>.</p>
+<p class="reference">References <a class="el" href="_aux_bio_cro_8h_source.html#l00038">ET_Str::boundary_layer_conductance</a>, <a class="el" href="constants_8h_source.html#l00032">conversion_constants::celsius_to_kelvin</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00037">ET_Str::Deltat</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00035">ET_Str::EPenman</a>, <a class="el" href="_aux_bio_cro_8h_source.html#l00036">ET_Str::EPriestly</a>, <a class="el" href="constants_8h_source.html#l00062">physical_constants::ideal_gas_constant</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00917">leaf_boundary_layer_conductance_thornley()</a>, <a class="el" href="constants_8h_source.html#l00063">physical_constants::molar_mass_of_water</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00631">saturation_vapor_pressure()</a>, <a class="el" href="constants_8h_source.html#l00061">physical_constants::stefan_boltzmann</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00492">TempToDdryA()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00548">TempToLHV()</a>, <a class="el" href="_aux_bio_cro_8cpp_source.html#l00601">TempToSFS()</a>, and <a class="el" href="_aux_bio_cro_8h_source.html#l00034">ET_Str::TransR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>, <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00047">c3_leaf_photosynthesis::do_operation()</a>, and <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00100">rue_leaf_photosynthesis::do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="c3_can_a_c_8cpp_source.html#l00005">c3CanAC()</a>, <a class="el" href="c3__leaf__photosynthesis_8cpp_source.html#l00050">c3_leaf_photosynthesis::do_operation()</a>, and <a class="el" href="rue__leaf__photosynthesis_8cpp_source.html#l00103">rue_leaf_photosynthesis::do_operation()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="c3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph" alt=""/></div>
-<map name="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph" id="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,111,108"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="159,5,333,32"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="193,56,299,83"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="197,107,295,133"/>
-<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="198,157,294,184"/>
+<div class="center"><img src="c3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph" alt=""/></div>
+<map name="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph" id="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_cgraph">
+<area shape="rect" title=" " alt="" coords="5,122,111,149"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0" title="Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,..." alt="" coords="169,5,323,47"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="159,71,333,98"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a6380d8cd4192408df76baefe6b369a70" title="Determines the density of dry air from the air temperature." alt="" coords="193,122,299,149"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a460579178484521ecc50b488c58bb0dd" title="Determine the latent heat of vaporization for water from its temperature." alt="" coords="197,173,295,199"/>
+<area shape="rect" href="_aux_bio_cro_8cpp.html#a05f381bbff6170709a8d0e2e34f4556a" title="Determine the derivative of saturation water vapor pressure with respect to temperature at a particul..." alt="" coords="198,223,294,250"/>
 </map>
 </div>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -195,10 +208,10 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="c3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_icgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_icgraph" alt=""/></div>
-<map name="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_icgraph" id="ac3_evapo_trans_8cpp_aff67a46646ccb9ba3ea1c0f1f2e1e3e4_icgraph">
+<div class="center"><img src="c3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph.png" border="0" usemap="#ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph" alt=""/></div>
+<map name="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph" id="ac3_evapo_trans_8cpp_a61b7d88adafff31f703008da477eb090_icgraph">
 <area shape="rect" title=" " alt="" coords="428,64,533,91"/>
-<area shape="rect" href="_bio_cro_8h.html#a693310850a8d5b96b778ecc5c2308a23" title=" " alt="" coords="260,5,337,32"/>
+<area shape="rect" href="_bio_cro_8h.html#af6dcba839dcdfeb1a6564ea28b5f9da2" title=" " alt="" coords="260,5,337,32"/>
 <area shape="rect" href="classc3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="219,57,378,98"/>
 <area shape="rect" href="classrue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="217,122,380,163"/>
 <area shape="rect" href="classc3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,169,32"/>
@@ -210,7 +223,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 22 2021 16:43:23 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 1 2021 00:30:25 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

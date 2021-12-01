@@ -43,7 +43,7 @@
 <area shape="rect" id="node42" href="$classc4__assimilation.html" title="Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf ..." alt="" coords="386,2024,498,2051"/>
 <area shape="rect" id="node43" href="$classc4__canopy.html" title=" " alt="" coords="400,2075,484,2101"/>
 <area shape="rect" id="node44" href="$classc4__leaf__photosynthesis.html" title="Uses the method from CanAC() to calculate leaf photosynthesis parameters for C4 plants." alt="" coords="363,2125,521,2152"/>
-<area shape="rect" id="node45" href="$classed__abc__blc.html" title="This module is a wrapper for the leaf_boundary_layer_conductance (BLC) function in AuxBioCro (ABC)...." alt="" coords="398,2176,486,2203"/>
+<area shape="rect" id="node45" href="$classed__abc__blc.html" title="This module is a wrapper for the leaf_boundary_layer_conductance_nikolov() (BLC) function in AuxBioCr..." alt="" coords="398,2176,486,2203"/>
 <area shape="rect" id="node46" href="$classed__apply__stomatal__water__stress__via__assimilation.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="357,2227,527,2269"/>
 <area shape="rect" id="node47" href="$classed__apply__stomatal__water__stress__via__conductance.html" title="Sets the water stress adjustment factors to apply the stomatal water stress only to the stomatal cond..." alt="" coords="357,2293,527,2334"/>
 <area shape="rect" id="node48" href="$classed__ball__berry.html" title="Uses the Ball&#45;Berry equation to calculate stomatal conductance to water vapor. Currently only intende..." alt="" coords="393,2359,491,2385"/>

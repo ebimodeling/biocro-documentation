@@ -27,6 +27,7 @@ var classc3__canopy =
     [ "lnb0", "classc3__canopy.html#acd641b27962a75dfeca7770f763c5844", null ],
     [ "lnb1", "classc3__canopy.html#a0cb6e569a4dcf9830a82442fa687759d", null ],
     [ "lnfun", "classc3__canopy.html#a601b8490737087441a7423fbfbf8939d", null ],
+    [ "minimum_gbw", "classc3__canopy.html#a273f7a0753a1249da6440f646f0a8f86", null ],
     [ "nlayers", "classc3__canopy.html#a4b26334e3bfcaa69b09842362170642f", null ],
     [ "O2", "classc3__canopy.html#a63241b3c5acf311f05af54241f7d697e", null ],
     [ "par_energy_content", "classc3__canopy.html#a198a7ec452f5e9bc7d893648fdbcd435", null ],
@@ -41,5 +42,6 @@ var classc3__canopy =
     [ "tpu_rate_max", "classc3__canopy.html#a4b2d365dbb700ba6ecc81954cfc61720", null ],
     [ "vmax", "classc3__canopy.html#a7ef3055f6bf8efe57981f271d0f174ce", null ],
     [ "water_stress_approach", "classc3__canopy.html#a71b149842a57c9e197411f556cf68853", null ],
-    [ "windspeed", "classc3__canopy.html#a4e8b922d527ba4c662b5a3a7320f4d2f", null ]
+    [ "windspeed", "classc3__canopy.html#a4e8b922d527ba4c662b5a3a7320f4d2f", null ],
+    [ "windspeed_height", "classc3__canopy.html#a6bbc9cc4ce63444ab5b77ea1949c9f2b", null ]
 ];

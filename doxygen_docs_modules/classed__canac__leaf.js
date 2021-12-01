@@ -23,6 +23,7 @@ var classed__canac__leaf =
     [ "evapotranspiration_penman_op", "classed__canac__leaf.html#a195ddce2b2d4fb4985b0c2da42d5d084", null ],
     [ "evapotranspiration_priestly_op", "classed__canac__leaf.html#ae226335982fa4836db2efd1aca246152", null ],
     [ "leafwidth_ip", "classed__canac__leaf.html#a1175b5d51069ef4a5c1c32f11825b0d1", null ],
+    [ "minimum_gbw_ip", "classed__canac__leaf.html#a15ee079794f94a42a7621c1fa3241d77", null ],
     [ "mole_fraction_co2_atmosphere_ip", "classed__canac__leaf.html#ada69781abce91af7afeba858e4f3b33c", null ],
     [ "mole_fraction_co2_intercellular_op", "classed__canac__leaf.html#a40cf5355ee5d97df443b15403f5c542e", null ],
     [ "rh_ip", "classed__canac__leaf.html#af6c231b4b8c0e2ec7ef1d728b2855701", null ],
