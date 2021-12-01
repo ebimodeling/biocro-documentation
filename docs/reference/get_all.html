@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weather data corresponding to a paper by Clive Beale (see source). — EngWea94rf • BioCro</title>
+<title>BioCro Functions for Getting Modules, Quantities, and Solvers — get_all • BioCro</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,12 @@
 
 
 
-<meta property="og:title" content="Weather data corresponding to a paper by Clive Beale (see source). — EngWea94rf" />
-<meta property="og:description" content="Weather data with the precipitation column giving precipitation without
-    irrigation." />
+<meta property="og:title" content="BioCro Functions for Getting Modules, Quantities, and Solvers — get_all" />
+<meta property="og:description" content="get_all_modules returns the names of all available BioCro modules.
+get_all_quantities returns information about all quantities used as
+    inputs or outputs by BioCro modules.
+get_all_ode_solvers returns the names of all available ordinary
+    differential equation (ODE) solvers available in BioCro." />
 
 
 
@@ -119,51 +122,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Weather data corresponding to a paper by Clive Beale (see source).</h1>
+    <h1>BioCro Functions for Getting Modules, Quantities, and Solvers</h1>
     
-    <div class="hidden name"><code>EngWea94rf.Rd</code></div>
+    <div class="hidden name"><code>get_all.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Weather data with the precipitation column giving precipitation without
-    irrigation.</p>
+    <p><code>get_all_modules</code> returns the names of all available BioCro modules.</p>
+<p><code>get_all_quantities</code> returns information about all quantities used as
+    inputs or outputs by BioCro modules.</p>
+<p><code>get_all_ode_solvers</code> returns the names of all available ordinary
+    differential equation (ODE) solvers available in BioCro.</p>
     </div>
 
+    <pre class="usage"><span class='fu'>get_all_modules</span><span class='op'>(</span><span class='op'>)</span>
 
+  <span class='fu'>get_all_quantities</span><span class='op'>(</span><span class='op'>)</span>
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+  <span class='fu'>get_all_ode_solvers</span><span class='op'>(</span><span class='op'>)</span></pre>
 
-    <p>A data frame with 8760 observations on the following 8 variables.</p><dl>
-    <dt><code>year</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>doy</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>hour</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>solar</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>temp</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>RH</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>WindSpeed</code></dt><dd><p>A numeric vector.</p></dd>
-    <dt><code>precip</code></dt><dd><p>A numeric vector.</p></dd>
-  
-</dl>
-
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
-
-    
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    
+    <p>These "get_all" functions return the modules, quantities, and ODE solvers
+  available within the BioCro package</p>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+    <p></p>
+<dt>get_all_modules</dt><dd><p>A character vector of module names</p></dd>
 
-    
+  <dt>get_all_quantities</dt><dd><p>A data frame with three columns:
+    <code>quantity_type</code> (input or output), <code>quantity_name</code>, and
+    <code>module_name</code>. A quantity will appear multiple times if it is used as
+    both an input and an output, or if it is used by multiple modules.</p></dd>
+
+  <dt>get_all_ode_solvers</dt><dd><p>A character vector of ODE solver names</p></dd>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>EngWea94rf</span><span class='op'>)</span>
-<span class='co'>## maybe str(EngWea94rf) ; plot(EngWea94rf) ...</span>
-
-</div></pre>
+    <pre class="examples"><span class='r-in'><span class='co'># Example 1: getting a list of all unique quantities (which can be useful when</span></span>
+<span class='r-in'><span class='co'># writing a new module that is intended to work along with pre-existing modules)</span></span>
+<span class='r-in'><span class='va'>all_quantities</span> <span class='op'>&lt;-</span> <span class='fu'>get_all_quantities</span><span class='op'>(</span><span class='op'>)</span></span>
+<span class='r-in'><span class='va'>all_quantity_names</span> <span class='op'>&lt;-</span> <span class='va'>all_quantities</span><span class='op'>$</span><span class='va'>quantity_name</span></span>
+<span class='r-in'><span class='va'>all_unique_quantities</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/unique.html'>unique</a></span><span class='op'>(</span><span class='va'>all_quantity_names</span><span class='op'>)</span></span>
+<span class='r-in'><span class='va'>all_unique_quantities</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sort.html'>sort</a></span><span class='op'>(</span><span class='va'>all_unique_quantities</span><span class='op'>)</span></span>
+<span class='r-in'></span>
+<span class='r-in'><span class='co'># Example 2: getting a list of all modules that have "ci" as an input or output,</span></span>
+<span class='r-in'><span class='co'># using `tolower()` to account for any possible variations in capitalization</span></span>
+<span class='r-in'><span class='va'>all_quantities</span> <span class='op'>&lt;-</span> <span class='fu'>get_all_quantities</span><span class='op'>(</span><span class='op'>)</span></span>
+<span class='r-in'><span class='va'>ci_modules</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/subset.html'>subset</a></span><span class='op'>(</span><span class='va'>all_quantities</span>, <span class='fu'><a href='https://rdrr.io/r/base/chartr.html'>tolower</a></span><span class='op'>(</span><span class='va'>quantity_name</span><span class='op'>)</span> <span class='op'>==</span> <span class='st'>"ci"</span><span class='op'>)</span></span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

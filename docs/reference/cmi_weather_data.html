@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weather data — weather05 • BioCro</title>
+<title>Champaign, IL weather data — cmi_weather_data • BioCro</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,15 @@
 
 
 
-<meta property="og:title" content="Weather data — weather05" />
-<meta property="og:description" content="Weather data as produced by the weach function.  These are
-    for 2004 and 2005." />
+<meta property="og:title" content="Champaign, IL weather data — cmi_weather_data" />
+<meta property="og:description" content="Multiple years of Champaign, IL weather data specified at hourly intervals in
+  the CST time zone. The columns correspond to typical inputs required for
+  BioCro simulations. Note: some values are missing near the start of 1995 since
+  the data is not available from SURFRAD.
+This weather data is included in the BioCro package so users can reproduce
+  calculations in the BioCro II paper (citation forthcoming) and for exploratory
+  purposes; it is likely that most BioCro studies will require different data
+  sets, and no attempt is made here to be exhaustive." />
 
 
 
@@ -119,24 +125,78 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Weather data</h1>
+    <h1>Champaign, IL weather data</h1>
     
-    <div class="hidden name"><code>weather05.Rd</code></div>
+    <div class="hidden name"><code>cmi_weather_data.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Weather data as produced by the <code><a href='weach.html'>weach</a></code> function.  These are
-    for 2004 and 2005.</p>
+    <p>Multiple years of Champaign, IL weather data specified at hourly intervals in
+  the CST time zone. The columns correspond to typical inputs required for
+  BioCro simulations. Note: some values are missing near the start of 1995 since
+  the data is not available from SURFRAD.</p>
+<p>This weather data is included in the BioCro package so users can reproduce
+  calculations in the BioCro II paper (citation forthcoming) and for exploratory
+  purposes; it is likely that most BioCro studies will require different data
+  sets, and no attempt is made here to be exhaustive.</p>
     </div>
 
+    <pre class="usage"><span class='co'>## YYYY should be replaced with a 4-digit year from the available set of years,</span>
+<span class='co'>## e.g. 2002</span>
+<span class='va'>weatherYYYY</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Data frame of dimensions 8760 by 7.</p>
+    <p>26 data frames corresponding to 26 years of weather data (1995 - 2020), where
+  each data frame has 8760 or 8784 rows (representing hourly time points) and 9
+  columns:</p><ul>
+<li><p><code>year</code>: the year</p></li>
+<li><p><code>doy</code>: the day of year</p></li>
+<li><p><code>hour</code>: the hour</p></li>
+<li><p><code>time_zone_offset</code>: the time zone offset relative to UTC (hr)</p></li>
+<li><p><code>precip</code>: preciptation rate (mm / hr)</p></li>
+<li><p><code>rh</code>: the ambient relative humidity (dimensionless)</p></li>
+<li><p><code>solar</code>: the incoming photosynthetically active photon flux
+          density (PPFD) measured on a ground area basis including direct and
+          diffuse sunlight light just outside the crop canopy
+          (micromol / m^2 / s)</p></li>
+<li><p><code>temp</code>: the ambient air temperature (degrees Celsius)</p></li>
+<li><p><code>windspeed</code>: the wind speed in the ambient air just outside the
+          canopy (m / s)</p></li>
+</ul>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Simulated data based on Champaign, Illinois conditions.</p>
+    <p>Weather data were obtained from the public SURFRAD and WARM databases and
+  processed according to the method described in the BioCro II paper
+  (submitted). See that paper for a full description of the data processing.</p>
+<p>In brief, the columns in the data frames were determined from SURFRAD and WARM
+  variables as follows:</p><ul>
+<li><p><code>precip</code>: from the <code>precip</code> variable in the WARM data set</p></li>
+<li><p><code>rh</code>: from the <code>rh</code> variable in the SURFRAD data set</p></li>
+<li><p><code>solar</code>: from the <code>par</code> variable in the SURFRAD data set;
+          when these values are not available, the <code>direct_n</code>,
+          <code>diffuse</code>, and <code>zen</code> variables are used to make an estimate</p></li>
+<li><p><code>temp</code>: from the <code>temp</code> variable in the SURFRAD data set</p></li>
+<li><p><code>windspeed</code>: from the <code>windspd</code> variable in the SURFRAD data
+          set</p></li>
+</ul>
+
+<p>The WARM data set includes daily values. Hourly values for precipitation are
+  derived from daily totals by assuming a constant rate of precipitation
+  throughout the day.</p>
+<p>The SURFRAD data set includes values at 1 or 3 minute intervals. Hourly values
+  are determined by averaging over hourly intervals, where the value at hour
+  <code>h</code> is the average over the hour-long interval centered at <code>h</code>. Some
+  values are missing; any missing entries are filled via an interpolation
+  procedure based on the assumption that values at the same hour of sequential
+  days should be similar.</p>
+<p>The <code>time_zone_offset</code> is set to a constant value of -6 since this data
+  is specified in the CST time zone (i.e., UTC-6). Since the value of this
+  quantity does not change, it could in principle be considered a parameter
+  rather than a driver; however, it is included with the weather data for
+  convenience.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weather data — cmi0506 • BioCro</title>
+<title>Add a time component to input — add_time_to_weather_data • BioCro</title>
 
 
 <!-- jquery -->
@@ -39,10 +39,9 @@
 
 
 
-<meta property="og:title" content="Weather data — cmi0506" />
-<meta property="og:description" content="Selected weather data corresponding to the Champaign weather station (IL,
-    U.S.). It has two years: 2005 and 2006. Dimensions: 730 by 11. The columns
-    correspond to the input necessary for the weach function." />
+<meta property="og:title" content="Add a time component to input — add_time_to_weather_data" />
+<meta property="og:description" content="Ensure, if possible, that input data that varies over time has a &quot;time&quot;
+component." />
 
 
 
@@ -120,25 +119,42 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Weather data</h1>
+    <h1>Add a time component to input</h1>
     
-    <div class="hidden name"><code>cmi0506.Rd</code></div>
+    <div class="hidden name"><code>add_time_to_weather_data.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Selected weather data corresponding to the Champaign weather station (IL,
-    U.S.). It has two years: 2005 and 2006. Dimensions: 730 by 11. The columns
-    correspond to the input necessary for the <code><a href='weach.html'>weach</a></code> function.</p>
+    <p>Ensure, if possible, that input data that varies over time has a "time"
+component.</p>
     </div>
 
+    <pre class="usage"><span class='fu'>add_time_to_weather_data</span><span class='op'>(</span><span class='va'>drivers</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>drivers</th>
+      <td><p>A list or dataframe representing known system parameters that vary over
+    time, such as weather data.</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>Data frame of dimensions 730 by 11.</p>
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <p>If drivers has no time component, then one is added, provided it <em>does</em>
+have components for doy and hour. (The time values will be equal to the doy
+values plus the fractional portion of a day represented by the hour values.)
+Otherwise drivers is returned as is.</p>
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
-    <p><a href='https://www.isws.illinois.edu/warm/weather/'>https://www.isws.illinois.edu/warm/weather/</a></p>
+    <p>Preconditions: If drivers is a list, the values should be vectors of equal
+length.  Moreover, if it already contains a time component, then it shouldn't
+contain either a doy or an hour component unless it contains both of them and
+the values are mutually consistent.  Furthermore, the time represented by
+(doy, hour), if given, or by time, if given, should increase as the vector or
+row index increases.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

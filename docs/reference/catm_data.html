@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weather data from 2006 — weather06 • BioCro</title>
+<title>Global annual mean atmopspheric CO2 levels — catm_data • BioCro</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,13 @@
 
 
 
-<meta property="og:title" content="Weather data from 2006 — weather06" />
-<meta property="og:description" content="Weather data as produced by the weach function.  These are for 2006." />
+<meta property="og:title" content="Global annual mean atmopspheric CO2 levels — catm_data" />
+<meta property="og:description" content="Multiple years of globally averaged annual mean atmospheric CO2 levels and
+  their uncertainties.
+This data is included in the BioCro package so users can reproduce
+  calculations in the BioCro II paper (citation forthcoming) and for
+  exploratory purposes; it is likely that most BioCro studies will require
+  different data sets, and no attempt is made here to be exhaustive." />
 
 
 
@@ -118,42 +123,46 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Weather data from 2006</h1>
+    <h1>Global annual mean atmopspheric CO2 levels</h1>
     
-    <div class="hidden name"><code>weather06.Rd</code></div>
+    <div class="hidden name"><code>catm_data.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Weather data as produced by the <code><a href='weach.html'>weach</a></code> function.  These are for 2006.</p>
+    <p>Multiple years of globally averaged annual mean atmospheric CO2 levels and
+  their uncertainties.</p>
+<p>This data is included in the BioCro package so users can reproduce
+  calculations in the BioCro II paper (citation forthcoming) and for
+  exploratory purposes; it is likely that most BioCro studies will require
+  different data sets, and no attempt is made here to be exhaustive.</p>
     </div>
 
+    <pre class="usage"><span class='va'>catm_data</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 8760 observations on the following 8 variables.</p><table class='table'>
-<tr><td>[,1]</td><td>year</td><td>numeric</td></tr>
-<tr><td>[,2]</td><td>doy</td><td>numeric</td></tr>
-<tr><td>[,3]</td><td>hour</td><td>numeric</td></tr>
-<tr><td>[,4]</td><td>solar</td><td>numeric</td></tr>
-<tr><td>[,5]</td><td>temp</td><td>numeric</td></tr>
-<tr><td>[,6]</td><td>rh</td><td>numeric</td></tr>
-<tr><td>[,7]</td><td>windspeed</td><td>numeric</td></tr>
-<tr><td>[,8]</td><td>precip</td><td>numeric</td></tr>
-</table>
-
+    <p>Data frame with 3 columns and 41 rows:</p><ul>
+<li><p><code>year</code>: the year</p></li>
+<li><p><code>Catm</code>: CO2 concentration (micromol / mol)</p></li>
+<li><p><code>unc</code>: the uncertainty associated with the CO2 concentration
+          (micromol / mol)</p></li>
+</ul>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    
+    <p>Data were obtained from the National Oceanic and Atmospheric Administration's
+  Global Monitoring Laboratory (https://gml.noaa.gov/ccgg/trends/data.html) on
+  04-13-2021.</p>
+<p>The exact link used was
+  https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt.</p>
+<p>Alternatively, the data can be accessed from
+  https://gml.noaa.gov/ccgg/trends/gl_data.html by clicking the link to
+  <code>Globally averaged marine surface annual mean data (CSV)</code>.</p>
+<p>These data are provided here as a convenience to BioCro users; please visit
+  the NOAA GML webpage for guidelines regarding the use of this data if you are
+  intending to include it in a publication.</p>
 
-
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>weather06</span><span class='op'>)</span>
-<span class='co'>## maybe str(weather06) ; plot(weather06) ...</span>
-
-</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

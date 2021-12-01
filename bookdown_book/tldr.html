@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 Adding the Boost libraries | BioCro Development</title>
-  <meta name="description" content="5 Adding the Boost libraries | BioCro Development" />
+  <title>3 tl;dr | BioCro Development</title>
+  <meta name="description" content="3 tl;dr | BioCro Development" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 Adding the Boost libraries | BioCro Development" />
+  <meta property="og:title" content="3 tl;dr | BioCro Development" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 Adding the Boost libraries | BioCro Development" />
+  <meta name="twitter:title" content="3 tl;dr | BioCro Development" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="running-the-testthat-tests.html"/>
-<link rel="next" href="the-update-documentation-workflow.html"/>
+<link rel="prev" href="generating-documentation.html"/>
+<link rel="next" href="running-the-testthat-tests.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -214,82 +214,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="adding-the-boost-libraries" class="section level1">
-<h1><span class="header-section-number">5</span> Adding the Boost libraries</h1>
-<div id="why-this-is-needed" class="section level2">
-<h2><span class="header-section-number">5.1</span> Why this is needed</h2>
-<p>BioCro uses software from the Boost C++ libraries. Boost does not assure backward compatibility, so changes to Boost could break BioCro. Thus, we don’t want to link our code to a user supplied Boost installation, and we include a version with BioCro.
-Boost is very large, so we want to include only the necessary parts. This document lists steps to extract the relevant parts and update files in BioCro to use them.</p>
-</div>
-<div id="how-to-extract-parts-of-boost" class="section level2">
-<h2><span class="header-section-number">5.2</span> How to extract parts of Boost</h2>
-<p>Use the bcp tool included with Boost to extract parts of the Boost library. bcp accepts a list of files or modules and extracts the relevant parts of the Boost library to a directory.
-The packages BioCro uses are as follows:</p>
-<table>
-<colgroup>
-<col width="26%" />
-<col width="73%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Package name</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>boost/units</code></td>
-<td>Used in <code>biocro_units.h</code></td>
-</tr>
-<tr class="even">
-<td><code>boost/typeof/incr_registration_group.hpp</code></td>
-<td>This is needed for <code>boost/units</code> but it is not exported properly and must be explicitly specificed as of Boost version 1.71</td>
-</tr>
-<tr class="odd">
-<td><code>boost/algorithm</code></td>
-<td>Used in <code>parameters.h</code></td>
-</tr>
-<tr class="even">
-<td><code>boost/graph</code></td>
-<td>Used in <code>dependency_graph.cpp</code></td>
-</tr>
-<tr class="odd">
-<td><code>boost/numeric/ublas</code></td>
-<td>Used in <code>dynamical_system.h</code>, among others</td>
-</tr>
-<tr class="even">
-<td><code>boost/numeric/odeint.hpp</code></td>
-<td>Used in <code>Gro.cpp</code></td>
-</tr>
-</tbody>
-</table>
-<ol style="list-style-type: decimal">
-<li>Run the following command:
+<div id="tldr" class="section level1">
+<h1><span class="header-section-number">3</span> tl;dr</h1>
+<div id="requirements" class="section level2">
+<h2><span class="header-section-number">3.1</span> Requirements</h2>
 <ul>
-<li><code>bcp --boost="PATH_TO_BOOST_ROOT_DIRECTORY" "boost/units" "boost/typeof/incr_registration_group.hpp" "boost/algorithm" "boost/numeric/odeint.hpp" "boost/numeric/ublas" "boost/graph" PATH_TO_TEMPORARY_DIRECTORY</code></li>
-</ul></li>
-<li>Copy <code>PATH_TO_TEMPORARY_DIRECTORY/boost</code> to the <code>biocro/boost_[version_number]</code> directory. Other files and directories my be created in <code>PATH_TO_TEMPORARY_DIRECTORY,</code> but they are not needed.</li>
-<li>If necessary, update the <code>PKG_CPPFLAGS</code> line in <code>biocro/src/Makevars</code>: e.g., <code>PKG_CPPFLAGS=-I"../boost_1_71_0"</code></li>
-<li>Check that the Boost license at <code>biocro/boost_[version_num]</code> is correct for the version used, and update <code>biocro/LICENSE</code> if necssary.</li>
-<li>Update the path to the Boost license in <code>biocro/LICENSE</code>.</li>
-</ol>
-<div id="notes-for-using-bcp-in-windows" class="section level3">
-<h3><span class="header-section-number">5.2.1</span> Notes for using bcp in Windows</h3>
-<p>First, follow the instructions in the “Getting Started on Windows” <a href="https://www.boost.org/doc/libs/1_71_0/more/getting_started/windows.html">Boost page</a>.
-For V1.71.0, this entails the following:
-- Install the Visual Studio 2019 Developer Command Prompt (<a href="https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=vs-2019">see here</a>).
-- Download the full Boost library, unzip it, and put it somewhere convenient: e.g., <code>C:\Program Files\boost\boost_1_71_0</code>.
-- Open a VS developer prompt and cd into the boost root directory: e.g., cd <code>C:\Program Files\boost\boost_1_71_0</code>.
-- Type bootstrap and press enter. This may take a minute or so to complete.
-- Type <code>.\b2</code> and press enter. This may also take a little while.</p>
-<p>Now the Boost libraries have been built, and we are almost ready to use bcp. However, we need to explicitly build the bcp tool using the “Boost.Build” tool, which is cryptically named “b2.exe”.
-- In a VS developer prompt, cd into the tools/bcp directory: e.g., <code>cd C:\Program Files\boost\boost_1_71_0\tools\bcp</code>.
-- Run b2.exe using its full path: e.g., type <code>C:\"Program Files"\boost\boost_1_71_0\b2</code> and press enter.
-- Now bcp.exe should be in <code>C:\Program Files\boost\boost_1_71_0\dist\bin</code>.</p>
-<p>Finally, cd into the folder that contains bcp: e.g., <code>cd C:\Program Files\boost\boost_1_71_0\dist\bin</code>.</p>
-<p>Now you should be able to run the command listed as “Step 1” above from a VS developer command prompt.</p>
-
+<li>The testthat package. From the R command line, run <code>install.packages('testthat')</code>.</li>
+</ul>
 </div>
+<div id="running-tests" class="section level2">
+<h2><span class="header-section-number">3.2</span> Running tests</h2>
+<p>Move to the “tests” directories within the BioCro source code directory, and run the following code:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="tldr.html#cb11-1"></a><span class="kw">library</span>(BioCro)</span>
+<span id="cb11-2"><a href="tldr.html#cb11-2"></a><span class="kw">library</span>(testthat)</span>
+<span id="cb11-3"><a href="tldr.html#cb11-3"></a><span class="kw">test_dir</span>(<span class="st">&#39;testthat&#39;</span>)</span></code></pre></div>
 </div>
 </div>
             </section>
@@ -297,8 +235,8 @@ For V1.71.0, this entails the following:
           </div>
         </div>
       </div>
-<a href="running-the-testthat-tests.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-update-documentation-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="generating-documentation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="running-the-testthat-tests.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

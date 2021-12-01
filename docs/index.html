@@ -84,12 +84,12 @@
 <div id="an-example" class="section level3">
 <h3 class="hasAnchor">
 <a href="#an-example" class="anchor"></a>An example</h3>
-<p>The Gro() function accepts initial values, parameters, climate variables, and a set of modules to run. It returns the results in a data frame.</p>
+<p>The <code><a href="reference/run_biocro.html">run_biocro()</a></code> function accepts initial values, parameters, climate variables, and sets of modules to run. It returns the results in a data frame.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">BioCro</span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://lattice.r-forge.r-project.org/">lattice</a></span><span class="op">)</span>
 
-<span class="va">result</span> <span class="op">=</span> <span class="fu"><a href="reference/run_biocro.html">run_biocro</a></span><span class="op">(</span><span class="va">sorghum_initial_values</span>, <span class="va">sorghum_parameters</span>, <span class="fu">get_growing_season_climate</span><span class="op">(</span><span class="va">weather05</span><span class="op">)</span>, <span class="va">sorghum_direct_modules</span>, <span class="va">sorghum_differential_modules</span>, <span class="va">sorghum_ode_solver</span><span class="op">)</span>
+<span class="va">result</span> <span class="op">=</span> <span class="fu"><a href="reference/run_biocro.html">run_biocro</a></span><span class="op">(</span><span class="va">sorghum_initial_values</span>, <span class="va">sorghum_parameters</span>, <span class="fu">get_growing_season_climate</span><span class="op">(</span><span class="va">weather2005</span><span class="op">)</span>, <span class="va">sorghum_direct_modules</span>, <span class="va">sorghum_differential_modules</span>, <span class="va">sorghum_ode_solver</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/pkg/lattice/man/xyplot.html">xyplot</a></span><span class="op">(</span><span class="va">Stem</span> <span class="op">+</span> <span class="va">Leaf</span> <span class="op">~</span> <span class="va">TTc</span>, <span class="va">result</span>, type<span class="op">=</span><span class="st">'l'</span><span class="op">)</span></code></pre></div>
 <p>There are parameters and modules for miscanthus (<em>Miscanthus</em> x <em>giganteus</em>), sorghum (<em>Sorghum bicolor</em>) and willow (<em>Saliceae salix</em>).</p>
 </div>
@@ -119,8 +119,8 @@ R CMD INSTALL biocro</code></pre>
 <ul>
 <li>Or from within R</li>
 </ul>
-<pre><code><a href="https://rdrr.io/r/base/getwd.html">setwd('path_to_unzipped_directory')
-install.packages('biocro', repos=NULL, type='SOURCE')</a></code></pre>
+<pre><code>setwd('path_to_unzipped_directory')
+install.packages('biocro', repos=NULL, type='SOURCE')</code></pre>
 </div>
 </div>
 <div id="making-contributions" class="section level3">
