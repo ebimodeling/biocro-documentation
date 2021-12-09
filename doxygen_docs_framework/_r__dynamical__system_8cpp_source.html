@@ -86,13 +86,13 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_r__dynamical__system_8cpp.html#a4671688e3fc2a22db458dfccfd6cd677">   11</a></span>&#160;SEXP <a class="code" href="_r__dynamical__system_8cpp.html#a4671688e3fc2a22db458dfccfd6cd677">R_validate_dynamical_system_inputs</a>(</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_r__dynamical__system_8cpp.html#a7776ac7a762a025a6d7c9c24b375cdf8">   11</a></span>&#160;SEXP <a class="code" href="_r__dynamical__system_8cpp.html#a7776ac7a762a025a6d7c9c24b375cdf8">R_validate_dynamical_system_inputs</a>(</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    SEXP initial_values,</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    SEXP <a class="code" href="parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4">parameters</a>,</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    SEXP drivers,</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    SEXP direct_module_names,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    SEXP differential_module_names,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SEXP silent)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SEXP verbose)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">try</span> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">// Convert inputs from R formats</span></div>
@@ -101,14 +101,14 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="state__map_8h.html#acc562c42c1d464c702e0abd69e05673d">state_vector_map</a> vp = <a class="code" href="_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c">map_vector_from_list</a>(drivers);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::vector&lt;std::string&gt; direct_names = <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(direct_module_names);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::vector&lt;std::string&gt; differential_names = <a class="code" href="_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424">make_vector</a>(differential_module_names);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">bool</span> be_quiet = LOGICAL(VECTOR_ELT(silent, 0))[0];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">bool</span> be_loud = LOGICAL(VECTOR_ELT(verbose, 0))[0];</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">// Check the validity</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::string msg;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> valid = <a class="code" href="validate__dynamical__system_8cpp.html#adfa13994900055c1c513e7a130dce658">validate_dynamical_system_inputs</a>(msg, s, ip, vp, direct_names, differential_names);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// Print feedback and additional information if required</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (!be_quiet) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (be_loud) {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            Rprintf(<span class="stringliteral">&quot;\nChecking the validity of the system inputs:\n&quot;</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            Rprintf(msg.c_str());</div>
@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="ttc" id="a_r__dynamical__system_8cpp_html_a4671688e3fc2a22db458dfccfd6cd677"><div class="ttname"><a href="_r__dynamical__system_8cpp.html#a4671688e3fc2a22db458dfccfd6cd677">R_validate_dynamical_system_inputs</a></div><div class="ttdeci">SEXP R_validate_dynamical_system_inputs(SEXP initial_values, SEXP parameters, SEXP drivers, SEXP direct_module_names, SEXP differential_module_names, SEXP silent)</div><div class="ttdef"><b>Definition:</b> <a href="_r__dynamical__system_8cpp_source.html#l00011">R_dynamical_system.cpp:11</a></div></div>
+<div class="ttc" id="a_r__dynamical__system_8cpp_html_a7776ac7a762a025a6d7c9c24b375cdf8"><div class="ttname"><a href="_r__dynamical__system_8cpp.html#a7776ac7a762a025a6d7c9c24b375cdf8">R_validate_dynamical_system_inputs</a></div><div class="ttdeci">SEXP R_validate_dynamical_system_inputs(SEXP initial_values, SEXP parameters, SEXP drivers, SEXP direct_module_names, SEXP differential_module_names, SEXP verbose)</div><div class="ttdef"><b>Definition:</b> <a href="_r__dynamical__system_8cpp_source.html#l00011">R_dynamical_system.cpp:11</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a1c40ce5c7a2d8a2d3968c7d71812002c"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a1c40ce5c7a2d8a2d3968c7d71812002c">map_vector_from_list</a></div><div class="ttdeci">state_vector_map map_vector_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00060">R_helper_functions.cpp:60</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a427d311e926df18071cfb272015d6dff"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff">map_from_list</a></div><div class="ttdeci">state_map map_from_list(SEXP const &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00048">R_helper_functions.cpp:48</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a4b6b522dfb157c35def3e405095fd5e5"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a4b6b522dfb157c35def3e405095fd5e5">r_logical_from_boolean</a></div><div class="ttdeci">SEXP r_logical_from_boolean(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00241">R_helper_functions.cpp:241</a></div></div>
@@ -155,7 +155,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 2 2021 23:16:46 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Dec 9 2021 16:43:03 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
