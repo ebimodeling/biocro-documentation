@@ -1,3 +1,8 @@
+## ----preliminary-hooks,include=FALSE,error=TRUE-------------------------------
+knitr::knit_hooks$set(document = function(x) {
+    sub('\\usepackage[]{color}', '\\usepackage[dvipsnames,table]{xcolor}', x, fixed = TRUE)
+})
+
 ## ----preliminaries,echo=FALSE,error=TRUE--------------------------------------
 knitr::opts_chunk$set(error=TRUE) # don't stop on errors; display them
                                   # in results; this is the default
@@ -191,28 +196,30 @@ outputs <- evaluate_module(
   })
 )
 
-## ----c3_assimilation_function-------------------------------------------------
-light_response <- function(Q) {
-  evaluate_module(
-    'c3_assimilation',
-    within(soybean_parameters, {
-      rh = 0.7
-      Qp = Q
-      Tleaf = 27
-      StomataWS = 1
-    })
-  )$Assim
-}
-
 ## ----c3_light_response_curve--------------------------------------------------
-Q <- seq(from = 0, to = 2000, length.out = 501)
-An <- sapply(Q, light_response)
+rc <- module_response_curve(
+  'c3_assimilation',
+  within(soybean_parameters, {
+    rh = 0.7
+    Tleaf = 27
+    StomataWS = 1
+  }),
+  data.frame(Qp = seq(from = 0, to = 2000, length.out = 501))
+)
+
+caption <- paste0(
+  'Soybean response curve calculated with\nTleaf = ', unique(rc$Tleaf),
+  ' degrees C and RH = ', unique(rc$rh), '\nusing the `',
+  unique(rc$module_name), '` module'
+)
+
 xyplot(
-  An ~ Q,
+  Assim ~ Qp,
+  data = rc,
   type = 'l',
   xlab = 'Incident PPFD (micromol / m^2 / s)',
   ylab = 'Net CO2 assimilation rate\n(micromol / m^2 / s)',
-  main = 'Soybean light response curve\ncalculated at 27 degrees C and 70% relative humidity',
+  main = caption,
   grid = TRUE
 )
 
