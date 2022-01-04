@@ -9,6 +9,7 @@ var classse__module_1_1base =
     [ "best_guess", "classse__module_1_1base.html#ad87336a0671209035779bea1a17976ad", null ],
     [ "input_ptrs", "classse__module_1_1base.html#af473183dd1ed26f8c72073edc380f48d", null ],
     [ "lower_bounds", "classse__module_1_1base.html#af343479f291e508daae80b942233e395", null ],
+    [ "module_name", "classse__module_1_1base.html#a0b37c5938e82da1fb19ed599f7c71217", null ],
     [ "ncalls_op", "classse__module_1_1base.html#a695acb04cd78091c531ae55f17925783", null ],
     [ "nsteps_op", "classse__module_1_1base.html#a8e69019eac6bbda78f9553f508f7c9d6", null ],
     [ "output_ptrs", "classse__module_1_1base.html#ae47e9d21f2fbf8c9d4b033adec7e1b45", null ],

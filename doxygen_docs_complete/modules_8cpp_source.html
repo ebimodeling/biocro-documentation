@@ -78,18 +78,19 @@ $(function() {
 <div class="contents">
 <a href="modules_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_8h.html">modules.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="modules_8cpp.html#ac9be9629e5a42b6eec44936214d89040">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_8cpp.html#ac9be9629e5a42b6eec44936214d89040">run_module_list</a>(std::vector&lt;std::unique_ptr&lt;module_base&gt;&gt; <span class="keyword">const</span>&amp; modules)</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="modules_8cpp.html#aa9a6947a0392ccf0dbc65e6691c2094b">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="modules_8cpp.html#aa9a6947a0392ccf0dbc65e6691c2094b">run_module_list</a>(<a class="code" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> <span class="keyword">const</span>&amp; modules)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span> (std::unique_ptr&lt;module_base&gt; <span class="keyword">const</span>&amp; m : modules) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; m : modules) {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        m-&gt;run();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="ttc" id="amodules_8cpp_html_ac9be9629e5a42b6eec44936214d89040"><div class="ttname"><a href="modules_8cpp.html#ac9be9629e5a42b6eec44936214d89040">run_module_list</a></div><div class="ttdeci">void run_module_list(std::vector&lt; std::unique_ptr&lt; module_base &gt;&gt; const &amp;modules)</div><div class="ttdoc">Runs each module in the input list.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8cpp_source.html#l00008">modules.cpp:8</a></div></div>
+<div class="ttc" id="amodules_8cpp_html_aa9a6947a0392ccf0dbc65e6691c2094b"><div class="ttname"><a href="modules_8cpp.html#aa9a6947a0392ccf0dbc65e6691c2094b">run_module_list</a></div><div class="ttdeci">void run_module_list(module_vector const &amp;modules)</div><div class="ttdoc">Runs each module in the input list.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8cpp_source.html#l00008">modules.cpp:8</a></div></div>
 <div class="ttc" id="amodules_8h_html"><div class="ttname"><a href="modules_8h.html">modules.h</a></div></div>
+<div class="ttc" id="amodules_8h_html_a9c258484825f09ad4fcdf6aa7722757f"><div class="ttname"><a href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; module_base &gt; &gt; module_vector</div><div class="ttdoc">module_vector serves as an alias for a type widely used to hold lists of modules.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00157">modules.h:157</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 4 2022 21:11:00 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jan 4 2022 21:21:23 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

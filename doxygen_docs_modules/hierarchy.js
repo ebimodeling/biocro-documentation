@@ -138,7 +138,6 @@ var hierarchy =
       [ "utilization_senescence_calculator", "classutilization__senescence__calculator.html", null ],
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", null ]
     ] ],
-    [ "ed_collatz_assimilation", "classed__collatz__assimilation.html", null ],
     [ "ET_Str", "struct_e_t___str.html", null ],
     [ "frostParms", "structfrost_parms.html", null ],
     [ "Light_model", "struct_light__model.html", null ],

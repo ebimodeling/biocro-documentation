@@ -137,6 +137,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
 <tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0866265cb5b92692af7be0ef011f355"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthermal__time__senescence.html#ad0866265cb5b92692af7be0ef011f355">get_name</a> ()</td></tr>
+<tr class="separator:ad0866265cb5b92692af7be0ef011f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -312,9 +314,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">232</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">231</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="thermal__time__senescence_8hpp_source.html#l00145">assim_rate_leaf_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00148">assim_rate_rhizome_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00147">assim_rate_root_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00146">assim_rate_stem_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00183">Grain_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00163">kGrain</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00162">kRhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00161">kRoot</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00160">kStem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00171">Leaf_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00156">leaf_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00173">leaf_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00172">LeafLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00165">net_assimilation_rate_leaf</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00168">net_assimilation_rate_rhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00167">net_assimilation_rate_root</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00166">net_assimilation_rate_stem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00164">remobilization_fraction</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00180">Rhizome_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00159">rhizome_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00182">rhizome_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00181">RhizomeLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00177">Root_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00158">root_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00179">root_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00178">RootLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00152">seneLeaf</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00155">seneRhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00154">seneRoot</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00153">seneStem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00174">Stem_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00157">stem_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00176">stem_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00175">StemLitter_op</a>, and <a class="el" href="thermal__time__senescence_8hpp_source.html#l00151">TTc</a>.</p>
+<p class="reference">References <a class="el" href="thermal__time__senescence_8hpp_source.html#l00144">assim_rate_leaf_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00147">assim_rate_rhizome_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00146">assim_rate_root_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00145">assim_rate_stem_vec</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00182">Grain_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00162">kGrain</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00161">kRhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00160">kRoot</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00159">kStem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00170">Leaf_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00155">leaf_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00172">leaf_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00171">LeafLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00164">net_assimilation_rate_leaf</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00167">net_assimilation_rate_rhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00166">net_assimilation_rate_root</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00165">net_assimilation_rate_stem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00163">remobilization_fraction</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00179">Rhizome_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00158">rhizome_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00181">rhizome_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00180">RhizomeLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00176">Root_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00157">root_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00178">root_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00177">RootLitter_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00151">seneLeaf</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00154">seneRhizome</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00153">seneRoot</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00152">seneStem</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00173">Stem_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00156">stem_senescence_index</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00175">stem_senescence_index_op</a>, <a class="el" href="thermal__time__senescence_8hpp_source.html#l00174">StemLitter_op</a>, and <a class="el" href="thermal__time__senescence_8hpp_source.html#l00150">TTc</a>.</p>
 
 </div>
 </div>
@@ -341,7 +343,34 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00189">189</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00188">188</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad0866265cb5b92692af7be0ef011f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0866265cb5b92692af7be0ef011f355">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00136">136</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
 </div>
 </div>
@@ -368,7 +397,7 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00213">213</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00212">212</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,9 +422,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00145">145</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00144">144</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -419,9 +448,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00148">148</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00147">147</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +474,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00147">147</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00146">146</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -471,9 +500,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00146">146</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00145">145</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -497,9 +526,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00183">183</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00182">182</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +552,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00163">163</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00162">162</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +578,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00162">162</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00161">161</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +604,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00161">161</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00160">160</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -601,9 +630,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00160">160</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00159">159</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -627,9 +656,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00171">171</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00170">170</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -653,9 +682,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00156">156</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00155">155</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -679,9 +708,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00173">173</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00172">172</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +734,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00172">172</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00171">171</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -731,9 +760,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00165">165</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00164">164</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -757,9 +786,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00168">168</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00167">167</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -783,9 +812,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00167">167</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00166">166</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -809,9 +838,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00166">166</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00165">165</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -835,9 +864,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00164">164</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00163">163</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -861,9 +890,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00180">180</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00179">179</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -887,9 +916,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00159">159</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00158">158</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -913,9 +942,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00182">182</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00181">181</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +968,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00181">181</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00180">180</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -965,9 +994,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00177">177</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00176">176</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -991,9 +1020,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00158">158</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00157">157</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1017,9 +1046,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00179">179</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00178">178</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1043,9 +1072,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00178">178</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00177">177</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1098,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00152">152</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00151">151</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1095,9 +1124,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00155">155</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00154">154</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1121,9 +1150,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00154">154</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00153">153</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1147,9 +1176,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00153">153</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00152">152</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1173,9 +1202,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00174">174</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00173">173</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1199,9 +1228,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00157">157</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00156">156</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1225,9 +1254,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00176">176</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00175">175</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1251,9 +1280,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00175">175</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00174">174</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1277,9 +1306,9 @@ Source</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00151">151</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="thermal__time__senescence_8hpp_source.html#l00150">150</a> of file <a class="el" href="thermal__time__senescence_8hpp_source.html">thermal_time_senescence.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00232">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="thermal__time__senescence_8hpp_source.html#l00231">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -1292,7 +1321,7 @@ Source</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classthermal__time__senescence.html">thermal_time_senescence</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:11:40 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

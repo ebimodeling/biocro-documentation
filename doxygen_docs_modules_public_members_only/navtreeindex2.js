@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"ed__multilayer__canopy__properties_8h.html":[3,0,1,0,50],
 "ed__multilayer__canopy__properties_8h_source.html":[3,0,1,0,50],
 "ed__nikolov__conductance_8h.html":[3,0,1,0,51],
 "ed__nikolov__conductance_8h.html#a0b37c5938e82da1fb19ed599f7c71217":[3,0,1,0,51,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "namespacese__module.html":[1,0,9],
 "namespacese__module.html#a0deba55fff452c66c7aeac0d592c61b1":[1,0,9,2],
 "namespacese__module.html#a14db4d8eca98af3ed59d063b1f888d75":[1,0,9,5],
-"namespacese__module.html#a1841055767c55dbf83156d85e2eef1eb":[1,0,9,1]
+"namespacese__module.html#a1841055767c55dbf83156d85e2eef1eb":[1,0,9,1],
+"namespacese__module.html#aa7895741221f38601ed2f62ceb8a8882":[1,0,9,6]
 };

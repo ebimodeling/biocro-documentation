@@ -74,6 +74,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">modules.h File Reference</div>  </div>
@@ -96,9 +97,10 @@ $(function() {
 <area shape="rect" title=" " alt="" coords="111,169,190,196"/>
 <area shape="rect" title=" " alt="" coords="214,169,261,196"/>
 <area shape="rect" href="state__map_8h.html" title=" " alt="" coords="285,169,379,196"/>
-<area shape="rect" title=" " alt="" coords="170,244,281,271"/>
-<area shape="rect" title=" " alt="" coords="305,244,359,271"/>
-<area shape="rect" title=" " alt="" coords="384,244,459,271"/>
+<area shape="rect" title=" " alt="" coords="151,244,262,271"/>
+<area shape="rect" title=" " alt="" coords="287,244,327,271"/>
+<area shape="rect" title=" " alt="" coords="351,244,406,271"/>
+<area shape="rect" title=" " alt="" coords="431,244,505,271"/>
 </map>
 </div>
 </div>
@@ -116,15 +118,41 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents a differential module.  <a href="classdifferential__module.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9c258484825f09ad4fcdf6aa7722757f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> = std::vector&lt; std::unique_ptr&lt; <a class="el" href="classmodule__base.html">module_base</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a9c258484825f09ad4fcdf6aa7722757f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>module_vector</code> serves as an alias for a type widely used to hold lists of modules.  <a href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">More...</a><br /></td></tr>
+<tr class="separator:a9c258484825f09ad4fcdf6aa7722757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac9be9629e5a42b6eec44936214d89040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_8h.html#ac9be9629e5a42b6eec44936214d89040">run_module_list</a> (std::vector&lt; std::unique_ptr&lt; <a class="el" href="classmodule__base.html">module_base</a> &gt;&gt; const &amp;modules)</td></tr>
-<tr class="memdesc:ac9be9629e5a42b6eec44936214d89040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs each module in the input list.  <a href="modules_8h.html#ac9be9629e5a42b6eec44936214d89040">More...</a><br /></td></tr>
-<tr class="separator:ac9be9629e5a42b6eec44936214d89040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a6947a0392ccf0dbc65e6691c2094b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modules_8h.html#aa9a6947a0392ccf0dbc65e6691c2094b">run_module_list</a> (<a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> const &amp;modules)</td></tr>
+<tr class="memdesc:aa9a6947a0392ccf0dbc65e6691c2094b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs each module in the input list.  <a href="modules_8h.html#aa9a6947a0392ccf0dbc65e6691c2094b">More...</a><br /></td></tr>
+<tr class="separator:aa9a6947a0392ccf0dbc65e6691c2094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a9c258484825f09ad4fcdf6aa7722757f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c258484825f09ad4fcdf6aa7722757f">&#9670;&nbsp;</a></span>module_vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> =  std::vector&lt;std::unique_ptr&lt;<a class="el" href="classmodule__base.html">module_base</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>module_vector</code> serves as an alias for a type widely used to hold lists of modules. </p>
+<p>Formally, it is a <code>std::vector</code> of <code>std::unique_ptr</code>s that point to <code><a class="el" href="classmodule__base.html" title="Represents one or more equations.">module_base</a></code> objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="modules_8h_source.html#l00157">157</a> of file <a class="el" href="modules_8h_source.html">modules.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac9be9629e5a42b6eec44936214d89040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9be9629e5a42b6eec44936214d89040">&#9670;&nbsp;</a></span>run_module_list()</h2>
+<a id="aa9a6947a0392ccf0dbc65e6691c2094b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a6947a0392ccf0dbc65e6691c2094b">&#9670;&nbsp;</a></span>run_module_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +160,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void run_module_list </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classmodule__base.html">module_base</a> &gt;&gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> const &amp;&#160;</td>
           <td class="paramname"><em>modules</em></td><td>)</td>
           <td></td>
         </tr>
@@ -155,8 +183,8 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="modules_8h_ac9be9629e5a42b6eec44936214d89040_icgraph.png" border="0" usemap="#amodules_8h_ac9be9629e5a42b6eec44936214d89040_icgraph" alt=""/></div>
-<map name="amodules_8h_ac9be9629e5a42b6eec44936214d89040_icgraph" id="amodules_8h_ac9be9629e5a42b6eec44936214d89040_icgraph">
+<div class="center"><img src="modules_8h_aa9a6947a0392ccf0dbc65e6691c2094b_icgraph.png" border="0" usemap="#amodules_8h_aa9a6947a0392ccf0dbc65e6691c2094b_icgraph" alt=""/></div>
+<map name="amodules_8h_aa9a6947a0392ccf0dbc65e6691c2094b_icgraph" id="amodules_8h_aa9a6947a0392ccf0dbc65e6691c2094b_icgraph">
 <area shape="rect" title="Runs each module in the input list." alt="" coords="661,64,775,91"/>
 <area shape="rect" href="classdynamical__system.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets all internally stored quantities back to their original values." alt="" coords="444,5,608,32"/>
 <area shape="rect" href="classdynamical__system.html#ab1942c1f4d1019fbf2babf75d3b093e4" title="Calculates a derivative from the internally stored quantity map by running all the differential modul..." alt="" coords="449,57,603,98"/>
@@ -171,7 +199,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 4 2022 21:11:00 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jan 4 2022 21:21:23 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

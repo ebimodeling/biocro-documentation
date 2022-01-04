@@ -105,38 +105,38 @@ $(document).ready(function(){initNavTree('c4__assimilation_8h_source.html',''); 
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classc4__assimilation.html#adc6d82ea8fdc264efdb6ea20f943738c">   59</a></span>&#160;    <a class="code" href="classc4__assimilation.html#adc6d82ea8fdc264efdb6ea20f943738c">c4_assimilation</a>(</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          direct_module(<span class="stringliteral">&quot;c4_assimilation&quot;</span>),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          Qp(get_input(input_quantities, <span class="stringliteral">&quot;Qp&quot;</span>)),</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          Tleaf(get_input(input_quantities, <span class="stringliteral">&quot;Tleaf&quot;</span>)),</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          rh(get_input(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)),</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          vmax(get_input(input_quantities, <span class="stringliteral">&quot;vmax&quot;</span>)),</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          alpha(get_input(input_quantities, <span class="stringliteral">&quot;alpha&quot;</span>)),</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          kparm(get_input(input_quantities, <span class="stringliteral">&quot;kparm&quot;</span>)),</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          theta(get_input(input_quantities, <span class="stringliteral">&quot;theta&quot;</span>)),</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          beta(get_input(input_quantities, <span class="stringliteral">&quot;beta&quot;</span>)),</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          Rd(get_input(input_quantities, <span class="stringliteral">&quot;Rd&quot;</span>)),</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          bb0(get_input(input_quantities, <span class="stringliteral">&quot;bb0&quot;</span>)),</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          bb1(get_input(input_quantities, <span class="stringliteral">&quot;bb1&quot;</span>)),</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          Gs_min(get_input(input_quantities, <span class="stringliteral">&quot;Gs_min&quot;</span>)),</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          StomataWS(get_input(input_quantities, <span class="stringliteral">&quot;StomataWS&quot;</span>)),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          Catm(get_input(input_quantities, <span class="stringliteral">&quot;Catm&quot;</span>)),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          atmospheric_pressure(get_input(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          water_stress_approach(get_input(input_quantities, <span class="stringliteral">&quot;water_stress_approach&quot;</span>)),</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          upperT(get_input(input_quantities, <span class="stringliteral">&quot;upperT&quot;</span>)),</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          lowerT(get_input(input_quantities, <span class="stringliteral">&quot;lowerT&quot;</span>)),</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          Assim_op(get_op(output_quantities, <span class="stringliteral">&quot;Assim&quot;</span>)),</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          Gs_op(get_op(output_quantities, <span class="stringliteral">&quot;Gs&quot;</span>)),</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          Ci_op(get_op(output_quantities, <span class="stringliteral">&quot;Ci&quot;</span>)),</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          GrossAssim_op(get_op(output_quantities, <span class="stringliteral">&quot;GrossAssim&quot;</span>))</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc4__assimilation.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc4__assimilation.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        : direct_module(),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          Qp(get_input(input_quantities, <span class="stringliteral">&quot;Qp&quot;</span>)),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          Tleaf(get_input(input_quantities, <span class="stringliteral">&quot;Tleaf&quot;</span>)),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          rh(get_input(input_quantities, <span class="stringliteral">&quot;rh&quot;</span>)),</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          vmax(get_input(input_quantities, <span class="stringliteral">&quot;vmax&quot;</span>)),</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          alpha(get_input(input_quantities, <span class="stringliteral">&quot;alpha&quot;</span>)),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          kparm(get_input(input_quantities, <span class="stringliteral">&quot;kparm&quot;</span>)),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          theta(get_input(input_quantities, <span class="stringliteral">&quot;theta&quot;</span>)),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          beta(get_input(input_quantities, <span class="stringliteral">&quot;beta&quot;</span>)),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          Rd(get_input(input_quantities, <span class="stringliteral">&quot;Rd&quot;</span>)),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          bb0(get_input(input_quantities, <span class="stringliteral">&quot;bb0&quot;</span>)),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          bb1(get_input(input_quantities, <span class="stringliteral">&quot;bb1&quot;</span>)),</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          Gs_min(get_input(input_quantities, <span class="stringliteral">&quot;Gs_min&quot;</span>)),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          StomataWS(get_input(input_quantities, <span class="stringliteral">&quot;StomataWS&quot;</span>)),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          Catm(get_input(input_quantities, <span class="stringliteral">&quot;Catm&quot;</span>)),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          atmospheric_pressure(get_input(input_quantities, <span class="stringliteral">&quot;atmospheric_pressure&quot;</span>)),</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          water_stress_approach(get_input(input_quantities, <span class="stringliteral">&quot;water_stress_approach&quot;</span>)),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          upperT(get_input(input_quantities, <span class="stringliteral">&quot;upperT&quot;</span>)),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          lowerT(get_input(input_quantities, <span class="stringliteral">&quot;lowerT&quot;</span>)),</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          Assim_op(get_op(output_quantities, <span class="stringliteral">&quot;Assim&quot;</span>)),</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          Gs_op(get_op(output_quantities, <span class="stringliteral">&quot;Gs&quot;</span>)),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          Ci_op(get_op(output_quantities, <span class="stringliteral">&quot;Ci&quot;</span>)),</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          GrossAssim_op(get_op(output_quantities, <span class="stringliteral">&quot;GrossAssim&quot;</span>))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc4__assimilation.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classc4__assimilation.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classc4__assimilation.html#ad0866265cb5b92692af7be0ef011f355">   93</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classc4__assimilation.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;c4_assimilation&quot;</span>; }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// References to input quantities</span></div>
@@ -238,6 +238,7 @@ $(document).ready(function(){initNavTree('c4__assimilation_8h_source.html',''); 
 <div class="ttc" id="aclassc4__assimilation_html"><div class="ttname"><a href="classc4__assimilation.html">c4_assimilation</a></div><div class="ttdoc">Calculates net assimilation, stomatal conductance, and intercellular CO2 concentration for a C4 leaf ...</div><div class="ttdef"><b>Definition:</b> <a href="c4__assimilation_8h_source.html#l00056">c4_assimilation.h:57</a></div></div>
 <div class="ttc" id="aclassc4__assimilation_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classc4__assimilation.html#a7eff545285286763183243b1d473e6df">c4_assimilation::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="c4__assimilation_8h_source.html#l00150">c4_assimilation.h:150</a></div></div>
 <div class="ttc" id="aclassc4__assimilation_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classc4__assimilation.html#abc6bcae9586eb99fffb12a684814a4e6">c4_assimilation::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="c4__assimilation_8h_source.html#l00126">c4_assimilation.h:126</a></div></div>
+<div class="ttc" id="aclassc4__assimilation_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classc4__assimilation.html#ad0866265cb5b92692af7be0ef011f355">c4_assimilation::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="c4__assimilation_8h_source.html#l00093">c4_assimilation.h:93</a></div></div>
 <div class="ttc" id="aclassc4__assimilation_html_adc6d82ea8fdc264efdb6ea20f943738c"><div class="ttname"><a href="classc4__assimilation.html#adc6d82ea8fdc264efdb6ea20f943738c">c4_assimilation::c4_assimilation</a></div><div class="ttdeci">c4_assimilation(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="c4__assimilation_8h_source.html#l00059">c4_assimilation.h:59</a></div></div>
 <div class="ttc" id="astructc4__str_html"><div class="ttname"><a href="structc4__str.html">c4_str</a></div><div class="ttdef"><b>Definition:</b> <a href="c4photo_8h_source.html#l00008">c4photo.h:8</a></div></div>
 <div class="ttc" id="astructc4__str_html_a7adeee8f55ac1ffe5e9c226823ae4251"><div class="ttname"><a href="structc4__str.html#a7adeee8f55ac1ffe5e9c226823ae4251">c4_str::Assim</a></div><div class="ttdeci">double Assim</div><div class="ttdef"><b>Definition:</b> <a href="c4photo_8h_source.html#l00009">c4photo.h:9</a></div></div>
@@ -250,7 +251,7 @@ $(document).ready(function(){initNavTree('c4__assimilation_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="c4__assimilation_8h.html">c4_assimilation.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:41 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

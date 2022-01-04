@@ -33,7 +33,6 @@ var annotated_dup =
     [ "ed_c4_leaf_photosynthesis4", "classed__c4__leaf__photosynthesis4.html", "classed__c4__leaf__photosynthesis4" ],
     [ "ed_c4photo", "classed__c4photo.html", "classed__c4photo" ],
     [ "ed_canac_leaf", "classed__canac__leaf.html", "classed__canac__leaf" ],
-    [ "ed_collatz_assimilation", "classed__collatz__assimilation.html", null ],
     [ "ed_collatz_c4_assimilation", "classed__collatz__c4__assimilation.html", "classed__collatz__c4__assimilation" ],
     [ "ed_evapotrans2", "classed__evapotrans2.html", "classed__evapotrans2" ],
     [ "ed_gas_concentrations", "classed__gas__concentrations.html", "classed__gas__concentrations" ],

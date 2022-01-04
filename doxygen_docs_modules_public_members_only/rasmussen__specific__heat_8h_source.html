@@ -109,19 +109,19 @@ $(document).ready(function(){initNavTree('rasmussen__specific__heat_8h_source.ht
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classrasmussen__specific__heat.html#a7ff4bf0e02166b611ca72482cfa08be7">   43</a></span>&#160;    <a class="code" href="classrasmussen__specific__heat.html#a7ff4bf0e02166b611ca72482cfa08be7">rasmussen_specific_heat</a>(</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          direct_module(<span class="stringliteral">&quot;rasmussen_specific_heat&quot;</span>),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          temp{get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)},</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;          mole_fraction_h2o_atmosphere{get_input(input_quantities, <span class="stringliteral">&quot;mole_fraction_h2o_atmosphere&quot;</span>)},</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          specific_heat_of_air_op{get_op(output_quantities, <span class="stringliteral">&quot;specific_heat_of_air&quot;</span>)}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrasmussen__specific__heat.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrasmussen__specific__heat.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        : direct_module(),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;          temp{get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)},</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;          mole_fraction_h2o_atmosphere{get_input(input_quantities, <span class="stringliteral">&quot;mole_fraction_h2o_atmosphere&quot;</span>)},</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          specific_heat_of_air_op{get_op(output_quantities, <span class="stringliteral">&quot;specific_heat_of_air&quot;</span>)}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrasmussen__specific__heat.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classrasmussen__specific__heat.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classrasmussen__specific__heat.html#ad0866265cb5b92692af7be0ef011f355">   58</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classrasmussen__specific__heat.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;rasmussen_specific_heat&quot;</span>; }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// References to input quantities</span></div>
@@ -140,6 +140,7 @@ $(document).ready(function(){initNavTree('rasmussen__specific__heat_8h_source.ht
 <div class="ttc" id="aclassrasmussen__specific__heat_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classrasmussen__specific__heat.html#a7eff545285286763183243b1d473e6df">rasmussen_specific_heat::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="rasmussen__specific__heat_8cpp_source.html#l00057">rasmussen_specific_heat.cpp:57</a></div></div>
 <div class="ttc" id="aclassrasmussen__specific__heat_html_a7ff4bf0e02166b611ca72482cfa08be7"><div class="ttname"><a href="classrasmussen__specific__heat.html#a7ff4bf0e02166b611ca72482cfa08be7">rasmussen_specific_heat::rasmussen_specific_heat</a></div><div class="ttdeci">rasmussen_specific_heat(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="rasmussen__specific__heat_8h_source.html#l00043">rasmussen_specific_heat.h:43</a></div></div>
 <div class="ttc" id="aclassrasmussen__specific__heat_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classrasmussen__specific__heat.html#abc6bcae9586eb99fffb12a684814a4e6">rasmussen_specific_heat::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="rasmussen__specific__heat_8cpp_source.html#l00049">rasmussen_specific_heat.cpp:49</a></div></div>
+<div class="ttc" id="aclassrasmussen__specific__heat_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classrasmussen__specific__heat.html#ad0866265cb5b92692af7be0ef011f355">rasmussen_specific_heat::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="rasmussen__specific__heat_8h_source.html#l00058">rasmussen_specific_heat.h:58</a></div></div>
 <div class="ttc" id="arasmussen__specific__heat_8h_html_a71de72e7e3fc0a4a60ce1e9b3e9baee4"><div class="ttname"><a href="rasmussen__specific__heat_8h.html#a71de72e7e3fc0a4a60ce1e9b3e9baee4">rasmussen_specific_heat_of_air</a></div><div class="ttdeci">double rasmussen_specific_heat_of_air(double air_temperature, double mole_fraction_h2o)</div><div class="ttdoc">Calculates the specific heat capacity of air at contant pressure from its temperature and moisture co...</div><div class="ttdef"><b>Definition:</b> <a href="rasmussen__specific__heat_8cpp_source.html#l00007">rasmussen_specific_heat.cpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +148,7 @@ $(document).ready(function(){initNavTree('rasmussen__specific__heat_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="rasmussen__specific__heat_8h.html">rasmussen_specific_heat.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

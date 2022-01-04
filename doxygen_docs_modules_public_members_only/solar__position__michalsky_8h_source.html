@@ -106,34 +106,34 @@ $(document).ready(function(){initNavTree('solar__position__michalsky_8h_source.h
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classsolar__position__michalsky.html#a1dc91942098d3d4eee213ca5497a702f">   95</a></span>&#160;    <a class="code" href="classsolar__position__michalsky.html#a1dc91942098d3d4eee213ca5497a702f">solar_position_michalsky</a>(</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;          direct_module(<span class="stringliteral">&quot;solar_position_michalsky&quot;</span>),</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          lat(get_input(input_quantities, <span class="stringliteral">&quot;lat&quot;</span>)),</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          longitude(get_input(input_quantities, <span class="stringliteral">&quot;longitude&quot;</span>)),</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          time(get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)),</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          time_zone_offset(get_input(input_quantities, <span class="stringliteral">&quot;time_zone_offset&quot;</span>)),</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;          year(get_input(input_quantities, <span class="stringliteral">&quot;year&quot;</span>)),</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          cosine_zenith_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;cosine_zenith_angle&quot;</span>)),</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          julian_date_op(get_op(output_quantities, <span class="stringliteral">&quot;julian_date&quot;</span>)),</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          solar_L_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_L&quot;</span>)),</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          solar_g_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_g&quot;</span>)),</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          solar_ell_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ell&quot;</span>)),</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          solar_ep_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ep&quot;</span>)),</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          solar_ra_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ra&quot;</span>)),</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          solar_dec_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_dec&quot;</span>)),</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          gmst_op(get_op(output_quantities, <span class="stringliteral">&quot;gmst&quot;</span>)),</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          lmst_op(get_op(output_quantities, <span class="stringliteral">&quot;lmst&quot;</span>)),</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          lha_op(get_op(output_quantities, <span class="stringliteral">&quot;lha&quot;</span>)),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          solar_zenith_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_zenith_angle&quot;</span>)),</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          solar_azimuth_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_azimuth_angle&quot;</span>))</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classsolar__position__michalsky.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classsolar__position__michalsky.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        : direct_module(),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;          lat(get_input(input_quantities, <span class="stringliteral">&quot;lat&quot;</span>)),</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          longitude(get_input(input_quantities, <span class="stringliteral">&quot;longitude&quot;</span>)),</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          time(get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          time_zone_offset(get_input(input_quantities, <span class="stringliteral">&quot;time_zone_offset&quot;</span>)),</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          year(get_input(input_quantities, <span class="stringliteral">&quot;year&quot;</span>)),</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          cosine_zenith_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;cosine_zenith_angle&quot;</span>)),</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          julian_date_op(get_op(output_quantities, <span class="stringliteral">&quot;julian_date&quot;</span>)),</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          solar_L_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_L&quot;</span>)),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          solar_g_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_g&quot;</span>)),</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;          solar_ell_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ell&quot;</span>)),</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;          solar_ep_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ep&quot;</span>)),</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          solar_ra_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_ra&quot;</span>)),</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;          solar_dec_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_dec&quot;</span>)),</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          gmst_op(get_op(output_quantities, <span class="stringliteral">&quot;gmst&quot;</span>)),</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          lmst_op(get_op(output_quantities, <span class="stringliteral">&quot;lmst&quot;</span>)),</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          lha_op(get_op(output_quantities, <span class="stringliteral">&quot;lha&quot;</span>)),</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          solar_zenith_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_zenith_angle&quot;</span>)),</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          solar_azimuth_angle_op(get_op(output_quantities, <span class="stringliteral">&quot;solar_azimuth_angle&quot;</span>))</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classsolar__position__michalsky.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classsolar__position__michalsky.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classsolar__position__michalsky.html#ad0866265cb5b92692af7be0ef011f355">  125</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classsolar__position__michalsky.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;solar_position_michalsky&quot;</span>; }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// References to input quantities</span></div>
@@ -272,13 +272,14 @@ $(document).ready(function(){initNavTree('solar__position__michalsky_8h_source.h
 <div class="ttc" id="aclasssolar__position__michalsky_html_a1dc91942098d3d4eee213ca5497a702f"><div class="ttname"><a href="classsolar__position__michalsky.html#a1dc91942098d3d4eee213ca5497a702f">solar_position_michalsky::solar_position_michalsky</a></div><div class="ttdeci">solar_position_michalsky(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="solar__position__michalsky_8h_source.html#l00095">solar_position_michalsky.h:95</a></div></div>
 <div class="ttc" id="aclasssolar__position__michalsky_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classsolar__position__michalsky.html#a7eff545285286763183243b1d473e6df">solar_position_michalsky::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="solar__position__michalsky_8h_source.html#l00165">solar_position_michalsky.h:165</a></div></div>
 <div class="ttc" id="aclasssolar__position__michalsky_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classsolar__position__michalsky.html#abc6bcae9586eb99fffb12a684814a4e6">solar_position_michalsky::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="solar__position__michalsky_8h_source.html#l00154">solar_position_michalsky.h:154</a></div></div>
+<div class="ttc" id="aclasssolar__position__michalsky_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classsolar__position__michalsky.html#ad0866265cb5b92692af7be0ef011f355">solar_position_michalsky::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="solar__position__michalsky_8h_source.html#l00125">solar_position_michalsky.h:125</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="solar__position__michalsky_8h.html">solar_position_michalsky.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

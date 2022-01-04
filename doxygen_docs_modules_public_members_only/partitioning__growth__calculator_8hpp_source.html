@@ -105,31 +105,31 @@ $(document).ready(function(){initNavTree('partitioning__growth__calculator_8hpp_
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classpartitioning__growth__calculator.html#a0a3ff644c7d5d6de1cfc9480efc06f10">   66</a></span>&#160;    <a class="code" href="classpartitioning__growth__calculator.html#a0a3ff644c7d5d6de1cfc9480efc06f10">partitioning_growth_calculator</a>(</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          direct_module(<span class="stringliteral">&quot;partitioning_growth_calculator&quot;</span>),</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          kLeaf{get_input(input_quantities, <span class="stringliteral">&quot;kLeaf&quot;</span>)},</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          kStem{get_input(input_quantities, <span class="stringliteral">&quot;kStem&quot;</span>)},</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          kRoot{get_input(input_quantities, <span class="stringliteral">&quot;kRoot&quot;</span>)},</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          kRhizome{get_input(input_quantities, <span class="stringliteral">&quot;kRhizome&quot;</span>)},</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          kGrain{get_input(input_quantities, <span class="stringliteral">&quot;kGrain&quot;</span>)},</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          canopy_assimilation_rate{get_input(input_quantities, <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>)},</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          LeafWS{get_input(input_quantities, <span class="stringliteral">&quot;LeafWS&quot;</span>)},</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          mrc1{get_input(input_quantities, <span class="stringliteral">&quot;mrc1&quot;</span>)},</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          mrc2{get_input(input_quantities, <span class="stringliteral">&quot;mrc2&quot;</span>)},</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          temp{get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)},</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          net_assimilation_rate_leaf_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_leaf&quot;</span>)},</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          net_assimilation_rate_stem_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_stem&quot;</span>)},</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          net_assimilation_rate_root_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_root&quot;</span>)},</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          net_assimilation_rate_rhizome_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_rhizome&quot;</span>)},</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          net_assimilation_rate_grain_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_grain&quot;</span>)}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classpartitioning__growth__calculator.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classpartitioning__growth__calculator.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : direct_module(),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          kLeaf{get_input(input_quantities, <span class="stringliteral">&quot;kLeaf&quot;</span>)},</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          kStem{get_input(input_quantities, <span class="stringliteral">&quot;kStem&quot;</span>)},</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;          kRoot{get_input(input_quantities, <span class="stringliteral">&quot;kRoot&quot;</span>)},</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          kRhizome{get_input(input_quantities, <span class="stringliteral">&quot;kRhizome&quot;</span>)},</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          kGrain{get_input(input_quantities, <span class="stringliteral">&quot;kGrain&quot;</span>)},</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;          canopy_assimilation_rate{get_input(input_quantities, <span class="stringliteral">&quot;canopy_assimilation_rate&quot;</span>)},</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          LeafWS{get_input(input_quantities, <span class="stringliteral">&quot;LeafWS&quot;</span>)},</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          mrc1{get_input(input_quantities, <span class="stringliteral">&quot;mrc1&quot;</span>)},</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          mrc2{get_input(input_quantities, <span class="stringliteral">&quot;mrc2&quot;</span>)},</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;          temp{get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)},</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          net_assimilation_rate_leaf_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_leaf&quot;</span>)},</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          net_assimilation_rate_stem_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_stem&quot;</span>)},</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          net_assimilation_rate_root_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_root&quot;</span>)},</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          net_assimilation_rate_rhizome_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_rhizome&quot;</span>)},</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          net_assimilation_rate_grain_op{get_op(output_quantities, <span class="stringliteral">&quot;net_assimilation_rate_grain&quot;</span>)}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classpartitioning__growth__calculator.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classpartitioning__growth__calculator.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classpartitioning__growth__calculator.html#ad0866265cb5b92692af7be0ef011f355">   93</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classpartitioning__growth__calculator.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;partitioning_growth_calculator&quot;</span>; }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Pointers to input quantities</span></div>
@@ -244,13 +244,14 @@ $(document).ready(function(){initNavTree('partitioning__growth__calculator_8hpp_
 <div class="ttc" id="aclasspartitioning__growth__calculator_html_a0a3ff644c7d5d6de1cfc9480efc06f10"><div class="ttname"><a href="classpartitioning__growth__calculator.html#a0a3ff644c7d5d6de1cfc9480efc06f10">partitioning_growth_calculator::partitioning_growth_calculator</a></div><div class="ttdeci">partitioning_growth_calculator(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="partitioning__growth__calculator_8hpp_source.html#l00066">partitioning_growth_calculator.hpp:66</a></div></div>
 <div class="ttc" id="aclasspartitioning__growth__calculator_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classpartitioning__growth__calculator.html#a7eff545285286763183243b1d473e6df">partitioning_growth_calculator::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="partitioning__growth__calculator_8hpp_source.html#l00135">partitioning_growth_calculator.hpp:135</a></div></div>
 <div class="ttc" id="aclasspartitioning__growth__calculator_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classpartitioning__growth__calculator.html#abc6bcae9586eb99fffb12a684814a4e6">partitioning_growth_calculator::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="partitioning__growth__calculator_8hpp_source.html#l00119">partitioning_growth_calculator.hpp:119</a></div></div>
+<div class="ttc" id="aclasspartitioning__growth__calculator_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classpartitioning__growth__calculator.html#ad0866265cb5b92692af7be0ef011f355">partitioning_growth_calculator::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="partitioning__growth__calculator_8hpp_source.html#l00093">partitioning_growth_calculator.hpp:93</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="partitioning__growth__calculator_8hpp.html">partitioning_growth_calculator.hpp</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

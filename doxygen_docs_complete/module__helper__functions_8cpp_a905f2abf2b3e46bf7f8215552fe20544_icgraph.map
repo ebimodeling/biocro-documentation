@@ -1,7 +1,7 @@
 <map id="add_class_prefix_to_quantity_name" name="add_class_prefix_to_quantity_name">
 <area shape="rect" id="node1" title="Adds a class name prefix to the quantity name indicating it was calculated for a certain leaf class,..." alt="" coords="780,472,916,513"/>
 <area shape="rect" id="node2" href="$module__helper__functions_8cpp.html#a56f535cdb2c1ac3d809e2808fc588bc4" title="Adds class name prefixes to each quantity name indicating that it was calculated for a certain class...." alt="" coords="550,439,689,480"/>
-<area shape="rect" id="node17" href="$classmultilayer__canopy__photosynthesis.html#a6ef6f51bf0482716a1a9350eb49bcf07" title="Constructor for a multilayer canopy photosynthesis module, which initializes the leaf module and prep..." alt="" coords="507,504,732,545"/>
+<area shape="rect" id="node17" href="$classmultilayer__canopy__photosynthesis.html#a23a7179b59f988ac0bc630396ec83843" title="Constructor for a multilayer canopy photosynthesis module, which initializes the leaf module and prep..." alt="" coords="507,504,732,545"/>
 <area shape="rect" id="node3" href="$classmultilayer__canopy__photosynthesis.html#aa0b1d95207b7c923ac0a8fb2a2cde5f7" title=" " alt="" coords="240,136,459,177"/>
 <area shape="rect" id="node8" href="$classmultilayer__canopy__photosynthesis.html#a9f3c2d2463e9d1ca95240b6ed558321b" title=" " alt="" coords="240,397,459,439"/>
 <area shape="rect" id="node13" href="$classed__multilayer__canopy__properties.html#adb75b1d09c411e2974bce071703efbce" title="Define all output names by appending leaf class prefixes and layer number suffixes...." alt="" coords="269,480,429,521"/>

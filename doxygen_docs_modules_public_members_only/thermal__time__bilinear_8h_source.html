@@ -104,23 +104,23 @@ $(document).ready(function(){initNavTree('thermal__time__bilinear_8h_source.html
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classthermal__time__bilinear.html#a6671629def61184a864e000a294c381b">   81</a></span>&#160;    <a class="code" href="classthermal__time__bilinear.html#a6671629def61184a864e000a294c381b">thermal_time_bilinear</a>(</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        :  <span class="comment">// Define basic module properties by passing its name to its parent class</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          differential_module(<span class="stringliteral">&quot;thermal_time_bilinear&quot;</span>),</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          time{get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)},</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          sowing_time{get_input(input_quantities, <span class="stringliteral">&quot;sowing_time&quot;</span>)},</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          temp(get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          tbase(get_input(input_quantities, <span class="stringliteral">&quot;tbase&quot;</span>)),</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          topt(get_input(input_quantities, <span class="stringliteral">&quot;topt&quot;</span>)),</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          tmax(get_input(input_quantities, <span class="stringliteral">&quot;tmax&quot;</span>)),</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;          TTc_op(get_op(output_quantities, <span class="stringliteral">&quot;TTc&quot;</span>))</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classthermal__time__bilinear.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classthermal__time__bilinear.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        : differential_module(),</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <span class="comment">// Get references to input quantities</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          time{get_input(input_quantities, <span class="stringliteral">&quot;time&quot;</span>)},</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;          sowing_time{get_input(input_quantities, <span class="stringliteral">&quot;sowing_time&quot;</span>)},</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;          temp(get_input(input_quantities, <span class="stringliteral">&quot;temp&quot;</span>)),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;          tbase(get_input(input_quantities, <span class="stringliteral">&quot;tbase&quot;</span>)),</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;          topt(get_input(input_quantities, <span class="stringliteral">&quot;topt&quot;</span>)),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          tmax(get_input(input_quantities, <span class="stringliteral">&quot;tmax&quot;</span>)),</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          TTc_op(get_op(output_quantities, <span class="stringliteral">&quot;TTc&quot;</span>))</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classthermal__time__bilinear.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classthermal__time__bilinear.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classthermal__time__bilinear.html#ad0866265cb5b92692af7be0ef011f355">  100</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classthermal__time__bilinear.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;thermal_time_bilinear&quot;</span>; }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;   <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// References to input quantities</span></div>
@@ -178,13 +178,14 @@ $(document).ready(function(){initNavTree('thermal__time__bilinear_8h_source.html
 <div class="ttc" id="aclassthermal__time__bilinear_html_a6671629def61184a864e000a294c381b"><div class="ttname"><a href="classthermal__time__bilinear.html#a6671629def61184a864e000a294c381b">thermal_time_bilinear::thermal_time_bilinear</a></div><div class="ttdeci">thermal_time_bilinear(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="thermal__time__bilinear_8h_source.html#l00081">thermal_time_bilinear.h:81</a></div></div>
 <div class="ttc" id="aclassthermal__time__bilinear_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classthermal__time__bilinear.html#a7eff545285286763183243b1d473e6df">thermal_time_bilinear::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="thermal__time__bilinear_8h_source.html#l00130">thermal_time_bilinear.h:130</a></div></div>
 <div class="ttc" id="aclassthermal__time__bilinear_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classthermal__time__bilinear.html#abc6bcae9586eb99fffb12a684814a4e6">thermal_time_bilinear::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="thermal__time__bilinear_8h_source.html#l00118">thermal_time_bilinear.h:118</a></div></div>
+<div class="ttc" id="aclassthermal__time__bilinear_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classthermal__time__bilinear.html#ad0866265cb5b92692af7be0ef011f355">thermal_time_bilinear::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="thermal__time__bilinear_8h_source.html#l00100">thermal_time_bilinear.h:100</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="thermal__time__bilinear_8h.html">thermal_time_bilinear.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

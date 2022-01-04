@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classed__collatz__c4__assimilation.htm
 </div><!--header-->
 <div class="contents">
 
+<p>Uses the equations from Collatz et. al (1992) to calculate the CO2 assimilation rate. Currently only intended for use by Ed.  
+ <a href="classed__collatz__c4__assimilation.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ed_collatz_c4_assimilation:</div>
@@ -105,7 +108,7 @@ $(document).ready(function(){initNavTree('classed__collatz__c4__assimilation.htm
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__collatz__c4__assimilation__inherit__graph.png" border="0" usemap="#aed__collatz__c4__assimilation_inherit__map" alt="Inheritance graph"/></div>
 <map name="aed__collatz__c4__assimilation_inherit__map" id="aed__collatz__c4__assimilation_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,183,107"/>
+<area shape="rect" title="Uses the equations from Collatz et. al (1992) to calculate the CO2 assimilation rate...." alt="" coords="5,80,183,107"/>
 <area shape="rect" title=" " alt="" coords="43,5,145,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -116,7 +119,7 @@ $(document).ready(function(){initNavTree('classed__collatz__c4__assimilation.htm
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classed__collatz__c4__assimilation__coll__graph.png" border="0" usemap="#aed__collatz__c4__assimilation_coll__map" alt="Collaboration graph"/></div>
 <map name="aed__collatz__c4__assimilation_coll__map" id="aed__collatz__c4__assimilation_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,183,107"/>
+<area shape="rect" title="Uses the equations from Collatz et. al (1992) to calculate the CO2 assimilation rate...." alt="" coords="5,80,183,107"/>
 <area shape="rect" title=" " alt="" coords="43,5,145,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -132,9 +135,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__collatz__c4__assimilation.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
 <tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0866265cb5b92692af7be0ef011f355"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__collatz__c4__assimilation.html#ad0866265cb5b92692af7be0ef011f355">get_name</a> ()</td></tr>
+<tr class="separator:ad0866265cb5b92692af7be0ef011f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
+<div class="textblock"><p>Uses the equations from Collatz et. al (1992) to calculate the CO2 assimilation rate. Currently only intended for use by Ed. </p>
+<p>First, reaction rates are modified from their values at 25 deg. C according to the leaf temperature.</p>
+<p>Then, three different CO2 assimilation rates are calculated, corresponding to conditions limited by rubisco, light, and CO2.</p>
+<p>Finally, an overall gross assimilation rate is calculated based on these three limits, and net assimilation is found by subtracting leaf respiration. </p>
+
 <p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00026">26</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abdcfbbfeda9ffdb9a82447c71e040d66"></a>
@@ -199,7 +208,34 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00093">93</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00097">97</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0866265cb5b92692af7be0ef011f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0866265cb5b92692af7be0ef011f355">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00064">64</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +262,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00112">112</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__collatz__c4__assimilation_8h_source.html#l00116">116</a> of file <a class="el" href="ed__collatz__c4__assimilation_8h_source.html">ed_collatz_c4_assimilation.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +275,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__collatz__c4__assimilation.html">ed_collatz_c4_assimilation</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

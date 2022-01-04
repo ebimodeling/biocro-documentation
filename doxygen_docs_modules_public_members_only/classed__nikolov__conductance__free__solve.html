@@ -142,12 +142,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:abc6bcae9586eb99fffb12a684814a4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eff545285286763183243b1d473e6df"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__nikolov__conductance__free__solve.html#a7eff545285286763183243b1d473e6df">get_outputs</a> ()</td></tr>
 <tr class="separator:a7eff545285286763183243b1d473e6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0866265cb5b92692af7be0ef011f355"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classed__nikolov__conductance__free__solve.html#ad0866265cb5b92692af7be0ef011f355">get_name</a> ()</td></tr>
+<tr class="separator:ad0866265cb5b92692af7be0ef011f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Calculates free boundary layer conductance for water according to the model in Nikolov et al. Ecological Modelling 80, 205–235 (1995). Note that this module has <code>conductance_boundary_h2o_free</code> as both an input and an output. Therefore, it can be used by a simultanous_equations object but not a dynamical_system object. Currently only intended for use by Ed. </p>
 <p>See the "ed_nikolov_conductance_forced" module for a discussion of conductance units and assumptions about temperature. </p>
 
-<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00324">324</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00332">332</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac1aa39fc9a3200d75918f1942943a9ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1aa39fc9a3200d75918f1942943a9ae">&#9670;&nbsp;</a></span>ed_nikolov_conductance_free_solve()</h2>
@@ -183,7 +185,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00327">327</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00335">335</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
 
 </div>
 </div>
@@ -211,9 +213,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00353">353</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00362">362</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
 
-<p class="reference">References <a class="el" href="se__module_8h_source.html#l00046">se_module::get_se_inputs()</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00293">ed_nikolov_conductance_free_solve_stuff::sub_module_names</a>.</p>
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00046">se_module::get_se_inputs()</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00301">ed_nikolov_conductance_free_solve_stuff::sub_module_names</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -225,6 +227,35 @@ Static Public Member Functions</h2></td></tr>
 <area shape="rect" href="namespacese__module.html#ac45cfb67d1645c39d30cc97b706aba27" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="136,5,308,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ad0866265cb5b92692af7be0ef011f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0866265cb5b92692af7be0ef011f355">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00354">354</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
+
+<p class="reference">References <a class="el" href="ed__nikolov__conductance_8h_source.html#l00299">ed_nikolov_conductance_free_solve_stuff::module_name</a>.</p>
 
 </div>
 </div>
@@ -251,9 +282,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00358">358</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ed__nikolov__conductance_8h_source.html#l00367">367</a> of file <a class="el" href="ed__nikolov__conductance_8h_source.html">ed_nikolov_conductance.h</a>.</p>
 
-<p class="reference">References <a class="el" href="se__module_8h_source.html#l00020">se_module::get_ncalls_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00029">se_module::get_nsteps_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00064">se_module::get_se_outputs()</a>, <a class="el" href="se__module_8h_source.html#l00038">se_module::get_success_output_name()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00291">ed_nikolov_conductance_free_solve_stuff::module_name</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00293">ed_nikolov_conductance_free_solve_stuff::sub_module_names</a>.</p>
+<p class="reference">References <a class="el" href="se__module_8h_source.html#l00020">se_module::get_ncalls_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00029">se_module::get_nsteps_output_name()</a>, <a class="el" href="se__module_8h_source.html#l00064">se_module::get_se_outputs()</a>, <a class="el" href="se__module_8h_source.html#l00038">se_module::get_success_output_name()</a>, <a class="el" href="ed__nikolov__conductance_8h_source.html#l00299">ed_nikolov_conductance_free_solve_stuff::module_name</a>, and <a class="el" href="ed__nikolov__conductance_8h_source.html#l00301">ed_nikolov_conductance_free_solve_stuff::sub_module_names</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -280,7 +311,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classed__nikolov__conductance__free__solve.html">ed_nikolov_conductance_free_solve</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:03 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

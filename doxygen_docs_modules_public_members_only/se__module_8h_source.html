@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('se__module_8h_source.html',''); initRe
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span>                              <span class="comment">// for direct_module, update</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../validate_dynamical_system.h&quot;</span>            <span class="comment">// for find_strictly_required_inputs, all_are_in_list</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../simultaneous_equations.h&quot;</span>               <span class="comment">// for get_unknown_quantities</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span>                            <span class="comment">// for state_map, string_vector</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span>                            <span class="comment">// for state_map, string_vector, string_set</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../se_solver_helper_functions.h&quot;</span>           <span class="comment">// for f_scalar_from_f_vec</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../se_solver_library/se_solver_factory.h&quot;</span>  <span class="comment">// for se_solver_factory::create</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span>                                       <span class="comment">// for map</span></div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('se__module_8h_source.html',''); initRe
 <div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classse__module_1_1base.html">  141</a></span>&#160;<span class="keyword">class </span><a class="code" href="classse__module_1_1base.html">base</a> : <span class="keyword">public</span> direct_module</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">  144</a></span>&#160;    <a class="code" href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">base</a>(std::string <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">  144</a></span>&#160;    <a class="code" href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">base</a>(std::string module_name,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;         string_vector <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>,</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;         std::string solver_name,</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;         <span class="keywordtype">int</span> <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a81319b8e9e14a29c9f32788eadfe6439">max_iterations</a>,</div>
@@ -213,110 +213,112 @@ $(document).ready(function(){initNavTree('se__module_8h_source.html',''); initRe
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;         <span class="keywordtype">bool</span> return_default_on_failure,</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;         state_map <span class="keyword">const</span>&amp; input_quantities,</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;         state_map* output_quantities)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        : direct_module(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>),</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          se(<a class="code" href="namespacese__module.html#aa7895741221f38601ed2f62ceb8a8882">make_se</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>)),</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          solver(se_solver_factory::create(solver_name, <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a81319b8e9e14a29c9f32788eadfe6439">max_iterations</a>)),</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          lower_bounds(lower_bounds),</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          upper_bounds(upper_bounds),</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          absolute_error_tolerances(absolute_error_tolerances),</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          relative_error_tolerances(relative_error_tolerances),</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          should_reorder_guesses(should_reorder_guesses),</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          return_default_on_failure(return_default_on_failure),</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          input_ptrs(get_ip(input_quantities, <a class="code" href="namespacese__module.html#ac45cfb67d1645c39d30cc97b706aba27">get_se_inputs</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>))),</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          output_ptrs(get_op(output_quantities, <a class="code" href="namespacese__module.html#af2174a94990bf851cacb36d66fde90c0">get_se_outputs</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>))),</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          ncalls_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a1841055767c55dbf83156d85e2eef1eb">get_ncalls_output_name</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>))),</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          nsteps_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a0deba55fff452c66c7aeac0d592c61b1">get_nsteps_output_name</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>))),</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          success_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a14db4d8eca98af3ed59d063b1f888d75">get_success_output_name</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>)))</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="comment">// Initialize vectors to the correct size</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        outputs_from_modules.resize(output_ptrs.size());</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">~base</a>() = 0;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">// Stuff for solving the simultaneous equations</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::unique_ptr&lt;simultaneous_equations&gt; se;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::unique_ptr&lt;se_solver&gt; solver;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> lower_bounds;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> upper_bounds;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> absolute_error_tolerances;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> relative_error_tolerances;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span> should_reorder_guesses;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    std::vector&lt;double&gt; <span class="keyword">mutable</span> best_guess;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    std::vector&lt;double&gt; <span class="keyword">mutable</span> outputs_from_modules;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span> return_default_on_failure;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> get_default(std::vector&lt;double&gt;&amp; <span class="comment">/*guess_vec*/</span>)<span class="keyword"> const </span>{}</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Pointers to input quantities</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    std::vector&lt;const double*&gt; input_ptrs;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    std::vector&lt;double*&gt; output_ptrs;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">double</span>* ncalls_op;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">double</span>* nsteps_op;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">double</span>* success_op;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// Main operation</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;std::vector&lt;double&gt;&gt; get_initial_guesses() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">  202</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">base::~base</a>() {}</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> base::do_operation()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    se-&gt;update_known_quantities(input_ptrs);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    se-&gt;reset_ncalls();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        : direct_module(),</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          module_name(module_name),</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          se(<a class="code" href="namespacese__module.html#aa7895741221f38601ed2f62ceb8a8882">make_se</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>)),</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          solver(se_solver_factory::create(solver_name, <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a81319b8e9e14a29c9f32788eadfe6439">max_iterations</a>)),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          lower_bounds(lower_bounds),</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          upper_bounds(upper_bounds),</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          absolute_error_tolerances(absolute_error_tolerances),</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          relative_error_tolerances(relative_error_tolerances),</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          should_reorder_guesses(should_reorder_guesses),</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          return_default_on_failure(return_default_on_failure),</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          input_ptrs(get_ip(input_quantities, <a class="code" href="namespacese__module.html#ac45cfb67d1645c39d30cc97b706aba27">get_se_inputs</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>))),</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          output_ptrs(get_op(output_quantities, <a class="code" href="namespacese__module.html#af2174a94990bf851cacb36d66fde90c0">get_se_outputs</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">sub_module_names</a>))),</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          ncalls_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a1841055767c55dbf83156d85e2eef1eb">get_ncalls_output_name</a>(module_name))),</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          nsteps_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a0deba55fff452c66c7aeac0d592c61b1">get_nsteps_output_name</a>(module_name))),</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          success_op(get_op(output_quantities, <a class="code" href="namespacese__module.html#a14db4d8eca98af3ed59d063b1f888d75">get_success_output_name</a>(module_name)))</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="comment">// Initialize vectors to the correct size</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        outputs_from_modules.resize(output_ptrs.size());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">~base</a>() = 0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::string <span class="keyword">const</span> module_name;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Stuff for solving the simultaneous equations</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::unique_ptr&lt;simultaneous_equations&gt; se;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::unique_ptr&lt;se_solver&gt; solver;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> lower_bounds;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> upper_bounds;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> absolute_error_tolerances;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    std::vector&lt;double&gt; <span class="keyword">const</span> relative_error_tolerances;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span> should_reorder_guesses;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::vector&lt;double&gt; <span class="keyword">mutable</span> best_guess;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::vector&lt;double&gt; <span class="keyword">mutable</span> outputs_from_modules;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">const</span> return_default_on_failure;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> get_default(std::vector&lt;double&gt;&amp; <span class="comment">/*guess_vec*/</span>)<span class="keyword"> const </span>{}</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Pointers to input quantities</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    std::vector&lt;const double*&gt; input_ptrs;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::vector&lt;double*&gt; output_ptrs;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">double</span>* ncalls_op;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">double</span>* nsteps_op;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">double</span>* success_op;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">// Main operation</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">virtual</span> std::vector&lt;std::vector&lt;double&gt;&gt; get_initial_guesses() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;};</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">  204</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">base::~base</a>() {}</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">void</span> base::do_operation()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    se-&gt;update_known_quantities(input_ptrs);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    std::vector&lt;std::vector&lt;double&gt;&gt; initial_guesses = get_initial_guesses();  <span class="comment">// must be implemented by derived class</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    se-&gt;reset_ncalls();</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">if</span> (should_reorder_guesses) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        initial_guesses = <a class="code" href="namespacese__module.html#ae00780412ea782cae4964f33f994d085">reorder_initial_guesses</a>(initial_guesses, se);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">bool</span> success = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">int</span> nsteps = 0;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;double&gt; <span class="keyword">const</span>&amp; initial_guess : initial_guesses) {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        success = solver-&gt;solve(</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            se, initial_guess,</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            lower_bounds, upper_bounds,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            absolute_error_tolerances, relative_error_tolerances,</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            best_guess);  <span class="comment">// modifies best_guess</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        nsteps += solver-&gt;get_nsteps();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    std::vector&lt;std::vector&lt;double&gt;&gt; initial_guesses = get_initial_guesses();  <span class="comment">// must be implemented by derived class</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">if</span> (should_reorder_guesses) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        initial_guesses = <a class="code" href="namespacese__module.html#ae00780412ea782cae4964f33f994d085">reorder_initial_guesses</a>(initial_guesses, se);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> success = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">int</span> nsteps = 0;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;double&gt; <span class="keyword">const</span>&amp; initial_guess : initial_guesses) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        success = solver-&gt;solve(</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            se, initial_guess,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            lower_bounds, upper_bounds,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            absolute_error_tolerances, relative_error_tolerances,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            best_guess);  <span class="comment">// modifies best_guess</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (success) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (!success &amp;&amp; !return_default_on_failure) {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="se__module_8h.html#af113f5476beaa0450289528f8719eccf">se_module_print</a>) {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            Rprintf(<span class="stringliteral">&quot;The solver was unable to find a solution.\n&quot;</span>);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Thrown by &quot;</span>) + get_name() + std::string(<span class="stringliteral">&quot;: the solver was unable to find a solution.&quot;</span>));</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!success) {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="se__module_8h.html#af113f5476beaa0450289528f8719eccf">se_module_print</a>) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            Rprintf(<span class="stringliteral">&quot;The solver was unable to find a solution. Returning the default guess.\n&quot;</span>);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        get_default(best_guess);  <span class="comment">// modifies best_guess</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    se-&gt;get_all_outputs(outputs_from_modules, best_guess);  <span class="comment">// modifies outputs_from_modules</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        nsteps += solver-&gt;get_nsteps();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span> (success) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">if</span> (!success &amp;&amp; !return_default_on_failure) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="se__module_8h.html#af113f5476beaa0450289528f8719eccf">se_module_print</a>) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            Rprintf(<span class="stringliteral">&quot;The solver was unable to find a solution.\n&quot;</span>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(std::string(<span class="stringliteral">&quot;Thrown by &quot;</span>) + module_name + std::string(<span class="stringliteral">&quot;: the solver was unable to find a solution.&quot;</span>));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!success) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="se__module_8h.html#af113f5476beaa0450289528f8719eccf">se_module_print</a>) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            Rprintf(<span class="stringliteral">&quot;The solver was unable to find a solution. Returning the default guess.\n&quot;</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        get_default(best_guess);  <span class="comment">// modifies best_guess</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; output_ptrs.size(); ++i) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        update(output_ptrs[i], outputs_from_modules[i]);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    update(ncalls_op, se-&gt;get_ncalls());</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    update(nsteps_op, nsteps);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    update(success_op, success);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}  <span class="comment">// namespace se_module</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    se-&gt;get_all_outputs(outputs_from_modules, best_guess);  <span class="comment">// modifies outputs_from_modules</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; output_ptrs.size(); ++i) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        update(output_ptrs[i], outputs_from_modules[i]);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    update(ncalls_op, se-&gt;get_ncalls());</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    update(nsteps_op, nsteps);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    update(success_op, success);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}  <span class="comment">// namespace se_module</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassse__module_1_1base_html"><div class="ttname"><a href="classse__module_1_1base.html">se_module::base</a></div><div class="ttdoc">A general module that solves a set of simultaneous equations. Note that this module cannot be created...</div><div class="ttdef"><b>Definition:</b> <a href="se__module_8h_source.html#l00141">se_module.h:142</a></div></div>
 <div class="ttc" id="aclassse__module_1_1base_html_a3cdd3c661d33521dacc2dd00adb2c5d0"><div class="ttname"><a href="classse__module_1_1base.html#a3cdd3c661d33521dacc2dd00adb2c5d0">se_module::base::base</a></div><div class="ttdeci">base(std::string module_name, string_vector sub_module_names, std::string solver_name, int max_iterations, std::vector&lt; double &gt; lower_bounds, std::vector&lt; double &gt; upper_bounds, std::vector&lt; double &gt; absolute_error_tolerances, std::vector&lt; double &gt; relative_error_tolerances, bool should_reorder_guesses, bool return_default_on_failure, state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="se__module_8h_source.html#l00144">se_module.h:144</a></div></div>
-<div class="ttc" id="aclassse__module_1_1base_html_a8b83bb8ea9b486fe827db6c0cdb17520"><div class="ttname"><a href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">se_module::base::~base</a></div><div class="ttdeci">virtual ~base()=0</div><div class="ttdef"><b>Definition:</b> <a href="se__module_8h_source.html#l00202">se_module.h:202</a></div></div>
+<div class="ttc" id="aclassse__module_1_1base_html_a8b83bb8ea9b486fe827db6c0cdb17520"><div class="ttname"><a href="classse__module_1_1base.html#a8b83bb8ea9b486fe827db6c0cdb17520">se_module::base::~base</a></div><div class="ttdeci">virtual ~base()=0</div><div class="ttdef"><b>Definition:</b> <a href="se__module_8h_source.html#l00204">se_module.h:204</a></div></div>
 <div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a0b37c5938e82da1fb19ed599f7c71217"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">ed_c4_leaf_photosynthesis_stuff::module_name</a></div><div class="ttdeci">std::string const module_name</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00017">ed_c4_leaf_photosynthesis.h:17</a></div></div>
 <div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a81319b8e9e14a29c9f32788eadfe6439"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a81319b8e9e14a29c9f32788eadfe6439">ed_c4_leaf_photosynthesis_stuff::max_iterations</a></div><div class="ttdeci">int const max_iterations</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00036">ed_c4_leaf_photosynthesis.h:36</a></div></div>
 <div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_af376e913b5f422adc0f6becefb4fd08f"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#af376e913b5f422adc0f6becefb4fd08f">ed_c4_leaf_photosynthesis_stuff::sub_module_names</a></div><div class="ttdeci">string_vector const sub_module_names</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00019">ed_c4_leaf_photosynthesis.h:19</a></div></div>
@@ -335,7 +337,7 @@ $(document).ready(function(){initNavTree('se__module_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="se__module_8h.html">se_module.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:12:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 21:22:42 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

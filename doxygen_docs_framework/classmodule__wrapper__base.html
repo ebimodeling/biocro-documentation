@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1fe4a1ac38beeba45e12ca29ab55992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3150df851552216c6b455d02800fb9f1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__base.html#a3150df851552216c6b455d02800fb9f1">get_outputs</a> ()=0</td></tr>
 <tr class="separator:a3150df851552216c6b455d02800fb9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0948cc07014a35d6f8b884831e0087a2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__base.html#a0948cc07014a35d6f8b884831e0087a2">get_name</a> ()=0</td></tr>
+<tr class="separator:a0948cc07014a35d6f8b884831e0087a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f9b37d5918dae30e7fd8b17d396c58"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classmodule__base.html">module_base</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__base.html#af2f9b37d5918dae30e7fd8b17d396c58">createModule</a> (<a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> const &amp;input_quantities, <a class="el" href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a> *output_quantities)=0</td></tr>
 <tr class="separator:af2f9b37d5918dae30e7fd8b17d396c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0cb7994746ddc3f5d47a72d5d056ff"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__base.html#a4d0cb7994746ddc3f5d47a72d5d056ff">~module_wrapper_base</a> ()=0</td></tr>
@@ -102,7 +104,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="module__wrapper_8h_source.html#l00016">16</a> of file <a class="el" href="module__wrapper_8h_source.html">module_wrapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper_8h_source.html#l00017">17</a> of file <a class="el" href="module__wrapper_8h_source.html">module_wrapper.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4d0cb7994746ddc3f5d47a72d5d056ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d0cb7994746ddc3f5d47a72d5d056ff">&#9670;&nbsp;</a></span>~module_wrapper_base()</h2>
@@ -127,7 +129,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper_8h_source.html#l00030">30</a> of file <a class="el" href="module__wrapper_8h_source.html">module_wrapper.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper_8h_source.html#l00032">32</a> of file <a class="el" href="module__wrapper_8h_source.html">module_wrapper.h</a>.</p>
 
 </div>
 </div>
@@ -168,6 +170,20 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__wrapper.html#a22a5f34a443924017970e18fc46ba64c">module_wrapper&lt; T &gt;</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00157">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classmodule__wrapper__base_af2f9b37d5918dae30e7fd8b17d396c58_icgraph.png" border="0" usemap="#aclassmodule__wrapper__base_af2f9b37d5918dae30e7fd8b17d396c58_icgraph" alt=""/></div>
+<map name="aclassmodule__wrapper__base_af2f9b37d5918dae30e7fd8b17d396c58_icgraph" id="aclassmodule__wrapper__base_af2f9b37d5918dae30e7fd8b17d396c58_icgraph">
+<area shape="rect" title=" " alt="" coords="189,31,289,57"/>
+<area shape="rect" href="_r__modules_8cpp.html#a6882da2efd1f74d02851530f0bdd10fc" title="Determines the values of a module&#39;s output quantities from the supplied values of its input quantitie..." alt="" coords="5,5,141,32"/>
+<area shape="rect" href="_r__modules_8cpp.html#a8533f1c312a33afe2274b250a61ec026" title="Determines vital information about a single module." alt="" coords="19,56,127,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aa1fe4a1ac38beeba45e12ca29ab55992"></a>
@@ -194,6 +210,59 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classmodule__wrapper.html#abc6bcae9586eb99fffb12a684814a4e6">module_wrapper&lt; T &gt;</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classmodule__wrapper__base_aa1fe4a1ac38beeba45e12ca29ab55992_icgraph.png" border="0" usemap="#aclassmodule__wrapper__base_aa1fe4a1ac38beeba45e12ca29ab55992_icgraph" alt=""/></div>
+<map name="aclassmodule__wrapper__base_aa1fe4a1ac38beeba45e12ca29ab55992_icgraph" id="aclassmodule__wrapper__base_aa1fe4a1ac38beeba45e12ca29ab55992_icgraph">
+<area shape="rect" title=" " alt="" coords="161,5,244,32"/>
+<area shape="rect" href="_r__modules_8cpp.html#a8533f1c312a33afe2274b250a61ec026" title="Determines vital information about a single module." alt="" coords="5,5,113,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0948cc07014a35d6f8b884831e0087a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0948cc07014a35d6f8b884831e0087a2">&#9670;&nbsp;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string get_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmodule__wrapper.html#a636296572c928bb9baf49439e9726c30">module_wrapper&lt; T &gt;</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classmodule__wrapper__base_a0948cc07014a35d6f8b884831e0087a2_icgraph.png" border="0" usemap="#aclassmodule__wrapper__base_a0948cc07014a35d6f8b884831e0087a2_icgraph" alt=""/></div>
+<map name="aclassmodule__wrapper__base_a0948cc07014a35d6f8b884831e0087a2_icgraph" id="aclassmodule__wrapper__base_a0948cc07014a35d6f8b884831e0087a2_icgraph">
+<area shape="rect" title=" " alt="" coords="161,5,240,32"/>
+<area shape="rect" href="_r__modules_8cpp.html#a8533f1c312a33afe2274b250a61ec026" title="Determines vital information about a single module." alt="" coords="5,5,113,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -222,6 +291,20 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__wrapper.html#a7eff545285286763183243b1d473e6df">module_wrapper&lt; T &gt;</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00157">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classmodule__wrapper__base_a3150df851552216c6b455d02800fb9f1_icgraph.png" border="0" usemap="#aclassmodule__wrapper__base_a3150df851552216c6b455d02800fb9f1_icgraph" alt=""/></div>
+<map name="aclassmodule__wrapper__base_a3150df851552216c6b455d02800fb9f1_icgraph" id="aclassmodule__wrapper__base_a3150df851552216c6b455d02800fb9f1_icgraph">
+<area shape="rect" title=" " alt="" coords="189,31,280,57"/>
+<area shape="rect" href="_r__modules_8cpp.html#a6882da2efd1f74d02851530f0bdd10fc" title="Determines the values of a module&#39;s output quantities from the supplied values of its input quantitie..." alt="" coords="5,5,141,32"/>
+<area shape="rect" href="_r__modules_8cpp.html#a8533f1c312a33afe2274b250a61ec026" title="Determines vital information about a single module." alt="" coords="19,56,127,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -230,7 +313,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 4 2022 21:12:18 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jan 4 2022 21:23:03 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
