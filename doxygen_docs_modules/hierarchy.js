@@ -11,6 +11,7 @@ var hierarchy =
       [ "bucket_soil_drainage", "classbucket__soil__drainage.html", null ],
       [ "development_index", "classdevelopment__index.html", null ],
       [ "empty_senescence", "classempty__senescence.html", null ],
+      [ "example_model_partitioning", "classexample__model__partitioning.html", null ],
       [ "grimm_soybean_flowering", "classgrimm__soybean__flowering.html", null ],
       [ "harmonic_oscillator", "classharmonic__oscillator.html", null ],
       [ "magic_clock", "classmagic__clock.html", null ],
@@ -78,6 +79,7 @@ var hierarchy =
       [ "ed_rh_to_mole_fraction", "classed__rh__to__mole__fraction.html", null ],
       [ "ed_stomata_water_stress_linear", "classed__stomata__water__stress__linear.html", null ],
       [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", null ],
+      [ "example_model_mass_gain", "classexample__model__mass__gain.html", null ],
       [ "fake_solar", "classfake__solar.html", null ],
       [ "golden_ratio_hyperbola", "classgolden__ratio__hyperbola.html", null ],
       [ "grimm_soybean_flowering_calculator", "classgrimm__soybean__flowering__calculator.html", null ],
@@ -139,6 +141,7 @@ var hierarchy =
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", null ]
     ] ],
     [ "ET_Str", "struct_e_t___str.html", null ],
+    [ "example_model", "classexample__model.html", null ],
     [ "frostParms", "structfrost_parms.html", null ],
     [ "Light_model", "struct_light__model.html", null ],
     [ "Light_profile", "struct_light__profile.html", null ],

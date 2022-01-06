@@ -239,7 +239,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Determines senescence rates for several plant organs based on thermal time thresholds, the occurrence of frost, and magical time travel; only compatible with a fixed-step Euler solver. </p>
-<h3><a class="anchor" id="autotoc_md30"></a>
+<h3><a class="anchor" id="autotoc_md32"></a>
 Model overview</h3>
 <p>This module calculates senescence for the following organs:</p><ul>
 <li><code>Leaf</code></li>
@@ -257,12 +257,12 @@ Model overview</h3>
 <li>This method only works with a fixed-step Euler solver.</li>
 <li>If the model runs long enough, it will become oscillatory.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md31"></a>
+<h3><a class="anchor" id="autotoc_md33"></a>
 Details of implementation</h3>
 <p>In general, this model will be solved for a set of N time points <code>t_0</code>, <code>t_1</code>, ..., <code>t_{N-1}</code>. We can think of them as being labeled by an integer "index" i = 0, 1, ..., N-1. So, at each time point, this module stores the net rate of carbon assimilation due to photosynthesis in its <code>assim_rate_XXX_vec</code> members. When senescence begins for an organ, the senescence rate is determined from the 0th element of its associated <code>assim_rate_XXX_vec</code> vector. For the next timestep, element 1 is used. So on and so forth. This module uses the "senescence index" quantities to keep track of the index to use for senescence calculations.</p>
 <p>Special care must be taken for the rhizome, since it may begin the simulation as a carbon source rather than a carbon sink. In this case, the 0th element of the <code>assim_rate_rhizome_vec</code> vector would not correspond to the rhizome's first timestep of growth. To account for this, the <code>rhizome_senescence_index</code> must be incremented while it is a carbon source. Then, when senescence kicks in later, the rhizome senescence index will refer to the first time point when the rhizome began to grow, rather than the first time point of the simulation.</p>
 <p>Obviously this system is very fragile and requires some assumption about the behavior of the rhizome. Also, if any other organs ever act as carbon sources, they may not be handled properly.</p>
-<h3><a class="anchor" id="autotoc_md32"></a>
+<h3><a class="anchor" id="autotoc_md34"></a>
 Source</h3>
 <p>The model represented by this module was used in one published BioCro paper:</p>
 <ul>
@@ -1504,7 +1504,7 @@ Source</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 4 2022 21:21:25 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 6 2022 19:37:36 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

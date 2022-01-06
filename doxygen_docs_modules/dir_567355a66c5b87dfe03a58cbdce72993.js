@@ -122,6 +122,12 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "empty_senescence.hpp", "empty__senescence_8hpp.html", [
       [ "empty_senescence", "classempty__senescence.html", "classempty__senescence" ]
     ] ],
+    [ "example_model_mass_gain.h", "example__model__mass__gain_8h.html", [
+      [ "example_model_mass_gain", "classexample__model__mass__gain.html", "classexample__model__mass__gain" ]
+    ] ],
+    [ "example_model_partitioning.h", "example__model__partitioning_8h.html", [
+      [ "example_model_partitioning", "classexample__model__partitioning.html", "classexample__model__partitioning" ]
+    ] ],
     [ "fake_solar.hpp", "fake__solar_8hpp.html", [
       [ "fake_solar", "classfake__solar.html", "classfake__solar" ]
     ] ],

@@ -167,7 +167,7 @@ Private Attributes</h2></td></tr>
 class multilayer_canopy_photosynthesis&lt; canopy_module_type, leaf_module_type &gt;</h3>
 
 <p>Applies a leaf photosynthesis module to each layer and leaf class of a multilayer canopy. </p>
-<h3><a class="anchor" id="autotoc_md12"></a>
+<h3><a class="anchor" id="autotoc_md14"></a>
 Basic overview</h3>
 <p>Two modules must be specified as template arguments:</p>
 <ul>
@@ -180,7 +180,7 @@ Basic overview</h3>
 <li>define_multiclass_multilayer_outputs()</li>
 <li>define_pure_multilayer_outputs()</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md13"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
 More operational details</h3>
 <p>In general, a canopy can be divided into different layers and leaf classes, which could be based on factors such as angle or age. The canopy properties module should determine the values of any properties (e.g. air temperature or incident light intensity) that may vary between layers and/or leaf classes.</p>
 <p>The values of these quantities must be subsequently passed to a leaf-level photosynthesis module in order to determine assimilation rates for each type of leaf in the canopy. In order to correctly pair a photosynthesis input quantity (such as <code>incident_par</code>) with a corresponding value for a layer and leaf class (such as <code>sunlit_incident_par_layer_0</code>), this module needs to know which quantities depend on canopy layer and leaf class. For that reason, the canopy properties module must have the following methods defined:</p>
@@ -529,7 +529,7 @@ More operational details</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmultilayer__canopy__photosynthesis.html">multilayer_canopy_photosynthesis</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 21:22:14 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 6 2022 19:38:18 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
