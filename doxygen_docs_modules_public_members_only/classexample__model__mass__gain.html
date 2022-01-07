@@ -142,10 +142,20 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>An example for the BioCro II manuscript. </p>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Model overview</h3>
-<p>Model mass gain as a linear function of other quantities.</p>
-<p>It is not meant to be biologically realistic. </p>
+<p>Here we model mass gain as a linear function of other quantities. This model is not meant to be biologically realistic.</p>
+<p>In this model, the carbon assimilation rate per unit leaf area (<code>A_leaf</code>) is assumed to be directly proportional to the incident photosynthetically active photon flux density (<code>Q</code>):</p>
+<blockquote class="doxtable">
+<p><code>A_leaf = alpha * Q</code> (1) </p>
+</blockquote>
+<p>where the proportionality constant <code>alpha</code> is the radiation use efficiency.</p>
+<p>The total canopy assimilation rate can then be determined by the product of <code>A_leaf</code> and the total leaf area. In turn, leaf area can be calculated from the total leaf mass (<code>m_leaf</code>) and the specific leaf area (<code>SLA</code>), which expresses the ratio of leaf area to mass.</p>
+<p>Finally, the carbon assimilation rate can be converted to a rate of mass increase by assuming a particular value for <code>C_conv</code>, the conversion ratio of carbon to mass for the plant.</p>
+<p>Combining these considerations, we can relate the rate of mass gain to the leaf-level assimilation rate as follows:</p>
+<blockquote class="doxtable">
+<p><code>mass_gain = A_leaf * m_leaf * SLA * C_conv</code> (2) </p>
+</blockquote>
 
-<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00019">19</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00040">40</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab4b3621a5f8a323afdf9cce61e1339cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4b3621a5f8a323afdf9cce61e1339cf">&#9670;&nbsp;</a></span>example_model_mass_gain()</h2>
@@ -181,7 +191,7 @@ Model overview</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00022">22</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00043">43</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
 
 </div>
 </div>
@@ -209,7 +219,7 @@ Model overview</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00058">58</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00078">78</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +246,7 @@ Model overview</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00041">41</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00061">61</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
 
 </div>
 </div>
@@ -263,7 +273,7 @@ Model overview</h3>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00069">69</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__mass__gain_8h_source.html#l00089">89</a> of file <a class="el" href="example__model__mass__gain_8h_source.html">example_model_mass_gain.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +286,7 @@ Model overview</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classexample__model__mass__gain.html">example_model_mass_gain</a></li>
-    <li class="footer">Generated on Thu Jan 6 2022 20:10:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jan 7 2022 18:25:24 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

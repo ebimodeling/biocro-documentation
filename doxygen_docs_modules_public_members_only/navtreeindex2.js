@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"ed__multilayer__c4__canopy_8h.html":[3,0,1,0,48],
 "ed__multilayer__c4__canopy_8h_source.html":[3,0,1,0,48],
 "ed__multilayer__canopy__integrator_8h.html":[3,0,1,0,49],
 "ed__multilayer__canopy__integrator_8h_source.html":[3,0,1,0,49],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "namespacemembers_func.html":[1,1,1],
 "namespacemembers_type.html":[1,1,3],
 "namespacemembers_vars.html":[1,1,2],
-"namespacenikolov.html":[1,0,8]
+"namespacenikolov.html":[1,0,8],
+"namespacenikolov.html#af08ea1f00199ed198691dd2eebe4390e":[1,0,8,0]
 };

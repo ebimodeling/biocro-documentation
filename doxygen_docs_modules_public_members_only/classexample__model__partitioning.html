@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classexample__model__partitioning.html
 </div><!--header-->
 <div class="contents">
 
+<p>An example for the BioCro II manuscript.  
+ <a href="classexample__model__partitioning.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for example_model_partitioning:</div>
@@ -105,7 +108,7 @@ $(document).ready(function(){initNavTree('classexample__model__partitioning.html
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classexample__model__partitioning__inherit__graph.png" border="0" usemap="#aexample__model__partitioning_inherit__map" alt="Inheritance graph"/></div>
 <map name="aexample__model__partitioning_inherit__map" id="aexample__model__partitioning_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,188,107"/>
+<area shape="rect" title="An example for the BioCro II manuscript." alt="" coords="5,80,188,107"/>
 <area shape="rect" title=" " alt="" coords="31,5,162,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -116,7 +119,7 @@ $(document).ready(function(){initNavTree('classexample__model__partitioning.html
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classexample__model__partitioning__coll__graph.png" border="0" usemap="#aexample__model__partitioning_coll__map" alt="Collaboration graph"/></div>
 <map name="aexample__model__partitioning_coll__map" id="aexample__model__partitioning_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,188,107"/>
+<area shape="rect" title="An example for the BioCro II manuscript." alt="" coords="5,80,188,107"/>
 <area shape="rect" title=" " alt="" coords="31,5,162,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -136,8 +139,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad0866265cb5b92692af7be0ef011f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00019">19</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<div class="textblock"><p>An example for the BioCro II manuscript. </p>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Model overview</h3>
+<p>Here we model the partitioning of mass between tissues. This model is not meant to be biologically realistic.</p>
+<p>In this model, it is assumed that the plant's mass gain is distributed between its leaf and root according to fractions <code>f_leaf</code> and <code>f_root</code>. In other words:</p>
+<blockquote class="doxtable">
+<p><code>dm_leaf / dt = mass_gain * f_leaf</code> (1) </p>
+</blockquote>
+<blockquote class="doxtable">
+<p><code>dm_root / dt = mass_gain * f_root</code> (2) </p>
+</blockquote>
+<p>where 'mass_gain<code>is the plant's total rate of mass increase,</code>dm_leaf / dt<code> is the time derivative of the leaf mass</code>m_leaf<code>and</code>dm_root / dt<code>is defined analagously. Note: typically, the sum of</code>f_leaf<code>and</code>f_root` should be 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00031">31</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7824ab0e54d3a9f437db656e17382b2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7824ab0e54d3a9f437db656e17382b2f">&#9670;&nbsp;</a></span>example_model_partitioning()</h2>
@@ -173,7 +188,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00022">22</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00034">34</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00056">56</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00067">67</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +243,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00040">40</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00051">51</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -255,7 +270,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00065">65</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00076">76</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +283,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classexample__model__partitioning.html">example_model_partitioning</a></li>
-    <li class="footer">Generated on Thu Jan 6 2022 20:10:52 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jan 7 2022 18:25:24 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

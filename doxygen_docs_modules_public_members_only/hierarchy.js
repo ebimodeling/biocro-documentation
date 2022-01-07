@@ -141,7 +141,6 @@ var hierarchy =
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", null ]
     ] ],
     [ "ET_Str", "struct_e_t___str.html", null ],
-    [ "example_model", "classexample__model.html", null ],
     [ "frostParms", "structfrost_parms.html", null ],
     [ "Light_model", "struct_light__model.html", null ],
     [ "Light_profile", "struct_light__profile.html", null ],

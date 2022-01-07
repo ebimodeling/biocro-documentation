@@ -79,6 +79,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>An example for the BioCro II manuscript.  
+ <a href="classexample__model__partitioning.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for example_model_partitioning:</div>
@@ -87,7 +90,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classexample__model__partitioning__inherit__graph.png" border="0" usemap="#aexample__model__partitioning_inherit__map" alt="Inheritance graph"/></div>
 <map name="aexample__model__partitioning_inherit__map" id="aexample__model__partitioning_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,155,188,181"/>
+<area shape="rect" title="An example for the BioCro II manuscript." alt="" coords="5,155,188,181"/>
 <area shape="rect" href="classdifferential__module.html" title="This class represents a differential module." alt="" coords="31,80,162,107"/>
 <area shape="rect" href="classmodule__base.html" title="Represents one or more equations." alt="" coords="47,5,146,32"/>
 </map>
@@ -99,7 +102,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classexample__model__partitioning__coll__graph.png" border="0" usemap="#aexample__model__partitioning_coll__map" alt="Collaboration graph"/></div>
 <map name="aexample__model__partitioning_coll__map" id="aexample__model__partitioning_coll__map">
-<area shape="rect" title=" " alt="" coords="5,155,188,181"/>
+<area shape="rect" title="An example for the BioCro II manuscript." alt="" coords="5,155,188,181"/>
 <area shape="rect" href="classdifferential__module.html" title="This class represents a differential module." alt="" coords="31,80,162,107"/>
 <area shape="rect" href="classmodule__base.html" title="Represents one or more equations." alt="" coords="47,5,146,32"/>
 </map>
@@ -163,8 +166,20 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3f5a6c165abfe31f11a5465b11d645be inherit pro_methods_classdifferential__module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00019">19</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<div class="textblock"><p>An example for the BioCro II manuscript. </p>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Model overview</h3>
+<p>Here we model the partitioning of mass between tissues. This model is not meant to be biologically realistic.</p>
+<p>In this model, it is assumed that the plant's mass gain is distributed between its leaf and root according to fractions <code>f_leaf</code> and <code>f_root</code>. In other words:</p>
+<blockquote class="doxtable">
+<p><code>dm_leaf / dt = mass_gain * f_leaf</code> (1) </p>
+</blockquote>
+<blockquote class="doxtable">
+<p><code>dm_root / dt = mass_gain * f_root</code> (2) </p>
+</blockquote>
+<p>where 'mass_gain<code>is the plant's total rate of mass increase,</code>dm_leaf / dt<code> is the time derivative of the leaf mass</code>m_leaf<code>and</code>dm_root / dt<code>is defined analagously. Note: typically, the sum of</code>f_leaf<code>and</code>f_root` should be 1. </p>
+
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00031">31</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7824ab0e54d3a9f437db656e17382b2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7824ab0e54d3a9f437db656e17382b2f">&#9670;&nbsp;</a></span>example_model_partitioning()</h2>
@@ -200,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00022">22</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00034">34</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -230,9 +245,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmodule__base.html#a569dd907889f8195d95466f1b2694c42">module_base</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00073">73</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00084">84</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">References <a class="el" href="example__model__partitioning_8h_source.html#l00045">f_leaf</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00046">f_root</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00049">Leaf_op</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00044">mass_gain</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00050">Root_op</a>, and <a class="el" href="modules_8h_source.html#l00145">differential_module::update()</a>.</p>
+<p class="reference">References <a class="el" href="example__model__partitioning_8h_source.html#l00056">f_leaf</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00057">f_root</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00060">Leaf_op</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00055">mass_gain</a>, <a class="el" href="example__model__partitioning_8h_source.html#l00061">Root_op</a>, and <a class="el" href="modules_8h_source.html#l00145">differential_module::update()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -270,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00056">56</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00067">67</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -297,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00040">40</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00051">51</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -324,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00065">65</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00076">76</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
 </div>
 </div>
@@ -349,9 +364,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00045">45</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00056">56</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00073">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00084">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +390,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00046">46</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00057">57</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00073">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00084">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +416,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00049">49</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00060">60</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00073">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00084">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +442,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00044">44</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00055">55</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00073">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00084">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -453,9 +468,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00050">50</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="example__model__partitioning_8h_source.html#l00061">61</a> of file <a class="el" href="example__model__partitioning_8h_source.html">example_model_partitioning.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00073">do_operation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="example__model__partitioning_8h_source.html#l00084">do_operation()</a>.</p>
 
 </div>
 </div>
@@ -465,7 +480,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 6 2022 20:09:44 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 7 2022 18:24:04 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
