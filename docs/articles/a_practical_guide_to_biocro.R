@@ -5,7 +5,9 @@ knitr::knit_hooks$set(document = function(x) {
 
 ## ----preliminaries,echo=FALSE,error=TRUE--------------------------------------
 knitr::opts_chunk$set(error=TRUE) # don't stop on errors; display them
-                                  # in results; this is the default
+                                  # in results; this is the default;
+                                  # we override this below when
+                                  # loading needed packages
 knitr::opts_chunk$set(fig.width=5, fig.height=3)
 
 ## ----version_info,echo=FALSE,comment=''---------------------------------------
@@ -31,7 +33,7 @@ cat(
   "\n"
 )
 
-## ----loading_libraries--------------------------------------------------------
+## ----loading_libraries,error=FALSE--------------------------------------------
 library(BioCro)
 library(lattice)
 

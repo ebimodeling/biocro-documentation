@@ -5,8 +5,13 @@ knitr::knit_hooks$set(document = function(x) {
 
 ## ----preliminaries,echo=FALSE,error=TRUE--------------------------------------
 knitr::opts_chunk$set(error=TRUE) # don't stop on errors; display them
-                                  # in results; this is the default
+                                  # in results; this is the default;
+                                  # we override this below when
+                                  # loading needed packages
+
+## ----loading_libraries,echo=FALSE,error=FALSE---------------------------------
 library(BioCro, quietly=TRUE)
+library(lattice, quietly=TRUE)
 
 ## ----version_info,echo=FALSE,comment=''---------------------------------------
 # Show the current commit hash and the date of that commit.
@@ -32,8 +37,6 @@ cat(
 )
 
 ## ----plotting_tools,echo=FALSE------------------------------------------------
-library(lattice, quietly=TRUE)
-
 time_range <- c(142, 298)
 ppfd_range <- c(-100, 1100)
 assim_range <- c(-2, 40)

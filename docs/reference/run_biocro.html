@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">BioCro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.00</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.00</span>
       </span>
     </div>
 
@@ -35,7 +35,13 @@
       <a href="../articles/pdf_vignette_index.html">PDF Vignettes</a>
     </li>
   </ul></li>
-      </ul><ul class="nav navbar-nav navbar-right"></ul></div><!--/.nav-collapse -->
+      </ul><ul class="nav navbar-nav navbar-right"><li>
+  <a href="https://github.com/ebimodeling/biocro/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
@@ -132,14 +138,14 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># Example: running a sorghum simulation using weather data from 2005</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># Example: running a miscanthus simulation using weather data from 2005</span></span>
 <span class="r-in"><span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">run_biocro</span><span class="op">(</span></span>
-<span class="r-in">    <span class="va">sorghum_initial_values</span>,</span>
-<span class="r-in">    <span class="va">sorghum_parameters</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_initial_values</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_parameters</span>,</span>
 <span class="r-in">    <span class="fu">get_growing_season_climate</span><span class="op">(</span><span class="va">weather2005</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="va">sorghum_direct_modules</span>,</span>
-<span class="r-in">    <span class="va">sorghum_differential_modules</span>,</span>
-<span class="r-in">    <span class="va">sorghum_ode_solver</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_direct_modules</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_differential_modules</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_ode_solver</span>,</span>
 <span class="r-in">    <span class="cn">TRUE</span></span>
 <span class="r-in"><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -190,7 +196,7 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Deepak Jaiswal.</p>
+  <p></p><p>Developed by McGrath Justin M., Lochocki Edward B., Rohde Scott, Jaiswal Deepak, Matthews Megan L., Miguez Fernando E., Long Stephen P..</p>
 </div>
 
 <div class="pkgdown">
