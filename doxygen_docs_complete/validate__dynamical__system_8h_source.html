@@ -150,7 +150,7 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="validate__dynamical__system_8h.html#a68ab75e71590ce4a83b56f348360dced">insert_module_param_if_undefined</a>(</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::string param_name,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string module_name,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> defined_quantity_names,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&amp; undefined_module_names);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
@@ -234,8 +234,8 @@ $(function() {
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// Get quantity names from the modules</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> <span class="keyword">const</span>&amp; names : module_name_vectors) {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a> : names) {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keyword">auto</span> w = <a class="code" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a>(<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">module_name</a>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span> (std::string <span class="keyword">const</span>&amp; module_name : names) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keyword">auto</span> w = <a class="code" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a>(module_name);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> output_names = w-&gt;get_outputs();</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            defined_quantity_names.insert(defined_quantity_names.begin(), output_names.begin(), output_names.end());</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
@@ -275,11 +275,10 @@ $(function() {
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassmodule__wrapper__factory_html_a88c7e6e99de6589d718c74152040e94d"><div class="ttname"><a href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a></div><div class="ttdeci">static std::unique_ptr&lt; module_wrapper_base &gt; create(std::string const &amp;module_name)</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00123">module_wrapper_factory.cpp:123</a></div></div>
+<div class="ttc" id="aclassmodule__wrapper__factory_html_a88c7e6e99de6589d718c74152040e94d"><div class="ttname"><a href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">module_wrapper_factory::create</a></div><div class="ttdeci">static std::unique_ptr&lt; module_wrapper_base &gt; create(std::string const &amp;module_name)</div><div class="ttdef"><b>Definition:</b> <a href="module__wrapper__factory_8cpp_source.html#l00095">module_wrapper_factory.cpp:95</a></div></div>
 <div class="ttc" id="amodule__wrapper__factory_8h_html"><div class="ttname"><a href="module__wrapper__factory_8h.html">module_wrapper_factory.h</a></div></div>
 <div class="ttc" id="amodules_8h_html"><div class="ttname"><a href="modules_8h.html">modules.h</a></div></div>
 <div class="ttc" id="amodules_8h_html_a9c258484825f09ad4fcdf6aa7722757f"><div class="ttname"><a href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; module_base &gt; &gt; module_vector</div><div class="ttdoc">module_vector serves as an alias for a type widely used to hold lists of modules.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00157">modules.h:157</a></div></div>
-<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a0b37c5938e82da1fb19ed599f7c71217"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a0b37c5938e82da1fb19ed599f7c71217">ed_c4_leaf_photosynthesis_stuff::module_name</a></div><div class="ttdeci">std::string const module_name</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00017">ed_c4_leaf_photosynthesis.h:17</a></div></div>
 <div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00018">state_map.h:18</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a296e7261543d479bb5717d96d3fd2285"><div class="ttname"><a href="state__map_8h.html#a296e7261543d479bb5717d96d3fd2285">string_set</a></div><div class="ttdeci">std::set&lt; std::string &gt; string_set</div><div class="ttdoc">string_set serves as an alias for a type widely used to hold lists of module names or lists of module...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00028">state_map.h:28</a></div></div>
@@ -318,7 +317,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 7 2022 18:24:03 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Jan 8 2022 18:02:38 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,8 +1,0 @@
-<map id="eng" name="eng">
-<area shape="rect" id="node1" title=" " alt="" coords="559,42,601,69"/>
-<area shape="rect" id="node2" href="$namespacese__solver__rand.html#a0002d0800e58c4c4b7e997026ad0cb3a" title="A function that returns a double chosen from a normal distribution with a mean of 0 and a standard de..." alt="" coords="417,15,511,42"/>
-<area shape="rect" id="node5" href="$namespacese__solver__rand.html#a72a434d343698609714e40bbfe29e489" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="430,67,498,94"/>
-<area shape="rect" id="node3" href="$namespacese__solver__rand.html#a9f56be3c41c4ce78f588169480cb5e7b" title="A function that returns a random vector on the surface of an n&#45;dimensional sphere...." alt="" coords="209,5,353,47"/>
-<area shape="rect" id="node4" href="$se__solver__helper__functions_8cpp.html#a2aa65ff7e9c4652b56723a15071a5c73" title="Determines a set of multiple initial guesses distributed around a central guess. The resulting output..." alt="" coords="5,13,144,39"/>
-<area shape="rect" id="node6" href="$se__solver__helper__functions_8h.html#a1ce3aab7b6961eb9e623203b58bb5e6c" title="Determines a new guess from a bad one by randomly replacing bad elements." alt="" coords="192,71,369,98"/>
-</map>

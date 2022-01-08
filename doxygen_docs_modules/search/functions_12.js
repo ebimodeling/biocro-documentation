@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['utilization_5fgrowth_1772',['utilization_growth',['../classutilization__growth.html#ad1a1161491eb2fab4ed1283c01d2fca4',1,'utilization_growth']]],
-  ['utilization_5fgrowth_5fcalculator_1773',['utilization_growth_calculator',['../classutilization__growth__calculator.html#aff166794df65d86b2a9c3c5f07521a75',1,'utilization_growth_calculator']]],
-  ['utilization_5fhill_1774',['utilization_hill',['../utilization__growth__calculator_8hpp.html#a7769a4d82bee051ae70faf248df3c090',1,'utilization_growth_calculator.hpp']]],
-  ['utilization_5fsenescence_1775',['utilization_senescence',['../classutilization__senescence.html#a91762f9c579ae8d3013be59c3c2c2642',1,'utilization_senescence']]],
-  ['utilization_5fsenescence_5fcalculator_1776',['utilization_senescence_calculator',['../classutilization__senescence__calculator.html#aad91b115335e01711b664de0f60edf40',1,'utilization_senescence_calculator']]]
+  ['water_5flatent_5fheat_5fof_5fvaporization_5fhenderson_1367',['water_latent_heat_of_vaporization_henderson',['../_aux_bio_cro_8cpp.html#ae316a7cc0aa11d92732e36c4665361ce',1,'AuxBioCro.cpp']]],
+  ['water_5fvapor_5fproperties_5ffrom_5fair_5ftemperature_1368',['water_vapor_properties_from_air_temperature',['../classwater__vapor__properties__from__air__temperature.html#a9f29463529c5ff9e9a64d4bec8c0d730',1,'water_vapor_properties_from_air_temperature']]],
+  ['watstr_1369',['watstr',['../_aux_bio_cro_8cpp.html#a3e42b1f6357490f2be99959174fe503f',1,'watstr(double precipit, double evapo, double cws, double soildepth, double fieldc, double wiltp, double soil_saturation_capacity, double sand, double Ks, double air_entry, double b):&#160;AuxBioCro.cpp'],['../_bio_cro_8h.html#ae0021657d39b9a74d530a011621079c1',1,'watstr(double precipit, double evapo, double cws, double soildepth, double fieldc, double wiltp, double soil_saturation_capacity, double soil_sand_content, double Ks, double air_entry, double b):&#160;AuxBioCro.cpp']]],
+  ['windprof_1370',['WINDprof',['../_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7',1,'WINDprof(double WindSpeed, double LAI, int nlayers, double *wind_speed_profile):&#160;AuxBioCro.cpp'],['../_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7',1,'WINDprof(double WindSpeed, double LAI, int nlayers, double *wind_speed_profile):&#160;AuxBioCro.cpp']]]
 ];

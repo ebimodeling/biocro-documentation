@@ -57,68 +57,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "eC4photo.cpp", "e_c4photo_8cpp.html", "e_c4photo_8cpp" ],
     [ "eC4photo.h", "e_c4photo_8h.html", "e_c4photo_8h" ],
-    [ "ed_abc_blc.h", "ed__abc__blc_8h.html", [
-      [ "ed_abc_blc", "classed__abc__blc.html", "classed__abc__blc" ]
-    ] ],
-    [ "ed_apply_water_stress.h", "ed__apply__water__stress_8h.html", [
-      [ "ed_apply_stomatal_water_stress_via_conductance", "classed__apply__stomatal__water__stress__via__conductance.html", "classed__apply__stomatal__water__stress__via__conductance" ],
-      [ "ed_apply_stomatal_water_stress_via_assimilation", "classed__apply__stomatal__water__stress__via__assimilation.html", "classed__apply__stomatal__water__stress__via__assimilation" ]
-    ] ],
-    [ "ed_ball_berry.h", "ed__ball__berry_8h.html", [
-      [ "ed_ball_berry", "classed__ball__berry.html", "classed__ball__berry" ]
-    ] ],
-    [ "ed_boundary_conductance.h", "ed__boundary__conductance_8h.html", [
-      [ "ed_boundary_conductance_quadrature", "classed__boundary__conductance__quadrature.html", "classed__boundary__conductance__quadrature" ],
-      [ "ed_boundary_conductance_max", "classed__boundary__conductance__max.html", "classed__boundary__conductance__max" ]
-    ] ],
-    [ "ed_c4_leaf_photosynthesis.h", "ed__c4__leaf__photosynthesis_8h.html", "ed__c4__leaf__photosynthesis_8h" ],
-    [ "ed_c4_leaf_photosynthesis2.h", "ed__c4__leaf__photosynthesis2_8h.html", "ed__c4__leaf__photosynthesis2_8h" ],
-    [ "ed_c4_leaf_photosynthesis3.h", "ed__c4__leaf__photosynthesis3_8h.html", "ed__c4__leaf__photosynthesis3_8h" ],
-    [ "ed_c4_leaf_photosynthesis4.h", "ed__c4__leaf__photosynthesis4_8h.html", "ed__c4__leaf__photosynthesis4_8h" ],
-    [ "ed_c4photo.h", "ed__c4photo_8h.html", [
-      [ "ed_c4photo", "classed__c4photo.html", "classed__c4photo" ]
-    ] ],
-    [ "ed_canac_leaf.h", "ed__canac__leaf_8h.html", [
-      [ "ed_canac_leaf", "classed__canac__leaf.html", "classed__canac__leaf" ]
-    ] ],
-    [ "ed_collatz_c4_assimilation.h", "ed__collatz__c4__assimilation_8h.html", "ed__collatz__c4__assimilation_8h" ],
-    [ "ed_evapotrans2.h", "ed__evapotrans2_8h.html", [
-      [ "ed_evapotrans2", "classed__evapotrans2.html", "classed__evapotrans2" ]
-    ] ],
-    [ "ed_gas_concentrations.h", "ed__gas__concentrations_8h.html", [
-      [ "ed_gas_concentrations", "classed__gas__concentrations.html", "classed__gas__concentrations" ]
-    ] ],
-    [ "ed_leaf_temperature.h", "ed__leaf__temperature_8h.html", [
-      [ "ed_leaf_temperature", "classed__leaf__temperature.html", "classed__leaf__temperature" ]
-    ] ],
-    [ "ed_long_wave_energy_loss.h", "ed__long__wave__energy__loss_8h.html", [
-      [ "ed_long_wave_energy_loss", "classed__long__wave__energy__loss.html", "classed__long__wave__energy__loss" ]
-    ] ],
-    [ "ed_multilayer_c4_canopy.h", "ed__multilayer__c4__canopy_8h.html", [
-      [ "ed_ten_layer_c4_canopy", "classed__ten__layer__c4__canopy.html", "classed__ten__layer__c4__canopy" ]
-    ] ],
-    [ "ed_multilayer_canopy_integrator.h", "ed__multilayer__canopy__integrator_8h.html", [
-      [ "ed_multilayer_canopy_integrator", "classed__multilayer__canopy__integrator.html", "classed__multilayer__canopy__integrator" ],
-      [ "ed_ten_layer_canopy_integrator", "classed__ten__layer__canopy__integrator.html", "classed__ten__layer__canopy__integrator" ]
-    ] ],
-    [ "ed_multilayer_canopy_properties.h", "ed__multilayer__canopy__properties_8h.html", [
-      [ "ed_multilayer_canopy_properties", "classed__multilayer__canopy__properties.html", "classed__multilayer__canopy__properties" ],
-      [ "ed_ten_layer_canopy_properties", "classed__ten__layer__canopy__properties.html", "classed__ten__layer__canopy__properties" ]
-    ] ],
-    [ "ed_nikolov_conductance.h", "ed__nikolov__conductance_8h.html", "ed__nikolov__conductance_8h" ],
-    [ "ed_penman_monteith_leaf_temperature.h", "ed__penman__monteith__leaf__temperature_8h.html", "ed__penman__monteith__leaf__temperature_8h" ],
-    [ "ed_penman_monteith_transpiration.h", "ed__penman__monteith__transpiration_8h.html", [
-      [ "ed_penman_monteith_transpiration", "classed__penman__monteith__transpiration.html", "classed__penman__monteith__transpiration" ]
-    ] ],
-    [ "ed_rh_to_mole_fraction.h", "ed__rh__to__mole__fraction_8h.html", [
-      [ "ed_rh_to_mole_fraction", "classed__rh__to__mole__fraction.html", "classed__rh__to__mole__fraction" ]
-    ] ],
-    [ "ed_stomata_water_stress_linear.h", "ed__stomata__water__stress__linear_8h.html", [
-      [ "ed_stomata_water_stress_linear", "classed__stomata__water__stress__linear.html", "classed__stomata__water__stress__linear" ]
-    ] ],
-    [ "ed_water_vapor_properties.h", "ed__water__vapor__properties_8h.html", [
-      [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", "classed__water__vapor__properties" ]
-    ] ],
     [ "empty_senescence.hpp", "empty__senescence_8hpp.html", [
       [ "empty_senescence", "classempty__senescence.html", "classempty__senescence" ]
     ] ],
@@ -257,7 +195,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "rue_leaf_photosynthesis.h", "rue__leaf__photosynthesis_8h.html", [
       [ "rue_leaf_photosynthesis", "classrue__leaf__photosynthesis.html", "classrue__leaf__photosynthesis" ]
     ] ],
-    [ "se_module.h", "se__module_8h.html", "se__module_8h" ],
     [ "senescence_coefficient_logistic.h", "senescence__coefficient__logistic_8h.html", "senescence__coefficient__logistic_8h" ],
     [ "senescence_logistic.h", "senescence__logistic_8h.html", [
       [ "senescence_logistic", "classsenescence__logistic.html", "classsenescence__logistic" ]
@@ -319,16 +256,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     ] ],
     [ "two_layer_soil_profile.hpp", "two__layer__soil__profile_8hpp.html", [
       [ "two_layer_soil_profile", "classtwo__layer__soil__profile.html", "classtwo__layer__soil__profile" ]
-    ] ],
-    [ "utilization_growth.hpp", "utilization__growth_8hpp.html", [
-      [ "utilization_growth", "classutilization__growth.html", "classutilization__growth" ]
-    ] ],
-    [ "utilization_growth_calculator.hpp", "utilization__growth__calculator_8hpp.html", "utilization__growth__calculator_8hpp" ],
-    [ "utilization_senescence.hpp", "utilization__senescence_8hpp.html", [
-      [ "utilization_senescence", "classutilization__senescence.html", "classutilization__senescence" ]
-    ] ],
-    [ "utilization_senescence_calculator.hpp", "utilization__senescence__calculator_8hpp.html", [
-      [ "utilization_senescence_calculator", "classutilization__senescence__calculator.html", "classutilization__senescence__calculator" ]
     ] ],
     [ "water_vapor_properties_from_air_temperature.hpp", "water__vapor__properties__from__air__temperature_8hpp.html", [
       [ "water_vapor_properties_from_air_temperature", "classwater__vapor__properties__from__air__temperature.html", "classwater__vapor__properties__from__air__temperature" ]

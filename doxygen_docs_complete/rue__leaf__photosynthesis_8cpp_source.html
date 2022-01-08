@@ -119,14 +119,14 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Determine respiration from the leaf temperature using Arrhenius exponents</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// from Bernacchi et al. (2001) Plant, Cell and Environment, 24(2), 253-259.</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// https://doi.org/10.1111/j.1365-3040.2001.00668.x</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> <a class="code" href="namespacese__solver__rand.html#a7071b0092ad8c5b57d6cc40c5f803df5">rd</a> = Rd0 *</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> rd = Rd0 *</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                      <a class="code" href="_aux_bio_cro_8h.html#a459a86792df0059402dcda842b5c1985">arrhenius_exponent</a>(</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                          18.72,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                          46.39e3,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                          tlk);  <span class="comment">// mol / m^2 / s</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Determine net assimilation</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> an = ag - <a class="code" href="namespacese__solver__rand.html#a7071b0092ad8c5b57d6cc40c5f803df5">rd</a>;  <span class="comment">// mol / m^2 / s</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> an = ag - rd;  <span class="comment">// mol / m^2 / s</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Determine stomatal conductance</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> gs = <a class="code" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a>(an, Ca, RH, bb0, bb1) * 1e-3;  <span class="comment">// mol / m^2 / s</span></div>
@@ -268,7 +268,6 @@ $(function() {
 <div class="ttc" id="aclassrue__leaf__photosynthesis_html_aebaf8075767f5e2e368001dc936a3933"><div class="ttname"><a href="classrue__leaf__photosynthesis.html#aebaf8075767f5e2e368001dc936a3933">rue_leaf_photosynthesis::GrossAssim_op</a></div><div class="ttdeci">double * GrossAssim_op</div><div class="ttdef"><b>Definition:</b> <a href="rue__leaf__photosynthesis_8h_source.html#l00184">rue_leaf_photosynthesis.h:184</a></div></div>
 <div class="ttc" id="aclassrue__leaf__photosynthesis_html_aef7251c38f83faca1cb32230d9afa43c"><div class="ttname"><a href="classrue__leaf__photosynthesis.html#aef7251c38f83faca1cb32230d9afa43c">rue_leaf_photosynthesis::b1</a></div><div class="ttdeci">double const  &amp; b1</div><div class="ttdef"><b>Definition:</b> <a href="rue__leaf__photosynthesis_8h_source.html#l00173">rue_leaf_photosynthesis.h:173</a></div></div>
 <div class="ttc" id="anamespaceconversion__constants_html_ac29e2ff8a2fe79bf1a6e7f5623f8f8a3"><div class="ttname"><a href="namespaceconversion__constants.html#ac29e2ff8a2fe79bf1a6e7f5623f8f8a3">conversion_constants::celsius_to_kelvin</a></div><div class="ttdeci">constexpr double celsius_to_kelvin</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00032">constants.h:32</a></div></div>
-<div class="ttc" id="anamespacese__solver__rand_html_a7071b0092ad8c5b57d6cc40c5f803df5"><div class="ttname"><a href="namespacese__solver__rand.html#a7071b0092ad8c5b57d6cc40c5f803df5">se_solver_rand::rd</a></div><div class="ttdeci">std::random_device rd</div><div class="ttdef"><b>Definition:</b> <a href="se__solver__helper__functions_8cpp_source.html#l00011">se_solver_helper_functions.cpp:11</a></div></div>
 <div class="ttc" id="arue__leaf__photosynthesis_8cpp_html_ab54975de7b4226b18ea2e61592fdf51f"><div class="ttname"><a href="rue__leaf__photosynthesis_8cpp.html#ab54975de7b4226b18ea2e61592fdf51f">rue_photo</a></div><div class="ttdeci">struct rue_str rue_photo(double Qp, double alpha_rue, double Tleaf, double RH, double Rd0, double bb0, double bb1, double Ca)</div><div class="ttdef"><b>Definition:</b> <a href="rue__leaf__photosynthesis_8cpp_source.html#l00001">rue_leaf_photosynthesis.cpp:21</a></div></div>
 <div class="ttc" id="arue__leaf__photosynthesis_8h_html"><div class="ttname"><a href="rue__leaf__photosynthesis_8h.html">rue_leaf_photosynthesis.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00018">state_map.h:18</a></div></div>
@@ -286,7 +285,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 7 2022 18:24:02 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Jan 8 2022 18:02:37 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -1,5 +1,0 @@
-<map id="adjust_bad_guess_limits" name="adjust_bad_guess_limits">
-<area shape="rect" id="node1" title="Determines a new guess from a bad one by replacing bad elements with the nearest bound." alt="" coords="209,46,375,73"/>
-<area shape="rect" id="node2" href="$classfixed__point.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="14,5,153,47"/>
-<area shape="rect" id="node3" href="$classnewton__raphson__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="5,71,161,112"/>
-</map>

@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,705,136,732"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,655,136,681"/>
 <area shape="rect" id="node2" href="$classaba__decay.html" title=" " alt="" coords="233,5,317,32"/>
 <area shape="rect" id="node3" href="$classbucket__soil__drainage.html" title=" " alt="" coords="203,56,347,83"/>
 <area shape="rect" id="node4" href="$classdevelopment__index.html" title="Calculates the development index (DVI) corresponding to plant growth rate." alt="" coords="209,107,342,133"/>
@@ -26,6 +26,4 @@
 <area shape="rect" id="node25" href="$classthermal__time__senescence.html" title="Determines senescence rates for several plant organs based on thermal time thresholds and magical tim..." alt="" coords="188,1235,363,1261"/>
 <area shape="rect" id="node26" href="$classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="202,1285,349,1312"/>
 <area shape="rect" id="node27" href="$classtwo__layer__soil__profile.html" title=" " alt="" coords="203,1336,348,1363"/>
-<area shape="rect" id="node28" href="$classutilization__growth.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="214,1387,337,1413"/>
-<area shape="rect" id="node29" href="$classutilization__senescence.html" title=" " alt="" coords="199,1437,352,1464"/>
 </map>

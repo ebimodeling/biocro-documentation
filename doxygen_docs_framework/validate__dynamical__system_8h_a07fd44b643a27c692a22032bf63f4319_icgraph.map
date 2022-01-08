@@ -1,5 +1,4 @@
 <map id="define_quantity_map" name="define_quantity_map">
-<area shape="rect" id="node1" title="Assembles a &quot;master&quot; state_map from a group of state_maps and a list of modules." alt="" coords="247,46,387,73"/>
+<area shape="rect" id="node1" title="Assembles a &quot;master&quot; state_map from a group of state_maps and a list of modules." alt="" coords="247,13,387,39"/>
 <area shape="rect" id="node2" href="$classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,5,199,47"/>
-<area shape="rect" id="node3" href="$classsimultaneous__equations.html#abfc5d8ecf986091ff15e799e6e4cc088" title=" " alt="" coords="18,71,186,112"/>
 </map>
