@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('classmodule__wrapper__factory.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a88c7e6e99de6589d718c74152040e94d"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; module_wrapper_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d">create</a> (std::string const &amp;module_name)</td></tr>
-<tr class="separator:a88c7e6e99de6589d718c74152040e94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf037dce381a278bfefdf03cd9466a0"><td class="memItemLeft" align="right" valign="top">static module_wrapper_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#afdf037dce381a278bfefdf03cd9466a0">create</a> (std::string const &amp;module_name)</td></tr>
+<tr class="separator:afdf037dce381a278bfefdf03cd9466a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2a5936b9f8488a4c52554310cf63361"><td class="memItemLeft" align="right" valign="top">static string_vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361">get_modules</a> ()</td></tr>
 <tr class="separator:ab2a5936b9f8488a4c52554310cf63361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a2ab042dd4f7e1c2d1cb253989f4ba"><td class="memItemLeft" align="right" valign="top">static std::unordered_map&lt; std::string, string_vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#a33a2ab042dd4f7e1c2d1cb253989f4ba">get_all_quantities</a> ()</td></tr>
@@ -111,9 +111,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ad2f7bad2ec851b29b46f7ef18e860f33"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#ad2f7bad2ec851b29b46f7ef18e860f33">module_wrapper_creator</a> = std::unique_ptr&lt; module_wrapper_base &gt;(*)()</td></tr>
-<tr class="separator:ad2f7bad2ec851b29b46f7ef18e860f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864db3ed7a5a930d71150e7eb3bd9a42"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#a864db3ed7a5a930d71150e7eb3bd9a42">module_wrapper_creator_map</a> = std::map&lt; std::string, <a class="el" href="classmodule__wrapper__factory.html#ad2f7bad2ec851b29b46f7ef18e860f33">module_wrapper_creator</a> &gt;</td></tr>
+<tr class="memitem:aeef9856c708e2c1e0a12590a94670085"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#aeef9856c708e2c1e0a12590a94670085">module_wrapper_creator</a> = module_wrapper_base *(*)()</td></tr>
+<tr class="separator:aeef9856c708e2c1e0a12590a94670085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864db3ed7a5a930d71150e7eb3bd9a42"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__wrapper__factory.html#a864db3ed7a5a930d71150e7eb3bd9a42">module_wrapper_creator_map</a> = std::map&lt; std::string, <a class="el" href="classmodule__wrapper__factory.html#aeef9856c708e2c1e0a12590a94670085">module_wrapper_creator</a> &gt;</td></tr>
 <tr class="separator:a864db3ed7a5a930d71150e7eb3bd9a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -123,10 +123,10 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00010">10</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00009">9</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad2f7bad2ec851b29b46f7ef18e860f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f7bad2ec851b29b46f7ef18e860f33">&#9670;&nbsp;</a></span>module_wrapper_creator</h2>
+<a id="aeef9856c708e2c1e0a12590a94670085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef9856c708e2c1e0a12590a94670085">&#9670;&nbsp;</a></span>module_wrapper_creator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +135,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmodule__wrapper__factory.html#ad2f7bad2ec851b29b46f7ef18e860f33">module_wrapper_creator</a> =  std::unique_ptr&lt;module_wrapper_base&gt; (*)()</td>
+          <td class="memname">using <a class="el" href="classmodule__wrapper__factory.html#aeef9856c708e2c1e0a12590a94670085">module_wrapper_creator</a> =  module_wrapper_base* (*)()</td>
         </tr>
       </table>
   </td>
@@ -145,7 +145,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00018">18</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00017">17</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
 
 </div>
 </div>
@@ -159,7 +159,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmodule__wrapper__factory.html#a864db3ed7a5a930d71150e7eb3bd9a42">module_wrapper_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classmodule__wrapper__factory.html#ad2f7bad2ec851b29b46f7ef18e860f33">module_wrapper_creator</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classmodule__wrapper__factory.html#a864db3ed7a5a930d71150e7eb3bd9a42">module_wrapper_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classmodule__wrapper__factory.html#aeef9856c708e2c1e0a12590a94670085">module_wrapper_creator</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -169,13 +169,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00019">19</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00018">18</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a88c7e6e99de6589d718c74152040e94d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88c7e6e99de6589d718c74152040e94d">&#9670;&nbsp;</a></span>create()</h2>
+<a id="afdf037dce381a278bfefdf03cd9466a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf037dce381a278bfefdf03cd9466a0">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +184,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; module_wrapper_base &gt; create </td>
+          <td class="memname">module_wrapper_base * create </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>module_name</em></td><td>)</td>
@@ -198,18 +198,18 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00095">95</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00123">123</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="module__wrapper__factory_8h_source.html#l00020">module_wrapper_creators</a>.</p>
+<p class="reference">References <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00030">ed_c4_leaf_photosynthesis_stuff::module_name</a>, and <a class="el" href="module__wrapper__factory_8h_source.html#l00019">module_wrapper_creators</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00221">get_all_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00282">get_all_quantities()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classmodule__wrapper__factory_a88c7e6e99de6589d718c74152040e94d_icgraph.png" border="0" usemap="#aclassmodule__wrapper__factory_a88c7e6e99de6589d718c74152040e94d_icgraph" alt=""/></div>
-<map name="aclassmodule__wrapper__factory_a88c7e6e99de6589d718c74152040e94d_icgraph" id="aclassmodule__wrapper__factory_a88c7e6e99de6589d718c74152040e94d_icgraph">
+<div class="center"><img src="classmodule__wrapper__factory_afdf037dce381a278bfefdf03cd9466a0_icgraph.png" border="0" usemap="#aclassmodule__wrapper__factory_afdf037dce381a278bfefdf03cd9466a0_icgraph" alt=""/></div>
+<map name="aclassmodule__wrapper__factory_afdf037dce381a278bfefdf03cd9466a0_icgraph" id="aclassmodule__wrapper__factory_afdf037dce381a278bfefdf03cd9466a0_icgraph">
 <area shape="rect" title=" " alt="" coords="176,5,235,32"/>
 <area shape="rect" href="classmodule__wrapper__factory.html#a33a2ab042dd4f7e1c2d1cb253989f4ba" title=" " alt="" coords="5,5,128,32"/>
 </map>
@@ -240,9 +240,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00221">221</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00282">282</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="module__wrapper__factory_8cpp_source.html#l00095">create()</a>, and <a class="el" href="module__wrapper__factory_8cpp_source.html#l00196">get_modules()</a>.</p>
+<p class="reference">References <a class="el" href="module__wrapper__factory_8cpp_source.html#l00123">create()</a>, <a class="el" href="module__wrapper__factory_8cpp_source.html#l00257">get_modules()</a>, and <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00030">ed_c4_leaf_photosynthesis_stuff::module_name</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -251,7 +251,7 @@ Static Private Attributes</h2></td></tr>
 <div class="center"><img src="classmodule__wrapper__factory_a33a2ab042dd4f7e1c2d1cb253989f4ba_cgraph.png" border="0" usemap="#aclassmodule__wrapper__factory_a33a2ab042dd4f7e1c2d1cb253989f4ba_cgraph" alt=""/></div>
 <map name="aclassmodule__wrapper__factory_a33a2ab042dd4f7e1c2d1cb253989f4ba_cgraph" id="aclassmodule__wrapper__factory_a33a2ab042dd4f7e1c2d1cb253989f4ba_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,128,57"/>
-<area shape="rect" href="classmodule__wrapper__factory.html#a88c7e6e99de6589d718c74152040e94d" title=" " alt="" coords="195,5,253,32"/>
+<area shape="rect" href="classmodule__wrapper__factory.html#afdf037dce381a278bfefdf03cd9466a0" title=" " alt="" coords="195,5,253,32"/>
 <area shape="rect" href="classmodule__wrapper__factory.html#ab2a5936b9f8488a4c52554310cf63361" title=" " alt="" coords="176,56,272,83"/>
 </map>
 </div>
@@ -281,11 +281,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00196">196</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8cpp_source.html#l00257">257</a> of file <a class="el" href="module__wrapper__factory_8cpp_source.html">module_wrapper_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="module__wrapper__factory_8h_source.html#l00020">module_wrapper_creators</a>.</p>
+<p class="reference">References <a class="el" href="module__wrapper__factory_8h_source.html#l00019">module_wrapper_creators</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00221">get_all_quantities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00282">get_all_quantities()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -321,9 +321,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00020">20</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="module__wrapper__factory_8h_source.html#l00019">19</a> of file <a class="el" href="module__wrapper__factory_8h_source.html">module_wrapper_factory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00095">create()</a>, and <a class="el" href="module__wrapper__factory_8cpp_source.html#l00196">get_modules()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="module__wrapper__factory_8cpp_source.html#l00123">create()</a>, and <a class="el" href="module__wrapper__factory_8cpp_source.html#l00257">get_modules()</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmodule__wrapper__factory.html">module_wrapper_factory</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 18:03:13 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 11 2022 18:13:09 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

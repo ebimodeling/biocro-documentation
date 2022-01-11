@@ -1,18 +1,16 @@
 <map id="/github/workspace/source/src/utils/module_dependency_utilities.h" name="/github/workspace/source/src/utils/module_dependency_utilities.h">
-<area shape="rect" id="node1" title=" " alt="" coords="73,5,267,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="71,5,266,61"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,109,161,151"/>
-<area shape="rect" id="node3" href="$validate__dynamical__system_8h.html" title=" " alt="" coords="185,109,328,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="31,437,85,464"/>
-<area shape="rect" id="node5" title=" " alt="" coords="110,437,150,464"/>
-<area shape="rect" id="node6" title=" " alt="" coords="372,206,451,233"/>
-<area shape="rect" id="node7" href="$state__map_8h.html" title=" " alt="" coords="159,363,253,389"/>
-<area shape="rect" id="node11" href="$modules_8h.html" title=" " alt="" coords="267,206,348,233"/>
-<area shape="rect" id="node16" title=" " alt="" coords="475,199,625,240"/>
-<area shape="rect" id="node8" title=" " alt="" coords="273,437,384,464"/>
-<area shape="rect" id="node9" title=" " alt="" coords="435,437,494,464"/>
-<area shape="rect" id="node10" title=" " alt="" coords="174,437,249,464"/>
-<area shape="rect" id="node12" title=" " alt="" coords="553,288,621,315"/>
-<area shape="rect" id="node13" href="$module__helper__functions_8h.html" title=" " alt="" coords="243,288,419,315"/>
-<area shape="rect" id="node14" title=" " alt="" coords="348,363,427,389"/>
-<area shape="rect" id="node15" title=" " alt="" coords="277,363,324,389"/>
+<area shape="rect" id="node3" href="$module__wrapper_8h.html" title=" " alt="" coords="185,117,323,143"/>
+<area shape="rect" id="node4" title=" " alt="" coords="76,423,131,449"/>
+<area shape="rect" id="node5" title=" " alt="" coords="261,273,329,300"/>
+<area shape="rect" id="node6" href="$state__map_8h.html" title=" " alt="" coords="239,348,333,375"/>
+<area shape="rect" id="node11" href="$modules_8h.html" title=" " alt="" coords="361,199,443,225"/>
+<area shape="rect" id="node7" title=" " alt="" coords="255,423,365,449"/>
+<area shape="rect" id="node8" title=" " alt="" coords="454,423,513,449"/>
+<area shape="rect" id="node9" title=" " alt="" coords="390,423,430,449"/>
+<area shape="rect" id="node10" title=" " alt="" coords="155,423,230,449"/>
+<area shape="rect" id="node12" href="$module__helper__functions_8h.html" title=" " alt="" coords="354,273,530,300"/>
+<area shape="rect" id="node13" title=" " alt="" coords="480,348,559,375"/>
+<area shape="rect" id="node14" title=" " alt="" coords="357,348,404,375"/>
 </map>

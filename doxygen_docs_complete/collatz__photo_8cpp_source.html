@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="collatz__photo_8hpp.html">collatz_photo.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span><a class="code" href="structcollatz__result.html">collatz_result</a> <a class="code" href="collatz__photo_8cpp.html#a8b6ed801aeda3fb4d6de7aae13664d73">collatz_photo</a>(double Qp,  <span class="comment">// micromole / m^2 / s. Incident photon flux density.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                    double leaf_temperature,  <span class="comment">// degrees C</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                    double <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a>,  <span class="comment">// degrees C</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                    double vmax,  <span class="comment">// micromole / m^2 / s</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                    double alpha,  <span class="comment">// mol / mol. CO2 fixed per incident photon flux density.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                    double kparm,  <span class="comment">// mol / m%2 / s</span></div>
@@ -106,16 +106,16 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                    )</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> kT = kparm * pow(k_Q10, (leaf_temperature - 25.0) / 10.0);  <span class="comment">// dimensionless</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> kT = kparm * pow(k_Q10, (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a> - 25.0) / 10.0);  <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Collatz 1992. Appendix B. Equation set 5B.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> Vtn = vmax * pow(2, (leaf_temperature - 25.0) / 10.0);  <span class="comment">// micromole / m^2 / s</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> Vtd = (1 + exp(0.3 * (lowerT - leaf_temperature))) * (1 + exp(0.3 * (leaf_temperature - upperT)));  <span class="comment">// dimensionless</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">double</span> Vtn = vmax * pow(2, (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a> - 25.0) / 10.0);  <span class="comment">// micromole / m^2 / s</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> Vtd = (1 + exp(0.3 * (lowerT - <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a>))) * (1 + exp(0.3 * (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a> - upperT)));  <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">double</span> VT  = Vtn / Vtd;  <span class="comment">// micromole / m^2 / s</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Collatz 1992. Appendix B. Equation set 5B.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">double</span> Rtn = Rd * pow(2, (leaf_temperature - 25) / 10);  <span class="comment">// micromole / m^2 / s</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">double</span> Rtd = 1 + exp(1.3 * (leaf_temperature - 55));  <span class="comment">// dimensionless</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">double</span> Rtn = Rd * pow(2, (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a> - 25) / 10);  <span class="comment">// micromole / m^2 / s</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">double</span> Rtd = 1 + exp(1.3 * (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">leaf_temperature</a> - 55));  <span class="comment">// dimensionless</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">double</span> RT  = Rtn / Rtd;  <span class="comment">// micromole / m^2 / s</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Collatz 1992. Appendix B. Equation 2B.</span></div>
@@ -151,12 +151,13 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="ttc" id="acollatz__photo_8cpp_html_a8b6ed801aeda3fb4d6de7aae13664d73"><div class="ttname"><a href="collatz__photo_8cpp.html#a8b6ed801aeda3fb4d6de7aae13664d73">collatz_photo</a></div><div class="ttdeci">struct collatz_result collatz_photo(double Qp, double leaf_temperature, double vmax, double alpha, double kparm, double theta, double beta, double Rd, double upperT, double lowerT, double k_Q10, double intercellular_co2_molar_fraction)</div><div class="ttdef"><b>Definition:</b> <a href="collatz__photo_8cpp_source.html#l00001">collatz_photo.cpp:16</a></div></div>
 <div class="ttc" id="acollatz__photo_8hpp_html"><div class="ttname"><a href="collatz__photo_8hpp.html">collatz_photo.hpp</a></div></div>
+<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_ad181cc7c66e7c68b0610235628feb1d7"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#ad181cc7c66e7c68b0610235628feb1d7">ed_c4_leaf_photosynthesis_stuff::leaf_temperature</a></div><div class="ttdeci">module_wrapper&lt; ed_penman_monteith_leaf_temperature &gt; leaf_temperature</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00043">ed_c4_leaf_photosynthesis.h:43</a></div></div>
 <div class="ttc" id="astructcollatz__result_html"><div class="ttname"><a href="structcollatz__result.html">collatz_result</a></div><div class="ttdef"><b>Definition:</b> <a href="collatz__photo_8hpp_source.html#l00008">collatz_photo.hpp:8</a></div></div>
 <div class="ttc" id="astructcollatz__result_html_ad403e8a58d5b64f2e0f06ea2e674e8c5"><div class="ttname"><a href="structcollatz__result.html#ad403e8a58d5b64f2e0f06ea2e674e8c5">collatz_result::assimilation</a></div><div class="ttdeci">double assimilation</div><div class="ttdef"><b>Definition:</b> <a href="collatz__photo_8hpp_source.html#l00009">collatz_photo.hpp:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 8 2022 18:02:37 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jan 11 2022 18:12:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

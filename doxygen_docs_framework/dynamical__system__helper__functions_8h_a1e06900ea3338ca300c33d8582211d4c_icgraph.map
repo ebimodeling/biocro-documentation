@@ -1,4 +1,5 @@
 <map id="get_pointer_pairs" name="get_pointer_pairs">
-<area shape="rect" id="node1" title="Returns pairs of pointers that each point to the same named quantity in each of the two input maps." alt="" coords="247,13,368,39"/>
-<area shape="rect" id="node2" href="$classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node1" title="Returns pairs of pointers that each point to the same named quantity in each of the two input maps." alt="" coords="247,46,368,73"/>
+<area shape="rect" id="node2" href="$classdynamical__system.html#a3a478e0e90706e14c3b6f50a7f387a94" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node3" href="$classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580" title=" " alt="" coords="18,71,186,112"/>
 </map>

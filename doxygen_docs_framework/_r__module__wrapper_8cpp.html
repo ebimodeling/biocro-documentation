@@ -80,7 +80,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;Rinternals.h&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="state__map_8h_source.html">state_map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_r__helper__functions_8h_source.html">R_helper_functions.h</a>&quot;</code><br />
 <code>#include &quot;module_library/module_wrapper_factory.h&quot;</code><br />
@@ -92,22 +91,22 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_r__module__wrapper_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2_r__module__wrapper_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2_r__module__wrapper_8cpp" id="a_2github_2workspace_2source_2src_2_r__module__wrapper_8cpp">
-<area shape="rect" title=" " alt="" coords="181,5,363,47"/>
-<area shape="rect" title=" " alt="" coords="93,483,147,509"/>
-<area shape="rect" title=" " alt="" coords="93,184,184,211"/>
-<area shape="rect" title=" " alt="" coords="411,333,479,360"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="243,408,336,435"/>
-<area shape="rect" href="_r__helper__functions_8h.html" title=" " alt="" coords="201,102,343,129"/>
-<area shape="rect" href="module__wrapper_8h.html" title=" " alt="" coords="361,184,487,211"/>
-<area shape="rect" title=" " alt="" coords="563,95,714,136"/>
-<area shape="rect" title=" " alt="" coords="171,483,282,509"/>
-<area shape="rect" title=" " alt="" coords="485,483,544,509"/>
-<area shape="rect" title=" " alt="" coords="307,483,347,509"/>
-<area shape="rect" title=" " alt="" coords="371,483,445,509"/>
-<area shape="rect" href="modules_8h.html" title=" " alt="" coords="563,259,645,285"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="504,333,680,360"/>
-<area shape="rect" title=" " alt="" coords="445,408,523,435"/>
-<area shape="rect" title=" " alt="" coords="599,408,646,435"/>
+<area shape="rect" title=" " alt="" coords="527,5,710,47"/>
+<area shape="rect" title=" " alt="" coords="550,483,605,509"/>
+<area shape="rect" title=" " alt="" coords="640,184,731,211"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="68,408,161,435"/>
+<area shape="rect" href="_r__helper__functions_8h.html" title=" " alt="" coords="493,102,635,129"/>
+<area shape="rect" href="module__wrapper_8h.html" title=" " alt="" coords="325,184,451,211"/>
+<area shape="rect" title=" " alt="" coords="806,95,957,136"/>
+<area shape="rect" title=" " alt="" coords="177,483,287,509"/>
+<area shape="rect" title=" " alt="" coords="396,483,455,509"/>
+<area shape="rect" title=" " alt="" coords="13,483,53,509"/>
+<area shape="rect" title=" " alt="" coords="77,483,152,509"/>
+<area shape="rect" title=" " alt="" coords="145,333,213,360"/>
+<area shape="rect" href="modules_8h.html" title=" " alt="" coords="315,259,397,285"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="237,333,413,360"/>
+<area shape="rect" title=" " alt="" coords="203,408,282,435"/>
+<area shape="rect" title=" " alt="" coords="306,408,353,435"/>
 </map>
 </div>
 </div>
@@ -150,9 +149,9 @@ external pointer" object. </p>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_r__module__wrapper_8cpp_source.html#l00018">18</a> of file <a class="el" href="_r__module__wrapper_8cpp_source.html">R_module_wrapper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r__module__wrapper_8cpp_source.html#l00017">17</a> of file <a class="el" href="_r__module__wrapper_8cpp_source.html">R_module_wrapper.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_r__module__wrapper_8cpp_source.html#l00063">R_module_wrapper_pointer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_r__module__wrapper_8cpp_source.html#l00059">R_module_wrapper_pointer()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -187,7 +186,7 @@ external pointer" object. </p>
 <p>See <a href="http://www.hep.by/gnu/r-patched/r-exts/R-exts_122.html">http://www.hep.by/gnu/r-patched/r-exts/R-exts_122.html</a> for more details about R external pointers.</p>
 <p>When creating an R external pointer using <code>R_MakeExternalPtr()</code>, it is possible to specify <code>tag</code> and <code>prot</code> arguments for identifying the pointer and protecting its memory. However, it is common to bypass both of these arguments by setting them to <code>R_NilValue</code> (the R null pointer). We follow that route here.</p>
 <p>Once an R external pointer has been created, it is also possible to specify a "finalizer" function via <code>R_RegisterFinalizerEx()</code>. This function will be called when garbage is collected and should clear the pointer. By setting the <code>onexit</code> argument of <code>R_RegisterFinalizerEx()</code> to be TRUE, we ensure that the pointer will be cleared when its R session closes.</p>
-<p>After its creation, the R external pointer takes ownership of the <a class="el" href="classmodule__wrapper__base.html">module_wrapper_base</a> object (in the sense that it will ensure that the <a class="el" href="classmodule__wrapper__base.html">module_wrapper_base</a> object is deleted when the pointer is destroyed), so it is critical for the std::unique_ptr to relinquish control via <code>std::unique_ptr::release()</code> rather than <code>std::unique_ptr::get()</code>. Memory access problems will occur otherwise, causing R to suddenly crash.</p>
+<p>After its creation, the R external pointer takes ownership of the <a class="el" href="classmodule__wrapper__base.html">module_wrapper_base</a> object (in the sense that it will ensure that the <a class="el" href="classmodule__wrapper__base.html">module_wrapper_base</a> object is deleted when the pointer is destroyed).</p>
 <p>The output from this function can be converted into a std::vector of <a class="el" href="classmodule__wrapper__base.html">module_wrapper_base</a> pointers for use in C/C++ code using the <code><a class="el" href="_r__helper__functions_8cpp.html#a663257eb69bfe02f9ca7203cd25d104f" title="Creates a std::vector of pointers to module_wrapper_base objects from an R vector of R external point...">mw_vector_from_list()</a></code> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -197,9 +196,9 @@ external pointer" object. </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A vector of "R external pointer" objects </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r__module__wrapper_8cpp_source.html#l00063">63</a> of file <a class="el" href="_r__module__wrapper_8cpp_source.html">R_module_wrapper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r__module__wrapper_8cpp_source.html#l00059">59</a> of file <a class="el" href="_r__module__wrapper_8cpp_source.html">R_module_wrapper.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_r__module__wrapper_8cpp_source.html#l00018">finalize_module_wrapper_pointer()</a>, and <a class="el" href="_r__helper__functions_8cpp_source.html#l00076">make_vector()</a>.</p>
+<p class="reference">References <a class="el" href="_r__module__wrapper_8cpp_source.html#l00017">finalize_module_wrapper_pointer()</a>, and <a class="el" href="_r__helper__functions_8cpp_source.html#l00076">make_vector()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -218,7 +217,7 @@ external pointer" object. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 8 2022 18:03:49 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jan 11 2022 18:13:50 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

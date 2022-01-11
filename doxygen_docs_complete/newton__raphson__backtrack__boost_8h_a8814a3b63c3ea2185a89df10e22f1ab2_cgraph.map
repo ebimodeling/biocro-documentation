@@ -1,0 +1,4 @@
+<map id="newton_raphson_line_search_boost" name="newton_raphson_line_search_boost">
+<area shape="rect" id="node1" title="Searches along a line for a point that sufficiently decreases the non&#45;negative scalar&#45;valued function..." alt="" coords="5,5,149,47"/>
+<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#af7b046c0bc76f27c990b3bbf611df47d" title="Calculates f_scalar = 0.5 * |F_vec|^2 from a vector F_vec." alt="" coords="197,13,337,39"/>
+</map>

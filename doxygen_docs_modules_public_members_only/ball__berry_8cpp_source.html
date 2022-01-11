@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('ball__berry_8cpp_source.html',''); ini
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ball__berry_8hpp.html">ball_berry.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/* Ball Berry stomatal conductance function */</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">   14</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a>(<span class="keywordtype">double</span> assimilation,  <span class="comment">// mol / m^2 / s</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">   14</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a>(<span class="keywordtype">double</span> <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">assimilation</a>,  <span class="comment">// mol / m^2 / s</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                  <span class="keywordtype">double</span> atmospheric_co2_concentration,  <span class="comment">// mol / mol</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                  <span class="keywordtype">double</span> atmospheric_relative_humidity,  <span class="comment">// Pa / Pa</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                  <span class="keywordtype">double</span> beta0,  <span class="comment">// mol / m^2 / s</span></div>
@@ -114,13 +114,13 @@ $(document).ready(function(){initNavTree('ball__berry_8cpp_source.html',''); ini
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> gbw = 1.2;  <span class="comment">// mol / m^2 / s.  Boundary-layer conductance. Collatz et al. (1992) Aust. J. Plant Physiol. pg. 526. The units in the manuscript, micromole / m^2 / s, are wrong . They are actually mol / m^2 / s.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">double</span> gswmol;  <span class="comment">// mol / m^2 / s. stomatal conductance to water vapor.</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (assimilation &gt; 0) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Cs = atmospheric_co2_concentration - (1.4 / gbw) * assimilation;  <span class="comment">// mol / mol.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">assimilation</a> &gt; 0) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Cs = atmospheric_co2_concentration - (1.4 / gbw) * <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">assimilation</a>;  <span class="comment">// mol / mol.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (Cs &lt; 0.0) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">throw</span> std::range_error(<span class="stringliteral">&quot;Thrown in ball_berry: Cs is less than 0.&quot;</span>); </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">double</span> acs = assimilation / Cs;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">double</span> acs = <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">assimilation</a> / Cs;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (acs &lt; 1e-6) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            acs = 1e-6;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('ball__berry_8cpp_source.html',''); ini
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> root_term = b * b - 4 * a * c;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> hs = (-b + sqrt(root_term)) / (2 * a);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        gswmol = beta1 * hs * assimilation / Cs + beta0; <span class="comment">// Ball-Berry equation (Collatz 1991, equation 1).</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        gswmol = beta1 * hs * <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">assimilation</a> / Cs + beta0; <span class="comment">// Ball-Berry equation (Collatz 1991, equation 1).</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">/* Set stomatal conductance to the minimum value, beta0 */</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        gswmol = beta0;</div>
@@ -164,13 +164,14 @@ $(document).ready(function(){initNavTree('ball__berry_8cpp_source.html',''); ini
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="ttc" id="aball__berry_8cpp_html_a6e9346e63ae6f11483c7104df9ecf92c"><div class="ttname"><a href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a></div><div class="ttdeci">double ball_berry(double assimilation, double atmospheric_co2_concentration, double atmospheric_relative_humidity, double beta0, double beta1)</div><div class="ttdef"><b>Definition:</b> <a href="ball__berry_8cpp_source.html#l00014">ball_berry.cpp:14</a></div></div>
 <div class="ttc" id="aball__berry_8hpp_html"><div class="ttname"><a href="ball__berry_8hpp.html">ball_berry.hpp</a></div></div>
+<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a14f9e2ed404cb3c4afb74ee7fca5c6d8"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a14f9e2ed404cb3c4afb74ee7fca5c6d8">ed_c4_leaf_photosynthesis_stuff::assimilation</a></div><div class="ttdeci">module_wrapper&lt; ed_collatz_c4_assimilation &gt; assimilation</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00040">ed_c4_leaf_photosynthesis.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ball__berry_8cpp.html">ball_berry.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 18:03:33 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 11 2022 18:13:31 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

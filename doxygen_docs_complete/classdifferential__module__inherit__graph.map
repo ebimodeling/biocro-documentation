@@ -1,5 +1,5 @@
 <map id="differential_module" name="differential_module">
-<area shape="rect" id="node1" title="This class represents a differential module." alt="" coords="152,655,283,681"/>
+<area shape="rect" id="node1" title="This class represents a differential module." alt="" coords="152,705,283,732"/>
 <area shape="rect" id="node3" href="$classaba__decay.html" title=" " alt="" coords="380,5,464,32"/>
 <area shape="rect" id="node4" href="$classbucket__soil__drainage.html" title=" " alt="" coords="350,56,494,83"/>
 <area shape="rect" id="node5" href="$classdevelopment__index.html" title="Calculates the development index (DVI) corresponding to plant growth rate." alt="" coords="355,107,489,133"/>
@@ -26,5 +26,7 @@
 <area shape="rect" id="node26" href="$classthermal__time__senescence.html" title="Determines senescence rates for several plant organs based on thermal time thresholds and magical tim..." alt="" coords="335,1235,509,1261"/>
 <area shape="rect" id="node27" href="$classthermal__time__trilinear.html" title="Calculates the rate of thermal time accumulation using a trilinear model." alt="" coords="349,1285,495,1312"/>
 <area shape="rect" id="node28" href="$classtwo__layer__soil__profile.html" title=" " alt="" coords="349,1336,495,1363"/>
-<area shape="rect" id="node2" href="$classmodule__base.html" title="Represents one or more equations." alt="" coords="5,655,104,681"/>
+<area shape="rect" id="node29" href="$classutilization__growth.html" title="The utilization growth model is based on several papers published by Thornley and is implemented in B..." alt="" coords="361,1387,483,1413"/>
+<area shape="rect" id="node30" href="$classutilization__senescence.html" title=" " alt="" coords="345,1437,499,1464"/>
+<area shape="rect" id="node2" href="$classmodule__base.html" title="Represents one or more equations." alt="" coords="5,705,104,732"/>
 </map>

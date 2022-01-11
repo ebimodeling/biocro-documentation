@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('ball__berry__module_8hpp_source.html',
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">double</span> b0 = *b0_ip;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">double</span> b1 = *b1_ip;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">double</span> stomatal_conductance = <a class="code" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a>(net_assimilation_rate, atmospheric_co2_concentration, rh, b0, b1);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">stomatal_conductance</a> = <a class="code" href="ball__berry_8cpp.html#a6e9346e63ae6f11483c7104df9ecf92c">ball_berry</a>(net_assimilation_rate, atmospheric_co2_concentration, rh, b0, b1);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Update the output quantity list</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    update(leaf_stomatal_conductance_op, stomatal_conductance);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    update(leaf_stomatal_conductance_op, <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">stomatal_conductance</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -176,13 +176,14 @@ $(document).ready(function(){initNavTree('ball__berry__module_8hpp_source.html',
 <div class="ttc" id="aclassball__berry__module_html_a9e187a1904b8e442c762b03cfbdb283d"><div class="ttname"><a href="classball__berry__module.html#a9e187a1904b8e442c762b03cfbdb283d">ball_berry_module::ball_berry_module</a></div><div class="ttdeci">ball_berry_module(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="ball__berry__module_8hpp_source.html#l00011">ball_berry_module.hpp:11</a></div></div>
 <div class="ttc" id="aclassball__berry__module_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classball__berry__module.html#abc6bcae9586eb99fffb12a684814a4e6">ball_berry_module::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="ball__berry__module_8hpp_source.html#l00044">ball_berry_module.hpp:44</a></div></div>
 <div class="ttc" id="aclassball__berry__module_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classball__berry__module.html#ad0866265cb5b92692af7be0ef011f355">ball_berry_module::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="ball__berry__module_8hpp_source.html#l00027">ball_berry_module.hpp:27</a></div></div>
+<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a5762ba7d621f196273f0d4842d3a9ac8"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">ed_c4_leaf_photosynthesis_stuff::stomatal_conductance</a></div><div class="ttdeci">module_wrapper&lt; ed_ball_berry &gt; stomatal_conductance</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">ed_c4_leaf_photosynthesis.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="ball__berry__module_8hpp.html">ball_berry_module.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 18:03:33 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 11 2022 18:13:31 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

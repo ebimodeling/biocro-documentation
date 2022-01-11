@@ -1,0 +1,5 @@
+<map id="get_newton_raphson_step_boost" name="get_newton_raphson_step_boost">
+<area shape="rect" id="node1" title="Determines the Newton&#45;Raphson step using the boost library." alt="" coords="235,39,377,80"/>
+<area shape="rect" id="node2" href="$classnewton__raphson__backtrack__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="5,5,187,47"/>
+<area shape="rect" id="node3" href="$classnewton__raphson__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="18,71,174,112"/>
+</map>

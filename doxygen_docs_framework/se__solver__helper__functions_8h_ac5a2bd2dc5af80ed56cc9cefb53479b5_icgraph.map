@@ -1,0 +1,5 @@
+<map id="has_not_converged_abs" name="has_not_converged_abs">
+<area shape="rect" id="node1" title="Checks whether the difference vector elements are close to zero using an absolute threshold." alt="" coords="331,5,493,32"/>
+<area shape="rect" id="node2" href="$classse__solver.html#a03857581ce900666ce2d9a84f2f84302" title="Tries to find a root, starting at the initial guess and staying within the bounds." alt="" coords="168,5,283,32"/>
+<area shape="rect" id="node3" href="$classse__solver.html#a4213f229697b34afe771794dd5629fe8" title=" " alt="" coords="5,5,120,32"/>
+</map>

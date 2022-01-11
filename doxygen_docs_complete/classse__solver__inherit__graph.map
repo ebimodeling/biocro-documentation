@@ -1,0 +1,6 @@
+<map id="se_solver" name="se_solver">
+<area shape="rect" id="node1" title="An abstract class for a generic simultaneous equation solver. Its solve member function provides a un..." alt="" coords="163,5,242,32"/>
+<area shape="rect" id="node2" href="$classfixed__point.html" title="This class implements the fixed&#45;point method for solving simultaneous equations, where y = f(x) is th..." alt="" coords="5,87,88,114"/>
+<area shape="rect" id="node3" href="$classnewton__raphson__backtrack__boost.html" title="This class implements the backtracking Newton&#45;Raphson method for solving simultaneous equations,..." alt="" coords="112,80,293,121"/>
+<area shape="rect" id="node4" href="$classnewton__raphson__boost.html" title="This class implements the Newton&#45;Raphson method for solving simultaneous equations...." alt="" coords="318,87,474,114"/>
+</map>

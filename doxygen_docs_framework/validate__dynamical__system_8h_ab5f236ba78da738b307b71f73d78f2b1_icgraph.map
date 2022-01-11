@@ -1,8 +1,12 @@
 <map id="create_message" name="create_message">
-<area shape="rect" id="node1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="667,42,785,69"/>
-<area shape="rect" id="node2" href="$validate__dynamical__system_8cpp.html#a78161af3796f3d2cb465b80a761a276a" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="247,13,403,39"/>
-<area shape="rect" id="node4" href="$validate__dynamical__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc. This function should be used i..." alt="" coords="451,67,619,94"/>
-<area shape="rect" id="node3" href="$_r__dynamical__system_8cpp.html#a7776ac7a762a025a6d7c9c24b375cdf8" title=" " alt="" coords="28,5,176,47"/>
-<area shape="rect" id="node5" href="$validate__dynamical__system_8cpp.html#adfa13994900055c1c513e7a130dce658" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="259,64,391,105"/>
-<area shape="rect" id="node6" href="$classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node1" title="Forms a user feedback message from a list of quantities, modules, etc." alt="" coords="679,97,797,124"/>
+<area shape="rect" id="node2" href="$simultaneous__equations_8cpp.html#a3abc86e1462ac6fd3f3b3143c786cbaf" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="472,57,621,98"/>
+<area shape="rect" id="node4" href="$validate__dynamical__system_8cpp.html#aa45973f7fe66e4310b47b1edc5d9d7d7" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="253,5,409,32"/>
+<area shape="rect" id="node6" href="$validate__dynamical__system_8h.html#abbf593dec368115b8f24cf63820b7aba" title="Forms a user feedback message from a list of quantities, modules, etc. This function should be used i..." alt="" coords="463,191,631,217"/>
+<area shape="rect" id="node9" href="$simultaneous__equations_8cpp.html#a14c6fafcd2fc0febee2b0e63e9b1a2b9" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="471,122,622,163"/>
+<area shape="rect" id="node3" href="$_r__simultaneous__equations_8cpp.html#abe5ffbb2ecf4f8e654fe016d5c980552" title=" " alt="" coords="247,57,414,98"/>
+<area shape="rect" id="node5" href="$_r__dynamical__system_8cpp.html#adc3e32e0d0e0bf9964b4473e36ff44ef" title=" " alt="" coords="28,61,176,102"/>
+<area shape="rect" id="node7" href="$validate__dynamical__system_8cpp.html#a85beba379c76d089fb1907498dee4ae7" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="265,187,397,229"/>
+<area shape="rect" id="node8" href="$classdynamical__system.html#a3a478e0e90706e14c3b6f50a7f387a94" title=" " alt="" coords="5,187,199,229"/>
+<area shape="rect" id="node10" href="$classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580" title=" " alt="" coords="247,122,415,163"/>
 </map>
