@@ -79,7 +79,7 @@ $(function() {
 <a href="leaf__gbw__thornley_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LEAF_GBW_THORNLEY_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LEAF_GBW_THORNLEY_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../module.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_aux_bio_cro_8h.html">AuxBioCro.h</a>&quot;</span>  <span class="comment">// for leaf_boundary_layer_conductance_thornley</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
@@ -155,8 +155,8 @@ $(function() {
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_aux_bio_cro_8cpp_html_a33949e3620b40eedec427390bde216f0"><div class="ttname"><a href="_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0">leaf_boundary_layer_conductance_thornley</a></div><div class="ttdeci">double leaf_boundary_layer_conductance_thornley(double CanopyHeight, double WindSpeed, double minimum_gbw, double WindSpeedHeight)</div><div class="ttdoc">Caluclates the conductance for water vapor flow between the leaf surface and the atmosphere (AKA,...</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8cpp_source.html#l00917">AuxBioCro.cpp:917</a></div></div>
 <div class="ttc" id="a_aux_bio_cro_8h_html"><div class="ttname"><a href="_aux_bio_cro_8h.html">AuxBioCro.h</a></div></div>
-<div class="ttc" id="aclassdirect__module_html"><div class="ttname"><a href="classdirect__module.html">direct_module</a></div><div class="ttdoc">This class represents a direct module.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00075">modules.h:76</a></div></div>
-<div class="ttc" id="aclassdirect__module_html_a3f5a6c165abfe31f11a5465b11d645be"><div class="ttname"><a href="classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be">direct_module::update</a></div><div class="ttdeci">void update(double *output_ptr, const double &amp;value) const</div><div class="ttdoc">In a valid dynamical_system object, a given quantity may be defined by only one direct module....</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00103">modules.h:103</a></div></div>
+<div class="ttc" id="aclassdirect__module_html"><div class="ttname"><a href="classdirect__module.html">direct_module</a></div><div class="ttdoc">This class represents a direct module.</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00087">module.h:88</a></div></div>
+<div class="ttc" id="aclassdirect__module_html_a3f5a6c165abfe31f11a5465b11d645be"><div class="ttname"><a href="classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be">direct_module::update</a></div><div class="ttdeci">void update(double *output_ptr, const double &amp;value) const</div><div class="ttdoc">In a valid dynamical_system object, a given quantity may be defined by only one direct module....</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00115">module.h:115</a></div></div>
 <div class="ttc" id="aclassleaf__gbw__thornley_html"><div class="ttname"><a href="classleaf__gbw__thornley.html">leaf_gbw_thornley</a></div><div class="ttdoc">Calculates the boundary layer conductance using the leaf_boundary_layer_conductance_thornley() functi...</div><div class="ttdef"><b>Definition:</b> <a href="leaf__gbw__thornley_8h_source.html#l00029">leaf_gbw_thornley.h:30</a></div></div>
 <div class="ttc" id="aclassleaf__gbw__thornley_html_a273f7a0753a1249da6440f646f0a8f86"><div class="ttname"><a href="classleaf__gbw__thornley.html#a273f7a0753a1249da6440f646f0a8f86">leaf_gbw_thornley::minimum_gbw</a></div><div class="ttdeci">double const  &amp; minimum_gbw</div><div class="ttdef"><b>Definition:</b> <a href="leaf__gbw__thornley_8h_source.html#l00055">leaf_gbw_thornley.h:55</a></div></div>
 <div class="ttc" id="aclassleaf__gbw__thornley_html_a391e9fd4e949f6e987eb654a11b1e451"><div class="ttname"><a href="classleaf__gbw__thornley.html#a391e9fd4e949f6e987eb654a11b1e451">leaf_gbw_thornley::do_operation</a></div><div class="ttdeci">void do_operation() const</div><div class="ttdef"><b>Definition:</b> <a href="leaf__gbw__thornley_8h_source.html#l00082">leaf_gbw_thornley.h:82</a></div></div>
@@ -175,7 +175,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 11 2022 18:12:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 13 2022 15:46:34 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

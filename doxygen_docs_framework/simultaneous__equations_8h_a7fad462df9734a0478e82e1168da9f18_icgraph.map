@@ -1,0 +1,7 @@
+<map id="get_unknown_quantities" name="get_unknown_quantities">
+<area shape="rect" id="node1" title="Finds the unknown quantities defined by the set of modules." alt="" coords="420,46,583,73"/>
+<area shape="rect" id="node2" href="$simultaneous__equations_8cpp.html#a04f19c0c0713cd1bcaed4b3a0aae1e20" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="222,5,371,47"/>
+<area shape="rect" id="node4" href="$simultaneous__equations_8cpp.html#a963debb7f62d8fd53450b589b2ff88ec" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="221,71,372,112"/>
+<area shape="rect" id="node3" href="$_r__simultaneous__equations_8cpp.html#a736b7b735611e99e351193041de9f24e" title=" " alt="" coords="6,5,173,47"/>
+<area shape="rect" id="node5" href="$classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="5,71,173,112"/>
+</map>

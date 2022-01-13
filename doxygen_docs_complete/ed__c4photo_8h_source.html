@@ -79,7 +79,7 @@ $(function() {
 <a href="ed__c4photo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ED_C4PHOTO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ED_C4PHOTO_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../modules.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../module.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="c4photo_8h.html">c4photo.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
@@ -238,8 +238,8 @@ $(function() {
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ac4photo_8cpp_html_a2613ca2f3d1f34c768aacfbd0de1dd3e"><div class="ttname"><a href="c4photo_8cpp.html#a2613ca2f3d1f34c768aacfbd0de1dd3e">c4photoC</a></div><div class="ttdeci">struct c4_str c4photoC(double Qp, double leaf_temperature, double relative_humidity, double vmax, double alpha, double kparm, double theta, double beta, double Rd, double bb0, double bb1, double Gs_min, double StomaWS, double Ca, double atmospheric_pressure, int water_stress_approach, double upperT, double lowerT)</div><div class="ttdef"><b>Definition:</b> <a href="c4photo_8cpp_source.html#l00001">c4photo.cpp:15</a></div></div>
 <div class="ttc" id="ac4photo_8h_html"><div class="ttname"><a href="c4photo_8h.html">c4photo.h</a></div></div>
-<div class="ttc" id="aclassdirect__module_html"><div class="ttname"><a href="classdirect__module.html">direct_module</a></div><div class="ttdoc">This class represents a direct module.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00075">modules.h:76</a></div></div>
-<div class="ttc" id="aclassdirect__module_html_a3f5a6c165abfe31f11a5465b11d645be"><div class="ttname"><a href="classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be">direct_module::update</a></div><div class="ttdeci">void update(double *output_ptr, const double &amp;value) const</div><div class="ttdoc">In a valid dynamical_system object, a given quantity may be defined by only one direct module....</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00103">modules.h:103</a></div></div>
+<div class="ttc" id="aclassdirect__module_html"><div class="ttname"><a href="classdirect__module.html">direct_module</a></div><div class="ttdoc">This class represents a direct module.</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00087">module.h:88</a></div></div>
+<div class="ttc" id="aclassdirect__module_html_a3f5a6c165abfe31f11a5465b11d645be"><div class="ttname"><a href="classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be">direct_module::update</a></div><div class="ttdeci">void update(double *output_ptr, const double &amp;value) const</div><div class="ttdoc">In a valid dynamical_system object, a given quantity may be defined by only one direct module....</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00115">module.h:115</a></div></div>
 <div class="ttc" id="aclassed__c4photo_html"><div class="ttname"><a href="classed__c4photo.html">ed_c4photo</a></div><div class="ttdoc">Just a module wrapper for the c4photo() function. Currently only intended for use by Ed.</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4photo_8h_source.html#l00014">ed_c4photo.h:15</a></div></div>
 <div class="ttc" id="aclassed__c4photo_html_a0929f31ce499c1da1b6e52801f421a61"><div class="ttname"><a href="classed__c4photo.html#a0929f31ce499c1da1b6e52801f421a61">ed_c4photo::collatz_rd_ip</a></div><div class="ttdeci">const double * collatz_rd_ip</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4photo_8h_source.html#l00063">ed_c4photo.h:63</a></div></div>
 <div class="ttc" id="aclassed__c4photo_html_a10dbf035b145172830676d32c8a0cefe"><div class="ttname"><a href="classed__c4photo.html#a10dbf035b145172830676d32c8a0cefe">ed_c4photo::assimilation_gross_op</a></div><div class="ttdeci">double * assimilation_gross_op</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4photo_8h_source.html#l00076">ed_c4photo.h:76</a></div></div>
@@ -279,7 +279,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 11 2022 18:12:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 13 2022 15:46:34 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

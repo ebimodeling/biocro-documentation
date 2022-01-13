@@ -145,7 +145,7 @@ var hierarchy =
     [ "Light_model", "struct_light__model.html", null ],
     [ "Light_profile", "struct_light__profile.html", null ],
     [ "crop_phenology::minerals1", "structcrop__phenology_1_1minerals1.html", null ],
-    [ "module_wrapper_factory", "classmodule__wrapper__factory.html", null ],
+    [ "module_library", "classmodule__library.html", null ],
     [ "nitroParms", "structnitro_parms.html", null ],
     [ "rd_str", "structrd__str.html", null ],
     [ "rue_str", "structrue__str.html", null ],

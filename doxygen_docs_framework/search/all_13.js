@@ -19,7 +19,7 @@ var searchData=
   ['second_5ftype_309',['second_type',['../classdynamical__system__caller.html#af04273b570caf2c1cabdaf1ad18142e5',1,'dynamical_system_caller']]],
   ['seshf_5fprint_310',['seshf_print',['../se__solver__helper__functions_8h.html#aa86cb8b815b848a0d65bcdfe8e2c4e53',1,'se_solver_helper_functions.h']]],
   ['should_5fcheck_5feuler_5frequirement_311',['should_check_euler_requirement',['../classode__solver.html#a2356c20494d60945341032e371b8d26e',1,'ode_solver']]],
-  ['simultaneous_5fequations_312',['simultaneous_equations',['../classsimultaneous__equations.html',1,'simultaneous_equations'],['../classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580',1,'simultaneous_equations::simultaneous_equations()']]],
+  ['simultaneous_5fequations_312',['simultaneous_equations',['../classsimultaneous__equations.html',1,'simultaneous_equations'],['../classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f',1,'simultaneous_equations::simultaneous_equations()']]],
   ['simultaneous_5fequations_2ecpp_313',['simultaneous_equations.cpp',['../simultaneous__equations_8cpp.html',1,'']]],
   ['simultaneous_5fequations_2eh_314',['simultaneous_equations.h',['../simultaneous__equations_8h.html',1,'']]],
   ['sin_5fdeg_315',['sin_deg',['../degree__trigonometry_8h.html#a70fa4902a53d8c82d868c9460cb69324',1,'degree_trigonometry.h']]],

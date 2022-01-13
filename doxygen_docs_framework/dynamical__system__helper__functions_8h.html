@@ -83,7 +83,7 @@ $(function() {
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &quot;<a class="el" href="modules_8h_source.html">modules.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module_8h_source.html">module.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="validate__dynamical__system_8h_source.html">validate_dynamical_system.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="constants_8h_source.html">constants.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -93,13 +93,13 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="dynamical__system__helper__functions_8h__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2dynamical__system__helper__functions_8h" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2dynamical__system__helper__functions_8h" id="a_2github_2workspace_2source_2src_2dynamical__system__helper__functions_8h">
-<area shape="rect" title=" " alt="" coords="275,5,472,61"/>
+<area shape="rect" title=" " alt="" coords="277,5,475,61"/>
 <area shape="rect" title=" " alt="" coords="120,512,179,539"/>
 <area shape="rect" title=" " alt="" coords="783,512,823,539"/>
 <area shape="rect" title=" " alt="" coords="647,512,758,539"/>
 <area shape="rect" title=" " alt="" coords="446,512,501,539"/>
 <area shape="rect" title=" " alt="" coords="94,363,162,389"/>
-<area shape="rect" href="modules_8h.html" title=" " alt="" coords="191,288,273,315"/>
+<area shape="rect" href="module_8h.html" title=" " alt="" coords="196,288,271,315"/>
 <area shape="rect" href="validate__dynamical__system_8h.html" title=" " alt="" coords="447,109,579,151"/>
 <area shape="rect" href="constants_8h.html" title=" " alt="" coords="874,117,963,143"/>
 <area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="237,363,413,389"/>
@@ -108,7 +108,7 @@ $(function() {
 <area shape="rect" href="state__map_8h.html" title=" " alt="" coords="539,437,632,464"/>
 <area shape="rect" title=" " alt="" coords="548,512,623,539"/>
 <area shape="rect" title=" " alt="" coords="435,206,514,233"/>
-<area shape="rect" href="module__wrapper_8h.html" title=" " alt="" coords="285,206,411,233"/>
+<area shape="rect" href="module__creator_8h.html" title=" " alt="" coords="290,206,411,233"/>
 <area shape="rect" title=" " alt="" coords="859,199,1007,240"/>
 </map>
 </div>
@@ -162,7 +162,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8d8433e352300150a183ae058a753d2"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; const value_type * &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="dynamical__system__helper__functions_8h.html#ae8d8433e352300150a183ae058a753d2">get_const_pointers</a> (name_list_type quantity_names, std::unordered_map&lt; std::string, value_type &gt; const &amp;map)</td></tr>
 <tr class="memdesc:ae8d8433e352300150a183ae058a753d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_names.  <a href="dynamical__system__helper__functions_8h.html#ae8d8433e352300150a183ae058a753d2">More...</a><br /></td></tr>
 <tr class="separator:ae8d8433e352300150a183ae058a753d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a06f75e30d97caffc99a6ba0c5911e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a> (<a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> const &amp;modules_to_check)</td></tr>
+<tr class="memitem:a67a06f75e30d97caffc99a6ba0c5911e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a> (<a class="el" href="module_8h.html#ad7dbd1f070a9275c750e1c8961b456a9">module_vector</a> const &amp;modules_to_check)</td></tr>
 <tr class="memdesc:a67a06f75e30d97caffc99a6ba0c5911e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the collection of modules requires an Euler ODE solver.  <a href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">More...</a><br /></td></tr>
 <tr class="separator:a67a06f75e30d97caffc99a6ba0c5911e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -176,7 +176,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool check_euler_requirement </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="module_8h.html#ad7dbd1f070a9275c750e1c8961b456a9">module_vector</a> const &amp;&#160;</td>
           <td class="paramname"><em>modules_to_check</em></td><td>)</td>
           <td></td>
         </tr>
@@ -242,7 +242,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="dynamical__system__helper__functions_8h_ae8d8433e352300150a183ae058a753d2_icgraph.png" border="0" usemap="#adynamical__system__helper__functions_8h_ae8d8433e352300150a183ae058a753d2_icgraph" alt=""/></div>
 <map name="adynamical__system__helper__functions_8h_ae8d8433e352300150a183ae058a753d2_icgraph" id="adynamical__system__helper__functions_8h_ae8d8433e352300150a183ae058a753d2_icgraph">
 <area shape="rect" title="Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_..." alt="" coords="221,13,353,39"/>
-<area shape="rect" href="classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" href="classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="5,5,173,47"/>
 </map>
 </div>
 
@@ -294,8 +294,8 @@ Functions</h2></td></tr>
 <div class="center"><img src="dynamical__system__helper__functions_8h_a1e06900ea3338ca300c33d8582211d4c_icgraph.png" border="0" usemap="#adynamical__system__helper__functions_8h_a1e06900ea3338ca300c33d8582211d4c_icgraph" alt=""/></div>
 <map name="adynamical__system__helper__functions_8h_a1e06900ea3338ca300c33d8582211d4c_icgraph" id="adynamical__system__helper__functions_8h_a1e06900ea3338ca300c33d8582211d4c_icgraph">
 <area shape="rect" title="Returns pairs of pointers that each point to the same named quantity in each of the two input maps." alt="" coords="247,46,368,73"/>
-<area shape="rect" href="classdynamical__system.html#a3a478e0e90706e14c3b6f50a7f387a94" title=" " alt="" coords="5,5,199,47"/>
-<area shape="rect" href="classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580" title=" " alt="" coords="18,71,186,112"/>
+<area shape="rect" href="classdynamical__system.html#a2b3054277b6e00cab2f51939c5aa8576" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" href="classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="18,71,186,112"/>
 </map>
 </div>
 
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
 <div class="center"><img src="dynamical__system__helper__functions_8h_ab35470319479a69326a1de4f23c05545_icgraph.png" border="0" usemap="#adynamical__system__helper__functions_8h_ab35470319479a69326a1de4f23c05545_icgraph" alt=""/></div>
 <map name="adynamical__system__helper__functions_8h_ab35470319479a69326a1de4f23c05545_icgraph" id="adynamical__system__helper__functions_8h_ab35470319479a69326a1de4f23c05545_icgraph">
 <area shape="rect" title="Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_..." alt="" coords="221,13,315,39"/>
-<area shape="rect" href="classsimultaneous__equations.html#a1a7f709480cada6ee3ab3c10f3c10580" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" href="classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="5,5,173,47"/>
 </map>
 </div>
 
@@ -350,7 +350,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 11 2022 18:13:50 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 13 2022 15:48:09 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

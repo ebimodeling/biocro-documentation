@@ -155,8 +155,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5f61a7e970198562fc4b31024832cc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de5651fb81ec47adc2e3b987dfe215d"><td class="memItemLeft" align="right" valign="top">state_map&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__photosynthesis.html#a1de5651fb81ec47adc2e3b987dfe215d">leaf_module_output_map</a></td></tr>
 <tr class="separator:a1de5651fb81ec47adc2e3b987dfe215d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067e5e8c9e152da2b8cdb0c00bad270d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; module_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__photosynthesis.html#a067e5e8c9e152da2b8cdb0c00bad270d">leaf_module</a></td></tr>
-<tr class="separator:a067e5e8c9e152da2b8cdb0c00bad270d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5fe6d6c0bddc913ab8638480cd7ac6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; module &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__photosynthesis.html#a9c5fe6d6c0bddc913ab8638480cd7ac6">leaf_module</a></td></tr>
+<tr class="separator:a9c5fe6d6c0bddc913ab8638480cd7ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3a877c75139f619ef5b7824230b7b6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::pair&lt; double *, const double * &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__photosynthesis.html#afb3a877c75139f619ef5b7824230b7b6">leaf_input_ptr_pairs</a></td></tr>
 <tr class="separator:afb3a877c75139f619ef5b7824230b7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1227af2962146d85c2e7a7f631716b23"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::pair&lt; double *, const double * &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmultilayer__canopy__photosynthesis.html#a1227af2962146d85c2e7a7f631716b23">leaf_output_ptr_pairs</a></td></tr>
@@ -190,7 +190,7 @@ More operational details</h3>
 <li><code>define_pure_multilayer_outputs()</code>: specifies the base names for quantities that change with canopy layer but not leaf class</li>
 </ul>
 <p>The layer- and class-dependent names of these quantities are formed from a base name (e.g. <code>incident_par</code>), a prefix that indicates the leaf class (e.g. <code>sunlit_</code>), and a suffix that indicates the layer number (e.g. <code>_layer_0</code>).</p>
-<p>Note that this module has a non-standard constructor, so it cannot be created using the <a class="el" href="classmodule__wrapper__factory.html">module_wrapper_factory</a>. Rather, it is expected that directly-usable classes will be derived from this class. </p>
+<p>Note that this module has a non-standard constructor, so it cannot be created using the <a class="el" href="classmodule__library.html" title="A factory class that creates module_creator objects; more colloquially, we say that a module or modul...">module_library</a>. Rather, it is expected that directly-usable classes will be derived from this class. </p>
 
 <p class="definition">Definition at line <a class="el" href="multilayer__canopy__photosynthesis_8h_source.html#l00154">154</a> of file <a class="el" href="multilayer__canopy__photosynthesis_8h_source.html">multilayer_canopy_photosynthesis.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -390,8 +390,8 @@ More operational details</h3>
 
 </div>
 </div>
-<a id="a067e5e8c9e152da2b8cdb0c00bad270d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a067e5e8c9e152da2b8cdb0c00bad270d">&#9670;&nbsp;</a></span>leaf_module</h2>
+<a id="a9c5fe6d6c0bddc913ab8638480cd7ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5fe6d6c0bddc913ab8638480cd7ac6">&#9670;&nbsp;</a></span>leaf_module</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,7 +400,7 @@ More operational details</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;module_base&gt; leaf_module</td>
+          <td class="memname">std::unique_ptr&lt;module&gt; leaf_module</td>
         </tr>
       </table>
   </td>
@@ -529,7 +529,7 @@ More operational details</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmultilayer__canopy__photosynthesis.html">multilayer_canopy_photosynthesis</a></li>
-    <li class="footer">Generated on Tue Jan 11 2022 18:13:09 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jan 13 2022 15:47:20 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

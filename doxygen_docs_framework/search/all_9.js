@@ -9,6 +9,6 @@ var searchData=
   ['insert_5fquantity_5fname_5fif_5fnew_177',['insert_quantity_name_if_new',['../validate__dynamical__system_8cpp.html#ae000a5a42ee470ce3b44ae220dfeae4d',1,'insert_quantity_name_if_new(std::string quantity_name, string_vector &amp;target_vector, string_vector &amp;duplicates):&#160;validate_dynamical_system.cpp'],['../validate__dynamical__system_8h.html#acf127cbf0b3b1750cfd735764b958a82',1,'insert_quantity_name_if_new(std::string quantity_name, string_vector &amp;target_vector, string_vector &amp;duplicate_vector):&#160;validate_dynamical_system.cpp']]],
   ['integrate_178',['integrate',['../classode__solver.html#a773b5258f782c6e3aa76780390ad031a',1,'ode_solver']]],
   ['integrate_5fmethod_5fhas_5fbeen_5fcalled_179',['integrate_method_has_been_called',['../classode__solver.html#af7d8661c455dd9cb4f4ceaa27406e6a6',1,'ode_solver']]],
-  ['is_5fdifferential_180',['is_differential',['../classmodule__base.html#af2df2fa3eedbd1248b07817749ada4f3',1,'module_base']]],
+  ['is_5fdifferential_180',['is_differential',['../classmodule.html#af2df2fa3eedbd1248b07817749ada4f3',1,'module']]],
   ['is_5foutside_5fbounds_181',['is_outside_bounds',['../se__solver__helper__functions_8h.html#adef0959092a7736ae2ab30bb2bc054e2',1,'se_solver_helper_functions.h']]]
 ];

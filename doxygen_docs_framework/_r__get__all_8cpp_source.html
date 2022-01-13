@@ -80,7 +80,7 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_r__helper__functions_8h.html">R_helper_functions.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;module_library/module_wrapper_factory.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;module_library/module_library.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ode__solver__factory_8h.html">ode_solver_library/ode_solver_factory.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="se__solver__factory_8h.html">se_solver_library/se_solver_factory.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737">   11</a></span>&#160;SEXP <a class="code" href="_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737">R_get_all_modules</a>()</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::vector&lt;std::string&gt; result = module_wrapper_factory::get_modules();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::vector&lt;std::string&gt; result = module_library::get_all_modules();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a804a6819e7de829ba23f6e24a43f8995">r_string_vector_from_vector</a>(result);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    } <span class="keywordflow">catch</span> (std::exception <span class="keyword">const</span>&amp; e) {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        Rf_error((std::string(<span class="stringliteral">&quot;Caught exception in R_get_all_modules: &quot;</span>) + e.what()).c_str());</div>
@@ -101,7 +101,7 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_r__get__all_8cpp.html#a5f774d138b47709a8a354da35d32a768">   23</a></span>&#160;SEXP <a class="code" href="_r__get__all_8cpp.html#a5f774d138b47709a8a354da35d32a768">R_get_all_quantities</a>()</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; all_quantities = module_wrapper_factory::get_all_quantities();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::unordered_map&lt;std::string, std::vector&lt;std::string&gt;&gt; all_quantities = module_library::get_all_quantities();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">list_from_map</a>(all_quantities);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    } <span class="keywordflow">catch</span> (std::exception <span class="keyword">const</span>&amp; e) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        Rf_error((std::string(<span class="stringliteral">&quot;Caught exception in R_get_all_param: &quot;</span>) + e.what()).c_str());</div>
@@ -149,7 +149,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 11 2022 18:13:50 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 13 2022 15:48:09 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

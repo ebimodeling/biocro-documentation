@@ -1,6 +1,0 @@
-<map id="get_evaluation_order" name="get_evaluation_order">
-<area shape="rect" id="node1" title="Given a list of modules (presented as a vector of pointers to module_wrapper_base objects),..." alt="" coords="443,42,585,69"/>
-<area shape="rect" id="node2" href="$validate__dynamical__system_8cpp.html#aa45973f7fe66e4310b47b1edc5d9d7d7" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="220,13,376,39"/>
-<area shape="rect" id="node4" href="$classdynamical__system.html#a3a478e0e90706e14c3b6f50a7f387a94" title=" " alt="" coords="201,64,395,105"/>
-<area shape="rect" id="node3" href="$_r__dynamical__system_8cpp.html#adc3e32e0d0e0bf9964b4473e36ff44ef" title=" " alt="" coords="5,5,153,47"/>
-</map>

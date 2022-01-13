@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flux_2709',['flux',['../namespacebiocro__units.html#a2393fbbe722fce0781df043f36dbf840',1,'biocro_units']]]
+  ['energy_5fover_5famount_2708',['energy_over_amount',['../namespacebiocro__units.html#a937f0225cad93539cf6ecfb056fce6fe',1,'biocro_units']]]
 ];

@@ -1,5 +1,5 @@
 <map id="make_vector" name="make_vector">
-<area shape="rect" id="node1" title=" " alt="" coords="232,35,329,61"/>
-<area shape="rect" id="node2" href="$_r__module__wrapper_8cpp.html#a76cb1d7da43fc27ac7e300add4b76b18" title="Creates a vector of &quot;R external pointer&quot; objects that each point to a module_wrapper_base object." alt="" coords="5,5,184,32"/>
-<area shape="rect" id="node3" href="$_r__simultaneous__equations_8cpp.html#abe5ffbb2ecf4f8e654fe016d5c980552" title=" " alt="" coords="11,57,178,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="220,35,317,61"/>
+<area shape="rect" id="node2" href="$_r__module__creators_8cpp.html#a35c18d8bce8c6afb0822537ab0eaa67b" title="Creates a vector of &quot;R external pointer&quot; objects that each point to a module_creator object; this fun..." alt="" coords="21,5,156,32"/>
+<area shape="rect" id="node3" href="$_r__simultaneous__equations_8cpp.html#a736b7b735611e99e351193041de9f24e" title=" " alt="" coords="5,57,172,98"/>
 </map>

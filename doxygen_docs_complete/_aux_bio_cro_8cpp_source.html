@@ -401,7 +401,7 @@ $(function() {
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    double airTemp,                          <span class="comment">// degrees C</span></div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    double RH,                               <span class="comment">// dimensionless from Pa / Pa</span></div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    double WindSpeed,                        <span class="comment">// m / s</span></div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    double <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">stomatal_conductance</a>,             <span class="comment">// mmol / m^2 / s</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    double <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a74c05ac12870549aff8eef5fc0fa5557">stomatal_conductance</a>,             <span class="comment">// mmol / m^2 / s</span></div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    double leaf_width,                       <span class="comment">// meter</span></div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    double specific_heat_of_air,             <span class="comment">// J / kg / K</span></div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    double minimum_gbw,                      <span class="comment">// mol / m^2 / s</span></div>
@@ -419,11 +419,11 @@ $(function() {
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keywordtype">double</span> minimum_gbw_in_m_per_s = minimum_gbw * volume_of_one_mole_of_air;  <span class="comment">// m / s</span></div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">stomatal_conductance</a> &lt;= 0) {</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a74c05ac12870549aff8eef5fc0fa5557">stomatal_conductance</a> &lt;= 0) {</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="keywordflow">throw</span> std::range_error(<span class="stringliteral">&quot;Thrown in EvapoTrans2: stomatal conductance is not positive.&quot;</span>);</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    }</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160; </div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordtype">double</span> conductance_in_m_per_s = <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">stomatal_conductance</a> * 1e-3 * volume_of_one_mole_of_air;  <span class="comment">// m / s</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    <span class="keywordtype">double</span> conductance_in_m_per_s = <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a74c05ac12870549aff8eef5fc0fa5557">stomatal_conductance</a> * 1e-3 * volume_of_one_mole_of_air;  <span class="comment">// m / s</span></div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keywordflow">if</span> (RH &gt; 1) {</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordflow">throw</span> std::range_error(<span class="stringliteral">&quot;Thrown in EvapoTrans2: RH (relative humidity) is greater than 1.&quot;</span>);</div>
@@ -1090,7 +1090,7 @@ $(function() {
 <div class="ttc" id="a_bio_cro_8h_html"><div class="ttname"><a href="_bio_cro_8h.html">BioCro.h</a></div></div>
 <div class="ttc" id="ac4photo_8h_html"><div class="ttname"><a href="c4photo_8h.html">c4photo.h</a></div></div>
 <div class="ttc" id="anamespaceconversion__constants_html_ac29e2ff8a2fe79bf1a6e7f5623f8f8a3"><div class="ttname"><a href="namespaceconversion__constants.html#ac29e2ff8a2fe79bf1a6e7f5623f8f8a3">conversion_constants::celsius_to_kelvin</a></div><div class="ttdeci">constexpr double celsius_to_kelvin</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00032">constants.h:32</a></div></div>
-<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a5762ba7d621f196273f0d4842d3a9ac8"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a5762ba7d621f196273f0d4842d3a9ac8">ed_c4_leaf_photosynthesis_stuff::stomatal_conductance</a></div><div class="ttdeci">module_wrapper&lt; ed_ball_berry &gt; stomatal_conductance</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">ed_c4_leaf_photosynthesis.h:39</a></div></div>
+<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a74c05ac12870549aff8eef5fc0fa5557"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a74c05ac12870549aff8eef5fc0fa5557">ed_c4_leaf_photosynthesis_stuff::stomatal_conductance</a></div><div class="ttdeci">module_creator_impl&lt; ed_ball_berry &gt; stomatal_conductance</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">ed_c4_leaf_photosynthesis.h:39</a></div></div>
 <div class="ttc" id="anamespacephysical__constants_html_a7162c8c2c8cfdb894219fadabc0a764c"><div class="ttname"><a href="namespacephysical__constants.html#a7162c8c2c8cfdb894219fadabc0a764c">physical_constants::molar_mass_of_water</a></div><div class="ttdeci">constexpr double molar_mass_of_water</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00063">constants.h:63</a></div></div>
 <div class="ttc" id="anamespacephysical__constants_html_a942ef2e6b3483c7d4e7942a83d61a743"><div class="ttname"><a href="namespacephysical__constants.html#a942ef2e6b3483c7d4e7942a83d61a743">physical_constants::atmospheric_pressure_at_sea_level</a></div><div class="ttdeci">constexpr double atmospheric_pressure_at_sea_level</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00067">constants.h:67</a></div></div>
 <div class="ttc" id="anamespacephysical__constants_html_ab993d2950483e6b20ca63c46f8134241"><div class="ttname"><a href="namespacephysical__constants.html#ab993d2950483e6b20ca63c46f8134241">physical_constants::stefan_boltzmann</a></div><div class="ttdeci">constexpr double stefan_boltzmann</div><div class="ttdef"><b>Definition:</b> <a href="constants_8h_source.html#l00061">constants.h:61</a></div></div>
@@ -1134,7 +1134,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 11 2022 18:12:27 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jan 13 2022 15:46:33 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
