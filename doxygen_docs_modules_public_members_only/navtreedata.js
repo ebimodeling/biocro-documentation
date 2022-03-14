@@ -62,10 +62,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classfake__solar.html",
-"ed__c4__leaf__photosynthesis_8h.html#a0b37c5938e82da1fb19ed599f7c71217",
-"namespaceed__c4__leaf__photosynthesis3__stuff.html#a5d62a42a48fc61c110e2d8ca0a6f7b3b",
-"structcrop__phenology_1_1minerals1.html#a4f81bac66d6b9aa12266f35121bb8405"
+"classgolden__ratio__hyperbola.html",
+"ed__c4__leaf__photosynthesis_8h.html#a1a42a8377ded70759d8e11efc8599391",
+"namespaceed__c4__leaf__photosynthesis3__stuff.html#a7e80c72924f0dd6293f90c8706770f7d",
+"structdbp__str.html#a57b9aa759f801b0c771f3a90abecb73c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

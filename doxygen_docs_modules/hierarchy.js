@@ -10,7 +10,6 @@ var hierarchy =
       [ "aba_decay", "classaba__decay.html", null ],
       [ "bucket_soil_drainage", "classbucket__soil__drainage.html", null ],
       [ "development_index", "classdevelopment__index.html", null ],
-      [ "empty_senescence", "classempty__senescence.html", null ],
       [ "example_model_partitioning", "classexample__model__partitioning.html", null ],
       [ "grimm_soybean_flowering", "classgrimm__soybean__flowering.html", null ],
       [ "harmonic_oscillator", "classharmonic__oscillator.html", null ],

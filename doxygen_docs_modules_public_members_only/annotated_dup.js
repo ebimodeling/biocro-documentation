@@ -52,7 +52,6 @@ var annotated_dup =
     [ "ed_ten_layer_canopy_integrator", "classed__ten__layer__canopy__integrator.html", "classed__ten__layer__canopy__integrator" ],
     [ "ed_ten_layer_canopy_properties", "classed__ten__layer__canopy__properties.html", "classed__ten__layer__canopy__properties" ],
     [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", "classed__water__vapor__properties" ],
-    [ "empty_senescence", "classempty__senescence.html", "classempty__senescence" ],
     [ "ET_Str", "struct_e_t___str.html", "struct_e_t___str" ],
     [ "example_model_mass_gain", "classexample__model__mass__gain.html", "classexample__model__mass__gain" ],
     [ "example_model_partitioning", "classexample__model__partitioning.html", "classexample__model__partitioning" ],

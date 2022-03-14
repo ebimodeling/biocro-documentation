@@ -119,9 +119,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "ed_water_vapor_properties.h", "ed__water__vapor__properties_8h.html", [
       [ "ed_water_vapor_properties", "classed__water__vapor__properties.html", "classed__water__vapor__properties" ]
     ] ],
-    [ "empty_senescence.hpp", "empty__senescence_8hpp.html", [
-      [ "empty_senescence", "classempty__senescence.html", "classempty__senescence" ]
-    ] ],
     [ "example_model_mass_gain.h", "example__model__mass__gain_8h.html", [
       [ "example_model_mass_gain", "classexample__model__mass__gain.html", "classexample__model__mass__gain" ]
     ] ],
