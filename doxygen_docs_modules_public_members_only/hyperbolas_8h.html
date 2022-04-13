@@ -89,15 +89,16 @@ $(document).ready(function(){initNavTree('hyperbolas_8h.html',''); initResizable
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">hyperbolas.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
-<code>#include &quot;../module.h&quot;</code><br />
-<code>#include &quot;../state_map.h&quot;</code><br />
-<code>#include &quot;../constants.h&quot;</code><br />
+<code>#include &quot;../framework/module.h&quot;</code><br />
+<code>#include &quot;../framework/state_map.h&quot;</code><br />
+<code>#include &quot;../framework/constants.h&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for hyperbolas.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,11 +106,11 @@ $(document).ready(function(){initNavTree('hyperbolas_8h.html',''); initResizable
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="hyperbolas_8h__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2module__library_2hyperbolas_8h" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2module__library_2hyperbolas_8h" id="a_2github_2workspace_2source_2src_2module__library_2hyperbolas_8h">
-<area shape="rect" title=" " alt="" coords="86,5,293,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" title=" " alt="" coords="89,95,173,121"/>
-<area shape="rect" title=" " alt="" coords="197,95,299,121"/>
-<area shape="rect" title=" " alt="" coords="324,95,423,121"/>
+<area shape="rect" title=" " alt="" coords="141,5,347,47"/>
+<area shape="rect" title=" " alt="" coords="5,102,64,129"/>
+<area shape="rect" title=" " alt="" coords="88,102,237,129"/>
+<area shape="rect" title=" " alt="" coords="262,95,389,136"/>
+<area shape="rect" title=" " alt="" coords="413,102,577,129"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -128,11 +129,17 @@ $(document).ready(function(){initNavTree('hyperbolas_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgolden__ratio__hyperbola.html">golden_ratio_hyperbola</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a simple hyperbola defined by f(x) = 1 + 1 / x. Intended to be used as a simple test case for simultaneous eqation solvers. The solution to f(x) = x is x = (1 + sqrt(5))/2, the "golden ratio.".  <a href="classgolden__ratio__hyperbola.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1golden__ratio__hyperbola.html">golden_ratio_hyperbola</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a simple hyperbola defined by f(x) = 1 + 1 / x. Intended to be used as a simple test case for simultaneous eqation solvers. The solution to f(x) = x is x = (1 + sqrt(5))/2, the "golden ratio.".  <a href="classstandard_b_m_l_1_1golden__ratio__hyperbola.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhyperbola__2d.html">hyperbola_2d</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents two 2D hyperbolas defined by f(x,y) = 1 + 1 / (x + y) and g(x,y) = 1 + 1 / (2x - y). Intended to be used as a simple test case for simultaneous equation solvers. One solution to f(x,y) = x, g(x,y) = y exists at x = -1.126529, y = 0.656279 (determined numerically).  <a href="classhyperbola__2d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1hyperbola__2d.html">hyperbola_2d</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents two 2D hyperbolas defined by f(x,y) = 1 + 1 / (x + y) and g(x,y) = 1 + 1 / (2x - y). Intended to be used as a simple test case for simultaneous equation solvers. One solution to f(x,y) = x, g(x,y) = y exists at x = -1.126529, y = 0.656279 (determined numerically).  <a href="classstandard_b_m_l_1_1hyperbola__2d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacestandard_b_m_l"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></td></tr>
+<tr class="memdesc:namespacestandard_b_m_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the standard BioCro module library; it includes the essential modules used in typical BioCro crop growth simulations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -141,7 +148,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="hyperbolas_8h.html">hyperbolas.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 21:30:08 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 13 2022 18:56:03 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

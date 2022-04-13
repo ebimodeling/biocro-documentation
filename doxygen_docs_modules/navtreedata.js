@@ -42,8 +42,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -52,7 +51,6 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -63,17 +61,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classc3__assimilation.html#aebaf8075767f5e2e368001dc936a3933",
-"classed__boundary__conductance__quadrature.html#a848dee87c86f1ae03b0caff40e06798d",
-"classed__multilayer__canopy__properties.html#a6f67da21f6e79f0947abccc50100475d",
-"classlinear__vmax__from__leaf__n.html#a391e9fd4e949f6e987eb654a11b1e451",
-"classpartitioning__coefficient__selector.html#a472c96e9cf18bc92b31e1a6f396da308",
-"classse__module_1_1base.html#a8e69019eac6bbda78f9553f508f7c9d6",
-"classthermal__time__and__frost__senescence.html#ab53756a4b68fb2543736a3aebde43b96",
-"classutilization__senescence__calculator.html#a391e9fd4e949f6e987eb654a11b1e451",
-"functions_h.html",
-"namespacemembers_vars.html",
-"water__vapor__properties__from__air__temperature_8hpp.html"
+"classstandard_b_m_l_1_1c3__assimilation.html#ae03d9c25c89b60e689463931d6a2f188",
+"classstandard_b_m_l_1_1ed__boundary__conductance__quadrature.html#a6da135d08109ae73f9069e03914c118a",
+"classstandard_b_m_l_1_1ed__multilayer__canopy__properties.html#a6d168c19e1953ea4c08eda55704cbc86",
+"classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html#a391e9fd4e949f6e987eb654a11b1e451",
+"classstandard_b_m_l_1_1partitioning__coefficient__selector.html#a49f406fa11a5ab7212c74102f70e2c45",
+"classstandard_b_m_l_1_1senescence__coefficient__logistic.html#ae04a9ce9189b5f039703828d2eff0f50",
+"classstandard_b_m_l_1_1thermal__time__bilinear.html",
+"collatz__photo_8cpp.html",
+"functions_vars_j.html",
+"oscillator__clock__calculator_8hpp.html#ad590fdac6c721462520f588eacaa409b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

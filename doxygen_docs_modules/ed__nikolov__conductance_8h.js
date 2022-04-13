@@ -1,10 +1,10 @@
 var ed__nikolov__conductance_8h =
 [
-    [ "ed_nikolov_conductance_forced", "classed__nikolov__conductance__forced.html", "classed__nikolov__conductance__forced" ],
-    [ "ed_nikolov_conductance_free", "classed__nikolov__conductance__free.html", "classed__nikolov__conductance__free" ],
-    [ "ed_nikolov_conductance_free_solve", "classed__nikolov__conductance__free__solve.html", "classed__nikolov__conductance__free__solve" ],
+    [ "ed_nikolov_conductance_forced", "classstandard_b_m_l_1_1ed__nikolov__conductance__forced.html", "classstandard_b_m_l_1_1ed__nikolov__conductance__forced" ],
+    [ "ed_nikolov_conductance_free", "classstandard_b_m_l_1_1ed__nikolov__conductance__free.html", "classstandard_b_m_l_1_1ed__nikolov__conductance__free" ],
+    [ "ed_nikolov_conductance_free_solve", "classstandard_b_m_l_1_1ed__nikolov__conductance__free__solve.html", "classstandard_b_m_l_1_1ed__nikolov__conductance__free__solve" ],
     [ "absolute_error_tolerances", "ed__nikolov__conductance_8h.html#add79477e4fd78bfbbd79a84ef0fbf43d", null ],
-    [ "conductance", "ed__nikolov__conductance_8h.html#a61891a95523c3d0046c9ba42c4a54e38", null ],
+    [ "conductance", "ed__nikolov__conductance_8h.html#a6ba77f6b6b33ee824a9b76b7735fabd8", null ],
     [ "lower_bounds", "ed__nikolov__conductance_8h.html#af343479f291e508daae80b942233e395", null ],
     [ "max_iterations", "ed__nikolov__conductance_8h.html#a81319b8e9e14a29c9f32788eadfe6439", null ],
     [ "module_name", "ed__nikolov__conductance_8h.html#a0b37c5938e82da1fb19ed599f7c71217", null ],

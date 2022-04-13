@@ -121,7 +121,7 @@ $(function() {
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>calculate_jacobian()
-: <a class="el" href="numerical__jacobian_8h.html#abb3a48da711cdaa6426f7c0e10523aee">numerical_jacobian.h</a>
+: <a class="el" href="numerical__jacobian_8h.html#aa4613d2383d8cc1f150cfda00be21ce7">numerical_jacobian.h</a>
 </li>
 <li>calculate_jacobian_and_time_derivative()
 : <a class="el" href="numerical__jacobian_8h.html#aa69a62289bcec362abb76d68df65e6d3">numerical_jacobian.h</a>
@@ -146,6 +146,9 @@ $(function() {
 <li>create_marked_message()
 : <a class="el" href="validate__dynamical__system_8h.html#abbf593dec368115b8f24cf63820b7aba">validate_dynamical_system.h</a>
 </li>
+<li>create_mc()
+: <a class="el" href="module__creator_8h.html#ab5cd2116d01912142dc1bc1b4181c1fd">module_creator.h</a>
+</li>
 <li>create_message()
 : <a class="el" href="validate__dynamical__system_8h.html#ab5f236ba78da738b307b71f73d78f2b1">validate_dynamical_system.h</a>
 </li>
@@ -154,6 +157,12 @@ $(function() {
 </li>
 <li>create_se_solver()
 : <a class="el" href="se__solver__factory_8cpp.html#a4bcd3f69ff242e496473f47ac952f70f">se_solver_factory.cpp</a>
+</li>
+<li>creator_fcn
+: <a class="el" href="module__creator_8h.html#a62b513791c317bed17a8f7e07854cc8f">module_creator.h</a>
+</li>
+<li>creator_map
+: <a class="el" href="module__creator_8h.html#a92d4f99cdd8e0a52ada43d854c73c970">module_creator.h</a>
 </li>
 </ul>
 
@@ -171,7 +180,8 @@ $(function() {
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>evaluate_equations()
-: <a class="el" href="numerical__jacobian_8h.html#a3663e16fd2cb02e7095f93993cf8f463">numerical_jacobian.h</a>
+: <a class="el" href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">dynamical_system.h</a>
+, <a class="el" href="simultaneous__equations_8h.html#a2bbf8fe6cbab80ba3cb5d119f181e1d0">simultaneous_equations.h</a>
 </li>
 </ul>
 
@@ -187,7 +197,8 @@ $(function() {
 : <a class="el" href="validate__dynamical__system_8h.html#acc8fa929573de7b71c94c85aef4831b3">validate_dynamical_system.h</a>
 </li>
 <li>finalize_module_creator()
-: <a class="el" href="_r__module__creators_8cpp.html#afd9187f558ecebc253f5809f84bfc581">R_module_creators.cpp</a>
+: <a class="el" href="_r__helper__functions_8cpp.html#afd9187f558ecebc253f5809f84bfc581">R_helper_functions.cpp</a>
+, <a class="el" href="_r__helper__functions_8h.html#afd9187f558ecebc253f5809f84bfc581">R_helper_functions.h</a>
 </li>
 <li>find_duplicate_quantity_definitions()
 : <a class="el" href="validate__dynamical__system_8cpp.html#aba001562bc25daec2902a32b6fac72d9">validate_dynamical_system.cpp</a>
@@ -206,8 +217,8 @@ $(function() {
 , <a class="el" href="validate__dynamical__system_8h.html#ae61dec9daf2a23524490689f1a0a8f46">validate_dynamical_system.h</a>
 </li>
 <li>find_strictly_required_inputs()
-: <a class="el" href="validate__dynamical__system_8h.html#aefb915a2ed2f8c58544a68ca22ae297e">validate_dynamical_system.h</a>
-, <a class="el" href="validate__dynamical__system_8cpp.html#aefb915a2ed2f8c58544a68ca22ae297e">validate_dynamical_system.cpp</a>
+: <a class="el" href="validate__dynamical__system_8cpp.html#aefb915a2ed2f8c58544a68ca22ae297e">validate_dynamical_system.cpp</a>
+, <a class="el" href="validate__dynamical__system_8h.html#aefb915a2ed2f8c58544a68ca22ae297e">validate_dynamical_system.h</a>
 </li>
 <li>find_undefined_module_inputs()
 : <a class="el" href="validate__dynamical__system_8cpp.html#ade75829407a0ee5bc4e166db750cf0dd">validate_dynamical_system.cpp</a>
@@ -371,6 +382,9 @@ $(function() {
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
+<li>library
+: <a class="el" href="_r__module__library_8cpp.html#a0d3728be10d15e0c1481dd74ed211952">R_module_library.cpp</a>
+</li>
 <li>list_from_map()
 : <a class="el" href="_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">R_helper_functions.cpp</a>
 , <a class="el" href="_r__helper__functions_8h.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa">R_helper_functions.h</a>
@@ -452,23 +466,23 @@ $(function() {
 : <a class="el" href="_r__modules_8cpp.html#a6882da2efd1f74d02851530f0bdd10fc">R_modules.cpp</a>
 </li>
 <li>R_get_all_modules()
-: <a class="el" href="_r__get__all_8cpp.html#adc84f4bac9b520f71471cff9b8064737">R_get_all.cpp</a>
+: <a class="el" href="_r__module__library_8cpp.html#adc84f4bac9b520f71471cff9b8064737">R_module_library.cpp</a>
 </li>
 <li>R_get_all_ode_solvers()
-: <a class="el" href="_r__get__all_8cpp.html#abf21ef28d77d0a35c3e2270066147a74">R_get_all.cpp</a>
+: <a class="el" href="_r__get__all__ode__solvers_8cpp.html#abf21ef28d77d0a35c3e2270066147a74">R_get_all_ode_solvers.cpp</a>
 </li>
 <li>R_get_all_quantities()
-: <a class="el" href="_r__get__all_8cpp.html#a5f774d138b47709a8a354da35d32a768">R_get_all.cpp</a>
+: <a class="el" href="_r__module__library_8cpp.html#a5f774d138b47709a8a354da35d32a768">R_module_library.cpp</a>
 </li>
 <li>R_get_all_se_solvers()
-: <a class="el" href="_r__get__all_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all.cpp</a>
+: <a class="el" href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all_se_solvers.cpp</a>
 </li>
 <li>r_logical_from_boolean()
 : <a class="el" href="_r__helper__functions_8cpp.html#a4b6b522dfb157c35def3e405095fd5e5">R_helper_functions.cpp</a>
 , <a class="el" href="_r__helper__functions_8h.html#a4b6b522dfb157c35def3e405095fd5e5">R_helper_functions.h</a>
 </li>
 <li>R_module_creators()
-: <a class="el" href="_r__module__creators_8cpp.html#a35c18d8bce8c6afb0822537ab0eaa67b">R_module_creators.cpp</a>
+: <a class="el" href="_r__module__library_8cpp.html#a35c18d8bce8c6afb0822537ab0eaa67b">R_module_library.cpp</a>
 </li>
 <li>R_module_info()
 : <a class="el" href="_r__modules_8cpp.html#a8533f1c312a33afe2274b250a61ec026">R_modules.cpp</a>
@@ -503,6 +517,9 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>se_module_print
+: <a class="el" href="se__module_8h.html#af113f5476beaa0450289528f8719eccf">se_module.h</a>
+</li>
 <li>se_update_print
 : <a class="el" href="simultaneous__equations_8cpp.html#a6c72bcdcbbe971e6c7b44eb673e18429">simultaneous_equations.cpp</a>
 </li>
@@ -578,7 +595,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 14 2022 21:30:31 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 13 2022 18:56:21 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

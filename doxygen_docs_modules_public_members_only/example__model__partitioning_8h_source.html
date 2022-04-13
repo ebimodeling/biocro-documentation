@@ -95,84 +95,88 @@ $(document).ready(function(){initNavTree('example__model__partitioning_8h_source
 <a href="example__model__partitioning_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EXAMPLE_MODEL_PARTITIONING_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EXAMPLE_MODEL_PARTITIONING_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../module.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../state_map.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../framework/module.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../framework/state_map.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classexample__model__partitioning.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classexample__model__partitioning.html">example_model_partitioning</a> : <span class="keyword">public</span> differential_module</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;   <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classexample__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">   34</a></span>&#160;    <a class="code" href="classexample__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">example_model_partitioning</a>(</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        state_map* output_quantities)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        : differential_module(),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          mass_gain(get_input(input_quantities, <span class="stringliteral">&quot;mass_gain&quot;</span>)),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          f_leaf(get_input(input_quantities, <span class="stringliteral">&quot;f_leaf&quot;</span>)),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          f_root(get_input(input_quantities, <span class="stringliteral">&quot;f_root&quot;</span>)),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          Leaf_op(get_op(output_quantities, <span class="stringliteral">&quot;Leaf&quot;</span>)),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          Root_op(get_op(output_quantities, <span class="stringliteral">&quot;Root&quot;</span>))</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classexample__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classexample__model__partitioning.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classexample__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">   51</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classexample__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;example_model_partitioning&quot;</span>; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// References to input quantities</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; mass_gain;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; f_leaf;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; f_root;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span>* Leaf_op;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span>* Root_op;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Main operation</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classexample__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">   67</a></span>&#160;string_vector <a class="code" href="classexample__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">example_model_partitioning::get_inputs</a>()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;mass_gain&quot;</span>,  <span class="comment">// kg / s</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;f_leaf&quot;</span>,     <span class="comment">// dimensionless from kg / kg</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;f_root&quot;</span>      <span class="comment">// dimensionless from kg / kg</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classexample__model__partitioning.html#a7eff545285286763183243b1d473e6df">   76</a></span>&#160;string_vector <a class="code" href="classexample__model__partitioning.html#a7eff545285286763183243b1d473e6df">example_model_partitioning::get_outputs</a>()</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="stringliteral">&quot;Leaf&quot;</span>,  <span class="comment">// kg / s</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="stringliteral">&quot;Root&quot;</span>   <span class="comment">// kg / s</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> example_model_partitioning::do_operation()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> dLeaf = mass_gain * f_leaf;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> dRoot = mass_gain * f_root;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    update(Leaf_op, dLeaf);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    update(Root_op, dRoot);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassexample__model__partitioning_html"><div class="ttname"><a href="classexample__model__partitioning.html">example_model_partitioning</a></div><div class="ttdoc">An example for the BioCro II manuscript.</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00031">example_model_partitioning.h:32</a></div></div>
-<div class="ttc" id="aclassexample__model__partitioning_html_a7824ab0e54d3a9f437db656e17382b2f"><div class="ttname"><a href="classexample__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">example_model_partitioning::example_model_partitioning</a></div><div class="ttdeci">example_model_partitioning(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00034">example_model_partitioning.h:34</a></div></div>
-<div class="ttc" id="aclassexample__model__partitioning_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classexample__model__partitioning.html#a7eff545285286763183243b1d473e6df">example_model_partitioning::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00076">example_model_partitioning.h:76</a></div></div>
-<div class="ttc" id="aclassexample__model__partitioning_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classexample__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">example_model_partitioning::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00067">example_model_partitioning.h:67</a></div></div>
-<div class="ttc" id="aclassexample__model__partitioning_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classexample__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">example_model_partitioning::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00051">example_model_partitioning.h:51</a></div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacestandard_b_m_l.html">standardBML</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classstandard_b_m_l_1_1example__model__partitioning.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html">example_model_partitioning</a> : <span class="keyword">public</span> differential_module</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classstandard_b_m_l_1_1example__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">   36</a></span>&#160;    <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">example_model_partitioning</a>(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        state_map <span class="keyword">const</span>&amp; input_quantities,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        state_map* output_quantities)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : differential_module(),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          <span class="comment">// Get pointers to input quantities</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;          mass_gain(get_input(input_quantities, <span class="stringliteral">&quot;mass_gain&quot;</span>)),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;          f_leaf(get_input(input_quantities, <span class="stringliteral">&quot;f_leaf&quot;</span>)),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          f_root(get_input(input_quantities, <span class="stringliteral">&quot;f_root&quot;</span>)),</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;          <span class="comment">// Get pointers to output quantities</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          Leaf_op(get_op(output_quantities, <span class="stringliteral">&quot;Leaf&quot;</span>)),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          Root_op(get_op(output_quantities, <span class="stringliteral">&quot;Root&quot;</span>))</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">get_inputs</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> string_vector <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#a7eff545285286763183243b1d473e6df">get_outputs</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classstandard_b_m_l_1_1example__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">   53</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;example_model_partitioning&quot;</span>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// References to input quantities</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; mass_gain;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; f_leaf;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>&amp; f_root;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Pointers to output quantities</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span>* Leaf_op;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">double</span>* Root_op;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Main operation</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> do_operation() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classstandard_b_m_l_1_1example__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">   69</a></span>&#160;string_vector <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">example_model_partitioning::get_inputs</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;mass_gain&quot;</span>,  <span class="comment">// kg / s</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;f_leaf&quot;</span>,     <span class="comment">// dimensionless from kg / kg</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="stringliteral">&quot;f_root&quot;</span>      <span class="comment">// dimensionless from kg / kg</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classstandard_b_m_l_1_1example__model__partitioning.html#a7eff545285286763183243b1d473e6df">   78</a></span>&#160;string_vector <a class="code" href="classstandard_b_m_l_1_1example__model__partitioning.html#a7eff545285286763183243b1d473e6df">example_model_partitioning::get_outputs</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="stringliteral">&quot;Leaf&quot;</span>,  <span class="comment">// kg / s</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="stringliteral">&quot;Root&quot;</span>   <span class="comment">// kg / s</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> example_model_partitioning::do_operation()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> dLeaf = mass_gain * f_leaf;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> dRoot = mass_gain * f_root;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    update(Leaf_op, dLeaf);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    update(Root_op, dRoot);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}  <span class="comment">// namespace standardBML</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassstandard_b_m_l_1_1example__model__partitioning_html"><div class="ttname"><a href="classstandard_b_m_l_1_1example__model__partitioning.html">standardBML::example_model_partitioning</a></div><div class="ttdoc">An example for the BioCro II manuscript.</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00033">example_model_partitioning.h:34</a></div></div>
+<div class="ttc" id="aclassstandard_b_m_l_1_1example__model__partitioning_html_a7824ab0e54d3a9f437db656e17382b2f"><div class="ttname"><a href="classstandard_b_m_l_1_1example__model__partitioning.html#a7824ab0e54d3a9f437db656e17382b2f">standardBML::example_model_partitioning::example_model_partitioning</a></div><div class="ttdeci">example_model_partitioning(state_map const &amp;input_quantities, state_map *output_quantities)</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00036">example_model_partitioning.h:36</a></div></div>
+<div class="ttc" id="aclassstandard_b_m_l_1_1example__model__partitioning_html_a7eff545285286763183243b1d473e6df"><div class="ttname"><a href="classstandard_b_m_l_1_1example__model__partitioning.html#a7eff545285286763183243b1d473e6df">standardBML::example_model_partitioning::get_outputs</a></div><div class="ttdeci">static string_vector get_outputs()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00078">example_model_partitioning.h:78</a></div></div>
+<div class="ttc" id="aclassstandard_b_m_l_1_1example__model__partitioning_html_abc6bcae9586eb99fffb12a684814a4e6"><div class="ttname"><a href="classstandard_b_m_l_1_1example__model__partitioning.html#abc6bcae9586eb99fffb12a684814a4e6">standardBML::example_model_partitioning::get_inputs</a></div><div class="ttdeci">static string_vector get_inputs()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00069">example_model_partitioning.h:69</a></div></div>
+<div class="ttc" id="aclassstandard_b_m_l_1_1example__model__partitioning_html_ad0866265cb5b92692af7be0ef011f355"><div class="ttname"><a href="classstandard_b_m_l_1_1example__model__partitioning.html#ad0866265cb5b92692af7be0ef011f355">standardBML::example_model_partitioning::get_name</a></div><div class="ttdeci">static std::string get_name()</div><div class="ttdef"><b>Definition:</b> <a href="example__model__partitioning_8h_source.html#l00053">example_model_partitioning.h:53</a></div></div>
+<div class="ttc" id="anamespacestandard_b_m_l_html"><div class="ttname"><a href="namespacestandard_b_m_l.html">standardBML</a></div><div class="ttdoc">This is the standard BioCro module library; it includes the essential modules used in typical BioCro ...</div><div class="ttdef"><b>Definition:</b> <a href="aba__decay_8hpp_source.html#l00007">aba_decay.hpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_567355a66c5b87dfe03a58cbdce72993.html">module_library</a></li><li class="navelem"><a class="el" href="example__model__partitioning_8h.html">example_model_partitioning.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 21:30:07 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 13 2022 18:56:02 for The BioCro C++ Library by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

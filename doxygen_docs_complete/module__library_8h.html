@@ -73,15 +73,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">module_library.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &quot;<a class="el" href="module__creator_8h_source.html">../module_creator.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="module__creator_8h_source.html">../framework/module_creator.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for module_library.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -89,19 +87,19 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__library_8h__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2module__library_2module__library_8h" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2module__library_2module__library_8h" id="a_2github_2workspace_2source_2src_2module__library_2module__library_8h">
-<area shape="rect" title=" " alt="" coords="352,5,529,61"/>
-<area shape="rect" title=" " alt="" coords="5,408,60,435"/>
-<area shape="rect" title=" " alt="" coords="473,333,520,360"/>
-<area shape="rect" title=" " alt="" coords="437,408,548,435"/>
-<area shape="rect" href="module__creator_8h.html" title=" " alt="" coords="266,109,397,136"/>
-<area shape="rect" title=" " alt="" coords="444,259,512,285"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="109,333,202,360"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="294,184,369,211"/>
-<area shape="rect" title=" " alt="" coords="247,408,306,435"/>
-<area shape="rect" title=" " alt="" coords="183,408,223,435"/>
-<area shape="rect" title=" " alt="" coords="85,408,159,435"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="243,259,419,285"/>
-<area shape="rect" title=" " alt="" coords="328,333,407,360"/>
+<area shape="rect" title=" " alt="" coords="89,5,267,61"/>
+<area shape="rect" href="module__creator_8h.html" title=" " alt="" coords="109,109,247,151"/>
+<area shape="rect" title=" " alt="" coords="5,423,60,449"/>
+<area shape="rect" title=" " alt="" coords="191,273,259,300"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="169,348,262,375"/>
+<area shape="rect" href="module_8h.html" title=" " alt="" coords="293,199,367,225"/>
+<area shape="rect" title=" " alt="" coords="184,423,295,449"/>
+<area shape="rect" title=" " alt="" coords="383,423,442,449"/>
+<area shape="rect" title=" " alt="" coords="319,423,359,449"/>
+<area shape="rect" title=" " alt="" coords="85,423,159,449"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="283,273,459,300"/>
+<area shape="rect" title=" " alt="" coords="409,348,488,375"/>
+<area shape="rect" title=" " alt="" coords="287,348,333,375"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,10 +109,9 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="module__library_8h__dep__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2module__library_2module__library_8hdep" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2module__library_2module__library_8hdep" id="a_2github_2workspace_2source_2src_2module__library_2module__library_8hdep">
-<area shape="rect" title=" " alt="" coords="203,5,381,61"/>
-<area shape="rect" href="_r__get__all_8cpp.html" title=" " alt="" coords="5,117,176,158"/>
-<area shape="rect" href="_r__module__creators_8cpp.html" title=" " alt="" coords="200,117,384,158"/>
-<area shape="rect" href="module__library_8cpp.html" title=" " alt="" coords="409,109,586,165"/>
+<area shape="rect" title=" " alt="" coords="101,5,278,61"/>
+<area shape="rect" href="_r__module__library_8cpp.html" title=" " alt="" coords="5,117,176,158"/>
+<area shape="rect" href="module__library_8cpp.html" title=" " alt="" coords="201,109,378,165"/>
 </map>
 </div>
 </div>
@@ -122,14 +119,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodule__library.html">module_library</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A factory class that creates <code><a class="el" href="classmodule__creator.html" title="Facilitates module creation.">module_creator</a></code> objects; more colloquially, we say that a <code>module</code> or <code><a class="el" href="classmodule__creator.html" title="Facilitates module creation.">module_creator</a></code> is "retrieved" from the module library.  <a href="classmodule__library.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstandard_b_m_l_1_1module__library.html">module_library</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacestandard_b_m_l"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestandard_b_m_l.html">standardBML</a></td></tr>
+<tr class="memdesc:namespacestandard_b_m_l"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the standard BioCro module library; it includes the essential modules used in typical BioCro crop growth simulations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 14 2022 21:28:48 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 13 2022 18:54:57 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

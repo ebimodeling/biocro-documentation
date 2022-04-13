@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantities_715',['quantities',['../classsimultaneous__equations.html#adf6185c0f57dc700977def1db9fa0b31',1,'simultaneous_equations']]]
+  ['parameters_778',['parameters',['../classdynamical__system.html#aeda6d22dd0eb6f8dabe82621d26975e8',1,'dynamical_system::parameters()'],['../parameters_8h.html#accbc03a63e9b3af24585c91b9d6eb7e4',1,'parameters():&#160;parameters.h']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The BioCro C++ Library: /github/workspace/source/src/dynamical_system.h Source File</title>
+<title>The BioCro C++ Library: /github/workspace/source/src/framework/dynamical_system.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5752cadd8276ecfd63d9b924f2a4d4b5.html">framework</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span>           <span class="comment">// For std::pair</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state__map_8h.html">state_map.h</a>&quot;</span>       <span class="comment">// For state_map, state_vector_map, string_vector</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__creator_8h.html">module_creator.h</a>&quot;</span>  <span class="comment">// For mc_vector</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module_8h.html">module.h</a>&quot;</span>         <span class="comment">// For module_vector</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module_8h.html">module.h</a>&quot;</span>          <span class="comment">// For module_vector</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="validate__dynamical__system_8h.html">validate_dynamical_system.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dynamical__system__helper__functions_8h.html">dynamical_system_helper_functions.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
@@ -323,7 +323,17 @@ $(function() {
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordflow">return</span> results;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> vector_type, <span class="keyword">typename</span> time_type&gt;</div>
+<div class="line"><a name="l00455"></a><span class="lineno"><a class="line" href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">  455</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">evaluate_equations</a>(</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    std::shared_ptr&lt;dynamical_system&gt; <span class="keyword">const</span>&amp; sys,</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    vector_type <span class="keyword">const</span>&amp; x,</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    time_type t,</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    vector_type&amp; y)</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    sys-&gt;calculate_derivative(x, y, t);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;}</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassdynamical__system_html"><div class="ttname"><a href="classdynamical__system.html">dynamical_system</a></div><div class="ttdoc">Defines a dynamical system which can be solved using an ode_solver.</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00140">dynamical_system.h:141</a></div></div>
 <div class="ttc" id="aclassdynamical__system_html_a123a42556bdc393720641aed76962ca5"><div class="ttname"><a href="classdynamical__system.html#a123a42556bdc393720641aed76962ca5">dynamical_system::all_quantities</a></div><div class="ttdeci">state_map all_quantities</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00202">dynamical_system.h:202</a></div></div>
 <div class="ttc" id="aclassdynamical__system_html_a1910c0a288bae9fa46293e9b550cb499"><div class="ttname"><a href="classdynamical__system.html#a1910c0a288bae9fa46293e9b550cb499">dynamical_system::driver_quantity_ptr_pairs</a></div><div class="ttdeci">vector&lt; pair&lt; double *, const vector&lt; double &gt; * &gt; &gt; driver_quantity_ptr_pairs</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00212">dynamical_system.h:212</a></div></div>
@@ -356,6 +366,7 @@ $(function() {
 <div class="ttc" id="aclassdynamical__system_html_aeb27e1710f1091003e963ff95149d8c1"><div class="ttname"><a href="classdynamical__system.html#aeb27e1710f1091003e963ff95149d8c1">dynamical_system::get_output_quantity_names</a></div><div class="ttdeci">string_vector get_output_quantity_names() const</div><div class="ttdoc">Returns a vector of the names of all quantities that may change throughout a simulation.</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8cpp_source.html#l00170">dynamical_system.cpp:170</a></div></div>
 <div class="ttc" id="aclassdynamical__system_html_aeda6d22dd0eb6f8dabe82621d26975e8"><div class="ttname"><a href="classdynamical__system.html#aeda6d22dd0eb6f8dabe82621d26975e8">dynamical_system::parameters</a></div><div class="ttdeci">const state_map parameters</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00196">dynamical_system.h:196</a></div></div>
 <div class="ttc" id="aclassdynamical__system_html_afea21d5a73ed558e01ffd8c12591913b"><div class="ttname"><a href="classdynamical__system.html#afea21d5a73ed558e01ffd8c12591913b">dynamical_system::drivers</a></div><div class="ttdeci">const state_vector_map drivers</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00197">dynamical_system.h:197</a></div></div>
+<div class="ttc" id="adynamical__system_8h_html_a3663e16fd2cb02e7095f93993cf8f463"><div class="ttname"><a href="dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463">evaluate_equations</a></div><div class="ttdeci">void evaluate_equations(std::shared_ptr&lt; dynamical_system &gt; const &amp;sys, vector_type const &amp;x, time_type t, vector_type &amp;y)</div><div class="ttdoc">Define evaluation behavior for a set of equations defined by a dynamical_system object....</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00455">dynamical_system.h:455</a></div></div>
 <div class="ttc" id="adynamical__system_8h_html_a382f770f0cf20008947aa07ff313c04b"><div class="ttname"><a href="dynamical__system_8h.html#a382f770f0cf20008947aa07ff313c04b">get_results_from_system</a></div><div class="ttdeci">state_vector_map get_results_from_system(std::shared_ptr&lt; dynamical_system &gt; sys, const vector&lt; vector_type &gt; &amp;x_vec, const vector&lt; time_type &gt; &amp;times)</div><div class="ttdoc">Calculates values for all of the system's output quantities based on a list of differential quantity ...</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system_8h_source.html#l00401">dynamical_system.h:401</a></div></div>
 <div class="ttc" id="adynamical__system__helper__functions_8cpp_html_a67a06f75e30d97caffc99a6ba0c5911e"><div class="ttname"><a href="dynamical__system__helper__functions_8cpp.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a></div><div class="ttdeci">bool check_euler_requirement(module_vector const &amp;modules_to_check)</div><div class="ttdoc">Checks whether the collection of modules requires an Euler ODE solver.</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system__helper__functions_8cpp_source.html#l00006">dynamical_system_helper_functions.cpp:6</a></div></div>
 <div class="ttc" id="adynamical__system__helper__functions_8h_html"><div class="ttname"><a href="dynamical__system__helper__functions_8h.html">dynamical_system_helper_functions.h</a></div></div>
@@ -363,7 +374,7 @@ $(function() {
 <div class="ttc" id="amodule_8h_html_aa9a6947a0392ccf0dbc65e6691c2094b"><div class="ttname"><a href="module_8h.html#aa9a6947a0392ccf0dbc65e6691c2094b">run_module_list</a></div><div class="ttdeci">void run_module_list(module_vector const &amp;modules)</div><div class="ttdoc">Runs each module in the input list.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8cpp_source.html#l00008">modules.cpp:8</a></div></div>
 <div class="ttc" id="amodule_8h_html_ad7dbd1f070a9275c750e1c8961b456a9"><div class="ttname"><a href="module_8h.html#ad7dbd1f070a9275c750e1c8961b456a9">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; module &gt; &gt; module_vector</div><div class="ttdoc">module_vector serves as an alias for a type widely used to hold lists of modules.</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00169">module.h:169</a></div></div>
 <div class="ttc" id="amodule__creator_8h_html"><div class="ttname"><a href="module__creator_8h.html">module_creator.h</a></div></div>
-<div class="ttc" id="amodule__creator_8h_html_a5810cdde7994b69d99870b1a545b8e1f"><div class="ttname"><a href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a></div><div class="ttdeci">std::vector&lt; module_creator * &gt; mc_vector</div><div class="ttdoc">mc_vector serves as an alias for a type widely used to hold lists of module_creators.</div><div class="ttdef"><b>Definition:</b> <a href="module__creator_8h_source.html#l00099">module_creator.h:99</a></div></div>
+<div class="ttc" id="amodule__creator_8h_html_a5810cdde7994b69d99870b1a545b8e1f"><div class="ttname"><a href="module__creator_8h.html#a5810cdde7994b69d99870b1a545b8e1f">mc_vector</a></div><div class="ttdeci">std::vector&lt; module_creator * &gt; mc_vector</div><div class="ttdoc">mc_vector serves as an alias for a type widely used to hold lists of module_creators.</div><div class="ttdef"><b>Definition:</b> <a href="module__creator_8h_source.html#l00108">module_creator.h:108</a></div></div>
 <div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a1ff119048c542e2f0fa6c826e7473e62"><div class="ttname"><a href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; string_vector</div><div class="ttdoc">string_vector serves as an alias for a type widely used to hold lists of module names or lists of mod...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00018">state_map.h:18</a></div></div>
 <div class="ttc" id="astate__map_8h_html_a4dec1ecf04058a525b4009c473a76c28"><div class="ttname"><a href="state__map_8h.html#a4dec1ecf04058a525b4009c473a76c28">state_map</a></div><div class="ttdeci">std::unordered_map&lt; std::string, double &gt; state_map</div><div class="ttdoc">A state_map represents the state of a system.</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00055">state_map.h:55</a></div></div>
@@ -382,7 +393,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 14 2022 21:30:30 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 13 2022 18:56:20 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

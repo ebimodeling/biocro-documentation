@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Facilitates module creation. </p>
 <p>This class addresses a difficulty associated with the creation of concrete <code>module</code> objects. The constructor of a concrete <code>module</code> class must store pointers to elements of <code>state_map</code> objects that correspond to its input and output quantities. Thus, in order to ensure that the <code>state_map</code> objects include the elements required by the module, the module's input and output quantities must be known before it is created. Naively, we would want the <code>module</code> class to have static virtual methods for reporting inputs and outputs prior to instantiation. However, C++ does not allow static virtual methods.</p>
 <p>Instead, we use the <code><a class="el" href="classmodule__creator.html" title="Facilitates module creation.">module_creator</a></code> class to provide similar functionality to hypothetical static virtual methods. This class provides essential information about a module that is required before creating it (its inputs, outputs, and name), as well as a method for creating it. Its key features are that (1) the module class's inputs and outputs can be accessed before creating an instance of it and (2) it defines a common signature for a concrete <code>module</code> class constuctor.</p>
-<p>This class is pure abstract, defining a common type that can be created using a factory class (the <code>module_library</code>). Its implementation for a particular concrete module is achieved using the derived template class <code><a class="el" href="classmodule__creator__impl.html" title="A template class that provides a common interface to the constructor and essential static methods of ...">module_creator_impl</a></code>. </p>
+<p>This class is pure abstract, defining a common type that can be created using a factory class (the <code><a class="el" href="classmodule__factory.html" title="A factory class that creates module_creator objects, where the list of available module_creator objec...">module_factory</a></code>). Its implementation for a particular concrete module is achieved using the derived template class <code><a class="el" href="classmodule__creator__impl.html" title="A template class that provides a common interface to the constructor and essential static methods of ...">module_creator_impl</a></code>. </p>
 
 <p class="definition">Definition at line <a class="el" href="module__creator_8h_source.html#l00037">37</a> of file <a class="el" href="module__creator_8h_source.html">module_creator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__creator__impl.html#a6c37255621b73cc26e1266ae6efbebf8">module_creator_impl&lt; T &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00157">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00159">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00026">R_module_info()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -218,7 +218,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__creator__impl.html#abc6bcae9586eb99fffb12a684814a4e6">module_creator_impl&lt; T &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="module__dependency__utilities_8cpp_source.html#l00093">get_module_inputs()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="module__dependency__utilities_8cpp_source.html#l00093">get_module_inputs()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00026">R_module_info()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -268,7 +268,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__creator__impl.html#a636296572c928bb9baf49439e9726c30">module_creator_impl&lt; T &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_r__modules_8cpp_source.html#l00026">R_module_info()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -308,7 +308,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmodule__creator__impl.html#a7eff545285286763183243b1d473e6df">module_creator_impl&lt; T &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="module__dependency__utilities_8cpp_source.html#l00108">get_module_outputs()</a>, <a class="el" href="_r__modules_8cpp_source.html#l00157">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00024">R_module_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="module__dependency__utilities_8cpp_source.html#l00108">get_module_outputs()</a>, <a class="el" href="_r__modules_8cpp_source.html#l00159">R_evaluate_module()</a>, and <a class="el" href="_r__modules_8cpp_source.html#l00026">R_module_info()</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -335,12 +335,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/github/workspace/source/src/<a class="el" href="module__creator_8h_source.html">module_creator.h</a></li>
+<li>/github/workspace/source/src/framework/<a class="el" href="module__creator_8h_source.html">module_creator.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 14 2022 21:30:30 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 13 2022 18:56:21 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

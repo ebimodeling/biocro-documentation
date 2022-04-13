@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The BioCro C++ Library: /github/workspace/source/src/se_solver.h Source File</title>
+<title>The BioCro C++ Library: /github/workspace/source/src/framework_ed/se_solver.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ebe1c1ed473d59d9ed09f8c9bb757bc0.html">framework_ed</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="se__solver__helper__functions_8h.html">se_solver_helper_functions.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simultaneous__equations_8h.html">simultaneous_equations.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state__map_8h.html">state_map.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../framework/state_map.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structse__observer__null.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structse__observer__null.html">se_observer_null</a> {</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structse__observer__null.html#a8d5be5325b7efd7587b6fb93c00952fe">   18</a></span>&#160;    <a class="code" href="structse__observer__null.html#a8d5be5325b7efd7587b6fb93c00952fe">se_observer_null</a>() {}</div>
@@ -273,7 +273,6 @@ $(function() {
 <div class="ttc" id="ase__solver__helper__functions_8h_html_a71eab4361a33db2a4928a59cac9ef432"><div class="ttname"><a href="se__solver__helper__functions_8h.html#a71eab4361a33db2a4928a59cac9ef432">has_not_converged_rel</a></div><div class="ttdeci">std::vector&lt; bool &gt; has_not_converged_rel(vector_type const &amp;difference_vector, vector_type const &amp;guess, vector_type const &amp;tolerances)</div><div class="ttdoc">Checks whether the difference vector elements are close to zero using a relative threshold.</div><div class="ttdef"><b>Definition:</b> <a href="se__solver__helper__functions_8h_source.html#l00190">se_solver_helper_functions.h:190</a></div></div>
 <div class="ttc" id="ase__solver__helper__functions_8h_html_ac5a2bd2dc5af80ed56cc9cefb53479b5"><div class="ttname"><a href="se__solver__helper__functions_8h.html#ac5a2bd2dc5af80ed56cc9cefb53479b5">has_not_converged_abs</a></div><div class="ttdeci">std::vector&lt; bool &gt; has_not_converged_abs(vector_type const &amp;difference_vector, vector_type const &amp;tolerances)</div><div class="ttdoc">Checks whether the difference vector elements are close to zero using an absolute threshold.</div><div class="ttdef"><b>Definition:</b> <a href="se__solver__helper__functions_8h_source.html#l00153">se_solver_helper_functions.h:153</a></div></div>
 <div class="ttc" id="asimultaneous__equations_8h_html"><div class="ttname"><a href="simultaneous__equations_8h.html">simultaneous_equations.h</a></div></div>
-<div class="ttc" id="astate__map_8h_html"><div class="ttname"><a href="state__map_8h.html">state_map.h</a></div></div>
 <div class="ttc" id="astate__map_8h_html_acc562c42c1d464c702e0abd69e05673d"><div class="ttname"><a href="state__map_8h.html#acc562c42c1d464c702e0abd69e05673d">state_vector_map</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::vector&lt; double &gt; &gt; state_vector_map</div><div class="ttdoc">A state_vector_map represents a chronologically-ordered sequence of states of a system over some peri...</div><div class="ttdef"><b>Definition:</b> <a href="state__map_8h_source.html#l00039">state_map.h:39</a></div></div>
 <div class="ttc" id="astructse__observer__null_html"><div class="ttname"><a href="structse__observer__null.html">se_observer_null</a></div><div class="ttdoc">An observer to be used when the user doesn't specify one. This observer doesn't do anything.</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8h_source.html#l00017">se_solver.h:17</a></div></div>
 <div class="ttc" id="astructse__observer__null_html_a25677c691cd60a87e7c89471c4022265"><div class="ttname"><a href="structse__observer__null.html#a25677c691cd60a87e7c89471c4022265">se_observer_null::operator()</a></div><div class="ttdeci">void operator()(std::vector&lt; double &gt; const &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="se__solver_8h_source.html#l00019">se_solver.h:19</a></div></div>
@@ -285,7 +284,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 14 2022 21:30:30 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 13 2022 18:56:20 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

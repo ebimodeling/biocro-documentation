@@ -5,8 +5,8 @@ var indexSectionsWithContent =
   2: "cmps",
   3: "abcdfhmnoprsv",
   4: "abcdefghiklmnopqrstuv~",
-  5: "_abcdefhijkmnopqrstu",
-  6: "fgimopsv",
+  5: "_abcdefhijklmnopqrstu",
+  6: "cfgilmopsv",
   7: "a"
 };
 

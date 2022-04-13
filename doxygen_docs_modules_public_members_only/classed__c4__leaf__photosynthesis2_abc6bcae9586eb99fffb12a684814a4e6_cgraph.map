@@ -1,4 +1,0 @@
-<map id="get_inputs" name="get_inputs">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,88,32"/>
-<area shape="rect" id="node2" href="$namespacese__module.html#a0cdc7d966e5e864fb41b396befcf1011" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="136,5,308,32"/>
-</map>
