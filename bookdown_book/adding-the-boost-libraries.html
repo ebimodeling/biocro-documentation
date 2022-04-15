@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Adding the Boost libraries | BioCro Development</title>
   <meta name="description" content="4 Adding the Boost libraries | BioCro Development" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Adding the Boost libraries | BioCro Development" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-01-08" />
+<meta name="date" content="2022-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +49,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -215,15 +215,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="adding-the-boost-libraries" class="section level1">
-<h1><span class="header-section-number">4</span> Adding the Boost libraries</h1>
-<div id="why-this-is-needed" class="section level2">
-<h2><span class="header-section-number">4.1</span> Why this is needed</h2>
+<div id="adding-the-boost-libraries" class="section level1 hasAnchor">
+<h1><span class="header-section-number">4</span> Adding the Boost libraries<a href="adding-the-boost-libraries.html#adding-the-boost-libraries" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="why-this-is-needed" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.1</span> Why this is needed<a href="adding-the-boost-libraries.html#why-this-is-needed" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>BioCro uses software from the Boost C++ libraries. Boost does not assure backward compatibility, so changes to Boost could break BioCro. Thus, we don’t want to link our code to a user supplied Boost installation, and we include a version with BioCro.
 Boost is very large, so we want to include only the necessary parts. This document lists steps to extract the relevant parts and update files in BioCro to use them.</p>
 </div>
-<div id="how-to-extract-parts-of-boost" class="section level2">
-<h2><span class="header-section-number">4.2</span> How to extract parts of Boost</h2>
+<div id="how-to-extract-parts-of-boost" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.2</span> How to extract parts of Boost<a href="adding-the-boost-libraries.html#how-to-extract-parts-of-boost" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Use the bcp tool included with Boost to extract parts of the Boost library. bcp accepts a list of files or modules and extracts the relevant parts of the Boost library to a directory.
 The packages BioCro uses are as follows:</p>
 <table>
@@ -274,8 +274,8 @@ The packages BioCro uses are as follows:</p>
 <li>Check that the Boost license at <code>biocro/boost_[version_num]</code> is correct for the version used, and update <code>biocro/LICENSE</code> if necssary.</li>
 <li>Update the path to the Boost license in <code>biocro/LICENSE</code>.</li>
 </ol>
-<div id="notes-for-using-bcp-in-windows" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> Notes for using bcp in Windows</h3>
+<div id="notes-for-using-bcp-in-windows" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.1</span> Notes for using bcp in Windows<a href="adding-the-boost-libraries.html#notes-for-using-bcp-in-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>First, follow the instructions in the “Getting Started on Windows” <a href="https://www.boost.org/doc/libs/1_71_0/more/getting_started/windows.html">Boost page</a>.
 For V1.71.0, this entails the following:
 - Install the Visual Studio 2019 Developer Command Prompt (<a href="https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=vs-2019">see here</a>).

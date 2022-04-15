@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Running the testthat Tests | BioCro Development</title>
   <meta name="description" content="3 Running the testthat Tests | BioCro Development" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Running the testthat Tests | BioCro Development" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-01-08" />
+<meta name="date" content="2022-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +49,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -215,17 +215,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="running-the-testthat-tests" class="section level1">
-<h1><span class="header-section-number">3</span> Running the <em>testthat</em> Tests</h1>
-<div id="requirements" class="section level2">
-<h2><span class="header-section-number">3.1</span> Requirements</h2>
+<div id="running-the-testthat-tests" class="section level1 hasAnchor">
+<h1><span class="header-section-number">3</span> Running the <em>testthat</em> Tests<a href="running-the-testthat-tests.html#running-the-testthat-tests" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="requirements" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.1</span> Requirements<a href="running-the-testthat-tests.html#requirements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>The <em>testthat</em> package.</li>
 </ul>
 <p>From the R command line, run <code>install.packages('testthat')</code>.</p>
 </div>
-<div id="tldr" class="section level2">
-<h2><span class="header-section-number">3.2</span> tl;dr</h2>
+<div id="tldr" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.2</span> tl;dr<a href="running-the-testthat-tests.html#tldr" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To run all <em>testthat</em> tests, move to the <em>tests</em> directory within the
 BioCro source code directory tree and run</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb14-1"><a href="running-the-testthat-tests.html#cb14-1"></a><span class="ex">Rscript</span> testthat.R</span></code></pre></div>
@@ -235,8 +235,8 @@ installed version</em>. If you want the tests to reflect changes to
 your source code, reinstall BioCro before running them, or use one
 of the alternative test-running methods outlined below.</p>
 </div>
-<div id="sec:TLDR" class="section level2">
-<h2><span class="header-section-number">3.3</span> tl;dr for devtools users</h2>
+<div id="sec:TLDR" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.3</span> tl;dr for devtools users<a href="running-the-testthat-tests.html#sec:TLDR" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you use the <em>devtools</em> package, you can run all tests by doing the
 following command in <em>any</em> directory in the BioCro source tree:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb15-1"><a href="running-the-testthat-tests.html#cb15-1"></a><span class="ex">Rscript</span> -e <span class="st">&quot;devtools::test()&quot;</span></span></code></pre></div>
@@ -246,13 +246,13 @@ recompile the C++ code if necessary. See the <a href="running-the-testthat-tests
 section</a> (Section <a href="running-the-testthat-tests.html#sec:testing-local">3.5.3</a>) for
 details.</p>
 </div>
-<div id="continuous-integration-workflow-why-run-tests-manually" class="section level2">
-<h2><span class="header-section-number">3.4</span> Continuous integration workflow; why run tests manually?</h2>
+<div id="continuous-integration-workflow-why-run-tests-manually" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.4</span> Continuous integration workflow; why run tests manually?<a href="running-the-testthat-tests.html#continuous-integration-workflow-why-run-tests-manually" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>BioCro’s <em>testthat</em> test suite is automatically run on GitHub as part
 of the <em>R-CMD-check</em> workflow every time a BioCro developer pushes
 code to the GitHub <em>master</em> branch. (Users also have the option to
 trigger this workflow manually by clicking a button on GitHub.)
-Workflow results are viewable on GitHub under <a href="https://github.com/ebimodeling/biocro-dev/actions">the repository’s
+Workflow results are viewable on GitHub under <a href="https://github.com/ebimodeling/biocro/actions">the repository’s
 <em>Actions</em> tab</a>.</p>
 <p>There are (at least) two scenarios, however, under which you may want
 to run tests manually:</p>
@@ -270,8 +270,8 @@ expected.</p></li>
 <li>running individual test files</li>
 </ul>
 </div>
-<div id="test-running-scenarios" class="section level2">
-<h2><span class="header-section-number">3.5</span> Test-running scenarios</h2>
+<div id="test-running-scenarios" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.5</span> Test-running scenarios<a href="running-the-testthat-tests.html#test-running-scenarios" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There are two main ways to run the BioCro <em>testthat</em> tests:</p>
 <ul>
 <li><p>Run tests in the <code>tests/testthat</code> directory of a BioCro source tree
@@ -282,8 +282,8 @@ against the code in that source tree</p></li>
 <p>(A third scenario exists: running installed <em>testthat</em> tests against
 the installed package. But currently the BioCro package does not
 install any of its tests.)</p>
-<div id="sec:test-installed" class="section level3">
-<h3><span class="header-section-number">3.5.1</span> Running the test suite on the installed version of BioCro</h3>
+<div id="sec:test-installed" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.5.1</span> Running the test suite on the installed version of BioCro<a href="running-the-testthat-tests.html#sec:test-installed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>As explained in the <a href="running-the-testthat-tests.html#tldr">tl;dr</a> section above (Section <a href="running-the-testthat-tests.html#sec:TLDR">3.3</a>),
 the easiest way to run the tests against an installed version of the
 BioCro package is to move to the <em>tests</em> directory within the BioCro
@@ -304,8 +304,8 @@ immediately before running the tests, ensuring that you are running
 the tests against a version of the BioCro package corresponding to the
 BioCro code in your source tree.)</p>
 </div>
-<div id="sec:switching-reporters" class="section level3">
-<h3><span class="header-section-number">3.5.2</span> Switching reporters</h3>
+<div id="sec:switching-reporters" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.5.2</span> Switching reporters<a href="running-the-testthat-tests.html#sec:switching-reporters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The default output of the test method used by <code>testthat.R</code> can be
 exceedingly terse, and so it is highly desirable to tweak the test
 output of that method for interactive use. This is done by overriding
@@ -335,8 +335,8 @@ the other hand, it gives a better numerical summary of the test
 results—how many tests passed, how many failed, and how many were
 skipped.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a></p>
 </div>
-<div id="sec:testing-local" class="section level3">
-<h3><span class="header-section-number">3.5.3</span> Running the test suite against the BioCro source code</h3>
+<div id="sec:testing-local" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.5.3</span> Running the test suite against the BioCro source code<a href="running-the-testthat-tests.html#sec:testing-local" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are making changes to the R code or to the C++ code (or even to
 the package data) and you want to test your changes to the source code
 without installing (or <em>re</em>-installing) the BioCro package, the
@@ -367,16 +367,16 @@ switch:</p>
            reporter = &#39;Summary&#39;)`</code></pre>
 </div>
 </div>
-<div id="running-individual-test-files" class="section level2">
-<h2><span class="header-section-number">3.6</span> Running individual test files</h2>
+<div id="running-individual-test-files" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.6</span> Running individual test files<a href="running-the-testthat-tests.html#running-individual-test-files" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>While writing new tests, it is useful to be able to run a single test
 file rather than the whole test suite. The test may be run either
 against the installed version of the BioCro package, or against the
 source code.</p>
-<div id="running-an-individual-test-file-on-the-installed-package" class="section level3">
-<h3><span class="header-section-number">3.6.1</span> Running an individual test file on the installed package</h3>
-<div id="method-1" class="section level4 unnumbered">
-<h4>Method 1</h4>
+<div id="running-an-individual-test-file-on-the-installed-package" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.6.1</span> Running an individual test file on the installed package<a href="running-the-testthat-tests.html#running-an-individual-test-file-on-the-installed-package" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="method-1" class="section level4 unnumbered hasAnchor">
+<h4>Method 1<a href="running-the-testthat-tests.html#method-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
 <li><p>Start an R session.</p></li>
 <li><p>Load the <em>BioCro</em> and <em>testthat</em> packages:</p>
@@ -396,8 +396,8 @@ be overridden:</p>
 <p>See the documentation for <code>testthat::Reporter</code> for a list of
 reporters.</p>
 </div>
-<div id="method-2" class="section level4 unnumbered">
-<h4>Method 2</h4>
+<div id="method-2" class="section level4 unnumbered hasAnchor">
+<h4>Method 2<a href="running-the-testthat-tests.html#method-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This uses the <code>test_check</code> function we used earlier (see Section
 <a href="running-the-testthat-tests.html#sec:switching-reporters">3.5.2</a>), but with a “filter” option.</p>
 <ol style="list-style-type: decimal">
@@ -423,16 +423,16 @@ first, or use the <code>xfun::in_dir</code> wrapper:</p>
              test_check(&#39;BioCro&#39;, filter = &#39;Harm&#39;))</code></pre>
 </div>
 </div>
-<div id="running-an-individual-test-file-against-the-package-source-code" class="section level3">
-<h3><span class="header-section-number">3.6.2</span> Running an individual test file against the package source code</h3>
+<div id="running-an-individual-test-file-against-the-package-source-code" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.6.2</span> Running an individual test file against the package source code<a href="running-the-testthat-tests.html#running-an-individual-test-file-against-the-package-source-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Again, the <code>test_local</code> function is used. The method is exactly the
 same as specified above in section <a href="running-the-testthat-tests.html#sec:testing-local">3.5.3</a> except
 that a <em>filter</em> option is used to limit testing to matching files (see
 <a href="running-the-testthat-tests.html#method-2">Method 2</a> in the previous section).</p>
 </div>
 </div>
-<div id="using_devtools" class="section level2">
-<h2><span class="header-section-number">3.7</span> Using devtools</h2>
+<div id="using_devtools" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.7</span> Using devtools<a href="running-the-testthat-tests.html#using_devtools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you don’t mind installing and using the <em>devtools</em> package, it
 provides a particularly easy way to run tests against the package
 source code: simply issue the following command in any directory in

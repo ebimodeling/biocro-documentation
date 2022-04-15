@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Contributing to BioCro | BioCro Development</title>
   <meta name="description" content="1 Contributing to BioCro | BioCro Development" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Contributing to BioCro | BioCro Development" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-01-08" />
+<meta name="date" content="2022-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +49,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -215,25 +215,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="contributing-to-biocro" class="section level1">
-<h1><span class="header-section-number">1</span> Contributing to BioCro</h1>
-<div id="making-changes" class="section level2">
-<h2><span class="header-section-number">1.1</span> Making Changes</h2>
-<div id="discuss-first" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> Discuss first</h3>
+<div id="contributing-to-biocro" class="section level1 hasAnchor">
+<h1><span class="header-section-number">1</span> Contributing to BioCro<a href="contributing-to-biocro.html#contributing-to-biocro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="making-changes" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.1</span> Making Changes<a href="contributing-to-biocro.html#making-changes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="discuss-first" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.1.1</span> Discuss first<a href="contributing-to-biocro.html#discuss-first" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Check the list of <a href="https://github.com/ebimodeling/biocro-dev/issues">GitHub issues</a><!-- CHANGE THIS URL WHEN MOVING FROM ebimodeling/biocro-dev TO ebimodeling/biocro!!! --> for a discussion of the issue. If there is not one, create an issue with a description of the problem and your proposed solution.</li>
+<li>Check the list of <a href="https://github.com/ebimodeling/biocro/issues">GitHub issues</a> for a discussion of the issue. If there is not one, create an issue with a description of the problem and your proposed solution.</li>
 </ul>
 <p>By making changes without discussing it with the group, you risk spending time working on a solution that others may not accept. The members of the group also have diverse backgrounds and likely can give valuable design insights.</p>
 </div>
 </div>
-<div id="code-style" class="section level2">
-<h2><span class="header-section-number">1.2</span> Code style</h2>
+<div id="code-style" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.2</span> Code style<a href="contributing-to-biocro.html#code-style" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>(Most of what is discussed here pertains specifically to code for the BioCro C++ library.)</p>
-<div id="scientific-considerations" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> Scientific considerations</h3>
-<div id="document-sources-and-justification-in-the-code" class="section level4">
-<h4><span class="header-section-number">1.2.1.1</span> Document sources and justification in the code</h4>
+<div id="scientific-considerations" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.1</span> Scientific considerations<a href="contributing-to-biocro.html#scientific-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="document-sources-and-justification-in-the-code" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.2.1.1</span> Document sources and justification in the code<a href="contributing-to-biocro.html#document-sources-and-justification-in-the-code" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Include citations to sources for equations and parameters used in the code. The citation should be sufficient to locate the article and relevant information within it. Include a table or figure reference if appropriate.</li>
 <li>Use <a href="https://www.doxygen.nl/manual/docblocks.html">Doxygen</a>-style comment syntax for high-level documentation of functions and classes. (See the documentation of the <code>solar_zenith_angle</code> class in the <a href="../src/module_library/solar_zenith_angle.h">Solar Zenith Angle module</a> for a short example of a Doxygen-style comment.)</li>
@@ -241,8 +241,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>See the <a href="../src/module_library/ball_berry.cpp">Ball-Berry model</a> for an example.</li>
 </ul>
 </div>
-<div id="document-units-in-the-code" class="section level4">
-<h4><span class="header-section-number">1.2.1.2</span> Document units in the code</h4>
+<div id="document-units-in-the-code" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.2.1.2</span> Document units in the code<a href="contributing-to-biocro.html#document-units-in-the-code" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li><p>After every <a href="https://en.wikipedia.org/wiki/Physical_quantity">physical quantity</a>, include a comment with the units. The idea is that every quantity will roughly be read as if it were written in normal text: <code>double yield = 10  // Mg / ha</code> is something like “the yield was 10 Mg / ha”. Using dimensions instead of units is acceptable if the code is written with the expectation that <a href="https://en.wikipedia.org/wiki/Coherence_%28units_of_measurement%29">coherent units</a> are used.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="contributing-to-biocro.html#cb2-1"></a><span class="co">// In function signatures</span></span>
@@ -283,16 +283,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Either a solidus (“/”) or negative exponent is acceptable to indicate division, but ensure that the solidus is used correctly if used multiple times. Prefer exactly one space on each side of the solidus.</p></li>
 </ul>
 </div>
-<div id="document-parameters" class="section level4">
-<h4><span class="header-section-number">1.2.1.3</span> Document parameters</h4>
+<div id="document-parameters" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.2.1.3</span> Document parameters<a href="contributing-to-biocro.html#document-parameters" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>When adding models that require new parameters, document the parameters in the parameter table in <a href="../src/parameters.h">src/parameters.h</a>. Please keep the table well formatted.</li>
 <li>If you are working on a model with undocumented parameters, it would be nice if you added them to the table as you work through the issue.</li>
 </ul>
 </div>
 </div>
-<div id="general-coding-considerations" class="section level3">
-<h3><span class="header-section-number">1.2.2</span> General coding considerations</h3>
+<div id="general-coding-considerations" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.2</span> General coding considerations<a href="contributing-to-biocro.html#general-coding-considerations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Do not use C-style arrays. Use an appropriate data type from the standard library instead.</p></li>
 <li><p>Use cmath, not math.h, for common mathematical functions.</p></li>
@@ -348,8 +348,8 @@ do.call(row[[2]], row[[3]])
 <li><p>The <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">C++ guidelines</a> have useful advice about <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-naming">aspects of coding and design</a>.</p></li>
 </ul>
 </div>
-<div id="formatting-code" class="section level3">
-<h3><span class="header-section-number">1.2.3</span> Formatting code</h3>
+<div id="formatting-code" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.3</span> Formatting code<a href="contributing-to-biocro.html#formatting-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>(Again, except in a few instances, this pertains specifically to C++ code.)</p>
 <p>The most important aspect of formatting is that the code is easy to understand. Below are unenforced preferences.</p>
 <ul>
@@ -397,8 +397,8 @@ readability and does not hide information.</p>
 <p>For tools to help with formatting code, see the section
 <a href="contributing-to-biocro.html#formatting-tools">1.3</a>.</p>
 </div>
-<div id="r-specific-coding-advice" class="section level3">
-<h3><span class="header-section-number">1.2.4</span> R-specific coding advice</h3>
+<div id="r-specific-coding-advice" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.4</span> R-specific coding advice<a href="contributing-to-biocro.html#r-specific-coding-advice" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Prefer to use the double-bracket operator (<code>list[['element']]</code>) rather than
 the dollar-sign operator (<code>list$element</code>) when accessing the elements of a
@@ -435,33 +435,33 @@ slightly longer lines. <a href="contributing-to-biocro.html#a1">↩︎</a></p>
 
 </div>
 </div>
-<div id="formatting-tools" class="section level2">
-<h2><span class="header-section-number">1.3</span> Formatting Tools</h2>
-<div id="clang" class="section level3">
-<h3><span class="header-section-number">1.3.1</span> Clang</h3>
+<div id="formatting-tools" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.3</span> Formatting Tools<a href="contributing-to-biocro.html#formatting-tools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="clang" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.3.1</span> Clang<a href="contributing-to-biocro.html#clang" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Many of these BioCro formatting preferences can be applied automatically using the program <a href="https://clang.llvm.org/docs/ClangFormat.html">clang-format</a> with the <a href="../.clang-format">.clang-format</a> file provided in the base directory of BioCro. <strong>Do not apply clang-format to all files indiscriminately</strong>, as that will ruin manually-aligned tables.</p>
-<div id="installation" class="section level4">
-<h4><span class="header-section-number">1.3.1.1</span> Installation</h4>
+<div id="installation" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.3.1.1</span> Installation<a href="contributing-to-biocro.html#installation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>One can install clang-format on Ubunutu using <code>sudo apt install clang-format</code> and on MacOS through Homebrew.</p>
 </div>
-<div id="using-clang" class="section level4">
-<h4><span class="header-section-number">1.3.1.2</span> Using Clang</h4>
+<div id="using-clang" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.3.1.2</span> Using Clang<a href="contributing-to-biocro.html#using-clang" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Files can be formatted using</p>
 <pre><code>clang-format file_name &gt; new_file</code></pre>
 <p>or edited in place using</p>
 <pre><code>clang-format -i file_name</code></pre>
 <p>If your editor has the ability to display differences between the original and revised versions of the file, it is a good idea to step through and inspect the proposed changes to ensure they are desirable.</p>
 </div>
-<div id="clang-with-the-codelite-ide" class="section level4">
-<h4><span class="header-section-number">1.3.1.3</span> Clang with the CodeLite IDE</h4>
+<div id="clang-with-the-codelite-ide" class="section level4 hasAnchor">
+<h4><span class="header-section-number">1.3.1.3</span> Clang with the CodeLite IDE<a href="contributing-to-biocro.html#clang-with-the-codelite-ide" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>On Windows, MacOS, or Linux, the CodeLite IDE includes clang-format
 and provides an easy way to use it. First go to Plugins -&gt; Source Code
 Formatter -&gt; Options. In the C++ tab, select <code>use .clang-format file</code>. Now press <code>Ctrl-I</code> or click Plugins -&gt; Source Code Formatter -&gt;
 Format Current Source to format a file.</p>
 </div>
 </div>
-<div id="editorconfig" class="section level3">
-<h3><span class="header-section-number">1.3.2</span> EditorConfig</h3>
+<div id="editorconfig" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.3.2</span> EditorConfig<a href="contributing-to-biocro.html#editorconfig" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Another tool to help with formatting is EditorConfig. EditorConfig,
 when used in conjunction with the <a href="../.editorconfig">.editorconfig</a>
 file provided in the base directory of BioCro, provides a method for

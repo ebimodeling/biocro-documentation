@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Generating Documentation | BioCro Development</title>
   <meta name="description" content="2 Generating Documentation | BioCro Development" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Generating Documentation | BioCro Development" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-01-08" />
+<meta name="date" content="2022-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +49,9 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -215,15 +215,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="generating-documentation" class="section level1">
-<h1><span class="header-section-number">2</span> Generating Documentation</h1>
+<div id="generating-documentation" class="section level1 hasAnchor">
+<h1><span class="header-section-number">2</span> Generating Documentation<a href="generating-documentation.html#generating-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
-<div id="documentation-for-the-cc-code." class="section level2">
-<h2><span class="header-section-number">2.1</span> Documentation for the C/C++ code.</h2>
+<div id="documentation-for-the-cc-code." class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.1</span> Documentation for the C/C++ code.<a href="generating-documentation.html#documentation-for-the-cc-code." class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To generate documentation for the C/C++ code, we use
 <a href="https://www.doxygen.nl/index.html" target="_blank" rel="noopener"><em>Doxygen</em></a>.</p>
-<div id="required-software" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Required software</h3>
+<div id="required-software" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.1</span> Required software<a href="generating-documentation.html#required-software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Doxygen (version 1.9.0 or higher)</p></li>
 <li><p>The Graph visualization toolkit (“GraphViz”; version 2.38 or higher)
@@ -241,8 +241,8 @@ default. Simply visit
 <a href="https://ebimodeling.github.io/biocro-documentation/" target="_blank" rel="noopener">https://ebimodeling.github.io/biocro-documentation/</a> to get documentation of the latest version of the code
 on the GitHub <em>master</em> branch.</p>
 </div>
-<div id="installation-1" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Installation</h3>
+<div id="installation-1" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.2</span> Installation<a href="generating-documentation.html#installation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Binary distributions of Doxygen for Linux x86-64, Windows (Vista and
 later), and for macOS 10.14 and later<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> are
 available on the <a href="https://www.doxygen.nl/download.html" target="_blank" rel="noopener">Doxygen Downloads
@@ -259,10 +259,10 @@ binary distribution. For example, running</p>
 Ghostscript<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> and the Graph visualization toolkit as
 well. (To do something similar on a Mac with Homebrew, run <code>brew install doxygen graphviz ghostscript</code>.)</p>
 </div>
-<div id="generating-the-documentation" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Generating the Documentation</h3>
-<div id="using-the-canned-make-file-recipes" class="section level4">
-<h4><span class="header-section-number">2.1.3.1</span> Using the canned Make-file recipes</h4>
+<div id="generating-the-documentation" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.3</span> Generating the Documentation<a href="generating-documentation.html#generating-the-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="using-the-canned-make-file-recipes" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.3.1</span> Using the canned Make-file recipes<a href="generating-documentation.html#using-the-canned-make-file-recipes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you have <em>Make</em> installed, the easiest way to generate the Doxygen
 documentation is to run one of the several recipes in
 <code>doxygen/Makefile</code>. There are various recipes for generating <em>all</em> of
@@ -272,16 +272,16 @@ automatically opening a viewer on the just-generated documentation.
 Run <code>make help</code> in the <code>doxygen</code> directory to see information about
 all of the available Make targets.</p>
 </div>
-<div id="using-the-doxygen-command-directly" class="section level4">
-<h4><span class="header-section-number">2.1.3.2</span> Using the doxygen command directly</h4>
+<div id="using-the-doxygen-command-directly" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.3.2</span> Using the doxygen command directly<a href="generating-documentation.html#using-the-doxygen-command-directly" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>You can build the Doxygen documentation directly, without using Make,
 by running the command-line command <code>doxygen</code> in the <code>doxygen</code>
 directory. With no configuration-file argument provided, this will
 default to using the provided BioCro configuration file
 <code>doxygen/Doxyfile</code>.</p>
 </div>
-<div id="using-the-doxygen-gui-front-end" class="section level4">
-<h4><span class="header-section-number">2.1.3.3</span> Using the Doxygen GUI front-end</h4>
+<div id="using-the-doxygen-gui-front-end" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.3.3</span> Using the Doxygen GUI front-end<a href="generating-documentation.html#using-the-doxygen-gui-front-end" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Doxygen provides a GUI front-end for documentation generation. To use
 it, simply click (or double-click) on the <em>Doxygen</em> icon.
 Alternatively, the GUI front-end can be started from the command line
@@ -296,8 +296,8 @@ within the GUI program by choosing <em>File/Open…</em> from the application
 menu (shortcut <em>Ctrl-O</em>, or <em>Cmd-O</em> on Mac) and selecting the desired
 configuration file in the pop-up file browser.</p>
 </div>
-<div id="using-your-own-customizations-of-the-provided-doxyfile" class="section level4">
-<h4><span class="header-section-number">2.1.3.4</span> Using your own customizations of the provided Doxyfile</h4>
+<div id="using-your-own-customizations-of-the-provided-doxyfile" class="section level4 hasAnchor">
+<h4><span class="header-section-number">2.1.3.4</span> Using your own customizations of the provided Doxyfile<a href="generating-documentation.html#using-your-own-customizations-of-the-provided-doxyfile" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you want to customize your Doxygen builds without having to write a
 new Doxyfile from scratch, the existing BioCro Doxyfile provides for
 including a <em>customization</em> file to override the settings in Doxyfile.
@@ -347,8 +347,8 @@ GENERATE_TREEVIEW, GENERATE_LATEX, INPUT, OUTPUT_DIRECTORY,
 EXTRACT_PRIVATE, HTML_COLORSTYLE_HUE. (This may change in the future.)</p>
 </div>
 </div>
-<div id="viewing-and-using-the-documentation" class="section level3">
-<h3><span class="header-section-number">2.1.4</span> Viewing and using the documentation</h3>
+<div id="viewing-and-using-the-documentation" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.1.4</span> Viewing and using the documentation<a href="generating-documentation.html#viewing-and-using-the-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Most of the Make-file targets for generating documentation have
 corresponding targets that both generate the documentation and then
 automatically open a view of the finished product once generation is
@@ -366,8 +366,8 @@ Make-file recipes to generate the PDF documentation, you will have to
 run <code>make</code> in the <code>&lt;output_directory&gt;/latex</code> directory after running
 Doxygen in order to generate the PDF files from the LaTeX files that
 Doxygen generates.)</p>
-<div id="a-note-on-using-the-doxygen-documentation-to-browse-source-code" class="section level4 unnumbered">
-<h4>A note on using the Doxygen documentation to browse source code</h4>
+<div id="a-note-on-using-the-doxygen-documentation-to-browse-source-code" class="section level4 unnumbered hasAnchor">
+<h4>A note on using the Doxygen documentation to browse source code<a href="generating-documentation.html#a-note-on-using-the-doxygen-documentation-to-browse-source-code" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The HTML version of the Doxygen documentation provides an alternative
 to <a href="https://en.wikipedia.org/wiki/Ctags" target="_blank" rel="noopener">Ctags</a><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> as a convenient way to browse C++ source
 code: sections documenting classes and functions provide links to the
@@ -378,10 +378,10 @@ file and line where they are defined.</p>
 </div>
 </div>
 </div>
-<div id="building-package-vignettes" class="section level2">
-<h2><span class="header-section-number">2.2</span> Building package vignettes</h2>
-<div id="required-software-1" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Required software</h3>
+<div id="building-package-vignettes" class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.2</span> Building package vignettes<a href="generating-documentation.html#building-package-vignettes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="required-software-1" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.1</span> Required software<a href="generating-documentation.html#required-software-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Unless you only want to build vignettes written in Markdown (“.Rmd”
 files), you will need a TeX installation of some sort. Here are two
 options:</p>
@@ -409,8 +409,8 @@ will also need the R package <code>devtools</code>:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="generating-documentation.html#cb10-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;devtools&#39;</span>)</span></code></pre></div></li>
 </ul>
 </div>
-<div id="build-procedure" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Build procedure</h3>
+<div id="build-procedure" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.2</span> Build procedure<a href="generating-documentation.html#build-procedure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The following instructions assume that the root of the BioCro source
 tree is a directory named <code>biocro</code>.</p>
 <ul>
@@ -425,8 +425,8 @@ vignettes in a web browser is to run the command
 <code>browseVignettes('BioCro')</code> in an R session.</p></li>
 </ul>
 </div>
-<div id="alternative-options" class="section level3">
-<h3><span class="header-section-number">2.2.3</span> Alternative options</h3>
+<div id="alternative-options" class="section level3 hasAnchor">
+<h3><span class="header-section-number">2.2.3</span> Alternative options<a href="generating-documentation.html#alternative-options" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here are some alternative methods of building vignettes that don’t
 require re-installing BioCro.</p>
 <ul>
@@ -456,8 +456,8 @@ progress, and so it may be useful to override this default and set
 
 </div>
 </div>
-<div id="compiling-and-viewing-the-bookdown-book" class="section level2">
-<h2><span class="header-section-number">2.3</span> Compiling and viewing the <em>bookdown</em> book</h2>
+<div id="compiling-and-viewing-the-bookdown-book" class="section level2 hasAnchor">
+<h2><span class="header-section-number">2.3</span> Compiling and viewing the <em>bookdown</em> book<a href="generating-documentation.html#compiling-and-viewing-the-bookdown-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <hr />
 <p><em>Note</em>: A copy of the <em>bookdown</em> BioCro development manual is
 automatically generated on BioCro’s GitHub documentation site at
