@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lower_5fbounds_755',['lower_bounds',['../classse__module_1_1base.html#af343479f291e508daae80b942233e395',1,'se_module::base']]]
+  ['ncalls_551',['ncalls',['../classdynamical__system.html#a9c398709d2858a20536907016b4ab7f2',1,'dynamical_system']]],
+  ['nsteps_552',['nsteps',['../classboost__ode__solver.html#ab82d6ab9ed7d16e4b5c6d47c8b4bc589',1,'boost_ode_solver']]]
 ];

@@ -1,9 +1,0 @@
-<map id="eng" name="eng">
-<area shape="rect" id="node1" title=" " alt="" coords="751,49,793,76"/>
-<area shape="rect" id="node2" href="$namespacese__solver__rand.html#a0002d0800e58c4c4b7e997026ad0cb3a" title="A function that returns a double chosen from a normal distribution with a mean of 0 and a standard de..." alt="" coords="609,23,703,49"/>
-<area shape="rect" id="node6" href="$namespacese__solver__rand.html#a72a434d343698609714e40bbfe29e489" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="622,75,690,101"/>
-<area shape="rect" id="node3" href="$namespacese__solver__rand.html#a9f56be3c41c4ce78f588169480cb5e7b" title="A function that returns a random vector on the surface of an n&#45;dimensional sphere...." alt="" coords="401,13,545,54"/>
-<area shape="rect" id="node4" href="$se__solver__helper__functions_8cpp.html#a2aa65ff7e9c4652b56723a15071a5c73" title="Determines a set of multiple initial guesses distributed around a central guess. The resulting output..." alt="" coords="197,20,336,47"/>
-<area shape="rect" id="node5" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis.html#ae6631c09eeca7afadaeb1a49ce568655" title=" " alt="" coords="5,5,149,61"/>
-<area shape="rect" id="node7" href="$se__solver__helper__functions_8h.html#a1ce3aab7b6961eb9e623203b58bb5e6c" title="Determines a new guess from a bad one by randomly replacing bad elements." alt="" coords="384,79,561,105"/>
-</map>

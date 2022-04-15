@@ -1,4 +1,0 @@
-<map id="get_se_inputs" name="get_se_inputs">
-<area shape="rect" id="node1" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="128,5,231,32"/>
-<area shape="rect" id="node2" href="$namespacese__module.html#ab69d6194e8a14829b5154f50d7d1f652" title="Make a simultaneous_equations object from the modules." alt="" coords="5,5,80,32"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="generate_guess_list" name="generate_guess_list">
-<area shape="rect" id="node1" title="Determines a set of multiple initial guesses distributed around a central guess. The resulting output..." alt="" coords="5,35,144,61"/>
-<area shape="rect" id="node2" href="$namespacese__solver__rand.html#a9f56be3c41c4ce78f588169480cb5e7b" title="A function that returns a random vector on the surface of an n&#45;dimensional sphere...." alt="" coords="192,20,368,76"/>
-<area shape="rect" id="node3" href="$namespacese__solver__rand.html#a0002d0800e58c4c4b7e997026ad0cb3a" title="A function that returns a double chosen from a normal distribution with a mean of 0 and a standard de..." alt="" coords="416,35,603,61"/>
-<area shape="rect" id="node4" href="$namespacese__solver__rand.html#aacc8aa143c28d4b57309f49d8fa9422a" title=" " alt="" coords="659,5,797,32"/>
-<area shape="rect" id="node5" href="$namespacese__solver__rand.html#ad9a6fc3c83f86c06ff8ce3ca67845dd9" title=" " alt="" coords="651,57,805,98"/>
-</map>

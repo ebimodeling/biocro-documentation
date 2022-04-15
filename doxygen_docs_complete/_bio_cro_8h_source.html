@@ -172,7 +172,7 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    double airTemp,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    double RH,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    double WindSpeed,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    double <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a56616b732e15a2e2f88039b26d56f794">stomatal_conductance</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    double stomatal_conductance,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    double leaf_width,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    double specific_heat_of_air,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    double minimum_gbw,</div>
@@ -186,7 +186,7 @@ $(function() {
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    double WindSpeed,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    double CanopyHeight,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    double specific_heat_of_air,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    double <a class="code" href="namespaceed__c4__leaf__photosynthesis__stuff.html#a56616b732e15a2e2f88039b26d56f794">stomatal_conductance</a>,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    double stomatal_conductance,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    double minimum_gbw,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    double WindSpeedHeight</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;);</div>
@@ -210,7 +210,6 @@ $(function() {
 <div class="ttc" id="a_bio_cro_8h_html_ae968ba7b909ced8395a2546ffea9f684"><div class="ttname"><a href="_bio_cro_8h.html#ae968ba7b909ced8395a2546ffea9f684">CanAC</a></div><div class="ttdeci">struct Can_Str CanAC(double LAI, double cosine_zenith_angle, double solarR, double Temp, double RH, double WindSpeed, int nlayers, double Vmax, double Alpha, double Kparm, double beta, double Rd, double Catm, double b0, double b1, double Gs_min, double theta, double kd, double chil, double leafN, double kpLN, int lnfun, double upperT, double lowerT, const struct nitroParms &amp;nitroP, double leafwidth, int eteq, double StomataWS, double specific_heat_of_air, double atmospheric_pressure, int water_stress_approach, double absorptivity_par, double par_energy_content, double par_energy_fraction, double leaf_transmittance, double leaf_reflectance, double minimum_gbw)</div><div class="ttdef"><b>Definition:</b> <a href="_can_a_c_8cpp_source.html#l00001">CanAC.cpp:5</a></div></div>
 <div class="ttc" id="a_bio_cro_8h_html_aeb35169469ef33705592a28743d105bf"><div class="ttname"><a href="_bio_cro_8h.html#aeb35169469ef33705592a28743d105bf">resp</a></div><div class="ttdeci">double resp(double comp, double mrc, double temp)</div><div class="ttdoc">Subtracts respiratory losses from a carbon production rate.</div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8cpp_source.html#l01425">AuxBioCro.cpp:1425</a></div></div>
 <div class="ttc" id="a_bio_cro_8h_html_af6dcba839dcdfeb1a6564ea28b5f9da2"><div class="ttname"><a href="_bio_cro_8h.html#af6dcba839dcdfeb1a6564ea28b5f9da2">c3CanAC</a></div><div class="ttdeci">struct Can_Str c3CanAC(double LAI, double cosine_zenith_angle, double solarR, double Temp, double RH, double WindSpeed, int nlayers, double Vmax, double Jmax, double tpu_rate_max, double Rd, double Catm, double o2, double b0, double b1, double Gs_min, double theta, double kd, double heightf, double leafN, double kpLN, double lnb0, double lnb1, int lnfun, double chil, double StomataWS, double specific_heat_of_air, double atmospheric_pressure, double growth_respiration_fraction, int water_stress_approach, double electrons_per_carboxylation, double electrons_per_oxygenation, double absorptivity_par, double par_energy_content, double par_energy_fraction, double leaf_transmittance, double leaf_reflectance, double minimum_gbw, double WindSpeedHeight)</div><div class="ttdef"><b>Definition:</b> <a href="c3_can_a_c_8cpp_source.html#l00001">c3CanAC.cpp:5</a></div></div>
-<div class="ttc" id="anamespaceed__c4__leaf__photosynthesis__stuff_html_a56616b732e15a2e2f88039b26d56f794"><div class="ttname"><a href="namespaceed__c4__leaf__photosynthesis__stuff.html#a56616b732e15a2e2f88039b26d56f794">ed_c4_leaf_photosynthesis_stuff::stomatal_conductance</a></div><div class="ttdeci">module_creator_impl&lt; standardBML::ed_ball_berry &gt; stomatal_conductance</div><div class="ttdef"><b>Definition:</b> <a href="ed__c4__leaf__photosynthesis_8h_source.html#l00039">ed_c4_leaf_photosynthesis.h:39</a></div></div>
 <div class="ttc" id="astruct_can___str_html"><div class="ttname"><a href="struct_can___str.html">Can_Str</a></div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00041">AuxBioCro.h:41</a></div></div>
 <div class="ttc" id="astruct_e_t___str_html"><div class="ttname"><a href="struct_e_t___str.html">ET_Str</a></div><div class="ttdef"><b>Definition:</b> <a href="_aux_bio_cro_8h_source.html#l00033">AuxBioCro.h:33</a></div></div>
 <div class="ttc" id="astruct_light__model_html"><div class="ttname"><a href="struct_light__model.html">Light_model</a></div><div class="ttdef"><b>Definition:</b> <a href="_bio_cro_8h_source.html#l00006">BioCro.h:6</a></div></div>
@@ -224,7 +223,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 13 2022 18:54:56 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 15 2022 21:08:46 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

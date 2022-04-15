@@ -1,7 +1,0 @@
-<map id="adjust_bad_guess_random" name="adjust_bad_guess_random">
-<area shape="rect" id="node1" title="Determines a new guess from a bad one by randomly replacing bad elements." alt="" coords="5,31,183,57"/>
-<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#adef0959092a7736ae2ab30bb2bc054e2" title="Checks whether the elements of vec_to_test lie outside the bounds." alt="" coords="247,5,377,32"/>
-<area shape="rect" id="node3" href="$namespacese__solver__rand.html#a72a434d343698609714e40bbfe29e489" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="231,56,393,83"/>
-<area shape="rect" id="node4" href="$namespacese__solver__rand.html#aacc8aa143c28d4b57309f49d8fa9422a" title=" " alt="" coords="452,27,589,53"/>
-<area shape="rect" id="node5" href="$namespacese__solver__rand.html#aa65e6c6c3d2f580f20ec39984cc48719" title=" " alt="" coords="441,78,600,119"/>
-</map>

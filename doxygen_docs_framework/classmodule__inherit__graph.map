@@ -1,6 +1,0 @@
-<map id="module" name="module">
-<area shape="rect" id="node1" title="Represents one or more equations." alt="" coords="109,5,173,32"/>
-<area shape="rect" id="node2" href="$classdifferential__module.html" title="This class represents a differential module." alt="" coords="5,80,136,107"/>
-<area shape="rect" id="node3" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="161,80,263,107"/>
-<area shape="rect" id="node4" href="$classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="187,155,237,181"/>
-</map>
