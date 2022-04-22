@@ -1,4 +1,12 @@
 <map id="string_set_to_string_vector" name="string_set_to_string_vector">
-<area shape="rect" id="node1" title="Converts a string_set to a string_vector." alt="" coords="247,5,383,47"/>
-<area shape="rect" id="node2" href="$classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node1" title="Converts a string_set to a string_vector." alt="" coords="683,115,819,156"/>
+<area shape="rect" id="node2" href="$classdynamical__system.html#a2b3054277b6e00cab2f51939c5aa8576" title=" " alt="" coords="441,5,635,47"/>
+<area shape="rect" id="node3" href="$namespacese__module.html#a0cdc7d966e5e864fb41b396befcf1011" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="221,67,393,94"/>
+<area shape="rect" id="node5" href="$namespacese__module.html#aced31aa676f646da566c2d7ae6beda0f" title="Returns a sorted list of outputs produced by the modules." alt="" coords="448,122,628,149"/>
+<area shape="rect" id="node6" href="$simultaneous__equations_8cpp.html#a7fad462df9734a0478e82e1168da9f18" title="Finds the unknown quantities defined by the set of modules." alt="" coords="457,173,619,199"/>
+<area shape="rect" id="node10" href="$classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="5,272,173,313"/>
+<area shape="rect" id="node4" href="$namespacese__module.html#ab69d6194e8a14829b5154f50d7d1f652" title="Make a simultaneous_equations object from the modules." alt="" coords="17,111,161,138"/>
+<area shape="rect" id="node7" href="$simultaneous__equations_8cpp.html#a04f19c0c0713cd1bcaed4b3a0aae1e20" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="233,169,382,211"/>
+<area shape="rect" id="node9" href="$simultaneous__equations_8cpp.html#a963debb7f62d8fd53450b589b2ff88ec" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,235,383,276"/>
+<area shape="rect" id="node8" href="$_r__simultaneous__equations_8cpp.html#a736b7b735611e99e351193041de9f24e" title=" " alt="" coords="6,177,173,219"/>
 </map>

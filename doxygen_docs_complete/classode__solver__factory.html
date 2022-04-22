@@ -82,16 +82,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f160ef946cca8101459ed7ee4c31354"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classode__solver.html">ode_solver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#a1f160ef946cca8101459ed7ee4c31354">create</a> (std::string const &amp;ode_solver_name, double step_size, double rel_error_tolerance, double abs_error_tolerance, int max_steps)</td></tr>
-<tr class="separator:a1f160ef946cca8101459ed7ee4c31354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02f8c60a2e2ac352ad01a15150a0ecb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classode__solver.html">ode_solver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#ae02f8c60a2e2ac352ad01a15150a0ecb">create</a> (std::string const &amp;ode_solver_name, double step_size, double rel_error_tolerance, double abs_error_tolerance, int max_steps)</td></tr>
+<tr class="separator:ae02f8c60a2e2ac352ad01a15150a0ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2beb8c204128878acc37e55bc848562"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#ac2beb8c204128878acc37e55bc848562">get_ode_solvers</a> ()</td></tr>
 <tr class="separator:ac2beb8c204128878acc37e55bc848562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aec9006b4aa3f8705c22aa0c5e21b41f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#aec9006b4aa3f8705c22aa0c5e21b41f8">ode_solver_creator</a> = std::unique_ptr&lt; <a class="el" href="classode__solver.html">ode_solver</a> &gt;(*)(double, double, double, int)</td></tr>
-<tr class="separator:aec9006b4aa3f8705c22aa0c5e21b41f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671e77f2ef06e13c6e45911dcdd12475"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#a671e77f2ef06e13c6e45911dcdd12475">ode_solver_creator_map</a> = std::map&lt; std::string, <a class="el" href="classode__solver__factory.html#aec9006b4aa3f8705c22aa0c5e21b41f8">ode_solver_creator</a> &gt;</td></tr>
+<tr class="memitem:a061142b34dcdc6d5c53591b4dc5e1de1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#a061142b34dcdc6d5c53591b4dc5e1de1">ode_solver_creator</a> = <a class="el" href="classode__solver.html">ode_solver</a> *(*)(double, double, double, int)</td></tr>
+<tr class="separator:a061142b34dcdc6d5c53591b4dc5e1de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671e77f2ef06e13c6e45911dcdd12475"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#a671e77f2ef06e13c6e45911dcdd12475">ode_solver_creator_map</a> = std::map&lt; std::string, <a class="el" href="classode__solver__factory.html#a061142b34dcdc6d5c53591b4dc5e1de1">ode_solver_creator</a> &gt;</td></tr>
 <tr class="separator:a671e77f2ef06e13c6e45911dcdd12475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42cf582a798a11ae841ed124a41c6a1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classode__solver__factory.html#a42cf582a798a11ae841ed124a41c6a1a">preferred_state_type</a> = std::vector&lt; double &gt;</td></tr>
 <tr class="separator:a42cf582a798a11ae841ed124a41c6a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,10 +103,10 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00011">11</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00010">10</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aec9006b4aa3f8705c22aa0c5e21b41f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec9006b4aa3f8705c22aa0c5e21b41f8">&#9670;&nbsp;</a></span>ode_solver_creator</h2>
+<a id="a061142b34dcdc6d5c53591b4dc5e1de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061142b34dcdc6d5c53591b4dc5e1de1">&#9670;&nbsp;</a></span>ode_solver_creator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +115,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classode__solver__factory.html#aec9006b4aa3f8705c22aa0c5e21b41f8">ode_solver_creator</a> =  std::unique_ptr&lt;<a class="el" href="classode__solver.html">ode_solver</a>&gt; (*)(double, double, double, int)</td>
+          <td class="memname">using <a class="el" href="classode__solver__factory.html#a061142b34dcdc6d5c53591b4dc5e1de1">ode_solver_creator</a> =  <a class="el" href="classode__solver.html">ode_solver</a>* (*)(double, double, double, int)</td>
         </tr>
       </table>
   </td>
@@ -125,7 +125,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00026">26</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00025">25</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
 
 </div>
 </div>
@@ -139,7 +139,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classode__solver__factory.html#a671e77f2ef06e13c6e45911dcdd12475">ode_solver_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classode__solver__factory.html#aec9006b4aa3f8705c22aa0c5e21b41f8">ode_solver_creator</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classode__solver__factory.html#a671e77f2ef06e13c6e45911dcdd12475">ode_solver_creator_map</a> =  std::map&lt;std::string, <a class="el" href="classode__solver__factory.html#a061142b34dcdc6d5c53591b4dc5e1de1">ode_solver_creator</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -149,7 +149,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00030">30</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00029">29</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
 
 </div>
 </div>
@@ -173,13 +173,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00034">34</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00033">33</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1f160ef946cca8101459ed7ee4c31354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f160ef946cca8101459ed7ee4c31354">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ae02f8c60a2e2ac352ad01a15150a0ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02f8c60a2e2ac352ad01a15150a0ecb">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classode__solver.html">ode_solver</a> &gt; create </td>
+          <td class="memname"><a class="el" href="classode__solver.html">ode_solver</a> * create </td>
           <td>(</td>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>ode_solver_name</em>, </td>
@@ -232,18 +232,18 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ode__solver__factory_8cpp_source.html#l00035">35</a> of file <a class="el" href="ode__solver__factory_8cpp_source.html">ode_solver_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ode__solver__factory_8h_source.html#l00036">ode_solver_creators</a>.</p>
+<p class="reference">References <a class="el" href="ode__solver__factory_8h_source.html#l00035">ode_solver_creators</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="biocro__simulation_8h_source.html#l00014">biocro_simulation::biocro_simulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="biocro__simulation_8h_source.html#l00015">biocro_simulation::biocro_simulation()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classode__solver__factory_a1f160ef946cca8101459ed7ee4c31354_icgraph.png" border="0" usemap="#aclassode__solver__factory_a1f160ef946cca8101459ed7ee4c31354_icgraph" alt=""/></div>
-<map name="aclassode__solver__factory_a1f160ef946cca8101459ed7ee4c31354_icgraph" id="aclassode__solver__factory_a1f160ef946cca8101459ed7ee4c31354_icgraph">
+<div class="center"><img src="classode__solver__factory_ae02f8c60a2e2ac352ad01a15150a0ecb_icgraph.png" border="0" usemap="#aclassode__solver__factory_ae02f8c60a2e2ac352ad01a15150a0ecb_icgraph" alt=""/></div>
+<map name="aclassode__solver__factory_ae02f8c60a2e2ac352ad01a15150a0ecb_icgraph" id="aclassode__solver__factory_ae02f8c60a2e2ac352ad01a15150a0ecb_icgraph">
 <area shape="rect" title=" " alt="" coords="183,13,241,39"/>
-<area shape="rect" href="classbiocro__simulation.html#a41c72d9c45a874a0105c8651568f2279" title=" " alt="" coords="5,5,135,47"/>
+<area shape="rect" href="classbiocro__simulation.html#a84c6b7947b7941c6ebb11d6df7d70876" title=" " alt="" coords="5,5,135,47"/>
 </map>
 </div>
 
@@ -274,9 +274,9 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ode__solver__factory_8cpp_source.html#l00058">58</a> of file <a class="el" href="ode__solver__factory_8cpp_source.html">ode_solver_factory.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ode__solver__factory_8h_source.html#l00036">ode_solver_creators</a>.</p>
+<p class="reference">References <a class="el" href="ode__solver__factory_8h_source.html#l00035">ode_solver_creators</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_r__get__all_8cpp_source.html#l00034">R_get_all_ode_solvers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_r__get__all__ode__solvers_8cpp_source.html#l00012">R_get_all_ode_solvers()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -285,7 +285,7 @@ Static Private Attributes</h2></td></tr>
 <div class="center"><img src="classode__solver__factory_ac2beb8c204128878acc37e55bc848562_icgraph.png" border="0" usemap="#aclassode__solver__factory_ac2beb8c204128878acc37e55bc848562_icgraph" alt=""/></div>
 <map name="aclassode__solver__factory_ac2beb8c204128878acc37e55bc848562_icgraph" id="aclassode__solver__factory_ac2beb8c204128878acc37e55bc848562_icgraph">
 <area shape="rect" title=" " alt="" coords="207,5,324,32"/>
-<area shape="rect" href="_r__get__all_8cpp.html#abf21ef28d77d0a35c3e2270066147a74" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" href="_r__get__all__ode__solvers_8cpp.html#abf21ef28d77d0a35c3e2270066147a74" title=" " alt="" coords="5,5,159,32"/>
 </map>
 </div>
 
@@ -321,20 +321,20 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        {<span class="stringliteral">&quot;boost_rkck54&quot;</span>,     create_ode_solver&lt;boost_rkck54_ode_solver&lt;preferred_state_type&gt;&gt;},</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00036">36</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ode__solver__factory_8h_source.html#l00035">35</a> of file <a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ode__solver__factory_8cpp_source.html#l00035">create()</a>, and <a class="el" href="ode__solver__factory_8cpp_source.html#l00058">get_ode_solvers()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/github/workspace/source/src/ode_solver_library/<a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a></li>
-<li>/github/workspace/source/src/ode_solver_library/<a class="el" href="ode__solver__factory_8cpp_source.html">ode_solver_factory.cpp</a></li>
+<li>/github/workspace/source/src/framework/ode_solver_library/<a class="el" href="ode__solver__factory_8h_source.html">ode_solver_factory.h</a></li>
+<li>/github/workspace/source/src/framework/ode_solver_library/<a class="el" href="ode__solver__factory_8cpp_source.html">ode_solver_factory.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 18 2022 22:30:57 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 22 2022 21:36:06 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

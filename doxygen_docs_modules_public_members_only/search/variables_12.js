@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wiltp_844',['wiltp',['../structsoil_text__str.html#a6ee087ca614bcf981839ca4e28953fb2',1,'soilText_str']]]
+  ['vmaxb0_1077',['Vmaxb0',['../structnitro_parms.html#a518b100123bc67830c26f15177a8172f',1,'nitroParms']]],
+  ['vmaxb1_1078',['Vmaxb1',['../structnitro_parms.html#ad7e57d8efdd075a1b184551d20eb44b3',1,'nitroParms']]]
 ];

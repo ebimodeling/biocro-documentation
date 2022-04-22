@@ -1,0 +1,4 @@
+<map id="rand_01" name="rand_01">
+<area shape="rect" id="node1" title="A function that returns a double between 0 and 1 chosen from a uniform distribution." alt="" coords="231,5,299,32"/>
+<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#a1ce3aab7b6961eb9e623203b58bb5e6c" title="Determines a new guess from a bad one by randomly replacing bad elements." alt="" coords="5,5,183,32"/>
+</map>

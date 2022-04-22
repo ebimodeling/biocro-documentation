@@ -1,0 +1,6 @@
+<map id="ed_c4_leaf_photosynthesis2" name="ed_c4_leaf_photosynthesis2">
+<area shape="rect" id="node1" title="Solves a set of modules for the unknown quantities assimilation_net, conductance_stomatal_h2o,..." alt="" coords="5,229,192,256"/>
+<area shape="rect" id="node2" href="$classse__module_1_1base.html" title="A general module that solves a set of simultaneous equations. Note that this module cannot be created..." alt="" coords="73,155,124,181"/>
+<area shape="rect" id="node3" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="47,80,150,107"/>
+<area shape="rect" id="node4" href="$classmodule.html" title="Represents one or more equations." alt="" coords="67,5,131,32"/>
+</map>

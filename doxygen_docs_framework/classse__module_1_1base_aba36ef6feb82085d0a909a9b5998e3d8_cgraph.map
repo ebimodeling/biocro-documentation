@@ -1,0 +1,8 @@
+<map id="do_operation" name="do_operation">
+<area shape="rect" id="node1" title="Uses the solver to solve the simultaneous equations for the unknown parameters, and then reports the ..." alt="" coords="5,85,101,112"/>
+<area shape="rect" id="node2" href="$classse__module_1_1base.html#a678e6bf4d7809e2c4a73a9d075fca1e6" title=" " alt="" coords="180,5,267,32"/>
+<area shape="rect" id="node3" href="$classse__module_1_1base.html#a282dba52c55600a1ca98b87a3c6e6f3f" title=" " alt="" coords="157,56,290,83"/>
+<area shape="rect" id="node4" href="$namespacese__module.html#ae00780412ea782cae4964f33f994d085" title="Reorders the initial guesses according to their corresponding f_scalar_norm values." alt="" coords="158,107,289,149"/>
+<area shape="rect" id="node6" href="$classdirect__module.html#a3f5a6c165abfe31f11a5465b11d645be" title="In a valid dynamical_system object, a given quantity may be defined by only one direct module...." alt="" coords="149,173,297,200"/>
+<area shape="rect" id="node5" href="$se__solver__helper__functions_8h.html#a4148ed08f23ba355169a5c5e64e131b6" title="Calculates f_scalar_norm = |F_vec/F_norm|^2 from a vector F_vec and a normalization vector F_norm." alt="" coords="345,107,483,149"/>
+</map>

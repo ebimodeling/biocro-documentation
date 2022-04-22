@@ -1,0 +1,4 @@
+<map id="ed_leaf_temperature" name="ed_leaf_temperature">
+<area shape="rect" id="node1" title="Calculates leaf temperature from energy balance without using the Penman&#45;Monteith approximation...." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="24,5,127,32"/>
+</map>

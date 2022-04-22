@@ -1,0 +1,6 @@
+<map id="R_module_creators" name="R_module_creators">
+<area shape="rect" id="node1" title="Creates a vector of &quot;R external pointer&quot; objects that each point to a module_creator object; this fun..." alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node2" href="$_r__helper__functions_8cpp.html#afd9187f558ecebc253f5809f84bfc581" title="Deletes a module_creator object that is pointed to by an &quot;R external pointer&quot; object." alt="" coords="189,5,346,32"/>
+<area shape="rect" id="node3" href="$_r__helper__functions_8cpp.html#a78b4dc65c356615f963ff971d9c28424" title=" " alt="" coords="219,56,316,83"/>
+<area shape="rect" id="node4" href="$classmodule__factory.html#a7999a3e7875989d141a7aaeecff223f0" title=" " alt="" coords="188,107,347,133"/>
+</map>

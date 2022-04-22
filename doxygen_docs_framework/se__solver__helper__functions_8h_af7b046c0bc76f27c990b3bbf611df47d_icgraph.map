@@ -1,0 +1,5 @@
+<map id="f_scalar_from_f_vec" name="f_scalar_from_f_vec">
+<area shape="rect" id="node1" title="Calculates f_scalar = 0.5 * |F_vec|^2 from a vector F_vec." alt="" coords="427,13,567,39"/>
+<area shape="rect" id="node2" href="$newton__raphson__backtrack__boost_8h.html#a8814a3b63c3ea2185a89df10e22f1ab2" title="Searches along a line for a point that sufficiently decreases the non&#45;negative scalar&#45;valued function..." alt="" coords="235,5,379,47"/>
+<area shape="rect" id="node3" href="$classnewton__raphson__backtrack__boost.html#aa52f5cbe5e2b526681b2ecf7780c9fad" title=" " alt="" coords="5,5,187,47"/>
+</map>

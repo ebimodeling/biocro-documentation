@@ -1,0 +1,5 @@
+<map id="f_scalar_norm_from_f_vec" name="f_scalar_norm_from_f_vec">
+<area shape="rect" id="node1" title="Calculates f_scalar_norm = |F_vec/F_norm|^2 from a vector F_vec and a normalization vector F_norm." alt="" coords="371,5,508,47"/>
+<area shape="rect" id="node2" href="$namespacese__module.html#ae00780412ea782cae4964f33f994d085" title="Reorders the initial guesses according to their corresponding f_scalar_norm values." alt="" coords="192,5,323,47"/>
+<area shape="rect" id="node3" href="$classse__module_1_1base.html#aba36ef6feb82085d0a909a9b5998e3d8" title="Uses the solver to solve the simultaneous equations for the unknown parameters, and then reports the ..." alt="" coords="5,5,144,47"/>
+</map>

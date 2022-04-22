@@ -1,0 +1,5 @@
+<map id="ed_water_vapor_properties" name="ed_water_vapor_properties">
+<area shape="rect" id="node1" title="Determines water vapor properties from the air temperature and atmospheric H2O mole fraction...." alt="" coords="5,155,184,181"/>
+<area shape="rect" id="node2" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="43,80,146,107"/>
+<area shape="rect" id="node3" href="$classmodule.html" title="Represents one or more equations." alt="" coords="63,5,127,32"/>
+</map>

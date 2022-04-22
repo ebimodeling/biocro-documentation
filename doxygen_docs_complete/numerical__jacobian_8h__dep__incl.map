@@ -1,8 +1,12 @@
-<map id="/github/workspace/source/src/numerical_jacobian.h" name="/github/workspace/source/src/numerical_jacobian.h">
-<area shape="rect" id="node1" title=" " alt="" coords="128,5,299,47"/>
-<area shape="rect" id="node2" href="$dynamical__system__caller_8h.html" title=" " alt="" coords="112,95,315,136"/>
-<area shape="rect" id="node3" href="$boost__ode__solvers_8h.html" title=" " alt="" coords="128,184,299,240"/>
-<area shape="rect" id="node4" href="$auto__ode__solver_8h.html" title=" " alt="" coords="5,288,176,344"/>
-<area shape="rect" id="node5" href="$ode__solver__factory_8cpp.html" title=" " alt="" coords="67,392,237,448"/>
-<area shape="rect" id="node6" href="$boost__ode__solvers_8cpp.html" title=" " alt="" coords="251,288,421,344"/>
+<map id="/github/workspace/source/src/framework/numerical_jacobian.h" name="/github/workspace/source/src/framework/numerical_jacobian.h">
+<area shape="rect" id="node1" title=" " alt="" coords="319,5,490,61"/>
+<area shape="rect" id="node2" href="$_r__simultaneous__equations_8cpp.html" title=" " alt="" coords="5,117,233,158"/>
+<area shape="rect" id="node3" href="$dynamical__system__caller_8h.html" title=" " alt="" coords="258,109,429,165"/>
+<area shape="rect" id="node8" href="$newton__raphson__backtrack__boost_8h.html" title=" " alt="" coords="394,213,669,269"/>
+<area shape="rect" id="node10" href="$newton__raphson__boost_8h.html" title=" " alt="" coords="503,109,714,165"/>
+<area shape="rect" id="node4" href="$boost__ode__solvers_8h.html" title=" " alt="" coords="183,213,370,269"/>
+<area shape="rect" id="node5" href="$auto__ode__solver_8h.html" title=" " alt="" coords="63,317,239,373"/>
+<area shape="rect" id="node6" href="$ode__solver__factory_8cpp.html" title=" " alt="" coords="114,421,314,477"/>
+<area shape="rect" id="node7" href="$boost__ode__solvers_8cpp.html" title=" " alt="" coords="314,317,514,373"/>
+<area shape="rect" id="node9" href="$se__solver__factory_8cpp.html" title=" " alt="" coords="575,317,768,373"/>
 </map>

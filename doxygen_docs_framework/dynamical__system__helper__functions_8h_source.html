@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>The BioCro C++ Library: /github/workspace/source/src/dynamical_system_helper_functions.h Source File</title>
+<title>The BioCro C++ Library: /github/workspace/source/src/framework/dynamical_system_helper_functions.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5752cadd8276ecfd63d9b924f2a4d4b5.html">framework</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span>     <span class="comment">// For unique_ptr</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modules_8h.html">modules.h</a>&quot;</span>  <span class="comment">// For module_vector</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module_8h.html">module.h</a>&quot;</span>  <span class="comment">// For module_vector</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="validate__dynamical__system_8h.html">validate_dynamical_system.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -133,7 +133,7 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> pointers;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a>(<a class="code" href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a> <span class="keyword">const</span>&amp; modules_to_check);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a>(<a class="code" href="module_8h.html#ad7dbd1f070a9275c750e1c8961b456a9">module_vector</a> <span class="keyword">const</span>&amp; modules_to_check);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
@@ -141,13 +141,13 @@ $(function() {
 <div class="ttc" id="adynamical__system__helper__functions_8h_html_a67a06f75e30d97caffc99a6ba0c5911e"><div class="ttname"><a href="dynamical__system__helper__functions_8h.html#a67a06f75e30d97caffc99a6ba0c5911e">check_euler_requirement</a></div><div class="ttdeci">bool check_euler_requirement(module_vector const &amp;modules_to_check)</div><div class="ttdoc">Checks whether the collection of modules requires an Euler ODE solver.</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system__helper__functions_8cpp_source.html#l00006">dynamical_system_helper_functions.cpp:6</a></div></div>
 <div class="ttc" id="adynamical__system__helper__functions_8h_html_ab35470319479a69326a1de4f23c05545"><div class="ttname"><a href="dynamical__system__helper__functions_8h.html#ab35470319479a69326a1de4f23c05545">get_pointers</a></div><div class="ttdeci">std::vector&lt; value_type * &gt; get_pointers(name_list_type quantity_names, std::unordered_map&lt; std::string, value_type &gt; &amp;map)</div><div class="ttdoc">Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_...</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system__helper__functions_8h_source.html#l00045">dynamical_system_helper_functions.h:45</a></div></div>
 <div class="ttc" id="adynamical__system__helper__functions_8h_html_ae8d8433e352300150a183ae058a753d2"><div class="ttname"><a href="dynamical__system__helper__functions_8h.html#ae8d8433e352300150a183ae058a753d2">get_const_pointers</a></div><div class="ttdeci">std::vector&lt; const value_type * &gt; get_const_pointers(name_list_type quantity_names, std::unordered_map&lt; std::string, value_type &gt; const &amp;map)</div><div class="ttdoc">Returns a vector of pointers that point to elements of a map whose targets are specified by quantity_...</div><div class="ttdef"><b>Definition:</b> <a href="dynamical__system__helper__functions_8h_source.html#l00066">dynamical_system_helper_functions.h:66</a></div></div>
-<div class="ttc" id="amodules_8h_html"><div class="ttname"><a href="modules_8h.html">modules.h</a></div></div>
-<div class="ttc" id="amodules_8h_html_a9c258484825f09ad4fcdf6aa7722757f"><div class="ttname"><a href="modules_8h.html#a9c258484825f09ad4fcdf6aa7722757f">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; module_base &gt; &gt; module_vector</div><div class="ttdoc">module_vector serves as an alias for a type widely used to hold lists of modules.</div><div class="ttdef"><b>Definition:</b> <a href="modules_8h_source.html#l00157">modules.h:157</a></div></div>
+<div class="ttc" id="amodule_8h_html"><div class="ttname"><a href="module_8h.html">module.h</a></div></div>
+<div class="ttc" id="amodule_8h_html_ad7dbd1f070a9275c750e1c8961b456a9"><div class="ttname"><a href="module_8h.html#ad7dbd1f070a9275c750e1c8961b456a9">module_vector</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; module &gt; &gt; module_vector</div><div class="ttdoc">module_vector serves as an alias for a type widely used to hold lists of modules.</div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00169">module.h:169</a></div></div>
 <div class="ttc" id="avalidate__dynamical__system_8h_html"><div class="ttname"><a href="validate__dynamical__system_8h.html">validate_dynamical_system.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 18 2022 22:31:57 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 22 2022 21:37:36 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
