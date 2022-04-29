@@ -82,25 +82,27 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_r__helper__functions_8h.html">framework/R_helper_functions.h</a>&quot;</span>  <span class="comment">// for r_string_vector_from_vector</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="state__map_8h.html">framework/state_map.h</a>&quot;</span>           <span class="comment">// for string_vector</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="se__solver__factory_8h.html">framework_ed/se_solver_library/se_solver_factory.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::string;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">   12</a></span>&#160;SEXP <a class="code" href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all_se_solvers</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> result = <a class="code" href="classse__solver__factory.html#a899f7cd30f10f44d786258ff28a82bac">se_solver_factory::get_solvers</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a804a6819e7de829ba23f6e24a43f8995">r_string_vector_from_vector</a>(result);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    } <span class="keywordflow">catch</span> (std::exception <span class="keyword">const</span>&amp; e) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Rf_error((<span class="keywordtype">string</span>(<span class="stringliteral">&quot;Caught exception in R_get_all_se_solvers: &quot;</span>) + e.what()).c_str());</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Rf_error(<span class="stringliteral">&quot;Caught unhandled exception in R_get_all_se_solvers.&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="ttc" id="a_r__get__all__se__solvers_8cpp_html_a58b3fdfa1e1a0852252b4efe28ec24bb"><div class="ttname"><a href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all_se_solvers</a></div><div class="ttdeci">SEXP R_get_all_se_solvers()</div><div class="ttdef"><b>Definition:</b> <a href="_r__get__all__se__solvers_8cpp_source.html#l00012">R_get_all_se_solvers.cpp:12</a></div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_r__get__all__se__solvers_8h.html">R_get_all_se_solvers.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">   13</a></span>&#160;SEXP <a class="code" href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all_se_solvers</a>()</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="state__map_8h.html#a1ff119048c542e2f0fa6c826e7473e62">string_vector</a> result = <a class="code" href="classse__solver__factory.html#a899f7cd30f10f44d786258ff28a82bac">se_solver_factory::get_solvers</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_r__helper__functions_8cpp.html#a804a6819e7de829ba23f6e24a43f8995">r_string_vector_from_vector</a>(result);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    } <span class="keywordflow">catch</span> (std::exception <span class="keyword">const</span>&amp; e) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Rf_error((<span class="keywordtype">string</span>(<span class="stringliteral">&quot;Caught exception in R_get_all_se_solvers: &quot;</span>) + e.what()).c_str());</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        Rf_error(<span class="stringliteral">&quot;Caught unhandled exception in R_get_all_se_solvers.&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="ttc" id="a_r__get__all__se__solvers_8cpp_html_a58b3fdfa1e1a0852252b4efe28ec24bb"><div class="ttname"><a href="_r__get__all__se__solvers_8cpp.html#a58b3fdfa1e1a0852252b4efe28ec24bb">R_get_all_se_solvers</a></div><div class="ttdeci">SEXP R_get_all_se_solvers()</div><div class="ttdef"><b>Definition:</b> <a href="_r__get__all__se__solvers_8cpp_source.html#l00013">R_get_all_se_solvers.cpp:13</a></div></div>
+<div class="ttc" id="a_r__get__all__se__solvers_8h_html"><div class="ttname"><a href="_r__get__all__se__solvers_8h.html">R_get_all_se_solvers.h</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8cpp_html_a804a6819e7de829ba23f6e24a43f8995"><div class="ttname"><a href="_r__helper__functions_8cpp.html#a804a6819e7de829ba23f6e24a43f8995">r_string_vector_from_vector</a></div><div class="ttdeci">SEXP r_string_vector_from_vector(string_vector const &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_r__helper__functions_8cpp_source.html#l00108">R_helper_functions.cpp:108</a></div></div>
 <div class="ttc" id="a_r__helper__functions_8h_html"><div class="ttname"><a href="_r__helper__functions_8h.html">R_helper_functions.h</a></div></div>
 <div class="ttc" id="aclassse__solver__factory_html_a899f7cd30f10f44d786258ff28a82bac"><div class="ttname"><a href="classse__solver__factory.html#a899f7cd30f10f44d786258ff28a82bac">se_solver_factory::get_solvers</a></div><div class="ttdeci">static string_vector get_solvers()</div><div class="ttdef"><b>Definition:</b> <a href="se__solver__factory_8cpp_source.html#l00040">se_solver_factory.cpp:40</a></div></div>
@@ -110,7 +112,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 22 2022 21:36:06 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 29 2022 20:29:53 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -79,12 +79,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;exception&gt;</code><br />
 <code>#include &lt;Rinternals.h&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="_r__helper__functions_8h_source.html">framework/R_helper_functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="state__map_8h_source.html">framework/state_map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="module__creator_8h_source.html">framework/module_creator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="module_8h_source.html">framework/module.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_r__modules_8h_source.html">R_modules.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for R_modules.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -92,21 +94,23 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_r__modules_8cpp__incl.png" border="0" usemap="#a_2github_2workspace_2source_2src_2_r__modules_8cpp" alt=""/></div>
 <map name="a_2github_2workspace_2source_2src_2_r__modules_8cpp" id="a_2github_2workspace_2source_2src_2_r__modules_8cpp">
-<area shape="rect" title=" " alt="" coords="192,5,363,47"/>
-<area shape="rect" title=" " alt="" coords="143,483,198,509"/>
-<area shape="rect" title=" " alt="" coords="411,333,479,360"/>
-<area shape="rect" title=" " alt="" coords="43,184,133,211"/>
-<area shape="rect" href="_r__helper__functions_8h.html" title=" " alt="" coords="101,95,240,136"/>
-<area shape="rect" href="module__creator_8h.html" title=" " alt="" coords="313,184,434,211"/>
-<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="360,408,453,435"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="512,259,587,285"/>
-<area shape="rect" title=" " alt="" coords="322,483,433,509"/>
-<area shape="rect" title=" " alt="" coords="631,483,689,509"/>
-<area shape="rect" title=" " alt="" coords="457,483,497,509"/>
-<area shape="rect" title=" " alt="" coords="522,483,601,509"/>
-<area shape="rect" title=" " alt="" coords="223,483,297,509"/>
-<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="504,333,680,360"/>
-<area shape="rect" title=" " alt="" coords="575,408,622,435"/>
+<area shape="rect" title=" " alt="" coords="303,5,474,47"/>
+<area shape="rect" title=" " alt="" coords="332,483,387,509"/>
+<area shape="rect" title=" " alt="" coords="45,102,122,129"/>
+<area shape="rect" title=" " alt="" coords="231,184,322,211"/>
+<area shape="rect" title=" " alt="" coords="600,333,668,360"/>
+<area shape="rect" href="_r__helper__functions_8h.html" title=" " alt="" coords="319,95,458,136"/>
+<area shape="rect" href="module__creator_8h.html" title=" " alt="" coords="501,184,623,211"/>
+<area shape="rect" href="state__map_8h.html" title=" " alt="" coords="549,408,642,435"/>
+<area shape="rect" href="module_8h.html" title=" " alt="" coords="701,259,775,285"/>
+<area shape="rect" href="_r__modules_8h.html" title=" " alt="" coords="147,102,244,129"/>
+<area shape="rect" title=" " alt="" coords="511,483,621,509"/>
+<area shape="rect" title=" " alt="" coords="819,483,878,509"/>
+<area shape="rect" title=" " alt="" coords="646,483,686,509"/>
+<area shape="rect" title=" " alt="" coords="711,483,789,509"/>
+<area shape="rect" title=" " alt="" coords="411,483,486,509"/>
+<area shape="rect" href="module__helper__functions_8h.html" title=" " alt="" coords="693,333,869,360"/>
+<area shape="rect" title=" " alt="" coords="764,408,811,435"/>
 </map>
 </div>
 </div>
@@ -158,7 +162,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of named numeric elements where the name of each element corresponds to the one of the module's output quantities </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00159">159</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00161">161</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="classmodule__creator.html#a8e90c2cbb2b2fbc05bedd0da651d1ac4">module_creator::create_module()</a>, <a class="el" href="classmodule__creator.html#a3150df851552216c6b455d02800fb9f1">module_creator::get_outputs()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00119">list_from_map()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00046">map_from_list()</a>, and <a class="el" href="_r__helper__functions_8cpp_source.html#l00097">mc_vector_from_list()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -215,7 +219,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An R list containing several named elements that describe the module. See <code><a class="el" href="_r__helper__functions_8cpp.html#a06fbd415e83fdf0b67bf744fc88ed8f4">list_from_module_info()</a></code> for more details. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00026">26</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_r__modules_8cpp_source.html#l00028">28</a> of file <a class="el" href="_r__modules_8cpp_source.html">R_modules.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="classmodule__creator.html#a8e90c2cbb2b2fbc05bedd0da651d1ac4">module_creator::create_module()</a>, <a class="el" href="classmodule__creator.html#aa1fe4a1ac38beeba45e12ca29ab55992">module_creator::get_inputs()</a>, <a class="el" href="classmodule__creator.html#a0948cc07014a35d6f8b884831e0087a2">module_creator::get_name()</a>, <a class="el" href="classmodule__creator.html#a3150df851552216c6b455d02800fb9f1">module_creator::get_outputs()</a>, <a class="el" href="state__map_8h_source.html#l00071">keys()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00181">list_from_module_info()</a>, <a class="el" href="_r__helper__functions_8cpp_source.html#l00097">mc_vector_from_list()</a>, and <a class="el" href="ed__c4__leaf__photosynthesis_8h_source.html#l00030">ed_c4_leaf_photosynthesis_stuff::module_name</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -242,7 +246,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 22 2022 21:36:06 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 29 2022 20:29:54 for The BioCro C++ Library by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

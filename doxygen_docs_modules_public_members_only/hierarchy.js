@@ -126,7 +126,6 @@ var hierarchy =
       [ "senescence_coefficient_logistic", "classstandard_b_m_l_1_1senescence__coefficient__logistic.html", null ],
       [ "shortwave_atmospheric_scattering", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering.html", null ],
       [ "soil_evaporation", "classstandard_b_m_l_1_1soil__evaporation.html", null ],
-      [ "soil_type_selector", "classstandard_b_m_l_1_1soil__type__selector.html", null ],
       [ "solar_position_michalsky", "classstandard_b_m_l_1_1solar__position__michalsky.html", null ],
       [ "soybean_development_rate_calculator", "classstandard_b_m_l_1_1soybean__development__rate__calculator.html", null ],
       [ "stomata_water_stress_exponential", "classstandard_b_m_l_1_1stomata__water__stress__exponential.html", null ],
@@ -150,6 +149,5 @@ var hierarchy =
     [ "rue_str", "structrue__str.html", null ],
     [ "seqRD_str", "structseq_r_d__str.html", null ],
     [ "soilML_str", "structsoil_m_l__str.html", null ],
-    [ "soilText_str", "structsoil_text__str.html", null ],
     [ "ws_str", "structws__str.html", null ]
 ];

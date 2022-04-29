@@ -51,7 +51,6 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -61,16 +60,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_aux_bio_cro_8cpp.html",
-"classstandard_b_m_l_1_1c3__assimilation.html#ae03d9c25c89b60e689463931d6a2f188",
-"classstandard_b_m_l_1_1ed__boundary__conductance__quadrature.html#a6da135d08109ae73f9069e03914c118a",
-"classstandard_b_m_l_1_1ed__multilayer__canopy__properties.html#a6d168c19e1953ea4c08eda55704cbc86",
-"classstandard_b_m_l_1_1linear__vmax__from__leaf__n.html#a391e9fd4e949f6e987eb654a11b1e451",
-"classstandard_b_m_l_1_1partitioning__coefficient__selector.html#a49f406fa11a5ab7212c74102f70e2c45",
-"classstandard_b_m_l_1_1senescence__coefficient__logistic.html#ae04a9ce9189b5f039703828d2eff0f50",
-"classstandard_b_m_l_1_1thermal__time__bilinear.html",
-"collatz__photo_8cpp.html",
-"functions_vars_j.html",
-"oscillator__clock__calculator_8hpp.html#ad590fdac6c721462520f588eacaa409b"
+"classstandard_b_m_l_1_1c3__canopy.html#a4e8b922d527ba4c662b5a3a7320f4d2f",
+"classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis.html#a9c9fd1493a268a71625aa94d4d8841a9",
+"classstandard_b_m_l_1_1ed__multilayer__canopy__properties.html#ad7494c288832bc5ed5b2a71870888cc1",
+"classstandard_b_m_l_1_1magic__clock.html#aabbd6030684232b803e5476865727ee0",
+"classstandard_b_m_l_1_1partitioning__coefficient__selector.html#acae03faea58ff39b9203b048ae7a9aec",
+"classstandard_b_m_l_1_1senescence__logistic.html#a9559ef168f36351c4f27ebd597ccaf46",
+"classstandard_b_m_l_1_1thermal__time__linear__extended.html#a391e9fd4e949f6e987eb654a11b1e451",
+"ed__c4__leaf__photosynthesis2_8h.html#a46f09bbd32fd1332a877072d2e36a444",
+"hierarchy.html",
+"rasmussen__specific__heat_8h.html#a71de72e7e3fc0a4a60ce1e9b3e9baee4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -264,9 +264,6 @@ var dir_567355a66c5b87dfe03a58cbdce72993 =
     [ "soil_evaporation.hpp", "soil__evaporation_8hpp.html", [
       [ "soil_evaporation", "classstandard_b_m_l_1_1soil__evaporation.html", "classstandard_b_m_l_1_1soil__evaporation" ]
     ] ],
-    [ "soil_type_selector.hpp", "soil__type__selector_8hpp.html", [
-      [ "soil_type_selector", "classstandard_b_m_l_1_1soil__type__selector.html", "classstandard_b_m_l_1_1soil__type__selector" ]
-    ] ],
     [ "solar_position_michalsky.h", "solar__position__michalsky_8h.html", [
       [ "solar_position_michalsky", "classstandard_b_m_l_1_1solar__position__michalsky.html", "classstandard_b_m_l_1_1solar__position__michalsky" ]
     ] ],

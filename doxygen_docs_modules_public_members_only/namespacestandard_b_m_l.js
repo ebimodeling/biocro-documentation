@@ -129,7 +129,6 @@ var namespacestandard_b_m_l =
     [ "senescence_logistic", "classstandard_b_m_l_1_1senescence__logistic.html", "classstandard_b_m_l_1_1senescence__logistic" ],
     [ "shortwave_atmospheric_scattering", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering.html", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering" ],
     [ "soil_evaporation", "classstandard_b_m_l_1_1soil__evaporation.html", "classstandard_b_m_l_1_1soil__evaporation" ],
-    [ "soil_type_selector", "classstandard_b_m_l_1_1soil__type__selector.html", "classstandard_b_m_l_1_1soil__type__selector" ],
     [ "solar_position_michalsky", "classstandard_b_m_l_1_1solar__position__michalsky.html", "classstandard_b_m_l_1_1solar__position__michalsky" ],
     [ "song_flowering", "classstandard_b_m_l_1_1song__flowering.html", "classstandard_b_m_l_1_1song__flowering" ],
     [ "soybean_development_rate_calculator", "classstandard_b_m_l_1_1soybean__development__rate__calculator.html", "classstandard_b_m_l_1_1soybean__development__rate__calculator" ],

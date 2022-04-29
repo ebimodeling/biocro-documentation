@@ -99,7 +99,6 @@ var annotated_dup =
       [ "senescence_logistic", "classstandard_b_m_l_1_1senescence__logistic.html", "classstandard_b_m_l_1_1senescence__logistic" ],
       [ "shortwave_atmospheric_scattering", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering.html", "classstandard_b_m_l_1_1shortwave__atmospheric__scattering" ],
       [ "soil_evaporation", "classstandard_b_m_l_1_1soil__evaporation.html", "classstandard_b_m_l_1_1soil__evaporation" ],
-      [ "soil_type_selector", "classstandard_b_m_l_1_1soil__type__selector.html", "classstandard_b_m_l_1_1soil__type__selector" ],
       [ "solar_position_michalsky", "classstandard_b_m_l_1_1solar__position__michalsky.html", "classstandard_b_m_l_1_1solar__position__michalsky" ],
       [ "song_flowering", "classstandard_b_m_l_1_1song__flowering.html", "classstandard_b_m_l_1_1song__flowering" ],
       [ "soybean_development_rate_calculator", "classstandard_b_m_l_1_1soybean__development__rate__calculator.html", "classstandard_b_m_l_1_1soybean__development__rate__calculator" ],
@@ -138,6 +137,5 @@ var annotated_dup =
     [ "rue_str", "structrue__str.html", "structrue__str" ],
     [ "seqRD_str", "structseq_r_d__str.html", "structseq_r_d__str" ],
     [ "soilML_str", "structsoil_m_l__str.html", "structsoil_m_l__str" ],
-    [ "soilText_str", "structsoil_text__str.html", "structsoil_text__str" ],
     [ "ws_str", "structws__str.html", "structws__str" ]
 ];
