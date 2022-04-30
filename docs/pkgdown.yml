@@ -1,7 +1,7 @@
 pandoc: 2.7.3
-pkgdown: 2.0.2
+pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   pdf_vignette_index: pdf_vignette_index.html
-last_built: 2022-04-18T22:38Z
+last_built: 2022-04-30T23:10Z
 
