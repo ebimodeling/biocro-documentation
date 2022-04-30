@@ -1,24 +1,4 @@
 <map id="string_set_to_string_vector" name="string_set_to_string_vector">
-<area shape="rect" id="node1" title="Converts a string_set to a string_vector." alt="" coords="685,478,821,519"/>
-<area shape="rect" id="node2" href="$classdynamical__system.html#a2b3054277b6e00cab2f51939c5aa8576" title=" " alt="" coords="444,234,637,275"/>
-<area shape="rect" id="node3" href="$namespacese__module.html#a0cdc7d966e5e864fb41b396befcf1011" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="224,485,396,512"/>
-<area shape="rect" id="node11" href="$namespacese__module.html#aced31aa676f646da566c2d7ae6beda0f" title="Returns a sorted list of outputs produced by the modules." alt="" coords="451,300,631,327"/>
-<area shape="rect" id="node18" href="$simultaneous__equations_8cpp.html#a7fad462df9734a0478e82e1168da9f18" title="Finds the unknown quantities defined by the set of modules." alt="" coords="459,552,622,579"/>
-<area shape="rect" id="node22" href="$classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="7,731,175,773"/>
-<area shape="rect" id="node4" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="19,375,163,431"/>
-<area shape="rect" id="node5" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis2.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="15,455,166,511"/>
-<area shape="rect" id="node6" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis3.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="15,535,166,591"/>
-<area shape="rect" id="node7" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis4.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="15,135,166,191"/>
-<area shape="rect" id="node8" href="$classstandard_b_m_l_1_1ed__nikolov__conductance__free__solve.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="5,215,176,271"/>
-<area shape="rect" id="node9" href="$classstandard_b_m_l_1_1ed__p__m__temperature__solve.html#abc6bcae9586eb99fffb12a684814a4e6" title=" " alt="" coords="15,295,167,351"/>
-<area shape="rect" id="node10" href="$namespacese__module.html#ab69d6194e8a14829b5154f50d7d1f652" title="Make a simultaneous_equations object from the modules." alt="" coords="19,615,163,641"/>
-<area shape="rect" id="node12" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="238,325,382,381"/>
-<area shape="rect" id="node13" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis2.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="235,405,385,461"/>
-<area shape="rect" id="node14" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis3.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="235,5,385,61"/>
-<area shape="rect" id="node15" href="$classstandard_b_m_l_1_1ed__c4__leaf__photosynthesis4.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="235,85,385,141"/>
-<area shape="rect" id="node16" href="$classstandard_b_m_l_1_1ed__nikolov__conductance__free__solve.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="225,165,395,221"/>
-<area shape="rect" id="node17" href="$classstandard_b_m_l_1_1ed__p__m__temperature__solve.html#a7eff545285286763183243b1d473e6df" title=" " alt="" coords="234,245,386,301"/>
-<area shape="rect" id="node19" href="$simultaneous__equations_8cpp.html#a04f19c0c0713cd1bcaed4b3a0aae1e20" title="Provides information about a set of simultaneous_equations inputs that is not strictly required to ch..." alt="" coords="235,603,385,645"/>
-<area shape="rect" id="node21" href="$simultaneous__equations_8cpp.html#a963debb7f62d8fd53450b589b2ff88ec" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="235,669,385,710"/>
-<area shape="rect" id="node20" href="$_r__simultaneous__equations_8cpp.html#a736b7b735611e99e351193041de9f24e" title=" " alt="" coords="7,666,174,707"/>
+<area shape="rect" id="node1" title="Converts a string_set to a string_vector." alt="" coords="247,5,383,47"/>
+<area shape="rect" id="node2" href="$classdynamical__system.html#a31c3def616b7cba2bbf765ebdf6b7028" title=" " alt="" coords="5,5,199,47"/>
 </map>

@@ -1,8 +1,0 @@
-<map id="get_next_guess" name="get_next_guess">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,119,83"/>
-<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#ab4d88d5f501b80a93422f17a8ebf0239" title="Determines a new guess from a bad one by replacing bad elements with the nearest bound." alt="" coords="167,5,332,32"/>
-<area shape="rect" id="node3" href="$numerical__jacobian_8h.html#a38b0760046952b949613411cbcbb8ccb" title="A wrapper for calculate_jacobian(equation_ptr, x, t, f_current, jacobi) for equations that have no ti..." alt="" coords="176,56,323,83"/>
-<area shape="rect" id="node6" href="$newton__raphson__boost_8h.html#a3dce8fa520db25f009f2b12642f3cb9f" title="Determines the Newton&#45;Raphson step using the boost library." alt="" coords="178,107,321,149"/>
-<area shape="rect" id="node4" href="$numerical__jacobian_8h.html#abb3a48da711cdaa6426f7c0e10523aee" title="Numerically compute the Jacobian matrix of a vector valued function." alt="" coords="380,56,509,83"/>
-<area shape="rect" id="node5" href="$dynamical__system_8h.html#a3663e16fd2cb02e7095f93993cf8f463" title="Define evaluation behavior for a set of equations defined by a dynamical_system object...." alt="" coords="557,56,692,83"/>
-</map>

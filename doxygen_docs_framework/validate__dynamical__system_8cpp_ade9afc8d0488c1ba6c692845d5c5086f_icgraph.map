@@ -1,8 +1,0 @@
-<map id="string_vector_difference" name="string_vector_difference">
-<area shape="rect" id="node1" title=" " alt="" coords="441,35,601,61"/>
-<area shape="rect" id="node2" href="$namespacese__module.html#a0cdc7d966e5e864fb41b396befcf1011" title="Returns a sorted list of inputs required by the modules, excluding any unknown quantities." alt="" coords="221,5,393,32"/>
-<area shape="rect" id="node4" href="$simultaneous__equations_8cpp.html#a963debb7f62d8fd53450b589b2ff88ec" title="Checks over a group of quantities and modules to ensure they can be used to create a valid set of sim..." alt="" coords="232,57,383,98"/>
-<area shape="rect" id="node3" href="$namespacese__module.html#ab69d6194e8a14829b5154f50d7d1f652" title="Make a simultaneous_equations object from the modules." alt="" coords="17,5,161,32"/>
-<area shape="rect" id="node5" href="$_r__simultaneous__equations_8cpp.html#a736b7b735611e99e351193041de9f24e" title=" " alt="" coords="6,57,173,98"/>
-<area shape="rect" id="node6" href="$classsimultaneous__equations.html#a89d1a297cdfb6302961f98eef5202c5f" title=" " alt="" coords="5,122,173,163"/>
-</map>

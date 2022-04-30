@@ -1,4 +1,0 @@
-<map id="get_next_guess" name="get_next_guess">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,119,32"/>
-<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#ab4d88d5f501b80a93422f17a8ebf0239" title="Determines a new guess from a bad one by replacing bad elements with the nearest bound." alt="" coords="167,5,332,32"/>
-</map>

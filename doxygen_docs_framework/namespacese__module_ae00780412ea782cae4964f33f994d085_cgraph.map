@@ -1,4 +1,0 @@
-<map id="reorder_initial_guesses" name="reorder_initial_guesses">
-<area shape="rect" id="node1" title="Reorders the initial guesses according to their corresponding f_scalar_norm values." alt="" coords="5,13,160,39"/>
-<area shape="rect" id="node2" href="$se__solver__helper__functions_8h.html#a4148ed08f23ba355169a5c5e64e131b6" title="Calculates f_scalar_norm = |F_vec/F_norm|^2 from a vector F_vec and a normalization vector F_norm." alt="" coords="208,5,345,47"/>
-</map>

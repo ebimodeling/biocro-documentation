@@ -1,7 +1,0 @@
-<map id="R_test_simultaneous_equations" name="R_test_simultaneous_equations">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,149,115"/>
-<area shape="rect" id="node2" href="$state__map_8h.html#a5505795a40869494568f362567ff51e8" title="Given a map, return a sorted list of its keys." alt="" coords="243,5,292,32"/>
-<area shape="rect" id="node3" href="$_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="215,56,319,83"/>
-<area shape="rect" id="node4" href="$_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff" title=" " alt="" coords="215,107,319,133"/>
-<area shape="rect" id="node5" href="$_r__helper__functions_8cpp.html#a6a18873bada3853892746cc287b7cf7d" title="Creates a std::vector of pointers to module_creator objects from an R vector of R external pointer ob..." alt="" coords="197,157,337,184"/>
-</map>

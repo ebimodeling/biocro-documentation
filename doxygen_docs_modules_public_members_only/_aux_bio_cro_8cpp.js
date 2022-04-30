@@ -4,6 +4,8 @@ var _aux_bio_cro_8cpp =
     [ "compute_wsPhoto", "_aux_bio_cro_8cpp.html#a058be0e6ed718b377d7c6056cceb09a8", null ],
     [ "dry_air_density", "_aux_bio_cro_8cpp.html#a6979290fdcfafddf3aaa343a367c1f81", null ],
     [ "EvapoTrans2", "_aux_bio_cro_8cpp.html#ad915026e49b0df9535ad8a75616ae267", null ],
+    [ "get_soil_properties", "_aux_bio_cro_8cpp.html#ad89278eed741e51c6e3b8e5c0d97318c", null ],
+    [ "get_soil_properties", "_aux_bio_cro_8cpp.html#af355fd8964ae8eef5aad1c74a4ed0771", null ],
     [ "leaf_boundary_layer_conductance_nikolov", "_aux_bio_cro_8cpp.html#a7ffa2369991fbb92c2cf4fef41743e49", null ],
     [ "leaf_boundary_layer_conductance_thornley", "_aux_bio_cro_8cpp.html#a33949e3620b40eedec427390bde216f0", null ],
     [ "lightME", "_aux_bio_cro_8cpp.html#aeb1ea5a7e843d3a15a3aaeb66f38f9cd", null ],

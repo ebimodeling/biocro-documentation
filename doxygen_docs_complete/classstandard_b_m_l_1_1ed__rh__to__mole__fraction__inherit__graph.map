@@ -1,5 +1,0 @@
-<map id="ed_rh_to_mole_fraction" name="ed_rh_to_mole_fraction">
-<area shape="rect" id="node1" title="Just converts relative humidity values from weather data into atmospheric mole fractions of water vap..." alt="" coords="5,155,163,181"/>
-<area shape="rect" id="node2" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="33,80,135,107"/>
-<area shape="rect" id="node3" href="$classmodule.html" title="Represents one or more equations." alt="" coords="52,5,116,32"/>
-</map>
