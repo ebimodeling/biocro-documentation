@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-04-30" />
+<meta name="date" content="2022-05-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -238,7 +238,7 @@ in order to allow a workflow defined in <em>this</em> repository to push
 files to a <em>different</em> repository (namely,
 “ebimodeling/biocro-documentation”); see steps 2 and 6 below.</p></li>
 <li><p>The private key was added as a <em>secret</em> in the
-<code>ebimodeling/biocro</code> repository (<em>this</em> repository) under the key
+<code>ebimodeling/biocro-dev</code> repository (<em>this</em> repository) under the key
 <code>PRIVATE_SSH_KEY</code>. (See
 <a href="https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository" class="uri">https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository</a>.
 The key name matches the reference <code>secrets.PRIVATE_SSH_KEY</code> used in
@@ -254,9 +254,9 @@ repository getting automatically published as a Web site to the URL
 <a href="https://ebimodeling.github.io/biocro-documentation/" class="uri">https://ebimodeling.github.io/biocro-documentation/</a>.</p></li>
 <li><p>The <em>public</em> SSH key was added as a deploy key to the
 “ebimodeling/biocro-documentation” repository under the name “Access
-from ebimodeling/biocro actions”. (See
+from biocro-dev action”. (See
 <a href="https://docs.github.com/en/developers/overview/managing-deploy-keys#setup-2" class="uri">https://docs.github.com/en/developers/overview/managing-deploy-keys#setup-2</a>.
-The name “Access from biocro action” is for informational purposes
+The name “Access from biocro-dev action” is for informational purposes
 only and has no programmatic significance.)</p></li>
 </ol>
 
