@@ -1,7 +1,11 @@
-## ----preliminary-hooks,include=FALSE,error=TRUE-------------------------------
-knitr::knit_hooks$set(document = function(x) {
-    sub('\\usepackage[]{color}', '\\usepackage[dvipsnames,table]{xcolor}', x, fixed = TRUE)
-})
+## ----solve_latex_color_problems,include=FALSE,error=TRUE----------------------
+if (packageVersion('knitr') >= "1.39") {
+  knitr::opts_knit$set(latex.options.xcolor = 'dvipsnames')
+} else {
+  knitr::knit_hooks$set(document = function(x) {
+    sub('\\usepackage[]{color}', '\\usepackage[dvipsnames]{xcolor}', x, fixed = TRUE)
+  })
+}
 
 ## ----preliminaries,echo=FALSE,error=TRUE--------------------------------------
 knitr::opts_chunk$set(error=TRUE) # don't stop on errors; display them
