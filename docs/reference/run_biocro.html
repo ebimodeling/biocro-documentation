@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">BioCro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">3.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.0</span>
       </span>
     </div>
 
@@ -86,13 +86,13 @@
     'timestep' having units of hours. The drivers must include columns for
     either (1) 'time' (in units of days) or (2) 'doy' and 'hour'.</p></dd>
 <dt>direct_module_names</dt>
-<dd><p>A character vector or list of the fully-qualified names of the direct
-    modules to use in the system; lists of available modules can be obtained via
-    the <code><a href="get_all.html">get_all_modules</a></code> function.</p></dd>
+<dd><p>A character vector or list specifying the names of direct modules to use in
+    the system; a list of available modules can be obtained via the
+    <code><a href="get_all.html">get_all_modules</a></code> function</p></dd>
 <dt>differential_module_names</dt>
-<dd><p>A character vector or list of the fully-qualified names of the differential
-    modules to use in the system; lists of available modules can be obtained via
-    the <code><a href="get_all.html">get_all_modules</a></code> function.</p></dd>
+<dd><p>A character vector or list specifying the names of differential modules to
+    use in the system; a list of available modules can be obtained via the
+    <code><a href="get_all.html">get_all_modules</a></code> function</p></dd>
 <dt>ode_solver</dt>
 <dd><p>A list specifying details about the numerical ODE solver. The required
     elements are:</p><ul><li><p><code>type</code>: A string specifying the name of the algorithm to use;
@@ -119,12 +119,7 @@
     <p><code>run_biocro</code> is the most important function in the BioCro package. The
   input arguments to this function are used to define a dynamical system and
   solve for its time evolution during a desired time period. For more details
-  about how this function operates, see Lochocki <em>et al.</em> (2022)
-  [<a href="https://doi.org/10.1093/insilicoplants/diac003" class="external-link">doi:10.1093/insilicoplants/diac003</a>
-].</p>
-<p>When using one of the pre-defined crop growth models, it may be helpful to
-  use the <code>with</code> command to pass arguments to <code>run_biocro</code>; see the
-  documentation for <code><a href="crop_model_definitions.html">crop_model_definitions</a></code> for more information.</p>
+  about how this function operates, see the BioCro II paper.</p>
     </div>
     <div id="value">
     <h2>Value</h2>
@@ -145,13 +140,44 @@
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># Example: running a miscanthus simulation using weather data from 2005</span></span>
 <span class="r-in"><span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">run_biocro</span><span class="op">(</span></span>
-<span class="r-in">  <span class="va">miscanthus_x_giganteus</span><span class="op">$</span><span class="va">initial_values</span>,</span>
-<span class="r-in">  <span class="va">miscanthus_x_giganteus</span><span class="op">$</span><span class="va">parameters</span>,</span>
-<span class="r-in">  <span class="fu"><a href="get_growing_season_climate.html">get_growing_season_climate</a></span><span class="op">(</span><span class="va">weather</span><span class="op">$</span><span class="st">'2005'</span><span class="op">)</span>,</span>
-<span class="r-in">  <span class="va">miscanthus_x_giganteus</span><span class="op">$</span><span class="va">direct_modules</span>,</span>
-<span class="r-in">  <span class="va">miscanthus_x_giganteus</span><span class="op">$</span><span class="va">differential_modules</span>,</span>
-<span class="r-in">  <span class="va">miscanthus_x_giganteus</span><span class="op">$</span><span class="va">ode_solver</span></span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_initial_values</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_parameters</span>,</span>
+<span class="r-in">    <span class="fu">get_growing_season_climate</span><span class="op">(</span><span class="va">weather2005</span><span class="op">)</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_direct_modules</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_differential_modules</span>,</span>
+<span class="r-in">    <span class="va">miscanthus_x_giganteus_ode_solver</span>,</span>
+<span class="r-in">    <span class="cn">TRUE</span></span>
 <span class="r-in"><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> System startup information:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [pass] No quantities were defined multiple times in the inputs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [pass] All module inputs were properly defined</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [pass] All differential module outputs were included in the initial values</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [pass] There are no cyclic dependencies among the direct modules.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ODE solver description:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Name: auto</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> This ode_solver chooses between two defaults depending on the type of system it integrates</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ode_solver used for dynamical systems that do not require the Euler method:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Name: rsnbrk</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Output step size: 1.000000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Relative error tolerance: 0.000010</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Absolute error tolerance: 0.000010</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Maximum attempts to find a new step size: 200</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ode_solver used for dynamical systems that require the Euler method:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Name: homemade_euler</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The ODE solver reports the following:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The ode_solver for dynamical systems that require the Euler method was used.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> It reports the following information:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> N/A</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> The dynamical system reports the following:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4296 derivatives were calculated</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu">lattice</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/lattice/man/xyplot.html" class="external-link">xyplot</a></span><span class="op">(</span></span>
 <span class="r-in">  <span class="va">Leaf</span> <span class="op">+</span> <span class="va">Stem</span> <span class="op">+</span> <span class="va">Root</span> <span class="op">+</span> <span class="va">Grain</span> <span class="op">~</span> <span class="va">TTc</span>,</span>

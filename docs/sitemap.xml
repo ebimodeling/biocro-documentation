@@ -37,7 +37,7 @@
     <loc>/reference/cmi_weather_data.html</loc>
   </url>
   <url>
-    <loc>/reference/crop_model_definitions.html</loc>
+    <loc>/reference/crop_specifications.html</loc>
   </url>
   <url>
     <loc>/reference/dynamical_system.html</loc>
@@ -46,34 +46,13 @@
     <loc>/reference/get_all.html</loc>
   </url>
   <url>
-    <loc>/reference/get_growing_season_climate.html</loc>
-  </url>
-  <url>
-    <loc>/reference/glycine_max.html</loc>
-  </url>
-  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
     <loc>/reference/lightME.html</loc>
   </url>
   <url>
-    <loc>/reference/manihot_esculenta.html</loc>
-  </url>
-  <url>
-    <loc>/reference/miscanthus_x_giganteus.html</loc>
-  </url>
-  <url>
-    <loc>/reference/module_case_files.html</loc>
-  </url>
-  <url>
-    <loc>/reference/module_creators.html</loc>
-  </url>
-  <url>
-    <loc>/reference/module_paste.html</loc>
-  </url>
-  <url>
-    <loc>/reference/module_testing.html</loc>
+    <loc>/reference/module_wrapper_pointer.html</loc>
   </url>
   <url>
     <loc>/reference/modules.html</loc>
@@ -94,33 +73,6 @@
     <loc>/reference/run_biocro.html</loc>
   </url>
   <url>
-    <loc>/reference/simultaneous_equations.html</loc>
-  </url>
-  <url>
-    <loc>/reference/soil_parameters.html</loc>
-  </url>
-  <url>
-    <loc>/reference/sorghum.html</loc>
-  </url>
-  <url>
-    <loc>/reference/soybean.html</loc>
-  </url>
-  <url>
-    <loc>/reference/soybean_clock.html</loc>
-  </url>
-  <url>
     <loc>/reference/system_derivatives.html</loc>
-  </url>
-  <url>
-    <loc>/reference/test_module.html</loc>
-  </url>
-  <url>
-    <loc>/reference/test_module_library.html</loc>
-  </url>
-  <url>
-    <loc>/reference/willow.html</loc>
-  </url>
-  <url>
-    <loc>/reference/zea_mays.html</loc>
   </url>
 </urlset>

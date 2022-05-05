@@ -18,7 +18,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">BioCro</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">3.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">2.0.0</span>
       </span>
     </div>
 
@@ -72,29 +72,16 @@
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>parameters</dt>
-<dd><p>Identical to the corresponding argument from <code><a href="run_biocro.html">run_biocro</a></code>.</p></dd>
-<dt>drivers</dt>
-<dd><p>Identical to the corresponding argument from <code><a href="run_biocro.html">run_biocro</a></code>.</p></dd>
-<dt>direct_module_names</dt>
-<dd><p>Identical to the corresponding argument from <code><a href="run_biocro.html">run_biocro</a></code>.</p></dd>
-<dt>differential_module_names</dt>
-<dd><p>Identical to the corresponding argument from <code><a href="run_biocro.html">run_biocro</a></code>.</p></dd>
-</dl></div>
+    <p>The input arguments to <code>system_derivatives</code> are the same as the
+  corresponding inputs to <code><a href="run_biocro.html">run_biocro</a></code>.</p>
+    </div>
     <div id="value">
     <h2>Value</h2>
-    <p><code>system_derivatives</code> accepts the same input arguments as
-<code><a href="run_biocro.html">run_biocro</a></code> with the exceptions of <code>ode_solver</code> and
-<code>initial_values</code>; this function is intended to be passed to an ODE solver
-  in R, which will solve for the system's time dependence as its diffferential
-  quantities evolve from their initial values, so <code>ode_solver</code> and
-<code>initial_values</code> are not required here.
-  The return value of <code>system_derivatives</code> is a function with three inputs
+    <p>The return value of <code>system_derivatives</code> is a function with three inputs
   (<code>t</code>, <code>differential_quantities</code>, and <code>parms</code>) that returns
   derivatives for each of the differential quantities in the dynamical system
   determined by the original inputs (<code>parameters</code>, <code>drivers</code>,
-<code>direct_module_names</code>, and
-<code>differential_module_names</code>).
+<code>direct_module_names</code>, and <code>differential_module_names</code>).
   This function signature and the requirements for its inputs are set by the
 <code>LSODES</code> function from the <code>deSolve</code> package. The <code>t</code> input
   should be a single time value and the <code>differential_quantities</code> input
@@ -102,11 +89,7 @@
   the modules. <code>parms</code> is required by <code>LSODES</code>, but we don't use it
   for anything.
   This function can be passed to <code>LSODES</code> as an alternative integration
-  method, rather than using one of BioCro's built-in solvers.
-  When using one of the pre-defined crop growth models, it may be helpful to
-  use the <code>with</code> command to pass arguments to <code>system_derivatives</code>;
-  see the documentation for <code><a href="crop_model_definitions.html">crop_model_definitions</a></code> for more
-  information.</p>
+  method, rather than using one of BioCro's built-in solvers.</p>
     </div>
     <div id="see-also">
     <h2>See also</h2>
@@ -118,13 +101,13 @@
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># Example 1: calculating a single derivative using a soybean model</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="va">soybean_system</span> <span class="op">&lt;-</span> <span class="fu">system_derivatives</span><span class="op">(</span></span>
-<span class="r-in">  <span class="va">soybean</span><span class="op">$</span><span class="va">parameters</span>,</span>
-<span class="r-in">  <span class="va">soybean_weather</span><span class="op">$</span><span class="st">'2002'</span>,</span>
-<span class="r-in">  <span class="va">soybean</span><span class="op">$</span><span class="va">direct_modules</span>,</span>
-<span class="r-in">  <span class="va">soybean</span><span class="op">$</span><span class="va">differential_modules</span></span>
+<span class="r-in">  <span class="va">soybean_parameters</span>,</span>
+<span class="r-in">  <span class="va">soybean_weather2002</span>,</span>
+<span class="r-in">  <span class="va">soybean_direct_modules</span>,</span>
+<span class="r-in">  <span class="va">soybean_differential_modules</span></span>
 <span class="r-in"><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in"><span class="va">derivs</span> <span class="op">&lt;-</span> <span class="fu">soybean_system</span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="va">soybean</span><span class="op">$</span><span class="va">initial_values</span><span class="op">)</span>, <span class="cn">NULL</span><span class="op">)</span></span>
+<span class="r-in"><span class="va">derivs</span> <span class="op">&lt;-</span> <span class="fu">soybean_system</span><span class="op">(</span><span class="fl">0</span>, <span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="va">soybean_initial_values</span><span class="op">)</span>, <span class="cn">NULL</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># Example 2: a simple oscillator with only one module (requires deSolve)</span></span>
 <span class="r-in"></span>
@@ -140,8 +123,8 @@
 <span class="r-in">      spring_constant <span class="op">=</span> <span class="fl">1</span></span>
 <span class="r-in">    <span class="op">)</span>,</span>
 <span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>time<span class="op">=</span><span class="va">times</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span class="r-in">    <span class="st">'BioCro:harmonic_oscillator'</span></span>
+<span class="r-in">    <span class="fu"><a href="https://rdrr.io/r/base/character.html" class="external-link">character</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span class="r-in">    <span class="st">'harmonic_oscillator'</span></span>
 <span class="r-in">  <span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in">  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html" class="external-link">as.data.frame</a></span><span class="op">(</span><span class="fu">lsodes</span><span class="op">(</span></span>
@@ -165,15 +148,15 @@
 <span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="http://desolve.r-forge.r-project.org/" class="external-link">deSolve</a></span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in">  <span class="va">soybean_system</span> <span class="op">&lt;-</span> <span class="fu">system_derivatives</span><span class="op">(</span></span>
-<span class="r-in">    <span class="va">soybean</span><span class="op">$</span><span class="va">parameters</span>,</span>
-<span class="r-in">    <span class="va">soybean_weather</span><span class="op">$</span><span class="st">'2002'</span>,</span>
-<span class="r-in">    <span class="va">soybean</span><span class="op">$</span><span class="va">direct_modules</span>,</span>
-<span class="r-in">    <span class="va">soybean</span><span class="op">$</span><span class="va">differential_modules</span></span>
+<span class="r-in">    <span class="va">soybean_parameters</span>,</span>
+<span class="r-in">    <span class="va">soybean_weather2002</span>,</span>
+<span class="r-in">    <span class="va">soybean_direct_modules</span>,</span>
+<span class="r-in">    <span class="va">soybean_differential_modules</span></span>
 <span class="r-in">  <span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in">  <span class="va">times</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span>from<span class="op">=</span><span class="fl">0</span>, to<span class="op">=</span><span class="fl">500</span>, by<span class="op">=</span><span class="fl">1</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in">  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html" class="external-link">as.data.frame</a></span><span class="op">(</span><span class="fu">lsodes</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="va">soybean</span><span class="op">$</span><span class="va">initial_values</span><span class="op">)</span>, <span class="va">times</span>, <span class="va">soybean_system</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html" class="external-link">as.data.frame</a></span><span class="op">(</span><span class="fu">lsodes</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="va">soybean_initial_values</span><span class="op">)</span>, <span class="va">times</span>, <span class="va">soybean_system</span><span class="op">)</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in">  <span class="fu">lattice</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/lattice/man/xyplot.html" class="external-link">xyplot</a></span><span class="op">(</span><span class="va">Leaf</span> <span class="op">+</span> <span class="va">Stem</span> <span class="op">~</span> <span class="va">time</span>, type<span class="op">=</span><span class="st">'l'</span>, auto<span class="op">=</span><span class="cn">TRUE</span>, data<span class="op">=</span><span class="va">result</span><span class="op">)</span></span>
 <span class="r-in"><span class="op">}</span></span>

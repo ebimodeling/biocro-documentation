@@ -1,11 +1,7 @@
-## ----solve_latex_color_problems,include=FALSE,error=TRUE----------------------
-if (packageVersion('knitr') >= "1.39") {
-  knitr::opts_knit$set(latex.options.xcolor = 'dvipsnames,table')
-} else {
-  knitr::knit_hooks$set(document = function(x) {
+## ----preliminary-hooks,include=FALSE,error=TRUE-------------------------------
+knitr::knit_hooks$set(document = function(x) {
     sub('\\usepackage[]{color}', '\\usepackage[dvipsnames,table]{xcolor}', x, fixed = TRUE)
-  })
-}
+})
 
 ## ----preliminaries,echo=FALSE,error=TRUE--------------------------------------
 knitr::opts_chunk$set(error=TRUE) # don't stop on errors; display them
@@ -49,7 +45,7 @@ library(lattice)
 #  ?run_biocro
 #  
 #  # Access documentation for a BioCro data set, even if the package is not loaded
-#  ?BioCro::soybean
+#  ?BioCro::soybean_parameters
 #  
 #  # Access documentation for a base R function
 #  ?list
@@ -58,43 +54,37 @@ library(lattice)
 #  ?`<-`
 
 ## ----run_biocro---------------------------------------------------------------
-soybean_result <- run_biocro(
-  soybean$initial_values,
-  soybean$parameters,
-  soybean_weather$'2002',
-  soybean$direct_modules,
-  soybean$differential_modules,
-  soybean$ode_solver
+soybean_result = run_biocro(
+  soybean_initial_values,
+  soybean_parameters,
+  soybean_weather2002,
+  soybean_direct_modules,
+  soybean_differential_modules,
+  soybean_ode_solver
 )
 
 ## ----example_module_vector----------------------------------------------------
-modules <- c(
-    'libA:Module_1',
-    'libB:Module_2'
+direct_modules <- c(
+    'Module_1',
+    'Module_2'
 )
 
 ## ----example_vector_access----------------------------------------------------
-print(modules[1])
-modules[1] <- 'libA:Module_3'
-print(modules)
+print(direct_modules[1])
+direct_modules[1] <- 'Module_3'
+print(direct_modules)
 
 ## ----example_module_list------------------------------------------------------
 differential_modules <- list(
-   'BioCro:partitioning_growth',
-   thermal_time_module = 'BioCro:thermal_time_linear'
+   'partitioning_growth',
+   thermal_time_module = 'thermal_time_linear'
 )
 
 ## ----example_module_swap------------------------------------------------------
-differential_modules$thermal_time_module <- 'BioCro:thermal_time_trilinear'
-
-## ----example_module_paste-----------------------------------------------------
-differential_modules <- module_paste('BioCro', list(
-  'partitioning_growth',
-  thermal_time_module = 'thermal_time_linear'
-))
+differential_modules$thermal_time_module <- 'thermal_time_trilinear'
 
 ## ----viewing_soybean_modules--------------------------------------------------
-str(soybean$differential_modules)
+str(soybean_differential_modules)
 
 ## ----example_parameter_list---------------------------------------------------
 parameters <- list(
@@ -114,36 +104,36 @@ drivers <- data.frame(
 print(drivers)
 
 ## ----view_ode_solver----------------------------------------------------------
-str(soybean$ode_solver)
+str(soybean_ode_solver)
 
 ## ----run_biocro_error_quantity------------------------------------------------
-soybean_result <- run_biocro(
-  within(soybean$initial_values, rm(Leaf)),         # remove the initial `Leaf` value
-  within(soybean$parameters, rm(leaf_reflectance)), # remove `leaf_reflectance`
-  soybean_weather$'2002',
-  soybean$direct_modules,
-  soybean$differential_modules,
-  soybean$ode_solver
+soybean_result = run_biocro(
+  within(soybean_initial_values, rm(Leaf)),         # remove the initial `Leaf` value
+  within(soybean_parameters, rm(leaf_reflectance)), # remove `leaf_reflectance`
+  soybean_weather2002,
+  soybean_direct_modules,
+  soybean_differential_modules,
+  soybean_ode_solver
 )
 
 ## ----run_biocro_error_module--------------------------------------------------
-soybean_result <- run_biocro(
-  soybean$initial_values,
-  soybean$parameters,
-  soybean_weather$'2002',
-  append(soybean$direct_modules, 'BioCro:nonexistent_module'), # add a nonexistent module
-  soybean$differential_modules,
-  soybean$ode_solver
+soybean_result = run_biocro(
+  soybean_initial_values,
+  soybean_parameters,
+  soybean_weather2002,
+  append(soybean_direct_modules, 'nonexistent_module_name'), # add a nonexistent module
+  soybean_differential_modules,
+  soybean_ode_solver
 )
 
 ## ----validate_inputs,eval=FALSE-----------------------------------------------
 #  # This code is not evaluated here since it produces a large amount of text
 #  valid <- validate_dynamical_system_inputs(
-#    soybean$initial_values,
-#    soybean$parameters,
-#    soybean_weather$'2002',
-#    rev(soybean$direct_modules), # Reverse the order of the direct modules
-#    soybean$differential_modules
+#    soybean_initial_values,
+#    soybean_parameters,
+#    soybean_weather2002,
+#    rev(soybean_direct_modules), # Reverse the order of the direct modules
+#    soybean_differential_modules
 #  )
 
 ## ----view_data_frame,eval=FALSE-----------------------------------------------
@@ -192,15 +182,15 @@ soybean_plot_v3 = xyplot(
 print(soybean_plot_v3)
 
 ## ----c3_module_info-----------------------------------------------------------
-module_info('BioCro:c3_assimilation')
+module_info('c3_assimilation')
 
 ## ----c3_assimilation_v1-------------------------------------------------------
-outputs <- evaluate_module('BioCro:c3_assimilation', soybean$parameters)
+outputs <- evaluate_module('c3_assimilation', soybean_parameters)
 
 ## ----c3_assimilation_v2-------------------------------------------------------
 outputs <- evaluate_module(
-  'BioCro:c3_assimilation',
-  within(soybean$parameters, {
+  'c3_assimilation',
+  within(soybean_parameters, {
     rh = 0.7      # dimensionless
     Qp = 1800     # micromol / m^2 / s
     Tleaf = 27    # degrees C
@@ -210,8 +200,8 @@ outputs <- evaluate_module(
 
 ## ----c3_light_response_curve--------------------------------------------------
 rc <- module_response_curve(
-  'BioCro:c3_assimilation',
-  within(soybean$parameters, {
+  'c3_assimilation',
+  within(soybean_parameters, {
     rh = 0.7
     Tleaf = 27
     StomataWS = 1
@@ -236,42 +226,12 @@ xyplot(
 )
 
 ## ----leaf_information---------------------------------------------------------
-all_quantities <- get_all_quantities('BioCro')
+all_quantities <- get_all_quantities()
 leaf_quantity_subset <- all_quantities[all_quantities$quantity_name == 'Leaf', ]
 leaf_modules <- unique(leaf_quantity_subset$module_name)
-cat(leaf_modules, sep = '\n')
+print(leaf_modules)
 
 ## ----total_biomass_info-------------------------------------------------------
-info <- module_info('BioCro:total_biomass', verbose = FALSE)
+info <- module_info('total_biomass', verbose = FALSE)
 str(info)
-
-## ----run_biocro_with,eval=FALSE-----------------------------------------------
-#  soybean_result <- with(soybean, {run_biocro(
-#    initial_values,
-#    parameters,
-#    soybean_weather$'2002',
-#    direct_modules,
-#    differential_modules,
-#    ode_solver
-#  )})
-
-## ----within-------------------------------------------------------------------
-# Create a small list
-original_list <- list(a = 1, b = 2, c = 3)
-
-# Create a new list from the original one by removing the `a` element and
-# changing the value of the `c` element
-new_list <- within(original_list, {
-  rm(a)
-  c = 4
-})
-
-# We don't need to actually store the new list; instead we can pass it directly
-# to another function. Here we perform the same operations (but separate them
-# with `;` instead of writing them on separate lines) and pass the result
-# directly to `str` without storing it as a named object.
-str(within(original_list, {rm(a); c = 4}))
-
-## ----append-------------------------------------------------------------------
-str(append(original_list, 5))
 
