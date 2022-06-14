@@ -77,23 +77,33 @@
 <dd><p>A list of named quantities representing the initial values of the
     differential quantities, i.e., the quantities whose derivatives are
     calculated by differential modules</p></dd>
-<dt>parameters</dt>
+
+
+  <dt>parameters</dt>
 <dd><p>A list of named quantities that don't change with time; must include a
     'timestep' parameter (see `drivers` for more info)</p></dd>
-<dt>drivers</dt>
+
+
+  <dt>drivers</dt>
 <dd><p>A data frame of quantities defined at equally spaced time intervals. The
     time interval should be specified in the `parameters` as a quantity called
     'timestep' having units of hours. The drivers must include columns for
     either (1) 'time' (in units of days) or (2) 'doy' and 'hour'.</p></dd>
-<dt>direct_module_names</dt>
+
+
+  <dt>direct_module_names</dt>
 <dd><p>A character vector or list specifying the names of direct modules to use in
     the system; a list of available modules can be obtained via the
     <code><a href="get_all.html">get_all_modules</a></code> function</p></dd>
-<dt>differential_module_names</dt>
+
+
+  <dt>differential_module_names</dt>
 <dd><p>A character vector or list specifying the names of differential modules to
     use in the system; a list of available modules can be obtained via the
     <code><a href="get_all.html">get_all_modules</a></code> function</p></dd>
-<dt>ode_solver</dt>
+
+
+  <dt>ode_solver</dt>
 <dd><p>A list specifying details about the numerical ODE solver. The required
     elements are:</p><ul><li><p><code>type</code>: A string specifying the name of the algorithm to use;
             a list of available options can be obtained using the
@@ -109,10 +119,14 @@
             step size method will attempt to find a new step size before
             indicating failure</p></li>
 </ul><p></p></dd>
-<dt>verbose</dt>
+
+
+  <dt>verbose</dt>
 <dd><p>A logical variable indicating whether or not to print dynamical system
     validation information. (More detailed startup information can be obtained
     with the <code><a href="dynamical_system.html">validate_dynamical_system_inputs</a></code> function.)</p></dd>
+
+
 </dl></div>
     <div id="details">
     <h2>Details</h2>
@@ -123,7 +137,9 @@
     </div>
     <div id="value">
     <h2>Value</h2>
-    <p>A data frame where each column represents one of the quantities included in
+    
+
+<p>A data frame where each column represents one of the quantities included in
   the simulation (with the exception of the parameters, since their values are
   guaranteed to not change with time) and each row represents a time point</p>
     </div>
@@ -200,7 +216,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.4.</p>
 </div>
 
       </footer></div>
