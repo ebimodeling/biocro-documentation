@@ -112,9 +112,9 @@
 <h4 id="installation-steps">Installation steps<a class="anchor" aria-label="anchor" href="#installation-steps"></a>
 </h4>
 <ul>
-<li><p>BioCro can be installed directly from GitHub by typing the following in the R command line: <code>remotes::install_github('ebimodeling/biocro')</code>. Note that this method requires the <code>remotes</code> R package.</p></li>
+<li><p>There are several R packages (such as <code>devtools</code>, <code>remotes</code>, and possibly others) that can be used to install other R packages (including BioCro) directly from GitHub. For example: <code>devtools::install_github('ebimodeling/biocro')</code>.</p></li>
 <li>
-<p>Another option is to download the BioCro source code from GitHub, unzip the file (if necessary), and install the package using one of the following sets of commands, which both assume that the source files are in a directory named “biocro”:</p>
+<p>Another option that does not require any additional R packages is to download the BioCro source code from GitHub, unzip the file (if necessary), and install the package using one of the following sets of commands, which both assume that the source files are in a directory named “biocro”:</p>
 <ul><li>From the command line</li></ul>
 <pre><code>cd path_to_unzipped_directory
 R CMD INSTALL biocro</code></pre>
