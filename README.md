@@ -2,8 +2,10 @@
 
 This site contains documentation for the version of the BioCro code
 contained in the repository residing at
-<https://github.com/ebimodeling/biocro>.  The landing page for the
-GitHub Pages site displaying this documentation is
+<https://github.com/ebimodeling/biocro>.
+
+The landing page for the GitHub Pages site displaying this
+documentation is
 <https://ebimodeling.github.io/biocro-documentation/>, It is
 recommended that you view this page from there (if you aren't there
 already).
