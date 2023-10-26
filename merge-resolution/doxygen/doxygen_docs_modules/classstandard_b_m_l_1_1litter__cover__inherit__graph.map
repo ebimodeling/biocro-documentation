@@ -1,0 +1,4 @@
+<map id="litter_cover" name="litter_cover">
+<area shape="rect" id="node1" title="Estimates the fraction of ground covered by leaf litter." alt="" coords="13,80,100,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,108,32"/>
+</map>

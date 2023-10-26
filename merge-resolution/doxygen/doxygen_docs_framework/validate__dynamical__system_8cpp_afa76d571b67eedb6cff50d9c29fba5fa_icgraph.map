@@ -1,0 +1,8 @@
+<map id="get_module_vector" name="get_module_vector">
+<area shape="rect" id="node1" title="Returns a vector of unique_ptrs to module objects." alt="" coords="647,71,779,98"/>
+<area shape="rect" id="node2" href="$classdynamical__system.html#a2b3054277b6e00cab2f51939c5aa8576" title=" " alt="" coords="405,5,599,47"/>
+<area shape="rect" id="node3" href="$validate__dynamical__system_8cpp.html#abb3c3e89d2dd935d5061608eff796df3" title="Returns modules that require a fixed step size Euler ode_solver." alt="" coords="423,71,581,98"/>
+<area shape="rect" id="node6" href="$validate__dynamical__system_8cpp.html#ac5831fd7ff693e8bb159094fadd0f30f" title="Returns mischaracterized modules, i.e., direct modules in the differential module list or vice&#45;versa." alt="" coords="429,123,575,164"/>
+<area shape="rect" id="node4" href="$validate__dynamical__system_8cpp.html#ae398489e7565d0e8d112cbd584f57d34" title="Provides information about a set of system inputs that is not strictly required to check validity." alt="" coords="201,101,357,127"/>
+<area shape="rect" id="node5" href="$_r__dynamical__system_8cpp.html#aa85551b0a496c50aca9a217a831a1750" title=" " alt="" coords="5,93,153,135"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="has_cycle" name="has_cycle">
+<area shape="rect" id="node1" title="Given a directed graph g, return true if g has a cycle, false otherwise." alt="" coords="5,29,85,56"/>
+</map>

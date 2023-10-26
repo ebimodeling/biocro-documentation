@@ -1,0 +1,4 @@
+<map id="get_all_modules" name="get_all_modules">
+<area shape="rect" id="node1" title=" " alt="" coords="185,5,301,32"/>
+<area shape="rect" id="node2" href="$_r__module__library_8cpp.html#adc84f4bac9b520f71471cff9b8064737" title="A wrapper for module_factory::get_all_modules() that returns the output as an R vector of R strings." alt="" coords="5,5,137,32"/>
+</map>

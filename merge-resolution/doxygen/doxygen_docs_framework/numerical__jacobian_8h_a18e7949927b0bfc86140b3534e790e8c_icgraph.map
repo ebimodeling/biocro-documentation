@@ -1,0 +1,6 @@
+<map id="calculate_time_derivative" name="calculate_time_derivative">
+<area shape="rect" id="node1" title="Numerically compute the explicit time derivatives of a vector valued function." alt="" coords="445,42,615,69"/>
+<area shape="rect" id="node2" href="$numerical__jacobian_8h.html#aa69a62289bcec362abb76d68df65e6d3" title="Numerically compute the Jacobian matrix and the explicit time derivative of a vector valued function." alt="" coords="240,5,385,47"/>
+<area shape="rect" id="node4" href="$numerical__jacobian_8h.html#a926532563be19071bb0594d54846edcb" title="A wrapper for the six&#45;argument version of calculate_time_derivative() that automatically calculates f..." alt="" coords="228,71,397,98"/>
+<area shape="rect" id="node3" href="$classdynamical__system__pointer__wrapper.html#a3e467d4b57d62daa470ec61486a02152" title=" " alt="" coords="5,5,180,47"/>
+</map>
