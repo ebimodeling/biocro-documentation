@@ -1,0 +1,10 @@
+<map id="rue_photo" name="rue_photo">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,84,83"/>
+<area shape="rect" id="node2" href="$_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="132,5,279,32"/>
+<area shape="rect" id="node3" href="$ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="156,56,255,83"/>
+<area shape="rect" id="node8" href="$conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="135,107,276,149"/>
+<area shape="rect" id="node4" href="$quadratic__root_8h.html#ad8e1928a7fe5ae96f1d841e5f236920a" title="A wrapper for quadratic_root() that returns the &quot;plus&quot; root." alt="" coords="347,31,481,57"/>
+<area shape="rect" id="node7" href="$water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="327,81,501,108"/>
+<area shape="rect" id="node5" href="$quadratic__root_8cpp.html#a71025edea157c7c14d87962f1c5713db" title="Computes one of the roots of a quadratic equation." alt="" coords="549,31,653,57"/>
+<area shape="rect" id="node6" href="$state__map_8h.html#a2ffa14ffb8d0754a8bece80bb8a68481" title=" " alt="" coords="701,31,744,57"/>
+</map>

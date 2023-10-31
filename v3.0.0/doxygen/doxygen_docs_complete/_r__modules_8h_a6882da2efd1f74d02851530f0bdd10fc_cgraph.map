@@ -1,0 +1,8 @@
+<map id="R_evaluate_module" name="R_evaluate_module">
+<area shape="rect" id="node1" title="Determines the values of a module&#39;s output quantities from the supplied values of its input quantitie..." alt="" coords="5,137,141,163"/>
+<area shape="rect" id="node2" href="$classmodule__creator.html#a8681944be22288a16302c02f456720a7" title=" " alt="" coords="189,5,343,47"/>
+<area shape="rect" id="node3" href="$classmodule__creator.html#a3150df851552216c6b455d02800fb9f1" title=" " alt="" coords="199,71,333,112"/>
+<area shape="rect" id="node4" href="$_r__helper__functions_8cpp.html#a958bd8cf9a5ec1a05b6af932cd5ab1aa" title=" " alt="" coords="214,137,318,163"/>
+<area shape="rect" id="node5" href="$_r__helper__functions_8cpp.html#a427d311e926df18071cfb272015d6dff" title=" " alt="" coords="214,187,318,214"/>
+<area shape="rect" id="node6" href="$_r__helper__functions_8cpp.html#a6a18873bada3853892746cc287b7cf7d" title="Creates a std::vector of pointers to module_creator objects from an R vector of R external pointer ob..." alt="" coords="196,238,336,265"/>
+</map>
