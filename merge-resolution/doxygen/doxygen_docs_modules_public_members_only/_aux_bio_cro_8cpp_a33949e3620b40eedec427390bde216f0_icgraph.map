@@ -1,5 +1,0 @@
-<map id="leaf_boundary_layer_conductance_thornley" name="leaf_boundary_layer_conductance_thornley">
-<area shape="rect" id="node1" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="284,5,439,47"/>
-<area shape="rect" id="node2" href="$c3_evapo_trans_8cpp.html#a61b7d88adafff31f703008da477eb090" title=" " alt="" coords="131,13,236,39"/>
-<area shape="rect" id="node3" href="$c3_can_a_c_8cpp.html#a5ae95949fd0f55e5d42bc4c4f0f6e052" title=" " alt="" coords="5,13,83,39"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="absorbed_shortwave_from_incident_ppfd" name="absorbed_shortwave_from_incident_ppfd">
-<area shape="rect" id="node1" title="Computes total absorbed shortwave radiation from the photosynthetically active photon flux density (P..." alt="" coords="5,5,148,47"/>
-<area shape="rect" id="node2" href="$sun_m_l_8cpp.html#ab491bb8553ee710f275dbcd2b3e4547b" title="Computes absorbed light from incident light for a thick layer of material." alt="" coords="196,13,347,39"/>
-</map>

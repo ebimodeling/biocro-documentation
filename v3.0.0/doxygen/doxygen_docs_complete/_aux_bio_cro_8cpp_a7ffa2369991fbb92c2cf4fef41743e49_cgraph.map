@@ -1,4 +1,0 @@
-<map id="leaf_boundary_layer_conductance_nikolov" name="leaf_boundary_layer_conductance_nikolov">
-<area shape="rect" id="node1" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="5,5,156,47"/>
-<area shape="rect" id="node2" href="$water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="204,13,379,39"/>
-</map>

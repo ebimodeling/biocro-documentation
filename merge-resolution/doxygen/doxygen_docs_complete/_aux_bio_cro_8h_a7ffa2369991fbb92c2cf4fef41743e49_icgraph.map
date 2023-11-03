@@ -1,8 +1,0 @@
-<map id="leaf_boundary_layer_conductance_nikolov" name="leaf_boundary_layer_conductance_nikolov">
-<area shape="rect" id="node1" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="672,35,823,76"/>
-<area shape="rect" id="node2" href="$classstandard_b_m_l_1_1leaf__gbw__nikolov.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="465,5,624,47"/>
-<area shape="rect" id="node3" href="$_aux_bio_cro_8cpp.html#abc33067b20ffdc9e7a47aafe66d7b131" title=" " alt="" coords="495,71,594,98"/>
-<area shape="rect" id="node4" href="$_can_a_c_8cpp.html#aa03215296e449dcccc448cf6a8e345d3" title=" " alt="" coords="288,42,351,69"/>
-<area shape="rect" id="node6" href="$classstandard_b_m_l_1_1c4__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,93,417,135"/>
-<area shape="rect" id="node5" href="$classstandard_b_m_l_1_1c4__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,35,173,76"/>
-</map>

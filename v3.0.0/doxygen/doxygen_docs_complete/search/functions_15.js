@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['water_5flatent_5fheat_5fof_5fvaporization_5fhenderson_0',['water_latent_heat_of_vaporization_henderson',['../water__and__air__properties_8h.html#ae316a7cc0aa11d92732e36c4665361ce',1,'water_and_air_properties.h']]],
-  ['water_5fvapor_5fproperties_5ffrom_5fair_5ftemperature_1',['water_vapor_properties_from_air_temperature',['../classstandard_b_m_l_1_1water__vapor__properties__from__air__temperature.html#a9f29463529c5ff9e9a64d4bec8c0d730',1,'standardBML::water_vapor_properties_from_air_temperature']]],
-  ['watstr_2',['watstr',['../_aux_bio_cro_8cpp.html#afd82d6a23b65b58f4b7652dc9c8146c3',1,'watstr(double precipit, double evapo, double cws, double soildepth, double fieldc, double wiltp, double soil_saturation_capacity, double sand, double Ks, double air_entry, double b):&#160;AuxBioCro.cpp'],['../_bio_cro_8h.html#a88d9e0276be9e8a63782ec6f3aa9924b',1,'watstr(double precipit, double evapo, double cws, double soildepth, double fieldc, double wiltp, double soil_saturation_capacity, double soil_sand_content, double Ks, double air_entry, double b):&#160;AuxBioCro.cpp']]],
-  ['windprof_3',['WINDprof',['../_aux_bio_cro_8cpp.html#ad5f0fc680176f312e47c32701ce779f7',1,'WINDprof(double WindSpeed, double LAI, int nlayers, double *wind_speed_profile):&#160;AuxBioCro.cpp'],['../_bio_cro_8h.html#ad5f0fc680176f312e47c32701ce779f7',1,'WINDprof(double WindSpeed, double LAI, int nlayers, double *wind_speed_profile):&#160;AuxBioCro.cpp']]]
-];

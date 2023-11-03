@@ -1,9 +1,0 @@
-<map id="leaf_boundary_layer_conductance_thornley" name="leaf_boundary_layer_conductance_thornley">
-<area shape="rect" id="node1" title="Calculates the conductance for water vapor flow from the leaf across its boundary layer using a model..." alt="" coords="672,93,827,135"/>
-<area shape="rect" id="node2" href="$c3_evapo_trans_8cpp.html#a61b7d88adafff31f703008da477eb090" title=" " alt="" coords="492,71,597,98"/>
-<area shape="rect" id="node7" href="$classstandard_b_m_l_1_1leaf__gbw__thornley.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="465,123,624,164"/>
-<area shape="rect" id="node3" href="$c3_can_a_c_8cpp.html#a5ae95949fd0f55e5d42bc4c4f0f6e052" title=" " alt="" coords="281,13,358,39"/>
-<area shape="rect" id="node5" href="$classstandard_b_m_l_1_1c3__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,64,417,105"/>
-<area shape="rect" id="node6" href="$classstandard_b_m_l_1_1rue__leaf__photosynthesis.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="221,129,417,171"/>
-<area shape="rect" id="node4" href="$classstandard_b_m_l_1_1c3__canopy.html#a391e9fd4e949f6e987eb654a11b1e451" title=" " alt="" coords="5,5,173,47"/>
-</map>

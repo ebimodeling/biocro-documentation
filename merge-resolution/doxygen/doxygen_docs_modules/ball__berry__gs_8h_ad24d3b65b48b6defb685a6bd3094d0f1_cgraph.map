@@ -1,4 +1,0 @@
-<map id="ball_berry_gs" name="ball_berry_gs">
-<area shape="rect" id="node1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="5,5,104,32"/>
-<area shape="rect" id="node2" href="$water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="152,5,327,32"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="rue_photo" name="rue_photo">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,84,83"/>
-<area shape="rect" id="node2" href="$_aux_bio_cro_8h.html#afdc4098e301ac3444b5b6253ba5d185f" title="Calculates the exponential term of the Arrhenius equation." alt="" coords="132,5,279,32"/>
-<area shape="rect" id="node3" href="$ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="156,56,255,83"/>
-<area shape="rect" id="node5" href="$conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="135,107,276,149"/>
-<area shape="rect" id="node4" href="$water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="327,56,501,83"/>
-</map>

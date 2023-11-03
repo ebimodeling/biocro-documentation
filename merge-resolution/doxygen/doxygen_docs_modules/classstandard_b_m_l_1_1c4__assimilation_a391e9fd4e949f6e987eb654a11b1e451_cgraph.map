@@ -1,7 +1,0 @@
-<map id="do_operation" name="do_operation">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,101,61"/>
-<area shape="rect" id="node2" href="$c4photo_8cpp.html#a0ac8af0343c49f4ab5cf95fe21333179" title=" " alt="" coords="149,35,227,61"/>
-<area shape="rect" id="node3" href="$ball__berry__gs_8cpp.html#ad24d3b65b48b6defb685a6bd3094d0f1" title="Calculates steady&#45;state stomatal conductance to water vapor using the Ball&#45;Berry model." alt="" coords="296,5,395,32"/>
-<area shape="rect" id="node5" href="$conductance__limited__assim_8h.html#a9912249fe80a1a615d0316c7778cd6cf" title="Computes the conductance&#45;limited net CO2 assimilation rate." alt="" coords="275,57,416,98"/>
-<area shape="rect" id="node4" href="$water__and__air__properties_8h.html#a117fba2c85ba6d52345e7cefc05a43ff" title="Determine saturation water vapor pressure (Pa) from air temperature (degrees C) using the Arden Buck ..." alt="" coords="464,5,639,32"/>
-</map>

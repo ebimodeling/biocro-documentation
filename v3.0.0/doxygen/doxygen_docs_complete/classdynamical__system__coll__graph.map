@@ -1,6 +1,0 @@
-<map id="dynamical_system" name="dynamical_system">
-<area shape="rect" id="node1" title="Defines a dynamical system which can be solved using an ode_solver." alt="" coords="325,85,455,111"/>
-<area shape="rect" id="node2" title=" " alt="" coords="14,5,154,47"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,70,163,126"/>
-<area shape="rect" id="node4" title=" " alt="" coords="57,150,111,177"/>
-</map>

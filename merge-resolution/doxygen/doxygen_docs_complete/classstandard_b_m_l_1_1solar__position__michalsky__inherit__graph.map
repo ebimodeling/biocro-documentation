@@ -1,5 +1,0 @@
-<map id="solar_position_michalsky" name="solar_position_michalsky">
-<area shape="rect" id="node1" title="Calculates the solar position using the model described in Michalsky, J. J. &quot;The Astronomical Almanac..." alt="" coords="5,155,172,181"/>
-<area shape="rect" id="node2" href="$classdirect__module.html" title="This class represents a direct module." alt="" coords="37,80,140,107"/>
-<area shape="rect" id="node3" href="$classmodule.html" title="Represents one or more equations." alt="" coords="57,5,121,32"/>
-</map>

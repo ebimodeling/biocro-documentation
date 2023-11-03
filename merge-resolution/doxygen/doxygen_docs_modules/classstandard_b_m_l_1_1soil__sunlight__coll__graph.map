@@ -1,4 +1,0 @@
-<map id="soil_sunlight" name="soil_sunlight">
-<area shape="rect" id="node1" title="Determines the fraction of ground area under the canopy exposed to direct sunlight." alt="" coords="9,80,104,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,108,32"/>
-</map>

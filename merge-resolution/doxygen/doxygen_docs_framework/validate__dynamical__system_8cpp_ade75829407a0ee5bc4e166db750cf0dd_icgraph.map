@@ -1,6 +1,0 @@
-<map id="find_undefined_module_inputs" name="find_undefined_module_inputs">
-<area shape="rect" id="node1" title="Finds quantities that are required by modules but are not defined by quantity_names...." alt="" coords="427,39,580,80"/>
-<area shape="rect" id="node2" href="$validate__dynamical__system_8cpp.html#a2ecba4098f751646dfbef9767a7dd7d5" title="Checks over a group of quantities and modules to ensure they can be used to create a valid system." alt="" coords="247,39,379,80"/>
-<area shape="rect" id="node3" href="$classdynamical__system.html#a2b3054277b6e00cab2f51939c5aa8576" title=" " alt="" coords="5,5,199,47"/>
-<area shape="rect" id="node4" href="$_r__dynamical__system_8cpp.html#aa85551b0a496c50aca9a217a831a1750" title=" " alt="" coords="28,71,176,112"/>
-</map>
